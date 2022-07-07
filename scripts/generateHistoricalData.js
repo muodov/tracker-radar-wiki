@@ -7,7 +7,7 @@ const ProgressBar = require('progress');
 const simpleGit = require('simple-git');
 const getListOfJSONPathsFromFolder = require('./helpers/getListOfJSONPathsFromFolder');
 
-const TRACKER_RADAR_DOMAINS_PATH = path.join(config.trackerRadarRepoPath, '/domains/');
+const TRACKER_RADAR_DOMAINS_PATH = path.join(config.trackerRadarRepoPath, '/domains/DE/');
 const TRACKER_RADAR_ENTITIES_PATH = path.join(config.trackerRadarRepoPath, '/entities/');
 
 const domainMap = new Map();
@@ -116,7 +116,8 @@ async function main() {
     tags = tagsString.split('\n').filter(a => a.length > 0);
 
     // FOR DEBUG - if you want to build test wiki from an unmerged branch, push it to the list of tags
-    tags.push('max/june-2022');
+    // tags.push('max/june-2022');
+    tags = ['max/ref-nocmp-de', 'max/opt-in-de']
 
     try {
         fs.writeFileSync(path.join(config.staticData, '/history/tags.json'), JSON.stringify(tags));
