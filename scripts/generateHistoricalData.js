@@ -117,7 +117,7 @@ async function main() {
 
     // FOR DEBUG - if you want to build test wiki from an unmerged branch, push it to the list of tags
     // tags.push('max/june-2022');
-    tags = ['max/ref-nocmp-de', 'max/opt-in-de']
+    tags = ['max/april-ref', 'max/may-ref']
 
     try {
         fs.writeFileSync(path.join(config.staticData, '/history/tags.json'), JSON.stringify(tags));
