@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - d3e4s07haqhh9y.cloudfront.net</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "d3e4s07haqhh9y.cloudfront.net",
+        history: [{"date":"us-opt-in","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/d3e4s07haqhh9y.cloudfront.net.ico' width="32" height="32" class='inline-block' /> d3e4s07haqhh9y.cloudfront.net</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <a href="../entities/Amazon Technologies, Inc..html">Amazon Technologies, Inc.</a>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;help&#x2F;customer&#x2F;display.html?nodeId&#x3D;468496" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;help&#x2F;customer&#x2F;display.html?nodeId&#x3D;468496</a>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;18956<small>/27720</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> <a href="../categories/CDN.html">CDN</a>, 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Script</span>,
+                    <span>Image</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/d3e4s07haqhh9y.cloudfront.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Intl.DateTimeFormat.prototype.resolvedOptions</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;start-discourse-84803f2fc54471a7983a64de0e58aa56d4b0866d1b825d51fbe294724021fcc7.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;start-discourse-84803f2fc54471a7983a64de0e58aa56d4b0866d1b825d51fbe294724021fcc7.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;browser-update-fa1bd513317a7e3a56bff7e6f5468f7ee00899a1a3e256da22eec279ae6205c3.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;browser-update-fa1bd513317a7e3a56bff7e6f5468f7ee00899a1a3e256da22eec279ae6205c3.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;browser-detect-16ca87077aead9f656700e192992122d3a7eee8c1bb76da992127945464d4777.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;browser-detect-16ca87077aead9f656700e192992122d3a7eee8c1bb76da992127945464d4777.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;locales&#x2F;en-c83ac4b60036a74251173d8b5415bb30257310cf2c942369955d8eb78273c128.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;locales&#x2F;en-c83ac4b60036a74251173d8b5415bb30257310cf2c942369955d8eb78273c128.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;vendor-d999aefdea5ea1c8d8f1005dd47e9810c88b6333abe4a97b373b96569c09d3ee.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;vendor-d999aefdea5ea1c8d8f1005dd47e9810c88b6333abe4a97b373b96569c09d3ee.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;chunk.920.dc451c84eb04f83aa304-09bf5d410e4fd6c263d572bd1c66656a27da0e708dacef82a8a411a3a622f56b.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;chunk.920.dc451c84eb04f83aa304-09bf5d410e4fd6c263d572bd1c66656a27da0e708dacef82a8a411a3a622f56b.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-adplugin-ac5eb8582792ffbebcdbc3ba43c17a96ae3512551397da137fdf84d2305b87be.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-adplugin-ac5eb8582792ffbebcdbc3ba43c17a96ae3512551397da137fdf84d2305b87be.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-akismet-e8277ca4cbcf2e721ce9b8a84a6f9a0f9297e24d01532ec06942ef1f1cdaf3cc.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-akismet-e8277ca4cbcf2e721ce9b8a84a6f9a0f9297e24d01532ec06942ef1f1cdaf3cc.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-cakeday-8cfd690531468cb8d813ae8c53818d822b7d98b9afb6114d2768e9cfbcb6e7fd.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-cakeday-8cfd690531468cb8d813ae8c53818d822b7d98b9afb6114d2768e9cfbcb6e7fd.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-canned-replies-c81082ae31542474ba3385e35c9dea282f156d96ed1ff4693b01c34f0410f327.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-canned-replies-c81082ae31542474ba3385e35c9dea282f156d96ed1ff4693b01c34f0410f327.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-details-a5c71c75398c735e851440262e3c9ba43f9d8a2a7d81d8ecec16c8b2dbf452c3.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-details-a5c71c75398c735e851440262e3c9ba43f9d8a2a7d81d8ecec16c8b2dbf452c3.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-local-dates-156b3f5743e6203b4430c22f4b1c4912669529692ebf9d99145cc9a21640ad8b.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-local-dates-156b3f5743e6203b4430c22f4b1c4912669529692ebf9d99145cc9a21640ad8b.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-narrative-bot-7648c8e9699610bc9a41dc34d627f0227a7501feb863a8d84ec0ab1bdc745e3d.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-narrative-bot-7648c8e9699610bc9a41dc34d627f0227a7501feb863a8d84ec0ab1bdc745e3d.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-presence-c17a0d9397731e9a07066b6ad704a9d737578908227a3decda9d6aa8b1232b1f.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-presence-c17a0d9397731e9a07066b6ad704a9d737578908227a3decda9d6aa8b1232b1f.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-spoiler-alert-0c5f8887d68da98db3f55599505d917c7ca29387a1e6a2e0d6a1008d262ab8f5.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-spoiler-alert-0c5f8887d68da98db3f55599505d917c7ca29387a1e6a2e0d6a1008d262ab8f5.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-voting-7a6cec5289e5c3a7aa91be826da7fcd220dd3a5336958a593f4f090f61e0e830.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;discourse-voting-7a6cec5289e5c3a7aa91be826da7fcd220dd3a5336958a593f4f090f61e0e830.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;docker_manager-4ced9f9c7bda9ba563c04006dbb93828d43f2c7d5b533065717c5a63da77d5fc.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;docker_manager-4ced9f9c7bda9ba563c04006dbb93828d43f2c7d5b533065717c5a63da77d5fc.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;lazy-yt-362fd991a752ebdc53b9b3b70aea43cb46676f634c323d6c79c0bef4c6bebad3.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;lazy-yt-362fd991a752ebdc53b9b3b70aea43cb46676f634c323d6c79c0bef4c6bebad3.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;poll-93c0c52529f0f27a16c6292197d0d98ff31d57d4f8c50c00222af92829ad77d7.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;plugins&#x2F;poll-93c0c52529f0f27a16c6292197d0d98ff31d57d4f8c50c00222af92829ad77d7.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;google-tag-manager-207e4e7db708ead224f0e2ee6d92492abfe9a29e717480b6f6f2614fa7873019.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;google-tag-manager-207e4e7db708ead224f0e2ee6d92492abfe9a29e717480b6f6f2614fa7873019.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.br.js" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;assets&#x2F;google-universal-analytics-v3-706f1d28f0a97f67a47515c96189277240ec4940d968955042066d7873fd1fe8.br.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d3e4s07haqhh9y.cloudfront.net&#x2F;original&#x2F;2X&#x2F;0&#x2F;071a7e56cd68a76a7077c2a827da7c73c3fa96fb.png" target="_blank" class="external" rel="noreferrer noopener">d3e4s07haqhh9y.cloudfront.net&#x2F;original&#x2F;2X&#x2F;0&#x2F;071a7e56cd68a76a7077c2a827da7c73c3fa96fb.png</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://nameberry.com" target="_blank" class="external">nameberry.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://forum.nameberry.com" target="_blank" class="external">forum.nameberry.com</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

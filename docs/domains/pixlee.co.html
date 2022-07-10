@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "pixlee.co",
-        history: [{"date":"max/ref-nocmp-de","prevalence":0.0001,"sites":1,"fingerprinting":0,"cookies":0},{"date":"max/opt-in-de","prevalence":0.000301,"sites":3,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"main","prevalence":0.00099,"sites":146,"fingerprinting":1,"cookies":0},{"date":"us-opt-in","prevalence":0.00105,"sites":155,"fingerprinting":1,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;2042<small>/3704</small>
+                    <strong>Rank:</strong> &#35;1154<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.03&#37; (3 sites)
+                    <strong>Prevalence:</strong> 0.10&#37; (155 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -91,11 +91,15 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Document</span>,
+                    <span>XHR</span>,
+                    <span>Script</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/pixlee.co.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>photos</span>, 
+                    <span>distillery</span>, 
+                    <span>inbound-analytics</span>, 
                 </li>
             </ul>
         </div>
@@ -114,13 +118,56 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://photos.pixlee.co&#x2F;getDUH" target="_blank" class="external" rel="noreferrer noopener">photos.pixlee.co&#x2F;getDUH</a> (seen on 3 websites)</p>
+            <p><a href="http://photos.pixlee.co&#x2F;getDUH" target="_blank" class="external" rel="noreferrer noopener">photos.pixlee.co&#x2F;getDUH</a> (seen on 83 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://photos.pixlee.co&#x2F;lightbox" target="_blank" class="external" rel="noreferrer noopener">photos.pixlee.co&#x2F;lightbox</a> (seen on 47 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://photos.pixlee.co&#x2F;widget" target="_blank" class="external" rel="noreferrer noopener">photos.pixlee.co&#x2F;widget</a> (seen on 46 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://distillery.pixlee.co&#x2F;getJSON" target="_blank" class="external" rel="noreferrer noopener">distillery.pixlee.co&#x2F;getJSON</a> (seen on 46 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://photos.pixlee.co&#x2F;vendor_modified&#x2F;easyxdm&#x2F;work&#x2F;easyXDM.js" target="_blank" class="external" rel="noreferrer noopener">photos.pixlee.co&#x2F;vendor_modified&#x2F;easyxdm&#x2F;work&#x2F;easyXDM.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;cotopaxi.myshopify.com" target="_blank" class="external" rel="noreferrer noopener">inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;cotopaxi.myshopify.com</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;decathlon-usa.myshopify.com" target="_blank" class="external" rel="noreferrer noopener">inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;decathlon-usa.myshopify.com</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;evenflobaby.myshopify.com" target="_blank" class="external" rel="noreferrer noopener">inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;evenflobaby.myshopify.com</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;nobull.myshopify.com" target="_blank" class="external" rel="noreferrer noopener">inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;nobull.myshopify.com</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;simmsfishing.myshopify.com" target="_blank" class="external" rel="noreferrer noopener">inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;simmsfishing.myshopify.com</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;windsor-us.myshopify.com" target="_blank" class="external" rel="noreferrer noopener">inbound-analytics.pixlee.co&#x2F;getApiKey&#x2F;windsor-us.myshopify.com</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -130,13 +177,187 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://puma.com" target="_blank" class="external">puma.com</a>
+            <a href="http://www.sunandski.com" target="_blank" class="external">www.sunandski.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.centerparcs.de" target="_blank" class="external">www.centerparcs.de</a>
+            <a href="http://www.jeromes.com" target="_blank" class="external">www.jeromes.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://instantpot.com" target="_blank" class="external">instantpot.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.instanthome.com" target="_blank" class="external">www.instanthome.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mauijim.com" target="_blank" class="external">www.mauijim.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.springhillnursery.com" target="_blank" class="external">www.springhillnursery.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.parts-express.com" target="_blank" class="external">www.parts-express.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tilebar.com" target="_blank" class="external">www.tilebar.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.omahaoutdoors.com" target="_blank" class="external">www.omahaoutdoors.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nobullproject.com" target="_blank" class="external">www.nobullproject.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.michiganbulb.com" target="_blank" class="external">www.michiganbulb.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.thetileapp.com" target="_blank" class="external">www.thetileapp.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tillys.com" target="_blank" class="external">www.tillys.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://neimanmarcus.com" target="_blank" class="external">neimanmarcus.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://michaels.com" target="_blank" class="external">michaels.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.evenflo.com" target="_blank" class="external">www.evenflo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.orientaltrading.com" target="_blank" class="external">www.orientaltrading.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.brooksrunning.com" target="_blank" class="external">www.brooksrunning.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.starkbros.com" target="_blank" class="external">www.starkbros.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://theblacktux.com" target="_blank" class="external">theblacktux.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gardensalive.com" target="_blank" class="external">www.gardensalive.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.windsorstore.com" target="_blank" class="external">www.windsorstore.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gildanbrands.com" target="_blank" class="external">www.gildanbrands.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ugg.com" target="_blank" class="external">www.ugg.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.daltile.com" target="_blank" class="external">www.daltile.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.deltafaucet.com" target="_blank" class="external">www.deltafaucet.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uk.puma.com" target="_blank" class="external">uk.puma.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.chemicalguys.com" target="_blank" class="external">www.chemicalguys.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sauder.com" target="_blank" class="external">www.sauder.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.roomstogo.com" target="_blank" class="external">www.roomstogo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pacificcollege.edu" target="_blank" class="external">www.pacificcollege.edu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://us.puma.com" target="_blank" class="external">us.puma.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cirquedusoleil.com" target="_blank" class="external">www.cirquedusoleil.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hoka.com" target="_blank" class="external">www.hoka.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.helzberg.com" target="_blank" class="external">www.helzberg.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.carnival.com" target="_blank" class="external">www.carnival.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hannaandersson.com" target="_blank" class="external">www.hannaandersson.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cyclegear.com" target="_blank" class="external">www.cyclegear.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.powerstop.com" target="_blank" class="external">www.powerstop.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.everlane.com" target="_blank" class="external">www.everlane.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.grandhotel.com" target="_blank" class="external">www.grandhotel.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gurneys.com" target="_blank" class="external">www.gurneys.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ooni.com" target="_blank" class="external">ooni.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://getolympus.com" target="_blank" class="external">getolympus.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ariat.com" target="_blank" class="external">www.ariat.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dmc.com" target="_blank" class="external">www.dmc.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.viz.com" target="_blank" class="external">www.viz.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cheaperthandirt.com" target="_blank" class="external">www.cheaperthandirt.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.homfurniture.com" target="_blank" class="external">www.homfurniture.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://knockaround.com" target="_blank" class="external">knockaround.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mitchellandness.com" target="_blank" class="external">www.mitchellandness.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cheaperthandirt.com" target="_blank" class="external">cheaperthandirt.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cotopaxi.com" target="_blank" class="external">cotopaxi.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cotopaxi.com" target="_blank" class="external">www.cotopaxi.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://decathlon.com" target="_blank" class="external">decathlon.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.decathlon.com" target="_blank" class="external">www.decathlon.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://evenflo.com" target="_blank" class="external">evenflo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nobullproject.com" target="_blank" class="external">nobullproject.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://simmsfishing.com" target="_blank" class="external">simmsfishing.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.simmsfishing.com" target="_blank" class="external">www.simmsfishing.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://windsorstore.com" target="_blank" class="external">windsorstore.com</a>
         </li>
     </ul>
 </div>

@@ -13,7 +13,7 @@ const lastTagInfo = {
     name: historicDataTags[historicDataTags.length - 1]
 };
 
-let TRACKER_RADAR_DOMAINS_PATH = path.join(config.trackerRadarRepoPath, '/domains/DE/');
+let TRACKER_RADAR_DOMAINS_PATH = path.join(config.trackerRadarRepoPath, '/domains/');
 const TRACKER_RADAR_ENTITIES_PATH = path.join(config.trackerRadarRepoPath, '/entities/');
 
 // Backwards compatibility for regions updates

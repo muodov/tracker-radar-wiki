@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "b0e8.com",
-        history: [{"date":"max/opt-in-de","prevalence":0.000502,"sites":5,"fingerprinting":3,"cookies":0.0001}]
+        history: [{"date":"main","prevalence":0.00271,"sites":400,"fingerprinting":3,"cookies":0.00255},{"date":"us-opt-in","prevalence":0.00265,"sites":391,"fingerprinting":3,"cookies":0.00252}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;1358<small>/3704</small>
+                    <strong>Rank:</strong> &#35;654<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.05&#37; (5 sites)
+                    <strong>Prevalence:</strong> 0.27&#37; (391 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.01&#37;
+                    <strong>Cookies:</strong> 0.25&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -90,11 +90,14 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Script</span>,
                     <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/b0e8.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>cdn</span>, 
+                    <span>cdn1</span>, 
                     <span>a1</span>, 
                 </li>
             </ul>
@@ -114,13 +117,62 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>CanvasRenderingContext2D.prototype.isPointInPath</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getContextAttributes</li>
+        <li class='truncate'>OfflineAudioContext.prototype.constructor</li>
+        <li class='truncate'>Navigator.prototype.productSub</li>
+        <li class='truncate'>AudioBuffer.prototype.getChannelData</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getSupportedExtensions</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getShaderPrecisionFormat</li>
+        <li class='truncate'>Navigator.prototype.hardwareConcurrency</li>
+        <li class='truncate'>Navigator.prototype.deviceMemory</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>Intl.DateTimeFormat.prototype.resolvedOptions</li>
+        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getExtension</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getParameter</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
+        <li class='truncate'>Navigator.prototype.doNotTrack</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://a1.b0e8.com&#x2F;brightedge3.php" target="_blank" class="external" rel="noreferrer noopener">a1.b0e8.com&#x2F;brightedge3.php</a> (seen on 5 websites)</p>
+            <p><a href="http://a1.b0e8.com&#x2F;brightedge3.php" target="_blank" class="external" rel="noreferrer noopener">a1.b0e8.com&#x2F;brightedge3.php</a> (seen on 222 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.b0e8.com&#x2F;conv_v3.js" target="_blank" class="external" rel="noreferrer noopener">cdn.b0e8.com&#x2F;conv_v3.js</a> (seen on 215 websites)</p>
         </li>
     </ul>
 </div>
@@ -130,19 +182,115 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://vmware.com" target="_blank" class="external">vmware.com</a>
+            <a href="http://www.1800lighting.com" target="_blank" class="external">www.1800lighting.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://docs.spring.io" target="_blank" class="external">docs.spring.io</a>
+            <a href="http://blog.amsoil.com" target="_blank" class="external">blog.amsoil.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://spring.io" target="_blank" class="external">spring.io</a>
+            <a href="http://saddlemen.com" target="_blank" class="external">saddlemen.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.fortinet.com" target="_blank" class="external">www.fortinet.com</a>
+            <a href="http://www.certifiedangusbeef.com" target="_blank" class="external">www.certifiedangusbeef.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.vmware.com" target="_blank" class="external">www.vmware.com</a>
+            <a href="http://www.playitagainsports.com" target="_blank" class="external">www.playitagainsports.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.herrschners.com" target="_blank" class="external">www.herrschners.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.moodyradio.org" target="_blank" class="external">www.moodyradio.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.petsafe.net" target="_blank" class="external">www.petsafe.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.slumberland.com" target="_blank" class="external">www.slumberland.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.beretta.com" target="_blank" class="external">www.beretta.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.charlottetilbury.com" target="_blank" class="external">www.charlottetilbury.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fjallraven.com" target="_blank" class="external">www.fjallraven.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ipic.com" target="_blank" class="external">www.ipic.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.avalonwaterways.com" target="_blank" class="external">www.avalonwaterways.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.raymourflanigan.com" target="_blank" class="external">www.raymourflanigan.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dameproducts.com" target="_blank" class="external">www.dameproducts.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.jasperengines.com" target="_blank" class="external">www.jasperengines.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bwtrailerhitches.com" target="_blank" class="external">www.bwtrailerhitches.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.stanleysteemer.com" target="_blank" class="external">www.stanleysteemer.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ada.org" target="_blank" class="external">www.ada.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://taogroup.com" target="_blank" class="external">taogroup.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://marketplace.akc.org" target="_blank" class="external">marketplace.akc.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://resilienteducator.com" target="_blank" class="external">resilienteducator.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.warn.com" target="_blank" class="external">www.warn.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.kylottery.com" target="_blank" class="external">www.kylottery.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cati.com" target="_blank" class="external">www.cati.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.booksamillion.com" target="_blank" class="external">www.booksamillion.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vertx.com" target="_blank" class="external">vertx.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.readingglasses.com" target="_blank" class="external">www.readingglasses.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.chacos.com" target="_blank" class="external">www.chacos.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.jandy.com" target="_blank" class="external">www.jandy.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.singer.com" target="_blank" class="external">www.singer.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bioadvanced.com" target="_blank" class="external">bioadvanced.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.seminolehardrockhollywood.com" target="_blank" class="external">www.seminolehardrockhollywood.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.silversneakers.com" target="_blank" class="external">www.silversneakers.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mattresswarehouse.com" target="_blank" class="external">mattresswarehouse.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tirereview.com" target="_blank" class="external">www.tirereview.com</a>
         </li>
     </ul>
 </div>

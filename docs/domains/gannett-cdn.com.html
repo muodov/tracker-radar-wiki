@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "gannett-cdn.com",
-        history: [{"date":"2020.03","prevalence":0.000102,"sites":5,"fingerprinting":2,"cookies":0.0000407},{"date":"2020.04","prevalence":0.000214,"sites":10,"fingerprinting":2,"cookies":0.0000642},{"date":"2020.05","prevalence":0.000171,"sites":12,"fingerprinting":2,"cookies":0.0000856},{"date":"2020.06","prevalence":0.00052,"sites":38,"fingerprinting":2,"cookies":0.0000547},{"date":"2020.07","prevalence":0.000388,"sites":28,"fingerprinting":1,"cookies":0.0000139},{"date":"2020.08","prevalence":0.000809,"sites":110,"fingerprinting":1,"cookies":0.0000662},{"date":"2020.09","prevalence":0.000593,"sites":78,"fingerprinting":2,"cookies":0.000038},{"date":"2020.10","prevalence":0.000714,"sites":94,"fingerprinting":1,"cookies":0.0000152},{"date":"2020.11","prevalence":0.00107,"sites":141,"fingerprinting":1,"cookies":0.0000076},{"date":"2020.12","prevalence":0.000593,"sites":78,"fingerprinting":2,"cookies":0.000038},{"date":"2021.01","prevalence":0.00094,"sites":123,"fingerprinting":2,"cookies":0.0000535},{"date":"2021.02","prevalence":0.000952,"sites":137,"fingerprinting":2,"cookies":0.0000486},{"date":"2021.03","prevalence":0.000936,"sites":135,"fingerprinting":2,"cookies":0.0000971},{"date":"2021.04","prevalence":0.000811,"sites":117,"fingerprinting":2,"cookies":0.0000416},{"date":"2021.05","prevalence":0.000813,"sites":118,"fingerprinting":2,"cookies":0.0000896},{"date":"2021.06","prevalence":0.000781,"sites":114,"fingerprinting":2,"cookies":0.00011},{"date":"2021.07","prevalence":0.000777,"sites":112,"fingerprinting":2,"cookies":0.0000208},{"date":"2021.08","prevalence":0.000805,"sites":116,"fingerprinting":2,"cookies":0.0000139},{"date":"2021.09","prevalence":0.000939,"sites":136,"fingerprinting":2,"cookies":0.0000483},{"date":"2021.10","prevalence":0.000884,"sites":128,"fingerprinting":2,"cookies":0.0000414},{"date":"2021.11","prevalence":0.00108,"sites":157,"fingerprinting":2,"cookies":0.0000759},{"date":"2021.12","prevalence":0.00106,"sites":154,"fingerprinting":2,"cookies":0.0000553},{"date":"2022.01","prevalence":0.00107,"sites":154,"fingerprinting":2,"cookies":0.0000761},{"date":"2022.02","prevalence":0.000116,"sites":17,"fingerprinting":2,"cookies":0},{"date":"2022.03","prevalence":0.0000956,"sites":14,"fingerprinting":2,"cookies":0},{"date":"2022.04","prevalence":0.0000885,"sites":13,"fingerprinting":2,"cookies":0},{"date":"2022.05","prevalence":0.0000682,"sites":10,"fingerprinting":3,"cookies":0.0000136},{"date":"max/june-2022","prevalence":0.000997,"sites":147,"fingerprinting":2,"cookies":0.000061}]
+        history: [{"date":"main","prevalence":0.000997,"sites":147,"fingerprinting":2,"cookies":0.000061},{"date":"us-opt-in","prevalence":0.00107,"sites":158,"fingerprinting":2,"cookies":0.000061}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;1174<small>/27203</small>
+                    <strong>Rank:</strong> &#35;1140<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.10&#37; (147 sites)
+                    <strong>Prevalence:</strong> 0.11&#37; (158 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
@@ -90,8 +90,8 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Other</span>,
                     <span>Image</span>,
+                    <span>Other</span>,
                     <span>Media</span>,
                     <span>Script</span>,
                     <span>Document</span>,
@@ -102,8 +102,8 @@
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/gannett-cdn.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>hlsmedia</span>, 
                     <span>www</span>, 
+                    <span>hlsmedia</span>, 
                     <span>mp4media</span>, 
                     <span>downloadmedia</span>, 
                     <span>api</span>, 
@@ -136,13 +136,15 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.product</li>
         <li class='truncate'>Screen.prototype.availWidth</li>
         <li class='truncate'>Screen.prototype.availHeight</li>
         <li class='truncate'>window.devicePixelRatio</li>
         <li class='truncate'>Navigator.prototype.doNotTrack</li>
-        <li class='truncate'>MediaSource.isTypeSupported</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
         <li class='truncate'>Date.prototype.getTimezoneOffset</li>
         <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>Navigator.prototype.connection</li>
         <li class='truncate'>Screen.prototype.colorDepth</li>
         <li class='truncate'>Navigator.prototype.cookieEnabled</li>
         <li class='truncate'>Navigator.prototype.appName</li>
@@ -168,280 +170,232 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;USAT&#x2F;4b41fdbc-6d1b-4667-8290-a7c3b6f0cfcb-SUPERCOMP_Dad_Reunions_Cindy_Reynolds_16x9_Thumbnail_1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;USAT&#x2F;4b41fdbc-6d1b-4667-8290-a7c3b6f0cfcb-SUPERCOMP_Dad_Reunions_Cindy_Reynolds_16x9_Thumbnail_1.jpg</a> (seen on 18 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;10&#x2F;13&#x2F;USAT&#x2F;4012fbf6-6e60-4ea1-82cd-e7fc28a19e84-Penpals_meet_12_years_later_16x9_thumbnail_1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;10&#x2F;13&#x2F;USAT&#x2F;4012fbf6-6e60-4ea1-82cd-e7fc28a19e84-Penpals_meet_12_years_later_16x9_thumbnail_1.jpg</a> (seen on 23 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;USAT&#x2F;2c1da5d9-e69e-4511-aea7-ead2708eedf4-bearstalksfamily_deskthumb.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;USAT&#x2F;2c1da5d9-e69e-4511-aea7-ead2708eedf4-bearstalksfamily_deskthumb.png</a> (seen on 18 websites)</p>
+            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;ef3c263c-abe8-4888-8785-bf8858675795&#x2F;da3a6df7-62f2-4a76-93bb-3574d9dd816b&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;ef3c263c-abe8-4888-8785-bf8858675795&#x2F;da3a6df7-62f2-4a76-93bb-3574d9dd816b&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 21 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;scripts&#x2F;dmp-ads.min.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;scripts&#x2F;dmp-ads.min.js</a> (seen on 14 websites)</p>
+            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;8436481002.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;8436481002.webvtt.m3u8</a> (seen on 21 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;13&#x2F;USAT&#x2F;56bb8801-c397-4a83-a117-007b8e7694b8-220614_KIND_MKND_Amazing_Army_moments_supercomp_16x9_1MIN_Presto_thumbnail_1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;13&#x2F;USAT&#x2F;56bb8801-c397-4a83-a117-007b8e7694b8-220614_KIND_MKND_Amazing_Army_moments_supercomp_16x9_1MIN_Presto_thumbnail_1.jpg</a> (seen on 13 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;authoring&#x2F;video-thumbnails&#x2F;eecc16f4-d868-47c9-a245-5d8855454a74_poster.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;authoring&#x2F;video-thumbnails&#x2F;eecc16f4-d868-47c9-a245-5d8855454a74_poster.jpg</a> (seen on 19 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;5b84c065-0b1c-453b-a7f2-335520dbda48&#x2F;4d94bb74-dedd-4ed0-bb6e-7821ed248d59&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;5b84c065-0b1c-453b-a7f2-335520dbda48&#x2F;4d94bb74-dedd-4ed0-bb6e-7821ed248d59&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 12 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;scripts&#x2F;dmp-ads.min.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;scripts&#x2F;dmp-ads.min.js</a> (seen on 17 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7615354001.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7615354001.webvtt.m3u8</a> (seen on 12 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;USAT&#x2F;f3c00b6b-48a9-40a1-9240-f6f9753edff6-flight_attendant_performance_logo.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;USAT&#x2F;f3c00b6b-48a9-40a1-9240-f6f9753edff6-flight_attendant_performance_logo.jpg</a> (seen on 13 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://api.gannett-cdn.com&#x2F;thorium&#x2F;breaking-news&#x2F;" target="_blank" class="external" rel="noreferrer noopener">api.gannett-cdn.com&#x2F;thorium&#x2F;breaking-news&#x2F;</a> (seen on 11 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1.js</a> (seen on 11 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1.js</a> (seen on 10 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1-feed.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1-feed.js</a> (seen on 11 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;PFTM&#x2F;c5e69895-1bce-4d66-8e39-4cd48fcdc6fd-Photo_Jun_15_11_49_09_AM.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;PFTM&#x2F;c5e69895-1bce-4d66-8e39-4cd48fcdc6fd-Photo_Jun_15_11_49_09_AM.jpg</a> (seen on 9 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;authoring&#x2F;video-thumbnails&#x2F;db0f2080-8925-46d0-bf17-354b7d90590c_poster.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;authoring&#x2F;video-thumbnails&#x2F;db0f2080-8925-46d0-bf17-354b7d90590c_poster.jpg</a> (seen on 10 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1-feed.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1-feed.js</a> (seen on 9 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;10&#x2F;18&#x2F;USAT&#x2F;b46bd303-294f-4f9e-8f27-467117f256dd-Dad_surprised_with_puppy_16x9_Thumbnail.jpeg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;10&#x2F;18&#x2F;USAT&#x2F;b46bd303-294f-4f9e-8f27-467117f256dd-Dad_surprised_with_puppy_16x9_Thumbnail.jpeg</a> (seen on 9 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1-tracking.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1-tracking.js</a> (seen on 9 websites)</p>
         </li>
         <li class='break-all'>
+            <p><a href="http://api.gannett-cdn.com&#x2F;thorium&#x2F;breaking-news&#x2F;" target="_blank" class="external" rel="noreferrer noopener">api.gannett-cdn.com&#x2F;thorium&#x2F;breaking-news&#x2F;</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://www.gannett-cdn.com&#x2F;partner&#x2F;vendor&#x2F;pbjsandwich.min.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;partner&#x2F;vendor&#x2F;pbjsandwich.min.js</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;05&#x2F;02&#x2F;NSHT&#x2F;5a59f834-dd63-4c47-8557-767a6e7cf356-Market_05082022_07.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;05&#x2F;02&#x2F;NSHT&#x2F;5a59f834-dd63-4c47-8557-767a6e7cf356-Market_05082022_07.jpg</a> (seen on 6 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2019&#x2F;08&#x2F;14&#x2F;USAT&#x2F;c4b091d6-a922-4b57-b5a4-60cc854e67fa-VPCSPORTS_PRINCIPALS_BIG_CATCH_DESK_THUMB.00_01_56_23.Still003.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2019&#x2F;08&#x2F;14&#x2F;USAT&#x2F;c4b091d6-a922-4b57-b5a4-60cc854e67fa-VPCSPORTS_PRINCIPALS_BIG_CATCH_DESK_THUMB.00_01_56_23.Still003.jpg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;17&#x2F;USAT&#x2F;416065f5-3abd-485a-92d2-814146f4fe1a-Screen_Shot_2022-06-17_at_8.01.55_AM.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;17&#x2F;USAT&#x2F;416065f5-3abd-485a-92d2-814146f4fe1a-Screen_Shot_2022-06-17_at_8.01.55_AM.png</a> (seen on 5 websites)</p>
+            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;689d50e7-31c5-4929-9ff6-3f49a56e1be4&#x2F;cd94a897-f829-444b-ab64-213096d27577&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;689d50e7-31c5-4929-9ff6-3f49a56e1be4&#x2F;cd94a897-f829-444b-ab64-213096d27577&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;09&#x2F;PNJM&#x2F;0d64b95d-dbe5-4505-a3b5-052a7ea609d2-baeb1a5d-b5e4-4e8d-af7c-9f76d810cc14_thumbnail.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;09&#x2F;PNJM&#x2F;0d64b95d-dbe5-4505-a3b5-052a7ea609d2-baeb1a5d-b5e4-4e8d-af7c-9f76d810cc14_thumbnail.png</a> (seen on 5 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;27&#x2F;USAT&#x2F;09075d3c-c8ed-46e7-989c-2a0e461ab861-16x9_thumb.jpeg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;27&#x2F;USAT&#x2F;09075d3c-c8ed-46e7-989c-2a0e461ab861-16x9_thumb.jpeg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;dcjs&#x2F;prod&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;dcjs&#x2F;prod&#x2F;main.js</a> (seen on 5 websites)</p>
+            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7747084001.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7747084001.webvtt.m3u8</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;wiza-summitt-wireless&#x2F;hm-30333871&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;wiza-summitt-wireless&#x2F;hm-30333871&#x2F;indexa.html</a> (seen on 5 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-11-0.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-11-0.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;wiza-summitt-wireless&#x2F;hm-30333871&#x2F;platin-logo-image-1lw6fu_layout-k8wx8y.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;wiza-summitt-wireless&#x2F;hm-30333871&#x2F;platin-logo-image-1lw6fu_layout-k8wx8y.jpg</a> (seen on 5 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-11-0-tracking.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-11-0-tracking.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;wiza-summitt-wireless&#x2F;hm-30333871&#x2F;hm-email-gift-box-bow-sa_0-image-399erz_layout-k8wx8y.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;wiza-summitt-wireless&#x2F;hm-30333871&#x2F;hm-email-gift-box-bow-sa_0-image-399erz_layout-k8wx8y.jpg</a> (seen on 5 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;dcjs&#x2F;prod&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;dcjs&#x2F;prod&#x2F;main.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;wiza-summitt-wireless&#x2F;hm-30333871&#x2F;wisa-image-y1jcq6_layout-k8wx8y.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;wiza-summitt-wireless&#x2F;hm-30333871&#x2F;wisa-image-y1jcq6_layout-k8wx8y.jpg</a> (seen on 5 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2019&#x2F;07&#x2F;10&#x2F;USAT&#x2F;58f99aa8-42a3-4546-8a19-5292670f92f5-Couple_Rescues_Opossum_From_Drowning_in_-5d266e6314a4d60001bce52d_1_Jul_10_2019_23_03_06_poster.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2019&#x2F;07&#x2F;10&#x2F;USAT&#x2F;58f99aa8-42a3-4546-8a19-5292670f92f5-Couple_Rescues_Opossum_From_Drowning_in_-5d266e6314a4d60001bce52d_1_Jul_10_2019_23_03_06_poster.jpg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;wiza-summitt-wireless&#x2F;hm-30333871&#x2F;hm-email-milan-5-1-save-_0-image-h6t19d_layout-k8wx8y.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;wiza-summitt-wireless&#x2F;hm-30333871&#x2F;hm-email-milan-5-1-save-_0-image-h6t19d_layout-k8wx8y.jpg</a> (seen on 5 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;-mm-&#x2F;b2b05a4ab25f4fca0316459e1c7404c537a89702&#x2F;c&#x3D;0-0-1365-768&#x2F;local&#x2F;-&#x2F;media&#x2F;2022&#x2F;06&#x2F;11&#x2F;USATODAY&#x2F;usatsports&#x2F;imageForEntry28-GSI.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;-mm-&#x2F;b2b05a4ab25f4fca0316459e1c7404c537a89702&#x2F;c&#x3D;0-0-1365-768&#x2F;local&#x2F;-&#x2F;media&#x2F;2022&#x2F;06&#x2F;11&#x2F;USATODAY&#x2F;usatsports&#x2F;imageForEntry28-GSI.jpg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2019&#x2F;09&#x2F;10&#x2F;USAT&#x2F;8d2f3ff5-b679-4182-9dbd-d9e6b950d6ca-VPC_OH_ST_TROOPER_TRUCK_NEAR_MISS_ohio_st_hwy_patrol_via_storyful_WIDE.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2019&#x2F;09&#x2F;10&#x2F;USAT&#x2F;8d2f3ff5-b679-4182-9dbd-d9e6b950d6ca-VPC_OH_ST_TROOPER_TRUCK_NEAR_MISS_ohio_st_hwy_patrol_via_storyful_WIDE.jpg</a> (seen on 4 websites)</p>
+            <p><a href="http://mp4media.gannett-cdn.com&#x2F;28911775001&#x2F;28911775001_6072919831001_6072907050001.mp4" target="_blank" class="external" rel="noreferrer noopener">mp4media.gannett-cdn.com&#x2F;28911775001&#x2F;28911775001_6072919831001_6072907050001.mp4</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;88e016a8-a102-49ec-abf1-5e394b024877&#x2F;9a34f961-f0fd-4c94-9b81-d108e2f02fc3&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;88e016a8-a102-49ec-abf1-5e394b024877&#x2F;9a34f961-f0fd-4c94-9b81-d108e2f02fc3&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 4 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1-script.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-12-1-script.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;09&#x2F;USAT&#x2F;c1a6f79e-94b5-4670-96b1-b0e7106576d1-Courtesy_NBA_16x9.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;09&#x2F;USAT&#x2F;c1a6f79e-94b5-4670-96b1-b0e7106576d1-Courtesy_NBA_16x9.jpg</a> (seen on 4 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;04&#x2F;budzee&#x2F;ne-at220420_134640&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;04&#x2F;budzee&#x2F;ne-at220420_134640&#x2F;indexa.html</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7568233001.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7568233001.webvtt.m3u8</a> (seen on 4 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;04&#x2F;budzee&#x2F;ne-at220420_134640&#x2F;banner-image-2jflcb_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;04&#x2F;budzee&#x2F;ne-at220420_134640&#x2F;banner-image-2jflcb_layout1.png</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;USAT&#x2F;ee8dfbeb-da83-4d4c-bcea-785867fdc05d-XXX_JAN6_COMMITTEE_HEARING_6.9_152.JPG" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;USAT&#x2F;ee8dfbeb-da83-4d4c-bcea-785867fdc05d-XXX_JAN6_COMMITTEE_HEARING_6.9_152.JPG</a> (seen on 4 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;04&#x2F;budzee&#x2F;ne-at220420_134640&#x2F;lets-go-image-twtsvc_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;04&#x2F;budzee&#x2F;ne-at220420_134640&#x2F;lets-go-image-twtsvc_layout1.png</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;01&#x2F;19&#x2F;USAT&#x2F;9acd7aa0-859e-4938-b1f7-52f054ac5eae-Kayaking_cat.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;01&#x2F;19&#x2F;USAT&#x2F;9acd7aa0-859e-4938-b1f7-52f054ac5eae-Kayaking_cat.jpg</a> (seen on 4 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;04&#x2F;budzee&#x2F;ne-at220420_134640&#x2F;cannabies-plant-image-7p6mi6_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;04&#x2F;budzee&#x2F;ne-at220420_134640&#x2F;cannabies-plant-image-7p6mi6_layout1.png</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-11-0.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-11-0.js</a> (seen on 3 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;04&#x2F;budzee&#x2F;ne-at220420_134640&#x2F;ne-budzee_full_color_3d_te-image-9ugwl4_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;04&#x2F;budzee&#x2F;ne-at220420_134640&#x2F;ne-budzee_full_color_3d_te-image-9ugwl4_layout1.png</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-11-0-tracking.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;scripts&#x2F;adapt-2-11-0-tracking.js</a> (seen on 3 websites)</p>
+            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;db0f2080-8925-46d0-bf17-354b7d90590c&#x2F;604d067f-1675-4bbc-bef2-afedf5e13389&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;db0f2080-8925-46d0-bf17-354b7d90590c&#x2F;604d067f-1675-4bbc-bef2-afedf5e13389&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;74a1b320-adf3-451c-8676-dfd02fa416c7&#x2F;399f4bf7-af1a-492b-befd-9ce3278ed13c&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;74a1b320-adf3-451c-8676-dfd02fa416c7&#x2F;399f4bf7-af1a-492b-befd-9ce3278ed13c&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 3 websites)</p>
+            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;10008307002.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;10008307002.webvtt.m3u8</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7638056001.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7638056001.webvtt.m3u8</a> (seen on 3 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;PNAS&#x2F;f00b72d7-0ec3-49bc-a705-559cf7aa3d81-wreck1.JPG" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;PNAS&#x2F;f00b72d7-0ec3-49bc-a705-559cf7aa3d81-wreck1.JPG</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;a80494c1-fe60-4212-8516-10607b0717cb&#x2F;713446bd-5436-40ec-9337-e071873c8537&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;a80494c1-fe60-4212-8516-10607b0717cb&#x2F;713446bd-5436-40ec-9337-e071873c8537&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;28&#x2F;PAPN&#x2F;f9db2a86-cd1c-41ea-82d4-6863104165e7-APC_SECONDARYBuyNothing_0622220050djp.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;28&#x2F;PAPN&#x2F;f9db2a86-cd1c-41ea-82d4-6863104165e7-APC_SECONDARYBuyNothing_0622220050djp.jpg</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;USAT&#x2F;0b2ce3b2-375f-4ebf-914f-2941aed8909c-Screen_Shot_2022-06-15_at_9.31.50_PM.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;USAT&#x2F;0b2ce3b2-375f-4ebf-914f-2941aed8909c-Screen_Shot_2022-06-15_at_9.31.50_PM.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;-mm-&#x2F;a5d8bcf86c0318a5bc36967045697205617236e6&#x2F;c&#x3D;12-0-5301-2988&#x2F;local&#x2F;-&#x2F;media&#x2F;2017&#x2F;07&#x2F;25&#x2F;WIGroup&#x2F;Milwaukee&#x2F;636365864986837056-20170724-083025.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;-mm-&#x2F;a5d8bcf86c0318a5bc36967045697205617236e6&#x2F;c&#x3D;12-0-5301-2988&#x2F;local&#x2F;-&#x2F;media&#x2F;2017&#x2F;07&#x2F;25&#x2F;WIGroup&#x2F;Milwaukee&#x2F;636365864986837056-20170724-083025.jpg</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7642799001.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7642799001.webvtt.m3u8</a> (seen on 2 websites)</p>
+            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;df2d3fd0-d514-462d-81bc-779f37b48d7f&#x2F;4ca0a82b-b25b-486c-886a-ddf0382153c3&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;df2d3fd0-d514-462d-81bc-779f37b48d7f&#x2F;4ca0a82b-b25b-486c-886a-ddf0382153c3&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://mp4media.gannett-cdn.com&#x2F;28911775001&#x2F;28911775001_6084960270001_6084951202001.mp4" target="_blank" class="external" rel="noreferrer noopener">mp4media.gannett-cdn.com&#x2F;28911775001&#x2F;28911775001_6084960270001_6084951202001.mp4</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;USAT&#x2F;7b9d0c6c-336c-4e54-846b-7635086fedb9-20220708_SPCL_ET_648_NMF_RA01.00_01_24_00.Still001.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;USAT&#x2F;7b9d0c6c-336c-4e54-846b-7635086fedb9-20220708_SPCL_ET_648_NMF_RA01.00_01_24_00.Still001.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;10016757002.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;10016757002.webvtt.m3u8</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;10&#x2F;08&#x2F;NAAS&#x2F;c6de976c-5730-45fc-9962-1a0919d1dfec-Tesla_Annual_Meeting.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;10&#x2F;08&#x2F;NAAS&#x2F;c6de976c-5730-45fc-9962-1a0919d1dfec-Tesla_Annual_Meeting.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://downloadmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;36a41975-680d-4f9b-a7cd-54953a1844c6&#x2F;1080p_30fps.mp4" target="_blank" class="external" rel="noreferrer noopener">downloadmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;36a41975-680d-4f9b-a7cd-54953a1844c6&#x2F;1080p_30fps.mp4</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;01&#x2F;08&#x2F;NTPC&#x2F;e147bc50-480b-4fe3-9fe6-53a69f7b26e0-Pueblo_City_Hall_2.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;01&#x2F;08&#x2F;NTPC&#x2F;e147bc50-480b-4fe3-9fe6-53a69f7b26e0-Pueblo_City_Hall_2.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;oak-dermatology&#x2F;dh-1727015&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;oak-dermatology&#x2F;dh-1727015&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;exchange-club-of-napervi&#x2F;dh-1704022&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;exchange-club-of-napervi&#x2F;dh-1704022&#x2F;indexa.html</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;NPOH&#x2F;22a4566d-a939-489f-9fd2-015a946e2333-refuel1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;NPOH&#x2F;22a4566d-a939-489f-9fd2-015a946e2333-refuel1.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;f13e6d69-b3fe-47a7-bd3d-b6b60c43a743&#x2F;0f9a31bd-6166-46f9-a9a9-af38d53c5840&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;f13e6d69-b3fe-47a7-bd3d-b6b60c43a743&#x2F;0f9a31bd-6166-46f9-a9a9-af38d53c5840&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;01&#x2F;NPOH&#x2F;c4562fd2-2616-4c63-ba2c-57c1de308108-220609-N-TT535-003.JPG" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;01&#x2F;NPOH&#x2F;c4562fd2-2616-4c63-ba2c-57c1de308108-220609-N-TT535-003.JPG</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7653750001.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7653750001.webvtt.m3u8</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;05&#x2F;five-college-realtors&#x2F;ne-372143-f&#x2F;logo-image-f5v7s7_default.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;05&#x2F;five-college-realtors&#x2F;ne-372143-f&#x2F;logo-image-f5v7s7_default.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;NTGS&#x2F;568484ac-367e-4620-a2df-6ef04888566f-AP22167619319112.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;NTGS&#x2F;568484ac-367e-4620-a2df-6ef04888566f-AP22167619319112.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://api.gannett-cdn.com&#x2F;thorium&#x2F;popular&#x2F;NGAG&#x2F;10" target="_blank" class="external" rel="noreferrer noopener">api.gannett-cdn.com&#x2F;thorium&#x2F;popular&#x2F;NGAG&#x2F;10</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;05&#x2F;20&#x2F;NGAG&#x2F;6bfb741b-495b-469d-bd2b-63736de97714-SP_SOC_6.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;05&#x2F;20&#x2F;NGAG&#x2F;6bfb741b-495b-469d-bd2b-63736de97714-SP_SOC_6.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;05&#x2F;17&#x2F;NGAG&#x2F;4ee8c33e-686b-4285-9422-2344fcaa8742-EGAS_SOC.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;05&#x2F;17&#x2F;NGAG&#x2F;4ee8c33e-686b-4285-9422-2344fcaa8742-EGAS_SOC.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;03&#x2F;19&#x2F;NGAG&#x2F;8224054b-8218-4516-8fa6-3aa80e44852f-HH-SP-WS22_4.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;03&#x2F;19&#x2F;NGAG&#x2F;8224054b-8218-4516-8fa6-3aa80e44852f-HH-SP-WS22_4.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;02&#x2F;25&#x2F;NGAG&#x2F;52e3df42-355b-4478-824c-8a7866b89361-SC-SP-Soc13.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;02&#x2F;25&#x2F;NGAG&#x2F;52e3df42-355b-4478-824c-8a7866b89361-SC-SP-Soc13.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;05&#x2F;08&#x2F;NGAG&#x2F;1b48afcd-c797-4917-bc36-198ccc829f93-DSC-1007.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;05&#x2F;08&#x2F;NGAG&#x2F;1b48afcd-c797-4917-bc36-198ccc829f93-DSC-1007.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;02&#x2F;NHEJ&#x2F;92922da7-3732-4152-899d-ae5e56771d4d-SPA_Oh_7_Restaurant_1.JPG" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;02&#x2F;NHEJ&#x2F;92922da7-3732-4152-899d-ae5e56771d4d-SPA_Oh_7_Restaurant_1.JPG</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://www.gannett-cdn.com&#x2F;ads&#x2F;images&#x2F;pixels&#x2F;pixel-transparent.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;ads&#x2F;images&#x2F;pixels&#x2F;pixel-transparent.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;ads&#x2F;fonts&#x2F;unify-serif-semibold-italic&#x2F;UnifySerif_SBdIt.woff2" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;ads&#x2F;fonts&#x2F;unify-serif-semibold-italic&#x2F;UnifySerif_SBdIt.woff2</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;ads&#x2F;adsolutions&#x2F;2022&#x2F;05&#x2F;marketing_300x250_act_phase1&#x2F;images&#x2F;campaign-logo.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;ads&#x2F;adsolutions&#x2F;2022&#x2F;05&#x2F;marketing_300x250_act_phase1&#x2F;images&#x2F;campaign-logo.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;ads&#x2F;adsolutions&#x2F;2022&#x2F;05&#x2F;marketing_300x250_act_phase1&#x2F;images&#x2F;endorsement.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;ads&#x2F;adsolutions&#x2F;2022&#x2F;05&#x2F;marketing_300x250_act_phase1&#x2F;images&#x2F;endorsement.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_overwhelmed-2&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_overwhelmed-2&#x2F;indexa.html</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;qq-localiq_oando_v3&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;qq-localiq_oando_v3&#x2F;indexa.html</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;ads&#x2F;scripts&#x2F;video-player&#x2F;player.min.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;ads&#x2F;scripts&#x2F;video-player&#x2F;player.min.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;ads&#x2F;adsolutions&#x2F;2022&#x2F;05&#x2F;marketing_300x250_act_phase1&#x2F;images&#x2F;fallback.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;ads&#x2F;adsolutions&#x2F;2022&#x2F;05&#x2F;marketing_300x250_act_phase1&#x2F;images&#x2F;fallback.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;ads&#x2F;fonts&#x2F;unify-serif-semibold-italic&#x2F;UnifySerif_SBdIt.woff" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;ads&#x2F;fonts&#x2F;unify-serif-semibold-italic&#x2F;UnifySerif_SBdIt.woff</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;ads&#x2F;scripts&#x2F;hls.light.min.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;ads&#x2F;scripts&#x2F;hls.light.min.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;NPOR&#x2F;d479c7a8-66f6-443a-bf5f-9554f0a89c3e-IMG_7526.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;NPOR&#x2F;d479c7a8-66f6-443a-bf5f-9554f0a89c3e-IMG_7526.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;PTAL&#x2F;b5e20f09-0e75-46ec-98d4-aee3614e754d-desantiswoke.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;PTAL&#x2F;b5e20f09-0e75-46ec-98d4-aee3614e754d-desantiswoke.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;NHOS&#x2F;0ebfd4e1-d386-4ae9-acbf-c428e01b0723-3N2A0050.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;NHOS&#x2F;0ebfd4e1-d386-4ae9-acbf-c428e01b0723-3N2A0050.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://media.gannett-cdn.com&#x2F;41823025001&#x2F;41823025001_5644903288001_5644869968001.mp4" target="_blank" class="external" rel="noreferrer noopener">media.gannett-cdn.com&#x2F;41823025001&#x2F;41823025001_5644903288001_5644869968001.mp4</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;PMJS&#x2F;504cb97c-926e-4af5-a275-66ef710dbe6c-Screen_Shot_2022-06-15_at_6.32.57_PM.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;PMJS&#x2F;504cb97c-926e-4af5-a275-66ef710dbe6c-Screen_Shot_2022-06-15_at_6.32.57_PM.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;qq-localiq_oando_v8&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;qq-localiq_oando_v8&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-26-image-98p6x6_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-26-image-98p6x6_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-39ff8f4d99a4171c.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-39ff8f4d99a4171c.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-25-image-x3h8ke_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-25-image-x3h8ke_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;framework-84f2ad681109ba1f.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;framework-84f2ad681109ba1f.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-30-image-6ycrt8_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-30-image-6ycrt8_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;main-bef50b518b880ebb.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;main-bef50b518b880ebb.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-31-image-2shupp_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-31-image-2shupp_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;_app-68ecdff10a8d54a2.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;_app-68ecdff10a8d54a2.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-27-image-88dlxq_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-27-image-88dlxq_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;687-ed477f3f654fad8d.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;687-ed477f3f654fad8d.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-18-image-rtnwmo_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-18-image-rtnwmo_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;386-1d0f705509b96720.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;386-1d0f705509b96720.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-20-image-okvs58_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-20-image-okvs58_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;369-68a45e18876dd01c.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;369-68a45e18876dd01c.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-22-image-9wgm8g_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-22-image-9wgm8g_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;310-ce7a58f3270d4b6b.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;310-ce7a58f3270d4b6b.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-32-image-hxgy6k_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-32-image-hxgy6k_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;uT0Fk565WxtwaP2xl7zyi&#x2F;_buildManifest.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;uT0Fk565WxtwaP2xl7zyi&#x2F;_buildManifest.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-23-image-z4nge2_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-23-image-z4nge2_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;uT0Fk565WxtwaP2xl7zyi&#x2F;_ssgManifest.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;uT0Fk565WxtwaP2xl7zyi&#x2F;_ssgManifest.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-33-image-axhn1v_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-33-image-axhn1v_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;uT0Fk565WxtwaP2xl7zyi&#x2F;_middlewareManifest.js" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;_next&#x2F;static&#x2F;uT0Fk565WxtwaP2xl7zyi&#x2F;_middlewareManifest.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-24-image-oaya5o_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-24-image-oaya5o_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;static&#x2F;fonts&#x2F;UnifySans_W_Rg.woff2" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;static&#x2F;fonts&#x2F;UnifySans_W_Rg.woff2</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-17-image-vr3sd4_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-17-image-vr3sd4_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;static&#x2F;fonts&#x2F;UnifySans_W_Bd.woff2" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;community-hub&#x2F;obits&#x2F;v0.3.8&#x2F;static&#x2F;fonts&#x2F;UnifySans_W_Bd.woff2</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-19-image-0m4pz3_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;asset-19-image-0m4pz3_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://media.gannett-cdn.com&#x2F;41823025001&#x2F;41823025001_5644903288001_5644869968001.mp4" target="_blank" class="external" rel="noreferrer noopener">media.gannett-cdn.com&#x2F;41823025001&#x2F;41823025001_5644903288001_5644869968001.mp4</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;cynkla-image-skpmkq_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_confused-2&#x2F;cynkla-image-skpmkq_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2020&#x2F;09&#x2F;15&#x2F;PMJS&#x2F;dbeb707d-31f0-4752-bc7f-c9a5a29863aa-MJS_BALLOTS_01_wood_BALLOTS.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2020&#x2F;09&#x2F;15&#x2F;PMJS&#x2F;dbeb707d-31f0-4752-bc7f-c9a5a29863aa-MJS_BALLOTS_01_wood_BALLOTS.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;fonts&#x2F;unify-sans-italic.css" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;fonts&#x2F;unify-sans-italic.css</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;07&#x2F;NMNN&#x2F;667192c0-41b7-4c6b-a28c-d0744e340a76-Jerry_Oley_2020.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;07&#x2F;NMNN&#x2F;667192c0-41b7-4c6b-a28c-d0744e340a76-Jerry_Oley_2020.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;fonts&#x2F;unify-sans-semibold.css" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;fonts&#x2F;unify-sans-semibold.css</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;07&#x2F;NMNN&#x2F;a19cd0fc-3217-4345-99a3-c6f82c55e0c2-helicopter.jpeg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;07&#x2F;NMNN&#x2F;a19cd0fc-3217-4345-99a3-c6f82c55e0c2-helicopter.jpeg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;ads&#x2F;fonts&#x2F;unify-sans-semibold&#x2F;UnifySans_SemiBold.woff" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;ads&#x2F;fonts&#x2F;unify-sans-semibold&#x2F;UnifySans_SemiBold.woff</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;04&#x2F;29&#x2F;NMNN&#x2F;bd830a53-e996-44ab-9040-b0d4b1303005-_qYITv1omDJD4CwjmCpkXuxeZ1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2021&#x2F;04&#x2F;29&#x2F;NMNN&#x2F;bd830a53-e996-44ab-9040-b0d4b1303005-_qYITv1omDJD4CwjmCpkXuxeZ1.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;ads&#x2F;fonts&#x2F;unify-sans-italic&#x2F;UnifySans_It.woff" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;ads&#x2F;fonts&#x2F;unify-sans-italic&#x2F;UnifySans_It.woff</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;07&#x2F;monroe-co-community-cred&#x2F;mg-31019701&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;07&#x2F;monroe-co-community-cred&#x2F;mg-31019701&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;NPNR&#x2F;d9d85604-3505-4933-8f1f-eb3e06951c25-Ken_Mills-_SANE_Appreciation.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;15&#x2F;NPNR&#x2F;d9d85604-3505-4933-8f1f-eb3e06951c25-Ken_Mills-_SANE_Appreciation.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2020&#x2F;11&#x2F;16&#x2F;NPRJ&#x2F;a58eab58-b8e0-4b03-83d8-3511597bf1bd-policecar.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2020&#x2F;11&#x2F;16&#x2F;NPRJ&#x2F;a58eab58-b8e0-4b03-83d8-3511597bf1bd-policecar.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;harbor-shores-cleaning-c&#x2F;pn-30546626&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;harbor-shores-cleaning-c&#x2F;pn-30546626&#x2F;indexa.html</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;07&#x2F;peaden-air_heatingrober&#x2F;nf-30994346&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;07&#x2F;peaden-air_heatingrober&#x2F;nf-30994346&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;harbor-shores-cleaning-c&#x2F;pn-30546626&#x2F;pn-cc_northmichigan_pro_31-image-xvmht0_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;harbor-shores-cleaning-c&#x2F;pn-30546626&#x2F;pn-cc_northmichigan_pro_31-image-xvmht0_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;0309347d-b15e-467d-8ef3-5eda20b72394&#x2F;9eaf5e97-4279-4942-bf3d-61ba0d85cb49&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;0309347d-b15e-467d-8ef3-5eda20b72394&#x2F;9eaf5e97-4279-4942-bf3d-61ba0d85cb49&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;harbor-shores-cleaning-c&#x2F;pn-30546626&#x2F;harbor-shores-roof-logo-image-o9nsgs_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;harbor-shores-cleaning-c&#x2F;pn-30546626&#x2F;harbor-shores-roof-logo-image-o9nsgs_layout1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;8505247002.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;8505247002.webvtt.m3u8</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;harbor-shores-cleaning-c&#x2F;pn-30546626&#x2F;depositphotos_36646291_l-2015-image-6waeqj_layout1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;harbor-shores-cleaning-c&#x2F;pn-30546626&#x2F;depositphotos_36646291_l-2015-image-6waeqj_layout1.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;27&#x2F;USAT&#x2F;a6c86cac-9edf-41bf-904b-e86ca9daa3cd-COVID_Pediatric_vaccines_04.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;27&#x2F;USAT&#x2F;a6c86cac-9edf-41bf-904b-e86ca9daa3cd-COVID_Pediatric_vaccines_04.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;c827fdf0-5ae1-4a42-91d4-3c3f90ed507d&#x2F;223de819-092b-4c67-80e2-3d02a2c4a2fd&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;c827fdf0-5ae1-4a42-91d4-3c3f90ed507d&#x2F;223de819-092b-4c67-80e2-3d02a2c4a2fd&#x2F;1080p_30fps,720p_30fps,480p_30fps,master.m3u8</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;09&#x2F;NPNR&#x2F;d0bb0732-f6bd-4edf-a9db-f79aff92be8e-Screenshot_53.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;09&#x2F;NPNR&#x2F;d0bb0732-f6bd-4edf-a9db-f79aff92be8e-Screenshot_53.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;USAT&#x2F;c1aaebad-c1f1-4284-8edc-14c4b770ae7d-20220616_SPCL_ET_640_ANTONIO_FINAL.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;USAT&#x2F;c1aaebad-c1f1-4284-8edc-14c4b770ae7d-20220616_SPCL_ET_640_ANTONIO_FINAL.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;al-media-strategy&#x2F;hm-30778424&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;al-media-strategy&#x2F;hm-30778424&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7650600001.webvtt.m3u8" target="_blank" class="external" rel="noreferrer noopener">hlsmedia.gannett-cdn.com&#x2F;_captions&#x2F;7650600001.webvtt.m3u8</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;al-media-strategy&#x2F;hm-30778424_02&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;al-media-strategy&#x2F;hm-30778424_02&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;06&#x2F;PVCS&#x2F;77bea3c4-085b-45ee-beae-7ccb0c33ef0f-a6e10fbe-5fe8-43b7-ac62-a650d8203254-california-election-results.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;06&#x2F;PVCS&#x2F;77bea3c4-085b-45ee-beae-7ccb0c33ef0f-a6e10fbe-5fe8-43b7-ac62-a650d8203254-california-election-results.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;qq-localiq_oando_v3&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;qq-localiq_oando_v3&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;14&#x2F;NTHR&#x2F;b763ca6a-a9c7-4850-a726-cc5b6c0f6bc3-ts061422manhattanville01.JPG" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;14&#x2F;NTHR&#x2F;b763ca6a-a9c7-4850-a726-cc5b6c0f6bc3-ts061422manhattanville01.JPG</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;USAT&#x2F;32f8d17d-106f-4c8b-8515-b112d77df552-bullet_bug.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;USAT&#x2F;32f8d17d-106f-4c8b-8515-b112d77df552-bullet_bug.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://downloadmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;1979ad50-a84a-4a22-a1e5-d6ec3c4800f3&#x2F;1080p_30fps.mp4" target="_blank" class="external" rel="noreferrer noopener">downloadmedia.gannett-cdn.com&#x2F;authoring&#x2F;video-renditions&#x2F;1979ad50-a84a-4a22-a1e5-d6ec3c4800f3&#x2F;1080p_30fps.mp4</a> (seen on 2 websites)</p>
@@ -459,22 +413,28 @@
             <p><a href="http://www.gannett-cdn.com&#x2F;gannett-web&#x2F;apps&#x2F;teal&#x2F;dist&#x2F;tealplayer-d367731d.css" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gannett-web&#x2F;apps&#x2F;teal&#x2F;dist&#x2F;tealplayer-d367731d.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;NOBD&#x2F;039e2cd0-5de1-491c-9d25-0a734f901757-Harbor_Point_1933.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;06&#x2F;16&#x2F;NOBD&#x2F;039e2cd0-5de1-491c-9d25-0a734f901757-Harbor_Point_1933.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://media.gannett-cdn.com&#x2F;41823025001&#x2F;41823025001_5694797605001_5694786069001.mp4" target="_blank" class="external" rel="noreferrer noopener">media.gannett-cdn.com&#x2F;41823025001&#x2F;41823025001_5694797605001_5694786069001.mp4</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;02&#x2F;wilson-tire-service&#x2F;ne-wilson&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;02&#x2F;wilson-tire-service&#x2F;ne-wilson&#x2F;indexa.html</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;07&#x2F;meridian-services-corp&#x2F;sp-gin0007624-01&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;07&#x2F;meridian-services-corp&#x2F;sp-gin0007624-01&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;02&#x2F;wilson-tire-service&#x2F;ne-wilson&#x2F;ne-oil_change-image-pmg9u7_default.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;02&#x2F;wilson-tire-service&#x2F;ne-wilson&#x2F;ne-oil_change-image-pmg9u7_default.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;NTTN&#x2F;a49e2817-d855-4f8f-a3ac-35ad943649a7-hurricane_creek_park.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;08&#x2F;NTTN&#x2F;a49e2817-d855-4f8f-a3ac-35ad943649a7-hurricane_creek_park.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;02&#x2F;wilson-tire-service&#x2F;ne-wilson&#x2F;ne-brakepads-image-cg69qt_default.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;02&#x2F;wilson-tire-service&#x2F;ne-wilson&#x2F;ne-brakepads-image-cg69qt_default.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;09&#x2F;NOBD&#x2F;7b0c0e93-4b28-44a2-8d38-5e79e4e255d2-IMG_0100.JPG" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;presto&#x2F;2022&#x2F;07&#x2F;09&#x2F;NOBD&#x2F;7b0c0e93-4b28-44a2-8d38-5e79e4e255d2-IMG_0100.JPG</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;02&#x2F;wilson-tire-service&#x2F;ne-wilson&#x2F;ne-exhaust-image-16v8a2_vertical-narrow.jpg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;02&#x2F;wilson-tire-service&#x2F;ne-wilson&#x2F;ne-exhaust-image-16v8a2_vertical-narrow.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;vance-heating-air-cond&#x2F;yh-33654&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;vance-heating-air-cond&#x2F;yh-33654&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;02&#x2F;wilson-tire-service&#x2F;ne-wilson&#x2F;logo-image-xwm7yz_default.svg" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;02&#x2F;wilson-tire-service&#x2F;ne-wilson&#x2F;logo-image-xwm7yz_default.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;vance-heating-air-cond&#x2F;yh-33654&#x2F;yh-vance-image-qslbk6_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;vance-heating-air-cond&#x2F;yh-33654&#x2F;yh-vance-image-qslbk6_layout1.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;vance-heating-air-cond&#x2F;yh-33654&#x2F;yh-readerchoice_vote2022-image-7kyr2k_layout1.png" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;06&#x2F;vance-heating-air-cond&#x2F;yh-33654&#x2F;yh-readerchoice_vote2022-image-7kyr2k_layout1.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_overwhelmed-2&#x2F;indexa.html" target="_blank" class="external" rel="noreferrer noopener">www.gannett-cdn.com&#x2F;gps&#x2F;applications&#x2F;adapt&#x2F;published&#x2F;2022&#x2F;03&#x2F;localiq&#x2F;tz-b2b1072_overwhelmed-2&#x2F;indexa.html</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -487,46 +447,31 @@
             <a href="http://aberdeennews.com" target="_blank" class="external">aberdeennews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.hutchnews.com" target="_blank" class="external">www.hutchnews.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.gastongazette.com" target="_blank" class="external">www.gastongazette.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.gosanangelo.com" target="_blank" class="external">www.gosanangelo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.reporternews.com" target="_blank" class="external">www.reporternews.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://amarillo.com" target="_blank" class="external">amarillo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.augustachronicle.com" target="_blank" class="external">www.augustachronicle.com</a>
+            <a href="http://www.amarillo.com" target="_blank" class="external">www.amarillo.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.columbiatribune.com" target="_blank" class="external">www.columbiatribune.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.lubbockonline.com" target="_blank" class="external">www.lubbockonline.com</a>
+            <a href="http://www.fayobserver.com" target="_blank" class="external">www.fayobserver.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.patriotledger.com" target="_blank" class="external">www.patriotledger.com</a>
+            <a href="http://www.fosters.com" target="_blank" class="external">www.fosters.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.providencejournal.com" target="_blank" class="external">www.providencejournal.com</a>
+            <a href="http://www.gosanangelo.com" target="_blank" class="external">www.gosanangelo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.sj-r.com" target="_blank" class="external">www.sj-r.com</a>
+            <a href="http://www.hutchnews.com" target="_blank" class="external">www.hutchnews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.southbendtribune.com" target="_blank" class="external">www.southbendtribune.com</a>
+            <a href="http://www.newportri.com" target="_blank" class="external">www.newportri.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.statesman.com" target="_blank" class="external">www.statesman.com</a>
+            <a href="http://www.onlineathens.com" target="_blank" class="external">www.onlineathens.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.telegram.com" target="_blank" class="external">www.telegram.com</a>
+            <a href="http://www.reporternews.com" target="_blank" class="external">www.reporternews.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.thestarpress.com" target="_blank" class="external">www.thestarpress.com</a>
@@ -535,82 +480,79 @@
             <a href="http://www.thetimesnews.com" target="_blank" class="external">www.thetimesnews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.chieftain.com" target="_blank" class="external">www.chieftain.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.fayobserver.com" target="_blank" class="external">www.fayobserver.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.fdlreporter.com" target="_blank" class="external">www.fdlreporter.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.fosters.com" target="_blank" class="external">www.fosters.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.hattiesburgamerican.com" target="_blank" class="external">www.hattiesburgamerican.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.houmatoday.com" target="_blank" class="external">www.houmatoday.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.htrnews.com" target="_blank" class="external">www.htrnews.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.newsherald.com" target="_blank" class="external">www.newsherald.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.njherald.com" target="_blank" class="external">www.njherald.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.onlineathens.com" target="_blank" class="external">www.onlineathens.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.poconorecord.com" target="_blank" class="external">www.poconorecord.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.rrstar.com" target="_blank" class="external">www.rrstar.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.tuscaloosanews.com" target="_blank" class="external">www.tuscaloosanews.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.uticaod.com" target="_blank" class="external">www.uticaod.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://augustachronicle.com" target="_blank" class="external">augustachronicle.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.recordonline.com" target="_blank" class="external">www.recordonline.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.vvdailypress.com" target="_blank" class="external">www.vvdailypress.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.capecodtimes.com" target="_blank" class="external">www.capecodtimes.com</a>
+            <a href="http://www.timesrecordnews.com" target="_blank" class="external">www.timesrecordnews.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.cjonline.com" target="_blank" class="external">www.cjonline.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.seacoastonline.com" target="_blank" class="external">www.seacoastonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.augustachronicle.com" target="_blank" class="external">www.augustachronicle.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.southcoasttoday.com" target="_blank" class="external">www.southcoasttoday.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.telegram.com" target="_blank" class="external">www.telegram.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lubbockonline.com" target="_blank" class="external">www.lubbockonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.southbendtribune.com" target="_blank" class="external">www.southbendtribune.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.thenorthwestern.com" target="_blank" class="external">www.thenorthwestern.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.providencejournal.com" target="_blank" class="external">www.providencejournal.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.statesman.com" target="_blank" class="external">www.statesman.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sj-r.com" target="_blank" class="external">www.sj-r.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.jsonline.com" target="_blank" class="external">www.jsonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.patriotledger.com" target="_blank" class="external">www.patriotledger.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.chieftain.com" target="_blank" class="external">www.chieftain.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.htrnews.com" target="_blank" class="external">www.htrnews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sheboyganpress.com" target="_blank" class="external">www.sheboyganpress.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://amarillo.com" target="_blank" class="external">amarillo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://augustachronicle.com" target="_blank" class="external">augustachronicle.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.capecodtimes.com" target="_blank" class="external">www.capecodtimes.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.goupstate.com" target="_blank" class="external">www.goupstate.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.journalstandard.com" target="_blank" class="external">www.journalstandard.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.pjstar.com" target="_blank" class="external">www.pjstar.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.recordnet.com" target="_blank" class="external">www.recordnet.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.registerguard.com" target="_blank" class="external">www.registerguard.com</a>
+            <a href="http://www.rrstar.com" target="_blank" class="external">www.rrstar.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.savannahnow.com" target="_blank" class="external">www.savannahnow.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.seacoastonline.com" target="_blank" class="external">www.seacoastonline.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.southcoasttoday.com" target="_blank" class="external">www.southcoasttoday.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.starnewsonline.com" target="_blank" class="external">www.starnewsonline.com</a>
@@ -637,7 +579,22 @@
             <a href="http://www.heraldmailmedia.com" target="_blank" class="external">www.heraldmailmedia.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.njherald.com" target="_blank" class="external">www.njherald.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.poconorecord.com" target="_blank" class="external">www.poconorecord.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.recordonline.com" target="_blank" class="external">www.recordonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.stargazette.com" target="_blank" class="external">www.stargazette.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.timesonline.com" target="_blank" class="external">www.timesonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.uticaod.com" target="_blank" class="external">www.uticaod.com</a>
         </li>
         <li class='truncate'>
             <a href="http://cantonrep.com" target="_blank" class="external">cantonrep.com</a>
@@ -652,19 +609,31 @@
             <a href="http://capecodtimes.com" target="_blank" class="external">capecodtimes.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://chieftain.com" target="_blank" class="external">chieftain.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://dailyherald.com" target="_blank" class="external">dailyherald.com</a>
+            <a href="http://clickorlando.com" target="_blank" class="external">clickorlando.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.dailyherald.com" target="_blank" class="external">www.dailyherald.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.gazettenet.com" target="_blank" class="external">www.gazettenet.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.monroenews.com" target="_blank" class="external">www.monroenews.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.newsday.com" target="_blank" class="external">www.newsday.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.newsherald.com" target="_blank" class="external">www.newsherald.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.petoskeynews.com" target="_blank" class="external">www.petoskeynews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.recorder.com" target="_blank" class="external">www.recorder.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tuscaloosanews.com" target="_blank" class="external">www.tuscaloosanews.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.union-bulletin.com" target="_blank" class="external">www.union-bulletin.com</a>
@@ -679,10 +648,10 @@
             <a href="http://www.yorkdispatch.com" target="_blank" class="external">www.yorkdispatch.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://fdlreporter.com" target="_blank" class="external">fdlreporter.com</a>
+            <a href="http://dailyherald.com" target="_blank" class="external">dailyherald.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.palmbeachpost.com" target="_blank" class="external">www.palmbeachpost.com</a>
+            <a href="http://fosters.com" target="_blank" class="external">fosters.com</a>
         </li>
         <li class='truncate'>
             <a href="http://gainesville.com" target="_blank" class="external">gainesville.com</a>
@@ -700,19 +669,25 @@
             <a href="http://www.ocala.com" target="_blank" class="external">www.ocala.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.palmbeachpost.com" target="_blank" class="external">www.palmbeachpost.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.staugustine.com" target="_blank" class="external">www.staugustine.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.theledger.com" target="_blank" class="external">www.theledger.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://gastongazette.com" target="_blank" class="external">gastongazette.com</a>
+            <a href="http://gazettenet.com" target="_blank" class="external">gazettenet.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.legacy.com" target="_blank" class="external">www.legacy.com</a>
+            <a href="http://goupstate.com" target="_blank" class="external">goupstate.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://goerie.com" target="_blank" class="external">goerie.com</a>
+            <a href="http://www.oklahoman.com" target="_blank" class="external">www.oklahoman.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://heraldmailmedia.com" target="_blank" class="external">heraldmailmedia.com</a>
         </li>
         <li class='truncate'>
             <a href="http://heraldtribune.com" target="_blank" class="external">heraldtribune.com</a>
@@ -724,31 +699,40 @@
             <a href="http://www.hollandsentinel.com" target="_blank" class="external">www.hollandsentinel.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://houmatoday.com" target="_blank" class="external">houmatoday.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://htrnews.com" target="_blank" class="external">htrnews.com</a>
         </li>
         <li class='truncate'>
             <a href="http://jsonline.com" target="_blank" class="external">jsonline.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.jsonline.com" target="_blank" class="external">www.jsonline.com</a>
+            <a href="http://monroenews.com" target="_blank" class="external">monroenews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://monroenews.com" target="_blank" class="external">monroenews.com</a>
+            <a href="http://newportri.com" target="_blank" class="external">newportri.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://newsherald.com" target="_blank" class="external">newsherald.com</a>
         </li>
         <li class='truncate'>
             <a href="http://njherald.com" target="_blank" class="external">njherald.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://ocala.com" target="_blank" class="external">ocala.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://petoskeynews.com" target="_blank" class="external">petoskeynews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://poconorecord.com" target="_blank" class="external">poconorecord.com</a>
+            <a href="http://pjstar.com" target="_blank" class="external">pjstar.com</a>
         </li>
         <li class='truncate'>
             <a href="http://recordnet.com" target="_blank" class="external">recordnet.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://recordonline.com" target="_blank" class="external">recordonline.com</a>
+            <a href="http://www.registerguard.com" target="_blank" class="external">www.registerguard.com</a>
         </li>
         <li class='truncate'>
             <a href="http://reporternews.com" target="_blank" class="external">reporternews.com</a>
@@ -760,10 +744,22 @@
             <a href="http://www.reviewed.com" target="_blank" class="external">www.reviewed.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://sheboyganpress.com" target="_blank" class="external">sheboyganpress.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thestarpress.com" target="_blank" class="external">thestarpress.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tuscaloosanews.com" target="_blank" class="external">tuscaloosanews.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://uticaod.com" target="_blank" class="external">uticaod.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://vnews.com" target="_blank" class="external">vnews.com</a>
+            <a href="http://yakimaherald.com" target="_blank" class="external">yakimaherald.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://yorkdispatch.com" target="_blank" class="external">yorkdispatch.com</a>
         </li>
     </ul>
 </div>

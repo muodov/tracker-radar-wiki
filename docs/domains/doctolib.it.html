@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - doctolib.it</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "doctolib.it",
+        history: [{"date":"us-opt-in","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/doctolib.it.ico' width="32" height="32" class='inline-block' /> doctolib.it</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;19862<small>/27720</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                    <span>Fetch</span>,
+                    <span>Preflight</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/doctolib.it.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>assets</span>, 
+                    <span>www</span>, 
+                    <span>api</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;fonts&#x2F;family-roboto-300-400-500-700-montserrat-400-500-700-merriweather-300-400-700.css" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;fonts&#x2F;family-roboto-300-400-500-700-montserrat-400-500-700-merriweather-300-400-700.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;19797-470b67d0.css" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;19797-470b67d0.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;47479-6540f50d.css" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;47479-6540f50d.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;78478-31d6cfe0.css" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;78478-31d6cfe0.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;21977-e5a4da6a.css" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;21977-e5a4da6a.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;67095-a1abea50.css" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;67095-a1abea50.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;13932-649ffec3.css" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;13932-649ffec3.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;patient-desktop-e008cb9b.css" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;css&#x2F;patient-desktop-e008cb9b.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.doctolib.it&#x2F;js&#x2F;sentry.js" target="_blank" class="external" rel="noreferrer noopener">www.doctolib.it&#x2F;js&#x2F;sentry.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;img&#x2F;cms&#x2F;logo-blue.png" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;img&#x2F;cms&#x2F;logo-blue.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;img&#x2F;homepage&#x2F;hp-app-store-badge-it.png" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;img&#x2F;homepage&#x2F;hp-app-store-badge-it.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;img&#x2F;homepage&#x2F;hp-google-play-badge-it.png" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;img&#x2F;homepage&#x2F;hp-google-play-badge-it.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;19755-59bacf94f6fefdd1a470.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;19755-59bacf94f6fefdd1a470.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;24186-4f1bc3c9e498bc956841.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;24186-4f1bc3c9e498bc956841.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;95200-478d295d14a84c031634.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;95200-478d295d14a84c031634.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;94785-458a52216c37acaff2c6.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;94785-458a52216c37acaff2c6.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;42693-43531665cbff49c862a3.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;42693-43531665cbff49c862a3.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;77130-25e52d593c99d17066a6.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;77130-25e52d593c99d17066a6.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;96586-ba3b41a343d6d54ab08e.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;96586-ba3b41a343d6d54ab08e.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;86013-3b3ed53bde3eb347c1b0.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;86013-3b3ed53bde3eb347c1b0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;8575-624e32795a2b907c9b04.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;8575-624e32795a2b907c9b04.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;9354-32976d320fab15da30c4.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;9354-32976d320fab15da30c4.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;48774-76cd33a5e7a79a63636b.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;48774-76cd33a5e7a79a63636b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;80376-4d99b9000792ea87c775.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;80376-4d99b9000792ea87c775.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;40417-edbda435a439bc9a31be.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;40417-edbda435a439bc9a31be.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;43919-31ea325d42a53355680f.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;43919-31ea325d42a53355680f.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;78397-b80a23b3e224ef766f4b.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;78397-b80a23b3e224ef766f4b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;58054-6a1ceaedf8c36ee061c5.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;58054-6a1ceaedf8c36ee061c5.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;75824-4e03c31c6541afe514e0.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;75824-4e03c31c6541afe514e0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;61425-d3b574a591427979a8d1.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;61425-d3b574a591427979a8d1.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;87580-2c79f45109c281302e51.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;87580-2c79f45109c281302e51.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;88099-f309f98ac854c21001bb.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;88099-f309f98ac854c21001bb.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;48999-7efa0bcbbd87eee76650.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;48999-7efa0bcbbd87eee76650.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;33774-cd7eae41f7ebb73decb1.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;33774-cd7eae41f7ebb73decb1.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;53379-57498f33e6242379ebfe.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;53379-57498f33e6242379ebfe.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;47479-5043423a8ac668946c59.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;47479-5043423a8ac668946c59.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;30993-c3d80c7dcfca721fcd06.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;30993-c3d80c7dcfca721fcd06.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;2601-59ab499a884651a08174.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;2601-59ab499a884651a08174.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;81345-a433c78f4427d0ab140d.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;81345-a433c78f4427d0ab140d.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;57814-fbb05aa6dc72dbc1cdda.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;57814-fbb05aa6dc72dbc1cdda.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;96389-fcc8587252412031a0b5.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;96389-fcc8587252412031a0b5.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;67095-e18c10349ac3234b3b94.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;67095-e18c10349ac3234b3b94.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;1733-becf8cc2249a0319be75.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;1733-becf8cc2249a0319be75.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;patient-desktop-9724b8f76876f440426c.js" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;patient-desktop-9724b8f76876f440426c.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;fonts&#x2F;font-roboto-bold.ttf" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;fonts&#x2F;font-roboto-bold.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;fonts&#x2F;font-roboto-regular.ttf" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;fonts&#x2F;font-roboto-regular.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;fonts&#x2F;font-montserrat-bold.ttf" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;fonts&#x2F;font-montserrat-bold.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.doctolib.it&#x2F;webpack&#x2F;js&#x2F;37054-da5252a7a7c420304aa4.chunk.js" target="_blank" class="external" rel="noreferrer noopener">www.doctolib.it&#x2F;webpack&#x2F;js&#x2F;37054-da5252a7a7c420304aa4.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.doctolib.it&#x2F;webpack&#x2F;60587-3a5ad957410e2b71e663.js" target="_blank" class="external" rel="noreferrer noopener">www.doctolib.it&#x2F;webpack&#x2F;60587-3a5ad957410e2b71e663.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.doctolib.it&#x2F;webpack&#x2F;js&#x2F;99243-31666533c42a9e8713bf.chunk.js" target="_blank" class="external" rel="noreferrer noopener">www.doctolib.it&#x2F;webpack&#x2F;js&#x2F;99243-31666533c42a9e8713bf.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.doctolib.it&#x2F;webpack&#x2F;js&#x2F;99458-22163fab981193ca3263.chunk.js" target="_blank" class="external" rel="noreferrer noopener">www.doctolib.it&#x2F;webpack&#x2F;js&#x2F;99458-22163fab981193ca3263.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.doctolib.it&#x2F;webpack&#x2F;js&#x2F;60735-0aa1257ad567e9b42baf.chunk.js" target="_blank" class="external" rel="noreferrer noopener">www.doctolib.it&#x2F;webpack&#x2F;js&#x2F;60735-0aa1257ad567e9b42baf.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.doctolib.it&#x2F;webpack&#x2F;css&#x2F;53515-a5c9bcbf.css" target="_blank" class="external" rel="noreferrer noopener">www.doctolib.it&#x2F;webpack&#x2F;css&#x2F;53515-a5c9bcbf.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.doctolib.it&#x2F;webpack&#x2F;js&#x2F;53515-fe3a3af67458fd1e9577.chunk.js" target="_blank" class="external" rel="noreferrer noopener">www.doctolib.it&#x2F;webpack&#x2F;js&#x2F;53515-fe3a3af67458fd1e9577.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;15a717fa83fcca2c8098.svg" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;15a717fa83fcca2c8098.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.doctolib.it&#x2F;patient_requests&#x2F;patient_app&#x2F;unseen_requests_count" target="_blank" class="external" rel="noreferrer noopener">www.doctolib.it&#x2F;patient_requests&#x2F;patient_app&#x2F;unseen_requests_count</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.doctolib.it&#x2F;nr_insert_Kawifienaero0shee8gahjie6rie0aeghik3eiy9hoo2aebeegohb0wubooR7com9xohfoophiihequing7peephoog1waiQuaoxee4johPh6ti8tie7Ae8jan8geevu" target="_blank" class="external" rel="noreferrer noopener">api.doctolib.it&#x2F;nr_insert_Kawifienaero0shee8gahjie6rie0aeghik3eiy9hoo2aebeegohb0wubooR7com9xohfoophiihequing7peephoog1waiQuaoxee4johPh6ti8tie7Ae8jan8geevu</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.doctolib.it&#x2F;nr_insert_Kawifienaero0shee8gahjie6rie0aeghik3eiy9hoo2aebeegohb0wubooR7com9xohfoophiihequing7peephoog1waiQuaoxee4johPh6ti8tie7Ae8jan8geevu" target="_blank" class="external" rel="noreferrer noopener">api.doctolib.it&#x2F;nr_insert_Kawifienaero0shee8gahjie6rie0aeghik3eiy9hoo2aebeegohb0wubooR7com9xohfoophiihequing7peephoog1waiQuaoxee4johPh6ti8tie7Ae8jan8geevu</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;webpack&#x2F;6e4b7ba036197d2de238.svg" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;webpack&#x2F;6e4b7ba036197d2de238.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;fonts&#x2F;font-roboto-light.ttf" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;fonts&#x2F;font-roboto-light.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.doctolib.it&#x2F;webpack&#x2F;b69a8f22b5bf7fa8d5db.svg" target="_blank" class="external" rel="noreferrer noopener">www.doctolib.it&#x2F;webpack&#x2F;b69a8f22b5bf7fa8d5db.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.doctolib.it&#x2F;fonts&#x2F;font-roboto-medium.ttf" target="_blank" class="external" rel="noreferrer noopener">assets.doctolib.it&#x2F;fonts&#x2F;font-roboto-medium.ttf</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://dottori.it" target="_blank" class="external">dottori.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dottori.it" target="_blank" class="external">www.dottori.it</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

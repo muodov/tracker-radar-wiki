@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "go.com",
-        history: [{"date":"2020.02","prevalence":0.000254,"sites":11,"fingerprinting":2,"cookies":0.000254},{"date":"2020.03","prevalence":0.000325,"sites":16,"fingerprinting":2,"cookies":0.000325},{"date":"2020.04","prevalence":0.000257,"sites":12,"fingerprinting":2,"cookies":0.000257},{"date":"2020.05","prevalence":0.000257,"sites":18,"fingerprinting":2,"cookies":0.000242},{"date":"2020.06","prevalence":0.000233,"sites":17,"fingerprinting":2,"cookies":0.000219},{"date":"2020.07","prevalence":0.000097,"sites":7,"fingerprinting":2,"cookies":0.000097},{"date":"2020.08","prevalence":0.00011,"sites":15,"fingerprinting":2,"cookies":0.0000882},{"date":"2020.09","prevalence":0.000129,"sites":17,"fingerprinting":2,"cookies":0.000114},{"date":"2020.10","prevalence":0.000106,"sites":14,"fingerprinting":2,"cookies":0.0000835},{"date":"2020.11","prevalence":0.000114,"sites":15,"fingerprinting":2,"cookies":0.000076},{"date":"2020.12","prevalence":0.0000456,"sites":6,"fingerprinting":2,"cookies":0.000038},{"date":"2021.01","prevalence":0.0000917,"sites":12,"fingerprinting":2,"cookies":0.0000688},{"date":"2021.02","prevalence":0.000104,"sites":15,"fingerprinting":2,"cookies":0.0000695},{"date":"2021.03","prevalence":0.000111,"sites":16,"fingerprinting":2,"cookies":0.0000693},{"date":"2021.04","prevalence":0.0000762,"sites":11,"fingerprinting":2,"cookies":0.0000554},{"date":"2021.05","prevalence":0.0000345,"sites":5,"fingerprinting":2,"cookies":0.0000207},{"date":"2021.06","prevalence":0.0000274,"sites":4,"fingerprinting":2,"cookies":0.0000206},{"date":"2021.07","prevalence":0.0000764,"sites":11,"fingerprinting":2,"cookies":0.0000555},{"date":"2021.08","prevalence":0.0000555,"sites":8,"fingerprinting":2,"cookies":0.0000486},{"date":"2021.09","prevalence":0.0000414,"sites":6,"fingerprinting":2,"cookies":0.0000276},{"date":"2021.10","prevalence":0.0000759,"sites":11,"fingerprinting":2,"cookies":0.000069},{"date":"2021.11","prevalence":0.000069,"sites":10,"fingerprinting":2,"cookies":0.0000621},{"date":"2021.12","prevalence":0.0000691,"sites":10,"fingerprinting":2,"cookies":0.0000484},{"date":"2022.01","prevalence":0.0000623,"sites":9,"fingerprinting":2,"cookies":0.0000485},{"date":"2022.02","prevalence":0.0000885,"sites":13,"fingerprinting":2,"cookies":0.0000681},{"date":"2022.03","prevalence":0.000102,"sites":15,"fingerprinting":2,"cookies":0.0000819},{"date":"2022.04","prevalence":0.0000749,"sites":11,"fingerprinting":2,"cookies":0.0000545},{"date":"2022.05","prevalence":0.0000887,"sites":13,"fingerprinting":2,"cookies":0.0000682},{"date":"max/june-2022","prevalence":0.000061,"sites":9,"fingerprinting":2,"cookies":0.0000475}]
+        history: [{"date":"main","prevalence":0.000061,"sites":9,"fingerprinting":2,"cookies":0.0000475},{"date":"us-opt-in","prevalence":0.0000543,"sites":8,"fingerprinting":2,"cookies":0.0000543}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;6874<small>/27203</small>
+                    <strong>Rank:</strong> &#35;7514<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (9 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (8 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.01&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -91,19 +91,20 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
-                    <span>Document</span>,
                     <span>XHR</span>,
+                    <span>Document</span>,
                     <span>Preflight</span>,
+                    <span>Other</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/go.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>cdn.registerdisney</span>, 
+                    <span>sw88</span>, 
                     <span>cdn.unid</span>, 
                     <span>unid</span>, 
                     <span>go4.disney</span>, 
                     <span>analytics.disney</span>, 
-                    <span>prod.gatekeeper.us-abc.symphony.edgedatg</span>, 
                 </li>
             </ul>
         </div>
@@ -132,14 +133,25 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Screen.prototype.pixelDepth</li>
+        <li class='truncate'>Screen.prototype.orientation</li>
         <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getExtension</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getParameter</li>
         <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
         <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
         <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
         <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>Navigator.prototype.javaEnabled</li>
         <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Document.cookie setter</li>
-        <li class='truncate'>window.name</li>
         <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Navigator.prototype.appVersion</li>
         <li class='truncate'>Date.prototype.getTime</li>
@@ -164,7 +176,13 @@
             <p><a href="http://unid.go.com&#x2F;v3&#x2F;hit" target="_blank" class="external" rel="noreferrer noopener">unid.go.com&#x2F;v3&#x2F;hit</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
+            <p><a href="http://unid.go.com&#x2F;csp" target="_blank" class="external" rel="noreferrer noopener">unid.go.com&#x2F;csp</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://cdn.registerdisney.go.com&#x2F;v4&#x2F;OneID.js" target="_blank" class="external" rel="noreferrer noopener">cdn.registerdisney.go.com&#x2F;v4&#x2F;OneID.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sw88.go.com&#x2F;id" target="_blank" class="external" rel="noreferrer noopener">sw88.go.com&#x2F;id</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://go4.disney.go.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">go4.disney.go.com&#x2F;</a> (seen on 2 websites)</p>
@@ -191,22 +209,25 @@
             <p><a href="http://go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RC6a6c7432965244359cbd99595d059eb6-source.min.js" target="_blank" class="external" rel="noreferrer noopener">go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RC6a6c7432965244359cbd99595d059eb6-source.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.registerdisney.go.com&#x2F;v2&#x2F;outer&#x2F;DisneyID.js" target="_blank" class="external" rel="noreferrer noopener">cdn.registerdisney.go.com&#x2F;v2&#x2F;outer&#x2F;DisneyID.js</a> (seen on 2 websites)</p>
+            <p><a href="http://go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RCfa2bca9f24ff4c10be60c7e5dc910eac-source.min.js" target="_blank" class="external" rel="noreferrer noopener">go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RCfa2bca9f24ff4c10be60c7e5dc910eac-source.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.registerdisney.go.com&#x2F;v2&#x2F;ESPN-ONESITE.WEB-PROD&#x2F;en-US" target="_blank" class="external" rel="noreferrer noopener">cdn.registerdisney.go.com&#x2F;v2&#x2F;ESPN-ONESITE.WEB-PROD&#x2F;en-US</a> (seen on 2 websites)</p>
+            <p><a href="http://go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RCfde22da52b6c44ffbe24c3b14f9f2af2-source.min.js" target="_blank" class="external" rel="noreferrer noopener">go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RCfde22da52b6c44ffbe24c3b14f9f2af2-source.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.registerdisney.go.com&#x2F;v2&#x2F;responder&#x2F;responder.js" target="_blank" class="external" rel="noreferrer noopener">cdn.registerdisney.go.com&#x2F;v2&#x2F;responder&#x2F;responder.js</a> (seen on 2 websites)</p>
+            <p><a href="http://go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RC46d2bf2ac7754064b901716e10150d9b-source.min.js" target="_blank" class="external" rel="noreferrer noopener">go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RC46d2bf2ac7754064b901716e10150d9b-source.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.registerdisney.go.com&#x2F;v4&#x2F;bundle&#x2F;web&#x2F;21CF-NATGEOTV.WEB&#x2F;en-US" target="_blank" class="external" rel="noreferrer noopener">cdn.registerdisney.go.com&#x2F;v4&#x2F;bundle&#x2F;web&#x2F;21CF-NATGEOTV.WEB&#x2F;en-US</a> (seen on 2 websites)</p>
+            <p><a href="http://go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RC911590a2ba48432bb4970c573a28fef9-source.min.js" target="_blank" class="external" rel="noreferrer noopener">go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RC911590a2ba48432bb4970c573a28fef9-source.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.registerdisney.go.com&#x2F;v4&#x2F;responder.JS" target="_blank" class="external" rel="noreferrer noopener">cdn.registerdisney.go.com&#x2F;v4&#x2F;responder.JS</a> (seen on 2 websites)</p>
+            <p><a href="http://go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RCcf0f12ebfc4c499eb4024e252de85972-source.min.js" target="_blank" class="external" rel="noreferrer noopener">go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RCcf0f12ebfc4c499eb4024e252de85972-source.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://prod.gatekeeper.us-abc.symphony.edgedatg.go.com&#x2F;vp2&#x2F;ws&#x2F;utils&#x2F;2021&#x2F;geo&#x2F;video&#x2F;geolocation&#x2F;026&#x2F;001&#x2F;gt&#x2F;-1.jsonp" target="_blank" class="external" rel="noreferrer noopener">prod.gatekeeper.us-abc.symphony.edgedatg.go.com&#x2F;vp2&#x2F;ws&#x2F;utils&#x2F;2021&#x2F;geo&#x2F;video&#x2F;geolocation&#x2F;026&#x2F;001&#x2F;gt&#x2F;-1.jsonp</a> (seen on 2 websites)</p>
+            <p><a href="http://go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RCb23cbb022b0b4ad1986e92c6ceea462e-source.min.js" target="_blank" class="external" rel="noreferrer noopener">go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RCb23cbb022b0b4ad1986e92c6ceea462e-source.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RCfd13d9a558204c2989c62a2f475378f4-source.min.js" target="_blank" class="external" rel="noreferrer noopener">go4.disney.go.com&#x2F;adbe&#x2F;lnch&#x2F;1b439b897261&#x2F;d3e6f0340eeb&#x2F;d665643fadcc&#x2F;RCfd13d9a558204c2989c62a2f475378f4-source.min.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -222,19 +243,13 @@
             <a href="http://www.natgeotv.com" target="_blank" class="external">www.natgeotv.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.espnsoccernet.com" target="_blank" class="external">www.espnsoccernet.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://disneyworld.co.uk" target="_blank" class="external">disneyworld.co.uk</a>
-        </li>
-        <li class='truncate'>
             <a href="http://www.disneyworld.co.uk" target="_blank" class="external">www.disneyworld.co.uk</a>
         </li>
         <li class='truncate'>
-            <a href="http://espnsoccernet.com" target="_blank" class="external">espnsoccernet.com</a>
+            <a href="http://kellyandryan.com" target="_blank" class="external">kellyandryan.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://natgeotv.com" target="_blank" class="external">natgeotv.com</a>
+            <a href="http://disneyworld.co.uk" target="_blank" class="external">disneyworld.co.uk</a>
         </li>
     </ul>
 </div>

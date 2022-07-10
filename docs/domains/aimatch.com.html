@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "aimatch.com",
-        history: [{"date":"2020.05","prevalence":0.000385,"sites":27,"fingerprinting":1,"cookies":0.0000285},{"date":"2020.06","prevalence":0.000616,"sites":45,"fingerprinting":1,"cookies":0.000383},{"date":"2020.07","prevalence":0.00061,"sites":44,"fingerprinting":0,"cookies":0.000416},{"date":"2020.08","prevalence":0.000559,"sites":76,"fingerprinting":1,"cookies":0.000375},{"date":"2020.09","prevalence":0.000647,"sites":85,"fingerprinting":1,"cookies":0.000357},{"date":"2020.10","prevalence":0.000721,"sites":95,"fingerprinting":1,"cookies":0.000395},{"date":"2020.11","prevalence":0.000691,"sites":91,"fingerprinting":1,"cookies":0.000395},{"date":"2020.12","prevalence":0.000647,"sites":85,"fingerprinting":1,"cookies":0.000357},{"date":"2021.01","prevalence":0.000558,"sites":73,"fingerprinting":1,"cookies":0.000313},{"date":"2021.02","prevalence":0.000479,"sites":69,"fingerprinting":1,"cookies":0.000271},{"date":"2021.03","prevalence":0.000479,"sites":69,"fingerprinting":1,"cookies":0.000236},{"date":"2021.04","prevalence":0.000506,"sites":73,"fingerprinting":0,"cookies":0.000236},{"date":"2021.05","prevalence":0.000482,"sites":70,"fingerprinting":1,"cookies":0.000262},{"date":"2021.06","prevalence":0.000487,"sites":71,"fingerprinting":1,"cookies":0.000219},{"date":"2021.07","prevalence":0.000507,"sites":73,"fingerprinting":0,"cookies":0.000292},{"date":"2021.08","prevalence":0.000465,"sites":67,"fingerprinting":1,"cookies":0.00025},{"date":"2021.09","prevalence":0.000435,"sites":63,"fingerprinting":1,"cookies":0.000262},{"date":"2021.10","prevalence":0.000469,"sites":68,"fingerprinting":1,"cookies":0.00029},{"date":"2021.11","prevalence":0.000421,"sites":61,"fingerprinting":1,"cookies":0.000207},{"date":"2021.12","prevalence":0.000442,"sites":64,"fingerprinting":1,"cookies":0.000242},{"date":"2022.01","prevalence":0.000395,"sites":57,"fingerprinting":0,"cookies":0.000166},{"date":"2022.02","prevalence":0.000252,"sites":37,"fingerprinting":1,"cookies":0.00017},{"date":"2022.03","prevalence":0.000273,"sites":40,"fingerprinting":1,"cookies":0.000184},{"date":"2022.04","prevalence":0.000225,"sites":33,"fingerprinting":1,"cookies":0.000102},{"date":"2022.05","prevalence":0.000484,"sites":71,"fingerprinting":1,"cookies":0.000102},{"date":"max/june-2022","prevalence":0.00042,"sites":62,"fingerprinting":1,"cookies":0.000109}]
+        history: [{"date":"main","prevalence":0.00042,"sites":62,"fingerprinting":1,"cookies":0.000109},{"date":"us-opt-in","prevalence":0.000475,"sites":70,"fingerprinting":1,"cookies":0.000264}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;2013<small>/27203</small>
+                    <strong>Rank:</strong> &#35;1912<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.04&#37; (62 sites)
+                    <strong>Prevalence:</strong> 0.05&#37; (70 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.01&#37;
+                    <strong>Cookies:</strong> 0.03&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -90,17 +90,22 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Document</span>,
-                    <span>Image</span>,
-                    <span>Media</span>,
                     <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Document</span>,
+                    <span>Media</span>,
+                    <span>Fetch</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/aimatch.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>emssas-ia</span>, 
                     <span>content</span>, 
+                    <span>iprima-ia</span>, 
                     <span>mafra-ads</span>, 
+                    <span>csfd-ads</span>, 
                     <span>rea-ads</span>, 
+                    <span>cent.ads</span>, 
                 </li>
             </ul>
         </div>
@@ -129,6 +134,7 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.devicePixelRatio</li>
         <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.innerHeight</li>
     </ul>
@@ -141,7 +147,25 @@
             <a href="http://a.1gr.cz" target="_blank" class="external">a.1gr.cz</a> &#x2192; <a href="http://mafra-ads.aimatch.com" target="_blank" class="external">mafra-ads.aimatch.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://a.centrum.cz" target="_blank" class="external">a.centrum.cz</a> &#x2192; <a href="http://cent.ads.aimatch.com" target="_blank" class="external">cent.ads.aimatch.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://a.csfd.cz" target="_blank" class="external">a.csfd.cz</a> &#x2192; <a href="http://csfd-ads.aimatch.com" target="_blank" class="external">csfd-ads.aimatch.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://a.iprima.cz" target="_blank" class="external">a.iprima.cz</a> &#x2192; <a href="http://iprima-ia.aimatch.com" target="_blank" class="external">iprima-ia.aimatch.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://con.mm.dm.at" target="_blank" class="external">con.mm.dm.at</a> &#x2192; <a href="http://content.aimatch.com" target="_blank" class="external">content.aimatch.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://con.mm.dm.de" target="_blank" class="external">con.mm.dm.de</a> &#x2192; <a href="http://content.aimatch.com" target="_blank" class="external">content.aimatch.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://content.odt.co.nz" target="_blank" class="external">content.odt.co.nz</a> &#x2192; <a href="http://content.aimatch.com" target="_blank" class="external">content.aimatch.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://emssas.bancsabadell.com" target="_blank" class="external">emssas.bancsabadell.com</a> &#x2192; <a href="http://emssas-ia.aimatch.com" target="_blank" class="external">emssas-ia.aimatch.com</a>
         </li>
         <li class='truncate'>
             <a href="http://mscontent.morningstar.com" target="_blank" class="external">mscontent.morningstar.com</a> &#x2192; <a href="http://content.aimatch.com" target="_blank" class="external">content.aimatch.com</a>
@@ -156,19 +180,64 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;2617&#x2F;ad-banner-300x600-480x300.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;2617&#x2F;ad-banner-300x600-480x300.jpg</a> (seen on 13 websites)</p>
+            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;2617&#x2F;ad-banner-300x600-480x300.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;2617&#x2F;ad-banner-300x600-480x300.jpg</a> (seen on 14 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;default.gif" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;default.gif</a> (seen on 5 websites)</p>
+            <p><a href="http://content.aimatch.com&#x2F;default.gif" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;default.gif</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;js&#x2F;sasia&#x2F;v1&#x2F;sasia.min.js" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;js&#x2F;sasia&#x2F;v1&#x2F;sasia.min.js</a> (seen on 5 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPb17IAPb17IAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;GDPR&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPb17IAPb17IAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;GDPR&#x3D;1</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;21600&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPb17IAPb17IAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;usersynced&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;21600&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPb17IAPb17IAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;usersynced&#x3D;1</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;parameters&#x2F;v1&#x2F;parameters.min.js" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;parameters&#x2F;v1&#x2F;parameters.min.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;77730&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;77730&#x2F;append</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1072&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1072&#x2F;append</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;21&#x2F;300x600-px-straghznice-bw.png" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;21&#x2F;300x600-px-straghznice-bw.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPb5OEAPb5OEAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;GDPR&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPb5OEAPb5OEAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;GDPR&#x3D;1</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;21600&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPb5OEAPb5OEAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;usersynced&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;21600&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPb5OEAPb5OEAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;usersynced&#x3D;1</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;4513&#x2F;Planeo_Akce-SLEVA_500_Mafra_300x600pmkx.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;4513&#x2F;Planeo_Akce-SLEVA_500_Mafra_300x600pmkx.jpg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;js&#x2F;sasia&#x2F;v1&#x2F;sasia.min.js" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;js&#x2F;sasia&#x2F;v1&#x2F;sasia.min.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://iprima-ia.aimatch.com&#x2F;iprima&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPb5OEAPb5OEAAHABBENCWCgAP_AAAAAAAAAHQIBBCxkBSFAAGJoYtkAAAAWxwAAACACAAAAoAAAABoAIAQAEAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAAAAAAAAAAAAAAABAAAASEgAwABBG8NABgACCN4iADAAEEbxUAGAAII3jIAMAAQRvHQAYAAgjeQgAwABBG8lABgACCN5SADAAEEbwAA.f_gAAAAAAAAA&#x2F;GDPR&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">iprima-ia.aimatch.com&#x2F;iprima&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPb5OEAPb5OEAAHABBENCWCgAP_AAAAAAAAAHQIBBCxkBSFAAGJoYtkAAAAWxwAAACACAAAAoAAAABoAIAQAEAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAAAAAAAAAAAAAAABAAAASEgAwABBG8NABgACCN4iADAAEEbxUAGAAII3jIAMAAQRvHQAYAAgjeQgAwABBG8lABgACCN5SADAAEEbwAA.f_gAAAAAAAAA&#x2F;GDPR&#x3D;1</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://iprima-ia.aimatch.com&#x2F;iprima&#x2F;lserver&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPb5OEAPb5OEAAHABBENCWCgAP_AAAAAAAAAHQIBBCxkBSFAAGJoYtkAAAAWxwAAACACAAAAoAAAABoAIAQAEAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAAAAAAAAAAAAAAABAAAASEgAwABBG8NABgACCN4iADAAEEbxUAGAAII3jIAMAAQRvHQAYAAgjeQgAwABBG8lABgACCN5SADAAEEbwAA.f_gAAAAAAAAA&#x2F;GDPR&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">iprima-ia.aimatch.com&#x2F;iprima&#x2F;lserver&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPb5OEAPb5OEAAHABBENCWCgAP_AAAAAAAAAHQIBBCxkBSFAAGJoYtkAAAAWxwAAACACAAAAoAAAABoAIAQAEAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAAAAAAAAAAAAAAABAAAASEgAwABBG8NABgACCN4iADAAEEbxUAGAAII3jIAMAAQRvHQAYAAgjeQgAwABBG8lABgACCN5SADAAEEbwAA.f_gAAAAAAAAA&#x2F;GDPR&#x3D;1</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1132&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1132&#x2F;append</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;21988&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;21988&#x2F;append</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;parameters&#x2F;v1&#x2F;parameters.min.js" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;parameters&#x2F;v1&#x2F;parameters.min.js</a> (seen on 3 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;79831&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;79831&#x2F;append</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1485&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1485&#x2F;append</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;30759&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;30759&#x2F;append</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;77739&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;77739&#x2F;append</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://content.aimatch.com&#x2F;cti&#x2F;black_default.gif" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;cti&#x2F;black_default.gif</a> (seen on 3 websites)</p>
@@ -180,103 +249,250 @@
             <p><a href="http://rea-ads.aimatch.com&#x2F;rea&#x2F;lserver&#x2F;SETTAG&#x2F;NAME&#x3D;lang&#x2F;TAGS&#x3D;language%3Den-US" target="_blank" class="external" rel="noreferrer noopener">rea-ads.aimatch.com&#x2F;rea&#x2F;lserver&#x2F;SETTAG&#x2F;NAME&#x3D;lang&#x2F;TAGS&#x3D;language%3Den-US</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;414&#x2F;Romadur_30_06-2022_300x600&#x2F;index.html" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;414&#x2F;Romadur_30_06-2022_300x600&#x2F;index.html</a> (seen on 2 websites)</p>
+            <p><a href="http://emssas-ia.aimatch.com&#x2F;emssas&#x2F;bserver&#x2F;b11358606860&#x2F;SITE&#x3D;SABADELLATLANTICO&#x2F;LANG&#x3D;es&#x2F;AREA&#x3D;BS_Particulares&#x2F;FAMILIA&#x3D;HOME&#x2F;POS&#x3D;5&#x2F;DOMINIO&#x3D;www.bancsabadell.com" target="_blank" class="external" rel="noreferrer noopener">emssas-ia.aimatch.com&#x2F;emssas&#x2F;bserver&#x2F;b11358606860&#x2F;SITE&#x3D;SABADELLATLANTICO&#x2F;LANG&#x3D;es&#x2F;AREA&#x3D;BS_Particulares&#x2F;FAMILIA&#x3D;HOME&#x2F;POS&#x3D;5&#x2F;DOMINIO&#x3D;www.bancsabadell.com</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;4742&#x2F;230x129-truhl.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;4742&#x2F;230x129-truhl.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://emssas-ia.aimatch.com&#x2F;emssas&#x2F;lserver&#x2F;bserver&#x2F;b11358606860&#x2F;SITE&#x3D;SABADELLATLANTICO&#x2F;LANG&#x3D;es&#x2F;AREA&#x3D;BS_Particulares&#x2F;FAMILIA&#x3D;HOME&#x2F;POS&#x3D;5&#x2F;DOMINIO&#x3D;www.bancsabadell.com" target="_blank" class="external" rel="noreferrer noopener">emssas-ia.aimatch.com&#x2F;emssas&#x2F;lserver&#x2F;bserver&#x2F;b11358606860&#x2F;SITE&#x3D;SABADELLATLANTICO&#x2F;LANG&#x3D;es&#x2F;AREA&#x3D;BS_Particulares&#x2F;FAMILIA&#x3D;HOME&#x2F;POS&#x3D;5&#x2F;DOMINIO&#x3D;www.bancsabadell.com</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;414&#x2F;Romadur_30_06-2022_300x600&#x2F;300x100.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;414&#x2F;Romadur_30_06-2022_300x600&#x2F;300x100.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://content.aimatch.com&#x2F;emssas&#x2F;3&#x2F;CR_BSOP_HOME_Prestamo_Expansion_220627_ES.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;emssas&#x2F;3&#x2F;CR_BSOP_HOME_Prestamo_Expansion_220627_ES.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;414&#x2F;Romadur_30_06-2022_300x600&#x2F;300x331.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;414&#x2F;Romadur_30_06-2022_300x600&#x2F;300x331.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://iprima-ia.aimatch.com&#x2F;iprima&#x2F;SETSV&#x2F;TTL&#x3D;21600&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPb5OEAPb5OEAAHABBENCWCgAP_AAAAAAAAAHQIBBCxkBSFAAGJoYtkAAAAWxwAAACACAAAAoAAAABoAIAQAEAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAAAAAAAAAAAAAAABAAAASEgAwABBG8NABgACCN4iADAAEEbxUAGAAII3jIAMAAQRvHQAYAAgjeQgAwABBG8lABgACCN5SADAAEEbwAA.f_gAAAAAAAAA&#x2F;usersynced&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">iprima-ia.aimatch.com&#x2F;iprima&#x2F;SETSV&#x2F;TTL&#x3D;21600&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPb5OEAPb5OEAAHABBENCWCgAP_AAAAAAAAAHQIBBCxkBSFAAGJoYtkAAAAWxwAAACACAAAAoAAAABoAIAQAEAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAAAAAAAAAAAAAAABAAAASEgAwABBG8NABgACCN4iADAAEEbxUAGAAII3jIAMAAQRvHQAYAAgjeQgAwABBG8lABgACCN5SADAAEEbwAA.f_gAAAAAAAAA&#x2F;usersynced&#x3D;1</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;414&#x2F;Romadur_30_06-2022_300x600&#x2F;356x200.mp4" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;414&#x2F;Romadur_30_06-2022_300x600&#x2F;356x200.mp4</a> (seen on 2 websites)</p>
+            <p><a href="http://iprima-ia.aimatch.com&#x2F;iprima&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EKIVVB-1G-E534" target="_blank" class="external" rel="noreferrer noopener">iprima-ia.aimatch.com&#x2F;iprima&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EKIVVB-1G-E534</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;1049&#x2F;MicrosoftTeams-image123.png" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;1049&#x2F;MicrosoftTeams-image123.png</a> (seen on 2 websites)</p>
+            <p><a href="http://iprima-ia.aimatch.com&#x2F;iprima&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EMX3BD-9-C895" target="_blank" class="external" rel="noreferrer noopener">iprima-ia.aimatch.com&#x2F;iprima&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EMX3BD-9-C895</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DUEW8B-1H-4EN" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DUEW8B-1H-4EN</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;994224000&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;5A2975E5-2A0A-4816-AB71-373DE93BF0C7" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;994224000&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;5A2975E5-2A0A-4816-AB71-373DE93BF0C7</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DUETSJ-1S-M2Y0" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DUETSJ-1S-M2Y0</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;590116230&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;F2AA6C11-2E3A-4A36-B693-E02BCA34FE3D" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;590116230&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;F2AA6C11-2E3A-4A36-B693-E02BCA34FE3D</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;137214&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;137214&#x2F;append</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;382&#x2F;1_CD-C11173592-PohodlneCestovani-Halpage3D-300x600-CD_Bike-1.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;382&#x2F;1_CD-C11173592-PohodlneCestovani-Halpage3D-300x600-CD_Bike-1.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DSJ6K7-4-2FE" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DSJ6K7-4-2FE</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;382&#x2F;3_CD-C11173592-PohodlneCestovani-Halpage3D-300x600-Pohodlne_cestovani-2.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;382&#x2F;3_CD-C11173592-PohodlneCestovani-Halpage3D-300x600-Pohodlne_cestovani-2.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;382&#x2F;2_CD-C11173592-PohodlneCestovani-Halpage3D-300x600-Muj_vlak-3.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;382&#x2F;2_CD-C11173592-PohodlneCestovani-Halpage3D-300x600-Muj_vlak-3.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;382&#x2F;4_CD-C11173592-PohodlneCestovani-Halpage3D-300x600-Pohodlne_cestovani-4.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;382&#x2F;4_CD-C11173592-PohodlneCestovani-Halpage3D-300x600-Pohodlne_cestovani-4.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;79831&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;79831&#x2F;append</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1601469700&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;3DC43DC7-4F2D-4EF8-9697-5E58FA34CB52" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1601469700&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;3DC43DC7-4F2D-4EF8-9697-5E58FA34CB52</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;137223&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;137223&#x2F;append</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;4513&#x2F;SENCOR_banner_MAFRA_klimatizace_300x600mj.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;4513&#x2F;SENCOR_banner_MAFRA_klimatizace_300x600mj.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DSJ31X-E-HYCT" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DSJ31X-E-HYCT</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;4513&#x2F;Planeo_Akce-ZASILKOVNA_Google_mafra_300x600px.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;4513&#x2F;Planeo_Akce-ZASILKOVNA_Google_mafra_300x600px.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;255151741&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;63123AD8-44F7-4947-9CAE-E810036419F5" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;255151741&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;63123AD8-44F7-4947-9CAE-E810036419F5</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;82535&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;82535&#x2F;append</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EEAQDQ-O-GZ7T" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EEAQDQ-O-GZ7T</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1485&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1485&#x2F;append</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;934868975&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;416D5A8F-E44E-4C8D-AED8-AC8E3C58A0D5" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;934868975&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;416D5A8F-E44E-4C8D-AED8-AC8E3C58A0D5</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1072&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1072&#x2F;append</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EEAQGO-1D-E3FT" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EEAQGO-1D-E3FT</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;414&#x2F;Syr_na_panev_30_05-2022_970x310&#x2F;356x200.mp4" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;414&#x2F;Syr_na_panev_30_05-2022_970x310&#x2F;356x200.mp4</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;364153612&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;A111CCA1-FC0A-4298-A43F-04F40C52B78C" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;364153612&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;A111CCA1-FC0A-4298-A43F-04F40C52B78C</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;2919&#x2F;Valetol_30_05-2022_970x310&#x2F;356x200.mp4" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;2919&#x2F;Valetol_30_05-2022_970x310&#x2F;356x200.mp4</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5F6EX9A-3-CIVE" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5F6EX9A-3-CIVE</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;4513&#x2F;Planeo_Akce-10_-SLEVA_Google_mafr300x600px-dnes.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;4513&#x2F;Planeo_Akce-10_-SLEVA_Google_mafr300x600px-dnes.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;getid&#x2F;MID&#x3D;1128146092&#x2F;external&#x3D;ADFORM" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;getid&#x2F;MID&#x3D;1128146092&#x2F;external&#x3D;ADFORM</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mstar&#x2F;9&#x2F;cover-page-college-savings-728x90.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mstar&#x2F;9&#x2F;cover-page-college-savings-728x90.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setsv&#x2F;MID&#x3D;1128146092&#x2F;ADFORM&#x3D;3279404322326849733" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setsv&#x2F;MID&#x3D;1128146092&#x2F;ADFORM&#x3D;3279404322326849733</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mstar&#x2F;9&#x2F;esg-certification-program-120x60.png" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mstar&#x2F;9&#x2F;esg-certification-program-120x60.png</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1128146092&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;0F8D3147-59D3-4C4F-B766-FFC3002417E7" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1128146092&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;0F8D3147-59D3-4C4F-B766-FFC3002417E7</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mstar&#x2F;9&#x2F;PF_TD_120x60.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mstar&#x2F;9&#x2F;PF_TD_120x60.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;82534&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;82534&#x2F;append</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mstar&#x2F;9&#x2F;Premium_BrandCampaign_120x60.png" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mstar&#x2F;9&#x2F;Premium_BrandCampaign_120x60.png</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1484&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1484&#x2F;append</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;30758&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;30758&#x2F;append</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;77737&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;77737&#x2F;append</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5F6EZP3-E-MFM8" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5F6EZP3-E-MFM8</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;getid&#x2F;MID&#x3D;1856703809&#x2F;external&#x3D;ADFORM" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;getid&#x2F;MID&#x3D;1856703809&#x2F;external&#x3D;ADFORM</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setsv&#x2F;MID&#x3D;1856703809&#x2F;ADFORM&#x3D;8069257256046261609" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setsv&#x2F;MID&#x3D;1856703809&#x2F;ADFORM&#x3D;8069257256046261609</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1856703809&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;EEA7F7E9-F521-474E-9A48-FA93546F771E" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1856703809&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;EEA7F7E9-F521-474E-9A48-FA93546F771E</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;816&#x2F;9_5_300_600_servis_1.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;816&#x2F;9_5_300_600_servis_1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5ETRZZH-1R-2QHA" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5ETRZZH-1R-2QHA</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1755580742&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;0E253B1D-C02B-465C-A9C7-C201626F39B1" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1755580742&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;0E253B1D-C02B-465C-A9C7-C201626F39B1</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5ETRYIL-1C-FKV2" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5ETRYIL-1C-FKV2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;111777637&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;E935C618-2E57-459A-B58F-26D8153E56D7" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;111777637&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;E935C618-2E57-459A-B58F-26D8153E56D7</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;cti&#x2F;1587&#x2F;SanctuaryMentalHealthMinistries_728x90_0622_Faith.gif" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;cti&#x2F;1587&#x2F;SanctuaryMentalHealthMinistries_728x90_0622_Faith.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://csfd-ads.aimatch.com&#x2F;csfd&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPbyoMAPbyoMAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;GDPR&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">csfd-ads.aimatch.com&#x2F;csfd&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPbyoMAPbyoMAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;GDPR&#x3D;1</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://csfd-ads.aimatch.com&#x2F;csfd&#x2F;lserver&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPbyoMAPbyoMAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;GDPR&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">csfd-ads.aimatch.com&#x2F;csfd&#x2F;lserver&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPbyoMAPbyoMAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;GDPR&#x3D;1</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://csfd-ads.aimatch.com&#x2F;csfd&#x2F;SETSV&#x2F;TTL&#x3D;43200&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPbyoMAPbyoMAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;usersynced&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">csfd-ads.aimatch.com&#x2F;csfd&#x2F;SETSV&#x2F;TTL&#x3D;43200&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPbyoMAPbyoMAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;usersynced&#x3D;1</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://csfd-ads.aimatch.com&#x2F;csfd&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5CIMIZR-19-ON" target="_blank" class="external" rel="noreferrer noopener">csfd-ads.aimatch.com&#x2F;csfd&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5CIMIZR-19-ON</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://csfd-ads.aimatch.com&#x2F;csfd&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5CIMJBI-H-9U09" target="_blank" class="external" rel="noreferrer noopener">csfd-ads.aimatch.com&#x2F;csfd&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5CIMJBI-H-9U09</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;tngcidmaeup&#x2F;2&#x2F;c21cf4eb-9d24-42d1-8e2e-a1e6ae37bc76" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;tngcidmaeup&#x2F;2&#x2F;c21cf4eb-9d24-42d1-8e2e-a1e6ae37bc76</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;tngcidmeup&#x2F;2&#x2F;5a84452d-9600-4041-8b21-a2fada611fde" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;tngcidmeup&#x2F;2&#x2F;5a84452d-9600-4041-8b21-a2fada611fde</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DJ4WX8-U-YJI" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DJ4WX8-U-YJI</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1089&#x2F;append" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;300&#x2F;LASTPBFCID&#x3D;1089&#x2F;append</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1720785799&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;8A3D34E2-8214-4ADF-B93A-2B0A5135237B" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1720785799&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;8A3D34E2-8214-4ADF-B93A-2B0A5135237B</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DJ4SH6-E-81BW" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DJ4SH6-E-81BW</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1226530334&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;2480F5C2-35FB-4698-9AB5-90609D70ADBA" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1226530334&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;2480F5C2-35FB-4698-9AB5-90609D70ADBA</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;getid&#x2F;MID&#x3D;1744358306&#x2F;external&#x3D;ADFORM" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;getid&#x2F;MID&#x3D;1744358306&#x2F;external&#x3D;ADFORM</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setsv&#x2F;MID&#x3D;1744358306&#x2F;ADFORM&#x3D;128786179002904488" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setsv&#x2F;MID&#x3D;1744358306&#x2F;ADFORM&#x3D;128786179002904488</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPbyoMAPbyoMAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;GDPR&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;33696000&#x2F;consent&#x3D;CPbyoMAPbyoMAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;GDPR&#x3D;1</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;21600&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPbyoMAPbyoMAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;usersynced&#x3D;1" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;SETSV&#x2F;TTL&#x3D;21600&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPbyoMAPbyoMAAHABBENCWCgAP_AAEPAAATIHfoBJCxkBSFCAGJoYtkQAAAGxxAAICACABAAoAAAABoAIAQAAAAQAAAABAAAABAAIAIAAABACEAAAAAAQAAAAQAAAEAAAAAAIQIAAAAAAiBAAAAAAAAAAAAAAABAQAAAgAAAAAIAQAAAAAEAgAAAAAAAAAAABAAAAQganAmAAqABcADgAIAAZAA0ABzAEQARQAmABPACqAFwAMQAZgA_ACEgEQARIAjgBSgCxAGWAM2AdwB3gD9AIQARYAuoBgQDWAHUAPkAkEBNoC1AF5gMkAaUA1MAQNABgACCN4iADAAEEbxUAGAAII3jIAMAAQRv.f_gACHgAAAAA&#x2F;usersynced&#x3D;1</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5CZY539-18-AC3I" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5CZY539-18-AC3I</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1744358306&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;4236356D-073E-4693-824F-4987A5F6026D" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1744358306&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;4236356D-073E-4693-824F-4987A5F6026D</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5CZY4LV-26-35B" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5CZY4LV-26-35B</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;817470654&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;54241F88-436C-4852-9F64-EF52B0E27425" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;817470654&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;54241F88-436C-4852-9F64-EF52B0E27425</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;vlm&#x2F;19790&#x2F;2222branding-EP-vlm&#x2F;2222branding-EP-vlm&#x2F;video.mp4" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;vlm&#x2F;19790&#x2F;2222branding-EP-vlm&#x2F;2222branding-EP-vlm&#x2F;video.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;getid&#x2F;MID&#x3D;1502791146&#x2F;external&#x3D;ADFORM" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;getid&#x2F;MID&#x3D;1502791146&#x2F;external&#x3D;ADFORM</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setsv&#x2F;MID&#x3D;1502791146&#x2F;ADFORM&#x3D;4192707105286436764" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setsv&#x2F;MID&#x3D;1502791146&#x2F;ADFORM&#x3D;4192707105286436764</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;4513&#x2F;SODASTREAM_google_MGP_malina_LLR_300x600.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;4513&#x2F;SODASTREAM_google_MGP_malina_LLR_300x600.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EWK8YM-W-D2OZ" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EWK8YM-W-D2OZ</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1502791146&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;670FC9C6-C65E-43A5-BF14-5EC02095DE59" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1502791146&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;670FC9C6-C65E-43A5-BF14-5EC02095DE59</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EWK8Q4-1O-9LHC" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5EWK8Q4-1O-9LHC</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;8668993&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;64A0F2CE-753B-4B62-BCD3-5E651B8D3BF2" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;8668993&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;64A0F2CE-753B-4B62-BCD3-5E651B8D3BF2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;mstar&#x2F;9&#x2F;StyleIndexes-120x60.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mstar&#x2F;9&#x2F;StyleIndexes-120x60.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://content.aimatch.com&#x2F;apl&#x2F;15&#x2F;640x1Pix.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;apl&#x2F;15&#x2F;640x1Pix.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;mafra&#x2F;4316&#x2F;CD-C11173592-Pohodlne_cestovani-banner_v04_300x300___.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;mafra&#x2F;4316&#x2F;CD-C11173592-Pohodlne_cestovani-banner_v04_300x300___.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DK7GAX-1I-FCEQ" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;external&#x3D;rubicon&#x2F;value&#x3D;L5DK7GAX-1I-FCEQ</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;TRIPLELIFT&#x2F;value&#x3D;2710434856857337081203" target="_blank" class="external" rel="noreferrer noopener">rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;TRIPLELIFT&#x2F;value&#x3D;2710434856857337081203</a> (seen on 2 websites)</p>
+            <p><a href="http://mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1166091388&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;A3B2E1A9-B3B9-43F5-B480-A7A6DA784DD3" target="_blank" class="external" rel="noreferrer noopener">mafra-ads.aimatch.com&#x2F;mafra&#x2F;setid&#x2F;MID&#x3D;1166091388&#x2F;external&#x3D;PUBMATIC&#x2F;value&#x3D;A3B2E1A9-B3B9-43F5-B480-A7A6DA784DD3</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;TRIPLELIFT&#x2F;value&#x3D;3439021672760104186080" target="_blank" class="external" rel="noreferrer noopener">rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;TRIPLELIFT&#x2F;value&#x3D;3439021672760104186080</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;OPENX&#x2F;value&#x3D;a2996c10-f1e1-4209-8b0c-bfe180b00c7b" target="_blank" class="external" rel="noreferrer noopener">rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;OPENX&#x2F;value&#x3D;a2996c10-f1e1-4209-8b0c-bfe180b00c7b</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://content.aimatch.com&#x2F;rea&#x2F;REA_Test&#x2F;trans.gif" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;rea&#x2F;REA_Test&#x2F;trans.gif</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;OPENX&#x2F;value&#x3D;65e68742-8718-4ee7-b31f-97fb35829e40" target="_blank" class="external" rel="noreferrer noopener">rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;OPENX&#x2F;value&#x3D;65e68742-8718-4ee7-b31f-97fb35829e40</a> (seen on 2 websites)</p>
+            <p><a href="http://content.aimatch.com&#x2F;rea&#x2F;216&#x2F;News_Drivers&#x2F;300x600-News-HTML5-Option2&#x2F;RCA-Google-Display-300x600-News.html" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;rea&#x2F;216&#x2F;News_Drivers&#x2F;300x600-News-HTML5-Option2&#x2F;RCA-Google-Display-300x600-News.html</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;rea&#x2F;216&#x2F;News_Drivers&#x2F;300x600-News-HTML5-Option2&#x2F;RCA-Google-Display-300x600-News.js" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;rea&#x2F;216&#x2F;News_Drivers&#x2F;300x600-News-HTML5-Option2&#x2F;RCA-Google-Display-300x600-News.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.aimatch.com&#x2F;rea&#x2F;216&#x2F;News_Drivers&#x2F;300x600-News-HTML5-Option2&#x2F;images&#x2F;newsmob300x600.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;rea&#x2F;216&#x2F;News_Drivers&#x2F;300x600-News-HTML5-Option2&#x2F;images&#x2F;newsmob300x600.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;TRIPLELIFT&#x2F;value&#x3D;674970934220477762044" target="_blank" class="external" rel="noreferrer noopener">rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;TRIPLELIFT&#x2F;value&#x3D;674970934220477762044</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;OPENX&#x2F;value&#x3D;43088eba-6556-47d4-bf9d-8ffaa8c1ba46" target="_blank" class="external" rel="noreferrer noopener">rea-ads.aimatch.com&#x2F;rea&#x2F;setid&#x2F;external&#x3D;OPENX&#x2F;value&#x3D;43088eba-6556-47d4-bf9d-8ffaa8c1ba46</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://content.aimatch.com&#x2F;cti&#x2F;5&#x2F;globe_728x90_1.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;cti&#x2F;5&#x2F;globe_728x90_1.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;cti&#x2F;5&#x2F;globe_300x250_1.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;cti&#x2F;5&#x2F;globe_300x250_1.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://content.aimatch.com&#x2F;cti&#x2F;577&#x2F;UnitedMethodistComm_300x250_0722_Holistic.png" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;cti&#x2F;577&#x2F;UnitedMethodistComm_300x250_0722_Holistic.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.aimatch.com&#x2F;slunecnice&#x2F;197&#x2F;Podnikatelsky_ucet_Labute_Iinfo_branding.jpg" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;slunecnice&#x2F;197&#x2F;Podnikatelsky_ucet_Labute_Iinfo_branding.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://content.aimatch.com&#x2F;cti&#x2F;5&#x2F;ccg22_300x250.png" target="_blank" class="external" rel="noreferrer noopener">content.aimatch.com&#x2F;cti&#x2F;5&#x2F;ccg22_300x250.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cent.ads.aimatch.com&#x2F;cent&#x2F;bserverj&#x2F;SASPB&#x2F;FCID&#x3D;102252&#x2F;passback&#x3D;1&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPb17IAPb17IAAHABBENCWCgAAAAAEPAAATIAAANTgTAAVAAuABwAEAAMgAaAA5gCIAIoATAAngBVAC4AGIAMwAfgBCQCIAIkARwApQBYgDLAGbAO4A7wB-gEIAIsAXUAwIBrADqAHyASCAm0BagC8wGSANKAamAIGgAwABBG8RABgACCN4qADAAEEbxkAGAAII3gAAA.YAAACHgAAAAA" target="_blank" class="external" rel="noreferrer noopener">cent.ads.aimatch.com&#x2F;cent&#x2F;bserverj&#x2F;SASPB&#x2F;FCID&#x3D;102252&#x2F;passback&#x3D;1&#x2F;gdpr&#x3D;1&#x2F;consent&#x3D;CPb17IAPb17IAAHABBENCWCgAAAAAEPAAATIAAANTgTAAVAAuABwAEAAMgAaAA5gCIAIoATAAngBVAC4AGIAMwAfgBCQCIAIkARwApQBYgDLAGbAO4A7wB-gEIAIsAXUAwIBrADqAHyASCAm0BagC8wGSANKAamAIGgAwABBG8RABgACCN4qADAAEEbxkAGAAII3gAAA.YAAACHgAAAAA</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -285,6 +501,21 @@
     <h3 class='section-header'>Sites</h3>
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://bancsabadell.com" target="_blank" class="external">bancsabadell.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bancsabadell.com" target="_blank" class="external">www.bancsabadell.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://iprima.cz" target="_blank" class="external">iprima.cz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cnn.iprima.cz" target="_blank" class="external">cnn.iprima.cz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fresh.iprima.cz" target="_blank" class="external">fresh.iprima.cz</a>
+        </li>
         <li class='truncate'>
             <a href="http://idnes.cz" target="_blank" class="external">idnes.cz</a>
         </li>
@@ -295,16 +526,19 @@
             <a href="http://idos.idnes.cz" target="_blank" class="external">idos.idnes.cz</a>
         </li>
         <li class='truncate'>
+            <a href="http://idos.cz" target="_blank" class="external">idos.cz</a>
+        </li>
+        <li class='truncate'>
             <a href="http://jizdnirady.idnes.cz" target="_blank" class="external">jizdnirady.idnes.cz</a>
         </li>
         <li class='truncate'>
             <a href="http://kubicekbadura.rajce.idnes.cz" target="_blank" class="external">kubicekbadura.rajce.idnes.cz</a>
         </li>
         <li class='truncate'>
-            <a href="http://rejstrik.penize.cz" target="_blank" class="external">rejstrik.penize.cz</a>
+            <a href="http://litodedek.rajce.idnes.cz" target="_blank" class="external">litodedek.rajce.idnes.cz</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.akcniceny.cz" target="_blank" class="external">www.akcniceny.cz</a>
+            <a href="http://rejstrik.penize.cz" target="_blank" class="external">rejstrik.penize.cz</a>
         </li>
         <li class='truncate'>
             <a href="http://www.databazeknih.cz" target="_blank" class="external">www.databazeknih.cz</a>
@@ -325,31 +559,28 @@
             <a href="http://www.rajce.idnes.cz" target="_blank" class="external">www.rajce.idnes.cz</a>
         </li>
         <li class='truncate'>
-            <a href="http://akcniceny.cz" target="_blank" class="external">akcniceny.cz</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://caravancampingsales.com.au" target="_blank" class="external">caravancampingsales.com.au</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.ireceptar.cz" target="_blank" class="external">www.ireceptar.cz</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.odt.co.nz" target="_blank" class="external">www.odt.co.nz</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://centrum.cz" target="_blank" class="external">centrum.cz</a>
-        </li>
-        <li class='truncate'>
             <a href="http://www.mesec.cz" target="_blank" class="external">www.mesec.cz</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.podnikatel.cz" target="_blank" class="external">www.podnikatel.cz</a>
         </li>
         <li class='truncate'>
             <a href="http://www.realestate.com.au" target="_blank" class="external">www.realestate.com.au</a>
         </li>
         <li class='truncate'>
-            <a href="http://zdravi.euro.cz" target="_blank" class="external">zdravi.euro.cz</a>
+            <a href="http://bikesales.com.au" target="_blank" class="external">bikesales.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.caravancampingsales.com.au" target="_blank" class="external">www.caravancampingsales.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.csfd.cz" target="_blank" class="external">www.csfd.cz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ireceptar.cz" target="_blank" class="external">www.ireceptar.cz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.morningstar.com" target="_blank" class="external">www.morningstar.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.trucksales.com.au" target="_blank" class="external">www.trucksales.com.au</a>
         </li>
         <li class='truncate'>
             <a href="http://christianitytoday.com" target="_blank" class="external">christianitytoday.com</a>
@@ -361,25 +592,40 @@
             <a href="http://www.morningstar.co.uk" target="_blank" class="external">www.morningstar.co.uk</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.morningstar.es" target="_blank" class="external">www.morningstar.es</a>
-        </li>
-        <li class='truncate'>
             <a href="http://www.todayschristianwoman.com" target="_blank" class="external">www.todayschristianwoman.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://databazeknih.cz" target="_blank" class="external">databazeknih.cz</a>
+            <a href="http://csfd.cz" target="_blank" class="external">csfd.cz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dm.at" target="_blank" class="external">dm.at</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dm.at" target="_blank" class="external">www.dm.at</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dm.de" target="_blank" class="external">dm.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dm.de" target="_blank" class="external">www.dm.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://emimino.cz" target="_blank" class="external">emimino.cz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ireceptar.cz" target="_blank" class="external">ireceptar.cz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://lidovky.cz" target="_blank" class="external">lidovky.cz</a>
         </li>
         <li class='truncate'>
             <a href="http://morningstar.com" target="_blank" class="external">morningstar.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.morningstar.com" target="_blank" class="external">www.morningstar.com</a>
-        </li>
-        <li class='truncate'>
             <a href="http://odt.co.nz" target="_blank" class="external">odt.co.nz</a>
         </li>
         <li class='truncate'>
-            <a href="http://penize.cz" target="_blank" class="external">penize.cz</a>
+            <a href="http://www.odt.co.nz" target="_blank" class="external">www.odt.co.nz</a>
         </li>
         <li class='truncate'>
             <a href="http://property.com.au" target="_blank" class="external">property.com.au</a>
@@ -394,7 +640,10 @@
             <a href="http://todayschristianwoman.com" target="_blank" class="external">todayschristianwoman.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://euro.cz" target="_blank" class="external">euro.cz</a>
+            <a href="http://vareni.cz" target="_blank" class="external">vareni.cz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.vareni.cz" target="_blank" class="external">www.vareni.cz</a>
         </li>
     </ul>
 </div>

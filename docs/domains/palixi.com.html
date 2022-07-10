@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - palixi.com</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "palixi.com",
+        history: [{"date":"us-opt-in","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0.0000136}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/palixi.com.ico' width="32" height="32" class='inline-block' /> palixi.com</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;23438<small>/27720</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Script</span>,
+                    <span>Stylesheet</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/palixi.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>www</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;js&#x2F;pace.min.js" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;js&#x2F;pace.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;css&#x2F;pace-theme-default.min.css" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;css&#x2F;pace-theme-default.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;css&#x2F;sweetalert2.min.css" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;css&#x2F;sweetalert2.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;css&#x2F;fontawesome.min.css" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;css&#x2F;fontawesome.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;js&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;js&#x2F;jquery.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;css&#x2F;main.ltr.min.css" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;css&#x2F;main.ltr.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;css&#x2F;custom.css" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;css&#x2F;custom.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;components&#x2F;storage&#x2F;app&#x2F;public&#x2F;photos&#x2F;1&#x2F;logo_tools.png" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;components&#x2F;storage&#x2F;app&#x2F;public&#x2F;photos&#x2F;1&#x2F;logo_tools.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;img&#x2F;flags&#x2F;en.svg" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;img&#x2F;flags&#x2F;en.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;avatar.jpg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;avatar.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;js&#x2F;main.min.js" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;js&#x2F;main.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;js&#x2F;sweetalert2.min.js" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;js&#x2F;sweetalert2.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;js&#x2F;prebid-ads.js" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;js&#x2F;prebid-ads.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;vendor&#x2F;livewire&#x2F;livewire.js" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;vendor&#x2F;livewire&#x2F;livewire.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;parallax.jpg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;parallax.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;fonts&#x2F;fa-solid-900.woff2" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;fonts&#x2F;fa-solid-900.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;powerpoint-to-pdf.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;powerpoint-to-pdf.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;word-to-pdf.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;word-to-pdf.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;excel-to-pdf.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;excel-to-pdf.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;html-to-pdf.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;html-to-pdf.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;png-to-pdf.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;png-to-pdf.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;jpg-to-pdf.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;jpg-to-pdf.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;text-to-pdf.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;text-to-pdf.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;rtf-to-pdf.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;rtf-to-pdf.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;odt-to-pdf.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;odt-to-pdf.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;word-to-odt.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;word-to-odt.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;word-to-html.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;word-to-html.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;custom-link.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;custom-link.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;text-to-slug.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;text-to-slug.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;lorem-ipsum-generator.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;lorem-ipsum-generator.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;case-converter.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;case-converter.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;word-counter.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;word-counter.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;remove-line-breaks.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;remove-line-breaks.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;text-to-binary.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;text-to-binary.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;binary-to-text.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;binary-to-text.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-to-text.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-to-text.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;random-word-generator.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;random-word-generator.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;ico-to-png.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;ico-to-png.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;ico-converter.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;ico-converter.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-to-base64.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-to-base64.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;base64-to-image.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;base64-to-image.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;flip-image.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;flip-image.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;rotate-image.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;rotate-image.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-enlarger.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-enlarger.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-cropper.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-cropper.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-compressor.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-compressor.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-resizer.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-resizer.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-converter.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;image-converter.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;jpg-to-png.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;jpg-to-png.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;png-to-jpg.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;png-to-jpg.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;jpg-converter.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;jpg-converter.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;webp-to-jpg.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;webp-to-jpg.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;html-decode.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;html-decode.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;html-encode.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;html-encode.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;url-decode.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;url-decode.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;url-encode.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;url-encode.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;html-beautifier.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;html-beautifier.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;html-minifier.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;html-minifier.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;css-beautifier.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;css-beautifier.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;css-minifier.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;css-minifier.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;javascript-beautifier.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;javascript-beautifier.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;javascript-minifier.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;javascript-minifier.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;javascript-deobfuscator.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;javascript-deobfuscator.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;javascript-obfuscator.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;javascript-obfuscator.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;qr-code-decoder.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;qr-code-decoder.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;qr-code-generator.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;qr-code-generator.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;find-facebook-id.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;find-facebook-id.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;md5-generator.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;md5-generator.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;what-is-my-ip.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;what-is-my-ip.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;ip-address-lookup.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;ip-address-lookup.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;base64-decode.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;base64-decode.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;base64-encode.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;base64-encode.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;color-converter.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;color-converter.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;password-generator.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;password-generator.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;vtt-to-srt.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;vtt-to-srt.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;srt-to-vtt.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;srt-to-vtt.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;youtube-thumbnail-downloader.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;youtube-thumbnail-downloader.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;hex-to-rgb.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;hex-to-rgb.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;rgb-to-hex.svg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;tools&#x2F;rgb-to-hex.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.palixi.com&#x2F;assets&#x2F;fonts&#x2F;fa-brands-400.woff2" target="_blank" class="external" rel="noreferrer noopener">www.palixi.com&#x2F;assets&#x2F;fonts&#x2F;fa-brands-400.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://palixi.com&#x2F;assets&#x2F;img&#x2F;nastuh.jpg" target="_blank" class="external" rel="noreferrer noopener">palixi.com&#x2F;assets&#x2F;img&#x2F;nastuh.jpg</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://papaflix.com" target="_blank" class="external">papaflix.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fr.papaflix.com" target="_blank" class="external">fr.papaflix.com</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

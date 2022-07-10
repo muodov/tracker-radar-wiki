@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "fr.edgekey.net",
-        history: [{"date":"max/ref-nocmp-de","prevalence":0.000201,"sites":2,"fingerprinting":2,"cookies":0},{"date":"max/opt-in-de","prevalence":0.000201,"sites":2,"fingerprinting":2,"cookies":0}]
+        history: [{"date":"main","prevalence":0.00038,"sites":56,"fingerprinting":2,"cookies":0.0000746},{"date":"us-opt-in","prevalence":0.000509,"sites":75,"fingerprinting":2,"cookies":0.0000746}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.akamai.com&#x2F;us&#x2F;en&#x2F;privacy-policies&#x2F;" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.akamai.com&#x2F;us&#x2F;en&#x2F;privacy-policies&#x2F;</a>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;2507<small>/3704</small>
+                    <strong>Rank:</strong> &#35;1842<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.02&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.05&#37; (75 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.01&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -90,15 +90,39 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Font</span>,
                     <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Stylesheet</span>,
+                    <span>Font</span>,
+                    <span>Preflight</span>,
                     <span>Fetch</span>,
+                    <span>XHR</span>,
+                    <span>Document</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/fr.edgekey.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>f1g</span>, 
                     <span>static-lefigaro</span>, 
+                    <span>video.lefigaro</span>, 
+                    <span>api-graphql.lefigaro</span>, 
+                    <span>i.f1g</span>, 
+                    <span>www.lequipe</span>, 
+                    <span>api.prismaconnect</span>, 
                     <span>player-video.lefigaro</span>, 
+                    <span>assets.bouyguestelecom</span>, 
+                    <span>staticweb01.bonial</span>, 
+                    <span>api-connect.cuisineactuelle</span>, 
+                    <span>api-connect.femmeactuelle</span>, 
+                    <span>api-connect.geo</span>, 
+                    <span>14662.particulier.edf</span>, 
+                    <span>cdn.radiofrance</span>, 
+                    <span>api.radiofrance</span>, 
+                    <span>dl.gmx</span>, 
+                    <span>auth.idealo</span>, 
+                    <span>gtm.idealo</span>, 
+                    <span>gateway-partners.lefigaro</span>, 
+                    <span>asset.matchendirect</span>, 
                 </li>
             </ul>
         </div>
@@ -122,10 +146,67 @@
     <h3 class='section-header'>CNAMEs</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
+            <a href="http://a.f1g.fr" target="_blank" class="external">a.f1g.fr</a> &#x2192; <a href="http://f1g.fr.edgekey.net" target="_blank" class="external">f1g.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://api-connect.cuisineactuelle.fr" target="_blank" class="external">api-connect.cuisineactuelle.fr</a> &#x2192; <a href="http://api-connect.cuisineactuelle.fr.edgekey.net" target="_blank" class="external">api-connect.cuisineactuelle.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://api-connect.femmeactuelle.fr" target="_blank" class="external">api-connect.femmeactuelle.fr</a> &#x2192; <a href="http://api-connect.femmeactuelle.fr.edgekey.net" target="_blank" class="external">api-connect.femmeactuelle.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://api-connect.geo.fr" target="_blank" class="external">api-connect.geo.fr</a> &#x2192; <a href="http://api-connect.geo.fr.edgekey.net" target="_blank" class="external">api-connect.geo.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://api-graphql.lefigaro.fr" target="_blank" class="external">api-graphql.lefigaro.fr</a> &#x2192; <a href="http://api-graphql.lefigaro.fr.edgekey.net" target="_blank" class="external">api-graphql.lefigaro.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://api.prismaconnect.fr" target="_blank" class="external">api.prismaconnect.fr</a> &#x2192; <a href="http://api.prismaconnect.fr.edgekey.net" target="_blank" class="external">api.prismaconnect.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://api.radiofrance.fr" target="_blank" class="external">api.radiofrance.fr</a> &#x2192; <a href="http://api.radiofrance.fr.edgekey.net" target="_blank" class="external">api.radiofrance.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://asset.matchendirect.fr" target="_blank" class="external">asset.matchendirect.fr</a> &#x2192; <a href="http://asset.matchendirect.fr.edgekey.net" target="_blank" class="external">asset.matchendirect.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://assets.bouyguestelecom.fr" target="_blank" class="external">assets.bouyguestelecom.fr</a> &#x2192; <a href="http://assets.bouyguestelecom.fr.edgekey.net" target="_blank" class="external">assets.bouyguestelecom.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://auth.idealo.fr" target="_blank" class="external">auth.idealo.fr</a> &#x2192; <a href="http://auth.idealo.fr.edgekey.net" target="_blank" class="external">auth.idealo.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cdn.radiofrance.fr" target="_blank" class="external">cdn.radiofrance.fr</a> &#x2192; <a href="http://cdn.radiofrance.fr.edgekey.net" target="_blank" class="external">cdn.radiofrance.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dl.gmx.fr" target="_blank" class="external">dl.gmx.fr</a> &#x2192; <a href="http://dl.gmx.fr.edgekey.net" target="_blank" class="external">dl.gmx.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gateway-partners.lefigaro.fr" target="_blank" class="external">gateway-partners.lefigaro.fr</a> &#x2192; <a href="http://gateway-partners.lefigaro.fr.edgekey.net" target="_blank" class="external">gateway-partners.lefigaro.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gtm.idealo.fr" target="_blank" class="external">gtm.idealo.fr</a> &#x2192; <a href="http://gtm.idealo.fr.edgekey.net" target="_blank" class="external">gtm.idealo.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://i.f1g.fr" target="_blank" class="external">i.f1g.fr</a> &#x2192; <a href="http://i.f1g.fr.edgekey.net" target="_blank" class="external">i.f1g.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://particulier.edf.fr" target="_blank" class="external">particulier.edf.fr</a> &#x2192; <a href="http://14662.particulier.edf.fr.edgekey.net" target="_blank" class="external">14662.particulier.edf.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
             <a href="http://player-video.lefigaro.fr" target="_blank" class="external">player-video.lefigaro.fr</a> &#x2192; <a href="http://player-video.lefigaro.fr.edgekey.net" target="_blank" class="external">player-video.lefigaro.fr.edgekey.net</a>
         </li>
         <li class='truncate'>
             <a href="http://static.lefigaro.fr" target="_blank" class="external">static.lefigaro.fr</a> &#x2192; <a href="http://static-lefigaro.fr.edgekey.net" target="_blank" class="external">static-lefigaro.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://staticweb01.bonial.fr" target="_blank" class="external">staticweb01.bonial.fr</a> &#x2192; <a href="http://staticweb01.bonial.fr.edgekey.net" target="_blank" class="external">staticweb01.bonial.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://video.lefigaro.fr" target="_blank" class="external">video.lefigaro.fr</a> &#x2192; <a href="http://video.lefigaro.fr.edgekey.net" target="_blank" class="external">video.lefigaro.fr.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www6.lequipe.fr" target="_blank" class="external">www6.lequipe.fr</a> &#x2192; <a href="http://www.lequipe.fr.edgekey.net" target="_blank" class="external">www.lequipe.fr.edgekey.net</a>
         </li>
     </ul>
 </div>
@@ -134,22 +215,427 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;SourceSansPro&#x2F;sourcesanspro-semibold.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;SourceSansPro&#x2F;sourcesanspro-semibold.woff2</a> (seen on 2 websites)</p>
+            <p><a href="http://api.prismaconnect.fr.edgekey.net&#x2F;prd&#x2F;ping" target="_blank" class="external" rel="noreferrer noopener">api.prismaconnect.fr.edgekey.net&#x2F;prd&#x2F;ping</a> (seen on 10 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;SourceSansPro&#x2F;sourcesanspro-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;SourceSansPro&#x2F;sourcesanspro-regular.woff2</a> (seen on 2 websites)</p>
+            <p><a href="http://api.prismaconnect.fr.edgekey.net&#x2F;prd&#x2F;ping" target="_blank" class="external" rel="noreferrer noopener">api.prismaconnect.fr.edgekey.net&#x2F;prd&#x2F;ping</a> (seen on 10 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-bold.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-bold.woff2</a> (seen on 2 websites)</p>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;figanalytics&#x2F;figanalytics-short-ttl.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;figanalytics&#x2F;figanalytics-short-ttl.js</a> (seen on 9 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;figanalytics&#x2F;figanalytics-short-ttl.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;figanalytics&#x2F;figanalytics-short-ttl.js</a> (seen on 2 websites)</p>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;figconsent&#x2F;figconsent-v2-short-ttl.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;figconsent&#x2F;figconsent-v2-short-ttl.js</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-regular.woff2</a> (seen on 2 websites)</p>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;fonts&#x2F;figh&#x2F;figh.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;fonts&#x2F;figh&#x2F;figh.woff2</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;fonts&#x2F;figh_ptsans&#x2F;PTS55F-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;fonts&#x2F;figh_ptsans&#x2F;PTS55F-webfont.woff2</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;fonts&#x2F;figh_ptsans_narrow&#x2F;PTN57F-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;fonts&#x2F;figh_ptsans_narrow&#x2F;PTN57F-webfont.woff2</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;fonts&#x2F;figh_ptsans_bold&#x2F;PTS75F-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;fonts&#x2F;figh_ptsans_bold&#x2F;PTS75F-webfont.woff2</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;figurant&#x2F;figurant-short-ttl.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;figurant&#x2F;figurant-short-ttl.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;figads&#x2F;fgds-short-ttl.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;figads&#x2F;fgds-short-ttl.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api-graphql.lefigaro.fr.edgekey.net&#x2F;graphql" target="_blank" class="external" rel="noreferrer noopener">api-graphql.lefigaro.fr.edgekey.net&#x2F;graphql</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;jquery.ultimate-smartbanner.css" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;jquery.ultimate-smartbanner.css</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;header.css" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;header.css</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;header.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;header.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-comments&#x2F;figcomments-short-ttl.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-comments&#x2F;figcomments-short-ttl.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-comments&#x2F;figc-importIndex-6209e0c3-chunk.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-comments&#x2F;figc-importIndex-6209e0c3-chunk.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api-graphql.lefigaro.fr.edgekey.net&#x2F;graphql" target="_blank" class="external" rel="noreferrer noopener">api-graphql.lefigaro.fr.edgekey.net&#x2F;graphql</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;header&#x2F;js&#x2F;figh-index.abad9a.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;header&#x2F;js&#x2F;figh-index.abad9a.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;SourceSansPro&#x2F;sourcesanspro-semibold.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;SourceSansPro&#x2F;sourcesanspro-semibold.woff2</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;SourceSansPro&#x2F;sourcesanspro-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;SourceSansPro&#x2F;sourcesanspro-regular.woff2</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;header&#x2F;js&#x2F;figh-async-menuplus.abad9a.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;header&#x2F;js&#x2F;figh-async-menuplus.abad9a.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-newsletter&#x2F;fignewsletter-short-ttl.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-newsletter&#x2F;fignewsletter-short-ttl.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-bold.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-bold.woff2</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-regular.woff2</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api-connect.cuisineactuelle.fr.edgekey.net&#x2F;prd&#x2F;preference-center" target="_blank" class="external" rel="noreferrer noopener">api-connect.cuisineactuelle.fr.edgekey.net&#x2F;prd&#x2F;preference-center</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api-connect.cuisineactuelle.fr.edgekey.net&#x2F;prd&#x2F;preference-center" target="_blank" class="external" rel="noreferrer noopener">api-connect.cuisineactuelle.fr.edgekey.net&#x2F;prd&#x2F;preference-center</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;widget-video&#x2F;short-ttl&#x2F;video&#x2F;index.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;widget-video&#x2F;short-ttl&#x2F;video&#x2F;index.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.lefigaro.fr.edgekey.net&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;vendors.f619cd0237f99b6a047c.js" target="_blank" class="external" rel="noreferrer noopener">video.lefigaro.fr.edgekey.net&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;vendors.f619cd0237f99b6a047c.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video.lefigaro.fr.edgekey.net&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;widgets.13dbcf5b5ea0d28d6da2.js" target="_blank" class="external" rel="noreferrer noopener">video.lefigaro.fr.edgekey.net&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;widgets.13dbcf5b5ea0d28d6da2.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api-graphql.lefigaro.fr.edgekey.net&#x2F;graphql" target="_blank" class="external" rel="noreferrer noopener">api-graphql.lefigaro.fr.edgekey.net&#x2F;graphql</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;figads&#x2F;fgds-infinite-b9ec025e.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;figads&#x2F;fgds-infinite-b9ec025e.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://f1g.fr.edgekey.net&#x2F;datalayer&#x2F;datalayer-provider.js" target="_blank" class="external" rel="noreferrer noopener">f1g.fr.edgekey.net&#x2F;datalayer&#x2F;datalayer-provider.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-desktop.png" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-desktop.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-tablette.png" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-tablette.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-mobile.png" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-mobile.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-collapse.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-collapse.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://f1g.fr.edgekey.net&#x2F;assets-sl&#x2F;figanalytics&#x2F;figanalytics.js" target="_blank" class="external" rel="noreferrer noopener">f1g.fr.edgekey.net&#x2F;assets-sl&#x2F;figanalytics&#x2F;figanalytics.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;etudiant-desktop.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;etudiant-desktop.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;etudiant-tablette.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;etudiant-tablette.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;etudiant-mobile.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;etudiant-mobile.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;etudiant-collapse.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;etudiant-collapse.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;etudiant-desktop.png" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;etudiant-desktop.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-comments&#x2F;figc-displayLastComments-86730dfe-chunk.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-comments&#x2F;figc-displayLastComments-86730dfe-chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;evene-desktop.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;evene-desktop.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;evene-tablette.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;evene-tablette.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;evene-mobile.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;evene-mobile.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;evene-collapse.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;evene-collapse.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;drup1.g&#x2F;ads.wrapper.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;drup1.g&#x2F;ads.wrapper.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://f1g.fr.edgekey.net&#x2F;assets-fonts&#x2F;figh_ptsans_narrow&#x2F;PTN57F-webfont.woff" target="_blank" class="external" rel="noreferrer noopener">f1g.fr.edgekey.net&#x2F;assets-fonts&#x2F;figh_ptsans_narrow&#x2F;PTN57F-webfont.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-newsletter&#x2F;fignl-vendors~main-7ed1406b-chunk.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-newsletter&#x2F;fignl-vendors~main-7ed1406b-chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-newsletter&#x2F;fignl-main-57075129-chunk.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-newsletter&#x2F;fignl-main-57075129-chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-newsletter&#x2F;fignl-4-effe8357-chunk.js" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;agora&#x2F;widget-newsletter&#x2F;fignl-4-effe8357-chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://i.f1g.fr.edgekey.net&#x2F;media&#x2F;_uploaded&#x2F;x70_resize&#x2F;header-covers&#x2F;le_particulier_cover.png" target="_blank" class="external" rel="noreferrer noopener">i.f1g.fr.edgekey.net&#x2F;media&#x2F;_uploaded&#x2F;x70_resize&#x2F;header-covers&#x2F;le_particulier_cover.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-bolditalic.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-bolditalic.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-italic.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;common&#x2F;fonts&#x2F;NotoSerif&#x2F;notoserif-italic.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.lequipe.fr.edgekey.net&#x2F;shared&#x2F;img&#x2F;concours&#x2F;mise_en_avant_392_pastille-cch-20220627155656.png" target="_blank" class="external" rel="noreferrer noopener">www.lequipe.fr.edgekey.net&#x2F;shared&#x2F;img&#x2F;concours&#x2F;mise_en_avant_392_pastille-cch-20220627155656.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.lequipe.fr.edgekey.net&#x2F;shared&#x2F;img&#x2F;concours&#x2F;mise_en_avant_393_pastille-cch-20220704144004.png" target="_blank" class="external" rel="noreferrer noopener">www.lequipe.fr.edgekey.net&#x2F;shared&#x2F;img&#x2F;concours&#x2F;mise_en_avant_393_pastille-cch-20220704144004.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.lequipe.fr.edgekey.net&#x2F;shared&#x2F;img&#x2F;concours&#x2F;mise_en_avant_382_pastille-cch-20220525171902.png" target="_blank" class="external" rel="noreferrer noopener">www.lequipe.fr.edgekey.net&#x2F;shared&#x2F;img&#x2F;concours&#x2F;mise_en_avant_382_pastille-cch-20220525171902.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;GTSuper&#x2F;Display&#x2F;gtsuperdisplay-medium.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;GTSuper&#x2F;Display&#x2F;gtsuperdisplay-medium.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;GTSuper&#x2F;Display&#x2F;gtsuperdisplay-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;GTSuper&#x2F;Display&#x2F;gtsuperdisplay-regular.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;FreightNeoPro&#x2F;freightneopro-book.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;FreightNeoPro&#x2F;freightneopro-book.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;GTSuper&#x2F;Display&#x2F;gtsuperdisplay-light.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;GTSuper&#x2F;Display&#x2F;gtsuperdisplay-light.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://i.f1g.fr.edgekey.net&#x2F;media&#x2F;_uploaded&#x2F;x70_resize&#x2F;header-covers&#x2F;figaromadame_cover.png" target="_blank" class="external" rel="noreferrer noopener">i.f1g.fr.edgekey.net&#x2F;media&#x2F;_uploaded&#x2F;x70_resize&#x2F;header-covers&#x2F;figaromadame_cover.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;FreightNeoPro&#x2F;freightneopro-medium.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;FreightNeoPro&#x2F;freightneopro-medium.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;FreightNeoPro&#x2F;freightneopro-bookitalic.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;FreightNeoPro&#x2F;freightneopro-bookitalic.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;GTSuper&#x2F;Display&#x2F;gtsuperdisplay-bold.woff2" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;f1&#x2F;madame&#x2F;fonts&#x2F;GTSuper&#x2F;Display&#x2F;gtsuperdisplay-bold.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-v2-desktop.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-v2-desktop.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-v2-tablette.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-v2-tablette.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-v2-mobile.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-v2-mobile.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-v2-collapse.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;sante-v2-collapse.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;tvmag-desktop.png" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;tvmag-desktop.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;tvmag-tablette.png" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;tvmag-tablette.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;tvmag-mobile.png" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;tvmag-mobile.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;tvmag-collapse.svg" target="_blank" class="external" rel="noreferrer noopener">static-lefigaro.fr.edgekey.net&#x2F;a.f1g.fr&#x2F;h&#x2F;assets-components&#x2F;header-footer&#x2F;tvmag-collapse.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://f1g.fr.edgekey.net&#x2F;a&#x2F;Divers&#x2F;kelkoo.png" target="_blank" class="external" rel="noreferrer noopener">f1g.fr.edgekey.net&#x2F;a&#x2F;Divers&#x2F;kelkoo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://i.f1g.fr.edgekey.net&#x2F;media&#x2F;ext&#x2F;x&#x2F;www.lefigaro.fr&#x2F;medias&#x2F;2015&#x2F;09&#x2F;25&#x2F;20150925PHOWWW01321.png" target="_blank" class="external" rel="noreferrer noopener">i.f1g.fr.edgekey.net&#x2F;media&#x2F;ext&#x2F;x&#x2F;www.lefigaro.fr&#x2F;medias&#x2F;2015&#x2F;09&#x2F;25&#x2F;20150925PHOWWW01321.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://i.f1g.fr.edgekey.net&#x2F;media&#x2F;ext&#x2F;x_crop&#x2F;www.lefigaro.fr&#x2F;medias&#x2F;2014&#x2F;09&#x2F;22&#x2F;20140922PHOWWW01404.jpg" target="_blank" class="external" rel="noreferrer noopener">i.f1g.fr.edgekey.net&#x2F;media&#x2F;ext&#x2F;x_crop&#x2F;www.lefigaro.fr&#x2F;medias&#x2F;2014&#x2F;09&#x2F;22&#x2F;20140922PHOWWW01404.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://i.f1g.fr.edgekey.net&#x2F;media&#x2F;_uploaded&#x2F;130x183&#x2F;header-covers&#x2F;tvmagazine_cover.png" target="_blank" class="external" rel="noreferrer noopener">i.f1g.fr.edgekey.net&#x2F;media&#x2F;_uploaded&#x2F;130x183&#x2F;header-covers&#x2F;tvmagazine_cover.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://player-video.lefigaro.fr.edgekey.net&#x2F;loop-widget&#x2F;loop-widget.js" target="_blank" class="external" rel="noreferrer noopener">player-video.lefigaro.fr.edgekey.net&#x2F;loop-widget&#x2F;loop-widget.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://player-video.lefigaro.fr.edgekey.net&#x2F;orchestrator.js" target="_blank" class="external" rel="noreferrer noopener">player-video.lefigaro.fr.edgekey.net&#x2F;orchestrator.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://player-video.lefigaro.fr.edgekey.net&#x2F;loop-widget&#x2F;88870af3e798360ee8d2.js" target="_blank" class="external" rel="noreferrer noopener">player-video.lefigaro.fr.edgekey.net&#x2F;loop-widget&#x2F;88870af3e798360ee8d2.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://player-video.lefigaro.fr.edgekey.net&#x2F;loop-widget&#x2F;aff4991929359abdd0d5.js" target="_blank" class="external" rel="noreferrer noopener">player-video.lefigaro.fr.edgekey.net&#x2F;loop-widget&#x2F;aff4991929359abdd0d5.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://player-video.lefigaro.fr.edgekey.net&#x2F;loop-widget&#x2F;77bd0e5562279386eda9.js" target="_blank" class="external" rel="noreferrer noopener">player-video.lefigaro.fr.edgekey.net&#x2F;loop-widget&#x2F;77bd0e5562279386eda9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.16.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.16.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-regular.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.16.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-semibold.woff2" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.16.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-semibold.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.16.0&#x2F;assets&#x2F;fonts&#x2F;trilogy-ui.woff2" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.16.0&#x2F;assets&#x2F;fonts&#x2F;trilogy-ui.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.16.0&#x2F;assets&#x2F;fonts&#x2F;trilogy-all.woff2" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.16.0&#x2F;assets&#x2F;fonts&#x2F;trilogy-all.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.16.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-medium.woff2" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.16.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-medium.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://staticweb01.bonial.fr.edgekey.net&#x2F;user-sdk-dist&#x2F;web-user-sdk-loader.js" target="_blank" class="external" rel="noreferrer noopener">staticweb01.bonial.fr.edgekey.net&#x2F;user-sdk-dist&#x2F;web-user-sdk-loader.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://staticweb01.bonial.fr.edgekey.net&#x2F;user-sdk-dist&#x2F;web-user-sdk-modern.js" target="_blank" class="external" rel="noreferrer noopener">staticweb01.bonial.fr.edgekey.net&#x2F;user-sdk-dist&#x2F;web-user-sdk-modern.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;Palpatine_Partials&#x2F;statics@2.32.2&#x2F;trilogy-partials-mangled.css" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;Palpatine_Partials&#x2F;statics@2.32.2&#x2F;trilogy-partials-mangled.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-regular.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-medium.woff2" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-medium.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;fonts&#x2F;trilogy-all.woff2" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;fonts&#x2F;trilogy-all.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-semibold.woff2" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;fonts&#x2F;bouygues-read-semibold.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;jpg&#x2F;transparent-noise.png" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;jpg&#x2F;transparent-noise.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;svg&#x2F;pattern-dark-logo.svg" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;svg&#x2F;pattern-dark-logo.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;fonts&#x2F;trilogy-picto.woff2" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.19.0&#x2F;assets&#x2F;fonts&#x2F;trilogy-picto.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;Palpatine_Partials&#x2F;statics@2.32.2&#x2F;header.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;Palpatine_Partials&#x2F;statics@2.32.2&#x2F;header.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;PICASSO-FRONT&#x2F;main@0.16.1&#x2F;id.js" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;PICASSO-FRONT&#x2F;main@0.16.1&#x2F;id.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;Palpatine_Partials&#x2F;statics@2.32.2&#x2F;searchBar&#x2F;search-bar.js" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;Palpatine_Partials&#x2F;statics@2.32.2&#x2F;searchBar&#x2F;search-bar.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;Palpatine_Partials&#x2F;statics@2.32.2&#x2F;encartBoost&#x2F;encartboost.js" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;Palpatine_Partials&#x2F;statics@2.32.2&#x2F;encartBoost&#x2F;encartboost.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;Palpatine_Partials&#x2F;statics@2.32.2&#x2F;needSupport&#x2F;need-support.js" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;Palpatine_Partials&#x2F;statics@2.32.2&#x2F;needSupport&#x2F;need-support.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.17.1&#x2F;assets&#x2F;jpg&#x2F;transparent-noise.png" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.17.1&#x2F;assets&#x2F;jpg&#x2F;transparent-noise.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.17.1&#x2F;assets&#x2F;svg&#x2F;pattern-dark-bte-logo.svg" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;TRILOGY&#x2F;trilogy-framework@1.17.1&#x2F;assets&#x2F;svg&#x2F;pattern-dark-bte-logo.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.bouyguestelecom.fr.edgekey.net&#x2F;PICASSO-FRONT&#x2F;main@0.16.1&#x2F;bouyguestelecom.fr&#x2F;callback.html" target="_blank" class="external" rel="noreferrer noopener">assets.bouyguestelecom.fr.edgekey.net&#x2F;PICASSO-FRONT&#x2F;main@0.16.1&#x2F;bouyguestelecom.fr&#x2F;callback.html</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://14662.particulier.edf.fr.edgekey.net&#x2F;etc&#x2F;designs&#x2F;EDF_RC&#x2F;assets&#x2F;img&#x2F;logo&#x2F;logo_edf_scroll.png" target="_blank" class="external" rel="noreferrer noopener">14662.particulier.edf.fr.edgekey.net&#x2F;etc&#x2F;designs&#x2F;EDF_RC&#x2F;assets&#x2F;img&#x2F;logo&#x2F;logo_edf_scroll.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.radiofrance.fr.edgekey.net&#x2F;s3&#x2F;cruiser-production&#x2F;2022&#x2F;07&#x2F;a1815b15-2183-4226-bb78-3d6e65d49af6&#x2F;560x315_053-ar-20220708122642-ap-20220708ygdgs000870-202207081226404602935.webp" target="_blank" class="external" rel="noreferrer noopener">cdn.radiofrance.fr.edgekey.net&#x2F;s3&#x2F;cruiser-production&#x2F;2022&#x2F;07&#x2F;a1815b15-2183-4226-bb78-3d6e65d49af6&#x2F;560x315_053-ar-20220708122642-ap-20220708ygdgs000870-202207081226404602935.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.radiofrance.fr.edgekey.net&#x2F;s3&#x2F;cruiser-production&#x2F;2022&#x2F;07&#x2F;267f4d6c-91d3-48aa-b266-dd71befcc078&#x2F;560x315_076-chl-037513.webp" target="_blank" class="external" rel="noreferrer noopener">cdn.radiofrance.fr.edgekey.net&#x2F;s3&#x2F;cruiser-production&#x2F;2022&#x2F;07&#x2F;267f4d6c-91d3-48aa-b266-dd71befcc078&#x2F;560x315_076-chl-037513.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.radiofrance.fr.edgekey.net&#x2F;s3&#x2F;cruiser-production&#x2F;2022&#x2F;07&#x2F;1469ebca-ed5d-4336-8ca8-bb1f563767ec&#x2F;560x315_080-hl-vbouchentouf-1615250.webp" target="_blank" class="external" rel="noreferrer noopener">cdn.radiofrance.fr.edgekey.net&#x2F;s3&#x2F;cruiser-production&#x2F;2022&#x2F;07&#x2F;1469ebca-ed5d-4336-8ca8-bb1f563767ec&#x2F;560x315_080-hl-vbouchentouf-1615250.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.radiofrance.fr.edgekey.net&#x2F;s3&#x2F;cruiser-production&#x2F;2022&#x2F;07&#x2F;1c9d3961-ef1b-47f3-8fc1-e0b982d1e39b&#x2F;560x315_salademea.webp" target="_blank" class="external" rel="noreferrer noopener">cdn.radiofrance.fr.edgekey.net&#x2F;s3&#x2F;cruiser-production&#x2F;2022&#x2F;07&#x2F;1c9d3961-ef1b-47f3-8fc1-e0b982d1e39b&#x2F;560x315_salademea.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.radiofrance.fr.edgekey.net&#x2F;livemeta&#x2F;live&#x2F;1&#x2F;webrf_inter_player" target="_blank" class="external" rel="noreferrer noopener">api.radiofrance.fr.edgekey.net&#x2F;livemeta&#x2F;live&#x2F;1&#x2F;webrf_inter_player</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.radiofrance.fr.edgekey.net&#x2F;s3&#x2F;cruiser-production&#x2F;2016&#x2F;06&#x2F;75f05d45-501e-4e91-9639-839e541a8458&#x2F;200x200_kherad_emmanuel.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.radiofrance.fr.edgekey.net&#x2F;s3&#x2F;cruiser-production&#x2F;2016&#x2F;06&#x2F;75f05d45-501e-4e91-9639-839e541a8458&#x2F;200x200_kherad_emmanuel.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;tcf&#x2F;live&#x2F;v1&#x2F;js&#x2F;tcf-api.js" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;tcf&#x2F;live&#x2F;v1&#x2F;js&#x2F;tcf-api.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;permission&#x2F;live&#x2F;portal&#x2F;v1&#x2F;ppp&#x2F;js&#x2F;permission-client.js" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;permission&#x2F;live&#x2F;portal&#x2F;v1&#x2F;ppp&#x2F;js&#x2F;permission-client.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;permission&#x2F;live&#x2F;portal&#x2F;v1&#x2F;ppp&#x2F;core.html" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;permission&#x2F;live&#x2F;portal&#x2F;v1&#x2F;ppp&#x2F;core.html</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;permission&#x2F;live&#x2F;portal&#x2F;v1&#x2F;ppp&#x2F;js&#x2F;permission-core.min.js" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;permission&#x2F;live&#x2F;portal&#x2F;v1&#x2F;ppp&#x2F;js&#x2F;permission-core.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;otSDKStub.js" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;otSDKStub.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;consent&#x2F;736cbc04-cee9-4e5f-92a9-254c939affbd&#x2F;736cbc04-cee9-4e5f-92a9-254c939affbd.json" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;consent&#x2F;736cbc04-cee9-4e5f-92a9-254c939affbd&#x2F;736cbc04-cee9-4e5f-92a9-254c939affbd.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;otBannerSdk.js" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;otBannerSdk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;consent&#x2F;736cbc04-cee9-4e5f-92a9-254c939affbd&#x2F;ef472826-4784-44fa-8430-9bf35fa13f43&#x2F;fr.json" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;consent&#x2F;736cbc04-cee9-4e5f-92a9-254c939affbd&#x2F;ef472826-4784-44fa-8430-9bf35fa13f43&#x2F;fr.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;otTCF.js" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;otTCF.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;assets&#x2F;otCenterRounded.json" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;assets&#x2F;otCenterRounded.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;assets&#x2F;v2&#x2F;otPcCenter.json" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;assets&#x2F;v2&#x2F;otPcCenter.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;assets&#x2F;otCookieSettingsButton.json" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;assets&#x2F;otCookieSettingsButton.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;assets&#x2F;otCommonStyles.css" target="_blank" class="external" rel="noreferrer noopener">dl.gmx.fr.edgekey.net&#x2F;uim&#x2F;permission&#x2F;onetrust&#x2F;live&#x2F;scripttemplates&#x2F;6.31.0&#x2F;assets&#x2F;otCommonStyles.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://auth.idealo.fr.edgekey.net&#x2F;refresh&#x2F;idtoken" target="_blank" class="external" rel="noreferrer noopener">auth.idealo.fr.edgekey.net&#x2F;refresh&#x2F;idtoken</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gtm.idealo.fr.edgekey.net&#x2F;3.3&#x2F;sp.js" target="_blank" class="external" rel="noreferrer noopener">gtm.idealo.fr.edgekey.net&#x2F;3.3&#x2F;sp.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gtm.idealo.fr.edgekey.net&#x2F;heartbeat" target="_blank" class="external" rel="noreferrer noopener">gtm.idealo.fr.edgekey.net&#x2F;heartbeat</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gateway-partners.lefigaro.fr.edgekey.net&#x2F;" target="_blank" class="external" rel="noreferrer noopener">gateway-partners.lefigaro.fr.edgekey.net&#x2F;</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://player-video.lefigaro.fr.edgekey.net&#x2F;player-short-polling" target="_blank" class="external" rel="noreferrer noopener">player-video.lefigaro.fr.edgekey.net&#x2F;player-short-polling</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://asset.matchendirect.fr.edgekey.net&#x2F;css&#x2F;minify&#x2F;commun.css" target="_blank" class="external" rel="noreferrer noopener">asset.matchendirect.fr.edgekey.net&#x2F;css&#x2F;minify&#x2F;commun.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://asset.matchendirect.fr.edgekey.net&#x2F;js&#x2F;minify&#x2F;commun_top.js" target="_blank" class="external" rel="noreferrer noopener">asset.matchendirect.fr.edgekey.net&#x2F;js&#x2F;minify&#x2F;commun_top.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://asset.matchendirect.fr.edgekey.net&#x2F;image&#x2F;bookmaker&#x2F;parionsweb&#x2F;comp-parionsweb.png" target="_blank" class="external" rel="noreferrer noopener">asset.matchendirect.fr.edgekey.net&#x2F;image&#x2F;bookmaker&#x2F;parionsweb&#x2F;comp-parionsweb.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://asset.matchendirect.fr.edgekey.net&#x2F;image&#x2F;bookmaker&#x2F;parionsweb&#x2F;h39-parionsweb.png" target="_blank" class="external" rel="noreferrer noopener">asset.matchendirect.fr.edgekey.net&#x2F;image&#x2F;bookmaker&#x2F;parionsweb&#x2F;h39-parionsweb.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://asset.matchendirect.fr.edgekey.net&#x2F;js&#x2F;jquery.smartbanner.js" target="_blank" class="external" rel="noreferrer noopener">asset.matchendirect.fr.edgekey.net&#x2F;js&#x2F;jquery.smartbanner.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://asset.matchendirect.fr.edgekey.net&#x2F;js&#x2F;commun_bottom.js" target="_blank" class="external" rel="noreferrer noopener">asset.matchendirect.fr.edgekey.net&#x2F;js&#x2F;commun_bottom.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://asset.matchendirect.fr.edgekey.net&#x2F;js&#x2F;commun_bottom_social.js" target="_blank" class="external" rel="noreferrer noopener">asset.matchendirect.fr.edgekey.net&#x2F;js&#x2F;commun_bottom_social.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://asset.matchendirect.fr.edgekey.net&#x2F;js&#x2F;commun_bottom_tracking.js" target="_blank" class="external" rel="noreferrer noopener">asset.matchendirect.fr.edgekey.net&#x2F;js&#x2F;commun_bottom_tracking.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://asset.matchendirect.fr.edgekey.net&#x2F;image&#x2F;sprite&#x2F;competition-v2.png" target="_blank" class="external" rel="noreferrer noopener">asset.matchendirect.fr.edgekey.net&#x2F;image&#x2F;sprite&#x2F;competition-v2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://asset.matchendirect.fr.edgekey.net&#x2F;image&#x2F;sprite&#x2F;pays.png" target="_blank" class="external" rel="noreferrer noopener">asset.matchendirect.fr.edgekey.net&#x2F;image&#x2F;sprite&#x2F;pays.png</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -162,7 +648,130 @@
             <a href="http://lefigaro.fr" target="_blank" class="external">lefigaro.fr</a>
         </li>
         <li class='truncate'>
+            <a href="http://annuaire.lefigaro.fr" target="_blank" class="external">annuaire.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://etudiant.lefigaro.fr" target="_blank" class="external">etudiant.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sante.lefigaro.fr" target="_blank" class="external">sante.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tvmag.lefigaro.fr" target="_blank" class="external">tvmag.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://evene.lefigaro.fr" target="_blank" class="external">evene.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://forum.lefigaro.fr" target="_blank" class="external">forum.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://codespromo.lefigaro.fr" target="_blank" class="external">codespromo.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://madame.lefigaro.fr" target="_blank" class="external">madame.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.lefigaro.fr" target="_blank" class="external">www.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://immobilier.lefigaro.fr" target="_blank" class="external">immobilier.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://video.lefigaro.fr" target="_blank" class="external">video.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://leparticulier.lefigaro.fr" target="_blank" class="external">leparticulier.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://horaires.lefigaro.fr" target="_blank" class="external">horaires.lefigaro.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://lequipe.fr" target="_blank" class="external">lequipe.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lequipe.fr" target="_blank" class="external">www.lequipe.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cuisineactuelle.fr" target="_blank" class="external">cuisineactuelle.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://photo.cuisineactuelle.fr" target="_blank" class="external">photo.cuisineactuelle.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.capital.fr" target="_blank" class="external">www.capital.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cesoirtv.com" target="_blank" class="external">www.cesoirtv.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cuisineactuelle.fr" target="_blank" class="external">www.cuisineactuelle.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.femmeactuelle.fr" target="_blank" class="external">www.femmeactuelle.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gala.fr" target="_blank" class="external">www.gala.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.programme-tv.net" target="_blank" class="external">www.programme-tv.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.programme.tv" target="_blank" class="external">www.programme.tv</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.voici.fr" target="_blank" class="external">www.voici.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bouyguestelecom.fr" target="_blank" class="external">bouyguestelecom.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.assistance.bouyguestelecom.fr" target="_blank" class="external">www.assistance.bouyguestelecom.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bonial.fr" target="_blank" class="external">bonial.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bonial.fr" target="_blank" class="external">www.bonial.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bouyguestelecom.fr" target="_blank" class="external">www.bouyguestelecom.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.geo.fr" target="_blank" class="external">www.geo.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://edf.fr" target="_blank" class="external">edf.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.edf.fr" target="_blank" class="external">www.edf.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://franceinter.fr" target="_blank" class="external">franceinter.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.radiofrance.fr" target="_blank" class="external">www.radiofrance.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.franceinter.fr" target="_blank" class="external">www.franceinter.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gmx.fr" target="_blank" class="external">gmx.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gmx.fr" target="_blank" class="external">www.gmx.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://idealo.fr" target="_blank" class="external">idealo.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.idealo.fr" target="_blank" class="external">www.idealo.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://matchendirect.fr" target="_blank" class="external">matchendirect.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.matchendirect.fr" target="_blank" class="external">www.matchendirect.fr</a>
         </li>
     </ul>
 </div>

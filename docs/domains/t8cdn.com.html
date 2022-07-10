@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "t8cdn.com",
-        history: [{"date":"2020.05","prevalence":0.000057,"sites":4,"fingerprinting":2,"cookies":0},{"date":"2020.06","prevalence":0.0000547,"sites":4,"fingerprinting":2,"cookies":0},{"date":"2020.07","prevalence":0.0000416,"sites":3,"fingerprinting":1,"cookies":0},{"date":"2020.08","prevalence":0.00011,"sites":15,"fingerprinting":1,"cookies":0.0000294},{"date":"2020.09","prevalence":0.0000761,"sites":10,"fingerprinting":1,"cookies":0.0000152},{"date":"2020.10","prevalence":0.0000911,"sites":12,"fingerprinting":1,"cookies":0.0000228},{"date":"2020.11","prevalence":0.0000835,"sites":11,"fingerprinting":1,"cookies":0},{"date":"2020.12","prevalence":0.0000761,"sites":10,"fingerprinting":1,"cookies":0.0000152},{"date":"2021.01","prevalence":0.0000458,"sites":6,"fingerprinting":2,"cookies":0.00000764},{"date":"2021.02","prevalence":0.0000417,"sites":6,"fingerprinting":2,"cookies":0.0000278},{"date":"2021.03","prevalence":0.0000416,"sites":6,"fingerprinting":2,"cookies":0.0000277},{"date":"2021.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.05","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.06","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.07","prevalence":0.0000347,"sites":5,"fingerprinting":0,"cookies":0},{"date":"2021.08","prevalence":0.0000417,"sites":6,"fingerprinting":0,"cookies":0},{"date":"2021.09","prevalence":0.0000276,"sites":4,"fingerprinting":0,"cookies":0},{"date":"2021.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.01","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.02","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.03","prevalence":0.0000478,"sites":7,"fingerprinting":1,"cookies":0},{"date":"2022.04","prevalence":0.0000613,"sites":9,"fingerprinting":0,"cookies":0},{"date":"2022.05","prevalence":0.0000477,"sites":7,"fingerprinting":0,"cookies":0},{"date":"max/june-2022","prevalence":0.0000407,"sites":6,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000407,"sites":6,"fingerprinting":0,"cookies":0},{"date":"us-opt-in","prevalence":0.0000543,"sites":8,"fingerprinting":1,"cookies":0.0000136}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;9602<small>/27203</small>
+                    <strong>Rank:</strong> &#35;7853<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (6 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (8 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -91,11 +91,15 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Image</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Font</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/t8cdn.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>ei-ph</span>, 
+                    <span>es</span>, 
                 </li>
             </ul>
         </div>
@@ -114,31 +118,116 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Navigator.prototype.vendor</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201506&#x2F;21&#x2F;51022371&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;BpRi4y9G7_Q3k2lW).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201506&#x2F;21&#x2F;51022371&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;BpRi4y9G7_Q3k2lW).jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201803&#x2F;15&#x2F;158252012&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;6FdkNaDibYG1QnZn).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201803&#x2F;15&#x2F;158252012&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;6FdkNaDibYG1QnZn).jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201805&#x2F;12&#x2F;165765601&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;JQs-dSzlGpeWiuHP).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201805&#x2F;12&#x2F;165765601&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;JQs-dSzlGpeWiuHP).jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201802&#x2F;06&#x2F;153597662&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;7LpGmFfEC4wQSW92).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201802&#x2F;06&#x2F;153597662&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;7LpGmFfEC4wQSW92).jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201503&#x2F;20&#x2F;46400771&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;zgY1DIRK5kvT5WKa).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201503&#x2F;20&#x2F;46400771&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;zgY1DIRK5kvT5WKa).jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;202009&#x2F;25&#x2F;354834782&#x2F;original&#x2F;5(m&#x3D;eqw4mgaaaa)(mh&#x3D;VQDTn2S5C4xWxWUo).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;202009&#x2F;25&#x2F;354834782&#x2F;original&#x2F;5(m&#x3D;eqw4mgaaaa)(mh&#x3D;VQDTn2S5C4xWxWUo).jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201503&#x2F;13&#x2F;46066162&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;rBCk1OCZwAiByiE3).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201503&#x2F;13&#x2F;46066162&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;rBCk1OCZwAiByiE3).jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201802&#x2F;20&#x2F;155297232&#x2F;original&#x2F;6(m&#x3D;eqw4mgaaaa)(mh&#x3D;vybiIkL1OG1hqOcY).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201802&#x2F;20&#x2F;155297232&#x2F;original&#x2F;6(m&#x3D;eqw4mgaaaa)(mh&#x3D;vybiIkL1OG1hqOcY).jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201502&#x2F;25&#x2F;45351391&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;adMkh1oirj-jz0XL).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201502&#x2F;25&#x2F;45351391&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;adMkh1oirj-jz0XL).jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201703&#x2F;31&#x2F;111667842&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;l8GCgMzwaOJZe0Aq).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201703&#x2F;31&#x2F;111667842&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;l8GCgMzwaOJZe0Aq).jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201507&#x2F;26&#x2F;53758041&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;wGJ2MIsGDdkVIjBQ).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201507&#x2F;26&#x2F;53758041&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;wGJ2MIsGDdkVIjBQ).jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201901&#x2F;28&#x2F;204265011&#x2F;original&#x2F;14(m&#x3D;eqw4mgaaaa)(mh&#x3D;1lZ_58FTYB6kjdjN).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201901&#x2F;28&#x2F;204265011&#x2F;original&#x2F;14(m&#x3D;eqw4mgaaaa)(mh&#x3D;1lZ_58FTYB6kjdjN).jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201505&#x2F;07&#x2F;48685841&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;HhVTVX0FuqJdk6Qo).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201505&#x2F;07&#x2F;48685841&#x2F;original&#x2F;1(m&#x3D;eqw4mgaaaa)(mh&#x3D;HhVTVX0FuqJdk6Qo).jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201705&#x2F;26&#x2F;117940981&#x2F;original&#x2F;6(m&#x3D;eqw4mgaaaa)(mh&#x3D;SqD8f-7Xi-C79pXF).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201705&#x2F;26&#x2F;117940981&#x2F;original&#x2F;6(m&#x3D;eqw4mgaaaa)(mh&#x3D;SqD8f-7Xi-C79pXF).jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201707&#x2F;22&#x2F;125419901&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;hK79MTJOjyXnq6Be).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201707&#x2F;22&#x2F;125419901&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;hK79MTJOjyXnq6Be).jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201712&#x2F;07&#x2F;144421862&#x2F;original&#x2F;11(m&#x3D;eqw4mgaaaa)(mh&#x3D;gobnzLNkL5p_tl69).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201712&#x2F;07&#x2F;144421862&#x2F;original&#x2F;11(m&#x3D;eqw4mgaaaa)(mh&#x3D;gobnzLNkL5p_tl69).jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;202011&#x2F;07&#x2F;367886182&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;8ypsruJnuvjFKNfS).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;202011&#x2F;07&#x2F;367886182&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;8ypsruJnuvjFKNfS).jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201502&#x2F;06&#x2F;38618181&#x2F;original&#x2F;14(m&#x3D;eqw4mgaaaa)(mh&#x3D;AICMpovuq2EdP3Jy).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201502&#x2F;06&#x2F;38618181&#x2F;original&#x2F;14(m&#x3D;eqw4mgaaaa)(mh&#x3D;AICMpovuq2EdP3Jy).jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201606&#x2F;28&#x2F;80788301&#x2F;original&#x2F;9(m&#x3D;eqw4mgaaaa)(mh&#x3D;VcqcUu04Mp9cl-HH).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201606&#x2F;28&#x2F;80788301&#x2F;original&#x2F;9(m&#x3D;eqw4mgaaaa)(mh&#x3D;VcqcUu04Mp9cl-HH).jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201903&#x2F;23&#x2F;214478872&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;YvPN4pztMNwf34vm).jpg" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201903&#x2F;23&#x2F;214478872&#x2F;original&#x2F;12(m&#x3D;eqw4mgaaaa)(mh&#x3D;YvPN4pztMNwf34vm).jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es.t8cdn.com&#x2F;assets&#x2F;pc&#x2F;css&#x2F;common_hash-6c1cd7d3c25b71a.css" target="_blank" class="external" rel="noreferrer noopener">es.t8cdn.com&#x2F;assets&#x2F;pc&#x2F;css&#x2F;common_hash-6c1cd7d3c25b71a.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es.t8cdn.com&#x2F;assets&#x2F;es5&#x2F;pc&#x2F;js&#x2F;utils&#x2F;t8-utils.min_hash-0b05fc3c871b016.js" target="_blank" class="external" rel="noreferrer noopener">es.t8cdn.com&#x2F;assets&#x2F;es5&#x2F;pc&#x2F;js&#x2F;utils&#x2F;t8-utils.min_hash-0b05fc3c871b016.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es.t8cdn.com&#x2F;images&#x2F;header_logo&#x2F;PC.png" target="_blank" class="external" rel="noreferrer noopener">es.t8cdn.com&#x2F;images&#x2F;header_logo&#x2F;PC.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es.t8cdn.com&#x2F;images&#x2F;categories&#x2F;general&#x2F;placeholder.gif" target="_blank" class="external" rel="noreferrer noopener">es.t8cdn.com&#x2F;images&#x2F;categories&#x2F;general&#x2F;placeholder.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es.t8cdn.com&#x2F;font_icons&#x2F;complete&#x2F;tube8v2.woff2" target="_blank" class="external" rel="noreferrer noopener">es.t8cdn.com&#x2F;font_icons&#x2F;complete&#x2F;tube8v2.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es.t8cdn.com&#x2F;assets&#x2F;plugins&#x2F;lazyload_hash-7b0a75843348714.js" target="_blank" class="external" rel="noreferrer noopener">es.t8cdn.com&#x2F;assets&#x2F;plugins&#x2F;lazyload_hash-7b0a75843348714.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es.t8cdn.com&#x2F;assets&#x2F;plugins&#x2F;modernizr_hash-58322fffacfb1e9.js" target="_blank" class="external" rel="noreferrer noopener">es.t8cdn.com&#x2F;assets&#x2F;plugins&#x2F;modernizr_hash-58322fffacfb1e9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es.t8cdn.com&#x2F;assets&#x2F;pc&#x2F;js&#x2F;common_hash-790ab420760d129.js" target="_blank" class="external" rel="noreferrer noopener">es.t8cdn.com&#x2F;assets&#x2F;pc&#x2F;js&#x2F;common_hash-790ab420760d129.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201703&#x2F;27&#x2F;111154462&#x2F;original&#x2F;12(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;_ECYOhQH9xJ-itvD).webp" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201703&#x2F;27&#x2F;111154462&#x2F;original&#x2F;12(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;_ECYOhQH9xJ-itvD).webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;201708&#x2F;30&#x2F;130557941&#x2F;original&#x2F;11(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;MJV_MltOKapkuztU).webp" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;201708&#x2F;30&#x2F;130557941&#x2F;original&#x2F;11(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;MJV_MltOKapkuztU).webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;202207&#x2F;01&#x2F;410968201&#x2F;original&#x2F;7(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;gA3R72LL5BxO1Kib).webp" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;202207&#x2F;01&#x2F;410968201&#x2F;original&#x2F;7(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;gA3R72LL5BxO1Kib).webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;202206&#x2F;30&#x2F;410891641&#x2F;original&#x2F;9(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;CVLfKs8UZAh5UvUI).webp" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;202206&#x2F;30&#x2F;410891641&#x2F;original&#x2F;9(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;CVLfKs8UZAh5UvUI).webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;202207&#x2F;04&#x2F;411107111&#x2F;original&#x2F;12(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;oys9U12xuSZYV0P8).webp" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;202207&#x2F;04&#x2F;411107111&#x2F;original&#x2F;12(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;oys9U12xuSZYV0P8).webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ei-ph.t8cdn.com&#x2F;videos&#x2F;202207&#x2F;06&#x2F;411248181&#x2F;original&#x2F;10(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;6IpELjynfPc3gQvd).webp" target="_blank" class="external" rel="noreferrer noopener">ei-ph.t8cdn.com&#x2F;videos&#x2F;202207&#x2F;06&#x2F;411248181&#x2F;original&#x2F;10(m&#x3D;bIaYcNXaaaag5p)(mh&#x3D;6IpELjynfPc3gQvd).webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es.t8cdn.com&#x2F;assets&#x2F;pc&#x2F;css&#x2F;cat_fish_banner_hash-76379cace4ec268.css" target="_blank" class="external" rel="noreferrer noopener">es.t8cdn.com&#x2F;assets&#x2F;pc&#x2F;css&#x2F;cat_fish_banner_hash-76379cace4ec268.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es.t8cdn.com&#x2F;assets&#x2F;pc&#x2F;css&#x2F;geoRedirect_hash-50bb2ee1eebad0b.css" target="_blank" class="external" rel="noreferrer noopener">es.t8cdn.com&#x2F;assets&#x2F;pc&#x2F;css&#x2F;geoRedirect_hash-50bb2ee1eebad0b.css</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -151,7 +240,16 @@
             <a href="http://adultjoy.net" target="_blank" class="external">adultjoy.net</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.clips18.net" target="_blank" class="external">www.clips18.net</a>
+        </li>
+        <li class='truncate'>
             <a href="http://pinkclips.mobi" target="_blank" class="external">pinkclips.mobi</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tube8.fr" target="_blank" class="external">tube8.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tube8.fr" target="_blank" class="external">www.tube8.fr</a>
         </li>
     </ul>
 </div>

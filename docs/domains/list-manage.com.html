@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "list-manage.com",
-        history: [{"date":"max/ref-nocmp-de","prevalence":0.001,"sites":10,"fingerprinting":0,"cookies":0.001},{"date":"max/opt-in-de","prevalence":0.001,"sites":10,"fingerprinting":0,"cookies":0.001}]
+        history: [{"date":"main","prevalence":0.00319,"sites":470,"fingerprinting":3,"cookies":0.00317},{"date":"us-opt-in","prevalence":0.00332,"sites":490,"fingerprinting":3,"cookies":0.00332}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.intuit.com&#x2F;privacy&#x2F;statement&#x2F;" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.intuit.com&#x2F;privacy&#x2F;statement&#x2F;</a>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;915<small>/3704</small>
+                    <strong>Rank:</strong> &#35;582<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.10&#37; (10 sites)
+                    <strong>Prevalence:</strong> 0.33&#37; (490 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.10&#37;
+                    <strong>Cookies:</strong> 0.33&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -91,20 +91,37 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
+                    <span>Document</span>,
+                    <span>XHR</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/list-manage.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>mc.us11</span>, 
-                    <span>mc.us14</span>, 
                     <span>mc.us20</span>, 
+                    <span>mc.us3</span>, 
                     <span>mc.us18</span>, 
-                    <span>mc.us2</span>, 
+                    <span>mc.us11</span>, 
+                    <span>mc.us9</span>, 
+                    <span>mc.us10</span>, 
                     <span>mc.us4</span>, 
-                    <span>mc.us8</span>, 
-                    <span>mc.us6</span>, 
-                    <span>mc.us15</span>, 
+                    <span>mc.us16</span>, 
                     <span>mc.us7</span>, 
+                    <span>mc.us5</span>, 
+                    <span>mc.us17</span>, 
+                    <span>mc.us8</span>, 
+                    <span>mc.us19</span>, 
+                    <span>mc.us1</span>, 
+                    <span>mc.us15</span>, 
+                    <span>mc.us13</span>, 
+                    <span>mc.us12</span>, 
+                    <span>mc.us14</span>, 
+                    <span>mc.us2</span>, 
+                    <span>mc.us6</span>, 
+                    <span>health.us2</span>, 
+                    <span>spells8.us20</span>, 
+                    <span>bouwinfo.us4</span>, 
+                    <span>gld.us11</span>, 
+                    <span>ogorod.us12</span>, 
                 </li>
             </ul>
         </div>
@@ -123,13 +140,73 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.productSub</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getSupportedExtensions</li>
+        <li class='truncate'>Navigator.prototype.webkitTemporaryStorage</li>
+        <li class='truncate'>window.outerWidth</li>
+        <li class='truncate'>Navigator.prototype.hardwareConcurrency</li>
+        <li class='truncate'>Navigator.prototype.mediaDevices</li>
+        <li class='truncate'>Navigator.prototype.onLine</li>
+        <li class='truncate'>Navigator.prototype.webdriver</li>
+        <li class='truncate'>Screen.prototype.pixelDepth</li>
+        <li class='truncate'>Navigator.prototype.storage</li>
+        <li class='truncate'>Navigator.prototype.product</li>
+        <li class='truncate'>Navigator.prototype.permissions</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getExtension</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getParameter</li>
+        <li class='truncate'>Navigator.prototype.doNotTrack</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>NavigatorUAData.prototype.brands</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>speechSynthesis.__proto__.getVoices</li>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>Navigator.prototype.javaEnabled</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://mc.us11.list-manage.com&#x2F;subscribe&#x2F;form-settings" target="_blank" class="external" rel="noreferrer noopener">mc.us11.list-manage.com&#x2F;subscribe&#x2F;form-settings</a> (seen on 10 websites)</p>
+            <p><a href="http://mc.us20.list-manage.com&#x2F;subscribe&#x2F;form-settings" target="_blank" class="external" rel="noreferrer noopener">mc.us20.list-manage.com&#x2F;subscribe&#x2F;form-settings</a> (seen on 266 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bouwinfo.us4.list-manage.com&#x2F;subscribe" target="_blank" class="external" rel="noreferrer noopener">bouwinfo.us4.list-manage.com&#x2F;subscribe</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://health.us2.list-manage.com&#x2F;generate-js&#x2F;" target="_blank" class="external" rel="noreferrer noopener">health.us2.list-manage.com&#x2F;generate-js&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bouwinfo.us4.list-manage.com&#x2F;Hz3tWBVox0JbArqNkw&#x2F;DOV7kNGfDuYz&#x2F;M3MLaQE&#x2F;bG8uL&#x2F;HwCWmQ" target="_blank" class="external" rel="noreferrer noopener">bouwinfo.us4.list-manage.com&#x2F;Hz3tWBVox0JbArqNkw&#x2F;DOV7kNGfDuYz&#x2F;M3MLaQE&#x2F;bG8uL&#x2F;HwCWmQ</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gld.us11.list-manage.com&#x2F;HdgQqC&#x2F;x7TD0R&#x2F;wVNth6&#x2F;OxOH&#x2F;siQes&#x2F;JiiYcrkpYkrO&#x2F;AxAqCSofPw&#x2F;PGJhHlMI&#x2F;ewU" target="_blank" class="external" rel="noreferrer noopener">gld.us11.list-manage.com&#x2F;HdgQqC&#x2F;x7TD0R&#x2F;wVNth6&#x2F;OxOH&#x2F;siQes&#x2F;JiiYcrkpYkrO&#x2F;AxAqCSofPw&#x2F;PGJhHlMI&#x2F;ewU</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -139,34 +216,85 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://freudengarten.de" target="_blank" class="external">freudengarten.de</a>
+            <a href="http://www.reference.com" target="_blank" class="external">www.reference.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.broadbandtvnews.com" target="_blank" class="external">www.broadbandtvnews.com</a>
         </li>
         <li class='truncate'>
             <a href="http://hifi.de" target="_blank" class="external">hifi.de</a>
         </li>
         <li class='truncate'>
-            <a href="http://potenzdoktor.de" target="_blank" class="external">potenzdoktor.de</a>
+            <a href="http://www.repurposedmaterialsinc.com" target="_blank" class="external">www.repurposedmaterialsinc.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://statisticsglobe.com" target="_blank" class="external">statisticsglobe.com</a>
+            <a href="http://petloverguy.com" target="_blank" class="external">petloverguy.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://stellplatz.info" target="_blank" class="external">stellplatz.info</a>
+            <a href="http://times-herald.com" target="_blank" class="external">times-herald.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.berliner-mieterverein.de" target="_blank" class="external">www.berliner-mieterverein.de</a>
+            <a href="http://stcroixrods.com" target="_blank" class="external">stcroixrods.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.bodensee.de" target="_blank" class="external">www.bodensee.de</a>
+            <a href="http://medicalmarijuanainc.com" target="_blank" class="external">medicalmarijuanainc.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.browsergames.de" target="_blank" class="external">www.browsergames.de</a>
+            <a href="http://theybf.com" target="_blank" class="external">theybf.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.energiespeicher-online.shop" target="_blank" class="external">www.energiespeicher-online.shop</a>
+            <a href="http://www.gooddishtv.com" target="_blank" class="external">www.gooddishtv.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.reference.com" target="_blank" class="external">www.reference.com</a>
+            <a href="http://www.alllanguageresources.com" target="_blank" class="external">www.alllanguageresources.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.storagereview.com" target="_blank" class="external">www.storagereview.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://haleystrategic.com" target="_blank" class="external">haleystrategic.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.originalbotanica.com" target="_blank" class="external">www.originalbotanica.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.centralvapors.com" target="_blank" class="external">www.centralvapors.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://stridewise.com" target="_blank" class="external">stridewise.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dnevno.hr" target="_blank" class="external">www.dnevno.hr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thefirsttimemamma.com" target="_blank" class="external">thefirsttimemamma.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dirtconnections.com" target="_blank" class="external">www.dirtconnections.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.thisisathens.org" target="_blank" class="external">www.thisisathens.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ri.gov" target="_blank" class="external">ri.gov</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://spells8.com" target="_blank" class="external">spells8.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bouwinfo.be" target="_blank" class="external">bouwinfo.be</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gld.nl" target="_blank" class="external">www.gld.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ogorod.ru" target="_blank" class="external">www.ogorod.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bouwinfo.be" target="_blank" class="external">www.bouwinfo.be</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gld.nl" target="_blank" class="external">gld.nl</a>
         </li>
     </ul>
 </div>

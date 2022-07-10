@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "bbimages.eu",
-        history: [{"date":"max/ref-nocmp-de","prevalence":0.0001,"sites":1,"fingerprinting":1,"cookies":0},{"date":"max/opt-in-de","prevalence":0.0001,"sites":1,"fingerprinting":1,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000203,"sites":3,"fingerprinting":2,"cookies":0},{"date":"us-opt-in","prevalence":0.0000271,"sites":4,"fingerprinting":2,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;3044<small>/3704</small>
+                    <strong>Rank:</strong> &#35;11001<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (1 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (4 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -90,12 +90,17 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Script</span>,
                     <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/bbimages.eu.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>fe2</span>, 
+                    <span>nlfe2</span>, 
                     <span>eu-prod</span>, 
+                    <span>nl</span>, 
+                    <span>nlfe5</span>, 
                 </li>
             </ul>
         </div>
@@ -114,13 +119,41 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Element.prototype.getClientRects</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://eu-prod.bbimages.eu&#x2F;images&#x2F;images_responsive&#x2F;banner_backgrounds&#x2F;eu_8.jpg" target="_blank" class="external" rel="noreferrer noopener">eu-prod.bbimages.eu&#x2F;images&#x2F;images_responsive&#x2F;banner_backgrounds&#x2F;eu_8.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://fe2.bbimages.eu&#x2F;cp&#x2F;1&#x2F;8da91439babf9c8f514905067ad500da.es5.js" target="_blank" class="external" rel="noreferrer noopener">fe2.bbimages.eu&#x2F;cp&#x2F;1&#x2F;8da91439babf9c8f514905067ad500da.es5.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://fe2.bbimages.eu&#x2F;cp&#x2F;1&#x2F;e693413e52c61faa62138798a8292a58.es5.js" target="_blank" class="external" rel="noreferrer noopener">fe2.bbimages.eu&#x2F;cp&#x2F;1&#x2F;e693413e52c61faa62138798a8292a58.es5.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://eu-prod.bbimages.eu&#x2F;images&#x2F;images_responsive&#x2F;sprites_global.png" target="_blank" class="external" rel="noreferrer noopener">eu-prod.bbimages.eu&#x2F;images&#x2F;images_responsive&#x2F;sprites_global.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://fe2.bbimages.eu&#x2F;cp&#x2F;1&#x2F;c93ccf39e6f5afe14c5e56f0f74ce650.es5.js" target="_blank" class="external" rel="noreferrer noopener">fe2.bbimages.eu&#x2F;cp&#x2F;1&#x2F;c93ccf39e6f5afe14c5e56f0f74ce650.es5.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nlfe2.bbimages.eu&#x2F;cp&#x2F;1&#x2F;33404437af3027cadeea9c56086ffe97.es5.js" target="_blank" class="external" rel="noreferrer noopener">nlfe2.bbimages.eu&#x2F;cp&#x2F;1&#x2F;33404437af3027cadeea9c56086ffe97.es5.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -134,6 +167,12 @@
         </li>
         <li class='truncate'>
             <a href="http://www.bedandbreakfast.eu" target="_blank" class="external">www.bedandbreakfast.eu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bedandbreakfast.nl" target="_blank" class="external">www.bedandbreakfast.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bedandbreakfast.nl" target="_blank" class="external">bedandbreakfast.nl</a>
         </li>
     </ul>
 </div>

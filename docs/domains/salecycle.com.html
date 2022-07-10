@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "salecycle.com",
-        history: [{"date":"max/opt-in-de","prevalence":0.000703,"sites":7,"fingerprinting":2,"cookies":0}]
+        history: [{"date":"main","prevalence":0.000712,"sites":105,"fingerprinting":2,"cookies":0.0000271},{"date":"us-opt-in","prevalence":0.00102,"sites":151,"fingerprinting":2,"cookies":0.0000203}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;1178<small>/3704</small>
+                    <strong>Rank:</strong> &#35;1178<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.07&#37; (7 sites)
+                    <strong>Prevalence:</strong> 0.10&#37; (151 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
@@ -93,12 +93,18 @@
                     <span>Document</span>,
                     <span>Script</span>,
                     <span>Ping</span>,
+                    <span>WebSocket</span>,
+                    <span>XHR</span>,
+                    <span>Fetch</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/salecycle.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>s</span>, 
                     <span>i</span>, 
+                    <span>ws</span>, 
+                    <span>c</span>, 
+                    <span>cookie-manager</span>, 
                 </li>
             </ul>
         </div>
@@ -127,23 +133,112 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>window.sessionStorage</li>
         <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
 </div>
 
+<div class='p-5 border-b'>
+    <h3 class='section-header'>CNAMEs</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://user-journey.mindvalley.com" target="_blank" class="external">user-journey.mindvalley.com</a> &#x2192; <a href="http://cookie-manager.salecycle.com" target="_blank" class="external">cookie-manager.salecycle.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://user-journey.tedbaker.com" target="_blank" class="external">user-journey.tedbaker.com</a> &#x2192; <a href="http://cookie-manager.salecycle.com" target="_blank" class="external">cookie-manager.salecycle.com</a>
+        </li>
+    </ul>
+</div>
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://s.salecycle.com&#x2F;receiver.html" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;receiver.html</a> (seen on 7 websites)</p>
+            <p><a href="http://s.salecycle.com&#x2F;receiver.html" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;receiver.html</a> (seen on 81 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.salecycle.com&#x2F;iframe_receiver&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;iframe_receiver&#x2F;bundle.js</a> (seen on 7 websites)</p>
+            <p><a href="http://s.salecycle.com&#x2F;iframe_receiver&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;iframe_receiver&#x2F;bundle.js</a> (seen on 79 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://i.salecycle.com&#x2F;impression" target="_blank" class="external" rel="noreferrer noopener">i.salecycle.com&#x2F;impression</a> (seen on 6 websites)</p>
+            <p><a href="http://i.salecycle.com&#x2F;impression" target="_blank" class="external" rel="noreferrer noopener">i.salecycle.com&#x2F;impression</a> (seen on 58 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://i.salecycle.com&#x2F;error" target="_blank" class="external" rel="noreferrer noopener">i.salecycle.com&#x2F;error</a> (seen on 31 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws.salecycle.com&#x2F;ws" target="_blank" class="external" rel="noreferrer noopener">ws.salecycle.com&#x2F;ws</a> (seen on 18 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://c.salecycle.com&#x2F;osr&#x2F;config" target="_blank" class="external" rel="noreferrer noopener">c.salecycle.com&#x2F;osr&#x2F;config</a> (seen on 17 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cookie-manager.salecycle.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">cookie-manager.salecycle.com&#x2F;</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;booksamillion&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;booksamillion&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;bottegaveneta&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;bottegaveneta&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;dysonjp&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;dysonjp&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;dyson_group_one&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;dyson_group_one&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;dysonau&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;dysonau&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;dyson_group_two&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;dyson_group_two&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;dysonde&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;dysonde&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;forgeworld&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;forgeworld&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;idmobile&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;idmobile&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;MONOPRIX&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;MONOPRIX&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;nastygal&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;nastygal&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;prodirectsoccer&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;prodirectsoccer&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;starhub&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;starhub&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;supersmart&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;supersmart&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;technogym&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;technogym&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;thebodyshop_global&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;thebodyshop_global&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://i.salecycle.com&#x2F;error" target="_blank" class="external" rel="noreferrer noopener">i.salecycle.com&#x2F;error</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;valentino&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;valentino&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.salecycle.com&#x2F;wowcher&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">s.salecycle.com&#x2F;wowcher&#x2F;bundle.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -153,25 +248,283 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://cos.com" target="_blank" class="external">cos.com</a>
+            <a href="http://www.ovs.it" target="_blank" class="external">www.ovs.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pierreetvacances.com" target="_blank" class="external">www.pierreetvacances.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.frenchbee.com" target="_blank" class="external">www.frenchbee.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.linvosges.com" target="_blank" class="external">www.linvosges.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pandora.net" target="_blank" class="external">www.pandora.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mindvalley.com" target="_blank" class="external">www.mindvalley.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wickes.co.uk" target="_blank" class="external">www.wickes.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.msccruisesusa.com" target="_blank" class="external">www.msccruisesusa.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.thebodyshop.com" target="_blank" class="external">www.thebodyshop.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bottegaveneta.com" target="_blank" class="external">www.bottegaveneta.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tedbaker.com" target="_blank" class="external">www.tedbaker.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dyson.com" target="_blank" class="external">www.dyson.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dyson.com.au" target="_blank" class="external">www.dyson.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.monki.com" target="_blank" class="external">www.monki.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.starhub.com" target="_blank" class="external">www.starhub.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.thecpapshop.com" target="_blank" class="external">www.thecpapshop.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://us.pandora.net" target="_blank" class="external">us.pandora.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.alexandermcqueen.com" target="_blank" class="external">www.alexandermcqueen.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.dyson.de" target="_blank" class="external">www.dyson.de</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.msccruises.de" target="_blank" class="external">www.msccruises.de</a>
+            <a href="http://www.shellenergy.co.uk" target="_blank" class="external">www.shellenergy.co.uk</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.nespresso.com" target="_blank" class="external">www.nespresso.com</a>
+            <a href="http://www.legolanddiscoverycenter.com" target="_blank" class="external">www.legolanddiscoverycenter.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.ouest-france.fr" target="_blank" class="external">www.ouest-france.fr</a>
+            <a href="http://www.balenciaga.com" target="_blank" class="external">www.balenciaga.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mrandmrssmith.com" target="_blank" class="external">www.mrandmrssmith.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.goldengoose.com" target="_blank" class="external">www.goldengoose.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.stories.com" target="_blank" class="external">www.stories.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.uniqlo.com" target="_blank" class="external">www.uniqlo.com</a>
+            <a href="http://www.ethiopianairlines.com" target="_blank" class="external">www.ethiopianairlines.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://peterpanbus.com" target="_blank" class="external">peterpanbus.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.allsaints.com" target="_blank" class="external">www.allsaints.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.avis.com.au" target="_blank" class="external">www.avis.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.excellenceresorts.com" target="_blank" class="external">www.excellenceresorts.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dyson.co.uk" target="_blank" class="external">www.dyson.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://map.uniqlo.com" target="_blank" class="external">map.uniqlo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.euronics.it" target="_blank" class="external">www.euronics.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fenwick.co.uk" target="_blank" class="external">www.fenwick.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://deviceguides.vodafone.co.uk" target="_blank" class="external">deviceguides.vodafone.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cos.com" target="_blank" class="external">www.cos.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.chloe.com" target="_blank" class="external">www.chloe.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fortnumandmason.com" target="_blank" class="external">www.fortnumandmason.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tescomobile.com" target="_blank" class="external">www.tescomobile.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.intimina.com" target="_blank" class="external">www.intimina.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bestwestern.com" target="_blank" class="external">www.bestwestern.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mandco.com" target="_blank" class="external">www.mandco.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.monoprix.fr" target="_blank" class="external">www.monoprix.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.zipcar.com" target="_blank" class="external">www.zipcar.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.prodirectsoccer.com" target="_blank" class="external">www.prodirectsoccer.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bestwestern.com" target="_blank" class="external">bestwestern.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.marionnaud.fr" target="_blank" class="external">www.marionnaud.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.selfridges.com" target="_blank" class="external">www.selfridges.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dyson.fr" target="_blank" class="external">www.dyson.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.valentino.com" target="_blank" class="external">www.valentino.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ferragamo.com" target="_blank" class="external">www.ferragamo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://support.vodafone.co.uk" target="_blank" class="external">support.vodafone.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ticketcity.com" target="_blank" class="external">www.ticketcity.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.budget.com.au" target="_blank" class="external">www.budget.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.giftcards.com" target="_blank" class="external">www.giftcards.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ysl.com" target="_blank" class="external">www.ysl.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.inthestyle.com" target="_blank" class="external">www.inthestyle.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://us.vibram.com" target="_blank" class="external">us.vibram.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://can-am-shop.brp.com" target="_blank" class="external">can-am-shop.brp.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bt.com" target="_blank" class="external">bt.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://shop.bt.com" target="_blank" class="external">shop.bt.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bureau-vallee.fr" target="_blank" class="external">www.bureau-vallee.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.asics.com" target="_blank" class="external">www.asics.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.centrecom.com.au" target="_blank" class="external">www.centrecom.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.forgeworld.co.uk" target="_blank" class="external">www.forgeworld.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.giftcardmall.com" target="_blank" class="external">www.giftcardmall.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.onitsukatiger.com" target="_blank" class="external">www.onitsukatiger.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://booksamillion.com" target="_blank" class="external">booksamillion.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.booksamillion.com" target="_blank" class="external">www.booksamillion.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bottegaveneta.com" target="_blank" class="external">bottegaveneta.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dyson.co.jp" target="_blank" class="external">dyson.co.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dyson.co.jp" target="_blank" class="external">www.dyson.co.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dyson.co.uk" target="_blank" class="external">dyson.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dyson.com.au" target="_blank" class="external">dyson.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dyson.fr" target="_blank" class="external">dyson.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dyson.de" target="_blank" class="external">dyson.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://forgeworld.co.uk" target="_blank" class="external">forgeworld.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://idmobile.co.uk" target="_blank" class="external">idmobile.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.idmobile.co.uk" target="_blank" class="external">www.idmobile.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mindvalley.com" target="_blank" class="external">mindvalley.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://monoprix.fr" target="_blank" class="external">monoprix.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nastygal.com" target="_blank" class="external">nastygal.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nastygal.com" target="_blank" class="external">www.nastygal.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://prodirectsoccer.com" target="_blank" class="external">prodirectsoccer.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://starhub.com" target="_blank" class="external">starhub.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://supersmart.com" target="_blank" class="external">supersmart.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.supersmart.com" target="_blank" class="external">www.supersmart.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://technogym.com" target="_blank" class="external">technogym.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.technogym.com" target="_blank" class="external">www.technogym.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thebodyshop.com" target="_blank" class="external">thebodyshop.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://valentino.com" target="_blank" class="external">valentino.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wowcher.co.uk" target="_blank" class="external">wowcher.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wowcher.co.uk" target="_blank" class="external">www.wowcher.co.uk</a>
         </li>
     </ul>
 </div>

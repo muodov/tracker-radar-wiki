@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "wp.pl",
-        history: [{"date":"max/ref-nocmp-de","prevalence":0.000401,"sites":4,"fingerprinting":1,"cookies":0.0001},{"date":"max/opt-in-de","prevalence":0.000401,"sites":4,"fingerprinting":1,"cookies":0.0001}]
+        history: [{"date":"main","prevalence":0.00121,"sites":178,"fingerprinting":1,"cookies":0.000326},{"date":"us-opt-in","prevalence":0.00147,"sites":217,"fingerprinting":1,"cookies":0.000366}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;1744<small>/3704</small>
+                    <strong>Rank:</strong> &#35;940<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.04&#37; (4 sites)
+                    <strong>Prevalence:</strong> 0.15&#37; (217 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.01&#37;
+                    <strong>Cookies:</strong> 0.04&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -92,11 +92,18 @@
                     <strong>Resource Types:</strong> 
                     <span>XHR</span>,
                     <span>Document</span>,
+                    <span>Preflight</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Other</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/wp.pl.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>ssp</span>, 
+                    <span>www</span>, 
+                    <span>rek.www</span>, 
+                    <span>pixel</span>, 
                 </li>
             </ul>
         </div>
@@ -115,16 +122,176 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.connection</li>
+        <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://ssp.wp.pl&#x2F;bidder&#x2F;" target="_blank" class="external" rel="noreferrer noopener">ssp.wp.pl&#x2F;bidder&#x2F;</a> (seen on 4 websites)</p>
+            <p><a href="http://ssp.wp.pl&#x2F;bidder&#x2F;" target="_blank" class="external" rel="noreferrer noopener">ssp.wp.pl&#x2F;bidder&#x2F;</a> (seen on 93 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ssp.wp.pl&#x2F;bidder&#x2F;usersync" target="_blank" class="external" rel="noreferrer noopener">ssp.wp.pl&#x2F;bidder&#x2F;usersync</a> (seen on 4 websites)</p>
+            <p><a href="http://ssp.wp.pl&#x2F;bidder&#x2F;usersync" target="_blank" class="external" rel="noreferrer noopener">ssp.wp.pl&#x2F;bidder&#x2F;usersync</a> (seen on 79 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ssp.wp.pl&#x2F;bidder&#x2F;notify" target="_blank" class="external" rel="noreferrer noopener">ssp.wp.pl&#x2F;bidder&#x2F;notify</a> (seen on 31 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ssp.wp.pl&#x2F;bidder&#x2F;notify" target="_blank" class="external" rel="noreferrer noopener">ssp.wp.pl&#x2F;bidder&#x2F;notify</a> (seen on 22 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;w&#x2F;tr.js" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;w&#x2F;tr.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;api&#x2F;collect" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;api&#x2F;collect</a> (seen on 18 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;L2h1Yi5oY1MJUy9aGhRuRkoLewpFBxNBHFV7RRcwbghKbgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATEEQTLEsPTWNFGFsqBVwNeh0ARDtHXRshXkpM" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;L2h1Yi5oY1MJUy9aGhRuRkoLewpFBxNBHFV7RRcwbghKbgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATbTduBjZqMBNtN24GNmowE203bgY2ajATEEQTLEsPTWNFGFsqBVwNeh0ARDtHXRshXkpM</a> (seen on 16 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;bG9nby5nTSZYDBRKGhVAMxtUQB1aTE5lZkxYW2oxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GBtCQAwXVEBoTh4OFlIBTCBQCEAE" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;bG9nby5nTSZYDBRKGhVAMxtUQB1aTE5lZkxYW2oxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GGYxPSZqMT0YZjE9JmoxPRhmMT0majE9GBtCQAwXVEBoTh4OFlIBTCBQCEAE</a> (seen on 14 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERtFGGwhcwhsawBQPiZ-XTosAkZjJDBAOioCRj16O0EhKkVJ" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERtFGGwhcwhsawBQPiZ-XTosAkZjJDBAOioCRj16O0EhKkVJ</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERtFGGwhcwhsawBQPiZ-RCsqA1s8eT1bPTBKRCJ6O0EhKkVJ" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERtFGGwhcwhsawBQPiZ-RCsqA1s8eT1bPTBKRCJ6O0EhKkVJ</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEXZ9EDtmXRZhIyFYPSgOVnh7Yxx6alIDeXsmQiQ3C10seTJaOyoMGS81MxwkN0VJ" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEXZ9EDtmXRZhIyFYPSgOVnh7Yxx6alIDeXsmQiQ3C10seTJaOyoMGS81MxwkN0VJ</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4a2x4c0dsfkUbOSQ7QSItBQJhZn8GYHFQA2EjIVg9KA5WYzc5RyAvSlohIDhUJycGQCc7PxwkN0VJ" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4a2x4c0dsfkUbOSQ7QSItBQJhZn8GYHFQA2EjIVg9KA5WYzc5RyAvSlohIDhUJycGQCc7PxwkN0VJ</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;aHViLmh0Tik3CzpeR0tDPHRTbg4YWD47Ig1uQUpvQ3J0NhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-F3RFbhhKCkNnIRkmHgRZA2c-HC5DAEQMJHQU" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;aHViLmh0Tik3CzpeR0tDPHRTbg4YWD47Ig1uQUpvQ3J0NhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-Fwk2EzI3bz4XCTYTMjdvPhcJNhMyN28-F3RFbhhKCkNnIRkmHgRZA2c-HC5DAEQMJHQU</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RG0UYbCFzCGxrEEQ-NjtBYTQVUSw9NRwkN0VJ" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RG0UYbCFzCGxrEEQ-NjtBYTQVUSw9NRwkN0VJ</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQtzHmwxRQ5seyZCJDcLXSx7Yxx6alIDeXsmQiQ3C10seTJaOyoMGS81MxwkN0VJ" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQtzHmwxRQ5seyZCJDcLXSx7Yxx6alIDeXsmQiQ3C10seTJaOyoMGS81MxwkN0VJ</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axF2fRA7Zl0WYSMhWD0oDlZhZn8GYHFQA2EjIVg9KA5WYzc5RyAvSlohIDhUJycGQCc7PxwkN0VJ" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axF2fRA7Zl0WYSMhWD0oDlZhZn8GYHFQA2EjIVg9KA5WYzc5RyAvSlohIDhUJycGQCc7PxwkN0VJ</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axF2fRA7Zl0WYSMhWD0oDlZ4e2McempSA3l7JkIkNwtdLHkyWjsqDBk-MSNUITYKVSA3NBwkN0VJ" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axF2fRA7Zl0WYSMhWD0oDlZ4e2McempSA3l7JkIkNwtdLHkyWjsqDBk-MSNUITYKVSA3NBwkN0VJ</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4FmJ2JBB0ZkhEPDEzWyolF114eyFAKyYOUC8kOBwkN0VJ" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4FmJ2JBB0ZkhEPDEzWyolF114eyFAKyYOUC8kOBwkN0VJ</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ssp.wp.pl&#x2F;bidder&#x2F;notify" target="_blank" class="external" rel="noreferrer noopener">ssp.wp.pl&#x2F;bidder&#x2F;notify</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;getcookie.html" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;getcookie.html</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://rek.www.wp.pl&#x2F;gaf.js" target="_blank" class="external" rel="noreferrer noopener">rek.www.wp.pl&#x2F;gaf.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4a2x4c0dsfkUbPiY0UCcgBkQneyFAKyYOUC8kOBwkN0VJ" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;NDg4NTQ2YSUGVjhnfklsMEUObDchWhE3E1BseHNtbH5FaxELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4axELDm0RGzhrEQsObREbOGsRCw5tERs4a2x4c0dsfkUbPiY0UCcgBkQneyFAKyYOUC8kOBwkN0VJ</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;dHJlYW0uSykrDi9kHw5GPGhWezRAHTsrJQItMl4BFzw4CTg6HQYQKT4FOnUcVztqcE4GCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7F2hAeyIST0ZnKQM3I1UbEDs-Hjw2XVsOO2gR" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;dHJlYW0uSykrDi9kHw5GPGhWezRAHTsrJQItMl4BFzw4CTg6HQYQKT4FOnUcVztqcE4GCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7FxUzBghvKjsXFTMGCG8qOxcVMwYIbyo7F2hAeyIST0ZnKQM3I1UbEDs-Hjw2XVsOO2gR</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657424258&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657424258&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657424257&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657424257&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657316932&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657316932&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657358104&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657358104&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657289094&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657289094&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657289093&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657289093&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657433240&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657433240&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657347256&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657347256&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657286962&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657286962&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657286965&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657286965&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657374255&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657374255&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657374250&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657374250&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657424711&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657424711&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657329978&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657329978&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657329976&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657329976&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657409911&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657409911&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657409910&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657409910&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657400319&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657400319&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657400318&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657400318&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657352776&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657352776&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657352773&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657352773&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657338567&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657338567&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657344062&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657344062&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pixel.wp.pl&#x2F;r1657421432&#x2F;wppixeln" target="_blank" class="external" rel="noreferrer noopener">pixel.wp.pl&#x2F;r1657421432&#x2F;wppixeln</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wp.pl&#x2F;40643651G1FXVkUFGkoWRBQOEVJaExgSQxYJFGkeRgEAAQQFAAQECANoHEVdXkNeCUdbCwMBBBZGQlpSCAlVU1VVBlNWAgwAAwcKAwNUA1QOEkFQE1ZZWVIJUWAEd05pRFpeV0V6UAF0Z1ZAG15Ve2Z5QV1-dmNJVVd4AnprcnZ1VmZBUx9TBxBEVAtdRUBARREAdxADchUEckRBQh9DUV1VUFxQH0RcEwZ1QVZLVUNPEQFwEAJyRFdaWlkTQVVCC1BaW1BfR1lZWgETBnUFBgcDCwEBCAAEEwYFZWFQVl5ZXVcTBnUFFQQCVltFRU1vRUBSQlxVEQNyBRYEA1BQUlIRAHIFFAYGQkZDRBACcAATBgVBRVtHdWUCFgVxABECAENDXEZnUUITB3cEGwUaBQEDFgQDRFpZUFtBW2NURhUFcAIYBh8AAhMGBUZRQhEDcgcWBANQREBgUUETBnUFHgYaCwUBFAYGXl1UXnlQTV9DQBYFcQASQ0RCDkFUWlVTXFFDWhNQV0RfW10LUEdRXkISQVNeWFANAQMGARNcVg0GEldYCAESQFoJVlVaXBJDQQkLBgUXQg0DGgcQRVIJWEJAQ0UQAnUVBHIWBHNGQ0cYQ1JdVFJeVRhEXxMHd0NTTFVATxADchUFckdXW1hbEks&#x3D;&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.wp.pl&#x2F;40643651G1FXVkUFGkoWRBQOEVJaExgSQxYJFGkeRgEAAQQFAAQECANoHEVdXkNeCUdbCwMBBBZGQlpSCAlVU1VVBlNWAgwAAwcKAwNUA1QOEkFQE1ZZWVIJUWAEd05pRFpeV0V6UAF0Z1ZAG15Ve2Z5QV1-dmNJVVd4AnprcnZ1VmZBUx9TBxBEVAtdRUBARREAdxADchUEckRBQh9DUV1VUFxQH0RcEwZ1QVZLVUNPEQFwEAJyRFdaWlkTQVVCC1BaW1BfR1lZWgETBnUFBgcDCwEBCAAEEwYFZWFQVl5ZXVcTBnUFFQQCVltFRU1vRUBSQlxVEQNyBRYEA1BQUlIRAHIFFAYGQkZDRBACcAATBgVBRVtHdWUCFgVxABECAENDXEZnUUITB3cEGwUaBQEDFgQDRFpZUFtBW2NURhUFcAIYBh8AAhMGBUZRQhEDcgcWBANQREBgUUETBnUFHgYaCwUBFAYGXl1UXnlQTV9DQBYFcQASQ0RCDkFUWlVTXFFDWhNQV0RfW10LUEdRXkISQVNeWFANAQMGARNcVg0GEldYCAESQFoJVlVaXBJDQQkLBgUXQg0DGgcQRVIJWEJAQ0UQAnUVBHIWBHNGQ0cYQ1JdVFJeVRhEXxMHd0NTTFVATxADchUFckdXW1hbEks&#x3D;&#x2F;</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -134,16 +301,328 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://nextews.com" target="_blank" class="external">nextews.com</a>
+            <a href="http://www.twoplayergames.org" target="_blank" class="external">www.twoplayergames.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://samequizy.pl" target="_blank" class="external">samequizy.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://at.jooble.org" target="_blank" class="external">at.jooble.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.planeta.pl" target="_blank" class="external">www.planeta.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://littlealchemy.com" target="_blank" class="external">littlealchemy.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ncmhcso.org" target="_blank" class="external">ncmhcso.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wirtualnemedia.pl" target="_blank" class="external">www.wirtualnemedia.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dziennikzachodni.pl" target="_blank" class="external">dziennikzachodni.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://novini.bg" target="_blank" class="external">novini.bg</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://lemzspb.ru" target="_blank" class="external">lemzspb.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://designyoutrust.com" target="_blank" class="external">designyoutrust.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://krzyzowki123.pl" target="_blank" class="external">krzyzowki123.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fr.nextews.com" target="_blank" class="external">fr.nextews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://rozrywka.radiozet.pl" target="_blank" class="external">rozrywka.radiozet.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.meczyki.pl" target="_blank" class="external">www.meczyki.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://my-class.ru" target="_blank" class="external">my-class.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://planroute.de" target="_blank" class="external">planroute.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.meteo.pl" target="_blank" class="external">www.meteo.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nmvl.ru" target="_blank" class="external">nmvl.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fartice.com" target="_blank" class="external">fartice.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://varebux.ru" target="_blank" class="external">varebux.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wroclaw.pl" target="_blank" class="external">www.wroclaw.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fintaxi.ru" target="_blank" class="external">fintaxi.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://e-prawnik.pl" target="_blank" class="external">e-prawnik.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.meteo.pl" target="_blank" class="external">m.meteo.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://matematyka.pl" target="_blank" class="external">matematyka.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gazetawroclawska.pl" target="_blank" class="external">gazetawroclawska.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://netigor.ru" target="_blank" class="external">netigor.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fotka.com" target="_blank" class="external">fotka.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wykop.pl" target="_blank" class="external">www.wykop.pl</a>
         </li>
         <li class='truncate'>
             <a href="http://de.nextews.com" target="_blank" class="external">de.nextews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://de.thpanorama.com" target="_blank" class="external">de.thpanorama.com</a>
+            <a href="http://warbletoncouncil.org" target="_blank" class="external">warbletoncouncil.org</a>
         </li>
         <li class='truncate'>
-            <a href="http://ncmhcso.org" target="_blank" class="external">ncmhcso.org</a>
+            <a href="http://it-tehnik.ru" target="_blank" class="external">it-tehnik.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://du-lya.ru" target="_blank" class="external">du-lya.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.motofakty.pl" target="_blank" class="external">www.motofakty.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://biography.vospari23.ru" target="_blank" class="external">biography.vospari23.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ca.jooble.org" target="_blank" class="external">ca.jooble.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://a1.ro" target="_blank" class="external">a1.ro</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://domodi.pl" target="_blank" class="external">domodi.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://forum.abczdrowie.pl" target="_blank" class="external">forum.abczdrowie.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gazetakrakowska.pl" target="_blank" class="external">gazetakrakowska.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://lubimyczytac.pl" target="_blank" class="external">lubimyczytac.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mapa.nocowanie.pl" target="_blank" class="external">mapa.nocowanie.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mireasa.a1.ro" target="_blank" class="external">mireasa.a1.ro</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://parenting.pl" target="_blank" class="external">parenting.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://portal.abczdrowie.pl" target="_blank" class="external">portal.abczdrowie.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.extradom.pl" target="_blank" class="external">www.extradom.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.homebook.pl" target="_blank" class="external">www.homebook.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nocowanie.pl" target="_blank" class="external">www.nocowanie.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wakacje.pl" target="_blank" class="external">www.wakacje.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://zywienie.abczdrowie.pl" target="_blank" class="external">zywienie.abczdrowie.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://arslege.pl" target="_blank" class="external">arslege.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sawakinome.com" target="_blank" class="external">www.sawakinome.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.firma.egospodarka.pl" target="_blank" class="external">www.firma.egospodarka.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.psy.pl" target="_blank" class="external">www.psy.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dorzeczy.pl" target="_blank" class="external">dorzeczy.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tekstowo.pl" target="_blank" class="external">www.tekstowo.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://comment-reparer.com" target="_blank" class="external">comment-reparer.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wpolityce.pl" target="_blank" class="external">wpolityce.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tekdeeps.com" target="_blank" class="external">tekdeeps.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://jbzd.com.pl" target="_blank" class="external">jbzd.com.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://niezalezna.pl" target="_blank" class="external">niezalezna.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://aspektcenter.ru" target="_blank" class="external">aspektcenter.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://zdorovieledy.ru" target="_blank" class="external">zdorovieledy.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://forumdacasa.com" target="_blank" class="external">forumdacasa.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fitomaniya.ru" target="_blank" class="external">fitomaniya.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://autokult.pl" target="_blank" class="external">autokult.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.autocentrum.pl" target="_blank" class="external">www.autocentrum.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pytania.abczdrowie.pl" target="_blank" class="external">pytania.abczdrowie.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.totalmoney.pl" target="_blank" class="external">www.totalmoney.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.oponeo.pl" target="_blank" class="external">www.oponeo.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.komputronik.pl" target="_blank" class="external">www.komputronik.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.play.pl" target="_blank" class="external">www.play.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.decathlon.pl" target="_blank" class="external">www.decathlon.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.militaria.pl" target="_blank" class="external">www.militaria.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.housebrand.com" target="_blank" class="external">www.housebrand.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mohito.com" target="_blank" class="external">www.mohito.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mediamarkt.pl" target="_blank" class="external">mediamarkt.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.agatameble.pl" target="_blank" class="external">www.agatameble.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.t-mobile.pl" target="_blank" class="external">www.t-mobile.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sinsay.com" target="_blank" class="external">www.sinsay.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.upc.pl" target="_blank" class="external">www.upc.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mediaexpert.pl" target="_blank" class="external">www.mediaexpert.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.notino.pl" target="_blank" class="external">www.notino.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ccc.eu" target="_blank" class="external">ccc.eu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.euro.com.pl" target="_blank" class="external">www.euro.com.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.castorama.pl" target="_blank" class="external">www.castorama.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.centrumrowerowe.pl" target="_blank" class="external">www.centrumrowerowe.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.reserved.com" target="_blank" class="external">www.reserved.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://jaksiepisze.pl" target="_blank" class="external">jaksiepisze.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.rodzice.pl" target="_blank" class="external">www.rodzice.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://agatameble.pl" target="_blank" class="external">agatameble.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://castorama.pl" target="_blank" class="external">castorama.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://centrumrowerowe.pl" target="_blank" class="external">centrumrowerowe.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://euro.com.pl" target="_blank" class="external">euro.com.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://housebrand.com" target="_blank" class="external">housebrand.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://komputronik.pl" target="_blank" class="external">komputronik.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mediaexpert.pl" target="_blank" class="external">mediaexpert.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://militaria.pl" target="_blank" class="external">militaria.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mohito.com" target="_blank" class="external">mohito.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nocowanie.pl" target="_blank" class="external">nocowanie.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://notino.pl" target="_blank" class="external">notino.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://oponeo.pl" target="_blank" class="external">oponeo.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://play.pl" target="_blank" class="external">play.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://reserved.com" target="_blank" class="external">reserved.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sinsay.com" target="_blank" class="external">sinsay.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://upc.pl" target="_blank" class="external">upc.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wakacje.pl" target="_blank" class="external">wakacje.pl</a>
         </li>
     </ul>
 </div>

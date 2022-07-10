@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "nrich.ai",
-        history: [{"date":"max/opt-in-de","prevalence":0.000803,"sites":8,"fingerprinting":0,"cookies":0.000703}]
+        history: [{"date":"main","prevalence":0.0102,"sites":1510,"fingerprinting":1,"cookies":0.0101},{"date":"us-opt-in","prevalence":0.00721,"sites":1063,"fingerprinting":1,"cookies":0.00704}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;n.rich" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;n.rich</a>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;1064<small>/3704</small>
+                    <strong>Rank:</strong> &#35;375<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.08&#37; (8 sites)
+                    <strong>Prevalence:</strong> 0.72&#37; (1063 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.07&#37;
+                    <strong>Cookies:</strong> 0.70&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -91,11 +91,15 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Image</span>,
+                    <span>Document</span>,
+                    <span>Script</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/nrich.ai.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>dsp</span>, 
+                    <span>serve</span>, 
+                    <span>tag</span>, 
                 </li>
             </ul>
         </div>
@@ -114,13 +118,39 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://dsp.nrich.ai&#x2F;bidswitch&#x2F;sync" target="_blank" class="external" rel="noreferrer noopener">dsp.nrich.ai&#x2F;bidswitch&#x2F;sync</a> (seen on 8 websites)</p>
+            <p><a href="http://dsp.nrich.ai&#x2F;bidswitch&#x2F;sync" target="_blank" class="external" rel="noreferrer noopener">dsp.nrich.ai&#x2F;bidswitch&#x2F;sync</a> (seen on 946 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dsp.nrich.ai&#x2F;bidswitch&#x2F;sync" target="_blank" class="external" rel="noreferrer noopener">dsp.nrich.ai&#x2F;bidswitch&#x2F;sync</a> (seen on 72 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://serve.nrich.ai&#x2F;tracker&#x2F;assets&#x2F;tracker.js" target="_blank" class="external" rel="noreferrer noopener">serve.nrich.ai&#x2F;tracker&#x2F;assets&#x2F;tracker.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://tag.nrich.ai&#x2F;learning&#x2F;v1&#x2F;" target="_blank" class="external" rel="noreferrer noopener">tag.nrich.ai&#x2F;learning&#x2F;v1&#x2F;</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -130,28 +160,130 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://bukkit.org" target="_blank" class="external">bukkit.org</a>
+            <a href="http://9gag.com" target="_blank" class="external">9gag.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://mobile-dictionary.reverso.net" target="_blank" class="external">mobile-dictionary.reverso.net</a>
+            <a href="http://doctor.webmd.com" target="_blank" class="external">doctor.webmd.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://pathofexile.fandom.com" target="_blank" class="external">pathofexile.fandom.com</a>
+            <a href="http://forum.wordreference.com" target="_blank" class="external">forum.wordreference.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.alphr.com" target="_blank" class="external">www.alphr.com</a>
+            <a href="http://gizmodo.com" target="_blank" class="external">gizmodo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.fraenkische-rezepte.de" target="_blank" class="external">www.fraenkische-rezepte.de</a>
+            <a href="http://metro.co.uk" target="_blank" class="external">metro.co.uk</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.gutekueche.at" target="_blank" class="external">www.gutekueche.at</a>
+            <a href="http://money.cnn.com" target="_blank" class="external">money.cnn.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.maxim.com" target="_blank" class="external">www.maxim.com</a>
+            <a href="http://pastebin.com" target="_blank" class="external">pastebin.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.schulferien.org" target="_blank" class="external">www.schulferien.org</a>
+            <a href="http://songlyrics.com" target="_blank" class="external">songlyrics.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://whitepages.com" target="_blank" class="external">whitepages.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.biblegateway.com" target="_blank" class="external">www.biblegateway.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ownedcore.com" target="_blank" class="external">www.ownedcore.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wochenblick.at" target="_blank" class="external">wochenblick.at</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.thesixthaxis.com" target="_blank" class="external">www.thesixthaxis.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lasvegasadvisor.com" target="_blank" class="external">www.lasvegasadvisor.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://turtlepedia.fandom.com" target="_blank" class="external">turtlepedia.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.animascorp.com" target="_blank" class="external">www.animascorp.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ontheissues.org" target="_blank" class="external">ontheissues.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://repaintnow.com" target="_blank" class="external">repaintnow.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://patriotssoapbox.com" target="_blank" class="external">patriotssoapbox.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cryptidz.fandom.com" target="_blank" class="external">cryptidz.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://files.minecraftforge.net" target="_blank" class="external">files.minecraftforge.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://e-prawnik.pl" target="_blank" class="external">e-prawnik.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vokka.jp" target="_blank" class="external">vokka.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bikeperfect.com" target="_blank" class="external">www.bikeperfect.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.askapatient.com" target="_blank" class="external">www.askapatient.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://crunchify.com" target="_blank" class="external">crunchify.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://steakspecialist.com" target="_blank" class="external">steakspecialist.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://school.stockcharts.com" target="_blank" class="external">school.stockcharts.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.thesymbolism.com" target="_blank" class="external">www.thesymbolism.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://diariodonordeste.verdesmares.com.br" target="_blank" class="external">diariodonordeste.verdesmares.com.br</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.whattowatch.com" target="_blank" class="external">www.whattowatch.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://smartgardenhome.com" target="_blank" class="external">smartgardenhome.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bollywoodhungama.com" target="_blank" class="external">www.bollywoodhungama.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://br.investing.com" target="_blank" class="external">br.investing.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wionews.com" target="_blank" class="external">www.wionews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.voetbalprimeur.nl" target="_blank" class="external">www.voetbalprimeur.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://platinumgod.co.uk" target="_blank" class="external">platinumgod.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.freepressjournal.in" target="_blank" class="external">www.freepressjournal.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.comicbookherald.com" target="_blank" class="external">www.comicbookherald.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://veja.abril.com.br" target="_blank" class="external">veja.abril.com.br</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://heimdalsecurity.com" target="_blank" class="external">heimdalsecurity.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gehealthcare.com" target="_blank" class="external">www.gehealthcare.com</a>
         </li>
     </ul>
 </div>

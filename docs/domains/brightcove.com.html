@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "brightcove.com",
-        history: [{"date":"max/ref-nocmp-de","prevalence":0.00151,"sites":15,"fingerprinting":1,"cookies":0.0001},{"date":"max/opt-in-de","prevalence":0.00161,"sites":16,"fingerprinting":1,"cookies":0.0001}]
+        history: [{"date":"main","prevalence":0.00298,"sites":439,"fingerprinting":1,"cookies":0.0000746},{"date":"us-opt-in","prevalence":0.00318,"sites":469,"fingerprinting":1,"cookies":0.0000949}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.brightcove.com&#x2F;en&#x2F;legal&#x2F;privacy" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.brightcove.com&#x2F;en&#x2F;legal&#x2F;privacy</a>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;672<small>/3704</small>
+                    <strong>Rank:</strong> &#35;591<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.16&#37; (16 sites)
+                    <strong>Prevalence:</strong> 0.32&#37; (469 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
@@ -92,13 +92,23 @@
                     <strong>Resource Types:</strong> 
                     <span>Image</span>,
                     <span>Preflight</span>,
+                    <span>Fetch</span>,
+                    <span>Script</span>,
                     <span>XHR</span>,
+                    <span>Media</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/brightcove.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>metrics</span>, 
                     <span>edge.api</span>, 
+                    <span>sadmin</span>, 
+                    <span>admin</span>, 
+                    <span>f1.media</span>, 
+                    <span>experiences.assets</span>, 
+                    <span>gallery-metrics.api</span>, 
+                    <span>assets.map</span>, 
+                    <span>map</span>, 
                 </li>
             </ul>
         </div>
@@ -117,28 +127,513 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>HTMLMediaElement.prototype.canPlayType</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://metrics.brightcove.com&#x2F;v2&#x2F;tracker" target="_blank" class="external" rel="noreferrer noopener">metrics.brightcove.com&#x2F;v2&#x2F;tracker</a> (seen on 16 websites)</p>
+            <p><a href="http://metrics.brightcove.com&#x2F;v2&#x2F;tracker" target="_blank" class="external" rel="noreferrer noopener">metrics.brightcove.com&#x2F;v2&#x2F;tracker</a> (seen on 296 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6307421366112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6307421366112</a> (seen on 2 websites)</p>
+            <p><a href="http://sadmin.brightcove.com&#x2F;js&#x2F;BrightcoveExperiences.js" target="_blank" class="external" rel="noreferrer noopener">sadmin.brightcove.com&#x2F;js&#x2F;BrightcoveExperiences.js</a> (seen on 36 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6307421366112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6307421366112</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.map.brightcove.com&#x2F;plugin&#x2F;dist&#x2F;videojs-bc-map-core.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.map.brightcove.com&#x2F;plugin&#x2F;dist&#x2F;videojs-bc-map-core.min.js</a> (seen on 16 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6296387651001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6296387651001</a> (seen on 2 websites)</p>
+            <p><a href="http://map.brightcove.com&#x2F;config" target="_blank" class="external" rel="noreferrer noopener">map.brightcove.com&#x2F;config</a> (seen on 14 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6296387651001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6296387651001</a> (seen on 2 websites)</p>
+            <p><a href="http://gallery-metrics.api.brightcove.com&#x2F;v1&#x2F;gallery-experiences-analytics-proxy" target="_blank" class="external" rel="noreferrer noopener">gallery-metrics.api.brightcove.com&#x2F;v1&#x2F;gallery-experiences-analytics-proxy</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3663210762001&#x2F;videos&#x2F;6154734593001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3663210762001&#x2F;videos&#x2F;6154734593001</a> (seen on 2 websites)</p>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6307421366112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6307421366112</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6307421366112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6307421366112</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;664969388001&#x2F;videos" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;664969388001&#x2F;videos</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;664969388001&#x2F;videos" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;664969388001&#x2F;videos</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6001673517001&#x2F;playlists&#x2F;6055361165001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6001673517001&#x2F;playlists&#x2F;6055361165001</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6001673517001&#x2F;playlists&#x2F;6055361165001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6001673517001&#x2F;playlists&#x2F;6055361165001</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998034001&#x2F;videos&#x2F;6309285609112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998034001&#x2F;videos&#x2F;6309285609112</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998034001&#x2F;videos&#x2F;6309285609112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998034001&#x2F;videos&#x2F;6309285609112</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6296387651001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6296387651001</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6296387651001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;734546229001&#x2F;videos&#x2F;6296387651001</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sadmin.brightcove.com&#x2F;js&#x2F;APIModules_all.js" target="_blank" class="external" rel="noreferrer noopener">sadmin.brightcove.com&#x2F;js&#x2F;APIModules_all.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;2805099847001&#x2F;videos&#x2F;6276824558001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;2805099847001&#x2F;videos&#x2F;6276824558001</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6005208634001&#x2F;playlists&#x2F;1670507911386572773" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6005208634001&#x2F;playlists&#x2F;1670507911386572773</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6005208634001&#x2F;playlists&#x2F;1670507911386572773" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6005208634001&#x2F;playlists&#x2F;1670507911386572773</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;playlists&#x2F;4987627626001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;playlists&#x2F;4987627626001</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;playlists&#x2F;4987627626001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;playlists&#x2F;4987627626001</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309277603112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309277603112</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309277603112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309277603112</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://experiences.assets.brightcove.com&#x2F;live-status&#x2F;6245611372001&#x2F;609065bbbad4ce00221c877c.json" target="_blank" class="external" rel="noreferrer noopener">experiences.assets.brightcove.com&#x2F;live-status&#x2F;6245611372001&#x2F;609065bbbad4ce00221c877c.json</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://experiences.assets.brightcove.com&#x2F;live-status&#x2F;6245611372001&#x2F;6112b2bef0608700211f1bc4.json" target="_blank" class="external" rel="noreferrer noopener">experiences.assets.brightcove.com&#x2F;live-status&#x2F;6245611372001&#x2F;6112b2bef0608700211f1bc4.json</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6255241912001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6255241912001</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309224209112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309224209112</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6255241912001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6255241912001</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309224209112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309224209112</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6268500496001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6268500496001</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309223836112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309223836112</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6268500496001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6268500496001</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309223836112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309223836112</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;playlists&#x2F;1702303612166576541" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;playlists&#x2F;1702303612166576541</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;playlists&#x2F;1702303612166576541" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;playlists&#x2F;1702303612166576541</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;playlists&#x2F;1702303681590667236" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;playlists&#x2F;1702303681590667236</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;playlists&#x2F;1702303681590667236" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;playlists&#x2F;1702303681590667236</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://f1.media.brightcove.com&#x2F;8&#x2F;3415345270001&#x2F;3415345270001_6205854494001_6205853328001-vs.jpg" target="_blank" class="external" rel="noreferrer noopener">f1.media.brightcove.com&#x2F;8&#x2F;3415345270001&#x2F;3415345270001_6205854494001_6205853328001-vs.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;2805099847001&#x2F;videos&#x2F;6276824558001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;2805099847001&#x2F;videos&#x2F;6276824558001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;videos&#x2F;ref%3A22fsfx" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;videos&#x2F;ref%3A22fsfx</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;videos&#x2F;ref%3A22fsfx" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;videos&#x2F;ref%3A22fsfx</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;videos&#x2F;ref%3A21gsgr" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;videos&#x2F;ref%3A21gsgr</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;videos&#x2F;ref%3A21gsgr" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3921507366001&#x2F;videos&#x2F;ref%3A21gsgr</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309292547112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309292547112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309292547112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309292547112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6051814381001&#x2F;videos&#x2F;6061497620001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6051814381001&#x2F;videos&#x2F;6061497620001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;18140046001&#x2F;videos&#x2F;ref%3Aafd83db0-fec9-11ec-ad87-5552790551ac" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;18140046001&#x2F;videos&#x2F;ref%3Aafd83db0-fec9-11ec-ad87-5552790551ac</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;18140046001&#x2F;videos&#x2F;ref%3Aafd83db0-fec9-11ec-ad87-5552790551ac" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;18140046001&#x2F;videos&#x2F;ref%3Aafd83db0-fec9-11ec-ad87-5552790551ac</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309131449112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309131449112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309131449112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309131449112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309130156112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309130156112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309130156112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309130156112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sadmin.brightcove.com&#x2F;js&#x2F;api&#x2F;SmartPlayerAPI.js" target="_blank" class="external" rel="noreferrer noopener">sadmin.brightcove.com&#x2F;js&#x2F;api&#x2F;SmartPlayerAPI.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6293768613001&#x2F;videos&#x2F;6309046104112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6293768613001&#x2F;videos&#x2F;6309046104112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1242911124001&#x2F;videos&#x2F;6083399020001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1242911124001&#x2F;videos&#x2F;6083399020001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1464976755001&#x2F;videos&#x2F;6298058130001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1464976755001&#x2F;videos&#x2F;6298058130001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1464976755001&#x2F;videos&#x2F;6298058130001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1464976755001&#x2F;videos&#x2F;6298058130001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;599585967001&#x2F;playlists&#x2F;1090122483001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;599585967001&#x2F;playlists&#x2F;1090122483001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;599585967001&#x2F;playlists&#x2F;1090122483001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;599585967001&#x2F;playlists&#x2F;1090122483001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5814665388001&#x2F;videos&#x2F;6306663628112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5814665388001&#x2F;videos&#x2F;6306663628112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5814665388001&#x2F;videos&#x2F;6306663628112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5814665388001&#x2F;videos&#x2F;6306663628112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5814665388001&#x2F;videos&#x2F;6306660368112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5814665388001&#x2F;videos&#x2F;6306660368112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5814665388001&#x2F;videos&#x2F;6306660368112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5814665388001&#x2F;videos&#x2F;6306660368112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1625296066001&#x2F;playlists&#x2F;1705187585816461108" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1625296066001&#x2F;playlists&#x2F;1705187585816461108</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5420905012001&#x2F;playlists&#x2F;1721949669515175929" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5420905012001&#x2F;playlists&#x2F;1721949669515175929</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5420905012001&#x2F;playlists&#x2F;1721949669515175929" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5420905012001&#x2F;playlists&#x2F;1721949669515175929</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://f1.media.brightcove.com&#x2F;8&#x2F;4684385845001&#x2F;4684385845001_5993500470001_5993492164001-vs.jpg" target="_blank" class="external" rel="noreferrer noopener">f1.media.brightcove.com&#x2F;8&#x2F;4684385845001&#x2F;4684385845001_5993500470001_5993492164001-vs.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657702001&#x2F;videos&#x2F;1724262444379835343" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657702001&#x2F;videos&#x2F;1724262444379835343</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657702001&#x2F;videos&#x2F;1724262444379835343" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657702001&#x2F;videos&#x2F;1724262444379835343</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6159029845001&#x2F;videos&#x2F;6257536146001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6159029845001&#x2F;videos&#x2F;6257536146001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;playlists&#x2F;1658448338587988133" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;playlists&#x2F;1658448338587988133</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998020001&#x2F;videos&#x2F;6309152842112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998020001&#x2F;videos&#x2F;6309152842112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998020001&#x2F;videos&#x2F;6309152842112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998020001&#x2F;videos&#x2F;6309152842112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6159029852001&#x2F;videos&#x2F;6305507444112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6159029852001&#x2F;videos&#x2F;6305507444112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6159029852001&#x2F;videos&#x2F;6305507444112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6159029852001&#x2F;videos&#x2F;6305507444112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6145543935001&#x2F;videos&#x2F;6309334446112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6145543935001&#x2F;videos&#x2F;6309334446112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6145543935001&#x2F;videos&#x2F;6309334446112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6145543935001&#x2F;videos&#x2F;6309334446112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;2995123072001&#x2F;videos&#x2F;6136987347001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;2995123072001&#x2F;videos&#x2F;6136987347001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5534894064001&#x2F;videos&#x2F;6309335308112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5534894064001&#x2F;videos&#x2F;6309335308112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5534894064001&#x2F;videos&#x2F;6309335308112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5534894064001&#x2F;videos&#x2F;6309335308112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5802244968001&#x2F;videos&#x2F;6238668497001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5802244968001&#x2F;videos&#x2F;6238668497001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;599585967001&#x2F;playlists&#x2F;4520655846001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;599585967001&#x2F;playlists&#x2F;4520655846001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;599585967001&#x2F;playlists&#x2F;4520655846001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;599585967001&#x2F;playlists&#x2F;4520655846001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1301119679001&#x2F;videos&#x2F;6309153452112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1301119679001&#x2F;videos&#x2F;6309153452112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;2685123856001&#x2F;playlists&#x2F;5768624693001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;2685123856001&#x2F;playlists&#x2F;5768624693001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;2685123856001&#x2F;playlists&#x2F;5768624693001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;2685123856001&#x2F;playlists&#x2F;5768624693001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3986618114001&#x2F;videos&#x2F;6305600288112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;3986618114001&#x2F;videos&#x2F;6305600288112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6057949432001&#x2F;videos&#x2F;ref%3AE0dXEyazE6xSoPQcDhfBniCCXkiSKSYO" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6057949432001&#x2F;videos&#x2F;ref%3AE0dXEyazE6xSoPQcDhfBniCCXkiSKSYO</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6149438623001&#x2F;playlists&#x2F;1714165665198114948" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6149438623001&#x2F;playlists&#x2F;1714165665198114948</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6149438623001&#x2F;playlists&#x2F;1714165665198114948" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6149438623001&#x2F;playlists&#x2F;1714165665198114948</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6149438623001&#x2F;videos&#x2F;6263393290001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6149438623001&#x2F;videos&#x2F;6263393290001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6149438623001&#x2F;videos&#x2F;6263393290001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6149438623001&#x2F;videos&#x2F;6263393290001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://map.brightcove.com&#x2F;stats&#x2F;event" target="_blank" class="external" rel="noreferrer noopener">map.brightcove.com&#x2F;stats&#x2F;event</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6224794039001&#x2F;videos&#x2F;6309331080112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6224794039001&#x2F;videos&#x2F;6309331080112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6224794039001&#x2F;videos&#x2F;6309331080112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6224794039001&#x2F;videos&#x2F;6309331080112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1302165871001&#x2F;videos&#x2F;5776837867001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1302165871001&#x2F;videos&#x2F;5776837867001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://metrics.brightcove.com&#x2F;v2&#x2F;tracker" target="_blank" class="external" rel="noreferrer noopener">metrics.brightcove.com&#x2F;v2&#x2F;tracker</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309114531112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309114531112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309114531112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309114531112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;18140046001&#x2F;videos&#x2F;ref%3Ab17221e6-f14e-11ec-b52f-28ce512880bc" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;18140046001&#x2F;videos&#x2F;ref%3Ab17221e6-f14e-11ec-b52f-28ce512880bc</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5043843989001&#x2F;videos&#x2F;6136010328001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5043843989001&#x2F;videos&#x2F;6136010328001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5043843989001&#x2F;videos&#x2F;6302908016001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5043843989001&#x2F;videos&#x2F;6302908016001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6249462458001&#x2F;videos&#x2F;6309285515112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6249462458001&#x2F;videos&#x2F;6309285515112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6249462458001&#x2F;videos&#x2F;6309285515112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6249462458001&#x2F;videos&#x2F;6309285515112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5731660808001&#x2F;videos&#x2F;6283474405001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5731660808001&#x2F;videos&#x2F;6283474405001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://f1.media.brightcove.com&#x2F;8&#x2F;3850378299001&#x2F;3850378299001_5138500451001_5138455796001-vs.jpg" target="_blank" class="external" rel="noreferrer noopener">f1.media.brightcove.com&#x2F;8&#x2F;3850378299001&#x2F;3850378299001_5138500451001_5138455796001-vs.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://f1.media.brightcove.com&#x2F;8&#x2F;3850378299001&#x2F;3850378299001_5138502432001_5138495808001-vs.jpg" target="_blank" class="external" rel="noreferrer noopener">f1.media.brightcove.com&#x2F;8&#x2F;3850378299001&#x2F;3850378299001_5138502432001_5138495808001-vs.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1453524588001&#x2F;playlists&#x2F;1655207825650904204" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1453524588001&#x2F;playlists&#x2F;1655207825650904204</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1453524588001&#x2F;playlists&#x2F;1655207825650904204" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1453524588001&#x2F;playlists&#x2F;1655207825650904204</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1453524588001&#x2F;playlists&#x2F;5136251235001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1453524588001&#x2F;playlists&#x2F;5136251235001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1453524588001&#x2F;playlists&#x2F;5136251235001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1453524588001&#x2F;playlists&#x2F;5136251235001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309148321112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309148321112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309148321112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6286608028001&#x2F;videos&#x2F;6309148321112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309333743112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309333743112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309335137112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6245611372001&#x2F;videos&#x2F;6309335137112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5173925949001&#x2F;playlists&#x2F;1731498574475103791" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5173925949001&#x2F;playlists&#x2F;1731498574475103791</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6290952426001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6290952426001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6271502860001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6271502860001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6258983608001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6258983608001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6038092479001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6038092479001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6071996090001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6071996090001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6105504881001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6105504881001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6290952426001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6290952426001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6271502860001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6271502860001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6258983608001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6258983608001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6038092479001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6038092479001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6071996090001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6071996090001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6105504881001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6105504881001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6104509969001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6104509969001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6104509969001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5766826437001&#x2F;videos&#x2F;6104509969001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;18140046001&#x2F;videos&#x2F;6287993918001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;18140046001&#x2F;videos&#x2F;6287993918001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;18140046001&#x2F;videos&#x2F;6287993918001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;18140046001&#x2F;videos&#x2F;6287993918001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6305819692112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6305819692112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6305819395112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6305819395112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6063498170001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6063498170001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6184775652001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6184775652001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6184327554001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6184327554001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6063500547001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6063500547001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6155833942001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6155833942001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6279044009001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6279044009001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6282777631001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6282777631001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6305817916112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6305817916112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6305819692112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6305819692112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6305819395112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6305819395112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6063498170001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6063498170001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6184775652001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6184775652001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6184327554001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6184327554001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6063500547001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6063500547001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6155833942001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6155833942001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6279044009001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6279044009001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6282777631001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1634657725001&#x2F;videos&#x2F;6282777631001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6122285394001&#x2F;videos&#x2F;6308284450112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6122285394001&#x2F;videos&#x2F;6308284450112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6122285394001&#x2F;videos&#x2F;6308284450112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;6122285394001&#x2F;videos&#x2F;6308284450112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1705665025&#x2F;videos&#x2F;6101833451001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1705665025&#x2F;videos&#x2F;6101833451001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1705665025&#x2F;videos&#x2F;6101833451001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;1705665025&#x2F;videos&#x2F;6101833451001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://f1.media.brightcove.com&#x2F;8&#x2F;1705665025&#x2F;1705665025_6101837050001_6101833451001-vs.jpg" target="_blank" class="external" rel="noreferrer noopener">f1.media.brightcove.com&#x2F;8&#x2F;1705665025&#x2F;1705665025_6101837050001_6101833451001-vs.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://f1.media.brightcove.com&#x2F;4&#x2F;1705665025&#x2F;1705665025_6101837187001_6101833451001.mp4" target="_blank" class="external" rel="noreferrer noopener">f1.media.brightcove.com&#x2F;4&#x2F;1705665025&#x2F;1705665025_6101837187001_6101833451001.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;4800266888001&#x2F;playlists&#x2F;5235909154001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;4800266888001&#x2F;playlists&#x2F;5235909154001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998024001&#x2F;videos&#x2F;6309305115112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998024001&#x2F;videos&#x2F;6309305115112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998024001&#x2F;videos&#x2F;6309305115112" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5615998024001&#x2F;videos&#x2F;6309305115112</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5690807595001&#x2F;playlists&#x2F;5743160747001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5690807595001&#x2F;playlists&#x2F;5743160747001</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5690807595001&#x2F;playlists&#x2F;5743160747001" target="_blank" class="external" rel="noreferrer noopener">edge.api.brightcove.com&#x2F;playback&#x2F;v1&#x2F;accounts&#x2F;5690807595001&#x2F;playlists&#x2F;5743160747001</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -148,58 +643,529 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://oup.com" target="_blank" class="external">oup.com</a>
+            <a href="http://abcnews.go.com" target="_blank" class="external">abcnews.go.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://academic.oup.com" target="_blank" class="external">academic.oup.com</a>
+            <a href="http://nypost.com" target="_blank" class="external">nypost.com</a>
         </li>
         <li class='truncate'>
             <a href="http://people.com" target="_blank" class="external">people.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.espn.com" target="_blank" class="external">www.espn.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.forbes.com" target="_blank" class="external">www.forbes.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.politico.com" target="_blank" class="external">www.politico.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://7plus.com.au" target="_blank" class="external">7plus.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tauck.com" target="_blank" class="external">www.tauck.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.adelaidenow.com.au" target="_blank" class="external">www.adelaidenow.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.transfermarkt.com" target="_blank" class="external">www.transfermarkt.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://drjoedispenza.com" target="_blank" class="external">drjoedispenza.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nationalnotary.org" target="_blank" class="external">www.nationalnotary.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://whdh.com" target="_blank" class="external">whdh.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.intel.co.uk" target="_blank" class="external">www.intel.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cfl.ca" target="_blank" class="external">www.cfl.ca</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.aman.com" target="_blank" class="external">www.aman.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lifeway.com" target="_blank" class="external">www.lifeway.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nikonusa.com" target="_blank" class="external">www.nikonusa.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.rakuten.ne.jp" target="_blank" class="external">www.rakuten.ne.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://warhammer40000.com" target="_blank" class="external">warhammer40000.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nine.com.au" target="_blank" class="external">nine.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://celebrity.nine.com.au" target="_blank" class="external">celebrity.nine.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://honey.nine.com.au" target="_blank" class="external">honey.nine.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wwos.nine.com.au" target="_blank" class="external">wwos.nine.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.readingrockets.org" target="_blank" class="external">www.readingrockets.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://premier.ticketek.com.au" target="_blank" class="external">premier.ticketek.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://soonerswire.usatoday.com" target="_blank" class="external">soonerswire.usatoday.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.facinghistory.org" target="_blank" class="external">www.facinghistory.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fightingirishwire.usatoday.com" target="_blank" class="external">fightingirishwire.usatoday.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gia.edu" target="_blank" class="external">www.gia.edu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.agriculture.com" target="_blank" class="external">www.agriculture.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://unofficialnetworks.com" target="_blank" class="external">unofficialnetworks.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://spartanswire.usatoday.com" target="_blank" class="external">spartanswire.usatoday.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://trojanswire.usatoday.com" target="_blank" class="external">trojanswire.usatoday.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://news.un.org" target="_blank" class="external">news.un.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.canon.nl" target="_blank" class="external">www.canon.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://iontelevision.com" target="_blank" class="external">iontelevision.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pride.com" target="_blank" class="external">www.pride.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tdbank.com" target="_blank" class="external">www.tdbank.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.out.com" target="_blank" class="external">www.out.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.canon-europe.com" target="_blank" class="external">www.canon-europe.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://racer.com" target="_blank" class="external">racer.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.emmys.com" target="_blank" class="external">www.emmys.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ao.com" target="_blank" class="external">ao.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://displaysolutions.samsung.com" target="_blank" class="external">displaysolutions.samsung.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://shop.samsung.com" target="_blank" class="external">shop.samsung.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://decathlon.fr" target="_blank" class="external">decathlon.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://conseilsport.decathlon.fr" target="_blank" class="external">conseilsport.decathlon.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://exxonmobil.com" target="_blank" class="external">exxonmobil.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.exxon.com" target="_blank" class="external">www.exxon.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://corporate.exxonmobil.com" target="_blank" class="external">corporate.exxonmobil.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://stuff.co.nz" target="_blank" class="external">stuff.co.nz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://i.stuff.co.nz" target="_blank" class="external">i.stuff.co.nz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.stuff.co.nz" target="_blank" class="external">www.stuff.co.nz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://calciomercato.com" target="_blank" class="external">calciomercato.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.calciomercato.com" target="_blank" class="external">www.calciomercato.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fcinternews.it" target="_blank" class="external">fcinternews.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.fcinternews.it" target="_blank" class="external">m.fcinternews.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fcinternews.it" target="_blank" class="external">www.fcinternews.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://marriott.com" target="_blank" class="external">marriott.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://marriott-hotels.marriott.com" target="_blank" class="external">marriott-hotels.marriott.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ilsole24ore.com" target="_blank" class="external">ilsole24ore.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mercati.ilsole24ore.com" target="_blank" class="external">mercati.ilsole24ore.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://molottery.com" target="_blank" class="external">molottery.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.molottery.com" target="_blank" class="external">www.molottery.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.palottery.state.pa.us" target="_blank" class="external">www.palottery.state.pa.us</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.personaldefenseworld.com" target="_blank" class="external">www.personaldefenseworld.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tactical-life.com" target="_blank" class="external">www.tactical-life.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ticketek.com.au" target="_blank" class="external">ticketek.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tv2.dk" target="_blank" class="external">tv2.dk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sport.tv2.dk" target="_blank" class="external">sport.tv2.dk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uktv.co.uk" target="_blank" class="external">uktv.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uktvplay.uktv.co.uk" target="_blank" class="external">uktvplay.uktv.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pandora.net" target="_blank" class="external">pandora.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pandora.net" target="_blank" class="external">www.pandora.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://achrnews.com" target="_blank" class="external">achrnews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.achrnews.com" target="_blank" class="external">www.achrnews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://advocate.com" target="_blank" class="external">advocate.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.advocate.com" target="_blank" class="external">www.advocate.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.blick.ch" target="_blank" class="external">www.blick.ch</a>
+            <a href="http://airstream.com" target="_blank" class="external">airstream.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.bose.de" target="_blank" class="external">www.bose.de</a>
+            <a href="http://www.bain.com" target="_blank" class="external">www.bain.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bd.com" target="_blank" class="external">www.bd.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.cisco.com" target="_blank" class="external">www.cisco.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.harley-davidson.com" target="_blank" class="external">www.harley-davidson.com</a>
+            <a href="http://www.fitchratings.com" target="_blank" class="external">www.fitchratings.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.intel.com" target="_blank" class="external">www.intel.com</a>
+            <a href="http://www.franklintempleton.com" target="_blank" class="external">www.franklintempleton.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.intel.de" target="_blank" class="external">www.intel.de</a>
+            <a href="http://www.freightwaves.com" target="_blank" class="external">www.freightwaves.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.marriott.com" target="_blank" class="external">www.marriott.com</a>
+            <a href="http://www.golfpride.com" target="_blank" class="external">www.golfpride.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.nationalgeographic.com" target="_blank" class="external">www.nationalgeographic.com</a>
+            <a href="http://www.hpe.com" target="_blank" class="external">www.hpe.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.nyse.com" target="_blank" class="external">www.nyse.com</a>
+            <a href="http://www.hubbell.com" target="_blank" class="external">www.hubbell.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.sky.de" target="_blank" class="external">www.sky.de</a>
+            <a href="http://www.nutanix.com" target="_blank" class="external">www.nutanix.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.thermofisher.com" target="_blank" class="external">www.thermofisher.com</a>
+            <a href="http://www.resmed.com" target="_blank" class="external">www.resmed.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.usopen.com" target="_blank" class="external">www.usopen.com</a>
+            <a href="http://www.sonicwall.com" target="_blank" class="external">www.sonicwall.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tctmd.com" target="_blank" class="external">www.tctmd.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.zimmerbiomet.com" target="_blank" class="external">www.zimmerbiomet.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://youngevity.com" target="_blank" class="external">youngevity.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.airstream.com" target="_blank" class="external">www.airstream.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://aman.com" target="_blank" class="external">aman.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ameriprise.com" target="_blank" class="external">ameriprise.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ameriprise.com" target="_blank" class="external">www.ameriprise.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://aopa.org" target="_blank" class="external">aopa.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.aopa.org" target="_blank" class="external">www.aopa.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://armstrongceilings.com" target="_blank" class="external">armstrongceilings.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.armstrongceilings.com" target="_blank" class="external">www.armstrongceilings.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://australia.com" target="_blank" class="external">australia.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.australia.com" target="_blank" class="external">www.australia.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://balenciaga.com" target="_blank" class="external">balenciaga.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.balenciaga.com" target="_blank" class="external">www.balenciaga.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ballisticmag.com" target="_blank" class="external">ballisticmag.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ballisticmag.com" target="_blank" class="external">www.ballisticmag.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bellinghamherald.com" target="_blank" class="external">bellinghamherald.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tri-cityherald.com" target="_blank" class="external">www.tri-cityherald.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bottegaveneta.com" target="_blank" class="external">bottegaveneta.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bottegaveneta.com" target="_blank" class="external">www.bottegaveneta.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://charlottefootballclub.com" target="_blank" class="external">charlottefootballclub.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.charlottefootballclub.com" target="_blank" class="external">www.charlottefootballclub.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://childrens.com" target="_blank" class="external">childrens.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.childrens.com" target="_blank" class="external">www.childrens.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://columbuscrew.com" target="_blank" class="external">columbuscrew.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.columbuscrew.com" target="_blank" class="external">www.columbuscrew.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://connectionsacademy.com" target="_blank" class="external">connectionsacademy.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.connectionsacademy.com" target="_blank" class="external">www.connectionsacademy.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://enr.com" target="_blank" class="external">enr.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.enr.com" target="_blank" class="external">www.enr.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fitchratings.com" target="_blank" class="external">fitchratings.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://forces.net" target="_blank" class="external">forces.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.forces.net" target="_blank" class="external">www.forces.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ford.de" target="_blank" class="external">ford.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ford.de" target="_blank" class="external">www.ford.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://formula1.com" target="_blank" class="external">formula1.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.formula1.com" target="_blank" class="external">www.formula1.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://freightwaves.com" target="_blank" class="external">freightwaves.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://globalist.it" target="_blank" class="external">globalist.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.globalist.it" target="_blank" class="external">www.globalist.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://golfpride.com" target="_blank" class="external">golfpride.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://grammy.com" target="_blank" class="external">grammy.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.grammy.com" target="_blank" class="external">www.grammy.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://heraldonline.com" target="_blank" class="external">heraldonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.islandpacket.com" target="_blank" class="external">www.islandpacket.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.myrtlebeachonline.com" target="_blank" class="external">www.myrtlebeachonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.thestate.com" target="_blank" class="external">www.thestate.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ilbianconero.com" target="_blank" class="external">ilbianconero.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ilbianconero.com" target="_blank" class="external">www.ilbianconero.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ilsole24ore.com" target="_blank" class="external">www.ilsole24ore.com</a>
         </li>
         <li class='truncate'>
             <a href="http://intel.com" target="_blank" class="external">intel.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://thermofisher.com" target="_blank" class="external">thermofisher.com</a>
+            <a href="http://www.intel.co.jp" target="_blank" class="external">www.intel.co.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.intel.de" target="_blank" class="external">www.intel.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.intel.fr" target="_blank" class="external">www.intel.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://japanet.co.jp" target="_blank" class="external">japanet.co.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.japanet.co.jp" target="_blank" class="external">www.japanet.co.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://linkiesta.it" target="_blank" class="external">linkiesta.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.linkiesta.it" target="_blank" class="external">www.linkiesta.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mbs.jp" target="_blank" class="external">mbs.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mbs.jp" target="_blank" class="external">www.mbs.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://merckvetmanual.com" target="_blank" class="external">merckvetmanual.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.msdvetmanual.com" target="_blank" class="external">www.msdvetmanual.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://metservice.com" target="_blank" class="external">metservice.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.metservice.com" target="_blank" class="external">www.metservice.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://milannews24.com" target="_blank" class="external">milannews24.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.milannews24.com" target="_blank" class="external">www.milannews24.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nhra.com" target="_blank" class="external">nhra.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nhra.com" target="_blank" class="external">www.nhra.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://personaldefenseworld.com" target="_blank" class="external">personaldefenseworld.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.radio24.ilsole24ore.com" target="_blank" class="external">www.radio24.ilsole24ore.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://rolls-roycemotorcars.com" target="_blank" class="external">rolls-roycemotorcars.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.rolls-roycemotorcars.com" target="_blank" class="external">www.rolls-roycemotorcars.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sky.co.nz" target="_blank" class="external">sky.co.nz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sky.co.nz" target="_blank" class="external">www.sky.co.nz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://state.gov" target="_blank" class="external">state.gov</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.state.gov" target="_blank" class="external">www.state.gov</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://straitstimes.com" target="_blank" class="external">straitstimes.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.straitstimes.com" target="_blank" class="external">www.straitstimes.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thenewstribune.com" target="_blank" class="external">thenewstribune.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.thenewstribune.com" target="_blank" class="external">www.thenewstribune.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://yahoo.co.jp" target="_blank" class="external">yahoo.co.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.yahoo.co.jp" target="_blank" class="external">www.yahoo.co.jp</a>
         </li>
     </ul>
 </div>

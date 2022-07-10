@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "docplanner.com",
-        history: [{"date":"2020.02","prevalence":0.000116,"sites":5,"fingerprinting":2,"cookies":0},{"date":"2020.03","prevalence":0.000102,"sites":5,"fingerprinting":2,"cookies":0},{"date":"2020.04","prevalence":0.000107,"sites":5,"fingerprinting":2,"cookies":0},{"date":"2020.05","prevalence":0.0000713,"sites":5,"fingerprinting":2,"cookies":0},{"date":"2020.06","prevalence":0.0000958,"sites":7,"fingerprinting":2,"cookies":0},{"date":"2020.07","prevalence":0.000097,"sites":7,"fingerprinting":2,"cookies":0},{"date":"2020.08","prevalence":0.000103,"sites":14,"fingerprinting":2,"cookies":0},{"date":"2020.09","prevalence":0.0000913,"sites":12,"fingerprinting":2,"cookies":0.0000913},{"date":"2020.10","prevalence":0.000106,"sites":14,"fingerprinting":2,"cookies":0.0000987},{"date":"2020.11","prevalence":0.000076,"sites":10,"fingerprinting":2,"cookies":0.000076},{"date":"2020.12","prevalence":0.0000913,"sites":12,"fingerprinting":2,"cookies":0.0000913},{"date":"2021.01","prevalence":0.0000764,"sites":10,"fingerprinting":2,"cookies":0.0000611},{"date":"2021.02","prevalence":0.0000695,"sites":10,"fingerprinting":2,"cookies":0.0000208},{"date":"2021.03","prevalence":0.0000693,"sites":10,"fingerprinting":2,"cookies":0.0000139},{"date":"2021.04","prevalence":0.0000832,"sites":12,"fingerprinting":2,"cookies":0.00000693},{"date":"2021.05","prevalence":0.0000827,"sites":12,"fingerprinting":2,"cookies":0.00000689},{"date":"2021.06","prevalence":0.0000959,"sites":14,"fingerprinting":2,"cookies":0.00000685},{"date":"2021.07","prevalence":0.0000972,"sites":14,"fingerprinting":2,"cookies":0.0000139},{"date":"2021.08","prevalence":0.0000972,"sites":14,"fingerprinting":2,"cookies":0.0000208},{"date":"2021.09","prevalence":0.0000828,"sites":12,"fingerprinting":2,"cookies":0.0000069},{"date":"2021.10","prevalence":0.0000829,"sites":12,"fingerprinting":2,"cookies":0.0000207},{"date":"2021.11","prevalence":0.0000828,"sites":12,"fingerprinting":2,"cookies":0.0000207},{"date":"2021.12","prevalence":0.000083,"sites":12,"fingerprinting":2,"cookies":0.0000207},{"date":"2022.01","prevalence":0.0000831,"sites":12,"fingerprinting":2,"cookies":0.0000208},{"date":"2022.02","prevalence":0.000123,"sites":18,"fingerprinting":2,"cookies":0.00000681},{"date":"2022.03","prevalence":0.000123,"sites":18,"fingerprinting":2,"cookies":0.00000683},{"date":"2022.04","prevalence":0.000109,"sites":16,"fingerprinting":2,"cookies":0.00000681},{"date":"2022.05","prevalence":0.000109,"sites":16,"fingerprinting":2,"cookies":0.00000682},{"date":"max/june-2022","prevalence":0.0000814,"sites":12,"fingerprinting":2,"cookies":0.00000678}]
+        history: [{"date":"main","prevalence":0.0000814,"sites":12,"fingerprinting":2,"cookies":0.00000678},{"date":"us-opt-in","prevalence":0.0000949,"sites":14,"fingerprinting":2,"cookies":0.0000271}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;5679<small>/27203</small>
+                    <strong>Rank:</strong> &#35;5283<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (12 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (14 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
@@ -91,8 +91,8 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Stylesheet</span>,
-                    <span>Script</span>,
                     <span>Image</span>,
+                    <span>Script</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/docplanner.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
@@ -128,14 +128,16 @@
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
         <li class='truncate'>Navigator.prototype.product</li>
         <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
         <li class='truncate'>Navigator.prototype.connection</li>
         <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.innerHeight</li>
         <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
-        <li class='truncate'>window.sessionStorage</li>
         <li class='truncate'>Event.prototype.timeStamp</li>
         <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
         <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
 </div>
@@ -145,301 +147,292 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;jade-dpuikitv3-217a7e80.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;jade-dpuikitv3-217a7e80.css</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;jade-dpuikitv3-217a7e80.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;jade-dpuikitv3-217a7e80.css</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;jade-polyfills-modern-c77a23f5.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;jade-polyfills-modern-c77a23f5.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;Notifications-8410f741.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;Notifications-8410f741.css</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;runtime-modern-484a7a87.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;runtime-modern-484a7a87.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;TopNavigation-modern-chunk-231e46b0.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;TopNavigation-modern-chunk-231e46b0.js</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;jade-app-modern-c67142dd.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;jade-app-modern-c67142dd.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Stats-modern-chunk-992f419e.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Stats-modern-chunk-992f419e.js</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Routes-modern-chunk-2874885f.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Routes-modern-chunk-2874885f.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;FloatingCookiesInfoController-modern-chunk-93cc5d64.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;FloatingCookiesInfoController-modern-chunk-93cc5d64.js</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;vendor-modern-chunk-34bd2170.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;vendor-modern-chunk-34bd2170.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;SearchAutocompleteController-modern-chunk-313ffeec.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;SearchAutocompleteController-modern-chunk-313ffeec.js</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;vue-vendor-modern-chunk-0897458d.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;vue-vendor-modern-chunk-0897458d.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;UserLogin-modern-chunk-8f6ee1bf.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;UserLogin-modern-chunk-8f6ee1bf.js</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;Notifications-8410f741.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;Notifications-8410f741.css</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;SearchAutocompleteModule-8a62565e.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;SearchAutocompleteModule-8a62565e.css</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Notifications-modern-chunk-e1bfc114.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Notifications-modern-chunk-e1bfc114.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HubspotCTA-modern-chunk-49e66401.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HubspotCTA-modern-chunk-49e66401.js</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;TopNavigation-modern-chunk-17916b8d.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;TopNavigation-modern-chunk-17916b8d.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;jade-polyfills-modern-123220ce.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;jade-polyfills-modern-123220ce.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Stats-modern-chunk-2eec72e7.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Stats-modern-chunk-2eec72e7.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;runtime-modern-3eb21116.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;runtime-modern-3eb21116.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;FloatingCookiesInfoController-modern-chunk-6f852ecc.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;FloatingCookiesInfoController-modern-chunk-6f852ecc.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;jade-app-modern-d496771b.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;jade-app-modern-d496771b.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;SearchAutocompleteController-modern-chunk-1ca673bc.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;SearchAutocompleteController-modern-chunk-1ca673bc.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Routes-modern-chunk-5fb0def1.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Routes-modern-chunk-5fb0def1.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;SearchAutocompleteModule-8a62565e.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;SearchAutocompleteModule-8a62565e.css</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;vue-vendor-modern-chunk-672f92c5.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;vue-vendor-modern-chunk-672f92c5.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;SearchAutocompleteModule-modern-chunk-84033fc1.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;SearchAutocompleteModule-modern-chunk-84033fc1.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;vendor-modern-chunk-ba95724d.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;vendor-modern-chunk-ba95724d.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Modal-modern-chunk-3943a853.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Modal-modern-chunk-3943a853.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Notifications-modern-chunk-c60f852c.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Notifications-modern-chunk-c60f852c.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;LazyLoad-modern-chunk-c1fff936.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;LazyLoad-modern-chunk-c1fff936.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;SearchAutocompleteModule-modern-chunk-858ad384.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;SearchAutocompleteModule-modern-chunk-858ad384.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HubspotCTA-modern-chunk-6ad4d435.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HubspotCTA-modern-chunk-6ad4d435.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;5-modern-chunk-3d5cd8a0.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;5-modern-chunk-3d5cd8a0.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HubspotCTAModule-modern-chunk-884fdc20.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HubspotCTAModule-modern-chunk-884fdc20.js</a> (seen on 7 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Modal-modern-chunk-3bbfba60.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Modal-modern-chunk-3bbfba60.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;jade-homepage-8cd940b0.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;jade-homepage-8cd940b0.css</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;LazyLoad-modern-chunk-4fa9a74a.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;LazyLoad-modern-chunk-4fa9a74a.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;goro-homepage-0eb2ee80.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;goro-homepage-0eb2ee80.js</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;general&#x2F;doctor&#x2F;doctor-default-80-80.png" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;general&#x2F;doctor&#x2F;doctor-default-80-80.png</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;general&#x2F;homepage&#x2F;homepage-bg-online-consultation.jpg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;general&#x2F;homepage&#x2F;homepage-bg-online-consultation.jpg</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HubspotCTAModule-modern-chunk-3fefebe1.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HubspotCTAModule-modern-chunk-3fefebe1.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;general&#x2F;doctor&#x2F;doctor-default-80-80.png" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;general&#x2F;doctor&#x2F;doctor-default-80-80.png</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;jade-homepage-8cd940b0.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;jade-homepage-8cd940b0.css</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;ViewUtils-modern-chunk-76e44ad2.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;ViewUtils-modern-chunk-76e44ad2.js</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;goro-homepage-0eb2ee80.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;goro-homepage-0eb2ee80.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HomepageController-modern-chunk-c8682967.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HomepageController-modern-chunk-c8682967.js</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;general&#x2F;homepage&#x2F;homepage-bg-online-consultation.jpg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;general&#x2F;homepage&#x2F;homepage-bg-online-consultation.jpg</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;UserLogin-modern-chunk-53538c11.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;UserLogin-modern-chunk-53538c11.js</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HomepageController-modern-chunk-bb100e22.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HomepageController-modern-chunk-bb100e22.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HomepageSearchFormModule-modern-chunk-7308cb1f.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HomepageSearchFormModule-modern-chunk-7308cb1f.js</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HomepageSearchFormModule-modern-chunk-6484555d.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HomepageSearchFormModule-modern-chunk-6484555d.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HomepageDialogsContainerModule-modern-chunk-e94a5db9.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HomepageDialogsContainerModule-modern-chunk-e94a5db9.js</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HomepageDialogsContainerModule-modern-chunk-226b79f7.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HomepageDialogsContainerModule-modern-chunk-226b79f7.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;WhatIsOnlineConsultationModule-modern-chunk-9dcd008b.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;WhatIsOnlineConsultationModule-modern-chunk-9dcd008b.js</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;OpinionsController-modern-chunk-bc856ea8.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;OpinionsController-modern-chunk-bc856ea8.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;PatientAppBannerIndex-4819417f.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;PatientAppBannerIndex-4819417f.css</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;OnlineConsultationSearchModule-fb26d63c.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;OnlineConsultationSearchModule-fb26d63c.css</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;PatientAppBannerIndex-modern-chunk-d966a52e.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;PatientAppBannerIndex-modern-chunk-d966a52e.js</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;ViewUtils-modern-chunk-183316fc.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;ViewUtils-modern-chunk-183316fc.js</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;OpinionsController-modern-chunk-35aeb712.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;OpinionsController-modern-chunk-35aeb712.js</a> (seen on 6 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;5-modern-chunk-33a6e3cd.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;5-modern-chunk-33a6e3cd.js</a> (seen on 6 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;NewDoctorsWidgetModule-modern-chunk-8652e4c8.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;NewDoctorsWidgetModule-modern-chunk-8652e4c8.js</a> (seen on 6 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;OnlineConsultationSearchModule-fb26d63c.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;OnlineConsultationSearchModule-fb26d63c.css</a> (seen on 6 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;OnlineConsultationSearchModule-modern-chunk-d54f6ce8.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;OnlineConsultationSearchModule-modern-chunk-d54f6ce8.js</a> (seen on 6 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;NewDoctorsWidgetModule-modern-chunk-0e185bd5.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;NewDoctorsWidgetModule-modern-chunk-0e185bd5.js</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;general&#x2F;online-consultations&#x2F;online-consultation.png" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;general&#x2F;online-consultations&#x2F;online-consultation.png</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;EnhancedEcommerce-modern-chunk-30632066.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;EnhancedEcommerce-modern-chunk-30632066.js</a> (seen on 4 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;WhatIsOnlineConsultationModule-modern-chunk-33e32cdf.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;WhatIsOnlineConsultationModule-modern-chunk-33e32cdf.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;MixpanelTrackingModule-modern-chunk-a6101aca.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;MixpanelTrackingModule-modern-chunk-a6101aca.js</a> (seen on 4 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;EnhancedEcommerceModule-modern-chunk-7128ab90.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;EnhancedEcommerceModule-modern-chunk-7128ab90.js</a> (seen on 4 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;OnlineConsultationSearchModule-modern-chunk-0ce6e7d2.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;OnlineConsultationSearchModule-modern-chunk-0ce6e7d2.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;uikit-DpCalendar-a59fad3e.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;uikit-DpCalendar-a59fad3e.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;uikit-DpCalendar-modern-chunk-2e82b743.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;uikit-DpCalendar-modern-chunk-2e82b743.js</a> (seen on 4 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;OpinionsModule-b8e20cc5.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;OpinionsModule-b8e20cc5.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Maps-HereMaps-modern-chunk-1fe72b41.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Maps-HereMaps-modern-chunk-1fe72b41.js</a> (seen on 4 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;TouchpointsController-modern-chunk-32dcbf3d.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;TouchpointsController-modern-chunk-32dcbf3d.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;TouchpointsController-modern-chunk-5a8b0d5b.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;TouchpointsController-modern-chunk-5a8b0d5b.js</a> (seen on 4 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;jade-content-sites-94132a32.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;jade-content-sites-94132a32.css</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;2-modern-chunk-fd33e6e3.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;2-modern-chunk-fd33e6e3.js</a> (seen on 4 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;goro-content-sites-b6cc1191.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;goro-content-sites-b6cc1191.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;OpinionsModule-46256c3a.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;OpinionsModule-46256c3a.css</a> (seen on 4 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;OpinionsModule-modern-chunk-e8bc4379.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;OpinionsModule-modern-chunk-e8bc4379.js</a> (seen on 4 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Maps-modern-chunk-1834a2c5.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Maps-modern-chunk-1834a2c5.js</a> (seen on 4 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileTopBannerModule-modern-chunk-8d89c5f5.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileTopBannerModule-modern-chunk-8d89c5f5.js</a> (seen on 4 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HereMaps-modern-chunk-d3d8d875.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HereMaps-modern-chunk-d3d8d875.js</a> (seen on 4 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileOpinionActionsModule-modern-chunk-ef3e0e1a.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileOpinionActionsModule-modern-chunk-ef3e0e1a.js</a> (seen on 3 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;general&#x2F;doctor&#x2F;doctor-default-140-140.jpg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;general&#x2F;doctor&#x2F;doctor-default-140-140.jpg</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;CovidTestSearchModule-a75a3add.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;CovidTestSearchModule-a75a3add.css</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;CovidTestSearchModule-modern-chunk-59b80b29.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;CovidTestSearchModule-modern-chunk-59b80b29.js</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;jade-dpuikit-profile-doctor-863a19f2.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;jade-dpuikit-profile-doctor-863a19f2.css</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;goro-basic-30511e08.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;goro-basic-30511e08.js</a> (seen on 3 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;jade-dpuikit-profile-doctor-8067936c.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;jade-dpuikit-profile-doctor-8067936c.css</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;general&#x2F;map-placeholder&#x2F;map-placeholder-300-600.jpg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;general&#x2F;map-placeholder&#x2F;map-placeholder-300-600.jpg</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Doctor-Profile-modern-chunk-683ce162.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Doctor-Profile-modern-chunk-683ce162.js</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;PatientFavoriteDoctors-modern-chunk-397182de.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;PatientFavoriteDoctors-modern-chunk-397182de.js</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileAddressesModule-modern-chunk-33106c40.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileAddressesModule-modern-chunk-33106c40.js</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileGeneralModule-modern-chunk-ccc16bb8.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileGeneralModule-modern-chunk-ccc16bb8.js</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;InfoTabModule-modern-chunk-3960b42a.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;InfoTabModule-modern-chunk-3960b42a.js</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileDialogsContainerModule-modern-chunk-84e20a2e.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileDialogsContainerModule-modern-chunk-84e20a2e.js</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileInfoVueModule-modern-chunk-6ff59c9f.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileInfoVueModule-modern-chunk-6ff59c9f.js</a> (seen on 3 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;goro-basic-30511e08.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;goro-basic-30511e08.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;DoctorProfileAddressesVueModule-cea9eb61.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;DoctorProfileAddressesVueModule-cea9eb61.css</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileAddressesVueModule-modern-chunk-6871a8c6.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileAddressesVueModule-modern-chunk-6871a8c6.js</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;PatientAppBoxIndex-modern-chunk-56ea9bc5.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;PatientAppBoxIndex-modern-chunk-56ea9bc5.js</a> (seen on 3 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;SaveDoctorAppModule-8dd6e5c4.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;SaveDoctorAppModule-8dd6e5c4.css</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;SsoLoginModalModule-83a44974.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;SsoLoginModalModule-83a44974.css</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;SsoLoginModalModule-modern-chunk-b7772584.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;SsoLoginModalModule-modern-chunk-b7772584.js</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;DoctorProfileExperienceItemsModule-fbf1f0a1.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;DoctorProfileExperienceItemsModule-fbf1f0a1.css</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileExperienceItemsModule-modern-chunk-dc3d5768.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileExperienceItemsModule-modern-chunk-dc3d5768.js</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileOpinionsVueModule-modern-chunk-abaf0758.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileOpinionsVueModule-modern-chunk-abaf0758.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;DoctorProfileOpinionsSurveyVueModule-b3c71f47.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;DoctorProfileOpinionsSurveyVueModule-b3c71f47.css</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileOpinionsSurveyVueModule-modern-chunk-f421a1fc.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileOpinionsSurveyVueModule-modern-chunk-f421a1fc.js</a> (seen on 3 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-br-modern-chunk-44c8d11b.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-br-modern-chunk-44c8d11b.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;SaveDoctorAppModule-8dd6e5c4.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;SaveDoctorAppModule-8dd6e5c4.css</a> (seen on 3 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;EnhancedEcommerce-modern-chunk-85ef79f2.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;EnhancedEcommerce-modern-chunk-85ef79f2.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;SaveDoctorAppModule-modern-chunk-cc4d3b2b.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;SaveDoctorAppModule-modern-chunk-cc4d3b2b.js</a> (seen on 3 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;MixpanelTrackingModule-modern-chunk-adc465cd.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;MixpanelTrackingModule-modern-chunk-adc465cd.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;ProfileBranding-modern-chunk-6efac324.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;ProfileBranding-modern-chunk-6efac324.js</a> (seen on 3 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;EnhancedEcommerceModule-modern-chunk-c6cbe843.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;EnhancedEcommerceModule-modern-chunk-c6cbe843.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;uikit-DpCarousel-c7ec666a.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;uikit-DpCarousel-c7ec666a.css</a> (seen on 3 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;uikit-DpCalendar-modern-chunk-530714d4.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;uikit-DpCalendar-modern-chunk-530714d4.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;jade-content-sites-94132a32.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;jade-content-sites-94132a32.css</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Maps-HereMaps-modern-chunk-ff2077a5.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Maps-HereMaps-modern-chunk-ff2077a5.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;goro-content-sites-b6cc1191.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;goro-content-sites-b6cc1191.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;2-modern-chunk-6b6f2509.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;2-modern-chunk-6b6f2509.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-br-modern-chunk-bdcd3ca9.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-br-modern-chunk-bdcd3ca9.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;OpinionsModule-modern-chunk-c3231dd6.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;OpinionsModule-modern-chunk-c3231dd6.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;br&#x2F;logo&#x2F;logo-default-br.svg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;br&#x2F;logo&#x2F;logo-default-br.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-mx-modern-chunk-1b7d7074.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-mx-modern-chunk-1b7d7074.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Maps-modern-chunk-2ef569b8.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Maps-modern-chunk-2ef569b8.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileTopBannerModule-modern-chunk-5e3e5856.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileTopBannerModule-modern-chunk-5e3e5856.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HereMaps-modern-chunk-e5c0857d.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HereMaps-modern-chunk-e5c0857d.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;jade-polyfills-modern-2073619c.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;jade-polyfills-modern-2073619c.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;runtime-modern-8afb9a68.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;runtime-modern-8afb9a68.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;jade-app-modern-f7c8be66.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;jade-app-modern-f7c8be66.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Routes-modern-chunk-67a02e36.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Routes-modern-chunk-67a02e36.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;vue-vendor-modern-chunk-ea8dce42.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;vue-vendor-modern-chunk-ea8dce42.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;vendor-modern-chunk-37c7077a.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;vendor-modern-chunk-37c7077a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Notifications-modern-chunk-048a6f12.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Notifications-modern-chunk-048a6f12.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;ViewUtils-modern-chunk-1bf25059.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;ViewUtils-modern-chunk-1bf25059.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;WhatIsOnlineConsultationModule-modern-chunk-584b2993.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;WhatIsOnlineConsultationModule-modern-chunk-584b2993.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;SearchAutocompleteModule-modern-chunk-41a5e5c0.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;SearchAutocompleteModule-modern-chunk-41a5e5c0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Modal-modern-chunk-5b3b3a7e.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Modal-modern-chunk-5b3b3a7e.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;LazyLoad-modern-chunk-55117bb7.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;LazyLoad-modern-chunk-55117bb7.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;OnlineConsultationSearchModule-modern-chunk-db4974dd.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;OnlineConsultationSearchModule-modern-chunk-db4974dd.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;HubspotCTAModule-modern-chunk-99dbeed2.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;HubspotCTAModule-modern-chunk-99dbeed2.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-mx-modern-chunk-12fc2601.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-mx-modern-chunk-12fc2601.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;mx&#x2F;logo&#x2F;logo-default-mx.svg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;mx&#x2F;logo&#x2F;logo-default-mx.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-es-modern-chunk-701368e3.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-es-modern-chunk-701368e3.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;ContentSites-modern-chunk-112a3786.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;ContentSites-modern-chunk-112a3786.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;CaptchaController-modern-chunk-e626e5b1.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;CaptchaController-modern-chunk-e626e5b1.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-es-modern-chunk-b8e409ca.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-es-modern-chunk-b8e409ca.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;es&#x2F;logo&#x2F;logo-default-es.svg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;es&#x2F;logo&#x2F;logo-default-es.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-ar-modern-chunk-8e220604.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-ar-modern-chunk-8e220604.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-ar-modern-chunk-2fb7ee0e.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-ar-modern-chunk-2fb7ee0e.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;BookingSource-modern-chunk-67b67145.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;BookingSource-modern-chunk-67b67145.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;BookingSource-modern-chunk-39e9b67c.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;BookingSource-modern-chunk-39e9b67c.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;ar&#x2F;logo&#x2F;logo-default-ar.svg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;ar&#x2F;logo&#x2F;logo-default-ar.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Doctor-NonCommercialProfile-modern-chunk-f477a630.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Doctor-NonCommercialProfile-modern-chunk-f477a630.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;ProfileBranding-modern-chunk-de7d073a.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;ProfileBranding-modern-chunk-de7d073a.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorNonCommercialProfileGeneralModule-modern-chunk-856cd014.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorNonCommercialProfileGeneralModule-modern-chunk-856cd014.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;uikit-DpCarousel-c7ec666a.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;uikit-DpCarousel-c7ec666a.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileCalendarPlaceholderModule-modern-chunk-475430d3.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileCalendarPlaceholderModule-modern-chunk-475430d3.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-tr-modern-chunk-8e49fb86.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-tr-modern-chunk-8e49fb86.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;RecommendedDoctorsModule-4c677685.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;RecommendedDoctorsModule-4c677685.css</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;tr&#x2F;logo&#x2F;logo-default-tr.svg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;tr&#x2F;logo&#x2F;logo-default-tr.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;RecommendedDoctorsModule-modern-chunk-2814fb5b.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;RecommendedDoctorsModule-modern-chunk-2814fb5b.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;MarketplaceAccountRejectedModal-83a44974.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;MarketplaceAccountRejectedModal-83a44974.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;EcommerceTouchpointModule-modern-chunk-3efd362f.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;EcommerceTouchpointModule-modern-chunk-3efd362f.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;DoctorProfileCalendarModule-6c0edac5.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;DoctorProfileCalendarModule-6c0edac5.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;DoctorProfileAskForCalendarModule-modern-chunk-e39f2e09.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;DoctorProfileAskForCalendarModule-modern-chunk-e39f2e09.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;css&#x2F;CalendarDesktopComponentBased-931d65a9.css" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;css&#x2F;CalendarDesktopComponentBased-931d65a9.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;general&#x2F;ilustrations&#x2F;doc_illustration.svg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;general&#x2F;ilustrations&#x2F;doc_illustration.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-it-modern-chunk-ea5163b8.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-it-modern-chunk-ea5163b8.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-it-modern-chunk-71d49073.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-it-modern-chunk-71d49073.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;CovidTestSearchModule-modern-chunk-f8bfe969.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;CovidTestSearchModule-modern-chunk-f8bfe969.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;it&#x2F;logo&#x2F;logo-default-it.svg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;it&#x2F;logo&#x2F;logo-default-it.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-pl-modern-chunk-af5e6273.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-pl-modern-chunk-af5e6273.js</a> (seen on 2 websites)</p>
+            <p><a href="http://platform.docplanner.com&#x2F;js&#x2F;Config-pl-modern-chunk-68a8e4b3.js" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;js&#x2F;Config-pl-modern-chunk-68a8e4b3.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://platform.docplanner.com&#x2F;img&#x2F;pl&#x2F;logo&#x2F;logo-default-pl.svg" target="_blank" class="external" rel="noreferrer noopener">platform.docplanner.com&#x2F;img&#x2F;pl&#x2F;logo&#x2F;logo-default-pl.svg</a> (seen on 2 websites)</p>
@@ -467,6 +460,9 @@
             <a href="http://www.doctoraliar.com" target="_blank" class="external">www.doctoraliar.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.doktortakvimi.com" target="_blank" class="external">www.doktortakvimi.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.miodottore.it" target="_blank" class="external">www.miodottore.it</a>
         </li>
         <li class='truncate'>
@@ -480,6 +476,9 @@
         </li>
         <li class='truncate'>
             <a href="http://doctoraliar.com" target="_blank" class="external">doctoraliar.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://doktortakvimi.com" target="_blank" class="external">doktortakvimi.com</a>
         </li>
         <li class='truncate'>
             <a href="http://miodottore.it" target="_blank" class="external">miodottore.it</a>

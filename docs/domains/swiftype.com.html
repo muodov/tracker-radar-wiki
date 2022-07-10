@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "swiftype.com",
-        history: [{"date":"max/ref-nocmp-de","prevalence":0.001,"sites":10,"fingerprinting":0,"cookies":0},{"date":"max/opt-in-de","prevalence":0.001,"sites":10,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"main","prevalence":0.00175,"sites":258,"fingerprinting":1,"cookies":0},{"date":"us-opt-in","prevalence":0.00182,"sites":269,"fingerprinting":1,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;933<small>/3704</small>
+                    <strong>Rank:</strong> &#35;827<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.10&#37; (10 sites)
+                    <strong>Prevalence:</strong> 0.18&#37; (269 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -91,11 +91,18 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Image</span>,
+                    <span>Preflight</span>,
+                    <span>Script</span>,
+                    <span>XHR</span>,
+                    <span>Fetch</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/swiftype.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>cc</span>, 
+                    <span>api</span>, 
+                    <span>search-api</span>, 
+                    <span>app</span>, 
                 </li>
             </ul>
         </div>
@@ -114,16 +121,55 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://cc.swiftype.com&#x2F;cc" target="_blank" class="external" rel="noreferrer noopener">cc.swiftype.com&#x2F;cc</a> (seen on 4 websites)</p>
+            <p><a href="http://cc.swiftype.com&#x2F;cc.js" target="_blank" class="external" rel="noreferrer noopener">cc.swiftype.com&#x2F;cc.js</a> (seen on 102 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cc.swiftype.com&#x2F;cc.js" target="_blank" class="external" rel="noreferrer noopener">cc.swiftype.com&#x2F;cc.js</a> (seen on 3 websites)</p>
+            <p><a href="http://cc.swiftype.com&#x2F;cc" target="_blank" class="external" rel="noreferrer noopener">cc.swiftype.com&#x2F;cc</a> (seen on 39 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://search-api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;search.json" target="_blank" class="external" rel="noreferrer noopener">search-api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;search.json</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://search-api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;search.json" target="_blank" class="external" rel="noreferrer noopener">search-api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;search.json</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;search.json" target="_blank" class="external" rel="noreferrer noopener">api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;search.json</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;search" target="_blank" class="external" rel="noreferrer noopener">api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;search</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;search.json" target="_blank" class="external" rel="noreferrer noopener">api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;search.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;suggest" target="_blank" class="external" rel="noreferrer noopener">api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;engines&#x2F;suggest</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;conversions&#x2F;log_conversion_event" target="_blank" class="external" rel="noreferrer noopener">api.swiftype.com&#x2F;api&#x2F;v1&#x2F;public&#x2F;conversions&#x2F;log_conversion_event</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.swiftype.com&#x2F;install&#x2F;v2&#x2F;st.js" target="_blank" class="external" rel="noreferrer noopener">app.swiftype.com&#x2F;install&#x2F;v2&#x2F;st.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -133,25 +179,172 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://gitlab.com" target="_blank" class="external">gitlab.com</a>
+            <a href="http://www.vanderbilthealth.com" target="_blank" class="external">www.vanderbilthealth.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bmc.com" target="_blank" class="external">www.bmc.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://firstenergycorp.com" target="_blank" class="external">firstenergycorp.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.allaboutvision.com" target="_blank" class="external">www.allaboutvision.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.foxit.com" target="_blank" class="external">www.foxit.com</a>
+            <a href="http://www.leidos.com" target="_blank" class="external">www.leidos.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://billboard.com" target="_blank" class="external">billboard.com</a>
+            <a href="http://www.card.fnbo.com" target="_blank" class="external">www.card.fnbo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.baptist-health.com" target="_blank" class="external">www.baptist-health.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.brainandlife.org" target="_blank" class="external">www.brainandlife.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mt.com" target="_blank" class="external">www.mt.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.k5learning.com" target="_blank" class="external">www.k5learning.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gmu.edu" target="_blank" class="external">www.gmu.edu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bendpak.com" target="_blank" class="external">www.bendpak.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.patelco.org" target="_blank" class="external">www.patelco.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.alaskaair.com" target="_blank" class="external">www.alaskaair.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.alarmgrid.com" target="_blank" class="external">www.alarmgrid.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.vlinderstichting.nl" target="_blank" class="external">www.vlinderstichting.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.electrifyamerica.com" target="_blank" class="external">www.electrifyamerica.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.associatedbank.com" target="_blank" class="external">www.associatedbank.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.enjuris.com" target="_blank" class="external">www.enjuris.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.srpnet.com" target="_blank" class="external">www.srpnet.com</a>
         </li>
         <li class='truncate'>
             <a href="http://variety.com" target="_blank" class="external">variety.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.sheknows.com" target="_blank" class="external">www.sheknows.com</a>
+            <a href="http://www.racingpost.com" target="_blank" class="external">www.racingpost.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.rollingstone.com" target="_blank" class="external">www.rollingstone.com</a>
+            <a href="http://www.dirt.com" target="_blank" class="external">www.dirt.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mailchimp.com" target="_blank" class="external">mailchimp.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.audioadvisor.com" target="_blank" class="external">www.audioadvisor.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.shoppersdrugmart.ca" target="_blank" class="external">www.shoppersdrugmart.ca</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.utmedicalcenter.org" target="_blank" class="external">www.utmedicalcenter.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nachi.org" target="_blank" class="external">www.nachi.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://leitesculinaria.com" target="_blank" class="external">leitesculinaria.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.the-girl-who-ate-everything.com" target="_blank" class="external">www.the-girl-who-ate-everything.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.investmentnews.com" target="_blank" class="external">www.investmentnews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.princess.com" target="_blank" class="external">www.princess.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.goldderby.com" target="_blank" class="external">www.goldderby.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wwd.com" target="_blank" class="external">wwd.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://everydayfeminism.com" target="_blank" class="external">everydayfeminism.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hollywoodreporter.com" target="_blank" class="external">www.hollywoodreporter.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.visitsanantonio.com" target="_blank" class="external">www.visitsanantonio.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.billboard.com" target="_blank" class="external">www.billboard.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://breastfeeding.support" target="_blank" class="external">breastfeeding.support</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.vibe.com" target="_blank" class="external">www.vibe.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://arkansas.gov" target="_blank" class="external">arkansas.gov</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.liberty.edu" target="_blank" class="external">www.liberty.edu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://harvardlawreview.org" target="_blank" class="external">harvardlawreview.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://knowledge.hubspot.com" target="_blank" class="external">knowledge.hubspot.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://duke.edu" target="_blank" class="external">duke.edu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://oit.duke.edu" target="_blank" class="external">oit.duke.edu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vodafone.co.uk" target="_blank" class="external">vodafone.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.motorious.com" target="_blank" class="external">www.motorious.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://akamai.com" target="_blank" class="external">akamai.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.akamai.com" target="_blank" class="external">www.akamai.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lonelyplanet.com" target="_blank" class="external">www.lonelyplanet.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.colgate.com" target="_blank" class="external">www.colgate.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://colgate.com" target="_blank" class="external">colgate.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tiaabank.com" target="_blank" class="external">www.tiaabank.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://marylandtaxes.gov" target="_blank" class="external">marylandtaxes.gov</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.marylandtaxes.gov" target="_blank" class="external">www.marylandtaxes.gov</a>
         </li>
     </ul>
 </div>

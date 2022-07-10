@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - capcut.com</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "capcut.com",
+        history: [{"date":"us-opt-in","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/capcut.com.ico' width="32" height="32" class='inline-block' /> capcut.com</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;16871<small>/27720</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Image</span>,
+                    <span>Script</span>,
+                    <span>Font</span>,
+                    <span>Media</span>,
+                    <span>XHR</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/capcut.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>www</span>, 
+                    <span>lf16-web-buz</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.product</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Navigator.prototype.connection</li>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://www.capcut.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.capcut.com&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;760.6dad7174.css" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;760.6dad7174.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;index.b7d17091.css" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;index.b7d17091.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_1_2x_fb52a48db1a77a630dde.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_1_2x_fb52a48db1a77a630dde.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_2_2x_dde7ee9dee456582c921.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_2_2x_dde7ee9dee456582c921.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_3_2x_d5394e7e98c1432393c6.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_3_2x_d5394e7e98c1432393c6.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_4_2x_02ec5c6d763167a11530.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_4_2x_02ec5c6d763167a11530.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_5_2x_203b90d7fb95cb8e8623.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_5_2x_203b90d7fb95cb8e8623.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_6_2x_0fffc78d4be7dbb287f4.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_6_2x_0fffc78d4be7dbb287f4.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_7_2x_1260b148fb8fdbb8a6a3.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_material_7_2x_1260b148fb8fdbb8a6a3.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_tt_preview_2x_64958beeabf4fd64a044.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_tt_preview_2x_64958beeabf4fd64a044.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_translation_2x_621f2bbeffd85cac2a8d.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_translation_2x_621f2bbeffd85cac2a8d.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_subtitle_2x_a8d19141efb5a111879e.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_subtitle_2x_a8d19141efb5a111879e.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_tt_2x_ed533303b56f09e0f3a2.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_tt_2x_ed533303b56f09e0f3a2.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_em_2x_38603209b95d514b1d74.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_em_2x_38603209b95d514b1d74.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_intro_2x_81a9145741724f7715fe.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_intro_2x_81a9145741724f7715fe.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_promo_2x_61a23b541da9f44943dd.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_promo_2x_61a23b541da9f44943dd.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_how_2x_1bd3ccffdb33b94c273e.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_how_2x_1bd3ccffdb33b94c273e.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_marketing_2x_758e2df803ff564cf21b.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_scenarios_marketing_2x_758e2df803ff564cf21b.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_user_tt_2x_f71558b2556d24b146a1.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_user_tt_2x_f71558b2556d24b146a1.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_user_se_2x_24d04866af348c7d1ad1.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_user_se_2x_24d04866af348c7d1ad1.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_user_marketing_2x_e1f0e7161d431ea9c6fd.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_user_marketing_2x_e1f0e7161d431ea9c6fd.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_template_2x_aea4e9989d3149307c1a.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_template_2x_aea4e9989d3149307c1a.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_m_download_cover_2x_11b735599291aaa29b4c.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_m_download_cover_2x_11b735599291aaa29b4c.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;760.fa6c847a.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;760.fa6c847a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;633.555fcf1e.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;633.555fcf1e.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;419.cb3d81e1.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;419.cb3d81e1.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;968.fdfd57c4.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;968.fdfd57c4.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;543.dd756be0.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;543.dd756be0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;index.f90a69da.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;index.f90a69da.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_banner_3x_0a76b5f9428f4786b00f.webp" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;image&#x2F;lv_banner_3x_0a76b5f9428f4786b00f.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;font&#x2F;SF-Pro-Display-Regular.fe3fcdae.otf" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;font&#x2F;SF-Pro-Display-Regular.fe3fcdae.otf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;font&#x2F;SF-Pro-Display-Heavy.c42c6e65.otf" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;font&#x2F;SF-Pro-Display-Heavy.c42c6e65.otf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;font&#x2F;SF-Pro-Display-Bold.cf0c80c7.otf" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;font&#x2F;SF-Pro-Display-Bold.cf0c80c7.otf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;media&#x2F;lv_landing.513f0277.mp4" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;media&#x2F;lv_landing.513f0277.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;919.51f0c4ab.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;919.51f0c4ab.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;976.5bc8cd15.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;976.5bc8cd15.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;576.53621c84.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;576.53621c84.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;579.014161d8.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;579.014161d8.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;623.f1db94f4.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;623.f1db94f4.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;147.f5393a4f.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;147.f5393a4f.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;382.129182db.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;382.129182db.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;437.410104ba.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;437.410104ba.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;100.96328b98.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;100.96328b98.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;854.8a9e1084.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;854.8a9e1084.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;622.eee25332.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;622.eee25332.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;async&#x2F;334.cbf0bd96.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;async&#x2F;334.cbf0bd96.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;567.890b2153.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;common&#x2F;567.890b2153.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;369.ca45724a.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;chunk&#x2F;369.ca45724a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;311.e3640b67.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;311.e3640b67.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;async&#x2F;316.c4f0d0ff.css" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;async&#x2F;316.c4f0d0ff.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;async&#x2F;316.58baca10.js" target="_blank" class="external" rel="noreferrer noopener">lf16-web-buz.capcut.com&#x2F;obj&#x2F;capcut-web-buz-us&#x2F;ies&#x2F;lvweb_os_monorepo&#x2F;platformSSR&#x2F;async&#x2F;316.58baca10.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.capcut.com&#x2F;ttwid&#x2F;check&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.capcut.com&#x2F;ttwid&#x2F;check&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.capcut.com&#x2F;ttwid&#x2F;union&#x2F;register&#x2F;callback&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.capcut.com&#x2F;ttwid&#x2F;union&#x2F;register&#x2F;callback&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://capcut.net" target="_blank" class="external">capcut.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.capcut.net" target="_blank" class="external">www.capcut.net</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "adglare.net",
-        history: [{"date":"max/ref-nocmp-de","prevalence":0.000201,"sites":2,"fingerprinting":2,"cookies":0},{"date":"max/opt-in-de","prevalence":0.000201,"sites":2,"fingerprinting":2,"cookies":0}]
+        history: [{"date":"main","prevalence":0.000278,"sites":41,"fingerprinting":2,"cookies":0},{"date":"us-opt-in","prevalence":0.000305,"sites":45,"fingerprinting":2,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;2198<small>/3704</small>
+                    <strong>Rank:</strong> &#35;2551<small>/27720</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.02&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.03&#37; (45 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
@@ -92,13 +92,32 @@
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
                     <span>Ping</span>,
+                    <span>Fetch</span>,
                     <span>Image</span>,
+                    <span>Document</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/adglare.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>thebrainyard.engine</span>, 
+                    <span>lmadvertising.engine</span>, 
+                    <span>reactads.engine</span>, 
+                    <span>vaping360.engine</span>, 
+                    <span>auctioncom.engine</span>, 
+                    <span>cinesaes.engine</span>, 
+                    <span>neoogilvy.engine</span>, 
+                    <span>findauniversity.engine</span>, 
+                    <span>fxempire.engine</span>, 
+                    <span>ogilvyitaly.engine</span>, 
                     <span>laweekly.engine</span>, 
                     <span>wolterskluwer.engine</span>, 
+                    <span>betcity.engine</span>, 
+                    <span>tomorrowland.engine</span>, 
+                    <span>traceparts.engine</span>, 
+                    <span>moartraffic.engine</span>, 
+                    <span>cinesaes.cdn</span>, 
+                    <span>fxempire.cdn</span>, 
+                    <span>thebrainyard.cdn</span>, 
                     <span>laweekly.cdn</span>, 
                 </li>
             </ul>
@@ -118,18 +137,59 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.webdriver</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Element.prototype.getClientRects</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 <div class='p-5 border-b'>
     <h3 class='section-header'>CNAMEs</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
+            <a href="http://cdn.fxempire.com" target="_blank" class="external">cdn.fxempire.com</a> &#x2192; <a href="http://fxempire.cdn.adglare.net" target="_blank" class="external">fxempire.cdn.adglare.net</a>
+        </li>
+        <li class='truncate'>
             <a href="http://cdn.laweekly.com" target="_blank" class="external">cdn.laweekly.com</a> &#x2192; <a href="http://laweekly.cdn.adglare.net" target="_blank" class="external">laweekly.cdn.adglare.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://engine.findamasters.com" target="_blank" class="external">engine.findamasters.com</a> &#x2192; <a href="http://findauniversity.engine.adglare.net" target="_blank" class="external">findauniversity.engine.adglare.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://engine.findaphd.com" target="_blank" class="external">engine.findaphd.com</a> &#x2192; <a href="http://findauniversity.engine.adglare.net" target="_blank" class="external">findauniversity.engine.adglare.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://engine.fxempire.com" target="_blank" class="external">engine.fxempire.com</a> &#x2192; <a href="http://fxempire.engine.adglare.net" target="_blank" class="external">fxempire.engine.adglare.net</a>
         </li>
         <li class='truncate'>
             <a href="http://engine.laweekly.com" target="_blank" class="external">engine.laweekly.com</a> &#x2192; <a href="http://laweekly.engine.adglare.net" target="_blank" class="external">laweekly.engine.adglare.net</a>
         </li>
         <li class='truncate'>
             <a href="http://engine.lto.de" target="_blank" class="external">engine.lto.de</a> &#x2192; <a href="http://wolterskluwer.engine.adglare.net" target="_blank" class="external">wolterskluwer.engine.adglare.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://engine.traceparts.com" target="_blank" class="external">engine.traceparts.com</a> &#x2192; <a href="http://traceparts.engine.adglare.net" target="_blank" class="external">traceparts.engine.adglare.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://engine.vaping360.com" target="_blank" class="external">engine.vaping360.com</a> &#x2192; <a href="http://vaping360.engine.adglare.net" target="_blank" class="external">vaping360.engine.adglare.net</a>
         </li>
     </ul>
 </div>
@@ -138,7 +198,25 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://laweekly.engine.adglare.net&#x2F;" target="_blank" class="external" rel="noreferrer noopener">laweekly.engine.adglare.net&#x2F;</a> (seen on 3 websites)</p>
+            <p><a href="http://thebrainyard.engine.adglare.net&#x2F;" target="_blank" class="external" rel="noreferrer noopener">thebrainyard.engine.adglare.net&#x2F;</a> (seen on 25 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://thebrainyard.engine.adglare.net&#x2F;data" target="_blank" class="external" rel="noreferrer noopener">thebrainyard.engine.adglare.net&#x2F;data</a> (seen on 20 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moartraffic.engine.adglare.net&#x2F;" target="_blank" class="external" rel="noreferrer noopener">moartraffic.engine.adglare.net&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cinesaes.engine.adglare.net&#x2F;" target="_blank" class="external" rel="noreferrer noopener">cinesaes.engine.adglare.net&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cinesaes.cdn.adglare.net&#x2F;t32ef171b&#x2F;img&#x2F;v374h_36x8es_d63ff3d2.png" target="_blank" class="external" rel="noreferrer noopener">cinesaes.cdn.adglare.net&#x2F;t32ef171b&#x2F;img&#x2F;v374h_36x8es_d63ff3d2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://fxempire.cdn.adglare.net&#x2F;td275b897&#x2F;img&#x2F;e8avk_a2rwzf_02cf5332.html" target="_blank" class="external" rel="noreferrer noopener">fxempire.cdn.adglare.net&#x2F;td275b897&#x2F;img&#x2F;e8avk_a2rwzf_02cf5332.html</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://thebrainyard.cdn.adglare.net&#x2F;t568492c7&#x2F;img&#x2F;kaek2_mtsehz_93499f73.gif" target="_blank" class="external" rel="noreferrer noopener">thebrainyard.cdn.adglare.net&#x2F;t568492c7&#x2F;img&#x2F;kaek2_mtsehz_93499f73.gif</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://laweekly.engine.adglare.net&#x2F;imp" target="_blank" class="external" rel="noreferrer noopener">laweekly.engine.adglare.net&#x2F;imp</a> (seen on 2 websites)</p>
@@ -147,10 +225,10 @@
             <p><a href="http://laweekly.engine.adglare.net&#x2F;vb" target="_blank" class="external" rel="noreferrer noopener">laweekly.engine.adglare.net&#x2F;vb</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://laweekly.cdn.adglare.net&#x2F;tb7c6a0ae&#x2F;img&#x2F;vue8z_vb2e6p_52688a35.jpg" target="_blank" class="external" rel="noreferrer noopener">laweekly.cdn.adglare.net&#x2F;tb7c6a0ae&#x2F;img&#x2F;vue8z_vb2e6p_52688a35.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://laweekly.cdn.adglare.net&#x2F;t01473053&#x2F;img&#x2F;vue8z_tr73p2_e79f4d5e.jpg" target="_blank" class="external" rel="noreferrer noopener">laweekly.cdn.adglare.net&#x2F;t01473053&#x2F;img&#x2F;vue8z_tr73p2_e79f4d5e.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://wolterskluwer.engine.adglare.net&#x2F;data" target="_blank" class="external" rel="noreferrer noopener">wolterskluwer.engine.adglare.net&#x2F;data</a> (seen on 2 websites)</p>
+            <p><a href="http://laweekly.cdn.adglare.net&#x2F;t01473053&#x2F;img&#x2F;vue8z_syr9w3_500d69c4.jpg" target="_blank" class="external" rel="noreferrer noopener">laweekly.cdn.adglare.net&#x2F;t01473053&#x2F;img&#x2F;vue8z_syr9w3_500d69c4.jpg</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -160,16 +238,94 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://laweekly.com" target="_blank" class="external">laweekly.com</a>
+            <a href="http://www.fxempire.com" target="_blank" class="external">www.fxempire.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.laweekly.com" target="_blank" class="external">www.laweekly.com</a>
+            <a href="http://www.traceparts.com" target="_blank" class="external">www.traceparts.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.findaphd.com" target="_blank" class="external">www.findaphd.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tomorrowland.com" target="_blank" class="external">www.tomorrowland.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dailymirror.lk" target="_blank" class="external">www.dailymirror.lk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://northcarolina.arrests.org" target="_blank" class="external">northcarolina.arrests.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://georgia.arrests.org" target="_blank" class="external">georgia.arrests.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mugshots.com" target="_blank" class="external">mugshots.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.findamasters.com" target="_blank" class="external">www.findamasters.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://southcarolina.arrests.org" target="_blank" class="external">southcarolina.arrests.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://acousticguitar.com" target="_blank" class="external">acousticguitar.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cinesa.es" target="_blank" class="external">www.cinesa.es</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vaping360.com" target="_blank" class="external">vaping360.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.auction.com" target="_blank" class="external">www.auction.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://manporn.xxx" target="_blank" class="external">manporn.xxx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sport-express.ru" target="_blank" class="external">www.sport-express.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://florida.arrests.org" target="_blank" class="external">florida.arrests.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://texas.arrests.org" target="_blank" class="external">texas.arrests.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.guitariste.com" target="_blank" class="external">www.guitariste.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.galbani.it" target="_blank" class="external">www.galbani.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://indiana.arrests.org" target="_blank" class="external">indiana.arrests.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://kentucky.arrests.org" target="_blank" class="external">kentucky.arrests.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://virginia.arrests.org" target="_blank" class="external">virginia.arrests.org</a>
         </li>
         <li class='truncate'>
             <a href="http://www.lto.de" target="_blank" class="external">www.lto.de</a>
         </li>
         <li class='truncate'>
-            <a href="http://lto.de" target="_blank" class="external">lto.de</a>
+            <a href="http://vrsumo.com" target="_blank" class="external">vrsumo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cinesa.es" target="_blank" class="external">cinesa.es</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fxempire.com" target="_blank" class="external">fxempire.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://guitariste.com" target="_blank" class="external">guitariste.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://laweekly.com" target="_blank" class="external">laweekly.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.laweekly.com" target="_blank" class="external">www.laweekly.com</a>
         </li>
     </ul>
 </div>
