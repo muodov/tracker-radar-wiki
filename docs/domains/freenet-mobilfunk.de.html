@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - freenet-mobilfunk.de</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "freenet-mobilfunk.de",
+        history: [{"date":"opt-in-de-proxy","prevalence":0.000201,"sites":2,"fingerprinting":3,"cookies":0.000201}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/freenet-mobilfunk.de.ico' width="32" height="32" class='inline-block' /> freenet-mobilfunk.de</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;2500<small>/3667</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.02&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.02&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Font</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>XHR</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/freenet-mobilfunk.de.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>www</span>, 
+                    <span>media.mdm</span>, 
+                    <span>identity</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.webdriver</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Element.prototype.getClientRects</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;qtypecomp-medium-webfont.woff" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;qtypecomp-medium-webfont.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;fa-light-300.woff2" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;fa-light-300.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;fa-regular-400.woff2" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;fa-regular-400.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;fa-solid-900.woff2" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;fa-solid-900.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;fa-brands-400.woff2" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;fa-brands-400.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;open-sans-v16-latin-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;open-sans-v16-latin-regular.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;open-sans-v16-latin-700.woff2" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;open-sans-v16-latin-700.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;open-sans-v16-latin-italic.woff2" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;fonts&#x2F;open-sans-v16-latin-italic.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;css&#x2F;md-web4-ed2f3a58.min.css" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;css&#x2F;md-web4-ed2f3a58.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;css&#x2F;md-103b32aa.min.css" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;css&#x2F;md-103b32aa.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;cdn-cgi&#x2F;bm&#x2F;cv&#x2F;669835187&#x2F;api.js" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;cdn-cgi&#x2F;bm&#x2F;cv&#x2F;669835187&#x2F;api.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;js&#x2F;jquery-3.6.0.min.js" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;js&#x2F;jquery-3.6.0.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;js&#x2F;md-web4-0406ac91.js" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;js&#x2F;md-web4-0406ac91.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;js&#x2F;md-605154cb.min.js" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;js&#x2F;md-605154cb.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;common&#x2F;js&#x2F;icp.min.js" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;common&#x2F;js&#x2F;icp.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;common&#x2F;js&#x2F;TargetOrder.min.js" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;common&#x2F;js&#x2F;TargetOrder.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;freenet-logo.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;freenet-logo.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-sim.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-sim.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-smartphone.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-smartphone.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-tv-internet.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-tv-internet.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-apps.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-apps.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-service.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-service.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-vertrag.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-vertrag.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-vvl.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-primary-vvl.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-prozent.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-prozent.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-smartphone.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-smartphone.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-sim.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-sim.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-auge.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-auge.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-tablet.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-tablet.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-kopfhorer.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-kopfhorer.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-fernbedienung.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-fernbedienung.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-tv.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-tv.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-internet.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-internet.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-tvplay.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-tvplay.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-md-apps.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-md-apps.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-buecher.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-buecher.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-news.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-news.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-hantel.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-hantel.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-musik.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-musik.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-vertrag.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-vertrag.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-info.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-info.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-maulschluessel.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-maulschluessel.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-fragezeichen.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-fragezeichen.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-apps.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-apps.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-vertragperson.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-vertragperson.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-rechnung.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-rechnung.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-service.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-secondary-service.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-angebote.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-angebote.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-wertgarantie.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-wertgarantie.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-freenet-video.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-freenet-video.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-waipu.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-waipu.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;images&#x2F;mein_md&#x2F;navigation&#x2F;iPhone_12.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;images&#x2F;mein_md&#x2F;navigation&#x2F;iPhone_12.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;images&#x2F;mein_md&#x2F;navigation&#x2F;Samsung_Galaxy_S20_FE_5G.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;images&#x2F;mein_md&#x2F;navigation&#x2F;Samsung_Galaxy_S20_FE_5G.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-s10.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-s10.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-huawei-p30-lite-new-edition.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-header-huawei-p30-lite-new-edition.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-stage-basic--bundle-logo-samsung.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-stage-basic--bundle-logo-samsung.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-attributes-datenvolumen.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-attributes-datenvolumen.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-attributes-telefon.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-attributes-telefon.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-attributes-datenrate.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-attributes-datenrate.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-attributes-sms.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-attributes-sms.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://media.mdm.freenet-mobilfunk.de&#x2F;cdn" target="_blank" class="external" rel="noreferrer noopener">media.mdm.freenet-mobilfunk.de&#x2F;cdn</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-category-handys-und-tablets.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-category-handys-und-tablets.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-category-alle-tarife.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-category-alle-tarife.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-category-internet-tv-entertainment.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-icons-category-internet-tv-entertainment.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-alle-tarife-blau-large.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-alle-tarife-blau-large.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-alle-tarife-blau-medium.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-alle-tarife-blau-medium.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-smartphone-ohne-vertrag-blau-large.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-smartphone-ohne-vertrag-blau-large.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-smartphone-ohne-vertrag-blau-medium.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-smartphone-ohne-vertrag-blau-medium.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-smartphone-mit-vertrag-blau-large.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-smartphone-mit-vertrag-blau-large.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-smartphone-mit-vertrag-blau-medium.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;quick-start-modern-smartphone-mit-vertrag-blau-medium.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-samsung.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-samsung.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-apple.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-apple.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-google.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-google.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-xiaomi.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-xiaomi.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-huawei.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-huawei.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-oppo.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-oppo.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-sony.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;vendor-slider-sony.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;images&#x2F;trust-freie-wahl-93125b44.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;images&#x2F;trust-freie-wahl-93125b44.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;images&#x2F;trust-netze-4012a92c.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;images&#x2F;trust-netze-4012a92c.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;images&#x2F;trust-berater-71ce8f03.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;images&#x2F;trust-berater-71ce8f03.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;images&#x2F;trust-cart-961994a0.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;images&#x2F;trust-cart-961994a0.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;images&#x2F;trust-bewertung-1a863698.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;images&#x2F;trust-bewertung-1a863698.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-location-search-map.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-location-search-map.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-social-media-bar-digitalrepublic.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-social-media-bar-digitalrepublic.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-social-media-bar-instagram.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-social-media-bar-instagram.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-quality-6a827bdf.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-quality-6a827bdf.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-paypal-0d20f0d6.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-paypal-0d20f0d6.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-klarna-6d87a5ee.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-klarna-6d87a5ee.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-nachnahme-8ff06955.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-nachnahme-8ff06955.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;images&#x2F;trustbar&#x2F;trustbar-giropay-b20af206.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;images&#x2F;trustbar&#x2F;trustbar-giropay-b20af206.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-consors-finanz-deccd0ba.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-consors-finanz-deccd0ba.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-amex-fa3316ce.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-amex-fa3316ce.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;images&#x2F;trustbar&#x2F;klimaneutral-bezahlen-526bcaa4.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;images&#x2F;trustbar&#x2F;klimaneutral-bezahlen-526bcaa4.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-delivery-dhl-f6803f54.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-delivery-dhl-f6803f54.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-delivery-filiale-c28f501a.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-delivery-filiale-c28f501a.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-ssl-e771c981.png" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-trust-bar-ssl-e771c981.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-stage-basic--bundle-background-desktop.jpg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;md-stage-basic--bundle-background-desktop.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;simcard-svg-tf.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;simcard-svg-tf.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;loading40.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;loading40.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;simcard-svg-d1.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;simcard-svg-d1.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;simcard-svg-d2.svg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;theme&#x2F;images&#x2F;simcard-svg-d2.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;images&#x2F;storefinder-bg-377f7a23.jpg" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;images&#x2F;storefinder-bg-377f7a23.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://identity.freenet-mobilfunk.de&#x2F;v2&#x2F;oidc&#x2F;authorize" target="_blank" class="external" rel="noreferrer noopener">identity.freenet-mobilfunk.de&#x2F;v2&#x2F;oidc&#x2F;authorize</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;online-service&#x2F;login&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;online-service&#x2F;login&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;common&#x2F;content&#x2F;i" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;common&#x2F;content&#x2F;i</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.freenet-mobilfunk.de&#x2F;cdn-cgi&#x2F;bm&#x2F;cv&#x2F;result" target="_blank" class="external" rel="noreferrer noopener">www.freenet-mobilfunk.de&#x2F;cdn-cgi&#x2F;bm&#x2F;cv&#x2F;result</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://mobilcom-debitel.de" target="_blank" class="external">mobilcom-debitel.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mobilcom-debitel.de" target="_blank" class="external">www.mobilcom-debitel.de</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>
