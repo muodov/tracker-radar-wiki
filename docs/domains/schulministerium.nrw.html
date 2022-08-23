@@ -29,6 +29,9 @@
                     <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
                         Top 100
                     </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
                 </div>
             </div>
             <div class='relative'>
@@ -41,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "schulministerium.nrw",
-        history: [{"date":"2021.03","prevalence":0.0000139,"sites":2,"fingerprinting":2,"cookies":0},{"date":"2021.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.05","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.06","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.07","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.08","prevalence":0.0000139,"sites":2,"fingerprinting":2,"cookies":0},{"date":"jd/Sept-domains","prevalence":0.0000141,"sites":2,"fingerprinting":2,"cookies":0.0000141}]
+        history: [{"date":"muodov/aug-2022","prevalence":0.0001,"sites":1,"fingerprinting":2,"cookies":0.0001}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -62,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;19180<small>/21593</small>
+                    <strong>Rank:</strong> &#35;3475<small>/3622</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (1 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.01&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -87,12 +90,14 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Document</span>,
                     <span>Stylesheet</span>,
                     <span>Script</span>,
                     <span>Image</span>,
                     <span>Font</span>,
                     <span>Fetch</span>,
-                    <span>Media</span>,
+                    <span>TextTrack</span>,
+                    <span>Other</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/schulministerium.nrw.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
@@ -126,11 +131,19 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
         <li class='truncate'>Element.prototype.getClientRects</li>
         <li class='truncate'>Navigator.prototype.cookieEnabled</li>
-        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>HTMLMediaElement.prototype.canPlayType</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
         <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
         <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
@@ -140,40 +153,172 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_-ShC7rgZGNZzzaBgxibJXnBPz30DW9jG7gjhvAUDch4.css" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_-ShC7rgZGNZzzaBgxibJXnBPz30DW9jG7gjhvAUDch4.css</a> (seen on 2 websites)</p>
+            <p><a href="http://www.schulministerium.nrw&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_JPhohjajf1ceOoyQ2lS7Kt_25ywwfooENzf-T0lH7Rw.css" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_JPhohjajf1ceOoyQ2lS7Kt_25ywwfooENzf-T0lH7Rw.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_ibtxFn-RFGau88NoTWtYMxqUKASv0C3GPC-tJRsT3rs.css" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_ibtxFn-RFGau88NoTWtYMxqUKASv0C3GPC-tJRsT3rs.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;hyphenopoly&#x2F;hyphens.css" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;hyphenopoly&#x2F;hyphens.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_0MzAgpK4aDt24NXlhpShxCXmphtuCMP0xN5ZrG2mYws.css" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_0MzAgpK4aDt24NXlhpShxCXmphtuCMP0xN5ZrG2mYws.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_oHWu4i93MwwFzmFqSIvmAx-rQdTUG_xMPI-mCiZMpmM.css" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_oHWu4i93MwwFzmFqSIvmAx-rQdTUG_xMPI-mCiZMpmM.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_DtXYlSpeSr194_D8vdxeXTr4Ay3pHb2N7iyZCo4Hu3s.css" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_DtXYlSpeSr194_D8vdxeXTr4Ay3pHb2N7iyZCo4Hu3s.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://www.schulministerium.nrw&#x2F;core&#x2F;assets&#x2F;vendor&#x2F;modernizr&#x2F;modernizr.min.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;core&#x2F;assets&#x2F;vendor&#x2F;modernizr&#x2F;modernizr.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_EVvKhkQcgm14nQVSqMvwkoeY9o5PcdR2gqEPtGhNYRo.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_EVvKhkQcgm14nQVSqMvwkoeY9o5PcdR2gqEPtGhNYRo.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
             <p><a href="http://www.schulministerium.nrw&#x2F;core&#x2F;misc&#x2F;modernizr-additional-tests.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;core&#x2F;misc&#x2F;modernizr-additional-tests.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_pfJFPNBL5od036A7VjbJwHkpKvQBJeJLNcFBYnibOrM.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_pfJFPNBL5od036A7VjbJwHkpKvQBJeJLNcFBYnibOrM.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://www.schulministerium.nrw&#x2F;libraries&#x2F;hyphenopoly&#x2F;Hyphenopoly_Loader.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;libraries&#x2F;hyphenopoly&#x2F;Hyphenopoly_Loader.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_gN5mRP333RoNaPaa3srqi6zV3PpQs0j6BjpRPnnkwYE.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_gN5mRP333RoNaPaa3srqi6zV3PpQs0j6BjpRPnnkwYE.js</a> (seen on 2 websites)</p>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;logo_slogan&#x2F;public&#x2F;2020-07&#x2F;Dachmarke_druckfaehig_farbig_transparent_0.png" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;logo_slogan&#x2F;public&#x2F;2020-07&#x2F;Dachmarke_druckfaehig_farbig_transparent_0.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;logo_slogan&#x2F;public&#x2F;2022-02&#x2F;absenderkennung.png" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;logo_slogan&#x2F;public&#x2F;2022-02&#x2F;absenderkennung.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_SyHK495tbO4AqBTQHlLH99cWBKBXsC4DqZt61bTkmZ4.css" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;css&#x2F;css_SyHK495tbO4AqBTQHlLH99cWBKBXsC4DqZt61bTkmZ4.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;slider_main_16_9_1280&#x2F;public&#x2F;2022-03&#x2F;laptop_computer_medien_mann_lehrer_stocksnap_pixabay.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;slider_main_16_9_1280&#x2F;public&#x2F;2022-03&#x2F;laptop_computer_medien_mann_lehrer_stocksnap_pixabay.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;slider_main_16_9_1280&#x2F;public&#x2F;2022-07&#x2F;landespressekonferenz-ministerin-feller-28.-juli-2022_1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;slider_main_16_9_1280&#x2F;public&#x2F;2022-07&#x2F;landespressekonferenz-ministerin-feller-28.-juli-2022_1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;slider_main_16_9_1280&#x2F;public&#x2F;2020-09&#x2F;M%C3%A4dchen_Portrait_schreibt_CCO_pixabay.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;slider_main_16_9_1280&#x2F;public&#x2F;2020-09&#x2F;M%C3%A4dchen_Portrait_schreibt_CCO_pixabay.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;slider_main_16_9_1280&#x2F;public&#x2F;2022-06&#x2F;dorothee_feller_ernennung_staendehaus_duesseldorf_220629.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;slider_main_16_9_1280&#x2F;public&#x2F;2022-06&#x2F;dorothee_feller_ernennung_staendehaus_duesseldorf_220629.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2022-07&#x2F;corona_virus_hand_istock-1358893154.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2022-07&#x2F;corona_virus_hand_istock-1358893154.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2021-03&#x2F;Schulpsychologische_Beratung.jpeg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2021-03&#x2F;Schulpsychologische_Beratung.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2021-06&#x2F;schueler_portrait_alex_buettner.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2021-06&#x2F;schueler_portrait_alex_buettner.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;images&#x2F;2020-10&#x2F;corona-5096254_1920.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;images&#x2F;2020-10&#x2F;corona-5096254_1920.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2022-04&#x2F;hande-herz-ukraine_quelle_dobra-kobra-shutterstock.com_.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2022-04&#x2F;hande-herz-ukraine_quelle_dobra-kobra-shutterstock.com_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;images&#x2F;Sonnenschirm.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;images&#x2F;Sonnenschirm.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2022-05&#x2F;schulbau_stefan-schilling.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2022-05&#x2F;schulbau_stefan-schilling.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2022-06&#x2F;berufwahlapp_logo.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_squared_1_1_320&#x2F;public&#x2F;2022-06&#x2F;berufwahlapp_logo.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;2020-07&#x2F;schulentwicklung_talentschulen_1170716870_istock.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;2020-07&#x2F;schulentwicklung_talentschulen_1170716870_istock.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;2021-08&#x2F;email_gerd_altmann_pixabay_.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;2021-08&#x2F;email_gerd_altmann_pixabay_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;images&#x2F;Logo_Logineo_NRW.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;images&#x2F;Logo_Logineo_NRW.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;2021-01&#x2F;SoWi_Wirtschaft_Politik.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;2021-01&#x2F;SoWi_Wirtschaft_Politik.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;2021-08&#x2F;lehrer_werden.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;2021-08&#x2F;lehrer_werden.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;images&#x2F;2020-09&#x2F;frau_laptop_pexels-andrea-piacquadio.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;teaser_landscape_2_1_960&#x2F;public&#x2F;images&#x2F;2020-09&#x2F;frau_laptop_pexels-andrea-piacquadio.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;2020-07&#x2F;kampagnenlogo.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;2020-07&#x2F;kampagnenlogo.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;LEO.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;LEO.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;vera.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;vera.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;2020-07&#x2F;logo_lehrplaene.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;2020-07&#x2F;logo_lehrplaene.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;pruefungen10.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;pruefungen10.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2021-05&#x2F;qa.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2021-05&#x2F;qa.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;bk1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;bk1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;abitur_nrw.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;abitur_nrw.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;zentrale_klausuren.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;zentrale_klausuren.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;lernstand8.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;lernstand8.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;Zukunftsschule-Logo.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;Zukunftsschule-Logo.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;schulentwicklung_nrw.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;schulentwicklung_nrw.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2021-09&#x2F;bildungsmediathek_nrw_logo.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2021-09&#x2F;bildungsmediathek_nrw_logo.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2021-10&#x2F;logo_lernferien.png" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2021-10&#x2F;logo_lernferien.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;2020-07&#x2F;logo_bug.png" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;2020-07&#x2F;logo_bug.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;schulsport.gif" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;images&#x2F;schulsport.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2022-01&#x2F;arbeitsstelle_kulturelle_bildung_nrw.png" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2022-01&#x2F;arbeitsstelle_kulturelle_bildung_nrw.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2021-05&#x2F;medienpassnrw_logo.png" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2021-05&#x2F;medienpassnrw_logo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2022-08&#x2F;kaoa_logo.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2022-08&#x2F;kaoa_logo.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2020-08&#x2F;Logo_RBN_rgb.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2020-08&#x2F;Logo_RBN_rgb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_ZnPmqtOM3mpuwnCr3eDVrfhBl5f6u0JN9br4fevwOkE.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_ZnPmqtOM3mpuwnCr3eDVrfhBl5f6u0JN9br4fevwOkE.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_UsG7G0iyavklkGFI37cQSTsDLlzpD3z0PWUnREcPeHA.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_UsG7G0iyavklkGFI37cQSTsDLlzpD3z0PWUnREcPeHA.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_23D3jgLzdkw8s4PI5KubYn5ehAEuyKtXIorLhRasRK8.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_23D3jgLzdkw8s4PI5KubYn5ehAEuyKtXIorLhRasRK8.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://www.schulministerium.nrw&#x2F;modules&#x2F;contrib&#x2F;eu_cookie_compliance&#x2F;js&#x2F;eu_cookie_compliance.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;modules&#x2F;contrib&#x2F;eu_cookie_compliance&#x2F;js&#x2F;eu_cookie_compliance.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_HXjzoFxEyMcL87ETLof26H28OUDWR1CDW1jJZEgJyNw.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_HXjzoFxEyMcL87ETLof26H28OUDWR1CDW1jJZEgJyNw.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.schulministerium.nrw&#x2F;themes&#x2F;custom&#x2F;bildungsportal_theme&#x2F;public&#x2F;js&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;themes&#x2F;custom&#x2F;bildungsportal_theme&#x2F;public&#x2F;js&#x2F;bundle.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;logo_slogan&#x2F;public&#x2F;2020-07&#x2F;Dachmarke_druckfaehig_farbig_transparent_0.png" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;logo_slogan&#x2F;public&#x2F;2020-07&#x2F;Dachmarke_druckfaehig_farbig_transparent_0.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;logo_slogan&#x2F;public&#x2F;images&#x2F;2020-07&#x2F;msb_absenderkennung.png" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;styles&#x2F;logo_slogan&#x2F;public&#x2F;images&#x2F;2020-07&#x2F;msb_absenderkennung.png</a> (seen on 2 websites)</p>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_d3DKKN2OxIpBM49m2DKNv7vNLA8reVlOK706JGZSP1w.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;js&#x2F;js_d3DKKN2OxIpBM49m2DKNv7vNLA8reVlOK706JGZSP1w.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://www.schulministerium.nrw&#x2F;themes&#x2F;nrw&#x2F;nrw_base_theme&#x2F;public&#x2F;fonts&#x2F;&#x2F;BentonSans&#x2F;BentonSans-Regular&#x2F;BentonSans-Regular.woff" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;themes&#x2F;nrw&#x2F;nrw_base_theme&#x2F;public&#x2F;fonts&#x2F;&#x2F;BentonSans&#x2F;BentonSans-Regular&#x2F;BentonSans-Regular.woff</a> (seen on 2 websites)</p>
@@ -185,13 +330,25 @@
             <p><a href="http://www.schulministerium.nrw&#x2F;libraries&#x2F;hyphenopoly&#x2F;Hyphenopoly.js" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;libraries&#x2F;hyphenopoly&#x2F;Hyphenopoly.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.schulministerium.nrw&#x2F;themes&#x2F;nrw&#x2F;nrw_base_theme&#x2F;public&#x2F;fonts&#x2F;font-awesome&#x2F;fa-solid-900.woff2" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;themes&#x2F;nrw&#x2F;nrw_base_theme&#x2F;public&#x2F;fonts&#x2F;font-awesome&#x2F;fa-solid-900.woff2</a> (seen on 2 websites)</p>
+            <p><a href="http://www.schulministerium.nrw&#x2F;libraries&#x2F;fontawesome&#x2F;webfonts&#x2F;fa-solid-900.woff2" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;libraries&#x2F;fontawesome&#x2F;webfonts&#x2F;fa-solid-900.woff2</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://www.schulministerium.nrw&#x2F;themes&#x2F;nrw&#x2F;nrw_base_theme&#x2F;public&#x2F;fonts&#x2F;&#x2F;BentonSans&#x2F;BentonSans-Bold&#x2F;BentonSans-Bold.woff" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;themes&#x2F;nrw&#x2F;nrw_base_theme&#x2F;public&#x2F;fonts&#x2F;&#x2F;BentonSans&#x2F;BentonSans-Bold&#x2F;BentonSans-Bold.woff</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;media&#x2F;video_upload&#x2F;ministerin_gebauer_zum-schuljahresbeginn-2021-22.mp4" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;media&#x2F;video_upload&#x2F;ministerin_gebauer_zum-schuljahresbeginn-2021-22.mp4</a> (seen on 2 websites)</p>
+            <p><a href="http://www.schulministerium.nrw&#x2F;libraries&#x2F;fontawesome&#x2F;webfonts&#x2F;fa-regular-400.woff2" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;libraries&#x2F;fontawesome&#x2F;webfonts&#x2F;fa-regular-400.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;paragraph&#x2F;video_subtitle&#x2F;220706_ministerin_feller.vtt" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;paragraph&#x2F;video_subtitle&#x2F;220706_ministerin_feller.vtt</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;libraries&#x2F;slick&#x2F;slick&#x2F;ajax-loader.gif" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;libraries&#x2F;slick&#x2F;slick&#x2F;ajax-loader.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;modules&#x2F;contrib&#x2F;video_embed_field_plyr&#x2F;assets&#x2F;plyr&#x2F;plyr.svg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;modules&#x2F;contrib&#x2F;video_embed_field_plyr&#x2F;assets&#x2F;plyr&#x2F;plyr.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2022-06&#x2F;dorothee_feller_bezirksregierung_muenster.jpg" target="_blank" class="external" rel="noreferrer noopener">www.schulministerium.nrw&#x2F;sites&#x2F;default&#x2F;files&#x2F;2022-06&#x2F;dorothee_feller_bezirksregierung_muenster.jpg</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
