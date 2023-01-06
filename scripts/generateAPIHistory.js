@@ -14,10 +14,10 @@ const fpHistory = new Map();
 async function main() {
     const git = simpleGit(config.trackerRadarRepoPath);
     const tagsString = await git.tag();
-    const tags = tagsString.split('\n').filter(a => a.length > 0);
+    let tags = tagsString.split('\n').filter(a => a.length > 0);
 
     // FOR DEBUG - if you want to build test wiki from an unmerged branch, push it to the list of tags
-    // tags.push('muodov/aug-2022');
+    tags = ['main', 'selenium-results'];
 
     const progressBar = new ProgressBar('[:bar] :percent ETA :etas :tag', {
         complete: chalk.green('='),

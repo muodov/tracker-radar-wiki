@@ -9,7 +9,7 @@ const getListOfJSONPathsFromFolder = require('./helpers/getListOfJSONPathsFromFo
 
 const TRACKER_RADAR_DOMAINS_PATH = path.join(config.trackerRadarRepoPath, '/domains/');
 const TRACKER_RADAR_ENTITIES_PATH = path.join(config.trackerRadarRepoPath, '/entities/');
-const REGION = 'US';
+const REGION = 'DE';
 
 const domainMap = new Map();
 const entityMap = new Map();
@@ -117,7 +117,7 @@ async function main() {
     tags = tagsString.split('\n').filter(a => a.length > 0);
 
     // FOR DEBUG - if you want to build test wiki from an unmerged branch, push it to the list of tags
-    // tags.push('muodov/aug-2022');
+    tags = ['main', 'selenium-results'];
 
     try {
         fs.writeFileSync(path.join(config.staticData, '/history/tags.json'), JSON.stringify(tags));

@@ -10,7 +10,7 @@ const escapeEntityName = require('./helpers/escapeEntityName');
 
 let TRACKER_RADAR_DOMAINS_PATH = path.join(config.trackerRadarRepoPath, '/domains/');
 const TRACKER_RADAR_ENTITIES_PATH = path.join(config.trackerRadarRepoPath, '/entities/');
-const REGION = 'US';
+const REGION = 'DE';
 
 // Backwards compatibility for regions updates
 if (fs.existsSync(path.join(TRACKER_RADAR_DOMAINS_PATH, REGION))) {
