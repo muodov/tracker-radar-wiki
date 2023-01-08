@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "najva.com",
-        history: [{"date":"2020.02","prevalence":0.0000462,"sites":2,"fingerprinting":1,"cookies":0.0000462},{"date":"2020.03","prevalence":0.000061,"sites":3,"fingerprinting":1,"cookies":0.000061},{"date":"2020.04","prevalence":0.0000857,"sites":4,"fingerprinting":2,"cookies":0.0000857},{"date":"2020.05","prevalence":0.0000998,"sites":7,"fingerprinting":2,"cookies":0.0000998},{"date":"2020.06","prevalence":0.0000821,"sites":6,"fingerprinting":2,"cookies":0.0000821},{"date":"2020.07","prevalence":0.0000831,"sites":6,"fingerprinting":2,"cookies":0.0000831},{"date":"2020.08","prevalence":0.000118,"sites":16,"fingerprinting":2,"cookies":0.000118},{"date":"2020.09","prevalence":0.000106,"sites":14,"fingerprinting":2,"cookies":0.000106},{"date":"2020.10","prevalence":0.0000835,"sites":11,"fingerprinting":2,"cookies":0.0000835},{"date":"2020.11","prevalence":0.0000987,"sites":13,"fingerprinting":2,"cookies":0.0000987},{"date":"2020.12","prevalence":0.000106,"sites":14,"fingerprinting":2,"cookies":0.000106},{"date":"2021.01","prevalence":0.0000993,"sites":13,"fingerprinting":2,"cookies":0.0000993},{"date":"2021.02","prevalence":0.0000903,"sites":13,"fingerprinting":2,"cookies":0.0000903},{"date":"2021.03","prevalence":0.0000763,"sites":11,"fingerprinting":2,"cookies":0.0000763},{"date":"2021.04","prevalence":0.0000762,"sites":11,"fingerprinting":2,"cookies":0.0000762},{"date":"2021.05","prevalence":0.0000827,"sites":12,"fingerprinting":2,"cookies":0.0000758},{"date":"2021.06","prevalence":0.0000343,"sites":5,"fingerprinting":2,"cookies":0.0000343},{"date":"2021.07","prevalence":0.0000416,"sites":6,"fingerprinting":2,"cookies":0.0000416},{"date":"2021.08","prevalence":0.0000278,"sites":4,"fingerprinting":2,"cookies":0.0000278},{"date":"2021.09","prevalence":0.0000276,"sites":4,"fingerprinting":2,"cookies":0.0000276},{"date":"2021.10","prevalence":0.0000138,"sites":2,"fingerprinting":2,"cookies":0.0000138},{"date":"2021.11","prevalence":0.0000207,"sites":3,"fingerprinting":2,"cookies":0.0000207},{"date":"2021.12","prevalence":0.0000207,"sites":3,"fingerprinting":2,"cookies":0.0000207},{"date":"2022.01","prevalence":0.0000208,"sites":3,"fingerprinting":2,"cookies":0.0000208},{"date":"2022.02","prevalence":0.000415,"sites":61,"fingerprinting":2,"cookies":0.000415},{"date":"2022.03","prevalence":0.000628,"sites":92,"fingerprinting":2,"cookies":0.000607},{"date":"2022.04","prevalence":0.000538,"sites":79,"fingerprinting":2,"cookies":0.000531},{"date":"2022.05","prevalence":0.000764,"sites":112,"fingerprinting":2,"cookies":0.000709},{"date":"2022.06","prevalence":0.0000678,"sites":10,"fingerprinting":2,"cookies":0.0000678},{"date":"2022.07","prevalence":0.000115,"sites":17,"fingerprinting":2,"cookies":0.000109},{"date":"2022.08","prevalence":0.000115,"sites":17,"fingerprinting":2,"cookies":0.000109},{"date":"muodov/aug-2022","prevalence":0.0000949,"sites":14,"fingerprinting":2,"cookies":0.0000746}]
+        history: [{"date":"main","prevalence":0.000142,"sites":21,"fingerprinting":2,"cookies":0.000136},{"date":"selenium-crux","prevalence":0.0017,"sites":125,"fingerprinting":2,"cookies":0.00142}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;5415<small>/27751</small>
+                    <strong>Rank:</strong> &#35;724<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (14 sites)
+                    <strong>Prevalence:</strong> 0.17&#37; (125 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.01&#37;
+                    <strong>Cookies:</strong> 0.14&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -91,18 +91,21 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Stylesheet</span>,
-                    <span>Other</span>,
                     <span>Fetch</span>,
                     <span>Image</span>,
+                    <span>Other</span>,
+                    <span>Document</span>,
                     <span>Script</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/najva.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>app</span>, 
-                    <span>cr</span>, 
                     <span>van</span>, 
-                    <span>report</span>, 
+                    <span>cr</span>, 
+                    <span>app</span>, 
+                    <span>cookie</span>, 
+                    <span>api</span>, 
+                    <span>media</span>, 
                 </li>
             </ul>
         </div>
@@ -131,10 +134,11 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
-        <li class='truncate'>Navigator.prototype.permissions</li>
         <li class='truncate'>Navigator.prototype.storage</li>
+        <li class='truncate'>Navigator.prototype.permissions</li>
         <li class='truncate'>window.indexedDB</li>
         <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>Navigator.prototype.vendor</li>
         <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Document.cookie setter</li>
         <li class='truncate'>Document.cookie getter</li>
@@ -148,55 +152,118 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://cr.najva.com&#x2F;api&#x2F;v2&#x2F;current&#x2F;user&#x2F;" target="_blank" class="external" rel="noreferrer noopener">cr.najva.com&#x2F;api&#x2F;v2&#x2F;current&#x2F;user&#x2F;</a> (seen on 6 websites)</p>
+            <p><a href="http://cr.najva.com&#x2F;api&#x2F;v2&#x2F;current&#x2F;user&#x2F;" target="_blank" class="external" rel="noreferrer noopener">cr.najva.com&#x2F;api&#x2F;v2&#x2F;current&#x2F;user&#x2F;</a> (seen on 81 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://app.najva.com&#x2F;static&#x2F;css&#x2F;local-messaging.css" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;css&#x2F;local-messaging.css</a> (seen on 5 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;css&#x2F;local-messaging.css" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;css&#x2F;local-messaging.css</a> (seen on 75 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://app.najva.com&#x2F;static&#x2F;cdn&#x2F;service-worker&#x2F;najva-service-worker.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;cdn&#x2F;service-worker&#x2F;najva-service-worker.js</a> (seen on 3 websites)</p>
+            <p><a href="http://van.najva.com&#x2F;static&#x2F;cdn&#x2F;css&#x2F;local-messaging.css" target="_blank" class="external" rel="noreferrer noopener">van.najva.com&#x2F;static&#x2F;cdn&#x2F;css&#x2F;local-messaging.css</a> (seen on 45 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://van.najva.com&#x2F;static&#x2F;cdn&#x2F;css&#x2F;local-messaging.css" target="_blank" class="external" rel="noreferrer noopener">van.najva.com&#x2F;static&#x2F;cdn&#x2F;css&#x2F;local-messaging.css</a> (seen on 3 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;cdn&#x2F;najva-app&#x2F;najva-app.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;cdn&#x2F;najva-app&#x2F;najva-app.js</a> (seen on 37 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://app.najva.com&#x2F;static&#x2F;images&#x2F;chrome-denied-help.png" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;images&#x2F;chrome-denied-help.png</a> (seen on 2 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;cdn&#x2F;najva-app&#x2F;najva-messaging.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;cdn&#x2F;najva-app&#x2F;najva-messaging.js</a> (seen on 34 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;faradars815-website-8953-39a00d94-5fc4-40cf-9e1e-04100cb212c5.js" target="_blank" class="external" rel="noreferrer noopener">van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;faradars815-website-8953-39a00d94-5fc4-40cf-9e1e-04100cb212c5.js</a> (seen on 2 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;cdn&#x2F;service-worker&#x2F;najva-service-worker.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;cdn&#x2F;service-worker&#x2F;najva-service-worker.js</a> (seen on 30 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;faradars815-website-8953-39a00d94-5fc4-40cf-9e1e-04100cb212c5.json" target="_blank" class="external" rel="noreferrer noopener">van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;faradars815-website-8953-39a00d94-5fc4-40cf-9e1e-04100cb212c5.json</a> (seen on 2 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;images&#x2F;chrome-denied-help.png" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;images&#x2F;chrome-denied-help.png</a> (seen on 27 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;mehrnews723-website-7036-62d70f55-9f02-4eb9-8a81-78fd023283f1.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;mehrnews723-website-7036-62d70f55-9f02-4eb9-8a81-78fd023283f1.js</a> (seen on 2 websites)</p>
+            <p><a href="http://cookie.najva.com&#x2F;matching&#x2F;" target="_blank" class="external" rel="noreferrer noopener">cookie.najva.com&#x2F;matching&#x2F;</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;delgarm-4046-18dc9a70-1dcc-4cd0-a994-b8890cbdcc25.js" target="_blank" class="external" rel="noreferrer noopener">van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;delgarm-4046-18dc9a70-1dcc-4cd0-a994-b8890cbdcc25.js</a> (seen on 2 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;resubscribe&#x2F;" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;resubscribe&#x2F;</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;delgarm-4046-18dc9a70-1dcc-4cd0-a994-b8890cbdcc25.json" target="_blank" class="external" rel="noreferrer noopener">van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;delgarm-4046-18dc9a70-1dcc-4cd0-a994-b8890cbdcc25.json</a> (seen on 2 websites)</p>
+            <p><a href="http://media.najva.com&#x2F;media&#x2F;static&#x2F;bell-icon-2.svg" target="_blank" class="external" rel="noreferrer noopener">media.najva.com&#x2F;media&#x2F;static&#x2F;bell-icon-2.svg</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;delgarm-4046-18dc9a70-1dcc-4cd0-a994-b8890cbdcc25-service-worker.js" target="_blank" class="external" rel="noreferrer noopener">van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;delgarm-4046-18dc9a70-1dcc-4cd0-a994-b8890cbdcc25-service-worker.js</a> (seen on 2 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;images&#x2F;najva-flag-typography-white.svg" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;images&#x2F;najva-flag-typography-white.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;tasnimnews-652-800524f2-cc79-47bd-97de-f35a30f6fc13.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;tasnimnews-652-800524f2-cc79-47bd-97de-f35a30f6fc13.js</a> (seen on 2 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;cmif&#x2F;" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;cmif&#x2F;</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;tasnimnews-652-800524f2-cc79-47bd-97de-f35a30f6fc13.json" target="_blank" class="external" rel="noreferrer noopener">van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;tasnimnews-652-800524f2-cc79-47bd-97de-f35a30f6fc13.json</a> (seen on 2 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;images&#x2F;arrow-white.png" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;images&#x2F;arrow-white.png</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;zoomit-1001-6d4a10f4-c04a-41ec-a2fc-8771a563a7e1.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;zoomit-1001-6d4a10f4-c04a-41ec-a2fc-8771a563a7e1.js</a> (seen on 2 websites)</p>
+            <p><a href="http://api.najva.com&#x2F;api&#x2F;v1&#x2F;subscribers&#x2F;websites&#x2F;" target="_blank" class="external" rel="noreferrer noopener">api.najva.com&#x2F;api&#x2F;v1&#x2F;subscribers&#x2F;websites&#x2F;</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;zoomit-1001-6d4a10f4-c04a-41ec-a2fc-8771a563a7e1.json" target="_blank" class="external" rel="noreferrer noopener">van.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;zoomit-1001-6d4a10f4-c04a-41ec-a2fc-8771a563a7e1.json</a> (seen on 2 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;nody407-website-28702-6f77cc1b-867d-4a64-8616-f40264351a54.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;nody407-website-28702-6f77cc1b-867d-4a64-8616-f40264351a54.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://app.najva.com&#x2F;static&#x2F;cdn&#x2F;service-worker&#x2F;najva-service-worker-zoomit.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;cdn&#x2F;service-worker&#x2F;najva-service-worker-zoomit.js</a> (seen on 2 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;afkarnews-3259-efd70661-0cbc-437f-add3-3cf68b3bf6ed.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;afkarnews-3259-efd70661-0cbc-437f-add3-3cf68b3bf6ed.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://report.najva.com&#x2F;version" target="_blank" class="external" rel="noreferrer noopener">report.najva.com&#x2F;version</a> (seen on 2 websites)</p>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;alamto120-website-32469-cd049576-6843-4855-8238-0c3755200d0f.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;alamto120-website-32469-cd049576-6843-4855-8238-0c3755200d0f.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;avalfars-website-9506-60a7a0d4-0af7-4bd5-938f-fe024220dd53.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;avalfars-website-9506-60a7a0d4-0af7-4bd5-938f-fe024220dd53.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;banimode-1063-90ca362f-2645-4e8a-8bde-6bb78f8518df.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;banimode-1063-90ca362f-2645-4e8a-8bde-6bb78f8518df.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;bargozideha-1033-08c44eab-ec0c-4943-a304-484cfe812395.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;bargozideha-1033-08c44eab-ec0c-4943-a304-484cfe812395.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;cdn-cgi&#x2F;scripts&#x2F;7d0fa10a&#x2F;cloudflare-static&#x2F;rocket-loader.min.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;cdn-cgi&#x2F;scripts&#x2F;7d0fa10a&#x2F;cloudflare-static&#x2F;rocket-loader.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;lib&#x2F;jscookie&#x2F;js.cookie.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;lib&#x2F;jscookie&#x2F;js.cookie.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;api&#x2F;v1&#x2F;matching&#x2F;cookie&#x2F;" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;api&#x2F;v1&#x2F;matching&#x2F;cookie&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;darmankade-website-12767-efad4384-cdcc-4a8c-934f-0f836eab4eab.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;darmankade-website-12767-efad4384-cdcc-4a8c-934f-0f836eab4eab.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;eghamat24-website-22483-f44f10be-b4ac-479c-b7b0-fcf9628e3fa9.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;eghamat24-website-22483-f44f10be-b4ac-479c-b7b0-fcf9628e3fa9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;eghtesadnews-website-7639-43908173-d8ab-4080-b11b-1d0a0f2c1d13.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;eghtesadnews-website-7639-43908173-d8ab-4080-b11b-1d0a0f2c1d13.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;etemadonline134-website-36578-7f8d465f-7e73-4f64-8fa6-93c861a33090.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;etemadonline134-website-36578-7f8d465f-7e73-4f64-8fa6-93c861a33090.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;hamshahrionline-website-8529-cb88df81-9341-44b1-a2e9-cab9e745d0ad.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;hamshahrionline-website-8529-cb88df81-9341-44b1-a2e9-cab9e745d0ad.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;iranketab-660-e9141ae9-2c37-4c39-9beb-024513fa91d8.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;iranketab-660-e9141ae9-2c37-4c39-9beb-024513fa91d8.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;jamaran-website-8683-a0c72536-0b48-401f-9a7a-ad55bfd19cbe.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;jamaran-website-8683-a0c72536-0b48-401f-9a7a-ad55bfd19cbe.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;khabarino-website-9654-90560460-432e-4894-b752-bafbbc27c067.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;khabarino-website-9654-90560460-432e-4894-b752-bafbbc27c067.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;khabaronline949-2833-4e659d09-611a-435d-b894-99b9412a9781.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;khabaronline949-2833-4e659d09-611a-435d-b894-99b9412a9781.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;myahangha-730-ad25719b-8e92-4aa2-856d-009b90e6e19a.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;myahangha-730-ad25719b-8e92-4aa2-856d-009b90e6e19a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;pishkhan-website-25639-e1d6f572-c3ff-4ba9-be70-8aa7ed6199ed.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;pishkhan-website-25639-e1d6f572-c3ff-4ba9-be70-8aa7ed6199ed.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;salameno868-website-39950-50f1837b-3217-4d73-8405-38d4ee05a0a9.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;salameno868-website-39950-50f1837b-3217-4d73-8405-38d4ee05a0a9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;seevid-website-32846-9620ea0d-4b36-4fae-b9a9-04f02745e86b.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;seevid-website-32846-9620ea0d-4b36-4fae-b9a9-04f02745e86b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;tehranbehesht-website-35249-1e50295f-0cc1-4330-a887-0efaf414c9a5.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;tehranbehesht-website-35249-1e50295f-0cc1-4330-a887-0efaf414c9a5.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;vaghtesobh-website-20990-b7a3d8cd-79a9-4ed8-be96-7808036813be.js" target="_blank" class="external" rel="noreferrer noopener">app.najva.com&#x2F;static&#x2F;js&#x2F;scripts&#x2F;vaghtesobh-website-20990-b7a3d8cd-79a9-4ed8-be96-7808036813be.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -206,40 +273,340 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
+            <a href="http://www.androidtime.com" target="_blank" class="external">www.androidtime.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://anzalweb.ir" target="_blank" class="external">anzalweb.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://niksho.com" target="_blank" class="external">niksho.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://musicspardis.org" target="_blank" class="external">musicspardis.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mostaghelonline.com" target="_blank" class="external">www.mostaghelonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.homsa.net" target="_blank" class="external">www.homsa.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://kashoob.com" target="_blank" class="external">kashoob.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cliprooz.ir" target="_blank" class="external">cliprooz.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://minevisam.com" target="_blank" class="external">minevisam.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://photokade.com" target="_blank" class="external">photokade.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.chetor.com" target="_blank" class="external">www.chetor.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.plaza.ir" target="_blank" class="external">www.plaza.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.daneshchi.ir" target="_blank" class="external">www.daneshchi.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.xvision.ir" target="_blank" class="external">www.xvision.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://99taghvim.ir" target="_blank" class="external">99taghvim.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gajmarket.com" target="_blank" class="external">www.gajmarket.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://esam.ir" target="_blank" class="external">esam.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mashadleather.com" target="_blank" class="external">www.mashadleather.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://blog.okala.com" target="_blank" class="external">blog.okala.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dailyfootball.tv" target="_blank" class="external">dailyfootball.tv</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://khodro45.com" target="_blank" class="external">khodro45.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://takmusics.ir" target="_blank" class="external">takmusics.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.jamaran.news" target="_blank" class="external">www.jamaran.news</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nabzebourse.com" target="_blank" class="external">nabzebourse.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.vaghtesobh.com" target="_blank" class="external">www.vaghtesobh.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.beh-zone.ir" target="_blank" class="external">www.beh-zone.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://hubgram.ir" target="_blank" class="external">hubgram.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ziponline.ir" target="_blank" class="external">ziponline.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://shayanews.com" target="_blank" class="external">shayanews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nexsc.ir" target="_blank" class="external">nexsc.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://khabarpu.com" target="_blank" class="external">khabarpu.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://donya-e-eqtesad.com" target="_blank" class="external">donya-e-eqtesad.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mosts.ir" target="_blank" class="external">mosts.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://lafarrerr.com" target="_blank" class="external">lafarrerr.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nexload.ir" target="_blank" class="external">nexload.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mobile140.com" target="_blank" class="external">www.mobile140.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dabesto.ir" target="_blank" class="external">dabesto.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mosbatesabz.com" target="_blank" class="external">mosbatesabz.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.etemadonline.com" target="_blank" class="external">www.etemadonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://apahkam.ir" target="_blank" class="external">apahkam.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vidao.org" target="_blank" class="external">vidao.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.khabaronline.ir" target="_blank" class="external">www.khabaronline.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://phonroid.ir" target="_blank" class="external">phonroid.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://novinleather.com" target="_blank" class="external">novinleather.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fardayeeghtesad.com" target="_blank" class="external">www.fardayeeghtesad.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.khordad.news" target="_blank" class="external">www.khordad.news</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.seevid.ir" target="_blank" class="external">www.seevid.ir</a>
+        </li>
+        <li class='truncate'>
             <a href="http://ahaang.com" target="_blank" class="external">ahaang.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://en.mehrnews.com" target="_blank" class="external">en.mehrnews.com</a>
+            <a href="http://wisgoon.com" target="_blank" class="external">wisgoon.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://musiceto.com" target="_blank" class="external">musiceto.com</a>
+            <a href="http://onlysc.ir" target="_blank" class="external">onlysc.ir</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.tasnimnews.com" target="_blank" class="external">www.tasnimnews.com</a>
+            <a href="http://arga-mag.com" target="_blank" class="external">arga-mag.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.zoomit.ir" target="_blank" class="external">www.zoomit.ir</a>
+            <a href="http://satisho.com" target="_blank" class="external">satisho.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://blog.faradars.org" target="_blank" class="external">blog.faradars.org</a>
+            <a href="http://toranji.ir" target="_blank" class="external">toranji.ir</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.delgarm.com" target="_blank" class="external">www.delgarm.com</a>
+            <a href="http://www.afkarnews.com" target="_blank" class="external">www.afkarnews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://faradars.org" target="_blank" class="external">faradars.org</a>
+            <a href="http://perspolisnews.com" target="_blank" class="external">perspolisnews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://mehrnews.com" target="_blank" class="external">mehrnews.com</a>
+            <a href="http://www.tehranbehesht.news" target="_blank" class="external">www.tehranbehesht.news</a>
         </li>
         <li class='truncate'>
-            <a href="http://delgarm.com" target="_blank" class="external">delgarm.com</a>
+            <a href="http://subf2m.co" target="_blank" class="external">subf2m.co</a>
         </li>
         <li class='truncate'>
-            <a href="http://tasnimnews.com" target="_blank" class="external">tasnimnews.com</a>
+            <a href="http://baarzesh.net" target="_blank" class="external">baarzesh.net</a>
         </li>
         <li class='truncate'>
-            <a href="http://zoomit.ir" target="_blank" class="external">zoomit.ir</a>
+            <a href="http://prooz.ir" target="_blank" class="external">prooz.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sharjimusic.ir" target="_blank" class="external">sharjimusic.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://okala.com" target="_blank" class="external">okala.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://eghtesaad24.ir" target="_blank" class="external">eghtesaad24.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vaghayerooz.com" target="_blank" class="external">vaghayerooz.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://maktabkhooneh.org" target="_blank" class="external">maktabkhooneh.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.darmankade.com" target="_blank" class="external">www.darmankade.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hamshahrionline.ir" target="_blank" class="external">www.hamshahrionline.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://soft98.ir" target="_blank" class="external">soft98.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gozine2.ir" target="_blank" class="external">gozine2.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mokhtalefmusic.com" target="_blank" class="external">mokhtalefmusic.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://leanroid.com" target="_blank" class="external">leanroid.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://malltina.com" target="_blank" class="external">malltina.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.avalfars.ir" target="_blank" class="external">www.avalfars.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://techrato.com" target="_blank" class="external">techrato.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://khabarban.com" target="_blank" class="external">khabarban.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.eghtesadnews.com" target="_blank" class="external">www.eghtesadnews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://parsiday.com" target="_blank" class="external">parsiday.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ecoiran.com" target="_blank" class="external">ecoiran.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ghatreh.com" target="_blank" class="external">www.ghatreh.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://figar.ir" target="_blank" class="external">figar.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nexinfo.ir" target="_blank" class="external">nexinfo.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nody.ir" target="_blank" class="external">nody.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fa.nody.ir" target="_blank" class="external">fa.nody.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://afkarnews.com" target="_blank" class="external">afkarnews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://alamto.com" target="_blank" class="external">alamto.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.alamto.com" target="_blank" class="external">www.alamto.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://avalfars.ir" target="_blank" class="external">avalfars.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://banimode.com" target="_blank" class="external">banimode.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.banimode.com" target="_blank" class="external">www.banimode.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bargozideha.com" target="_blank" class="external">bargozideha.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bargozideha.com" target="_blank" class="external">www.bargozideha.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://beh-zone.ir" target="_blank" class="external">beh-zone.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://darmankade.com" target="_blank" class="external">darmankade.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://eghamat24.com" target="_blank" class="external">eghamat24.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.eghamat24.com" target="_blank" class="external">www.eghamat24.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://eghtesadnews.com" target="_blank" class="external">eghtesadnews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://etemadonline.com" target="_blank" class="external">etemadonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://hamshahrionline.ir" target="_blank" class="external">hamshahrionline.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://iranketab.ir" target="_blank" class="external">iranketab.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.iranketab.ir" target="_blank" class="external">www.iranketab.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://jamaran.news" target="_blank" class="external">jamaran.news</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://khabarino.com" target="_blank" class="external">khabarino.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.khabarino.com" target="_blank" class="external">www.khabarino.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://khabaronline.ir" target="_blank" class="external">khabaronline.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://my-ahangha.ir" target="_blank" class="external">my-ahangha.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.my-ahangha.ir" target="_blank" class="external">www.my-ahangha.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pishkhan.com" target="_blank" class="external">pishkhan.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pishkhan.com" target="_blank" class="external">www.pishkhan.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://salameno.com" target="_blank" class="external">salameno.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.salameno.com" target="_blank" class="external">www.salameno.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://seevid.ir" target="_blank" class="external">seevid.ir</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tehranbehesht.news" target="_blank" class="external">tehranbehesht.news</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vaghtesobh.com" target="_blank" class="external">vaghtesobh.com</a>
         </li>
     </ul>
 </div>

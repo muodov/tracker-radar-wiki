@@ -29,6 +29,9 @@
                     <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
                         Top 100
                     </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
                 </div>
             </div>
             <div class='relative'>
@@ -41,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "convertia.com",
-        history: [{"date":"2020.06","prevalence":0.0000274,"sites":2,"fingerprinting":3,"cookies":0.0000274},{"date":"2020.07","prevalence":0.0000277,"sites":2,"fingerprinting":3,"cookies":0.0000277}]
+        history: [{"date":"selenium-crux","prevalence":0.0000544,"sites":4,"fingerprinting":3,"cookies":0.0000408}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -62,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;6039<small>/7353</small>
+                    <strong>Rank:</strong> &#35;7239<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (4 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
@@ -76,10 +79,10 @@
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
                     <ul>
-                        <li>time: 0<small>/3</small></li>
-                        <li>size: 0<small>/3</small></li>
-                        <li>CPU: 0<small>/3</small></li>
-                        <li>cache: 3<small>/3</small></li>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
                     </ul>
                 </li>
                 <li class='py-1'>
@@ -87,15 +90,18 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Script</span>,
                     <span>Document</span>,
-                    <span>Stylesheet</span>,
+                    <span>Script</span>,
                     <span>Image</span>,
+                    <span>Stylesheet</span>,
                 </li>
-                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/convertia.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/convertia.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>sky</span>, 
+                    <span>marketing</span>, 
                     <span>megacable</span>, 
+                    <span>wom-co</span>, 
                 </li>
             </ul>
         </div>
@@ -123,61 +129,97 @@
         </h3> 
     </div>    
 
-    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-4 md:grid-cols-2'>
-        <li class='truncate'>WebGLRenderingContext.prototype.getContextAttributes</li>
-        <li class='truncate'>Navigator.prototype.productSub</li>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>CanvasRenderingContext2D.prototype.isPointInPath</li>
         <li class='truncate'>WebGLRenderingContext.prototype.getSupportedExtensions</li>
         <li class='truncate'>WebGLRenderingContext.prototype.getShaderPrecisionFormat</li>
-        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
-        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getContextAttributes</li>
+        <li class='truncate'>Navigator.prototype.productSub</li>
         <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
         <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>window.indexedDB</li>
         <li class='truncate'>WebGLRenderingContext.prototype.getExtension</li>
         <li class='truncate'>WebGLRenderingContext.prototype.getParameter</li>
-        <li class='truncate'>Navigator.prototype.doNotTrack</li>
         <li class='truncate'>Navigator.prototype.languages</li>
-        <li class='truncate'>window.indexedDB</li>
-        <li class='truncate'>Navigator.prototype.platform</li>
-        <li class='truncate'>Navigator.prototype.appName</li>
-        <li class='truncate'>window.devicePixelRatio</li>
         <li class='truncate'>Date.prototype.getTimezoneOffset</li>
-        <li class='truncate'>Navigator.prototype.language</li>
-        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>Navigator.prototype.doNotTrack</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
         <li class='truncate'>Screen.prototype.colorDepth</li>
-        <li class='truncate'>HTMLCanvasElement.prototype.constructor</li>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
         <li class='truncate'>Screen.prototype.height</li>
         <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>Navigator.prototype.language</li>
         <li class='truncate'>window.sessionStorage</li>
         <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
-        <li class='truncate'>CanvasRenderingContext2D.prototype.isPointInPath</li>
-        <li class='truncate'>Document.cookie getter</li>
-        <li class='truncate'>Document.cookie setter</li>
     </ul>
 </div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
-    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-4 md:grid-cols-2'>
-        <li class='truncate'><a href="http://convertia.com&#x2F;public&#x2F;integration&#x2F;scripts.js" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;public&#x2F;integration&#x2F;scripts.js</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;public&#x2F;tracking&#x2F;frame.html" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;public&#x2F;tracking&#x2F;frame.html</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;static&#x2F;libs&#x2F;tether.min.js" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;static&#x2F;libs&#x2F;tether.min.js</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;static&#x2F;css&#x2F;modal.min.css" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;static&#x2F;css&#x2F;modal.min.css</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;static&#x2F;css&#x2F;spinner.min.css" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;static&#x2F;css&#x2F;spinner.min.css</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;static&#x2F;libs&#x2F;jquery.validate.min.js" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;static&#x2F;libs&#x2F;jquery.validate.min.js</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;static&#x2F;libs&#x2F;fingerprint2.min.js" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;static&#x2F;libs&#x2F;fingerprint2.min.js</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;static&#x2F;js&#x2F;pollyfills.min.js" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;static&#x2F;js&#x2F;pollyfills.min.js</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;static&#x2F;js&#x2F;tracking.min.js" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;static&#x2F;js&#x2F;tracking.min.js</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;static&#x2F;css&#x2F;popup.min.css" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;static&#x2F;css&#x2F;popup.min.css</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;static&#x2F;libs&#x2F;jquery.fancybox.min.js" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;static&#x2F;libs&#x2F;jquery.fancybox.min.js</a></li>
-        <li class='truncate'><a href="http://convertia.com&#x2F;public&#x2F;tracking&#x2F;pixel.gif" target="_blank" class="external" rel="noreferrer noopener">convertia.com&#x2F;public&#x2F;tracking&#x2F;pixel.gif</a></li>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://sky.convertia.com&#x2F;public&#x2F;tracking&#x2F;frame.html" target="_blank" class="external" rel="noreferrer noopener">sky.convertia.com&#x2F;public&#x2F;tracking&#x2F;frame.html</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sky.convertia.com&#x2F;static&#x2F;libs&#x2F;fingerprint2.min.js" target="_blank" class="external" rel="noreferrer noopener">sky.convertia.com&#x2F;static&#x2F;libs&#x2F;fingerprint2.min.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sky.convertia.com&#x2F;static&#x2F;js&#x2F;pollyfills.min.js" target="_blank" class="external" rel="noreferrer noopener">sky.convertia.com&#x2F;static&#x2F;js&#x2F;pollyfills.min.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sky.convertia.com&#x2F;static&#x2F;js&#x2F;tracking.min.js" target="_blank" class="external" rel="noreferrer noopener">sky.convertia.com&#x2F;static&#x2F;js&#x2F;tracking.min.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sky.convertia.com&#x2F;public&#x2F;tracking&#x2F;pixel.gif" target="_blank" class="external" rel="noreferrer noopener">sky.convertia.com&#x2F;public&#x2F;tracking&#x2F;pixel.gif</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://megacable.convertia.com&#x2F;public&#x2F;integration&#x2F;scripts.js" target="_blank" class="external" rel="noreferrer noopener">megacable.convertia.com&#x2F;public&#x2F;integration&#x2F;scripts.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://megacable.convertia.com&#x2F;static&#x2F;libs&#x2F;tether.min.js" target="_blank" class="external" rel="noreferrer noopener">megacable.convertia.com&#x2F;static&#x2F;libs&#x2F;tether.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://megacable.convertia.com&#x2F;static&#x2F;css&#x2F;modal.min.css" target="_blank" class="external" rel="noreferrer noopener">megacable.convertia.com&#x2F;static&#x2F;css&#x2F;modal.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://megacable.convertia.com&#x2F;static&#x2F;css&#x2F;spinner.min.css" target="_blank" class="external" rel="noreferrer noopener">megacable.convertia.com&#x2F;static&#x2F;css&#x2F;spinner.min.css</a> (seen on 2 websites)</p>
+        </li>
     </ul>
 </div>
 
-            <footer class='flex items-center justify-between flex-wrap p-5 bg-gray-300'>
-                DuckDuckGo
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://skypaquetes.mx" target="_blank" class="external">skypaquetes.mx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tigo-hogar.com.co" target="_blank" class="external">tigo-hogar.com.co</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.megacable.com.mx" target="_blank" class="external">www.megacable.com.mx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wom.co" target="_blank" class="external">www.wom.co</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://megacable.com.mx" target="_blank" class="external">megacable.com.mx</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
             </footer>
         </div>
     </body>

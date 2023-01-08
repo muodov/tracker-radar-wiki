@@ -29,6 +29,9 @@
                     <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
                         Top 100
                     </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
                 </div>
             </div>
             <div class='relative'>
@@ -41,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "mit.edu",
-        history: [{"date":"2021.02","prevalence":0.0000208,"sites":3,"fingerprinting":2,"cookies":0.00000695},{"date":"2021.03","prevalence":0.0000208,"sites":3,"fingerprinting":2,"cookies":0.00000693},{"date":"2021.04","prevalence":0.0000208,"sites":3,"fingerprinting":2,"cookies":0.00000693},{"date":"2021.05","prevalence":0.0000207,"sites":3,"fingerprinting":2,"cookies":0.00000689},{"date":"jd/july","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":3,"cookies":0.0000272}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -62,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;12224<small>/22056</small>
+                    <strong>Rank:</strong> &#35;12357<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -76,10 +79,10 @@
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
                     <ul>
-                        <li>time: 0<small>/3</small></li>
-                        <li>size: 0<small>/3</small></li>
-                        <li>CPU: 0<small>/3</small></li>
-                        <li>cache: 1<small>/3</small></li>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
                     </ul>
                 </li>
                 <li class='py-1'>
@@ -87,12 +90,17 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>XHR</span>,
                     <span>Image</span>,
+                    <span>Fetch</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/mit.edu.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>scratch</span>, 
+                    <span>assets.scratch</span>, 
                 </li>
             </ul>
         </div>
@@ -111,13 +119,85 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>AudioBuffer.prototype.getChannelData</li>
+        <li class='truncate'>CanvasRenderingContext2D.prototype.getImageData</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getExtension</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getParameter</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>URL.createObjectURL</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://scratch.mit.edu&#x2F;images&#x2F;logo_sm.png" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;images&#x2F;logo_sm.png</a> (seen on 2 websites)</p>
+            <p><a href="http://scratch.mit.edu&#x2F;css&#x2F;lib&#x2F;normalize.min.css" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;css&#x2F;lib&#x2F;normalize.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;common.css" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;common.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;embed.css" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;embed.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;js&#x2F;polyfill.min.js" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;js&#x2F;polyfill.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;js&#x2F;common.bundle.js" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;js&#x2F;common.bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;js&#x2F;embed.intl.js" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;js&#x2F;embed.intl.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;js&#x2F;embed.bundle.js" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;js&#x2F;embed.bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;session&#x2F;" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;session&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;2e0c4790f8f9cf28e3c346b9cef0fcb6.svg" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;2e0c4790f8f9cf28e3c346b9cef0fcb6.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;36fcc7dbca20720abcab01e49d4955f9.svg" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;36fcc7dbca20720abcab01e49d4955f9.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;1e9652bec24bcaacf5285be19746a750.svg" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;1e9652bec24bcaacf5285be19746a750.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;bbbd98ae6a34eac772e34a57aaa5f977.svg" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;bbbd98ae6a34eac772e34a57aaa5f977.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;f9dce53613d5f85b311ce9f84423c08b.svg" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;f9dce53613d5f85b311ce9f84423c08b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;ce5820b006d753e4133f46ae776f4d96.svg" target="_blank" class="external" rel="noreferrer noopener">scratch.mit.edu&#x2F;static&#x2F;assets&#x2F;ce5820b006d753e4133f46ae776f4d96.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.scratch.mit.edu&#x2F;internalapi&#x2F;asset&#x2F;d36f6603ec293d2c2198d3ea05109fe0.png&#x2F;get&#x2F;" target="_blank" class="external" rel="noreferrer noopener">assets.scratch.mit.edu&#x2F;internalapi&#x2F;asset&#x2F;d36f6603ec293d2c2198d3ea05109fe0.png&#x2F;get&#x2F;</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -127,10 +207,10 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://scratch-wiki.info" target="_blank" class="external">scratch-wiki.info</a>
+            <a href="http://geometrydash.io" target="_blank" class="external">geometrydash.io</a>
         </li>
         <li class='truncate'>
-            <a href="http://en.scratch-wiki.info" target="_blank" class="external">en.scratch-wiki.info</a>
+            <a href="http://nazo-nazo.com" target="_blank" class="external">nazo-nazo.com</a>
         </li>
     </ul>
 </div>

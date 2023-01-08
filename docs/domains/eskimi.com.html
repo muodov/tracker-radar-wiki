@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "eskimi.com",
-        history: [{"date":"2020.03","prevalence":0.000142,"sites":7,"fingerprinting":2,"cookies":0.0000203},{"date":"2020.04","prevalence":0.000171,"sites":8,"fingerprinting":1,"cookies":0.0000214},{"date":"2020.05","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.06","prevalence":0.000192,"sites":14,"fingerprinting":1,"cookies":0.0000137},{"date":"2020.07","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.08","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.09","prevalence":0.000114,"sites":15,"fingerprinting":1,"cookies":0.000038},{"date":"2020.10","prevalence":0.000152,"sites":20,"fingerprinting":1,"cookies":0.0000152},{"date":"2020.11","prevalence":0.000122,"sites":16,"fingerprinting":1,"cookies":0.0000152},{"date":"2020.12","prevalence":0.000114,"sites":15,"fingerprinting":1,"cookies":0.000038},{"date":"2021.01","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.02","prevalence":0.0000764,"sites":11,"fingerprinting":0,"cookies":0},{"date":"2021.03","prevalence":0.0000485,"sites":7,"fingerprinting":1,"cookies":0.00000693},{"date":"2021.04","prevalence":0.0000832,"sites":12,"fingerprinting":1,"cookies":0.00000693},{"date":"2021.05","prevalence":0.0000965,"sites":14,"fingerprinting":1,"cookies":0.000062},{"date":"2021.06","prevalence":0.000116,"sites":17,"fingerprinting":1,"cookies":0.0000617},{"date":"2021.07","prevalence":0.0000625,"sites":9,"fingerprinting":1,"cookies":0.0000278},{"date":"2021.08","prevalence":0.0000903,"sites":13,"fingerprinting":1,"cookies":0.0000555},{"date":"2021.09","prevalence":0.000104,"sites":15,"fingerprinting":1,"cookies":0.000069},{"date":"2021.10","prevalence":0.0000898,"sites":13,"fingerprinting":1,"cookies":0.0000414},{"date":"2021.11","prevalence":0.0000897,"sites":13,"fingerprinting":1,"cookies":0.0000483},{"date":"2021.12","prevalence":0.0000968,"sites":14,"fingerprinting":1,"cookies":0.0000553},{"date":"2022.01","prevalence":0.00009,"sites":13,"fingerprinting":1,"cookies":0.0000623},{"date":"2022.02","prevalence":0.000184,"sites":27,"fingerprinting":1,"cookies":0.000157},{"date":"2022.03","prevalence":0.000143,"sites":21,"fingerprinting":1,"cookies":0.000123},{"date":"2022.04","prevalence":0.00017,"sites":25,"fingerprinting":1,"cookies":0.000157},{"date":"2022.05","prevalence":0.000198,"sites":29,"fingerprinting":1,"cookies":0.00017},{"date":"2022.06","prevalence":0.0000543,"sites":8,"fingerprinting":1,"cookies":0.0000475},{"date":"2022.07","prevalence":0.0000882,"sites":13,"fingerprinting":1,"cookies":0.0000814},{"date":"2022.08","prevalence":0.0000882,"sites":13,"fingerprinting":1,"cookies":0.0000814},{"date":"muodov/aug-2022","prevalence":0.0000746,"sites":11,"fingerprinting":1,"cookies":0.0000407}]
+        history: [{"date":"main","prevalence":0.0000542,"sites":8,"fingerprinting":0,"cookies":0.0000542},{"date":"selenium-crux","prevalence":0.000926,"sites":68,"fingerprinting":1,"cookies":0.000858}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;6137<small>/27751</small>
+                    <strong>Rank:</strong> &#35;1086<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (11 sites)
+                    <strong>Prevalence:</strong> 0.09&#37; (68 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.09&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -98,12 +98,11 @@
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/eskimi.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>sspjs</span>, 
-                    <span>dsp</span>, 
                     <span>dsp-media</span>, 
-                    <span>dsp-aud</span>, 
+                    <span>dsp</span>, 
                     <span>dsp-trk</span>, 
                     <span>dsp-ap</span>, 
+                    <span>sspjs</span>, 
                     <span>sspback-us-e</span>, 
                 </li>
             </ul>
@@ -133,6 +132,7 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.doNotTrack</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
 </div>
@@ -142,28 +142,31 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://dsp.eskimi.com&#x2F;assets&#x2F;js&#x2F;e&#x2F;gtr.min.js" target="_blank" class="external" rel="noreferrer noopener">dsp.eskimi.com&#x2F;assets&#x2F;js&#x2F;e&#x2F;gtr.min.js</a> (seen on 4 websites)</p>
+            <p><a href="http://dsp-media.eskimi.com&#x2F;assets&#x2F;js&#x2F;e&#x2F;gtr.min.js" target="_blank" class="external" rel="noreferrer noopener">dsp-media.eskimi.com&#x2F;assets&#x2F;js&#x2F;e&#x2F;gtr.min.js</a> (seen on 55 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://dsp-ap.eskimi.com&#x2F;v2&#x2F;gtr" target="_blank" class="external" rel="noreferrer noopener">dsp-ap.eskimi.com&#x2F;v2&#x2F;gtr</a> (seen on 4 websites)</p>
+            <p><a href="http://dsp-ap.eskimi.com&#x2F;v2&#x2F;gtr" target="_blank" class="external" rel="noreferrer noopener">dsp-ap.eskimi.com&#x2F;v2&#x2F;gtr</a> (seen on 54 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://dsp-trk.eskimi.com&#x2F;tracking&#x2F;cssession" target="_blank" class="external" rel="noreferrer noopener">dsp-trk.eskimi.com&#x2F;tracking&#x2F;cssession</a> (seen on 3 websites)</p>
+            <p><a href="http://dsp-trk.eskimi.com&#x2F;tracking&#x2F;cssession" target="_blank" class="external" rel="noreferrer noopener">dsp-trk.eskimi.com&#x2F;tracking&#x2F;cssession</a> (seen on 49 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sspjs.eskimi.com&#x2F;esadt.js" target="_blank" class="external" rel="noreferrer noopener">sspjs.eskimi.com&#x2F;esadt.js</a> (seen on 2 websites)</p>
+            <p><a href="http://sspjs.eskimi.com&#x2F;esadt.js" target="_blank" class="external" rel="noreferrer noopener">sspjs.eskimi.com&#x2F;esadt.js</a> (seen on 9 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sspjs.eskimi.com&#x2F;esadt.config.js" target="_blank" class="external" rel="noreferrer noopener">sspjs.eskimi.com&#x2F;esadt.config.js</a> (seen on 2 websites)</p>
+            <p><a href="http://dsp-trk.eskimi.com&#x2F;pix" target="_blank" class="external" rel="noreferrer noopener">dsp-trk.eskimi.com&#x2F;pix</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://dsp-aud.eskimi.com&#x2F;v2&#x2F;gtr" target="_blank" class="external" rel="noreferrer noopener">dsp-aud.eskimi.com&#x2F;v2&#x2F;gtr</a> (seen on 2 websites)</p>
+            <p><a href="http://sspjs.eskimi.com&#x2F;esadt.config.js" target="_blank" class="external" rel="noreferrer noopener">sspjs.eskimi.com&#x2F;esadt.config.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sspback-us-e.eskimi.com&#x2F;bid-request" target="_blank" class="external" rel="noreferrer noopener">sspback-us-e.eskimi.com&#x2F;bid-request</a> (seen on 2 websites)</p>
+            <p><a href="http://sspback-us-e.eskimi.com&#x2F;bid-request" target="_blank" class="external" rel="noreferrer noopener">sspback-us-e.eskimi.com&#x2F;bid-request</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sspback-us-e.eskimi.com&#x2F;bid-request" target="_blank" class="external" rel="noreferrer noopener">sspback-us-e.eskimi.com&#x2F;bid-request</a> (seen on 2 websites)</p>
+            <p><a href="http://sspback-us-e.eskimi.com&#x2F;bid-request" target="_blank" class="external" rel="noreferrer noopener">sspback-us-e.eskimi.com&#x2F;bid-request</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://dsp-media.eskimi.com&#x2F;gtr.min.js" target="_blank" class="external" rel="noreferrer noopener">dsp-media.eskimi.com&#x2F;gtr.min.js</a> (seen on 3 websites)</p>
         </li>
     </ul>
 </div>
@@ -173,28 +176,178 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://guardian.ng" target="_blank" class="external">guardian.ng</a>
+            <a href="http://pt.tourismpanama.com" target="_blank" class="external">pt.tourismpanama.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.premiumtimesng.com" target="_blank" class="external">www.premiumtimesng.com</a>
+            <a href="http://nishatlinen.com" target="_blank" class="external">nishatlinen.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.grameenphone.com" target="_blank" class="external">www.grameenphone.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bolabet.co.zm" target="_blank" class="external">www.bolabet.co.zm</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bazzar.hr" target="_blank" class="external">bazzar.hr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.arenacasino.hr" target="_blank" class="external">www.arenacasino.hr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m-bet.co.tz" target="_blank" class="external">m-bet.co.tz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gbets.co.za" target="_blank" class="external">www.gbets.co.za</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://es.tourismpanama.com" target="_blank" class="external">es.tourismpanama.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pet-centar.hr" target="_blank" class="external">www.pet-centar.hr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.wsbetting.com" target="_blank" class="external">m.wsbetting.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.banglanews24.com" target="_blank" class="external">www.banglanews24.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pandorashop.gr" target="_blank" class="external">www.pandorashop.gr</a>
         </li>
         <li class='truncate'>
             <a href="http://www.betika.com" target="_blank" class="external">www.betika.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.bybit.com" target="_blank" class="external">www.bybit.com</a>
+            <a href="http://metbuat.az" target="_blank" class="external">metbuat.az</a>
         </li>
         <li class='truncate'>
-            <a href="http://absa.co.za" target="_blank" class="external">absa.co.za</a>
+            <a href="http://sportpesa.co.tz" target="_blank" class="external">sportpesa.co.tz</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.absa.co.za" target="_blank" class="external">www.absa.co.za</a>
+            <a href="http://www.gana.com.co" target="_blank" class="external">www.gana.com.co</a>
         </li>
         <li class='truncate'>
-            <a href="http://betika.com" target="_blank" class="external">betika.com</a>
+            <a href="http://www.betway.co.mz" target="_blank" class="external">www.betway.co.mz</a>
         </li>
         <li class='truncate'>
-            <a href="http://premiumtimesng.com" target="_blank" class="external">premiumtimesng.com</a>
+            <a href="http://winbet.ro" target="_blank" class="external">winbet.ro</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.globe.com.ph" target="_blank" class="external">www.globe.com.ph</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://supremeventures.com" target="_blank" class="external">supremeventures.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://azpolitika.info" target="_blank" class="external">azpolitika.info</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mozzartbet.ro" target="_blank" class="external">www.mozzartbet.ro</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.balkanbet.rs" target="_blank" class="external">www.balkanbet.rs</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.honda2wheelersindia.com" target="_blank" class="external">www.honda2wheelersindia.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tokocrypto.com" target="_blank" class="external">www.tokocrypto.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://yenisabah.az" target="_blank" class="external">yenisabah.az</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://teleqraf.com" target="_blank" class="external">teleqraf.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ucuztap.az" target="_blank" class="external">ucuztap.az</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.wsbetting.co.ls" target="_blank" class="external">m.wsbetting.co.ls</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mtn.co.za" target="_blank" class="external">www.mtn.co.za</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.istore.co.za" target="_blank" class="external">www.istore.co.za</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sunbet.co.za" target="_blank" class="external">www.sunbet.co.za</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wojas.pl" target="_blank" class="external">wojas.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.dailyinqilab.com" target="_blank" class="external">m.dailyinqilab.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://unvan.az" target="_blank" class="external">unvan.az</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://duka.com" target="_blank" class="external">duka.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gintarine.lt" target="_blank" class="external">www.gintarine.lt</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.yellowbet.com.gn" target="_blank" class="external">m.yellowbet.com.gn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://lent.az" target="_blank" class="external">lent.az</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mysoftlogic.lk" target="_blank" class="external">mysoftlogic.lk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dailynayadiganta.com" target="_blank" class="external">www.dailynayadiganta.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bikosports.co.tz" target="_blank" class="external">www.bikosports.co.tz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sportinfo.az" target="_blank" class="external">www.sportinfo.az</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gorod.dp.ua" target="_blank" class="external">gorod.dp.ua</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.gordonua.com" target="_blank" class="external">m.gordonua.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.gazeta.ua" target="_blank" class="external">m.gazeta.ua</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://patrioty.org.ua" target="_blank" class="external">patrioty.org.ua</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uainfo.org" target="_blank" class="external">uainfo.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.0352.ua" target="_blank" class="external">www.0352.ua</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gorod.dp.ua" target="_blank" class="external">www.gorod.dp.ua</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://zoombangla.com" target="_blank" class="external">zoombangla.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mzamin.com" target="_blank" class="external">mzamin.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.amadershomoy.com" target="_blank" class="external">www.amadershomoy.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bd-pratidin.com" target="_blank" class="external">www.bd-pratidin.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.newsbangla24.com" target="_blank" class="external">www.newsbangla24.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.premiumtimesng.com" target="_blank" class="external">www.premiumtimesng.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dailyinqilab.com" target="_blank" class="external">dailyinqilab.com</a>
         </li>
     </ul>
 </div>

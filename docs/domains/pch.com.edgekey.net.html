@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "pch.com.edgekey.net",
-        history: [{"date":"2022.06","prevalence":0.0000271,"sites":4,"fingerprinting":1,"cookies":0.0000271},{"date":"2022.07","prevalence":0.0000271,"sites":4,"fingerprinting":1,"cookies":0.0000271},{"date":"2022.08","prevalence":0.0000271,"sites":4,"fingerprinting":1,"cookies":0.0000271},{"date":"muodov/aug-2022","prevalence":0.0000271,"sites":4,"fingerprinting":1,"cookies":0.0000271}]
+        history: [{"date":"main","prevalence":0.0000271,"sites":4,"fingerprinting":1,"cookies":0.0000271},{"date":"selenium-crux","prevalence":0.000109,"sites":8,"fingerprinting":1,"cookies":0.000109}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.akamai.com&#x2F;us&#x2F;en&#x2F;privacy-policies&#x2F;" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.akamai.com&#x2F;us&#x2F;en&#x2F;privacy-policies&#x2F;</a>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;12686<small>/27751</small>
+                    <strong>Rank:</strong> &#35;4883<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (4 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (8 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.01&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -90,19 +90,20 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Script</span>,
                     <span>Stylesheet</span>,
+                    <span>Script</span>,
                     <span>Image</span>,
                     <span>Fetch</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/pch.com.edgekey.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>pchassets</span>, 
                     <span>sc</span>, 
-                    <span>wildcard</span>, 
+                    <span>pchassets</span>, 
                     <span>lwstatic</span>, 
                     <span>midtier</span>, 
+                    <span>pchcomassets</span>, 
+                    <span>pathgamesassets</span>, 
                 </li>
             </ul>
         </div>
@@ -126,16 +127,19 @@
     <h3 class='section-header'>CNAMEs</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://cdn.pch.com" target="_blank" class="external">cdn.pch.com</a> &#x2192; <a href="http://wildcard.pch.com.edgekey.net" target="_blank" class="external">wildcard.pch.com.edgekey.net</a>
-        </li>
-        <li class='truncate'>
             <a href="http://lwstatic.pch.com" target="_blank" class="external">lwstatic.pch.com</a> &#x2192; <a href="http://lwstatic.pch.com.edgekey.net" target="_blank" class="external">lwstatic.pch.com.edgekey.net</a>
         </li>
         <li class='truncate'>
             <a href="http://midtierassets.pch.com" target="_blank" class="external">midtierassets.pch.com</a> &#x2192; <a href="http://midtier.pch.com.edgekey.net" target="_blank" class="external">midtier.pch.com.edgekey.net</a>
         </li>
         <li class='truncate'>
+            <a href="http://pathgamesassets.pch.com" target="_blank" class="external">pathgamesassets.pch.com</a> &#x2192; <a href="http://pathgamesassets.pch.com.edgekey.net" target="_blank" class="external">pathgamesassets.pch.com.edgekey.net</a>
+        </li>
+        <li class='truncate'>
             <a href="http://pchassets.pch.com" target="_blank" class="external">pchassets.pch.com</a> &#x2192; <a href="http://pchassets.pch.com.edgekey.net" target="_blank" class="external">pchassets.pch.com.edgekey.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pchcomassets.pch.com" target="_blank" class="external">pchcomassets.pch.com</a> &#x2192; <a href="http://pchcomassets.pch.com.edgekey.net" target="_blank" class="external">pchcomassets.pch.com.edgekey.net</a>
         </li>
         <li class='truncate'>
             <a href="http://sc.pch.com" target="_blank" class="external">sc.pch.com</a> &#x2192; <a href="http://sc.pch.com.edgekey.net" target="_blank" class="external">sc.pch.com.edgekey.net</a>
@@ -147,76 +151,142 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://pchassets.pch.com.edgekey.net&#x2F;sites&#x2F;global&#x2F;pch-events&#x2F;latest&#x2F;pch-events.min.js" target="_blank" class="external" rel="noreferrer noopener">pchassets.pch.com.edgekey.net&#x2F;sites&#x2F;global&#x2F;pch-events&#x2F;latest&#x2F;pch-events.min.js</a> (seen on 3 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;vip&#x2F;config.desktop.json" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;vip&#x2F;config.desktop.json</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://lwstatic.pch.com.edgekey.net&#x2F;monetization&#x2F;jwplayer_wrapper.prod.js" target="_blank" class="external" rel="noreferrer noopener">lwstatic.pch.com.edgekey.net&#x2F;monetization&#x2F;jwplayer_wrapper.prod.js</a> (seen on 3 websites)</p>
+            <p><a href="http://pchassets.pch.com.edgekey.net&#x2F;sites&#x2F;global&#x2F;pch-events&#x2F;latest&#x2F;pch-events.min.js" target="_blank" class="external" rel="noreferrer noopener">pchassets.pch.com.edgekey.net&#x2F;sites&#x2F;global&#x2F;pch-events&#x2F;latest&#x2F;pch-events.min.js</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;vip&#x2F;config.desktop.json" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;vip&#x2F;config.desktop.json</a> (seen on 3 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;css&#x2F;PCHUniversalNavigation.min.css" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;css&#x2F;PCHUniversalNavigation.min.css</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;css&#x2F;PCHUniversalNavigation.min.css" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;css&#x2F;PCHUniversalNavigation.min.css</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;js&#x2F;PCHUniversalNavigation-polyfilled.min.js" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;js&#x2F;PCHUniversalNavigation-polyfilled.min.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://wildcard.pch.com.edgekey.net&#x2F;ui&#x2F;adframe.js" target="_blank" class="external" rel="noreferrer noopener">wildcard.pch.com.edgekey.net&#x2F;ui&#x2F;adframe.js</a> (seen on 2 websites)</p>
+            <p><a href="http://lwstatic.pch.com.edgekey.net&#x2F;monetization&#x2F;jwplayer_wrapper.prod.js" target="_blank" class="external" rel="noreferrer noopener">lwstatic.pch.com.edgekey.net&#x2F;monetization&#x2F;jwplayer_wrapper.prod.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;js&#x2F;PCHUniversalNavigation-polyfilled.min.js" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;js&#x2F;PCHUniversalNavigation-polyfilled.min.js</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Search_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Search_active.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://pchassets.pch.com.edgekey.net&#x2F;sites&#x2F;global&#x2F;pch-token-doubler&#x2F;latest&#x2F;token-doubler.js" target="_blank" class="external" rel="noreferrer noopener">pchassets.pch.com.edgekey.net&#x2F;sites&#x2F;global&#x2F;pch-token-doubler&#x2F;latest&#x2F;token-doubler.js</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Games_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Games_active.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Search_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Search_active.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Lotto_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Lotto_active.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Games_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Games_active.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Slots_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Slots_active.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Lotto_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Lotto_active.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Frontpage_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Frontpage_active.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Slots_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Slots_active.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;PCH_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;PCH_active.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Frontpage_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Frontpage_active.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Surveys_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Surveys_active.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;PCH_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;PCH_active.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;spritesheets&#x2F;sprite.uni-nav.png" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;spritesheets&#x2F;sprite.uni-nav.png</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Surveys_active.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Surveys_active.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;PCH_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;PCH_inactive.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;spritesheets&#x2F;sprite.uni-nav.png" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;spritesheets&#x2F;sprite.uni-nav.png</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Games_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Games_inactive.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;PCH_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;PCH_inactive.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Slots_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Slots_inactive.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Search_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Search_inactive.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Surveys_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Surveys_inactive.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Games_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Games_inactive.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://lwstatic.pch.com.edgekey.net&#x2F;monetization&#x2F;pchmonetrefresh.prod.js" target="_blank" class="external" rel="noreferrer noopener">lwstatic.pch.com.edgekey.net&#x2F;monetization&#x2F;pchmonetrefresh.prod.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Frontpage_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Frontpage_inactive.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Search_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Search_inactive.svg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Slots_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Slots_inactive.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Frontpage_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Frontpage_inactive.svg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Surveys_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Surveys_inactive.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://pchassets.pch.com.edgekey.net&#x2F;sites&#x2F;global&#x2F;pch-token-doubler&#x2F;latest&#x2F;token-doubler.js" target="_blank" class="external" rel="noreferrer noopener">pchassets.pch.com.edgekey.net&#x2F;sites&#x2F;global&#x2F;pch-token-doubler&#x2F;latest&#x2F;token-doubler.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://lwstatic.pch.com.edgekey.net&#x2F;monetization&#x2F;pchmonetrefresh.prod.js" target="_blank" class="external" rel="noreferrer noopener">lwstatic.pch.com.edgekey.net&#x2F;monetization&#x2F;pchmonetrefresh.prod.js</a> (seen on 2 websites)</p>
+            <p><a href="http://sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Lotto_inactive.svg" target="_blank" class="external" rel="noreferrer noopener">sc.pch.com.edgekey.net&#x2F;uninav&#x2F;dist&#x2F;images&#x2F;uninav&#x2F;svg&#x2F;Lotto_inactive.svg</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://midtier.pch.com.edgekey.net&#x2F;images&#x2F;9211&#x2F;DailyPrize_amazonEcho.png" target="_blank" class="external" rel="noreferrer noopener">midtier.pch.com.edgekey.net&#x2F;images&#x2F;9211&#x2F;DailyPrize_amazonEcho.png</a> (seen on 2 websites)</p>
+            <p><a href="http://midtier.pch.com.edgekey.net&#x2F;images&#x2F;17480&#x2F;Sonos_01.png" target="_blank" class="external" rel="noreferrer noopener">midtier.pch.com.edgekey.net&#x2F;images&#x2F;17480&#x2F;Sonos_01.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://midtier.pch.com.edgekey.net&#x2F;images&#x2F;9277&#x2F;DailyPrize_PCHGiftCard200.png" target="_blank" class="external" rel="noreferrer noopener">midtier.pch.com.edgekey.net&#x2F;images&#x2F;9277&#x2F;DailyPrize_PCHGiftCard200.png</a> (seen on 2 websites)</p>
+            <p><a href="http://midtier.pch.com.edgekey.net&#x2F;images&#x2F;9272&#x2F;DailyPrize_NetflixGiftCard100.png" target="_blank" class="external" rel="noreferrer noopener">midtier.pch.com.edgekey.net&#x2F;images&#x2F;9272&#x2F;DailyPrize_NetflixGiftCard100.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;3520&#x2F;desktopnfamodule.png" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;3520&#x2F;desktopnfamodule.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;927&#x2F;200kforyourdreamrvswpsmod172x136.png" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;927&#x2F;200kforyourdreamrvswpsmod172x136.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;2970&#x2F;THUMB_172x136_20K_1000IW.png" target="_blank" class="external" rel="noreferrer noopener">pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;2970&#x2F;THUMB_172x136_20K_1000IW.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;643&#x2F;directions1mmswpsmod172x136-v2.png" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;643&#x2F;directions1mmswpsmod172x136-v2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3541&#x2F;2500_time_warp_Five_HP_Module_Thumbnail_172x136.jpg" target="_blank" class="external" rel="noreferrer noopener">pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3541&#x2F;2500_time_warp_Five_HP_Module_Thumbnail_172x136.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;4241&#x2F;2500_kingdom_of_cash_Five_HP_Module_Thumbnail_172x136.jpg" target="_blank" class="external" rel="noreferrer noopener">pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;4241&#x2F;2500_kingdom_of_cash_Five_HP_Module_Thumbnail_172x136.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3945&#x2F;HP_Module_Thumbnail_172x136.jpg" target="_blank" class="external" rel="noreferrer noopener">pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3945&#x2F;HP_Module_Thumbnail_172x136.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3087&#x2F;THUMB_172x136_2500SafetyNet.png" target="_blank" class="external" rel="noreferrer noopener">pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3087&#x2F;THUMB_172x136_2500SafetyNet.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;1774&#x2F;tc-doublebonus-missionthumb.png" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;1774&#x2F;tc-doublebonus-missionthumb.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;3520&#x2F;sitethumbnail172x136.png" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;3520&#x2F;sitethumbnail172x136.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;4153&#x2F;hpmodulethumbnail172x136-v2.jpg" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;4153&#x2F;hpmodulethumbnail172x136-v2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;1824&#x2F;dreamhome2021swpsmod172x136.png" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;1824&#x2F;dreamhome2021swpsmod172x136.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3182&#x2F;$5,000.00_Ready_To_Win_HP_Module_Thumbnail_172x136.jpg" target="_blank" class="external" rel="noreferrer noopener">pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3182&#x2F;$5,000.00_Ready_To_Win_HP_Module_Thumbnail_172x136.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;1001&#x2F;10kcarloversdreamswpsmod172x136v2.png" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;1001&#x2F;10kcarloversdreamswpsmod172x136v2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;2895&#x2F;hpmodulethumbnail172x136v2.jpg" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;2895&#x2F;hpmodulethumbnail172x136v2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;777&#x2F;noombeyoursbestselfthumbnail172x136.png" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;777&#x2F;noombeyoursbestselfthumbnail172x136.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3795&#x2F;$5,000.00_Prizes_Prizes_Prizes_HP_Module_Thumbnail_172x136.png" target="_blank" class="external" rel="noreferrer noopener">pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3795&#x2F;$5,000.00_Prizes_Prizes_Prizes_HP_Module_Thumbnail_172x136.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;2997&#x2F;SW_172x136%20thumb_v2.png" target="_blank" class="external" rel="noreferrer noopener">pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;2997&#x2F;SW_172x136%20thumb_v2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3528&#x2F;2500_extra_pay_Five_HP_Module_Thumbnail_172x136.jpg" target="_blank" class="external" rel="noreferrer noopener">pathgamesassets.pch.com.edgekey.net&#x2F;images&#x2F;3528&#x2F;2500_extra_pay_Five_HP_Module_Thumbnail_172x136.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;1772&#x2F;tc-doublebonus-missionthumb.png" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;1772&#x2F;tc-doublebonus-missionthumb.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;4359&#x2F;hpmodulethumbnail172x136v2.jpg" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;4359&#x2F;hpmodulethumbnail172x136v2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;793&#x2F;15kallamericanroadtripswpsmod172x136v2.png" target="_blank" class="external" rel="noreferrer noopener">pchcomassets.pch.com.edgekey.net&#x2F;images&#x2F;793&#x2F;15kallamericanroadtripswpsmod172x136v2.png</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -229,7 +299,19 @@
             <a href="http://pch.com" target="_blank" class="external">pch.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://frontpage.pch.com" target="_blank" class="external">frontpage.pch.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://lotto.pch.com" target="_blank" class="external">lotto.pch.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://rewards.pch.com" target="_blank" class="external">rewards.pch.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://search.pch.com" target="_blank" class="external">search.pch.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mpo.pch.com" target="_blank" class="external">mpo.pch.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.pch.com" target="_blank" class="external">www.pch.com</a>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - moviesnation.de</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "moviesnation.de",
+        history: [{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":2,"cookies":0}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/moviesnation.de.ico' width="32" height="32" class='inline-block' /> moviesnation.de</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;12414<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/moviesnation.de.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>Element.prototype.getClientRects</li>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>HTMLMediaElement.prototype.canPlayType</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;css&#x2F;7501a7d56bfd54905d8f6ca102f89358.css" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;css&#x2F;7501a7d56bfd54905d8f6ca102f89358.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-includes&#x2F;js&#x2F;wp-emoji-release.min.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-includes&#x2F;js&#x2F;wp-emoji-release.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f294a4916a2052e67ed6e9b71ee5b5e9.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f294a4916a2052e67ed6e9b71ee5b5e9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-includes&#x2F;js&#x2F;jquery&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-includes&#x2F;js&#x2F;jquery&#x2F;jquery.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;22e2c8d2624a1b79b4db767b09ee424a.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;22e2c8d2624a1b79b4db767b09ee424a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;48daf1564513c2c1bb7912f212ecb18e.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;48daf1564513c2c1bb7912f212ecb18e.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f2544a7cec482abdc207deb340293986.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f2544a7cec482abdc207deb340293986.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;220ca9488c6bca1a682b1322c6cd47b8.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;220ca9488c6bca1a682b1322c6cd47b8.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f7c1ed98a9b5a4ba0d0d64ec2a8fedbe.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f7c1ed98a9b5a4ba0d0d64ec2a8fedbe.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;61f50731b0b4335de07c9997ffab0105.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;61f50731b0b4335de07c9997ffab0105.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;01b00f765c4c60209b854560dc2d5075.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;01b00f765c4c60209b854560dc2d5075.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;d32888068449a8a9c876c69438543333.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;d32888068449a8a9c876c69438543333.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;21f6b9818ce8ef70633c6159d6667a0b.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;21f6b9818ce8ef70633c6159d6667a0b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;b669e8798c2212b7ac364c870abf426f.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;b669e8798c2212b7ac364c870abf426f.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;931f4d4a7d8c3be5553036079535224c.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;931f4d4a7d8c3be5553036079535224c.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;af63e8a586aa731f2c9c208990b733c2.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;af63e8a586aa731f2c9c208990b733c2.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;e3257538ebbce7a7e3c2e8242f10d0c7.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;e3257538ebbce7a7e3c2e8242f10d0c7.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;b275e9724924a82f2b1a1239d6048c8b.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;b275e9724924a82f2b1a1239d6048c8b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;cac968646b98cda9b96a1cca5c50c851.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;cac968646b98cda9b96a1cca5c50c851.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;d742cce8d583d77d735db8d006a36da0.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;d742cce8d583d77d735db8d006a36da0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;c2e6668c8b814f28435a6efa9afefe00.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;c2e6668c8b814f28435a6efa9afefe00.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;1c9071459356329d17842f422ffd33fe.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;1c9071459356329d17842f422ffd33fe.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;d62e348ae76ad5ce4935a3ebce4bd06f.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;d62e348ae76ad5ce4935a3ebce4bd06f.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;75ff7a03dbd5f064f9becb62486a7b96.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;75ff7a03dbd5f064f9becb62486a7b96.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;a8ba5668360a0f6a629f4def67a292f7.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;a8ba5668360a0f6a629f4def67a292f7.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;1e1ba1653adbe8d782f8d948e0996fd3.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;1e1ba1653adbe8d782f8d948e0996fd3.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;8c1c28278f2fc616c5874bc7e52cdec4.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;8c1c28278f2fc616c5874bc7e52cdec4.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;00a046d7de2590e980ca677216b56326.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;00a046d7de2590e980ca677216b56326.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f4c5f93ab38f8b28aa482fc1954b1b1b.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f4c5f93ab38f8b28aa482fc1954b1b1b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;c8f9bf01e15bdca7931b331bc7e12ebf.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;c8f9bf01e15bdca7931b331bc7e12ebf.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;eca978a25f4bbff96215c92b70e26168.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;eca978a25f4bbff96215c92b70e26168.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;518380de7458e6c023ef76a979e6972e.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;518380de7458e6c023ef76a979e6972e.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;a08f4d1eef3d4077993dfc13f53aa12a.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;a08f4d1eef3d4077993dfc13f53aa12a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;b85f3ebc8c85142838b2c11251f7fb62.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;b85f3ebc8c85142838b2c11251f7fb62.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;02d6abda69464048c25813c83f4c3390.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;02d6abda69464048c25813c83f4c3390.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;d1189f8ba98638c52487efed7715f39c.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;d1189f8ba98638c52487efed7715f39c.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;d94710aa37e9a67a9e935254dbc85217.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;d94710aa37e9a67a9e935254dbc85217.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f65fcaebac8fd30e3df08e38468bb371.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f65fcaebac8fd30e3df08e38468bb371.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f4e097058e01456fa1010b4878ca7aab.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f4e097058e01456fa1010b4878ca7aab.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;themes&#x2F;jnews&#x2F;assets&#x2F;js&#x2F;chosen.jquery.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;themes&#x2F;jnews&#x2F;assets&#x2F;js&#x2F;chosen.jquery.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;bca18bea73810370d3d18c34e1558c79.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;bca18bea73810370d3d18c34e1558c79.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;c37ee44611891ac026d59c19dfef8770.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;c37ee44611891ac026d59c19dfef8770.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;8d933287b6c9ec663cfb055d8e019a3d.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;8d933287b6c9ec663cfb055d8e019a3d.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;themes&#x2F;jnews&#x2F;assets&#x2F;js&#x2F;jquery.jsticky.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;themes&#x2F;jnews&#x2F;assets&#x2F;js&#x2F;jquery.jsticky.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;aeaa2ab2eb3716d177f188cc9e7e1def.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;aeaa2ab2eb3716d177f188cc9e7e1def.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f5787dd04d8bc922fd7192331c5b5f23.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;f5787dd04d8bc922fd7192331c5b5f23.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;108b982cd929056e53ab5518d4612abd.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;108b982cd929056e53ab5518d4612abd.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;43f06f0c891d621df70a922fc971ed39.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;43f06f0c891d621df70a922fc971ed39.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;158f35ebe2e5366ebdf2178b9b1db337.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;158f35ebe2e5366ebdf2178b9b1db337.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;a4435b2e829fdef48b8248270e767f79.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;a4435b2e829fdef48b8248270e767f79.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;4ad2fdce73f3445fb887179702e765b3.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;4ad2fdce73f3445fb887179702e765b3.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;fe428f280075f3738cf7ed68c2ded70e.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;fe428f280075f3738cf7ed68c2ded70e.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;db8232695217a0e34e8e95aa4b615f67.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;db8232695217a0e34e8e95aa4b615f67.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;96f3569d605d70da073e07395f834c34.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;96f3569d605d70da073e07395f834c34.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;themes&#x2F;jnews&#x2F;assets&#x2F;img&#x2F;preloader-dark.gif" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;themes&#x2F;jnews&#x2F;assets&#x2F;img&#x2F;preloader-dark.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;css&#x2F;7501a7d56bfd54905d8f6ca102f89358.css" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;css&#x2F;7501a7d56bfd54905d8f6ca102f89358.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2020&#x2F;12&#x2F;Download-Alice-in-Borderland-Season-1-All-Episodes-English-with-Subtitles-480p-200MB-720p-350MB-moviesnation.in_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2020&#x2F;12&#x2F;Download-Alice-in-Borderland-Season-1-All-Episodes-English-with-Subtitles-480p-200MB-720p-350MB-moviesnation.in_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;Download-Wednesday-Season-1-Hindi-Dubbed-English-Dual-Audio-All-Episode-480p-720p-1080p-on-Moviesnation.uk_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;Download-Wednesday-Season-1-Hindi-Dubbed-English-Dual-Audio-All-Episode-480p-720p-1080p-on-Moviesnation.uk_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-The-Pale-Blue-Eye-2022-Hindi-Dubbed-English-Dual-Audio-480p-720p-1080p-on-Moviesnation.de_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-The-Pale-Blue-Eye-2022-Hindi-Dubbed-English-Dual-Audio-480p-720p-1080p-on-Moviesnation.de_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;29fb57516216fa5098a6466ab66c6fd4.js" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;litespeed&#x2F;js&#x2F;29fb57516216fa5098a6466ab66c6fd4.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-includes&#x2F;js&#x2F;thickbox&#x2F;loadingAnimation.gif" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-includes&#x2F;js&#x2F;thickbox&#x2F;loadingAnimation.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2021&#x2F;05&#x2F;moviesnation.png" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2021&#x2F;05&#x2F;moviesnation.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Copenhagen-Cowboy-Season-1-Hindi-Dubbed-English-Dual-Audio-All-Episode-480p-720p-moviesnation.de_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Copenhagen-Cowboy-Season-1-Hindi-Dubbed-English-Dual-Audio-All-Episode-480p-720p-moviesnation.de_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Ex-Machina-2014-Hindi-Dubbed-English-Dual-Audio-480p-720p-1080p-on-Moviesnation.de_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Ex-Machina-2014-Hindi-Dubbed-English-Dual-Audio-480p-720p-1080p-on-Moviesnation.de_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Woman-of-the-Dead-Season-1-Hindi-Dubbed-English-Dual-Audio-All-Episode-480p-720p-moviesnation.de_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Woman-of-the-Dead-Season-1-Hindi-Dubbed-English-Dual-Audio-All-Episode-480p-720p-moviesnation.de_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Shut-In-2022-Hindi-Dubbed-English-Dual-Audio-480p-720p-1080p-on-Moviesnation.de_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Shut-In-2022-Hindi-Dubbed-English-Dual-Audio-480p-720p-1080p-on-Moviesnation.de_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Tunnel-2016-Hindi-Dubbed-English-Dual-Audio-480p-720p-1080p-on-Moviesnation.de_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Tunnel-2016-Hindi-Dubbed-English-Dual-Audio-480p-720p-1080p-on-Moviesnation.de_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Crazy-Love-Season-1-Kdrama-Hindi-Dubbed-All-Episode-480p-720p-1080p-on-Moviesnation.de_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Crazy-Love-Season-1-Kdrama-Hindi-Dubbed-All-Episode-480p-720p-1080p-on-Moviesnation.de_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Roald-Dahls-Matilda-the-Musical-2022-Hindi-Dubbed-English-480p-720p-1080p-on-Moviesnation.de_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-Roald-Dahls-Matilda-the-Musical-2022-Hindi-Dubbed-English-480p-720p-1080p-on-Moviesnation.de_.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-The-Boy-the-Mole-the-Fox-and-the-Horse-2022-Hindi-Dubbed-English-Dual-Audio-480p-720p-1080p-on-Moviesnation.de_.jpg" target="_blank" class="external" rel="noreferrer noopener">moviesnation.de&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;Download-The-Boy-the-Mole-the-Fox-and-the-Horse-2022-Hindi-Dubbed-English-Dual-Audio-480p-720p-1080p-on-Moviesnation.de_.jpg</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://moviesnation.uk" target="_blank" class="external">moviesnation.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://moviesnation.nl" target="_blank" class="external">moviesnation.nl</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

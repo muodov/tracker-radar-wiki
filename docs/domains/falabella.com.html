@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "falabella.com",
-        history: [{"date":"2020.06","prevalence":0.0000274,"sites":2,"fingerprinting":2,"cookies":0.0000274},{"date":"2020.07","prevalence":0.0000277,"sites":2,"fingerprinting":2,"cookies":0.0000277},{"date":"2020.08","prevalence":0.0000147,"sites":2,"fingerprinting":2,"cookies":0.0000147},{"date":"2020.09","prevalence":0.0000152,"sites":2,"fingerprinting":1,"cookies":0.0000152},{"date":"2020.10","prevalence":0.0000152,"sites":2,"fingerprinting":2,"cookies":0.0000152},{"date":"2020.11","prevalence":0.0000228,"sites":3,"fingerprinting":2,"cookies":0.0000228},{"date":"2020.12","prevalence":0.0000152,"sites":2,"fingerprinting":2,"cookies":0.0000152},{"date":"2021.01","prevalence":0.0000153,"sites":2,"fingerprinting":2,"cookies":0.0000153},{"date":"2021.02","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0.0000139},{"date":"2021.03","prevalence":0.0000139,"sites":2,"fingerprinting":2,"cookies":0.0000139},{"date":"2021.04","prevalence":0.0000208,"sites":3,"fingerprinting":2,"cookies":0.0000208},{"date":"2021.05","prevalence":0.0000138,"sites":2,"fingerprinting":2,"cookies":0.0000138},{"date":"2021.06","prevalence":0.0000137,"sites":2,"fingerprinting":2,"cookies":0.0000137},{"date":"2021.07","prevalence":0.0000139,"sites":2,"fingerprinting":2,"cookies":0.0000139},{"date":"2021.08","prevalence":0.0000139,"sites":2,"fingerprinting":2,"cookies":0.0000139},{"date":"2021.09","prevalence":0.0000138,"sites":2,"fingerprinting":2,"cookies":0.0000138},{"date":"2021.10","prevalence":0.0000138,"sites":2,"fingerprinting":2,"cookies":0.0000138},{"date":"2021.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.01","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.02","prevalence":0.0000272,"sites":4,"fingerprinting":0,"cookies":0.0000272},{"date":"2022.03","prevalence":0.0000273,"sites":4,"fingerprinting":0,"cookies":0.0000273},{"date":"2022.04","prevalence":0.0000272,"sites":4,"fingerprinting":0,"cookies":0.0000272},{"date":"2022.05","prevalence":0.0000273,"sites":4,"fingerprinting":0,"cookies":0.0000273},{"date":"max/june-2022","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0.0000136}]
+        history: [{"date":"main","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0.0000136},{"date":"selenium-crux","prevalence":0.0000681,"sites":5,"fingerprinting":1,"cookies":0.0000681}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;20205<small>/27203</small>
+                    <strong>Rank:</strong> &#35;6391<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (5 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.01&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -90,20 +90,16 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Script</span>,
                     <span>Image</span>,
+                    <span>Script</span>,
                     <span>Fetch</span>,
-                    <span>XHR</span>,
-                    <span>Other</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/falabella.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>sodimac</span>, 
                     <span>images</span>, 
-                    <span>www</span>, 
                     <span>assets</span>, 
-                    <span>sadobe</span>, 
+                    <span>www</span>, 
                 </li>
             </ul>
         </div>
@@ -132,14 +128,12 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
-        <li class='truncate'>Navigator.prototype.webdriver</li>
-        <li class='truncate'>Screen.prototype.availWidth</li>
-        <li class='truncate'>Screen.prototype.availHeight</li>
-        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
-        <li class='truncate'>window.devicePixelRatio</li>
-        <li class='truncate'>Screen.prototype.colorDepth</li>
-        <li class='truncate'>Screen.prototype.height</li>
-        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
     </ul>
 </div>
 
@@ -148,73 +142,142 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://sodimac.falabella.com&#x2F;cdn-cgi&#x2F;bm&#x2F;cv&#x2F;669835187&#x2F;api.js" target="_blank" class="external" rel="noreferrer noopener">sodimac.falabella.com&#x2F;cdn-cgi&#x2F;bm&#x2F;cv&#x2F;669835187&#x2F;api.js</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltd1d2d9179c41d922&#x2F;content.cjs" target="_blank" class="external" rel="noreferrer noopener">assets.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltd1d2d9179c41d922&#x2F;content.cjs</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;blt019384dffb744bb5&#x2F;60c992b60504174955a9729b&#x2F;hr-3-search-desktop.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;blt019384dffb744bb5&#x2F;60c992b60504174955a9729b&#x2F;hr-3-search-desktop.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://www.falabella.com&#x2F;s&#x2F;geo&#x2F;v2&#x2F;districts&#x2F;pe" target="_blank" class="external" rel="noreferrer noopener">www.falabella.com&#x2F;s&#x2F;geo&#x2F;v2&#x2F;districts&#x2F;pe</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.falabella.com&#x2F;static&#x2F;RDF&#x2F;site&#x2F;home&#x2F;promohuincha&#x2F;html&#x2F;img&#x2F;crossbanner-normal-16990-desk.png" target="_blank" class="external" rel="noreferrer noopener">www.falabella.com&#x2F;static&#x2F;RDF&#x2F;site&#x2F;home&#x2F;promohuincha&#x2F;html&#x2F;img&#x2F;crossbanner-normal-16990-desk.png</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltc531eda557c63411&#x2F;cross-components.cjs" target="_blank" class="external" rel="noreferrer noopener">assets.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltc531eda557c63411&#x2F;cross-components.cjs</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltd26bd771774314af&#x2F;626b07662bec9b34ea68a177&#x2F;falabella-com-desktop.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltd26bd771774314af&#x2F;626b07662bec9b34ea68a177&#x2F;falabella-com-desktop.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blt60499304f5cc381c&#x2F;6213f2df23d8fd714a7a43be&#x2F;hr-3-search-desktop.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blt60499304f5cc381c&#x2F;6213f2df23d8fd714a7a43be&#x2F;hr-3-search-desktop.svg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltbbfae160b3e081f6&#x2F;60c9ac28eefdde56c1143c66&#x2F;hr-4-cart-desktop.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltbbfae160b3e081f6&#x2F;60c9ac28eefdde56c1143c66&#x2F;hr-4-cart-desktop.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blt60a291e78f222750&#x2F;633ca6dceded0211051c3be9&#x2F;Aviso-LibroDeReclamaciones.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blt60a291e78f222750&#x2F;633ca6dceded0211051c3be9&#x2F;Aviso-LibroDeReclamaciones.svg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltcee3a90a125e9f24&#x2F;6109acce5d80fd1b92ab7130&#x2F;location-geofinder.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltcee3a90a125e9f24&#x2F;6109acce5d80fd1b92ab7130&#x2F;location-geofinder.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blt39f61920673bfeee&#x2F;610dafadb246281a3005bb30&#x2F;norton-svg-rebranding-desktop_(1).svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blt39f61920673bfeee&#x2F;610dafadb246281a3005bb30&#x2F;norton-svg-rebranding-desktop_(1).svg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltdd4febec3e84e871&#x2F;60c9aca0eefdde56c1143c6e&#x2F;hr-6-falabella.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltdd4febec3e84e871&#x2F;60c9aca0eefdde56c1143c6e&#x2F;hr-6-falabella.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;bltbaf2a1da723c2690&#x2F;62e2ccaece66ad7665f80f01&#x2F;falabella-com-desktop.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;bltbaf2a1da723c2690&#x2F;62e2ccaece66ad7665f80f01&#x2F;falabella-com-desktop.svg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;blt6b84a079db062ffe&#x2F;6127d0af4dd2c76eddbbf2b7&#x2F;Sodimac.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;blt6b84a079db062ffe&#x2F;6127d0af4dd2c76eddbbf2b7&#x2F;Sodimac.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;bltf299bafe179bfa98&#x2F;6213f32c910a6c613c730718&#x2F;hr-4-cart-desktop.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;bltf299bafe179bfa98&#x2F;6213f32c910a6c613c730718&#x2F;hr-4-cart-desktop.svg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;blt92c9788003828968&#x2F;60c9ad90bdf5ed4ae2de2ed7&#x2F;hr-9-tottus.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;blt92c9788003828968&#x2F;60c9ad90bdf5ed4ae2de2ed7&#x2F;hr-9-tottus.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blt01c26941010f85d0&#x2F;62f5a712e0e20410aa83ba36&#x2F;location-geofinder.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blt01c26941010f85d0&#x2F;62f5a712e0e20410aa83ba36&#x2F;location-geofinder.svg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;blta92c5979912f8a1e&#x2F;611c4a6b25695f14a34d8552&#x2F;etiqueta_linio_circulo.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;blta92c5979912f8a1e&#x2F;611c4a6b25695f14a34d8552&#x2F;etiqueta_linio_circulo.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;bltab9230f513c9426f&#x2F;63737dfe7a64f810a2983de9&#x2F;logo-sodimac.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;bltab9230f513c9426f&#x2F;63737dfe7a64f810a2983de9&#x2F;logo-sodimac.svg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt34d59f5b52e53f95&#x2F;bltf259922b91cdea06&#x2F;611c2c7ac44c171460d4de46&#x2F;Imagotipo_Store_125x32@2x.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt34d59f5b52e53f95&#x2F;bltf259922b91cdea06&#x2F;611c2c7ac44c171460d4de46&#x2F;Imagotipo_Store_125x32@2x.png</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blt718a39dfb15a80ed&#x2F;63737dfecca9f010a904b2f6&#x2F;logo-linio.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blt718a39dfb15a80ed&#x2F;63737dfecca9f010a904b2f6&#x2F;logo-linio.svg</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt34d59f5b52e53f95&#x2F;blt574660a1fcad4119&#x2F;611c2c7af74a9e1467740179&#x2F;Isotipo_store_32x32@2x.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt34d59f5b52e53f95&#x2F;blt574660a1fcad4119&#x2F;611c2c7af74a9e1467740179&#x2F;Isotipo_store_32x32@2x.png</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;bltb888ca9cdd6bd926&#x2F;637c6bc40f2f8f10dd0e5ffb&#x2F;logo-falabella.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;bltb888ca9cdd6bd926&#x2F;637c6bc40f2f8f10dd0e5ffb&#x2F;logo-falabella.svg</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sodimac.falabella.com&#x2F;a&#x2F;fa&#x2F;static&#x2F;styles&#x2F;svg&#x2F;cmrIcon.svg" target="_blank" class="external" rel="noreferrer noopener">sodimac.falabella.com&#x2F;a&#x2F;fa&#x2F;static&#x2F;styles&#x2F;svg&#x2F;cmrIcon.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blte9b5b4ba478599b7&#x2F;63737dfe2f1aba10d25a6585&#x2F;logo-tottus.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;bltf4ed0b9a176c126e&#x2F;blte9b5b4ba478599b7&#x2F;63737dfe2f1aba10d25a6585&#x2F;logo-tottus.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;blt7a6d6b2fa47c3d34&#x2F;6102dde661f38746a577ab06&#x2F;norton-svg-rebranding-desktop.svg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;blt7a6d6b2fa47c3d34&#x2F;6102dde661f38746a577ab06&#x2F;norton-svg-rebranding-desktop.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt6fd5b81b8e047411&#x2F;62f686ee18595876bf319833&#x2F;logo-tottus.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt6fd5b81b8e047411&#x2F;62f686ee18595876bf319833&#x2F;logo-tottus.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.falabella.com&#x2F;s&#x2F;geo&#x2F;v2&#x2F;districts&#x2F;cl" target="_blank" class="external" rel="noreferrer noopener">www.falabella.com&#x2F;s&#x2F;geo&#x2F;v2&#x2F;districts&#x2F;cl</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt812cdbe3133d96db&#x2F;62f686f0504b12685edee4bb&#x2F;tottus-mobile.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt812cdbe3133d96db&#x2F;62f686f0504b12685edee4bb&#x2F;tottus-mobile.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.falabella.com&#x2F;airship-header.js" target="_blank" class="external" rel="noreferrer noopener">www.falabella.com&#x2F;airship-header.js</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltc5be8d029644646d&#x2F;63b8a5150dc3963ccff89dea&#x2F;ONSITE.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltc5be8d029644646d&#x2F;63b8a5150dc3963ccff89dea&#x2F;ONSITE.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://assets.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltc531eda557c63411&#x2F;cross-components.cjs" target="_blank" class="external" rel="noreferrer noopener">assets.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltc531eda557c63411&#x2F;cross-components.cjs</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt83b6b310c5916a09&#x2F;63b8a54d62c1ad7a0d4b7aab&#x2F;ONSITE_SAMSUNG.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt83b6b310c5916a09&#x2F;63b8a54d62c1ad7a0d4b7aab&#x2F;ONSITE_SAMSUNG.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sodimac.falabella.com&#x2F;s&#x2F;analytics&#x2F;v1&#x2F;analytics" target="_blank" class="external" rel="noreferrer noopener">sodimac.falabella.com&#x2F;s&#x2F;analytics&#x2F;v1&#x2F;analytics</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt4c944c138f1d48ac&#x2F;63b8a57e013dbb4c68f9a93f&#x2F;ONSITE_LB.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt4c944c138f1d48ac&#x2F;63b8a57e013dbb4c68f9a93f&#x2F;ONSITE_LB.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sodimac.falabella.com&#x2F;cdn-cgi&#x2F;bm&#x2F;cv&#x2F;result" target="_blank" class="external" rel="noreferrer noopener">sodimac.falabella.com&#x2F;cdn-cgi&#x2F;bm&#x2F;cv&#x2F;result</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blted8cb62c9911710c&#x2F;63b8a5ac7f7baa7b8ce598a4&#x2F;ONSITE_JVC.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blted8cb62c9911710c&#x2F;63b8a5ac7f7baa7b8ce598a4&#x2F;ONSITE_JVC.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sodimac.falabella.com&#x2F;acc_sw.js" target="_blank" class="external" rel="noreferrer noopener">sodimac.falabella.com&#x2F;acc_sw.js</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltc4d45b6db69d26d0&#x2F;63b8a3d998b11c3ccecf59a7&#x2F;FCOM_ONSITE_BLACK_WEEK_DESTACADO_SUPERMERCADO_3.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltc4d45b6db69d26d0&#x2F;63b8a3d998b11c3ccecf59a7&#x2F;FCOM_ONSITE_BLACK_WEEK_DESTACADO_SUPERMERCADO_3.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sadobe.falabella.com&#x2F;id" target="_blank" class="external" rel="noreferrer noopener">sadobe.falabella.com&#x2F;id</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt11da2363f232eb24&#x2F;63b8a3d9565c8163c477d4e1&#x2F;FCOM_ONSITE_BLACK_WEEK_DESTACADO_SUPERMERCADO_4.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt11da2363f232eb24&#x2F;63b8a3d9565c8163c477d4e1&#x2F;FCOM_ONSITE_BLACK_WEEK_DESTACADO_SUPERMERCADO_4.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltc5f801df32887e6e&#x2F;desktop1200x836.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt7c5c2f2f888a7cc3&#x2F;bltc5f801df32887e6e&#x2F;desktop1200x836.png</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt2e53088c572baa03&#x2F;63b8a3d9d91eb93e774bcab0&#x2F;FCOM_ONSITE_BLACK_WEEK_DESTACADO_SUPERMERCADO_1.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt2e53088c572baa03&#x2F;63b8a3d9d91eb93e774bcab0&#x2F;FCOM_ONSITE_BLACK_WEEK_DESTACADO_SUPERMERCADO_1.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.falabella.com&#x2F;s&#x2F;browse&#x2F;v1&#x2F;fetchItemDetails&#x2F;cl" target="_blank" class="external" rel="noreferrer noopener">www.falabella.com&#x2F;s&#x2F;browse&#x2F;v1&#x2F;fetchItemDetails&#x2F;cl</a> (seen on 2 websites)</p>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt34200098cad0c92b&#x2F;63b8a3d9013dbb4c68f9a937&#x2F;FCOM_ONSITE_BLACK_WEEK_DESTACADO_SUPERMERCADO_2.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt34200098cad0c92b&#x2F;63b8a3d9013dbb4c68f9a937&#x2F;FCOM_ONSITE_BLACK_WEEK_DESTACADO_SUPERMERCADO_2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt3eab2549eaa8de3b&#x2F;63af5f07aead7810d65725ec&#x2F;ONSITE_NOVEDADES_MOTOROLA.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt3eab2549eaa8de3b&#x2F;63af5f07aead7810d65725ec&#x2F;ONSITE_NOVEDADES_MOTOROLA.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt06aac77de1a25148&#x2F;63af5f35770fe14a53475338&#x2F;PANET%C3%93N_ONSITE.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt06aac77de1a25148&#x2F;63af5f35770fe14a53475338&#x2F;PANET%C3%93N_ONSITE.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blta2f9baa74f6451b1&#x2F;63af5f56747d4810c89bbef6&#x2F;AROMATERAPIA_ONSITE.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blta2f9baa74f6451b1&#x2F;63af5f56747d4810c89bbef6&#x2F;AROMATERAPIA_ONSITE.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blta4b1d2295d8261ca&#x2F;63af5f8d89d0f01162721331&#x2F;GIBSON_ONSITE.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blta4b1d2295d8261ca&#x2F;63af5f8d89d0f01162721331&#x2F;GIBSON_ONSITE.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltbbba2418daaa88bb&#x2F;Onboarding%20desktop" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltbbba2418daaa88bb&#x2F;Onboarding%20desktop</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt46b7b4ccdf9a7bfd&#x2F;63b4b6d6dda35710c1e2be04&#x2F;ONSITE-CINTILLO-FAZIL.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt46b7b4ccdf9a7bfd&#x2F;63b4b6d6dda35710c1e2be04&#x2F;ONSITE-CINTILLO-FAZIL.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt07293e7d5dc5e4ec&#x2F;63b8bc937d45377a0778c601&#x2F;FCOM_ONSITE_BB_LB.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt07293e7d5dc5e4ec&#x2F;63b8bc937d45377a0778c601&#x2F;FCOM_ONSITE_BB_LB.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt02c059f9440c1e50&#x2F;63a3925cc3f07f10bb2e4b03&#x2F;2560_x_260_FAZIL.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt02c059f9440c1e50&#x2F;63a3925cc3f07f10bb2e4b03&#x2F;2560_x_260_FAZIL.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltd549c352b67a3f98&#x2F;63acc08301225710c8c97c3a&#x2F;FCOM-3-ICONOS-A%C3%91O-NUEVO_PLAYA_RECTANGULAR.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltd549c352b67a3f98&#x2F;63acc08301225710c8c97c3a&#x2F;FCOM-3-ICONOS-A%C3%91O-NUEVO_PLAYA_RECTANGULAR.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt3111c8e752be7a7c&#x2F;63acc0843879252f861ffe95&#x2F;FCOM-3-ICONOS-A%C3%91O-NUEVO_VESTUARIO_RECTANGULAR.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt3111c8e752be7a7c&#x2F;63acc0843879252f861ffe95&#x2F;FCOM-3-ICONOS-A%C3%91O-NUEVO_VESTUARIO_RECTANGULAR.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt38d1439c107d159d&#x2F;6396c1093b5f412f83e8e14e&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_LICORES.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt38d1439c107d159d&#x2F;6396c1093b5f412f83e8e14e&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_LICORES.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blta2042affaf7ec0c1&#x2F;6396c1092bf23a10a0b368ee&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_ABARROTES.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blta2042affaf7ec0c1&#x2F;6396c1092bf23a10a0b368ee&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_ABARROTES.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltaad60970167c2366&#x2F;63acc08381b6d37de803bf94&#x2F;FCOM-3-ICONOS-A%C3%91O-NUEVO_BLOQUEADOR_RECTANGULAR.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltaad60970167c2366&#x2F;63acc08381b6d37de803bf94&#x2F;FCOM-3-ICONOS-A%C3%91O-NUEVO_BLOQUEADOR_RECTANGULAR.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blte888e4732927f2e0&#x2F;6396c109dd9cc310b3158b26&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_ELECTRO.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blte888e4732927f2e0&#x2F;6396c109dd9cc310b3158b26&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_ELECTRO.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltdfeca113caa5a5ce&#x2F;6396c1093788c610b2906dbc&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_TELEVISORES.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltdfeca113caa5a5ce&#x2F;6396c1093788c610b2906dbc&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_TELEVISORES.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltcbb66c49f5a1d691&#x2F;6396c10a96e3481ce89ecac6&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_JUGUETES.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltcbb66c49f5a1d691&#x2F;6396c10a96e3481ce89ecac6&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_JUGUETES.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltb984ea9b2593b1a8&#x2F;639cb64e9d04dd206dffab60&#x2F;FCOM-BOTON-BICI.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltb984ea9b2593b1a8&#x2F;639cb64e9d04dd206dffab60&#x2F;FCOM-BOTON-BICI.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt03f58a5158b4d7ff&#x2F;6396c109cf892c317abfb2f1&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_DORMITORIO.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt03f58a5158b4d7ff&#x2F;6396c109cf892c317abfb2f1&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_DORMITORIO.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt98ff15c9ac30e33e&#x2F;6396c109f60f2710822a780f&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_COMPUTO.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt98ff15c9ac30e33e&#x2F;6396c109f60f2710822a780f&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_COMPUTO.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt69d75130b0f97e6a&#x2F;6396c109dff6a511e76408fb&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_MASCOTAS.png" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;blt69d75130b0f97e6a&#x2F;6396c109dff6a511e76408fb&#x2F;FCOM-BOTONES-CATEGORIA-29_RECTANGULAR_MASCOTAS.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltbd45ba3df30fe4f7&#x2F;63b8a653013dbb4c68f9a943&#x2F;FCOM_ONSITE_BB_TV.jpg" target="_blank" class="external" rel="noreferrer noopener">images.falabella.com&#x2F;v3&#x2F;assets&#x2F;blt422ac29cebae1d64&#x2F;bltbd45ba3df30fe4f7&#x2F;63b8a653013dbb4c68f9a943&#x2F;FCOM_ONSITE_BB_TV.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.falabella.com&#x2F;s&#x2F;browse&#x2F;v1&#x2F;fetchItemDetails&#x2F;co" target="_blank" class="external" rel="noreferrer noopener">www.falabella.com&#x2F;s&#x2F;browse&#x2F;v1&#x2F;fetchItemDetails&#x2F;co</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.falabella.com&#x2F;s&#x2F;browse&#x2F;v1&#x2F;fetchItemDetails&#x2F;pe" target="_blank" class="external" rel="noreferrer noopener">www.falabella.com&#x2F;s&#x2F;browse&#x2F;v1&#x2F;fetchItemDetails&#x2F;pe</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -224,10 +287,25 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://sodimac.cl" target="_blank" class="external">sodimac.cl</a>
+            <a href="http://falabella.com.pe" target="_blank" class="external">falabella.com.pe</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.sodimac.cl" target="_blank" class="external">www.sodimac.cl</a>
+            <a href="http://tottus.falabella.com.pe" target="_blank" class="external">tottus.falabella.com.pe</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.falabella.com.pe" target="_blank" class="external">www.falabella.com.pe</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tottus.com.pe" target="_blank" class="external">www.tottus.com.pe</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.falabella.com.co" target="_blank" class="external">www.falabella.com.co</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tienda.falabella.com.pe" target="_blank" class="external">tienda.falabella.com.pe</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://falabella.com.co" target="_blank" class="external">falabella.com.co</a>
         </li>
     </ul>
 </div>

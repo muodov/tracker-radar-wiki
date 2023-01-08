@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - d28of4jgobvr79.cloudfront.net</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "d28of4jgobvr79.cloudfront.net",
+        history: [{"date":"selenium-crux","prevalence":0.0000408,"sites":3,"fingerprinting":2,"cookies":0}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/d28of4jgobvr79.cloudfront.net.ico' width="32" height="32" class='inline-block' /> d28of4jgobvr79.cloudfront.net</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <a href="../entities/Amazon Technologies, Inc..html">Amazon Technologies, Inc.</a>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;help&#x2F;customer&#x2F;display.html?nodeId&#x3D;468496" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;help&#x2F;customer&#x2F;display.html?nodeId&#x3D;468496</a>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;8663<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> <a href="../categories/CDN.html">CDN</a>, 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Image</span>,
+                    <span>Font</span>,
+                    <span>Script</span>,
+                    <span>Stylesheet</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/d28of4jgobvr79.cloudfront.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Element.prototype.getClientRects</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;img&#x2F;logos&#x2F;IKEA_logo.svg" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;img&#x2F;logos&#x2F;IKEA_logo.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;NotoIKEALatin&#x2F;NotoIKEALatin-Regular.woff" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;NotoIKEALatin&#x2F;NotoIKEALatin-Regular.woff</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;ikea-icons&#x2F;ikea-icons.woff" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;ikea-icons&#x2F;ikea-icons.woff</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;ikea-pictograms&#x2F;ikea-pictograms.woff" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;ikea-pictograms&#x2F;ikea-pictograms.woff</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;NotoIKEALatin&#x2F;NotoIKEALatin-Bold.woff" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;NotoIKEALatin&#x2F;NotoIKEALatin-Bold.woff</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;jquery.min.js,qv&#x3D;3r85.pagespeed.jm.Y8jX7FH_5H.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;jquery.min.js,qv&#x3D;3r85.pagespeed.jm.Y8jX7FH_5H.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;bootstrap&#x2F;docs.min.js,qv&#x3D;3r85.pagespeed.jm.iRG9Dl5YRy.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;bootstrap&#x2F;docs.min.js,qv&#x3D;3r85.pagespeed.jm.iRG9Dl5YRy.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;bootstrap&#x2F;popper.min.js,qv&#x3D;3r85.pagespeed.jm.bkCCOmq-wV.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;bootstrap&#x2F;popper.min.js,qv&#x3D;3r85.pagespeed.jm.bkCCOmq-wV.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;bootstrap&#x2F;bootstrap.min.js,qv&#x3D;3r85.pagespeed.jm.Rd0OyYl9HU.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;bootstrap&#x2F;bootstrap.min.js,qv&#x3D;3r85.pagespeed.jm.Rd0OyYl9HU.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Sidenav.js,qv&#x3D;3r85.pagespeed.jm.pz_eYqgNw9.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Sidenav.js,qv&#x3D;3r85.pagespeed.jm.pz_eYqgNw9.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;favorites.js,qv&#x3D;3r85.pagespeed.jm.cc3XOXDkIe.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;favorites.js,qv&#x3D;3r85.pagespeed.jm.cc3XOXDkIe.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;baltics&#x2F;js&#x2F;Modal.js,qv&#x3D;3r85.pagespeed.jm.hofjTzvP0C.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;baltics&#x2F;js&#x2F;Modal.js,qv&#x3D;3r85.pagespeed.jm.hofjTzvP0C.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;url.js,qv&#x3D;3r85.pagespeed.jm.zFtHv9QgkO.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;url.js,qv&#x3D;3r85.pagespeed.jm.zFtHv9QgkO.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Main.js,qv&#x3D;3r85.pagespeed.jm.kUPkGAKZl1.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Main.js,qv&#x3D;3r85.pagespeed.jm.kUPkGAKZl1.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;busyLoad&#x2F;busyLoad.min.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;busyLoad&#x2F;busyLoad.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;icheck&#x2F;icheck.min.js,qv&#x3D;3r85.pagespeed.jm.FyEPA9IFxB.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;icheck&#x2F;icheck.min.js,qv&#x3D;3r85.pagespeed.jm.FyEPA9IFxB.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Breadcrumb.js,qv&#x3D;3r85.pagespeed.jm.eBUOSPM04r.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Breadcrumb.js,qv&#x3D;3r85.pagespeed.jm.eBUOSPM04r.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;anchorOffset.js,qv&#x3D;3r85.pagespeed.jm.KEwXydTBK3.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;anchorOffset.js,qv&#x3D;3r85.pagespeed.jm.KEwXydTBK3.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Logout.js,qv&#x3D;3r85.pagespeed.jm.dMT0MX6PUk.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Logout.js,qv&#x3D;3r85.pagespeed.jm.dMT0MX6PUk.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;moment-with-locales.min.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;moment-with-locales.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;GEcommerce.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;GEcommerce.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;cloudinary&#x2F;jquery.cloudinary.js,qv&#x3D;3r85.pagespeed.jm.1qyw_Q9WqS.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;cloudinary&#x2F;jquery.cloudinary.js,qv&#x3D;3r85.pagespeed.jm.1qyw_Q9WqS.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;jquery-ui.min.js,qv&#x3D;3r85.pagespeed.jm.kCNLEvPHkN.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;jquery-ui.min.js,qv&#x3D;3r85.pagespeed.jm.kCNLEvPHkN.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Searcher.js,qv&#x3D;3r85.pagespeed.jm.6eHqU96rXK.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Searcher.js,qv&#x3D;3r85.pagespeed.jm.6eHqU96rXK.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;slick&#x2F;slick.min.js,qv&#x3D;3r85.pagespeed.jm.7-LcV797cx.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;slick&#x2F;slick.min.js,qv&#x3D;3r85.pagespeed.jm.7-LcV797cx.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Messages.js,qv&#x3D;3r85.pagespeed.jm.yAukyxBy_N.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Messages.js,qv&#x3D;3r85.pagespeed.jm.yAukyxBy_N.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;picturefill&#x2F;picturefill.min.js,qv&#x3D;3r85.pagespeed.jm.jODJQk8Ma2.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;picturefill&#x2F;picturefill.min.js,qv&#x3D;3r85.pagespeed.jm.jODJQk8Ma2.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;lazySizes&#x2F;ls.rias.min.js.pagespeed.jm.rtInH54Lk4.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;lazySizes&#x2F;ls.rias.min.js.pagespeed.jm.rtInH54Lk4.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;lazySizes&#x2F;lazysizes.min.js.pagespeed.jm.ecpCTIaZ4W.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;lazySizes&#x2F;lazysizes.min.js.pagespeed.jm.ecpCTIaZ4W.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;lazySizes&#x2F;ls.optimumx.min.js.pagespeed.jm.W9Y7fS_xQq.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;vendor&#x2F;lazySizes&#x2F;ls.optimumx.min.js.pagespeed.jm.W9Y7fS_xQq.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;plugins&#x2F;polygons&#x2F;vendor&#x2F;raphaeljs&#x2F;raphael.min.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;plugins&#x2F;polygons&#x2F;vendor&#x2F;raphaeljs&#x2F;raphael.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;plugins&#x2F;polygons&#x2F;Polygon.js,qv&#x3D;3r85.pagespeed.jm.px_-UyjLAj.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;plugins&#x2F;polygons&#x2F;Polygon.js,qv&#x3D;3r85.pagespeed.jm.px_-UyjLAj.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Slick.js,qv&#x3D;3r85.pagespeed.jm.MUqvvXpONE.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;Slick.js,qv&#x3D;3r85.pagespeed.jm.MUqvvXpONE.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;selectAlternative.js,qv&#x3D;3r85.pagespeed.jm.Czz7BdXAF7.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;selectAlternative.js,qv&#x3D;3r85.pagespeed.jm.Czz7BdXAF7.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;quantityCounter.js,qv&#x3D;3r85.pagespeed.jm.bfzAqpgZ9T.js" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;js&#x2F;quantityCounter.js,qv&#x3D;3r85.pagespeed.jm.bfzAqpgZ9T.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;NotoIKEALatin&#x2F;NotoIKEALatin-BoldItalic.woff" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;NotoIKEALatin&#x2F;NotoIKEALatin-BoldItalic.woff</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;A.main_baltics.css,qv&#x3D;3r85.pagespeed.cf.b-GgqSf6mZ.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;A.main_baltics.css,qv&#x3D;3r85.pagespeed.cf.b-GgqSf6mZ.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;font-awesome&#x2F;A.font-awesome.css,qv&#x3D;3r85.pagespeed.cf.na33KwNBaS.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;font-awesome&#x2F;A.font-awesome.css,qv&#x3D;3r85.pagespeed.cf.na33KwNBaS.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.ikea-pictograms.css,qv&#x3D;3r85.pagespeed.cf.wnd5pi4R_e.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.ikea-pictograms.css,qv&#x3D;3r85.pagespeed.cf.wnd5pi4R_e.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.ikea-icons.css,qv&#x3D;3r85.pagespeed.cf.-6Aam5gg2B.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.ikea-icons.css,qv&#x3D;3r85.pagespeed.cf.-6Aam5gg2B.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.ikea-fundament-icons.css,qv&#x3D;3r85.pagespeed.cf.yb7x36BGMN.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.ikea-fundament-icons.css,qv&#x3D;3r85.pagespeed.cf.yb7x36BGMN.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.buttons.css,qv&#x3D;3r85.pagespeed.cf.q6hENUg2y3.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.buttons.css,qv&#x3D;3r85.pagespeed.cf.q6hENUg2y3.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.sidenav_baltics.css,qv&#x3D;3r85.pagespeed.cf.fkfErhg4JF.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.sidenav_baltics.css,qv&#x3D;3r85.pagespeed.cf.fkfErhg4JF.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.modal.css,qv&#x3D;3r85.pagespeed.cf.M6t3kzc1e1.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.modal.css,qv&#x3D;3r85.pagespeed.cf.M6t3kzc1e1.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.prices_baltics.css,qv&#x3D;3r85.pagespeed.cf.ii4RR50nwJ.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.prices_baltics.css,qv&#x3D;3r85.pagespeed.cf.ii4RR50nwJ.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;busyLoad&#x2F;A.busyLoad.css,qv&#x3D;3r85.pagespeed.cf.mPJfSwkHGQ.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;busyLoad&#x2F;A.busyLoad.css,qv&#x3D;3r85.pagespeed.cf.mPJfSwkHGQ.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;icheck&#x2F;A.icheck_custom.css,qv&#x3D;3r85.pagespeed.cf.BMaXGUfkAj.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;icheck&#x2F;A.icheck_custom.css,qv&#x3D;3r85.pagespeed.cf.BMaXGUfkAj.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.flag-sprites.css,qv&#x3D;3r85.pagespeed.cf.Qr-34CaeIw.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.flag-sprites.css,qv&#x3D;3r85.pagespeed.cf.Qr-34CaeIw.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;slick&#x2F;A.slick.css,qv&#x3D;3r85.pagespeed.cf.mbJRuCtr-S.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;slick&#x2F;A.slick.css,qv&#x3D;3r85.pagespeed.cf.mbJRuCtr-S.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;slick&#x2F;A.slick-theme-custom.css,qv&#x3D;3r85.pagespeed.cf._2KkNyVUMd.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;slick&#x2F;A.slick-theme-custom.css,qv&#x3D;3r85.pagespeed.cf._2KkNyVUMd.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;slick&#x2F;A.sliderMain.css,qv&#x3D;3r85.pagespeed.cf.Tki2BEEzE6.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;slick&#x2F;A.sliderMain.css,qv&#x3D;3r85.pagespeed.cf.Tki2BEEzE6.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;jqueryui&#x2F;A.jquery-ui-custom.css,qv&#x3D;3r85.pagespeed.cf.EB-WV7MM4X.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;jqueryui&#x2F;A.jquery-ui-custom.css,qv&#x3D;3r85.pagespeed.cf.EB-WV7MM4X.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;views&#x2F;A.socialNetworks.css,qv&#x3D;3r85.pagespeed.cf.7LEIVmz9pZ.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;views&#x2F;A.socialNetworks.css,qv&#x3D;3r85.pagespeed.cf.7LEIVmz9pZ.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.inputs.css,qv&#x3D;3r85.pagespeed.cf.Q51jMTRAUl.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.inputs.css,qv&#x3D;3r85.pagespeed.cf.Q51jMTRAUl.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.warnings.css,qv&#x3D;3r85.pagespeed.cf._5WFBb9oHy.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.warnings.css,qv&#x3D;3r85.pagespeed.cf._5WFBb9oHy.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;views&#x2F;A.homepage.css,qv&#x3D;3r85.pagespeed.cf.q68paOVqQJ.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;views&#x2F;A.homepage.css,qv&#x3D;3r85.pagespeed.cf.q68paOVqQJ.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;views&#x2F;A.bestDealsBlock.css,qv&#x3D;3r85.pagespeed.cf.H-Iia05LVB.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;views&#x2F;A.bestDealsBlock.css,qv&#x3D;3r85.pagespeed.cf.H-Iia05LVB.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;views&#x2F;A.newIdeasBlock.css,qv&#x3D;3r85.pagespeed.cf.dOrBTVaxse.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;views&#x2F;A.newIdeasBlock.css,qv&#x3D;3r85.pagespeed.cf.dOrBTVaxse.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;flipclock&#x2F;A.flipclock.css,qv&#x3D;3r85.pagespeed.cf.KFfmzedsrI.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;vendor&#x2F;flipclock&#x2F;A.flipclock.css,qv&#x3D;3r85.pagespeed.cf.KFfmzedsrI.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.productList.css,qv&#x3D;3r85.pagespeed.cf.Nvj9Nl75ql.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.productList.css,qv&#x3D;3r85.pagespeed.cf.Nvj9Nl75ql.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.productInfo.css,qv&#x3D;3r85.pagespeed.cf.eW9rykIJn7.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.productInfo.css,qv&#x3D;3r85.pagespeed.cf.eW9rykIJn7.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.itemInfo_baltics.css,qv&#x3D;3r85.pagespeed.cf.iUZ4Xk24mA.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.itemInfo_baltics.css,qv&#x3D;3r85.pagespeed.cf.iUZ4Xk24mA.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.energyTag.css,qv&#x3D;3r85.pagespeed.cf.wgOI4cOZ7G.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.energyTag.css,qv&#x3D;3r85.pagespeed.cf.wgOI4cOZ7G.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.template_item_block.css,qv&#x3D;3r85.pagespeed.cf.QpHCbFpcSF.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.template_item_block.css,qv&#x3D;3r85.pagespeed.cf.QpHCbFpcSF.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.template_item_selector.css,qv&#x3D;3r85.pagespeed.cf.jfnJzfByeN.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.template_item_selector.css,qv&#x3D;3r85.pagespeed.cf.jfnJzfByeN.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.template_item_versions.css,qv&#x3D;3r85.pagespeed.cf.WuGv27G3rG.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.template_item_versions.css,qv&#x3D;3r85.pagespeed.cf.WuGv27G3rG.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.template_item_counter.css,qv&#x3D;3r85.pagespeed.cf.u_ur-REGMC.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.template_item_counter.css,qv&#x3D;3r85.pagespeed.cf.u_ur-REGMC.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;layout&#x2F;A.headerMain.css,qv&#x3D;3r85.pagespeed.cf.8qrXkBnQMv.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;layout&#x2F;A.headerMain.css,qv&#x3D;3r85.pagespeed.cf.8qrXkBnQMv.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.searcher.css,qv&#x3D;3r85.pagespeed.cf.la1XRDx3ig.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;components&#x2F;A.searcher.css,qv&#x3D;3r85.pagespeed.cf.la1XRDx3ig.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;layout&#x2F;A.footerMainLinks.css,qv&#x3D;3r85.pagespeed.cf.YBWDEGJ5Lg.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;layout&#x2F;A.footerMainLinks.css,qv&#x3D;3r85.pagespeed.cf.YBWDEGJ5Lg.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;layout&#x2F;A.footerMainLegal.css,qv&#x3D;3r85.pagespeed.cf.fGgShZ0Nba.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;layout&#x2F;A.footerMainLegal.css,qv&#x3D;3r85.pagespeed.cf.fGgShZ0Nba.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;plugins&#x2F;polygons&#x2F;A.polygons.css,qv&#x3D;3r85.pagespeed.cf.u18mpWlBFC.css" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;css&#x2F;plugins&#x2F;polygons&#x2F;A.polygons.css,qv&#x3D;3r85.pagespeed.cf.u18mpWlBFC.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;font-awesome&#x2F;fontawesome-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">d28of4jgobvr79.cloudfront.net&#x2F;webroot&#x2F;fonts&#x2F;font-awesome&#x2F;fontawesome-webfont.woff2</a> (seen on 3 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://ikea.lt" target="_blank" class="external">ikea.lt</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ikea.ee" target="_blank" class="external">www.ikea.ee</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ikea.lv" target="_blank" class="external">www.ikea.lv</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

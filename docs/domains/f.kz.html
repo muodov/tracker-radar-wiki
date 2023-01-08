@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - f.kz</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "f.kz",
+        history: [{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":1,"cookies":0.0000272}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/f.kz.ico' width="32" height="32" class='inline-block' /> f.kz</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;11483<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Stylesheet</span>,
+                    <span>Image</span>,
+                    <span>Script</span>,
+                    <span>Font</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/f.kz.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>cdn</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>console.memory</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;css&#x2F;84f46b9e229d6437120febce241f8c44-202212121224.compiled.css" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;css&#x2F;84f46b9e229d6437120febce241f8c44-202212121224.compiled.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;css&#x2F;action_new.css" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;css&#x2F;action_new.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;bg-tr.gif" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;bg-tr.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;cards&#x2F;cash-1.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;cards&#x2F;cash-1.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;cards&#x2F;visa-master-card.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;cards&#x2F;visa-master-card.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;cards&#x2F;kaspi-logo-r.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;cards&#x2F;kaspi-logo-r.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;1200x500.gif" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;1200x500.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672978614_janeke-05-01.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672978614_janeke-05-01.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1673005516_tripchat-06-01.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1673005516_tripchat-06-01.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672979083_kotanyi-05-01.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672979083_kotanyi-05-01.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672892803_snowsnow0501.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672892803_snowsnow0501.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672634259_84d7c413-bff6-461a-8ce4-73b4810dfab3.jpeg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672634259_84d7c413-bff6-461a-8ce4-73b4810dfab3.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672983601_ol-lite0601.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672983601_ol-lite0601.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672830517_colgate12.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672830517_colgate12.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1673006808_mini110.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1673006808_mini110.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672387217_mini-banner31.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672387217_mini-banner31.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672387676_mini56.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672387676_mini56.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1667357936_mini54.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1667357936_mini54.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672386376_mini-bannersvechi2.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672386376_mini-bannersvechi2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672387319_minibanner-sladosti2.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672387319_minibanner-sladosti2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672831834_dsctp.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672831834_dsctp.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672831706_tian-guan-ci-fu-desct-04-01.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672831706_tian-guan-ci-fu-desct-04-01.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1669784138_toys-new.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1669784138_toys-new.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1669117041_kill.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1669117041_kill.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1669117043_doctor-green.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1669117043_doctor-green.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1669117045_dr-althea.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1669117045_dr-althea.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1665048181_bondibon21.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1665048181_bondibon21.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1662012556_latuage.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1662012556_latuage.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672915714_gorizont1.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1672915714_gorizont1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1668481815_neon-book-14-11.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1668481815_neon-book-14-11.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;1663661373_sushilka.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;1663661373_sushilka.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;no_photo_240.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;no_photo_240.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;dark-hack.gif" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;dark-hack.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;js&#x2F;84f46b9e229d6437120febce241f8c44-202212121224.compiled.js" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;js&#x2F;84f46b9e229d6437120febce241f8c44-202212121224.compiled.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;ny-2021-background-pattern.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;ny-2021-background-pattern.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;new_header_2015&#x2F;top_arrow.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;new_header_2015&#x2F;top_arrow.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;css&#x2F;fonts&#x2F;Roboto-Condensed.woff" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;css&#x2F;fonts&#x2F;Roboto-Condensed.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;css&#x2F;fonts&#x2F;Roboto-Bold.woff" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;css&#x2F;fonts&#x2F;Roboto-Bold.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;css&#x2F;fonts&#x2F;Roboto.woff" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;css&#x2F;fonts&#x2F;Roboto.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_58-2107200687.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_58-2107200687.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_28-38816407.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_28-38816407.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_16-345542684.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_16-345542684.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_30-1821939820.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_30-1821939820.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_11-792965028.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_11-792965028.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;b&#x2F;logo-ny-2021.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;b&#x2F;logo-ny-2021.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;no_photo120.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;no_photo120.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;new_header_2015&#x2F;cart_new.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;new_header_2015&#x2F;cart_new.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;favorites&#x2F;heart-stroke.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;favorites&#x2F;heart-stroke.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;new_stars.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;new_stars.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;comments_icon.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;comments_icon.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;img&#x2F;app-icons.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;img&#x2F;app-icons.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;css&#x2F;fonts&#x2F;Roboto-Light.woff" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;css&#x2F;fonts&#x2F;Roboto-Light.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_19-1313486881.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_19-1313486881.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_13-2054761606.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_13-2054761606.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_56-703026246.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_56-703026246.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_57-70785927.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_57-70785927.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_12-399019684.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_12-399019684.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_15-885577716.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_15-885577716.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_14-926942511.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_14-926942511.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_27-7347575.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_27-7347575.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_24-541204732.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_24-541204732.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_26-1471345813.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_26-1471345813.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_29-1948524198.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_29-1948524198.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_17-2069374264.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_17-2069374264.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_18-1544518231.png" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;media&#x2F;menu&#x2F;icon_18-1544518231.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;prod&#x2F;2083&#x2F;2082080_550.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;prod&#x2F;2083&#x2F;2082080_550.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;prod&#x2F;2331&#x2F;2330505_550.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;prod&#x2F;2331&#x2F;2330505_550.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;prod&#x2F;1717&#x2F;1716883_550.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;prod&#x2F;1717&#x2F;1716883_550.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;prod&#x2F;2555&#x2F;2554147_550.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;prod&#x2F;2555&#x2F;2554147_550.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;prod&#x2F;1523&#x2F;1522642_550.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;prod&#x2F;1523&#x2F;1522642_550.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.f.kz&#x2F;prod&#x2F;1935&#x2F;1934199_550.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.f.kz&#x2F;prod&#x2F;1935&#x2F;1934199_550.jpg</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://flip.kz" target="_blank" class="external">flip.kz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.flip.kz" target="_blank" class="external">www.flip.kz</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - krav242.xyz</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "krav242.xyz",
+        history: [{"date":"selenium-crux","prevalence":0.0000953,"sites":7,"fingerprinting":1,"cookies":0.0000953}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/krav242.xyz.ico' width="32" height="32" class='inline-block' /> krav242.xyz</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;5257<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.01&#37; (7 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.01&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/krav242.xyz.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;css&#x2F;default.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;css&#x2F;default.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;css&#x2F;apms.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;css&#x2F;apms.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;plugin&#x2F;apms&#x2F;owlcarousel2&#x2F;assets&#x2F;owl.carousel.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;plugin&#x2F;apms&#x2F;owlcarousel2&#x2F;assets&#x2F;owl.carousel.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;bs3&#x2F;css&#x2F;bootstrap.min.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;bs3&#x2F;css&#x2F;bootstrap.min.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;css&#x2F;thema.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;css&#x2F;thema.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;basic-banner&#x2F;widget.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;basic-banner&#x2F;widget.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-post-gallery&#x2F;widget.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-post-gallery&#x2F;widget.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-outlogin&#x2F;widget.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-outlogin&#x2F;widget.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-post-slider&#x2F;widget.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-post-slider&#x2F;widget.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-post-list&#x2F;widget.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-post-list&#x2F;widget.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-member-slider&#x2F;widget.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-member-slider&#x2F;widget.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-sidebar&#x2F;widget.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-sidebar&#x2F;widget.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;colorset&#x2F;Basic-Amina&#x2F;colorset.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;colorset&#x2F;Basic-Amina&#x2F;colorset.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;plugin&#x2F;mc&#x2F;css&#x2F;mc.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;plugin&#x2F;mc&#x2F;css&#x2F;mc.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;js&#x2F;jquery-1.11.3.min.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;js&#x2F;jquery-1.11.3.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;js&#x2F;jquery-migrate-1.2.1.min.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;js&#x2F;jquery-migrate-1.2.1.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;lang&#x2F;korean&#x2F;lang.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;lang&#x2F;korean&#x2F;lang.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;js&#x2F;common.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;js&#x2F;common.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;js&#x2F;wrest.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;js&#x2F;wrest.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;js&#x2F;placeholders.min.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;js&#x2F;placeholders.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;js&#x2F;apms.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;js&#x2F;apms.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;js&#x2F;font-awesome&#x2F;css&#x2F;font-awesome.min.css" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;js&#x2F;font-awesome&#x2F;css&#x2F;font-awesome.min.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;plugin&#x2F;apms&#x2F;owlcarousel2&#x2F;owl.carousel.min.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;plugin&#x2F;apms&#x2F;owlcarousel2&#x2F;owl.carousel.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;plugin&#x2F;mc&#x2F;script.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;plugin&#x2F;mc&#x2F;script.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;plugin&#x2F;mc&#x2F;3thparty&#x2F;nouislider.min.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;plugin&#x2F;mc&#x2F;3thparty&#x2F;nouislider.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;js&#x2F;thema.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;js&#x2F;thema.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;main_logo.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;main_logo.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;logo-top.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;logo-top.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;js&#x2F;font-awesome&#x2F;fonts&#x2F;fontawesome-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;js&#x2F;font-awesome&#x2F;fonts&#x2F;fontawesome-webfont.woff2</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;free_kor_av&#x2F;thumb-2890175031_jaSHZwmR_e16544a110c496f33926422b9b2b13a6d5f4c370_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;free_kor_av&#x2F;thumb-2890175031_jaSHZwmR_e16544a110c496f33926422b9b2b13a6d5f4c370_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;free_kor_av&#x2F;thumb-2890191421_tDbSVnXF_078d5a87e1062f2b1069e802aba278af1e142cf9_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;free_kor_av&#x2F;thumb-2890191421_tDbSVnXF_078d5a87e1062f2b1069e802aba278af1e142cf9_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;banner&#x2F;pt4.gif" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;banner&#x2F;pt4.gif</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;banner&#x2F;bam2.gif" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;banner&#x2F;bam2.gif</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;banner&#x2F;drill2.gif" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;banner&#x2F;drill2.gif</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;free_kor_av&#x2F;thumb-2890154576_J0a3zIv6_514486b084a75053bdad17ae26eb9e29126f4090_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;free_kor_av&#x2F;thumb-2890154576_J0a3zIv6_514486b084a75053bdad17ae26eb9e29126f4090_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;free_kor_av&#x2F;thumb-2890175043_esWopmnr_6199bf08729dc286829543b37c86c4b87057e3a4_400x300.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;free_kor_av&#x2F;thumb-2890175043_esWopmnr_6199bf08729dc286829543b37c86c4b87057e3a4_400x300.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;kor_av&#x2F;thumb-2890219021_Ecp3zoRX_a079a461c39f9e2109ee3e4231f8f54cf517a080_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;kor_av&#x2F;thumb-2890219021_Ecp3zoRX_a079a461c39f9e2109ee3e4231f8f54cf517a080_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;kor_av&#x2F;thumb-2890154577_NHVLKY80_dacfeac7c5393528bfb61dfa3639e8920679f8b1_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;kor_av&#x2F;thumb-2890154577_NHVLKY80_dacfeac7c5393528bfb61dfa3639e8920679f8b1_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;kor_av&#x2F;thumb-2890191401_Yp7m8DkR_8d2cac1c19f849b20bf14b1d9a23a564796e02ab_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;kor_av&#x2F;thumb-2890191401_Yp7m8DkR_8d2cac1c19f849b20bf14b1d9a23a564796e02ab_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;kor_av&#x2F;thumb-2890191373_BT68auNt_d60c8b4567cd33e8b6f4b862fd36d497144cdd47_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;kor_av&#x2F;thumb-2890191373_BT68auNt_d60c8b4567cd33e8b6f4b862fd36d497144cdd47_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;vip_kor_av&#x2F;thumb-2890219010_ELOcwIB7_d1481f0dab1a33ff450d623b9e371454c15496b6_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;vip_kor_av&#x2F;thumb-2890219010_ELOcwIB7_d1481f0dab1a33ff450d623b9e371454c15496b6_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;vip_kor_av&#x2F;thumb-2890154602_Bwp3IgQP_ed0ce4393e74c88904caaa602048885b411e9b65_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;vip_kor_av&#x2F;thumb-2890154602_Bwp3IgQP_ed0ce4393e74c88904caaa602048885b411e9b65_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;yound_av&#x2F;thumb-2890191403_XzlmFMsv_c974cfb47c6bce2504a6401eaebd2e2b7fd23c21_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;yound_av&#x2F;thumb-2890191403_XzlmFMsv_c974cfb47c6bce2504a6401eaebd2e2b7fd23c21_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;yound_av&#x2F;thumb-2890175039_tSKeuUM0_a2055f8b15dc3c32f0604808ab55b9d3030a46d5_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;yound_av&#x2F;thumb-2890175039_tSKeuUM0_a2055f8b15dc3c32f0604808ab55b9d3030a46d5_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;yound_av&#x2F;thumb-2890174988_l9miSLoK_5188ca8f980c6ab29aeef39e1a7835eede637c89_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;yound_av&#x2F;thumb-2890174988_l9miSLoK_5188ca8f980c6ab29aeef39e1a7835eede637c89_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;vvip_kor_av&#x2F;thumb-2890219032_cP2zxVjh_9c537defb5719c9baf0c6dc7dd8e8b91f0da5c3f_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;vvip_kor_av&#x2F;thumb-2890219032_cP2zxVjh_9c537defb5719c9baf0c6dc7dd8e8b91f0da5c3f_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;vvip_kor_av&#x2F;thumb-2890191403_i1k72XBJ_5fbb0a184a19d7b83793b7f24b8ce9e5db34f664_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;vvip_kor_av&#x2F;thumb-2890191403_i1k72XBJ_5fbb0a184a19d7b83793b7f24b8ce9e5db34f664_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;vvip_kor_av&#x2F;thumb-2890219076_KmZyNCge_0ff636238f4a83363d9e66c154c755a70654ed48_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;vvip_kor_av&#x2F;thumb-2890219076_KmZyNCge_0ff636238f4a83363d9e66c154c755a70654ed48_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;vvip_kor_av&#x2F;thumb-2890219077_fXWvFm4J_9425fb30a1c4158f2dffd0d044bdd86c376d6cdf_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;vvip_kor_av&#x2F;thumb-2890219077_fXWvFm4J_9425fb30a1c4158f2dffd0d044bdd86c376d6cdf_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;onlyfans&#x2F;thumb-2890191447_zknrfENj_7541539386ded132caafc88b7beceb4d2a8d828a_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;onlyfans&#x2F;thumb-2890191447_zknrfENj_7541539386ded132caafc88b7beceb4d2a8d828a_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;onlyfans&#x2F;thumb-2890154509_pc7NekL4_16ec9fcf6c10adee7b1c6310d7d241377c8e1b9b_400x300.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;onlyfans&#x2F;thumb-2890154509_pc7NekL4_16ec9fcf6c10adee7b1c6310d7d241377c8e1b9b_400x300.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;onlyfans&#x2F;thumb-2890219055_6CQDh2lP_bd29993c91fd6ba3083c20cbb2429529f34afee2_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;onlyfans&#x2F;thumb-2890219055_6CQDh2lP_bd29993c91fd6ba3083c20cbb2429529f34afee2_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;onlyfans&#x2F;thumb-1822620185_4vHitha6_e202a8d0f33af6a84cf5b3778b38c59a4e057576_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;onlyfans&#x2F;thumb-1822620185_4vHitha6_e202a8d0f33af6a84cf5b3778b38c59a4e057576_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;pointdl&#x2F;thumb-2890219023_WX4UtlkP_2cf3b13ea25b29bb9abb799d67814b8cd9c7e584_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;pointdl&#x2F;thumb-2890219023_WX4UtlkP_2cf3b13ea25b29bb9abb799d67814b8cd9c7e584_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;pointdl&#x2F;thumb-2890175003_fNPRHnbC_e1f5c390a31c280f07951963f183a932bc3d164b_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;pointdl&#x2F;thumb-2890175003_fNPRHnbC_e1f5c390a31c280f07951963f183a932bc3d164b_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;pointdl&#x2F;thumb-2890198561_JqpAcPsR_d7eb320caedaf9aaa7c7aaff807e8b6a4c9cbad3_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;pointdl&#x2F;thumb-2890198561_JqpAcPsR_d7eb320caedaf9aaa7c7aaff807e8b6a4c9cbad3_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;pointdl&#x2F;thumb-2890154582_2sgAiUHJ_c6b7e5bad157b814b3d605799bdb1c2cca343ec7_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;pointdl&#x2F;thumb-2890154582_2sgAiUHJ_c6b7e5bad157b814b3d605799bdb1c2cca343ec7_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;editor&#x2F;2301&#x2F;thumb-f4ac5eefeeca8335e026b3f0350a8186_1673065852_6246_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;editor&#x2F;2301&#x2F;thumb-f4ac5eefeeca8335e026b3f0350a8186_1673065852_6246_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;chulsa&#x2F;thumb-2372228728_JfCohKm3_5f862e6d408fb2acd8aa1a48e8aad7f38bb33822_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;chulsa&#x2F;thumb-2372228728_JfCohKm3_5f862e6d408fb2acd8aa1a48e8aad7f38bb33822_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;userupload_asia&#x2F;thumb-2890328479_dQZ5iNV9_47217328ca12725226af7f65553e34ae79324643_400x300.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;userupload_asia&#x2F;thumb-2890328479_dQZ5iNV9_47217328ca12725226af7f65553e34ae79324643_400x300.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;editor&#x2F;2301&#x2F;thumb-8ed2a4645e354ab35310ea83a7378e6e_1673079014_3781_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;editor&#x2F;2301&#x2F;thumb-8ed2a4645e354ab35310ea83a7378e6e_1673079014_3781_400x300.jpg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-post-list&#x2F;img&#x2F;icon_new.gif" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-post-list&#x2F;img&#x2F;icon_new.gif</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;29.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;29.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;12.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;12.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;33.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;33.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;8.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;8.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;6.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;6.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;7.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;7.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;31.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;31.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;4.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;4.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;28.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;28.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;32.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;32.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;25.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;25.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;15.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;15.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;5.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;5.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;16.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;16.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;11.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;11.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;21.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;21.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;37.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;37.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;9.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;9.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;13.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;13.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;1.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;1.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;3.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;3.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;19.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;19.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;17.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;17.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;22.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;22.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;18.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;img&#x2F;level&#x2F;army&#x2F;18.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;img&#x2F;sns_fb.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;img&#x2F;sns_fb.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;img&#x2F;sns_twt.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;img&#x2F;sns_twt.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;img&#x2F;sns_goo.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;img&#x2F;sns_goo.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;img&#x2F;sns_kakaostory.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;img&#x2F;sns_kakaostory.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;img&#x2F;sns_naverband.png" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;img&#x2F;sns_naverband.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;bs3&#x2F;js&#x2F;bootstrap.min.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;bs3&#x2F;js&#x2F;bootstrap.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;js&#x2F;sly.min.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;js&#x2F;sly.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;js&#x2F;custom.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;assets&#x2F;js&#x2F;custom.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-sidebar&#x2F;sidebar.js" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-sidebar&#x2F;sidebar.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-post-slider&#x2F;img&#x2F;lock.gif" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;thema&#x2F;Miso&#x2F;widget&#x2F;miso-post-slider&#x2F;img&#x2F;lock.gif</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;userupload_jp&#x2F;thumb-2890328530_v7kyOqKc_76cae01e91cee76962735fbc1c1bcf58ea268235_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;userupload_jp&#x2F;thumb-2890328530_v7kyOqKc_76cae01e91cee76962735fbc1c1bcf58ea268235_400x300.jpg</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;vip_kor_av&#x2F;thumb-1822619962_spRd8hLt_f8e9559d48c4b65cd72e7185813370478b4c2651_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;vip_kor_av&#x2F;thumb-1822619962_spRd8hLt_f8e9559d48c4b65cd72e7185813370478b4c2651_400x300.jpg</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;editor&#x2F;2301&#x2F;thumb-342dd1318cd76fc1053ea30ae18e5150_1673082954_302_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;editor&#x2F;2301&#x2F;thumb-342dd1318cd76fc1053ea30ae18e5150_1673082954_302_400x300.jpg</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;chulsa&#x2F;thumb-2372228729_qIHYa6mV_d3529dbc48658aa9c5ef0be761a91d795b738309_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;chulsa&#x2F;thumb-2372228729_qIHYa6mV_d3529dbc48658aa9c5ef0be761a91d795b738309_400x300.jpg</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;chulsa&#x2F;thumb-2890325841_IY1Mq6bw_1b73cd4c49c20ba4fdb92e93b5f219da85df9fe7_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;chulsa&#x2F;thumb-2890325841_IY1Mq6bw_1b73cd4c49c20ba4fdb92e93b5f219da85df9fe7_400x300.jpg</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;vip_kor_av&#x2F;thumb-2890154557_xgJjsh8D_9c57ec67fec5b2c8f22256b4475143c902bd21d5_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;vip_kor_av&#x2F;thumb-2890154557_xgJjsh8D_9c57ec67fec5b2c8f22256b4475143c902bd21d5_400x300.jpg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;yound_av&#x2F;thumb-2890175051_vQpmKwys_008e47d9fb6ba98a3e00fd965d357b97430b429b_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;yound_av&#x2F;thumb-2890175051_vQpmKwys_008e47d9fb6ba98a3e00fd965d357b97430b429b_400x300.jpg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;vip_kor_av&#x2F;thumb-2890191399_1THlefX5_4e56f607e2e976def822623e91cba4f163cfe46e_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;vip_kor_av&#x2F;thumb-2890191399_1THlefX5_4e56f607e2e976def822623e91cba4f163cfe46e_400x300.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;file&#x2F;yound_av&#x2F;thumb-2890219059_p5KqfWFC_f93a6579f486e6b599383612ffee7e473e104905_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;file&#x2F;yound_av&#x2F;thumb-2890219059_p5KqfWFC_f93a6579f486e6b599383612ffee7e473e104905_400x300.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;editor&#x2F;2301&#x2F;thumb-0f0ca1500a5d04f0be46d8c90fa135fb_1673104935_0055_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;editor&#x2F;2301&#x2F;thumb-0f0ca1500a5d04f0be46d8c90fa135fb_1673104935_0055_400x300.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://krav242.xyz&#x2F;data&#x2F;editor&#x2F;2301&#x2F;thumb-f4ac5eefeeca8335e026b3f0350a8186_1673104784_5712_400x300.jpg" target="_blank" class="external" rel="noreferrer noopener">krav242.xyz&#x2F;data&#x2F;editor&#x2F;2301&#x2F;thumb-f4ac5eefeeca8335e026b3f0350a8186_1673104784_5712_400x300.jpg</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://krav191.xyz" target="_blank" class="external">krav191.xyz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://krav192.xyz" target="_blank" class="external">krav192.xyz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://krav195.xyz" target="_blank" class="external">krav195.xyz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://krav196.xyz" target="_blank" class="external">krav196.xyz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://krav200.xyz" target="_blank" class="external">krav200.xyz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://krav201.xyz" target="_blank" class="external">krav201.xyz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://krav204.xyz" target="_blank" class="external">krav204.xyz</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

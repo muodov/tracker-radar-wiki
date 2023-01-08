@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - vlxxs.net</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "vlxxs.net",
+        history: [{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":1,"cookies":0.0000272}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/vlxxs.net.ico' width="32" height="32" class='inline-block' /> vlxxs.net</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;13653<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Image</span>,
+                    <span>Script</span>,
+                    <span>Font</span>,
+                    <span>Other</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/vlxxs.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.vendor</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;Theme&#x2F;css&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;Theme&#x2F;css&#x2F;style.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;Theme&#x2F;css&#x2F;all.css" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;Theme&#x2F;css&#x2F;all.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;logo.png" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;logo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;cdn-cgi&#x2F;scripts&#x2F;7d0fa10a&#x2F;cloudflare-static&#x2F;rocket-loader.min.js" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;cdn-cgi&#x2F;scripts&#x2F;7d0fa10a&#x2F;cloudflare-static&#x2F;rocket-loader.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;em-vo-dam-dang-bu-cac-du-nhau-anh-re-khi-chong-di-cong-tac.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;em-vo-dam-dang-bu-cac-du-nhau-anh-re-khi-chong-di-cong-tac.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;vet-mang-than-cong-va-doggy-dai-phap-cung-em-nguoi-yeu-xinh-dep-yui-nishikawa.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;vet-mang-than-cong-va-doggy-dai-phap-cung-em-nguoi-yeu-xinh-dep-yui-nishikawa.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;dan-choi-lam-tien-choi-hai-em-gai-goi-sieu-vip-cuc-xinh.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;dan-choi-lam-tien-choi-hai-em-gai-goi-sieu-vip-cuc-xinh.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;troi-dong-lanh-leo-di-mat-xa-kich-duc-duoc-gap-em-nhan-vien-cuc-xinh-dam-dang-mai-shirakawa.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;troi-dong-lanh-leo-di-mat-xa-kich-duc-duoc-gap-em-nhan-vien-cuc-xinh-dam-dang-mai-shirakawa.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;Theme&#x2F;webfonts&#x2F;fa-solid-900.woff2" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;Theme&#x2F;webfonts&#x2F;fa-solid-900.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;Theme&#x2F;webfonts&#x2F;fa-light-300.woff2" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;Theme&#x2F;webfonts&#x2F;fa-light-300.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;Theme&#x2F;webfonts&#x2F;fa-regular-400.woff2" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;Theme&#x2F;webfonts&#x2F;fa-regular-400.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;em-nu-sinh-dang-thuong-bi-ten-bao-ve-bat-coc-hiep-dam.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;em-nu-sinh-dang-thuong-bi-ten-bao-ve-bat-coc-hiep-dam.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;ru-co-em-gan-nha-choi-bai-roi-bu-lon-lan-moc-cua-co-em-luon-hongkongdoll.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;ru-co-em-gan-nha-choi-bai-roi-bu-lon-lan-moc-cua-co-em-luon-hongkongdoll.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;mon-qua-bat-ngo-cua-em-hot-girl-xinh-dep-su-ninger.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;mon-qua-bat-ngo-cua-em-hot-girl-xinh-dep-su-ninger.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;nu-gia-su-lam-tu-vu-xinh-dep-bi-cau-hoc-tro-bien-thai-hiep-dam.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;nu-gia-su-lam-tu-vu-xinh-dep-bi-cau-hoc-tro-bien-thai-hiep-dam.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;loan-luan-voi-di-xinh-dam-vu-to-khi-me-vang-nha.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;loan-luan-voi-di-xinh-dam-vu-to-khi-me-vang-nha.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;3-tuong-quan-tam-quoc-la-bo-quan-vu-vu-cam-di-choi-gai-tap-the.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;3-tuong-quan-tam-quoc-la-bo-quan-vu-vu-cam-di-choi-gai-tap-the.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;phim-sex-xem-la-nung-cua-em-gai-dam-dang-mai-shirakawa.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;phim-sex-xem-la-nung-cua-em-gai-dam-dang-mai-shirakawa.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;em-sinh-vien-nhat-ban-lam-them-trong-nha-nghi.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;em-sinh-vien-nhat-ban-lam-them-trong-nha-nghi.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;nhan-vien-nhau-say-ga-sep-bien-thai-thay-mat-du-vo-xinh-cua-nhan-vien.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;nhan-vien-nhau-say-ga-sep-bien-thai-thay-mat-du-vo-xinh-cua-nhan-vien.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;em-gai-xinh-xan-dam-duc-them-du-ga-dit-anh-trai-luc-bo-me-vang-nha.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;em-gai-xinh-xan-dam-duc-them-du-ga-dit-anh-trai-luc-bo-me-vang-nha.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;thien-than-dam-duc-hzel-moore.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;thien-than-dam-duc-hzel-moore.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;nu-thu-ky-dam-dang-them-du-trong-gio-nghi-trua-tai-cong-ty.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;nu-thu-ky-dam-dang-them-du-trong-gio-nghi-trua-tai-cong-ty.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;bi-dam-ban-than-bien-thai-hiep-dam-vo-xinh-truoc-gio-dong-phong.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;bi-dam-ban-than-bien-thai-hiep-dam-vo-xinh-truoc-gio-dong-phong.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;danh-thuoc-kich-duc-gia-su-xinh-dep-goi-cam-song-nanyi-cua-toi.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;danh-thuoc-kich-duc-gia-su-xinh-dep-goi-cam-song-nanyi-cua-toi.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;ten-tai-xe-tong-tinh-taxi-em-hot-girl-xinh-xan-vi-bi-phat-hien-clip-sex.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;ten-tai-xe-tong-tinh-taxi-em-hot-girl-xinh-xan-vi-bi-phat-hien-clip-sex.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;cung-xem-livestream-buoi-thac-loan-tap-the-cua-cai-em-gai-viet-nam-cuc-hap-dan.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;cung-xem-livestream-buoi-thac-loan-tap-the-cua-cai-em-gai-viet-nam-cuc-hap-dan.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;tinh-co-thay-em-gai-xinh-xan-te-tieu-lien-cua-ban-than-dang-ngu-va-cai-ket.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;tinh-co-thay-em-gai-xinh-xan-te-tieu-lien-cua-ban-than-dang-ngu-va-cai-ket.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;con-em-gai-buom-mup-qua-nung-loan-luan-cung-anh-trai.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;con-em-gai-buom-mup-qua-nung-loan-luan-cung-anh-trai.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;co-ban-than-hoa-khoi-xinh-dep-yuka-yuzuki-cua-toi-la-ke-cuong-dam.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;co-ban-than-hoa-khoi-xinh-dep-yuka-yuzuki-cua-toi-la-ke-cuong-dam.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;dich-vu-thue-ban-gai-don-nam-moi-cua-han-tieu-da.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;dich-vu-thue-ban-gai-don-nam-moi-cua-han-tieu-da.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;chong-di-lam-xa-vo-xinh-shen-nana-tim-toi-trai-bao-de-thoa-man-su-dam-dang.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;chong-di-lam-xa-vo-xinh-shen-nana-tim-toi-trai-bao-de-thoa-man-su-dam-dang.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;pha-trinh-lo-dit-co-nguoi-yeu-xinh-dep-dam-duc-rebecca-volpetti.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;pha-trinh-lo-dit-co-nguoi-yeu-xinh-dep-dam-duc-rebecca-volpetti.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;that-tinh-nhau-say-chi-gai-xinh-dep-bi-cau-em-trai-de-ra-hap-diem.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;that-tinh-nhau-say-chi-gai-xinh-dep-bi-cau-em-trai-de-ra-hap-diem.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;con-ghe-xinh-gai-thich-bao-dam-kanako-iioka.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;con-ghe-xinh-gai-thich-bao-dam-kanako-iioka.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;chi-dau-vu-cang-dam-dang-li-na-chich-trom-em-chong-mu.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;chi-dau-vu-cang-dam-dang-li-na-chich-trom-em-chong-mu.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;hot-girl-chibi1311-dam-dang-sang-nha-len-lut-ga-du-bo-co-ban-than.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;hot-girl-chibi1311-dam-dang-sang-nha-len-lut-ga-du-bo-co-ban-than.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;data&#x2F;day-do-em-gai-hu-hong-shen-nana-vu-cang-bang-con-cac-to-bu.jpg" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;data&#x2F;day-do-em-gai-hu-hong-shen-nana-vu-cang-bang-con-cac-to-bu.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;Theme&#x2F;js&#x2F;all.js" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;Theme&#x2F;js&#x2F;all.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;Theme&#x2F;js&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;Theme&#x2F;js&#x2F;jquery.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;cdn-cgi&#x2F;challenge-platform&#x2F;h&#x2F;b&#x2F;scripts&#x2F;alpha&#x2F;invisible.js" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;cdn-cgi&#x2F;challenge-platform&#x2F;h&#x2F;b&#x2F;scripts&#x2F;alpha&#x2F;invisible.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vlxxs.net&#x2F;cdn-cgi&#x2F;challenge-platform&#x2F;h&#x2F;b&#x2F;scripts&#x2F;pica.js" target="_blank" class="external" rel="noreferrer noopener">vlxxs.net&#x2F;cdn-cgi&#x2F;challenge-platform&#x2F;h&#x2F;b&#x2F;scripts&#x2F;pica.js</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://sex369.net" target="_blank" class="external">sex369.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vlsexhay.net" target="_blank" class="external">vlsexhay.net</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

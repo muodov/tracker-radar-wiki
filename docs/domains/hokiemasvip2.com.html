@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - hokiemasvip2.com</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "hokiemasvip2.com",
+        history: [{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":2,"cookies":0.0000272}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/hokiemasvip2.com.ico' width="32" height="32" class='inline-block' /> hokiemasvip2.com</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;11813<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Image</span>,
+                    <span>Script</span>,
+                    <span>Font</span>,
+                    <span>XHR</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/hokiemasvip2.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>www</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;css&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;css&#x2F;style.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;css&#x2F;jquery.alerts.css" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;css&#x2F;jquery.alerts.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;plugins&#x2F;swiper&#x2F;css&#x2F;swiper.min.css" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;plugins&#x2F;swiper&#x2F;css&#x2F;swiper.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;css&#x2F;fonts&#x2F;fa&#x2F;css&#x2F;all.min.css" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;css&#x2F;fonts&#x2F;fa&#x2F;css&#x2F;all.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;stream&#x2F;id" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;stream&#x2F;id</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;login.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;login.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;signup.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;signup.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;sportsbook.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;sportsbook.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;slot.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;slot.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;livecasino.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;livecasino.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;gaple.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;gaple.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;poker.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;poker.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;tangkas.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;tangkas.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;fish.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;fish.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;game.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;game.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;vip.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;vip.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;promotion.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;promotion.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;download.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;download.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;affiliate.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;icon&#x2F;affiliate.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;sports.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;sports.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;slot.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;slot.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;kasino.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;kasino.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;gaple.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;gaple.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;poker.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;poker.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;tangkas.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;tangkas.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;fish.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;fish.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;games.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;games.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;promosi.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;promosi.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;hot.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;m&#x2F;hot.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;poker-balak.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;poker-balak.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-s88.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-s88.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-pp.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-pp.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-ion.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-ion.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-evo.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-evo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sb-wb.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sb-wb.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sb-i.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sb-i.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sb-s.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sb-s.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sb-bti.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sb-bti.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sb-cmd.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sb-cmd.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-live22.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-live22.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-vp.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-vp.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-joker.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-joker.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-pg.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-pg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-hb.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-hb.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-sg.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-sg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-cq.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-cq.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-ka.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-ka.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-gss.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-gss.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-gp.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-gp.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-pt.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-pt.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-mg.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-mg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-ps.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-ps.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-nt.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;sg-nt.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-pm.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-pm.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-wm.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-wm.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-vivo.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-vivo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-ebet.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-ebet.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-sexy.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-sexy.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-sa.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-sa.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-gp.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-gp.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-pt.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-pt.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-mg.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-mg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-s.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-s.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-og.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-og.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-dg.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;lc-dg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;poker-balak2.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;poker-balak2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;poker-1gaming.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;poker-1gaming.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;poker-p2play.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;poker-p2play.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;tangkas.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;tangkas.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;fish-vp.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;fish-vp.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;fish-fa.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;fish-fa.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;fish-ka.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;fish-ka.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;fish-joker.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;fish-joker.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;4d-nex4d.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;4d-nex4d.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;others-gioco.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;others-gioco.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;others-p93.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;others-p93.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;others-ka.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;mini&#x2F;others-ka.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;bonus.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;bonus.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;deposit.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;deposit.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;play.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;play.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;d&#x2F;sb-i.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;d&#x2F;sb-i.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;d&#x2F;sb-s.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;d&#x2F;sb-s.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;d&#x2F;lc-sexy.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;d&#x2F;lc-sexy.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;d&#x2F;lc-evo.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;banner&#x2F;d&#x2F;lc-evo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;css&#x2F;style-m.css" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;css&#x2F;style-m.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;css&#x2F;fonts&#x2F;roboto&#x2F;font.css" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;css&#x2F;fonts&#x2F;roboto&#x2F;font.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;js&#x2F;jquery-3.4.1.min.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;js&#x2F;jquery-3.4.1.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;plugins&#x2F;swiper&#x2F;js&#x2F;swiper.min.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;plugins&#x2F;swiper&#x2F;js&#x2F;swiper.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;plugins&#x2F;alerts&#x2F;jquery.alerts.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;plugins&#x2F;alerts&#x2F;jquery.alerts.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;plugins&#x2F;validate&#x2F;jquery.validate-min.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;plugins&#x2F;validate&#x2F;jquery.validate-min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;js&#x2F;settings.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;js&#x2F;settings.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;js&#x2F;core.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;js&#x2F;core.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;js&#x2F;common.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;js&#x2F;common.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;css&#x2F;fonts&#x2F;roboto&#x2F;roboto-regular-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;css&#x2F;fonts&#x2F;roboto&#x2F;roboto-regular-webfont.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;bg_benefits.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;bg_benefits.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;bank.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;bank.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;sponsored.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;sponsored.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;css&#x2F;fonts&#x2F;fa&#x2F;webfonts&#x2F;fa-solid-900.woff2" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;css&#x2F;fonts&#x2F;fa&#x2F;webfonts&#x2F;fa-solid-900.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;func&#x2F;jsx&#x2F;global.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;func&#x2F;jsx&#x2F;global.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;func&#x2F;jsx&#x2F;cms.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;func&#x2F;jsx&#x2F;cms.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;js&#x2F;common.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;js&#x2F;common.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;js&#x2F;template.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;js&#x2F;template.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;js&#x2F;g8-ls.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;js&#x2F;g8-ls.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;js&#x2F;g8-sggl.js" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;js&#x2F;g8-sggl.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;func&#x2F;cms&#x2F;getBannerList" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;func&#x2F;cms&#x2F;getBannerList</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;assets&#x2F;img&#x2F;icon&#x2F;close.svg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;assets&#x2F;img&#x2F;icon&#x2F;close.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;assets&#x2F;img&#x2F;download.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;assets&#x2F;img&#x2F;download.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;assets&#x2F;img&#x2F;contact.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;assets&#x2F;img&#x2F;contact.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;assets&#x2F;img&#x2F;icon&#x2F;whatsapp.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;assets&#x2F;img&#x2F;icon&#x2F;whatsapp.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;func&#x2F;common&#x2F;getBank" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;func&#x2F;common&#x2F;getBank</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;func&#x2F;stl&#x2F;getSlotGameList" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;func&#x2F;stl&#x2F;getSlotGameList</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;css&#x2F;fonts&#x2F;fa&#x2F;webfonts&#x2F;fa-brands-400.woff2" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;css&#x2F;fonts&#x2F;fa&#x2F;webfonts&#x2F;fa-brands-400.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202212&#x2F;pm-1800x600.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202212&#x2F;pm-1800x600.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202212&#x2F;pm-640x300.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202212&#x2F;pm-640x300.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202212&#x2F;sg-1800x600.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202212&#x2F;sg-1800x600.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202212&#x2F;sg-640x300.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202212&#x2F;sg-640x300.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202301&#x2F;mg-1800x600.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202301&#x2F;mg-1800x600.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202301&#x2F;mg-640x300.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;202301&#x2F;mg-640x300.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;s88tigernewyear&#x2F;s88-1800x600.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;s88tigernewyear&#x2F;s88-1800x600.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;s88tigernewyear&#x2F;s88-640x300.jpg" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;common&#x2F;images&#x2F;tnm&#x2F;s88tigernewyear&#x2F;s88-640x300.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;football.png" target="_blank" class="external" rel="noreferrer noopener">www.hokiemasvip2.com&#x2F;hok&#x2F;assets&#x2F;img&#x2F;football.png</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://hokiemasjoss.com" target="_blank" class="external">hokiemasjoss.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hokiemass.com" target="_blank" class="external">www.hokiemass.com</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

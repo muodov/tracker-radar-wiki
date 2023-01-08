@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "livecamcdn.com",
-        history: [{"date":"2022.02","prevalence":0.0000545,"sites":8,"fingerprinting":3,"cookies":0.0000136},{"date":"2022.03","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.05","prevalence":0.0000546,"sites":8,"fingerprinting":3,"cookies":0.0000273},{"date":"2022.06","prevalence":0.0000339,"sites":5,"fingerprinting":3,"cookies":0.0000136},{"date":"2022.07","prevalence":0.0000407,"sites":6,"fingerprinting":3,"cookies":0.0000136},{"date":"2022.08","prevalence":0.0000407,"sites":6,"fingerprinting":3,"cookies":0.0000136},{"date":"muodov/aug-2022","prevalence":0.0000339,"sites":5,"fingerprinting":3,"cookies":0.0000136}]
+        history: [{"date":"main","prevalence":0.0000407,"sites":6,"fingerprinting":3,"cookies":0.0000136},{"date":"selenium-crux","prevalence":0.0000544,"sites":4,"fingerprinting":3,"cookies":0.0000136}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;10291<small>/27751</small>
+                    <strong>Rank:</strong> &#35;7652<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (5 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (4 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
@@ -90,12 +90,15 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Script</span>,
                     <span>Image</span>,
+                    <span>Stylesheet</span>,
+                    <span>Font</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/livecamcdn.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>photos</span>, 
+                    <span>assets</span>, 
                 </li>
             </ul>
         </div>
@@ -114,34 +117,115 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>CanvasRenderingContext2D.prototype.isPointInPath</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getSupportedExtensions</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getShaderPrecisionFormat</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getContextAttributes</li>
+        <li class='truncate'>Navigator.prototype.productSub</li>
+        <li class='truncate'>window.outerHeight</li>
+        <li class='truncate'>window.outerWidth</li>
+        <li class='truncate'>Navigator.prototype.hardwareConcurrency</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getExtension</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getParameter</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Navigator.prototype.doNotTrack</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;Xe1ZPX&#x2F;76096abbe921219f13eb03101c5cac51.jpg" target="_blank" class="external" rel="noreferrer noopener">photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;Xe1ZPX&#x2F;76096abbe921219f13eb03101c5cac51.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery.1.8.2.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery.1.8.2.min.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;XzPA6x&#x2F;6bce8f87715b24f0fd1ca984db66f39e.jpg" target="_blank" class="external" rel="noreferrer noopener">photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;XzPA6x&#x2F;6bce8f87715b24f0fd1ca984db66f39e.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery-ui-all.custom.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery-ui-all.custom.min.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;XrQ9zP&#x2F;46b9f251df56f2062f290b206cec8eab.jpg" target="_blank" class="external" rel="noreferrer noopener">photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;XrQ9zP&#x2F;46b9f251df56f2062f290b206cec8eab.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;browser-selector.js" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;browser-selector.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;vYRJMO&#x2F;34258e48e5aafb570819ed4ab1cee19e.jpg" target="_blank" class="external" rel="noreferrer noopener">photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;vYRJMO&#x2F;34258e48e5aafb570819ed4ab1cee19e.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery.jscroll_v2.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery.jscroll_v2.min.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;Xr3Wav&#x2F;0048920f80618a571ef074b0ffe96168.jpg" target="_blank" class="external" rel="noreferrer noopener">photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;Xr3Wav&#x2F;0048920f80618a571ef074b0ffe96168.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery.mobile.custom.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery.mobile.custom.min.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;v6Zllv&#x2F;20258f64285cdf287f440116139467d5.jpg" target="_blank" class="external" rel="noreferrer noopener">photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;v6Zllv&#x2F;20258f64285cdf287f440116139467d5.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;pinch-zoom.js" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;pinch-zoom.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;x9kKeX&#x2F;a9b4b4efe78ee5e4f7488e1cbf68208d.jpg" target="_blank" class="external" rel="noreferrer noopener">photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;x9kKeX&#x2F;a9b4b4efe78ee5e4f7488e1cbf68208d.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery.maskedinput.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery.maskedinput.min.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;XrM68b&#x2F;049a371b26e057825d6acc0d44ba6887.jpg" target="_blank" class="external" rel="noreferrer noopener">photos.livecamcdn.com&#x2F;thumbs&#x2F;performer&#x2F;XrM68b&#x2F;049a371b26e057825d6acc0d44ba6887.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;twemoji-12.0.4.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;twemoji-12.0.4.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;cookie.js" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;cookie.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;footer&#x2F;rta_black.svg" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;footer&#x2F;rta_black.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery.functions.min.js" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;js&#x2F;jquery.functions.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;skins&#x2F;red-nose&#x2F;min&#x2F;css&#x2F;style&#x2F;bf53b1f2b81b550e3c51.min.css" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;skins&#x2F;red-nose&#x2F;min&#x2F;css&#x2F;style&#x2F;bf53b1f2b81b550e3c51.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;language&#x2F;flag_br.svg" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;language&#x2F;flag_br.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;language&#x2F;flag_us.svg" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;language&#x2F;flag_us.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;language&#x2F;flag_es.svg" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;language&#x2F;flag_es.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;language&#x2F;flag_pt.svg" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;language&#x2F;flag_pt.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;footer&#x2F;fsc.svg" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;footer&#x2F;fsc.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;footer&#x2F;rta.svg" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;footer&#x2F;rta.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;footer&#x2F;asacp.svg" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;static&#x2F;images&#x2F;footer&#x2F;asacp.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://assets.livecamcdn.com&#x2F;skins&#x2F;red-nose&#x2F;static&#x2F;fonts&#x2F;icons&#x2F;cp-font-icon-v4.ttf" target="_blank" class="external" rel="noreferrer noopener">assets.livecamcdn.com&#x2F;skins&#x2F;red-nose&#x2F;static&#x2F;fonts&#x2F;icons&#x2F;cp-font-icon-v4.ttf</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -151,10 +235,13 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://testosterona.blog.br" target="_blank" class="external">testosterona.blog.br</a>
+            <a href="http://camerahot.com" target="_blank" class="external">camerahot.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.testosterona.blog.br" target="_blank" class="external">www.testosterona.blog.br</a>
+            <a href="http://cameraprive.com" target="_blank" class="external">cameraprive.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://models.cameraprive.com" target="_blank" class="external">models.cameraprive.com</a>
         </li>
     </ul>
 </div>

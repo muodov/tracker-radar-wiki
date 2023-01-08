@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "zopim.com",
-        history: [{"date":"2020.02","prevalence":0.012,"sites":521,"fingerprinting":2,"cookies":0.00398},{"date":"2020.03","prevalence":0.0098,"sites":482,"fingerprinting":2,"cookies":0.00309},{"date":"2020.04","prevalence":0.01,"sites":468,"fingerprinting":2,"cookies":0.00321},{"date":"2020.05","prevalence":0.0105,"sites":735,"fingerprinting":2,"cookies":0.00396},{"date":"2020.06","prevalence":0.0119,"sites":868,"fingerprinting":2,"cookies":0.00379},{"date":"2020.07","prevalence":0.0126,"sites":906,"fingerprinting":2,"cookies":0.00405},{"date":"2020.08","prevalence":0.0109,"sites":1477,"fingerprinting":2,"cookies":0.00343},{"date":"2020.09","prevalence":0.0111,"sites":1458,"fingerprinting":2,"cookies":0.00351},{"date":"2020.10","prevalence":0.0111,"sites":1457,"fingerprinting":2,"cookies":0.00351},{"date":"2020.11","prevalence":0.0105,"sites":1387,"fingerprinting":2,"cookies":0.00319},{"date":"2020.12","prevalence":0.0111,"sites":1458,"fingerprinting":2,"cookies":0.00351},{"date":"2021.01","prevalence":0.0122,"sites":1591,"fingerprinting":2,"cookies":0.00337},{"date":"2021.02","prevalence":0.0112,"sites":1614,"fingerprinting":2,"cookies":0.00304},{"date":"2021.03","prevalence":0.0114,"sites":1651,"fingerprinting":2,"cookies":0.00297},{"date":"2021.04","prevalence":0.0104,"sites":1505,"fingerprinting":2,"cookies":0.00318},{"date":"2021.05","prevalence":0.0101,"sites":1461,"fingerprinting":2,"cookies":0.00249},{"date":"2021.06","prevalence":0.0098,"sites":1430,"fingerprinting":2,"cookies":0.00226},{"date":"2021.07","prevalence":0.0103,"sites":1479,"fingerprinting":2,"cookies":0.00249},{"date":"2021.08","prevalence":0.0102,"sites":1463,"fingerprinting":2,"cookies":0.00243},{"date":"2021.09","prevalence":0.00974,"sites":1411,"fingerprinting":2,"cookies":0.00228},{"date":"2021.10","prevalence":0.00953,"sites":1381,"fingerprinting":2,"cookies":0.00228},{"date":"2021.11","prevalence":0.00962,"sites":1394,"fingerprinting":2,"cookies":0.00232},{"date":"2021.12","prevalence":0.00965,"sites":1396,"fingerprinting":2,"cookies":0.00235},{"date":"2022.01","prevalence":0.00949,"sites":1371,"fingerprinting":2,"cookies":0.00231},{"date":"2022.02","prevalence":0.0104,"sites":1529,"fingerprinting":2,"cookies":0.00339},{"date":"2022.03","prevalence":0.0108,"sites":1584,"fingerprinting":2,"cookies":0.00337},{"date":"2022.04","prevalence":0.0113,"sites":1657,"fingerprinting":1,"cookies":0.00359},{"date":"2022.05","prevalence":0.00848,"sites":1243,"fingerprinting":2,"cookies":0.00239},{"date":"2022.06","prevalence":0.00888,"sites":1310,"fingerprinting":2,"cookies":0.00217},{"date":"2022.07","prevalence":0.00898,"sites":1323,"fingerprinting":2,"cookies":0.00227},{"date":"2022.08","prevalence":0.00898,"sites":1323,"fingerprinting":2,"cookies":0.00227},{"date":"muodov/aug-2022","prevalence":0.00893,"sites":1318,"fingerprinting":2,"cookies":0.00215}]
+        history: [{"date":"main","prevalence":0.00913,"sites":1348,"fingerprinting":1,"cookies":0.00178},{"date":"selenium-crux","prevalence":0.00866,"sites":636,"fingerprinting":2,"cookies":0.00226}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.zendesk.com&#x2F;company&#x2F;customers-partners&#x2F;privacy-policy&#x2F;" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.zendesk.com&#x2F;company&#x2F;customers-partners&#x2F;privacy-policy&#x2F;</a>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;309<small>/27751</small>
+                    <strong>Rank:</strong> &#35;260<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.89&#37; (1318 sites)
+                    <strong>Prevalence:</strong> 0.87&#37; (636 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.21&#37;
+                    <strong>Cookies:</strong> 0.23&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -93,6 +93,7 @@
                     <span>Script</span>,
                     <span>Image</span>,
                     <span>XHR</span>,
+                    <span>Media</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/zopim.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
@@ -101,6 +102,7 @@
                     <span>cdn</span>, 
                     <span>widget-mediator</span>, 
                     <span>dev</span>, 
+                    <span>id</span>, 
                 </li>
             </ul>
         </div>
@@ -130,18 +132,19 @@
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
         <li class='truncate'>Navigator.prototype.onLine</li>
+        <li class='truncate'>console.memory</li>
         <li class='truncate'>Navigator.prototype.platform</li>
         <li class='truncate'>Navigator.prototype.vendor</li>
-        <li class='truncate'>Navigator.prototype.language</li>
         <li class='truncate'>Navigator.prototype.mimeTypes</li>
-        <li class='truncate'>console.memory</li>
-        <li class='truncate'>HTMLMediaElement.prototype.canPlayType</li>
         <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>HTMLMediaElement.prototype.canPlayType</li>
         <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Document.cookie setter</li>
         <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
 
@@ -150,40 +153,88 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://v2.zopim.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;</a> (seen on 147 websites)</p>
+            <p><a href="http://v2.zopim.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;</a> (seen on 146 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://v2.zopim.com&#x2F;bin&#x2F;v&#x2F;widget_v2.334.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;bin&#x2F;v&#x2F;widget_v2.334.js</a> (seen on 134 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://v2.zopim.com&#x2F;w" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;w</a> (seen on 129 websites)</p>
+            <p><a href="http://v2.zopim.com&#x2F;w" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;w</a> (seen on 133 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://v2.zopim.com&#x2F;widget&#x2F;images&#x2F;avatar_simple_visitor.png" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;widget&#x2F;images&#x2F;avatar_simple_visitor.png</a> (seen on 74 websites)</p>
+            <p><a href="http://v2.zopim.com&#x2F;widget&#x2F;images&#x2F;avatar_simple_visitor.png" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;widget&#x2F;images&#x2F;avatar_simple_visitor.png</a> (seen on 72 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://widget-mediator.zopim.com&#x2F;client&#x2F;widget&#x2F;account&#x2F;status" target="_blank" class="external" rel="noreferrer noopener">widget-mediator.zopim.com&#x2F;client&#x2F;widget&#x2F;account&#x2F;status</a> (seen on 48 websites)</p>
+            <p><a href="http://widget-mediator.zopim.com&#x2F;client&#x2F;widget&#x2F;account&#x2F;status" target="_blank" class="external" rel="noreferrer noopener">widget-mediator.zopim.com&#x2F;client&#x2F;widget&#x2F;account&#x2F;status</a> (seen on 25 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_es.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_es.js</a> (seen on 17 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_id.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_id.js</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;widget&#x2F;images&#x2F;loadingbar.gif" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;widget&#x2F;images&#x2F;loadingbar.gif</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;widget&#x2F;sounds&#x2F;triad_gbd.mp3" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;widget&#x2F;sounds&#x2F;triad_gbd.mp3</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_fa.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_fa.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_ms.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_ms.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_el.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_el.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_hr.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_hr.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_fr.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_fr.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_it.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_it.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_fr.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_fr.js</a> (seen on 3 websites)</p>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_tr.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_tr.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://dev.zopim.com&#x2F;web-sdk&#x2F;latest&#x2F;web-sdk.js" target="_blank" class="external" rel="noreferrer noopener">dev.zopim.com&#x2F;web-sdk&#x2F;latest&#x2F;web-sdk.js</a> (seen on 3 websites)</p>
+            <p><a href="http://dev.zopim.com&#x2F;web-sdk&#x2F;1.11.2&#x2F;web-sdk.js" target="_blank" class="external" rel="noreferrer noopener">dev.zopim.com&#x2F;web-sdk&#x2F;1.11.2&#x2F;web-sdk.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_de.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_de.js</a> (seen on 3 websites)</p>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_pt.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_pt.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://v2.zopim.com&#x2F;widget&#x2F;images&#x2F;loadingbar.gif" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;widget&#x2F;images&#x2F;loadingbar.gif</a> (seen on 2 websites)</p>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_th.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_th.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://dev.zopim.com&#x2F;web-sdk&#x2F;1.8.1&#x2F;web-sdk.js" target="_blank" class="external" rel="noreferrer noopener">dev.zopim.com&#x2F;web-sdk&#x2F;1.8.1&#x2F;web-sdk.js</a> (seen on 2 websites)</p>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_cs.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_cs.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_nl.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_nl.js</a> (seen on 2 websites)</p>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_sk.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_sk.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_pt_BR.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_pt_BR.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_bg.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_bg.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;widget&#x2F;images&#x2F;avatar_simple_agent.png" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;widget&#x2F;images&#x2F;avatar_simple_agent.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_ro.js" target="_blank" class="external" rel="noreferrer noopener">cdn.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_ro.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_de.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_de.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://id.zopim.com&#x2F;authenticated&#x2F;web&#x2F;jwt" target="_blank" class="external" rel="noreferrer noopener">id.zopim.com&#x2F;authenticated&#x2F;web&#x2F;jwt</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_nb.js" target="_blank" class="external" rel="noreferrer noopener">v2.zopim.com&#x2F;lib&#x2F;20220727.033422&#x2F;__$$__stringtable_lang_nb.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -193,292 +244,418 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://omniumbanquenationale.com" target="_blank" class="external">omniumbanquenationale.com</a>
+            <a href="http://www.parentsalarm.com" target="_blank" class="external">www.parentsalarm.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.scirp.org" target="_blank" class="external">www.scirp.org</a>
+            <a href="http://99jitu168.com" target="_blank" class="external">99jitu168.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.united-states-flag.com" target="_blank" class="external">www.united-states-flag.com</a>
+            <a href="http://www.aeroprecisionusa.com" target="_blank" class="external">www.aeroprecisionusa.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://kitchencabinetkings.com" target="_blank" class="external">kitchencabinetkings.com</a>
+            <a href="http://scribie.com" target="_blank" class="external">scribie.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.theshadestore.com" target="_blank" class="external">www.theshadestore.com</a>
+            <a href="http://mehcan.net" target="_blank" class="external">mehcan.net</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.trekbikes.com" target="_blank" class="external">www.trekbikes.com</a>
+            <a href="http://www.myaestheticspro.com" target="_blank" class="external">www.myaestheticspro.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://dalessuperstore.com" target="_blank" class="external">dalessuperstore.com</a>
+            <a href="http://www.siko.cz" target="_blank" class="external">www.siko.cz</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.thepoolfactory.com" target="_blank" class="external">www.thepoolfactory.com</a>
+            <a href="http://ttfw5r3r3o.com" target="_blank" class="external">ttfw5r3r3o.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.radioworld.co.uk" target="_blank" class="external">www.radioworld.co.uk</a>
+            <a href="http://www.tayo4d.guru" target="_blank" class="external">www.tayo4d.guru</a>
         </li>
         <li class='truncate'>
-            <a href="http://healthmatters.io" target="_blank" class="external">healthmatters.io</a>
+            <a href="http://xn--limatogl-h1a.com" target="_blank" class="external">xn--limatogl-h1a.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.autogeek.net" target="_blank" class="external">www.autogeek.net</a>
+            <a href="http://esmarket.gr" target="_blank" class="external">esmarket.gr</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.destinationlighting.com" target="_blank" class="external">www.destinationlighting.com</a>
+            <a href="http://bunddler.com" target="_blank" class="external">bunddler.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.tuttofarma.it" target="_blank" class="external">www.tuttofarma.it</a>
+            <a href="http://aposta.la" target="_blank" class="external">aposta.la</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.biddytarot.com" target="_blank" class="external">www.biddytarot.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.renewableenergyhub.co.uk" target="_blank" class="external">www.renewableenergyhub.co.uk</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://8020.net" target="_blank" class="external">8020.net</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.cooldestinations.com" target="_blank" class="external">www.cooldestinations.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.logees.com" target="_blank" class="external">www.logees.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://gunbelts.com" target="_blank" class="external">gunbelts.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.thehandbook.com" target="_blank" class="external">www.thehandbook.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.military1st.co.uk" target="_blank" class="external">www.military1st.co.uk</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.businessnameusa.com" target="_blank" class="external">www.businessnameusa.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://dutchtest.com" target="_blank" class="external">dutchtest.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.taxexemptworld.com" target="_blank" class="external">www.taxexemptworld.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.acmeplastics.com" target="_blank" class="external">www.acmeplastics.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.wheelbase.co.uk" target="_blank" class="external">www.wheelbase.co.uk</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.onlyinboards.com" target="_blank" class="external">www.onlyinboards.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://electra.trekbikes.com" target="_blank" class="external">electra.trekbikes.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.fatquartershop.com" target="_blank" class="external">www.fatquartershop.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.mygenerator.com.au" target="_blank" class="external">www.mygenerator.com.au</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.carportcentral.com" target="_blank" class="external">www.carportcentral.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://txpowersports.com" target="_blank" class="external">txpowersports.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.echosdunet.net" target="_blank" class="external">www.echosdunet.net</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.guncity.com" target="_blank" class="external">www.guncity.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://woolery.com" target="_blank" class="external">woolery.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.sunvalley.com" target="_blank" class="external">www.sunvalley.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.military1st.com" target="_blank" class="external">www.military1st.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://filmbokep.id" target="_blank" class="external">filmbokep.id</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.ntotank.com" target="_blank" class="external">www.ntotank.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.fust.ch" target="_blank" class="external">www.fust.ch</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.infopackets.com" target="_blank" class="external">www.infopackets.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://ting.com" target="_blank" class="external">ting.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.da.nl" target="_blank" class="external">www.da.nl</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.decksdirect.com" target="_blank" class="external">www.decksdirect.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.worksharptools.com" target="_blank" class="external">www.worksharptools.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.bestlaminate.com" target="_blank" class="external">www.bestlaminate.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.icanvas.com" target="_blank" class="external">www.icanvas.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.fleshlight.com" target="_blank" class="external">www.fleshlight.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.stockysstocks.com" target="_blank" class="external">www.stockysstocks.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.boursedirect.fr" target="_blank" class="external">www.boursedirect.fr</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://stepmomsx.com" target="_blank" class="external">stepmomsx.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://freecoursedl.com" target="_blank" class="external">freecoursedl.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.caravanrvcamping.com.au" target="_blank" class="external">www.caravanrvcamping.com.au</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.dentistry.com" target="_blank" class="external">www.dentistry.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.bsnsports.com" target="_blank" class="external">www.bsnsports.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.kidkraft.com" target="_blank" class="external">www.kidkraft.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.shopjimmy.com" target="_blank" class="external">www.shopjimmy.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.northlineexpress.com" target="_blank" class="external">www.northlineexpress.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.sdtrucksprings.com" target="_blank" class="external">www.sdtrucksprings.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.targetsportsusa.com" target="_blank" class="external">www.targetsportsusa.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.movers.com" target="_blank" class="external">www.movers.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.nfpt.com" target="_blank" class="external">www.nfpt.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.kanojotoys.com" target="_blank" class="external">www.kanojotoys.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.opgi.com" target="_blank" class="external">www.opgi.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://army.togetherweserved.com" target="_blank" class="external">army.togetherweserved.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.surfstationstore.com" target="_blank" class="external">www.surfstationstore.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.lilysilk.com" target="_blank" class="external">www.lilysilk.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.autoanything.com" target="_blank" class="external">www.autoanything.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://uk.huel.com" target="_blank" class="external">uk.huel.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://huel.com" target="_blank" class="external">huel.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.onlinemetals.com" target="_blank" class="external">www.onlinemetals.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.goodpath.com" target="_blank" class="external">www.goodpath.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://clockify.me" target="_blank" class="external">clockify.me</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://fullscript.com" target="_blank" class="external">fullscript.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.grindworx.com" target="_blank" class="external">www.grindworx.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.microcenter.com" target="_blank" class="external">www.microcenter.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.outdoorresearch.com" target="_blank" class="external">www.outdoorresearch.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.vpnunlimited.com" target="_blank" class="external">www.vpnunlimited.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://nunababy.com" target="_blank" class="external">nunababy.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.banyanbotanicals.com" target="_blank" class="external">www.banyanbotanicals.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://mikesbikes.com" target="_blank" class="external">mikesbikes.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.the-saleroom.com" target="_blank" class="external">www.the-saleroom.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.staples.ca" target="_blank" class="external">www.staples.ca</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.babylist.com" target="_blank" class="external">www.babylist.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.blackanddecker.com" target="_blank" class="external">www.blackanddecker.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.volcom.com" target="_blank" class="external">www.volcom.com</a>
+            <a href="http://www.electronic-star.ro" target="_blank" class="external">www.electronic-star.ro</a>
         </li>
         <li class='truncate'>
             <a href="http://luce-gas.it" target="_blank" class="external">luce-gas.it</a>
         </li>
         <li class='truncate'>
-            <a href="http://selectra.net" target="_blank" class="external">selectra.net</a>
+            <a href="http://ttfbnnv898.com" target="_blank" class="external">ttfbnnv898.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.istra.hr" target="_blank" class="external">www.istra.hr</a>
+            <a href="http://softwarekoibox.com" target="_blank" class="external">softwarekoibox.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://allsaints.com" target="_blank" class="external">allsaints.com</a>
+            <a href="http://www.maxstores.gr" target="_blank" class="external">www.maxstores.gr</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.allsaints.com" target="_blank" class="external">www.allsaints.com</a>
+            <a href="http://www.sexocomcafe.com.br" target="_blank" class="external">www.sexocomcafe.com.br</a>
         </li>
         <li class='truncate'>
-            <a href="http://cm.be" target="_blank" class="external">cm.be</a>
+            <a href="http://www.homecenter.co.il" target="_blank" class="external">www.homecenter.co.il</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.cm.be" target="_blank" class="external">www.cm.be</a>
+            <a href="http://www.cheeky.com.ar" target="_blank" class="external">www.cheeky.com.ar</a>
         </li>
         <li class='truncate'>
-            <a href="http://da.nl" target="_blank" class="external">da.nl</a>
+            <a href="http://www.mechanicdesk.com.au" target="_blank" class="external">www.mechanicdesk.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.moroccanoil.com" target="_blank" class="external">www.moroccanoil.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dunyagoz.com" target="_blank" class="external">www.dunyagoz.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cookieskids.com" target="_blank" class="external">www.cookieskids.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pharmacy2go.gr" target="_blank" class="external">www.pharmacy2go.gr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.icanvas.com" target="_blank" class="external">www.icanvas.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.e-jumbo.gr" target="_blank" class="external">www.e-jumbo.gr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.save24.lt" target="_blank" class="external">www.save24.lt</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.beautycoiffure.com" target="_blank" class="external">www.beautycoiffure.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bfi.co.id" target="_blank" class="external">www.bfi.co.id</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.samsbeauty.com" target="_blank" class="external">www.samsbeauty.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.kafkas.gr" target="_blank" class="external">www.kafkas.gr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nettoshop.ch" target="_blank" class="external">www.nettoshop.ch</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sparkjop.no" target="_blank" class="external">www.sparkjop.no</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.k24klik.com" target="_blank" class="external">www.k24klik.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bwhbsjcbsjb.com" target="_blank" class="external">bwhbsjcbsjb.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.revive-eo.com" target="_blank" class="external">www.revive-eo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.xn--q3cshjt0fyf.net" target="_blank" class="external">www.xn--q3cshjt0fyf.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.boursedirect.fr" target="_blank" class="external">www.boursedirect.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.vento.com" target="_blank" class="external">www.vento.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ttf7625rru.com" target="_blank" class="external">ttf7625rru.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fust.ch" target="_blank" class="external">www.fust.ch</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://teacher.goguardian.com" target="_blank" class="external">teacher.goguardian.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ligabandar88.com" target="_blank" class="external">ligabandar88.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://viabonanza.org" target="_blank" class="external">viabonanza.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sommiercenter.com" target="_blank" class="external">sommiercenter.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.siko.sk" target="_blank" class="external">www.siko.sk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://takbet.com" target="_blank" class="external">takbet.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.toyplanet.com" target="_blank" class="external">www.toyplanet.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.targetsportsusa.com" target="_blank" class="external">www.targetsportsusa.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://epictoto.link" target="_blank" class="external">epictoto.link</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sharekhan.com" target="_blank" class="external">www.sharekhan.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://co.totto.com" target="_blank" class="external">co.totto.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://asiamaju.cyou" target="_blank" class="external">asiamaju.cyou</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tayo4d.today" target="_blank" class="external">www.tayo4d.today</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nusaresearch.net" target="_blank" class="external">nusaresearch.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.strikkemekka.no" target="_blank" class="external">www.strikkemekka.no</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.istore.co.za" target="_blank" class="external">www.istore.co.za</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.biddytarot.com" target="_blank" class="external">www.biddytarot.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.botb.com" target="_blank" class="external">www.botb.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wserials.com" target="_blank" class="external">wserials.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.modainpelle.com" target="_blank" class="external">www.modainpelle.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.conestogac.on.ca" target="_blank" class="external">www.conestogac.on.ca</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.venuelook.com" target="_blank" class="external">www.venuelook.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.czasnabuty.pl" target="_blank" class="external">www.czasnabuty.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cielo.co.za" target="_blank" class="external">www.cielo.co.za</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ltbjeans.com" target="_blank" class="external">www.ltbjeans.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thuvienphapluat.vn" target="_blank" class="external">thuvienphapluat.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.military1st.co.uk" target="_blank" class="external">www.military1st.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mytax.iras.gov.sg" target="_blank" class="external">mytax.iras.gov.sg</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://casika.es" target="_blank" class="external">casika.es</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://supernaturista.com" target="_blank" class="external">supernaturista.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vianney.com.mx" target="_blank" class="external">vianney.com.mx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.aposta.la" target="_blank" class="external">www.aposta.la</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gocco.es" target="_blank" class="external">www.gocco.es</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.imas.go.cr" target="_blank" class="external">www.imas.go.cr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.loteriademedellin.com.co" target="_blank" class="external">www.loteriademedellin.com.co</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.marzamenlinea.com.mx" target="_blank" class="external">www.marzamenlinea.com.mx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.motoscoot.net" target="_blank" class="external">www.motoscoot.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.supermarket23.com" target="_blank" class="external">www.supermarket23.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.brooksrunning.com" target="_blank" class="external">www.brooksrunning.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.photowall.com" target="_blank" class="external">www.photowall.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bidspotter.com" target="_blank" class="external">www.bidspotter.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lilysilk.com" target="_blank" class="external">www.lilysilk.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.crazyshop.pl" target="_blank" class="external">www.crazyshop.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://l-r-g.com" target="_blank" class="external">l-r-g.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.babylist.com" target="_blank" class="external">www.babylist.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.veralab.it" target="_blank" class="external">www.veralab.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.long-mcquade.com" target="_blank" class="external">www.long-mcquade.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lakeside.com" target="_blank" class="external">www.lakeside.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.volcom.com" target="_blank" class="external">www.volcom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.outdoorresearch.com" target="_blank" class="external">www.outdoorresearch.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fjallraven.com" target="_blank" class="external">www.fjallraven.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://infakt.pl" target="_blank" class="external">infakt.pl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lolaliza.com" target="_blank" class="external">www.lolaliza.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ltdcommodities.com" target="_blank" class="external">www.ltdcommodities.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.pendleton-usa.com" target="_blank" class="external">www.pendleton-usa.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://app.setantasports.com" target="_blank" class="external">app.setantasports.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.i-bidder.com" target="_blank" class="external">www.i-bidder.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.the-saleroom.com" target="_blank" class="external">www.the-saleroom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.iluminim.com.br" target="_blank" class="external">www.iluminim.com.br</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.logodesign.net" target="_blank" class="external">www.logodesign.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://betfa.com" target="_blank" class="external">betfa.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.boxpharmacy.gr" target="_blank" class="external">www.boxpharmacy.gr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://codashop.com" target="_blank" class="external">codashop.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.agorastore.fr" target="_blank" class="external">www.agorastore.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.jonak.fr" target="_blank" class="external">www.jonak.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.farmacosmo.it" target="_blank" class="external">www.farmacosmo.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mysecretcase.com" target="_blank" class="external">www.mysecretcase.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.scommettendo.it" target="_blank" class="external">www.scommettendo.it</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bwinners.net" target="_blank" class="external">bwinners.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.kaisan.com.br" target="_blank" class="external">www.kaisan.com.br</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ufacash.com" target="_blank" class="external">ufacash.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://yimresearch.net" target="_blank" class="external">yimresearch.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://plesio.bg" target="_blank" class="external">plesio.bg</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.parfimo.bg" target="_blank" class="external">www.parfimo.bg</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://skolskaknjiga.hr" target="_blank" class="external">skolskaknjiga.hr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.autokreso.hr" target="_blank" class="external">www.autokreso.hr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hteronet.ba" target="_blank" class="external">www.hteronet.ba</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.silux.hr" target="_blank" class="external">www.silux.hr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.svijet-medija.hr" target="_blank" class="external">www.svijet-medija.hr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sktorrent.eu" target="_blank" class="external">sktorrent.eu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://addax.com.tr" target="_blank" class="external">addax.com.tr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.saatvesaat.com.tr" target="_blank" class="external">www.saatvesaat.com.tr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sarmasdolas.tv" target="_blank" class="external">www.sarmasdolas.tv</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://aromes-et-liquides.fr" target="_blank" class="external">aromes-et-liquides.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bizouk.com" target="_blank" class="external">www.bizouk.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.vetementpro.com" target="_blank" class="external">www.vetementpro.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://atelierultau.ro" target="_blank" class="external">atelierultau.ro</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://autovia.sk" target="_blank" class="external">autovia.sk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bazar.sk" target="_blank" class="external">www.bazar.sk</a>
         </li>
         <li class='truncate'>
             <a href="http://fust.ch" target="_blank" class="external">fust.ch</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.stuttgart-tourist.de" target="_blank" class="external">www.stuttgart-tourist.de</a>
+            <a href="http://iluminim.com.br" target="_blank" class="external">iluminim.com.br</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.reidoscoins.com.br" target="_blank" class="external">www.reidoscoins.com.br</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://italki.com" target="_blank" class="external">italki.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.italki.com" target="_blank" class="external">www.italki.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sparkjop.no" target="_blank" class="external">sparkjop.no</a>
         </li>
     </ul>
 </div>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - ws-cdn001.akamaized.net</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "ws-cdn001.akamaized.net",
+        history: [{"date":"selenium-crux","prevalence":0.00015,"sites":11,"fingerprinting":1,"cookies":0}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/ws-cdn001.akamaized.net.ico' width="32" height="32" class='inline-block' /> ws-cdn001.akamaized.net</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <a href="../entities/Akamai Technologies.html">Akamai Technologies</a>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.akamai.com&#x2F;us&#x2F;en&#x2F;privacy-policies&#x2F;" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.akamai.com&#x2F;us&#x2F;en&#x2F;privacy-policies&#x2F;</a>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;4020<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.01&#37; (11 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> <a href="../categories/CDN.html">CDN</a>, 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Script</span>,
+                    <span>Stylesheet</span>,
+                    <span>XHR</span>,
+                    <span>Image</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/ws-cdn001.akamaized.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;25ba028d902b018fc2dc915fc5385962&#x2F;widgetloader" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;25ba028d902b018fc2dc915fc5385962&#x2F;widgetloader</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.73265.e1405616.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.73265.e1405616.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.55975.d7f0d0e4.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.55975.d7f0d0e4.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.82070.10a7a99c.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.82070.10a7a99c.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.89041.6283c57e.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.89041.6283c57e.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.37952.3646094f.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.37952.3646094f.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.89648.1f038c0a.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.89648.1f038c0a.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.74425.6879fb1e.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.74425.6879fb1e.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.87159.7c679f57.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.87159.7c679f57.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.97563.064aedac.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.97563.064aedac.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.872.aa4a73f4.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.872.aa4a73f4.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.3758.dd1a847e.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.3758.dd1a847e.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.90956.8793e3d3.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.90956.8793e3d3.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.27986.5f56d88e.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.27986.5f56d88e.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.41104.99a20396.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.41104.99a20396.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.64282.9a10cfe7.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.64282.9a10cfe7.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.35639.f337821b.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.35639.f337821b.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.9237.79fd5cc4.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.9237.79fd5cc4.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.76793.d953dc97.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.76793.d953dc97.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.45424.7d030fac.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.45424.7d030fac.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.57641.69c766f0.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.57641.69c766f0.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.89062.a9273f55.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.89062.a9273f55.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.25624.7de92baa.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.25624.7de92baa.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.97446.3bc93be5.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.97446.3bc93be5.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.74121.c2c36ae3.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.74121.c2c36ae3.css</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.74121.d637e110.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.74121.d637e110.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.58718.ac461fe1.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.58718.ac461fe1.css</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.58718.fea19f1e.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.58718.fea19f1e.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.match.lmtPlus.7f370631.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.match.lmtPlus.7f370631.css</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.match.lmtPlus.1f942e47.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.match.lmtPlus.1f942e47.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.react.67664d8c.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.react.67664d8c.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;translations&#x2F;en.json" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;translations&#x2F;en.json</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;25ba028d902b018fc2dc915fc5385962&#x2F;licensing" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;25ba028d902b018fc2dc915fc5385962&#x2F;licensing</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.52036.470a2225.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.52036.470a2225.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.65592.ccf6e178.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.65592.ccf6e178.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.58534.fd7eb8ed.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.58534.fd7eb8ed.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.match.lmtPlus_statistics_1.ec84cffa.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.match.lmtPlus_statistics_1.ec84cffa.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.match.lmtPlus_statistics_1.41fe74d0.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.match.lmtPlus_statistics_1.41fe74d0.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.48032.7814ee22.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.48032.7814ee22.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.38639.cd378da0.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.38639.cd378da0.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.match.lmtPlus_lmt.d3fd4a84.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.match.lmtPlus_lmt.d3fd4a84.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.match.lmtPlus_lmt.d3be68e4.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.match.lmtPlus_lmt.d3be68e4.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.45535.234d8ca6.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.45535.234d8ca6.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.77570.1c23b6cc.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.77570.1c23b6cc.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.49291.84264a99.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.49291.84264a99.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.54157.903d0769.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.54157.903d0769.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.54157.e89b6456.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.54157.e89b6456.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.94049.d71f23c6.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.94049.d71f23c6.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.57181.aabdfd36.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.57181.aabdfd36.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.1468.a1eb6ff8.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.1468.a1eb6ff8.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.70540.e124e697.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.70540.e124e697.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.70540.61586c38.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.70540.61586c38.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.21928.9be364fc.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.21928.9be364fc.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.56367.5a726681.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.56367.5a726681.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.90823.cc76c7eb.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.90823.cc76c7eb.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.90823.36f727fa.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.90823.36f727fa.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.55611.57dc7335.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.55611.57dc7335.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.55611.117b5e0e.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.55611.117b5e0e.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.match.lmt_1.644f8094.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.match.lmt_1.644f8094.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;media&#x2F;short_overlay.back.ab6cc8e5.png" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;media&#x2F;short_overlay.back.ab6cc8e5.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;media&#x2F;pitch-noise.5c2e3fd8.png" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;media&#x2F;pitch-noise.5c2e3fd8.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.904.b5ce61e8.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.904.b5ce61e8.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.71558.4d59aa26.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.71558.4d59aa26.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.20942.8fc26d78.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.20942.8fc26d78.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.17074.702c372f.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.17074.702c372f.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.37983.9b20d27b.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.37983.9b20d27b.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.37983.5251a5a9.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.37983.5251a5a9.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.match.lmt_ent_1.5c29406e.css" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;css&#x2F;chunk.match.lmt_ent_1.5c29406e.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.match.lmt_ent_1.1e32318e.js" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;assets&#x2F;js&#x2F;chunk.match.lmt_ent_1.1e32318e.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ws-cdn001.akamaized.net&#x2F;1d6162b9f2c0ece28e64447906122979&#x2F;widgetloader" target="_blank" class="external" rel="noreferrer noopener">ws-cdn001.akamaized.net&#x2F;1d6162b9f2c0ece28e64447906122979&#x2F;widgetloader</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://dafabc.net" target="_blank" class="external">dafabc.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://als.dafawin.com" target="_blank" class="external">als.dafawin.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://als.dafabc.org" target="_blank" class="external">als.dafabc.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://als.dafabet.net" target="_blank" class="external">als.dafabet.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://als.dfbocai.net" target="_blank" class="external">als.dfbocai.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://als.sportdafa.net" target="_blank" class="external">als.sportdafa.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://als.dafabet.com" target="_blank" class="external">als.dafabet.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dafabc.org" target="_blank" class="external">dafabc.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fairplay.co.in" target="_blank" class="external">fairplay.co.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.fairplay.co.in" target="_blank" class="external">m.fairplay.co.in</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - bitcoin-games.net</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "bitcoin-games.net",
+        history: [{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":2,"cookies":0.0000272}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/bitcoin-games.net.ico' width="32" height="32" class='inline-block' /> bitcoin-games.net</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;10538<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/bitcoin-games.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>Element.prototype.getClientRects</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>HTMLMediaElement.prototype.canPlayType</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;--r&#x3D;8" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;--r&#x3D;8</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;bootstrap.min.css" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;bootstrap.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;owl.carousel.css" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;owl.carousel.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;owl.transitions.css" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;owl.transitions.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;animate.css" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;animate.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;meanmenu.min.css" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;meanmenu.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;font-awesome.min.css" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;font-awesome.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;themify-icons.min.css" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;themify-icons.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;magnific.min.css" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;magnific.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;style.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;responsive.min.css" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;css&#x2F;responsive.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;vendor&#x2F;modernizr-2.8.3.min.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;vendor&#x2F;modernizr-2.8.3.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;&#x2F;cookieHint.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;&#x2F;cookieHint.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;icon&#x2F;DE.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;icon&#x2F;DE.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;icon&#x2F;EN.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;icon&#x2F;EN.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;icon&#x2F;ES.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;icon&#x2F;ES.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;icon&#x2F;login.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;icon&#x2F;login.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;logo.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;logo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;sports_betting.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;sports_betting.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;play_slots.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;play_slots.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;grand-jackpot.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;grand-jackpot.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;middle-jackpot.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;middle-jackpot.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;low-jackpot.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;low-jackpot.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;h2.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;h2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;ab-icon.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;ab-icon.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;bitcoin&#x2F;bitcoin_start.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;bitcoin&#x2F;bitcoin_start.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;coupon.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;coupon.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;ab-icon2.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;ab-icon2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;h3.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;h3.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;rallies.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;rallies.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;rally.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;rally.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;ab-icon3.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;ab-icon3.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;referrals.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;start&#x2F;referrals.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;h1.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;about&#x2F;h1.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;Arthur2020&#x2F;start-Arthur2020.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;Arthur2020&#x2F;start-Arthur2020.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;DejaVu&#x2F;start-DejaVu.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;DejaVu&#x2F;start-DejaVu.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;Freaky-Cakes&#x2F;start-Freaky-Cakes.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;Freaky-Cakes&#x2F;start-Freaky-Cakes.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;Ganja-Island&#x2F;start-Ganja-Island.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;Ganja-Island&#x2F;start-Ganja-Island.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;halloweenCandy&#x2F;start-halloweenCandy.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;halloweenCandy&#x2F;start-halloweenCandy.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;Hell-of-Dabor&#x2F;start-Hell-of-Dabor.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;Hell-of-Dabor&#x2F;start-Hell-of-Dabor.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;megaCashFruits&#x2F;start-megaCashFruits.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;megaCashFruits&#x2F;start-megaCashFruits.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;oceanLife&#x2F;start-oceanLife.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;oceanLife&#x2F;start-oceanLife.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;piratenSchatzkammer&#x2F;start-piratenSchatzkammer.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;piratenSchatzkammer&#x2F;start-piratenSchatzkammer.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;Rubbellos&#x2F;start-Rubbellos.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;Rubbellos&#x2F;start-Rubbellos.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;schatzSuche&#x2F;start-schatzSuche.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;schatzSuche&#x2F;start-schatzSuche.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;Starlight&#x2F;start-Starlight.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;Starlight&#x2F;start-Starlight.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;steakHouse&#x2F;start-steakHouse.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;steakHouse&#x2F;start-steakHouse.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;stoneAge&#x2F;start-stoneAge.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;stoneAge&#x2F;start-stoneAge.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;tropicJungle&#x2F;start-tropicJungle.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;tropicJungle&#x2F;start-tropicJungle.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;Vikings5R&#x2F;start-Vikings5R.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;Vikings5R&#x2F;start-Vikings5R.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;apps&#x2F;wildThing&#x2F;start-wildThing.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;apps&#x2F;wildThing&#x2F;start-wildThing.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;background&#x2F;ruleta-big-win.jpg" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;img&#x2F;background&#x2F;ruleta-big-win.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;18.png" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;18.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;vendor&#x2F;jquery-1.12.4.min.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;vendor&#x2F;jquery-1.12.4.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;bootstrap.min.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;bootstrap.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;owl.carousel.min.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;owl.carousel.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;magnific.min.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;magnific.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;wow.min.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;wow.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;jquery.meanmenu.min.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;jquery.meanmenu.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;form-validator.min.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;form-validator.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;plugins.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;plugins.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">bitcoin-games.net&#x2F;img&#x2F;playdo&#x2F;js&#x2F;main.js</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://onepiecechapters.com" target="_blank" class="external">onepiecechapters.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.9xmovie.ml" target="_blank" class="external">www.9xmovie.ml</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

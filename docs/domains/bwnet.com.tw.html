@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - bwnet.com.tw</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "bwnet.com.tw",
+        history: [{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":2,"cookies":0.0000136}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/bwnet.com.tw.ico' width="32" height="32" class='inline-block' /> bwnet.com.tw</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;10621<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Stylesheet</span>,
+                    <span>XHR</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/bwnet.com.tw.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>ibw</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Element.prototype.getClientRects</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;summary-move&#x2F;summary-move-min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;summary-move&#x2F;summary-move-min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;deploy&#x2F;img&#x2F;health_play_icon3.png" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;deploy&#x2F;img&#x2F;health_play_icon3.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;member&#x2F;icon_visibility.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;member&#x2F;icon_visibility.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;logo&#x2F;logo_google_g.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;logo&#x2F;logo_google_g.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;logo&#x2F;logo_line_circle.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;logo&#x2F;logo_line_circle.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;logo&#x2F;logo_facebook_round.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;logo&#x2F;logo_facebook_round.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;stylesheets&#x2F;home.minify.css" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;stylesheets&#x2F;home.minify.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;deploy&#x2F;css&#x2F;bw-style.css" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;deploy&#x2F;css&#x2F;bw-style.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;jquery-3.3.1.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;jquery-3.3.1.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;vendor&#x2F;bootstrap.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;vendor&#x2F;bootstrap.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;deploy&#x2F;js&#x2F;bw.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;deploy&#x2F;js&#x2F;bw.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;vendor&#x2F;jquery_lazyload.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;vendor&#x2F;jquery_lazyload.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;app.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;app.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;covertSvg.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;covertSvg.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;vendor&#x2F;smooth-scrollbar.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;vendor&#x2F;smooth-scrollbar.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;logo&#x2F;bw.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;logo&#x2F;bw.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;source&#x2F;logo_bw100.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;source&#x2F;logo_bw100.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;m-menu-normal.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;m-menu-normal.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;logo-red.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;logo-red.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;footer-instagram.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;footer-instagram.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;footer-telegram.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;footer-telegram.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;deploy&#x2F;css&#x2F;mixSlider.css" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;deploy&#x2F;css&#x2F;mixSlider.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;911e8abe-4a0d-90bc-a338-ce4541a32883_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;911e8abe-4a0d-90bc-a338-ce4541a32883_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;743104ad-7c5d-9c38-e3f8-50cb467c51be_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;743104ad-7c5d-9c38-e3f8-50cb467c51be_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;60841512-1044-24b1-086d-5ffa46303a68_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;60841512-1044-24b1-086d-5ffa46303a68_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;b62d0017-72cb-5483-3f73-8531e27d34d8_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;b62d0017-72cb-5483-3f73-8531e27d34d8_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;c019646e-388a-981f-a7e0-1f52f0f8e491_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;c019646e-388a-981f-a7e0-1f52f0f8e491_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;f7b2bdbe-a31d-4c7c-0f76-3db5426efb9e_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;f7b2bdbe-a31d-4c7c-0f76-3db5426efb9e_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;f7b2bdbe-a31d-4c7c-0f76-3db5426efb9e_250.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;f7b2bdbe-a31d-4c7c-0f76-3db5426efb9e_250.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;186bebf6-fc4a-d334-7c65-fed6d568950b_250.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;186bebf6-fc4a-d334-7c65-fed6d568950b_250.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;c05c0bb2-36c2-fd8d-150f-e5f60c45ffbb_250.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;c05c0bb2-36c2-fd8d-150f-e5f60c45ffbb_250.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;12&#x2F;fbc4af31-0e21-c3bd-9060-d852ed79476a_250.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;12&#x2F;fbc4af31-0e21-c3bd-9060-d852ed79476a_250.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;b4d6d9e1-9845-41ab-4967-6625b675423b_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;b4d6d9e1-9845-41ab-4967-6625b675423b_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;148aebf9-8ca1-7e93-3831-3d2ae6c489b9_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;148aebf9-8ca1-7e93-3831-3d2ae6c489b9_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;10&#x2F;4613af36-b540-626a-3105-92b92bd7988e_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;10&#x2F;4613af36-b540-626a-3105-92b92bd7988e_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;01772285-d71c-5b94-0731-5489cf26dbc3_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;01772285-d71c-5b94-0731-5489cf26dbc3_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;25520f3b-ad82-7b92-c3ad-4823f79325a1_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;25520f3b-ad82-7b92-c3ad-4823f79325a1_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;2cf73bb2-b46b-aa3c-8135-29ebf02c60df_620.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;2cf73bb2-b46b-aa3c-8135-29ebf02c60df_620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;10&#x2F;7a5c4a65-2ac8-0210-b290-2f9f78703635_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;10&#x2F;7a5c4a65-2ac8-0210-b290-2f9f78703635_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;07&#x2F;ac502c31-4528-68a2-26e7-8a6aa1b3b910_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;07&#x2F;ac502c31-4528-68a2-26e7-8a6aa1b3b910_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;7629a765-3289-bae6-1ca6-3fe5311f9b68_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;7629a765-3289-bae6-1ca6-3fe5311f9b68_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;03&#x2F;f06e1557-56c9-8fee-d17f-504f9a7d917f_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;03&#x2F;f06e1557-56c9-8fee-d17f-504f9a7d917f_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;01&#x2F;f5b09008-01af-40cb-0ec6-61cef2a89262_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2022&#x2F;01&#x2F;f5b09008-01af-40cb-0ec6-61cef2a89262_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;md_magazine&#x2F;2023&#x2F;01&#x2F;17db70f5-fc97-c59d-4348-20b3f3132a64_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;md_magazine&#x2F;2023&#x2F;01&#x2F;17db70f5-fc97-c59d-4348-20b3f3132a64_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;12&#x2F;897dbfc7-b1ca-c38b-ceb6-833796fdcc6e_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;12&#x2F;897dbfc7-b1ca-c38b-ceb6-833796fdcc6e_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;12&#x2F;2779bd70-c15f-44df-285b-34aed871d945_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;12&#x2F;2779bd70-c15f-44df-285b-34aed871d945_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;12&#x2F;81f35476-e22d-9762-070f-220447313af6_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;12&#x2F;81f35476-e22d-9762-070f-220447313af6_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;12&#x2F;cabd0afd-3792-83b1-4d49-f3467c9dfb27_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;12&#x2F;cabd0afd-3792-83b1-4d49-f3467c9dfb27_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;12&#x2F;931f3c55-9332-26b1-28d7-410981832705_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;12&#x2F;931f3c55-9332-26b1-28d7-410981832705_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;09&#x2F;94407a50-3cfe-1cd4-974e-5f7b885043e6_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2022&#x2F;09&#x2F;94407a50-3cfe-1cd4-974e-5f7b885043e6_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2021&#x2F;05&#x2F;8e7e1ca5-207e-41d1-a37a-e1d3636544ed_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2021&#x2F;05&#x2F;8e7e1ca5-207e-41d1-a37a-e1d3636544ed_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2020&#x2F;09&#x2F;82fb9c01-3cce-1af3-7ef1-0a43b2b88c86_310.webp" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ct_titleurl&#x2F;2020&#x2F;09&#x2F;82fb9c01-3cce-1af3-7ef1-0a43b2b88c86_310.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;comm.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;comm.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;comm-scroll.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;comm-scroll.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;comm-collectarticle.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;comm-collectarticle.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;vendor&#x2F;search.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;vendor&#x2F;search.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;slick.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;js&#x2F;slick.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;deploy&#x2F;js&#x2F;mixSlider.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;deploy&#x2F;js&#x2F;mixSlider.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;member&#x2F;grow&#x2F;wegrow-share.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;member&#x2F;grow&#x2F;wegrow-share.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;btn-change-white-normal.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;btn-change-white-normal.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;d61397a9-a650-2bda-4e2d-901cab1391b5_250.jpg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;d61397a9-a650-2bda-4e2d-901cab1391b5_250.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;aa711cce-fa4d-6696-309b-217bd69b3149_250.jpg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;aa711cce-fa4d-6696-309b-217bd69b3149_250.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;29e797c6-04fd-6cef-329a-19982b2f06c8_250.jpg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;29e797c6-04fd-6cef-329a-19982b2f06c8_250.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;1abc2c3c-0777-82e4-a238-5a949981e7fc_250.jpg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;ac_gallery&#x2F;2023&#x2F;01&#x2F;1abc2c3c-0777-82e4-a238-5a949981e7fc_250.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;article-collect-normal.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;article-collect-normal.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;tab-dropdown-normal.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;tab-dropdown-normal.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;external-link.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;external-link.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;stylesheets&#x2F;theme&#x2F;override.css" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;stylesheets&#x2F;theme&#x2F;override.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;logo&#x2F;bw.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;logo&#x2F;bw.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;search-normal.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;search-normal.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;post.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;post.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;btn-more-normal.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;btn-more-normal.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;channel-play-normal.svg" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;file&#x2F;img&#x2F;channel-play-normal.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;lib&#x2F;js.cookie.min.js" target="_blank" class="external" rel="noreferrer noopener">ibw.bwnet.com.tw&#x2F;assets&#x2F;library&#x2F;lib&#x2F;js.cookie.min.js</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://businessweekly.com.tw" target="_blank" class="external">businessweekly.com.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.businessweekly.com.tw" target="_blank" class="external">www.businessweekly.com.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://health.businessweekly.com.tw" target="_blank" class="external">health.businessweekly.com.tw</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

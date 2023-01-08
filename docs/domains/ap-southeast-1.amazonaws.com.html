@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "ap-southeast-1.amazonaws.com",
-        history: [{"date":"2022.03","prevalence":0.00028,"sites":41,"fingerprinting":0,"cookies":0.000041},{"date":"2022.04","prevalence":0.000279,"sites":41,"fingerprinting":1,"cookies":0.0000408},{"date":"2022.05","prevalence":0.000361,"sites":53,"fingerprinting":1,"cookies":0.0000341},{"date":"2022.06","prevalence":0.000224,"sites":33,"fingerprinting":0,"cookies":0.0000203},{"date":"2022.07","prevalence":0.000278,"sites":41,"fingerprinting":1,"cookies":0.0000204},{"date":"2022.08","prevalence":0.000278,"sites":41,"fingerprinting":1,"cookies":0.0000204},{"date":"muodov/aug-2022","prevalence":0.000271,"sites":40,"fingerprinting":0,"cookies":0.0000474}]
+        history: [{"date":"main","prevalence":0.000325,"sites":48,"fingerprinting":2,"cookies":0.0000339},{"date":"selenium-crux","prevalence":0.00229,"sites":168,"fingerprinting":1,"cookies":0.000218}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;help&#x2F;customer&#x2F;display.html?nodeId&#x3D;468496" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.amazon.com&#x2F;gp&#x2F;help&#x2F;customer&#x2F;display.html?nodeId&#x3D;468496</a>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;2701<small>/27751</small>
+                    <strong>Rank:</strong> &#35;620<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.03&#37; (40 sites)
+                    <strong>Prevalence:</strong> 0.23&#37; (168 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.02&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -90,23 +90,46 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>XHR</span>,
-                    <span>Preflight</span>,
                     <span>Image</span>,
                     <span>Fetch</span>,
+                    <span>Preflight</span>,
+                    <span>XHR</span>,
+                    <span>Media</span>,
                     <span>Script</span>,
+                    <span>Stylesheet</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/ap-southeast-1.amazonaws.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>aws-sin-slb-internet-64392e0be8997725.elb</span>, 
+                    <span>wildflourleviste.s3</span>, 
+                    <span>bigwin.s3</span>, 
                     <span>firehose</span>, 
                     <span>cognito-identity</span>, 
+                    <span>kinesis</span>, 
+                    <span>snowplow-collector-nlb-555b87488d0a4e62.elb</span>, 
+                    <span>5ox4h57wti.execute-api</span>, 
                     <span>s3</span>, 
+                    <span>namshi-static.s3</span>, 
+                    <span>hilo198.s3</span>, 
+                    <span>aws-sin-slb-internet-64392e0be8997725.elb</span>, 
+                    <span>imba-s3.s3</span>, 
+                    <span>elasticbeanstalk-ap-southeast-1-186212584946-public.s3</span>, 
+                    <span>elasticbeanstalk-ap-southeast-1-186212584946-public-prod.s3</span>, 
+                    <span>ss-plus.s3</span>, 
+                    <span>apeiro8.s3</span>, 
+                    <span>vmkt-qa.s3</span>, 
+                    <span>vmkt.s3</span>, 
+                    <span>singhaclub.s3</span>, 
+                    <span>loket-production-sg.s3</span>, 
+                    <span>22fun-public.s3</span>, 
+                    <span>wdb-pub.s3</span>, 
+                    <span>luckdraw-public.s3</span>, 
+                    <span>gcwin99-public.s3</span>, 
+                    <span>siam66-public.s3</span>, 
+                    <span>ap4fxfeaa9.execute-api</span>, 
                     <span>d-ic9wxv4cg5.execute-api</span>, 
-                    <span>pinpoint</span>, 
-                    <span>vj-prod-website-cms.s3</span>, 
-                    <span>cms-uat.s3</span>, 
+                    <span>creatives-assets.s3</span>, 
+                    <span>xw0vq7mhbi.execute-api</span>, 
                 </li>
             </ul>
         </div>
@@ -125,10 +148,32 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Element.prototype.getClientRects</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 <div class='p-5 border-b'>
     <h3 class='section-header'>CNAMEs</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://collector.set.or.th" target="_blank" class="external">collector.set.or.th</a> &#x2192; <a href="http://snowplow-collector-nlb-555b87488d0a4e62.elb.ap-southeast-1.amazonaws.com" target="_blank" class="external">snowplow-collector-nlb-555b87488d0a4e62.elb.ap-southeast-1.amazonaws.com</a>
+        </li>
         <li class='truncate'>
             <a href="http://raptor.sg.iproperty.com.my" target="_blank" class="external">raptor.sg.iproperty.com.my</a> &#x2192; <a href="http://d-ic9wxv4cg5.execute-api.ap-southeast-1.amazonaws.com" target="_blank" class="external">d-ic9wxv4cg5.execute-api.ap-southeast-1.amazonaws.com</a>
         </li>
@@ -142,28 +187,337 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://firehose.ap-southeast-1.amazonaws.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">firehose.ap-southeast-1.amazonaws.com&#x2F;</a> (seen on 6 websites)</p>
+            <p><a href="http://firehose.ap-southeast-1.amazonaws.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">firehose.ap-southeast-1.amazonaws.com&#x2F;</a> (seen on 25 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://firehose.ap-southeast-1.amazonaws.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">firehose.ap-southeast-1.amazonaws.com&#x2F;</a> (seen on 6 websites)</p>
+            <p><a href="http://firehose.ap-southeast-1.amazonaws.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">firehose.ap-southeast-1.amazonaws.com&#x2F;</a> (seen on 25 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bee&#x2F;collect" target="_blank" class="external" rel="noreferrer noopener">aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bee&#x2F;collect</a> (seen on 4 websites)</p>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;rsg.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;rsg.png</a> (seen on 11 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bee&#x2F;collect" target="_blank" class="external" rel="noreferrer noopener">aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bee&#x2F;collect</a> (seen on 4 websites)</p>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;ninjaslot.jpg" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;ninjaslot.jpg</a> (seen on 11 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bf.gif" target="_blank" class="external" rel="noreferrer noopener">aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bf.gif</a> (seen on 4 websites)</p>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;live22.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;live22.png</a> (seen on 11 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.ap-southeast-1.amazonaws.com&#x2F;images.deccanchronicle.com&#x2F;dc-Cover-mltv306fpap0vvppb3pci8n071-20191225111756.jpeg" target="_blank" class="external" rel="noreferrer noopener">s3.ap-southeast-1.amazonaws.com&#x2F;images.deccanchronicle.com&#x2F;dc-Cover-mltv306fpap0vvppb3pci8n071-20191225111756.jpeg</a> (seen on 2 websites)</p>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;yggdrasil.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;yggdrasil.png</a> (seen on 11 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.ap-southeast-1.amazonaws.com&#x2F;images.deccanchronicle.com&#x2F;dc-Cover-i2cvpjuh9hoj5pgej18hltqtm5-20220722163323.jpeg" target="_blank" class="external" rel="noreferrer noopener">s3.ap-southeast-1.amazonaws.com&#x2F;images.deccanchronicle.com&#x2F;dc-Cover-i2cvpjuh9hoj5pgej18hltqtm5-20220722163323.jpeg</a> (seen on 2 websites)</p>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;betsoft.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;betsoft.png</a> (seen on 11 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.ap-southeast-1.amazonaws.com&#x2F;images.deccanchronicle.com&#x2F;dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg" target="_blank" class="external" rel="noreferrer noopener">s3.ap-southeast-1.amazonaws.com&#x2F;images.deccanchronicle.com&#x2F;dc-Cover-i5utfd2tp6pcphmgtlrbhaf3r0-20220718214605.jpeg</a> (seen on 2 websites)</p>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;creativegaming.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;creativegaming.png</a> (seen on 11 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;pgslot.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;pgslot.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;joker.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;joker.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;jili.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;jili.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;pragmaticplay.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;pragmaticplay.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;spinix.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;spinix.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;evoplay.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;evoplay.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;simpleplay.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;simpleplay.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;pegasus.jpg" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;pegasus.jpg</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;ambslot.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;ambslot.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;kagaming.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;kagaming.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;mannaplay.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;mannaplay.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;wazdan.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;wazdan.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;booongo.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;booongo.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;aegaming.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;aegaming.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;iconicgaming.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;iconicgaming.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;spade.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;spade.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;funkygame.png" target="_blank" class="external" rel="noreferrer noopener">5ox4h57wti.execute-api.ap-southeast-1.amazonaws.com&#x2F;default&#x2F;resize-image&#x2F;game-image-all&#x2F;_escobar&#x2F;provider&#x2F;slot&#x2F;funkygame.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bee&#x2F;collect" target="_blank" class="external" rel="noreferrer noopener">aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bee&#x2F;collect</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bee&#x2F;collect" target="_blank" class="external" rel="noreferrer noopener">aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bee&#x2F;collect</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bf.gif" target="_blank" class="external" rel="noreferrer noopener">aws-sin-slb-internet-64392e0be8997725.elb.ap-southeast-1.amazonaws.com&#x2F;bf.gif</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-1.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-1.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-2.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-2.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-3.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-3.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-4.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-4.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-7.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-7.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-8.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-8.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-10.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-10.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-12.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-12.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-13.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-13.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-14.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-14.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-17.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-17.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-18.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-18.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-19.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-19.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-22.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-22.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-26.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-26.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-27.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-27.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-28.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-28.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-31.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-31.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-32.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-32.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-33.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-33.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;prediction-history-win.svg" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;prediction-history-win.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;prediction-history-lose.svg" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;prediction-history-lose.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://kinesis.ap-southeast-1.amazonaws.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">kinesis.ap-southeast-1.amazonaws.com&#x2F;</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://wildflourleviste.s3.ap-southeast-1.amazonaws.com&#x2F;ajaib88&#x2F;logoajaib.png" target="_blank" class="external" rel="noreferrer noopener">wildflourleviste.s3.ap-southeast-1.amazonaws.com&#x2F;ajaib88&#x2F;logoajaib.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://bigwin.s3.ap-southeast-1.amazonaws.com&#x2F;undefined" target="_blank" class="external" rel="noreferrer noopener">bigwin.s3.ap-southeast-1.amazonaws.com&#x2F;undefined</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://snowplow-collector-nlb-555b87488d0a4e62.elb.ap-southeast-1.amazonaws.com&#x2F;com.google.analytics&#x2F;v1" target="_blank" class="external" rel="noreferrer noopener">snowplow-collector-nlb-555b87488d0a4e62.elb.ap-southeast-1.amazonaws.com&#x2F;com.google.analytics&#x2F;v1</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.ap-southeast-1.amazonaws.com&#x2F;dlg.dialog.lk&#x2F;s3fs-public&#x2F;2022-12&#x2F;dialog-business-services-certified-as-a-great-place-to-work-thumb.jpg" target="_blank" class="external" rel="noreferrer noopener">s3.ap-southeast-1.amazonaws.com&#x2F;dlg.dialog.lk&#x2F;s3fs-public&#x2F;2022-12&#x2F;dialog-business-services-certified-as-a-great-place-to-work-thumb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.ap-southeast-1.amazonaws.com&#x2F;dlg.dialog.lk&#x2F;s3fs-public&#x2F;2022-11&#x2F;genie-fintech-platform-thumb.jpg" target="_blank" class="external" rel="noreferrer noopener">s3.ap-southeast-1.amazonaws.com&#x2F;dlg.dialog.lk&#x2F;s3fs-public&#x2F;2022-11&#x2F;genie-fintech-platform-thumb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.ap-southeast-1.amazonaws.com&#x2F;dlg.dialog.lk&#x2F;s3fs-public&#x2F;2022-11&#x2F;sos-childrens-villages-joins-karuna-thumb.jpg" target="_blank" class="external" rel="noreferrer noopener">s3.ap-southeast-1.amazonaws.com&#x2F;dlg.dialog.lk&#x2F;s3fs-public&#x2F;2022-11&#x2F;sos-childrens-villages-joins-karuna-thumb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.ap-southeast-1.amazonaws.com&#x2F;dlg.dialog.lk&#x2F;s3fs-public&#x2F;2022-11&#x2F;Photo-PR-T.jpg" target="_blank" class="external" rel="noreferrer noopener">s3.ap-southeast-1.amazonaws.com&#x2F;dlg.dialog.lk&#x2F;s3fs-public&#x2F;2022-11&#x2F;Photo-PR-T.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://namshi-static.s3.ap-southeast-1.amazonaws.com&#x2F;cms&#x2F;small&#x2F;promo&#x2F;black_nov_2022&#x2F;20221104&#x2F;popup&#x2F;m_en.jpg" target="_blank" class="external" rel="noreferrer noopener">namshi-static.s3.ap-southeast-1.amazonaws.com&#x2F;cms&#x2F;small&#x2F;promo&#x2F;black_nov_2022&#x2F;20221104&#x2F;popup&#x2F;m_en.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;GKqPGi4LsEo4mSYYA9anPN8E" target="_blank" class="external" rel="noreferrer noopener">hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;GKqPGi4LsEo4mSYYA9anPN8E</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;boyx4v1aoHvCBDLskUnuKRSw" target="_blank" class="external" rel="noreferrer noopener">hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;boyx4v1aoHvCBDLskUnuKRSw</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;8W8oHPHXzGnUYrUnkAs8zPG9" target="_blank" class="external" rel="noreferrer noopener">hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;8W8oHPHXzGnUYrUnkAs8zPG9</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;wxYHVR4avv7i9qH2F5yTJSPz" target="_blank" class="external" rel="noreferrer noopener">hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;wxYHVR4avv7i9qH2F5yTJSPz</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;uCuaSXhaaM1qampiQpEkQhYx" target="_blank" class="external" rel="noreferrer noopener">hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;uCuaSXhaaM1qampiQpEkQhYx</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;sJrg22shasqDRjXg8QzAvoVt" target="_blank" class="external" rel="noreferrer noopener">hilo198.s3.ap-southeast-1.amazonaws.com&#x2F;sJrg22shasqDRjXg8QzAvoVt</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;dTkKoNXuTWkuTptdQowPQhMz" target="_blank" class="external" rel="noreferrer noopener">imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;dTkKoNXuTWkuTptdQowPQhMz</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;ejKzyaKCeAKrMudKCRmuKbqN" target="_blank" class="external" rel="noreferrer noopener">imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;ejKzyaKCeAKrMudKCRmuKbqN</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;UvWev6KcPxkyvY2u9xQdZFoQ" target="_blank" class="external" rel="noreferrer noopener">imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;UvWev6KcPxkyvY2u9xQdZFoQ</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;32CnBFXAENbHC4UAiDNNUkc5" target="_blank" class="external" rel="noreferrer noopener">imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;32CnBFXAENbHC4UAiDNNUkc5</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;agxndDeyikoFEQ44uJ12hMc4" target="_blank" class="external" rel="noreferrer noopener">imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;agxndDeyikoFEQ44uJ12hMc4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;YTjcDjbVceRRnYtJRtNS85ZB" target="_blank" class="external" rel="noreferrer noopener">imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;YTjcDjbVceRRnYtJRtNS85ZB</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;qsPwjDs5XcEw4pBcC3ZmucSV" target="_blank" class="external" rel="noreferrer noopener">imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;qsPwjDs5XcEw4pBcC3ZmucSV</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;3d8LzLeZg26eH3up9icEXJdE" target="_blank" class="external" rel="noreferrer noopener">imba-s3.s3.ap-southeast-1.amazonaws.com&#x2F;3d8LzLeZg26eH3up9icEXJdE</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://elasticbeanstalk-ap-southeast-1-186212584946-public.s3.ap-southeast-1.amazonaws.com&#x2F;Mask_Group_127_74f48e3858.png" target="_blank" class="external" rel="noreferrer noopener">elasticbeanstalk-ap-southeast-1-186212584946-public.s3.ap-southeast-1.amazonaws.com&#x2F;Mask_Group_127_74f48e3858.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://elasticbeanstalk-ap-southeast-1-186212584946-public-prod.s3.ap-southeast-1.amazonaws.com&#x2F;Desktop_20221102_Coca_cola_Myanmar_20s_1280x688_c849408812.mp4" target="_blank" class="external" rel="noreferrer noopener">elasticbeanstalk-ap-southeast-1-186212584946-public-prod.s3.ap-southeast-1.amazonaws.com&#x2F;Desktop_20221102_Coca_cola_Myanmar_20s_1280x688_c849408812.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ss-plus.s3.ap-southeast-1.amazonaws.com&#x2F;edge&#x2F;html&#x2F;deny&#x2F;deny-errorpage.js" target="_blank" class="external" rel="noreferrer noopener">ss-plus.s3.ap-southeast-1.amazonaws.com&#x2F;edge&#x2F;html&#x2F;deny&#x2F;deny-errorpage.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.ap-southeast-1.amazonaws.com&#x2F;biz.thestar.com.my&#x2F;json&#x2F;klse.js" target="_blank" class="external" rel="noreferrer noopener">s3.ap-southeast-1.amazonaws.com&#x2F;biz.thestar.com.my&#x2F;json&#x2F;klse.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vmkt-qa.s3.ap-southeast-1.amazonaws.com&#x2F;strorefront&#x2F;courses+menu+icons&#x2F;header-iconsprite.svg" target="_blank" class="external" rel="noreferrer noopener">vmkt-qa.s3.ap-southeast-1.amazonaws.com&#x2F;strorefront&#x2F;courses+menu+icons&#x2F;header-iconsprite.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vmkt.s3.ap-southeast-1.amazonaws.com&#x2F;june+mc+2022&#x2F;Aqib+Zargar1.png" target="_blank" class="external" rel="noreferrer noopener">vmkt.s3.ap-southeast-1.amazonaws.com&#x2F;june+mc+2022&#x2F;Aqib+Zargar1.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;pjjdRt8CSCqNfWatdaETgCL8" target="_blank" class="external" rel="noreferrer noopener">singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;pjjdRt8CSCqNfWatdaETgCL8</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;seMiLt3c1Q2xBD9ws3rcDtkQ" target="_blank" class="external" rel="noreferrer noopener">singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;seMiLt3c1Q2xBD9ws3rcDtkQ</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;NdRvVo2oAR1zBnbL9zjyfdiF" target="_blank" class="external" rel="noreferrer noopener">singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;NdRvVo2oAR1zBnbL9zjyfdiF</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;ebYSytYrKSV71RuVpHRvfe1i" target="_blank" class="external" rel="noreferrer noopener">singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;ebYSytYrKSV71RuVpHRvfe1i</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;vCh8HEN44FxdTgqxXM32To5i" target="_blank" class="external" rel="noreferrer noopener">singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;vCh8HEN44FxdTgqxXM32To5i</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;5pVf2htqKjUN8BArXuA9LCtn" target="_blank" class="external" rel="noreferrer noopener">singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;5pVf2htqKjUN8BArXuA9LCtn</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;8bvUDmJzmLDqoWPmFsS7iGPq" target="_blank" class="external" rel="noreferrer noopener">singhaclub.s3.ap-southeast-1.amazonaws.com&#x2F;8bvUDmJzmLDqoWPmFsS7iGPq</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1666752980_NxZAj7.png" target="_blank" class="external" rel="noreferrer noopener">loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1666752980_NxZAj7.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1666753158_2cxrpr.jpg" target="_blank" class="external" rel="noreferrer noopener">loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1666753158_2cxrpr.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1666753275_F4KwFq.jpg" target="_blank" class="external" rel="noreferrer noopener">loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1666753275_F4KwFq.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1666753582_LaMToE.jpg" target="_blank" class="external" rel="noreferrer noopener">loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1666753582_LaMToE.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1671769317_dkkc2Y.jpg" target="_blank" class="external" rel="noreferrer noopener">loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1671769317_dkkc2Y.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1671603993_ulhjc3.jpg" target="_blank" class="external" rel="noreferrer noopener">loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1671603993_ulhjc3.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1672624107_DP3XEu.jpg" target="_blank" class="external" rel="noreferrer noopener">loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1672624107_DP3XEu.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1673000006_B4RE7v.jpg" target="_blank" class="external" rel="noreferrer noopener">loket-production-sg.s3.ap-southeast-1.amazonaws.com&#x2F;images&#x2F;ss&#x2F;1673000006_B4RE7v.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;lang&#x2F;th.svg" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;lang&#x2F;th.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;vip-crown.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;vip-crown.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;vip-gift.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;vip-gift.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;gift.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;gift.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;prediction-close.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;prediction-close.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;calendar.svg" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;calendar.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;icon&#x2F;ico-fpay.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;icon&#x2F;ico-fpay.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;sound-effect&#x2F;check_in_successful_sound.mp3" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;sound-effect&#x2F;check_in_successful_sound.mp3</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;reward-light-effect.json" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;reward-light-effect.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;reward-light-effect.json" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;reward-light-effect.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;gold-coins.json" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;gold-coins.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;gold-coins.json" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;gold-coins.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;gift-box.json" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;gift-box.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;gift-box.json" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;gift-box.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-34.png" target="_blank" class="external" rel="noreferrer noopener">22fun-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;web&#x2F;provider-big&#x2F;Bottom-Icon-34.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://wdb-pub.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;logo.png" target="_blank" class="external" rel="noreferrer noopener">wdb-pub.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;logo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ap4fxfeaa9.execute-api.ap-southeast-1.amazonaws.com&#x2F;prod&#x2F;bugaboo-vc-bff" target="_blank" class="external" rel="noreferrer noopener">ap4fxfeaa9.execute-api.ap-southeast-1.amazonaws.com&#x2F;prod&#x2F;bugaboo-vc-bff</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://d-ic9wxv4cg5.execute-api.ap-southeast-1.amazonaws.com&#x2F;v1&#x2F;graphql" target="_blank" class="external" rel="noreferrer noopener">d-ic9wxv4cg5.execute-api.ap-southeast-1.amazonaws.com&#x2F;v1&#x2F;graphql</a> (seen on 2 websites)</p>
@@ -172,49 +526,136 @@
             <p><a href="http://d-ic9wxv4cg5.execute-api.ap-southeast-1.amazonaws.com&#x2F;v1&#x2F;graphql" target="_blank" class="external" rel="noreferrer noopener">d-ic9wxv4cg5.execute-api.ap-southeast-1.amazonaws.com&#x2F;v1&#x2F;graphql</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://pinpoint.ap-southeast-1.amazonaws.com&#x2F;v1&#x2F;apps&#x2F;004cc2591deb436daf00ff36a8201fa4&#x2F;events" target="_blank" class="external" rel="noreferrer noopener">pinpoint.ap-southeast-1.amazonaws.com&#x2F;v1&#x2F;apps&#x2F;004cc2591deb436daf00ff36a8201fa4&#x2F;events</a> (seen on 2 websites)</p>
+            <p><a href="http://creatives-assets.s3.ap-southeast-1.amazonaws.com&#x2F;Rumah&#x2F;Homepage&#x2F;Masthead_Takeover&#x2F;SO-07005%20-%20PT.%20TASPEN%20PROPERTI%20INDONESIA&#x2F;28112022&#x2F;Desktop.mp4" target="_blank" class="external" rel="noreferrer noopener">creatives-assets.s3.ap-southeast-1.amazonaws.com&#x2F;Rumah&#x2F;Homepage&#x2F;Masthead_Takeover&#x2F;SO-07005%20-%20PT.%20TASPEN%20PROPERTI%20INDONESIA&#x2F;28112022&#x2F;Desktop.mp4</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://pinpoint.ap-southeast-1.amazonaws.com&#x2F;v1&#x2F;apps&#x2F;004cc2591deb436daf00ff36a8201fa4&#x2F;events" target="_blank" class="external" rel="noreferrer noopener">pinpoint.ap-southeast-1.amazonaws.com&#x2F;v1&#x2F;apps&#x2F;004cc2591deb436daf00ff36a8201fa4&#x2F;events</a> (seen on 2 websites)</p>
+            <p><a href="http://xw0vq7mhbi.execute-api.ap-southeast-1.amazonaws.com&#x2F;Production&#x2F;settrade-mlprediction" target="_blank" class="external" rel="noreferrer noopener">xw0vq7mhbi.execute-api.ap-southeast-1.amazonaws.com&#x2F;Production&#x2F;settrade-mlprediction</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.ap-southeast-1.amazonaws.com&#x2F;biz.thestar.com.my&#x2F;json&#x2F;stocklookup.js" target="_blank" class="external" rel="noreferrer noopener">s3.ap-southeast-1.amazonaws.com&#x2F;biz.thestar.com.my&#x2F;json&#x2F;stocklookup.js</a> (seen on 2 websites)</p>
+            <p><a href="http://xw0vq7mhbi.execute-api.ap-southeast-1.amazonaws.com&#x2F;Production&#x2F;settrade-mlprediction" target="_blank" class="external" rel="noreferrer noopener">xw0vq7mhbi.execute-api.ap-southeast-1.amazonaws.com&#x2F;Production&#x2F;settrade-mlprediction</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com&#x2F;files&#x2F;flywithvietjeten-1602759084218.png" target="_blank" class="external" rel="noreferrer noopener">vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com&#x2F;files&#x2F;flywithvietjeten-1602759084218.png</a> (seen on 2 websites)</p>
+            <p><a href="http://xw0vq7mhbi.execute-api.ap-southeast-1.amazonaws.com&#x2F;Production&#x2F;set-mlprediction" target="_blank" class="external" rel="noreferrer noopener">xw0vq7mhbi.execute-api.ap-southeast-1.amazonaws.com&#x2F;Production&#x2F;set-mlprediction</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com&#x2F;files&#x2F;flygreenen-1602759084206.png" target="_blank" class="external" rel="noreferrer noopener">vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com&#x2F;files&#x2F;flygreenen-1602759084206.png</a> (seen on 2 websites)</p>
+            <p><a href="http://siam66-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web_2&#x2F;img&#x2F;reward-light-effect.json" target="_blank" class="external" rel="noreferrer noopener">siam66-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web_2&#x2F;img&#x2F;reward-light-effect.json</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;facebook-1607147833349.png" target="_blank" class="external" rel="noreferrer noopener">cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;facebook-1607147833349.png</a> (seen on 2 websites)</p>
+            <p><a href="http://siam66-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web_2&#x2F;img&#x2F;reward-light-effect.json" target="_blank" class="external" rel="noreferrer noopener">siam66-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web_2&#x2F;img&#x2F;reward-light-effect.json</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;insta-1607147833353.png" target="_blank" class="external" rel="noreferrer noopener">cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;insta-1607147833353.png</a> (seen on 2 websites)</p>
+            <p><a href="http://siam66-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web_2&#x2F;img&#x2F;gold-coins.json" target="_blank" class="external" rel="noreferrer noopener">siam66-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web_2&#x2F;img&#x2F;gold-coins.json</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;twitter-1607147826657.png" target="_blank" class="external" rel="noreferrer noopener">cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;twitter-1607147826657.png</a> (seen on 2 websites)</p>
+            <p><a href="http://siam66-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web_2&#x2F;img&#x2F;gold-coins.json" target="_blank" class="external" rel="noreferrer noopener">siam66-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web_2&#x2F;img&#x2F;gold-coins.json</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;line-1607147826652.png" target="_blank" class="external" rel="noreferrer noopener">cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;line-1607147826652.png</a> (seen on 2 websites)</p>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;css&#x2F;library.min.css" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;css&#x2F;library.min.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;wechat-1607147826660.png" target="_blank" class="external" rel="noreferrer noopener">cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;wechat-1607147826660.png</a> (seen on 2 websites)</p>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;css&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;css&#x2F;style.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;zalo-1607147826662.png" target="_blank" class="external" rel="noreferrer noopener">cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;zalo-1607147826662.png</a> (seen on 2 websites)</p>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;css&#x2F;responsive.css" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;css&#x2F;responsive.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com&#x2F;huongdan-1634321105674.svg" target="_blank" class="external" rel="noreferrer noopener">vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com&#x2F;huongdan-1634321105674.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;logo.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;logo.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com&#x2F;pay-1634321105685.svg" target="_blank" class="external" rel="noreferrer noopener">vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com&#x2F;pay-1634321105685.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;u-logo.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;u-logo.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;applestore-1607148441670.png" target="_blank" class="external" rel="noreferrer noopener">cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;applestore-1607148441670.png</a> (seen on 2 websites)</p>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;reward-logo.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;reward-logo.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;googleplay-1607148441674.png" target="_blank" class="external" rel="noreferrer noopener">cms-uat.s3.ap-southeast-1.amazonaws.com&#x2F;googleplay-1607148441674.png</a> (seen on 2 websites)</p>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;card-red.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;card-red.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;card-orange.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;card-orange.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;card-gold.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;card-gold.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;Close2.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;Close2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;promotion&#x2F;time.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;promotion&#x2F;time.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;banner&#x2F;banner-1.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;banner&#x2F;banner-1.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;eyes-slash.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;eyes-slash.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;m-announcement-icon.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;m-announcement-icon.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;Icon-quick.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;Icon-quick.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;reload.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;reload.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;flag&#x2F;en_32.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;flag&#x2F;en_32.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;flag&#x2F;check.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;flag&#x2F;check.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;flag&#x2F;th_32.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;flag&#x2F;th_32.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;Close4.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;Close4.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;modal_box.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;modal_box.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;no-image.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;no-image.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;Close3.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;Close3.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;tryagain_box.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;tryagain_box.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;icon-tryagain.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;icon-tryagain.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;congra_box2.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;congra_box2.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;iphone.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;common&#x2F;iphone.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;prediction-close.svg" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;prediction-close.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;test.png" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;img&#x2F;prediction&#x2F;test.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;library.min.js" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;library.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;library.p2.min.js" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;library.p2.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;lang&#x2F;lang_en.js" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;lang&#x2F;lang_en.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;script.js" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;script.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;qrcode.min.js" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;qrcode.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;moment.js" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;moment.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;moment-timezone.min.js" target="_blank" class="external" rel="noreferrer noopener">luckdraw-public.s3.ap-southeast-1.amazonaws.com&#x2F;frontend&#x2F;asset_web&#x2F;js&#x2F;moment-timezone.min.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -224,10 +665,172 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
+            <a href="http://ajaib-yes-88.com" target="_blank" class="external">ajaib-yes-88.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://xn--88-172cy02dsk0e.com" target="_blank" class="external">xn--88-172cy02dsk0e.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mgm99win.live" target="_blank" class="external">mgm99win.live</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://auto.shib1688.net" target="_blank" class="external">auto.shib1688.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thanhnien.vn" target="_blank" class="external">thanhnien.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.managertoday.com.tw" target="_blank" class="external">www.managertoday.com.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.xuite.net" target="_blank" class="external">m.xuite.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.upmedia.mg" target="_blank" class="external">www.upmedia.mg</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.rappler.com" target="_blank" class="external">www.rappler.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://blog.xuite.net" target="_blank" class="external">blog.xuite.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.jpnn.com" target="_blank" class="external">m.jpnn.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mirrormedia.mg" target="_blank" class="external">www.mirrormedia.mg</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://news.cts.com.tw" target="_blank" class="external">news.cts.com.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://jalantikus.com" target="_blank" class="external">jalantikus.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nownews.com" target="_blank" class="external">www.nownews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bnext.com.tw" target="_blank" class="external">www.bnext.com.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bella.tw" target="_blank" class="external">www.bella.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thebetteraging.businesstoday.com.tw" target="_blank" class="external">thebetteraging.businesstoday.com.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wantrich.chinatimes.com" target="_blank" class="external">wantrich.chinatimes.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ftvnews.com.tw" target="_blank" class="external">www.ftvnews.com.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.chinatimes.com" target="_blank" class="external">www.chinatimes.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.businesstoday.com.tw" target="_blank" class="external">www.businesstoday.com.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gvm.com.tw" target="_blank" class="external">www.gvm.com.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.edh.tw" target="_blank" class="external">www.edh.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wstyle.com.tw" target="_blank" class="external">www.wstyle.com.tw</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.1kkk.com" target="_blank" class="external">m.1kkk.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://docbao.vn" target="_blank" class="external">docbao.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bobowin.blog" target="_blank" class="external">bobowin.blog</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://set.or.th" target="_blank" class="external">set.or.th</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.set.or.th" target="_blank" class="external">www.set.or.th</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cloud9bet.net" target="_blank" class="external">cloud9bet.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dubai88.bet" target="_blank" class="external">dubai88.bet</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ezyx1.bet" target="_blank" class="external">ezyx1.bet</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://game.lunawin.bet" target="_blank" class="external">game.lunawin.bet</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://lucac4.vip" target="_blank" class="external">lucac4.vip</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://marine88.bet" target="_blank" class="external">marine88.bet</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://monsterc4.bet" target="_blank" class="external">monsterc4.bet</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://rachaslot.me" target="_blank" class="external">rachaslot.me</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tigerplay88.bet" target="_blank" class="external">tigerplay88.bet</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uplay168.bet" target="_blank" class="external">uplay168.bet</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uspin88.bet" target="_blank" class="external">uspin88.bet</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dialog.lk" target="_blank" class="external">dialog.lk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dialog.lk" target="_blank" class="external">www.dialog.lk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gamblemoney.co" target="_blank" class="external">gamblemoney.co</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://namshi.com" target="_blank" class="external">namshi.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://en-sa.namshi.com" target="_blank" class="external">en-sa.namshi.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://hilo198.com" target="_blank" class="external">hilo198.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hilo198.com" target="_blank" class="external">www.hilo198.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://trip.com" target="_blank" class="external">trip.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://hk.trip.com" target="_blank" class="external">hk.trip.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://jp.trip.com" target="_blank" class="external">jp.trip.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://kr.trip.com" target="_blank" class="external">kr.trip.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sg.trip.com" target="_blank" class="external">sg.trip.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tc.trip.com" target="_blank" class="external">tc.trip.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://th.trip.com" target="_blank" class="external">th.trip.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uk.trip.com" target="_blank" class="external">uk.trip.com</a>
         </li>
         <li class='truncate'>
             <a href="http://us.trip.com" target="_blank" class="external">us.trip.com</a>
@@ -236,28 +839,70 @@
             <a href="http://www.trip.com" target="_blank" class="external">www.trip.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://chinatimes.com" target="_blank" class="external">chinatimes.com</a>
+            <a href="http://imba88.com" target="_blank" class="external">imba88.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.chinatimes.com" target="_blank" class="external">www.chinatimes.com</a>
+            <a href="http://www.imba88.com" target="_blank" class="external">www.imba88.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.nownews.com" target="_blank" class="external">www.nownews.com</a>
+            <a href="http://coca-cola.com" target="_blank" class="external">coca-cola.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.rappler.com" target="_blank" class="external">www.rappler.com</a>
+            <a href="http://luckybreaksmm.coca-cola.com" target="_blank" class="external">luckybreaksmm.coca-cola.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.setn.com" target="_blank" class="external">www.setn.com</a>
+            <a href="http://khelraja.com" target="_blank" class="external">khelraja.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.thenewslens.com" target="_blank" class="external">www.thenewslens.com</a>
+            <a href="http://www.niceoppai.net" target="_blank" class="external">www.niceoppai.net</a>
         </li>
         <li class='truncate'>
-            <a href="http://deccanchronicle.com" target="_blank" class="external">deccanchronicle.com</a>
+            <a href="http://majoriti.com.my" target="_blank" class="external">majoriti.com.my</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.deccanchronicle.com" target="_blank" class="external">www.deccanchronicle.com</a>
+            <a href="http://www.thestar.com.my" target="_blank" class="external">www.thestar.com.my</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vedantu.com" target="_blank" class="external">vedantu.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.vedantu.com" target="_blank" class="external">www.vedantu.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://singha-club.com" target="_blank" class="external">singha-club.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.singha-club.com" target="_blank" class="external">www.singha-club.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://loket.com" target="_blank" class="external">loket.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.loket.com" target="_blank" class="external">www.loket.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://22funth.com" target="_blank" class="external">22funth.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.22winth.com" target="_blank" class="external">www.22winth.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.uea8rewards.com" target="_blank" class="external">www.uea8rewards.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gcwin99.com" target="_blank" class="external">www.gcwin99.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.siam66.com" target="_blank" class="external">www.siam66.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://22winth.com" target="_blank" class="external">22winth.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bugaboo.tv" target="_blank" class="external">bugaboo.tv</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ch7.com" target="_blank" class="external">www.ch7.com</a>
         </li>
         <li class='truncate'>
             <a href="http://iproperty.com.my" target="_blank" class="external">iproperty.com.my</a>
@@ -266,19 +911,28 @@
             <a href="http://www.iproperty.com.my" target="_blank" class="external">www.iproperty.com.my</a>
         </li>
         <li class='truncate'>
-            <a href="http://rappler.com" target="_blank" class="external">rappler.com</a>
+            <a href="http://oneboy.com.tw" target="_blank" class="external">oneboy.com.tw</a>
         </li>
         <li class='truncate'>
-            <a href="http://thestar.com.my" target="_blank" class="external">thestar.com.my</a>
+            <a href="http://www.oneboy.com.tw" target="_blank" class="external">www.oneboy.com.tw</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.thestar.com.my" target="_blank" class="external">www.thestar.com.my</a>
+            <a href="http://rumah.com" target="_blank" class="external">rumah.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://vietjetair.com" target="_blank" class="external">vietjetair.com</a>
+            <a href="http://www.rumah.com" target="_blank" class="external">www.rumah.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.vietjetair.com" target="_blank" class="external">www.vietjetair.com</a>
+            <a href="http://settrade.com" target="_blank" class="external">settrade.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.settrade.com" target="_blank" class="external">www.settrade.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://siam66.com" target="_blank" class="external">siam66.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uea8rewards.com" target="_blank" class="external">uea8rewards.com</a>
         </li>
     </ul>
 </div>

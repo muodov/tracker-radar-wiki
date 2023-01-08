@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "enewspapr.com",
-        history: [{"date":"2021.03","prevalence":0.0000139,"sites":2,"fingerprinting":1,"cookies":0.0000139},{"date":"2021.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.05","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.06","prevalence":0.0000137,"sites":2,"fingerprinting":1,"cookies":0},{"date":"2021.07","prevalence":0.0000139,"sites":2,"fingerprinting":1,"cookies":0},{"date":"2021.08","prevalence":0.0000208,"sites":3,"fingerprinting":1,"cookies":0},{"date":"2021.09","prevalence":0.0000345,"sites":5,"fingerprinting":1,"cookies":0},{"date":"2021.10","prevalence":0.0000345,"sites":5,"fingerprinting":1,"cookies":0},{"date":"2021.11","prevalence":0.0000345,"sites":5,"fingerprinting":2,"cookies":0},{"date":"2021.12","prevalence":0.0000484,"sites":7,"fingerprinting":2,"cookies":0},{"date":"2022.01","prevalence":0.0000485,"sites":7,"fingerprinting":2,"cookies":0},{"date":"2022.02","prevalence":0.0000885,"sites":13,"fingerprinting":2,"cookies":0},{"date":"2022.03","prevalence":0.0000956,"sites":14,"fingerprinting":2,"cookies":0},{"date":"2022.04","prevalence":0.0000953,"sites":14,"fingerprinting":2,"cookies":0},{"date":"2022.05","prevalence":0.0000955,"sites":14,"fingerprinting":2,"cookies":0},{"date":"2022.06","prevalence":0.000061,"sites":9,"fingerprinting":1,"cookies":0},{"date":"2022.07","prevalence":0.0000543,"sites":8,"fingerprinting":2,"cookies":0},{"date":"2022.08","prevalence":0.0000543,"sites":8,"fingerprinting":2,"cookies":0},{"date":"muodov/aug-2022","prevalence":0.0000407,"sites":6,"fingerprinting":1,"cookies":0}]
+        history: [{"date":"selenium-crux","prevalence":0.000272,"sites":20,"fingerprinting":2,"cookies":0.0000272}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;8993<small>/27751</small>
+                    <strong>Rank:</strong> &#35;2546<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (6 sites)
+                    <strong>Prevalence:</strong> 0.03&#37; (20 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -90,12 +90,16 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Stylesheet</span>,
                     <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/enewspapr.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>cjss</span>, 
+                    <span>www</span>, 
                 </li>
             </ul>
         </div>
@@ -124,15 +128,33 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.screenTop</li>
+        <li class='truncate'>window.screenLeft</li>
+        <li class='truncate'>window.outerHeight</li>
+        <li class='truncate'>window.outerWidth</li>
+        <li class='truncate'>Navigator.prototype.hardwareConcurrency</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
         <li class='truncate'>Navigator.prototype.doNotTrack</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Element.prototype.getClientRects</li>
+        <li class='truncate'>Navigator.prototype.appName</li>
         <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
         <li class='truncate'>Screen.prototype.height</li>
         <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
         <li class='truncate'>Navigator.prototype.language</li>
         <li class='truncate'>window.sessionStorage</li>
         <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
 
@@ -141,7 +163,64 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://cjss.enewspapr.com&#x2F;prebid&#x2F;prebid4.20.4.js" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;prebid&#x2F;prebid4.20.4.js</a> (seen on 3 websites)</p>
+            <p><a href="http://cjss.enewspapr.com&#x2F;prebid&#x2F;prebid4.20.4.js" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;prebid&#x2F;prebid4.20.4.js</a> (seen on 12 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;footercontect&#x2F;footer.js" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;footercontect&#x2F;footer.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;prebid&#x2F;common&#x2F;prebid6.9.0.js" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;prebid&#x2F;common&#x2F;prebid6.9.0.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;common&#x2F;css&#x2F;bootstrap.min.css" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;common&#x2F;css&#x2F;bootstrap.min.css</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;common&#x2F;js&#x2F;jquery.js" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;common&#x2F;js&#x2F;jquery.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;common&#x2F;js&#x2F;bootstrap.min.js" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;common&#x2F;js&#x2F;bootstrap.min.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;common&#x2F;js&#x2F;jquery-ui.min.js" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;common&#x2F;js&#x2F;jquery-ui.min.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;common&#x2F;css&#x2F;jquery-ui.min1.css" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;common&#x2F;css&#x2F;jquery-ui.min1.css</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;navabharat&#x2F;js&#x2F;moment.min.js" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;navabharat&#x2F;js&#x2F;moment.min.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;common&#x2F;js&#x2F;jquery.unveil.js" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;common&#x2F;js&#x2F;jquery.unveil.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;css&#x2F;CustomStyles.css" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;css&#x2F;CustomStyles.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;css&#x2F;style-index.css" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;css&#x2F;style-index.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;common&#x2F;css&#x2F;jquery-ui.min.css" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;common&#x2F;css&#x2F;jquery-ui.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;css&#x2F;font-awesome.min.css" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;css&#x2F;font-awesome.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;images&#x2F;logo.jpg" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;images&#x2F;logo.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.enewspapr.com&#x2F;News&#x2F;OHERALDO&#x2F;GOA&#x2F;2023&#x2F;01&#x2F;07&#x2F;20230107_1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.enewspapr.com&#x2F;News&#x2F;OHERALDO&#x2F;GOA&#x2F;2023&#x2F;01&#x2F;07&#x2F;20230107_1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.enewspapr.com&#x2F;News&#x2F;DAINHERALD&#x2F;DAI&#x2F;2023&#x2F;01&#x2F;07&#x2F;20230107_1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.enewspapr.com&#x2F;News&#x2F;DAINHERALD&#x2F;DAI&#x2F;2023&#x2F;01&#x2F;07&#x2F;20230107_1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;fonts&#x2F;fontawesome-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;fonts&#x2F;fontawesome-webfont.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;images&#x2F;datepicker.png" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;heraldgoa&#x2F;includes&#x2F;images&#x2F;datepicker.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cjss.enewspapr.com&#x2F;navabharat&#x2F;images&#x2F;sprites&#x2F;social-isprite.png" target="_blank" class="external" rel="noreferrer noopener">cjss.enewspapr.com&#x2F;navabharat&#x2F;images&#x2F;sprites&#x2F;social-isprite.png</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -151,13 +230,67 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://latestinbollywood.com" target="_blank" class="external">latestinbollywood.com</a>
+            <a href="http://deshonnati.com" target="_blank" class="external">deshonnati.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.hancinema.net" target="_blank" class="external">www.hancinema.net</a>
+            <a href="http://epaper.heraldgoa.in" target="_blank" class="external">epaper.heraldgoa.in</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.newdelhiairport.in" target="_blank" class="external">www.newdelhiairport.in</a>
+            <a href="http://epaper.enavabharat.com" target="_blank" class="external">epaper.enavabharat.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://epunyanagari.com" target="_blank" class="external">epunyanagari.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://newspaper.pudhari.co.in" target="_blank" class="external">newspaper.pudhari.co.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://epaper.saamana.com" target="_blank" class="external">epaper.saamana.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://epapervijayavani.in" target="_blank" class="external">epapervijayavani.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://webmilap.com" target="_blank" class="external">webmilap.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://epaper.ajitjalandhar.com" target="_blank" class="external">epaper.ajitjalandhar.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ibyt.in" target="_blank" class="external">ibyt.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://kalingatv.com" target="_blank" class="external">kalingatv.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.sambadepaper.com" target="_blank" class="external">m.sambadepaper.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nationhub.in" target="_blank" class="external">nationhub.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pragativahini.com" target="_blank" class="external">pragativahini.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://techkeshri.com" target="_blank" class="external">techkeshri.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.agniban.com" target="_blank" class="external">www.agniban.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.skymetweather.com" target="_blank" class="external">www.skymetweather.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tellychakkar.com" target="_blank" class="external">www.tellychakkar.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://heraldgoa.in" target="_blank" class="external">heraldgoa.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://epaper.lokmat.com" target="_blank" class="external">epaper.lokmat.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://enavabharat.com" target="_blank" class="external">enavabharat.com</a>
         </li>
     </ul>
 </div>

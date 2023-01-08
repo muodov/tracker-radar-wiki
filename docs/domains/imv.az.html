@@ -29,6 +29,9 @@
                     <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
                         Top 100
                     </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
                 </div>
             </div>
             <div class='relative'>
@@ -41,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "imv.az",
-        history: [{"date":"2020.11","prevalence":0.0000076,"sites":1,"fingerprinting":1,"cookies":0.0000076}]
+        history: [{"date":"selenium-crux","prevalence":0.0000953,"sites":7,"fingerprinting":3,"cookies":0.0000681}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -62,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;12371<small>/12396</small>
+                    <strong>Rank:</strong> &#35;5233<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (1 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (7 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.01&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -87,13 +90,15 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Document</span>,
                     <span>Script</span>,
+                    <span>XHR</span>,
                     <span>Image</span>,
+                    <span>Stylesheet</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/imv.az.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>ads2</span>, 
                 </li>
             </ul>
         </div>
@@ -122,7 +127,34 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>CanvasRenderingContext2D.prototype.isPointInPath</li>
+        <li class='truncate'>OfflineAudioContext.prototype.constructor</li>
+        <li class='truncate'>Screen.prototype.availTop</li>
+        <li class='truncate'>AudioBuffer.prototype.getChannelData</li>
+        <li class='truncate'>Screen.prototype.availLeft</li>
+        <li class='truncate'>Navigator.prototype.deviceMemory</li>
+        <li class='truncate'>Navigator.prototype.hardwareConcurrency</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>Intl.DateTimeFormat.prototype.resolvedOptions</li>
         <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Navigator.prototype.vendor</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
@@ -133,16 +165,61 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://imv.az&#x2F;banner&#x2F;12a&#x2F;4&#x2F;Oxuaz&#x2F;163x612.html" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;12a&#x2F;4&#x2F;Oxuaz&#x2F;163x612.html</a> (seen on 2 websites)</p>
+            <p><a href="http://ads2.imv.az&#x2F;www&#x2F;delivery&#x2F;asyncjs.php" target="_blank" class="external" rel="noreferrer noopener">ads2.imv.az&#x2F;www&#x2F;delivery&#x2F;asyncjs.php</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://imv.az&#x2F;banner&#x2F;12a&#x2F;4&#x2F;Oxuaz&#x2F;createjs-2015.11.26.min.js" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;12a&#x2F;4&#x2F;Oxuaz&#x2F;createjs-2015.11.26.min.js</a> (seen on 2 websites)</p>
+            <p><a href="http://ads2.imv.az&#x2F;www&#x2F;delivery&#x2F;fpjs.php" target="_blank" class="external" rel="noreferrer noopener">ads2.imv.az&#x2F;www&#x2F;delivery&#x2F;fpjs.php</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://imv.az&#x2F;banner&#x2F;12a&#x2F;4&#x2F;Oxuaz&#x2F;163x612.js" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;12a&#x2F;4&#x2F;Oxuaz&#x2F;163x612.js</a> (seen on 2 websites)</p>
+            <p><a href="http://ads2.imv.az&#x2F;www&#x2F;delivery&#x2F;asyncspc2.php" target="_blank" class="external" rel="noreferrer noopener">ads2.imv.az&#x2F;www&#x2F;delivery&#x2F;asyncspc2.php</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://imv.az&#x2F;banner&#x2F;12a&#x2F;4&#x2F;Oxuaz&#x2F;images&#x2F;163x612_atlas_.png" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;12a&#x2F;4&#x2F;Oxuaz&#x2F;images&#x2F;163x612_atlas_.png</a> (seen on 2 websites)</p>
+            <p><a href="http://ads2.imv.az&#x2F;www&#x2F;delivery&#x2F;lg.php" target="_blank" class="external" rel="noreferrer noopener">ads2.imv.az&#x2F;www&#x2F;delivery&#x2F;lg.php</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;banner&#x2F;createjs-2015.11.26.min.js" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;createjs-2015.11.26.min.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;azercell&#x2F;pack&#x2F;fonts&#x2F;stylesheet.css" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;azercell&#x2F;pack&#x2F;fonts&#x2F;stylesheet.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;ads2&#x2F;banner&#x2F;imv&#x2F;logo5.svg" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;ads2&#x2F;banner&#x2F;imv&#x2F;logo5.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;azercell&#x2F;pack&#x2F;images&#x2F;number.svg" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;azercell&#x2F;pack&#x2F;images&#x2F;number.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;_111.png" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;_111.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;_2.png" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;_2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;_3.png" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;_3.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;_4.png" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;_4.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;_5.png" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;_5.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;fon.jpg" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;fon.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;logo.png" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;logo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;q1a.png" target="_blank" class="external" rel="noreferrer noopener">imv.az&#x2F;banner&#x2F;azercell&#x2F;s1&#x2F;images&#x2F;q1a.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ads2.imv.az&#x2F;www&#x2F;banners&#x2F;c59602b65ee22cf1&#x2F;images&#x2F;v1.jpg" target="_blank" class="external" rel="noreferrer noopener">ads2.imv.az&#x2F;www&#x2F;banners&#x2F;c59602b65ee22cf1&#x2F;images&#x2F;v1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ads2.imv.az&#x2F;www&#x2F;banners&#x2F;c59602b65ee22cf1&#x2F;images&#x2F;v3.png" target="_blank" class="external" rel="noreferrer noopener">ads2.imv.az&#x2F;www&#x2F;banners&#x2F;c59602b65ee22cf1&#x2F;images&#x2F;v3.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ads2.imv.az&#x2F;www&#x2F;banners&#x2F;c59602b65ee22cf1&#x2F;1140x120.js" target="_blank" class="external" rel="noreferrer noopener">ads2.imv.az&#x2F;www&#x2F;banners&#x2F;c59602b65ee22cf1&#x2F;1140x120.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -152,16 +229,31 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://oxu.az" target="_blank" class="external">oxu.az</a>
+            <a href="http://apa.az" target="_blank" class="external">apa.az</a>
         </li>
         <li class='truncate'>
-            <a href="http://ru.oxu.az" target="_blank" class="external">ru.oxu.az</a>
+            <a href="http://axar.az" target="_blank" class="external">axar.az</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://big.az" target="_blank" class="external">big.az</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cbcsport.az" target="_blank" class="external">www.cbcsport.az</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.e-pul.az" target="_blank" class="external">www.e-pul.az</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cbcsport.az" target="_blank" class="external">cbcsport.az</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://e-pul.az" target="_blank" class="external">e-pul.az</a>
         </li>
     </ul>
 </div>
 
-            <footer class='flex items-center justify-between flex-wrap p-5 bg-gray-300'>
-                DuckDuckGo
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
             </footer>
         </div>
     </body>

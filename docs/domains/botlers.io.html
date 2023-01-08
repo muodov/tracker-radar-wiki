@@ -29,6 +29,9 @@
                     <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
                         Top 100
                     </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
                 </div>
             </div>
             <div class='relative'>
@@ -41,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "botlers.io",
-        history: [{"date":"2020.02","prevalence":0.0000231,"sites":1,"fingerprinting":2,"cookies":0.0000231},{"date":"2020.03","prevalence":0.0000231,"sites":1,"fingerprinting":2,"cookies":0.0000231},{"date":"2020.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.05","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.06","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.07","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.08","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.09","prevalence":0.0000152,"sites":2,"fingerprinting":2,"cookies":0},{"date":"2020.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.12","prevalence":0.0000152,"sites":2,"fingerprinting":1,"cookies":0}]
+        history: [{"date":"selenium-crux","prevalence":0.0000544,"sites":4,"fingerprinting":1,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -62,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;10053<small>/12067</small>
+                    <strong>Rank:</strong> &#35;7152<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (4 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
@@ -88,11 +91,16 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
+                    <span>XHR</span>,
+                    <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Other</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/botlers.io.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>widget</span>, 
+                    <span>oldenterprise</span>, 
                 </li>
             </ul>
         </div>
@@ -122,8 +130,10 @@
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
         <li class='truncate'>Navigator.prototype.product</li>
+        <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
 
@@ -132,7 +142,115 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://widget.botlers.io&#x2F;sdk&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;sdk&#x2F;main.js</a> (seen on 2 websites)</p>
+            <p><a href="http://widget.botlers.io&#x2F;sdk&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;sdk&#x2F;main.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://oldenterprise.botlers.io&#x2F;bmessaging&#x2F;validate_bmid_host" target="_blank" class="external" rel="noreferrer noopener">oldenterprise.botlers.io&#x2F;bmessaging&#x2F;validate_bmid_host</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://oldenterprise.botlers.io&#x2F;bmessaging&#x2F;get_info" target="_blank" class="external" rel="noreferrer noopener">oldenterprise.botlers.io&#x2F;bmessaging&#x2F;get_info</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;button&#x2F;index.html" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;button&#x2F;index.html</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;styles&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;styles&#x2F;style.css</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;button&#x2F;css&#x2F;app.6157b576.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;button&#x2F;css&#x2F;app.6157b576.css</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;button&#x2F;js&#x2F;chunk-vendors.2b577154.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;button&#x2F;js&#x2F;chunk-vendors.2b577154.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;button&#x2F;js&#x2F;app.6483de73.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;button&#x2F;js&#x2F;app.6483de73.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;index.html" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;index.html</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;chunk-vendors.90984e87.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;chunk-vendors.90984e87.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;app.a001a583.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;app.a001a583.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;chunk-vendors.95a29c34.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;chunk-vendors.95a29c34.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;app.c06bdb90.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;app.c06bdb90.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;chat.4225e5f5.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;chat.4225e5f5.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;chatHeader.122cdd74.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;chatHeader.122cdd74.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;chunk-6368fb19.9ea79370.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;chunk-6368fb19.9ea79370.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;chunk-87a6188a.8cedc040.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;chunk-87a6188a.8cedc040.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;galleryItem.a8ef7ba0.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;galleryItem.a8ef7ba0.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;imageTemplate.8eaf98a5.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;imageTemplate.8eaf98a5.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;quickReplies.c79b513d.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;quickReplies.c79b513d.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;quickResponse.69814f41.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;quickResponse.69814f41.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;start.f56db3f0.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;start.f56db3f0.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;textTemplate.437c9485.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;textTemplate.437c9485.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;css&#x2F;videoTemplate.d618233d.css" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;css&#x2F;videoTemplate.d618233d.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;chat.d2feae27.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;chat.d2feae27.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;chatHeader.8ded7125.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;chatHeader.8ded7125.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;chunk-6368fb19.c0f8b241.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;chunk-6368fb19.c0f8b241.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;chunk-746818f4.72e980c0.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;chunk-746818f4.72e980c0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;chunk-87a6188a.ff80c49f.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;chunk-87a6188a.ff80c49f.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;galleryItem.7f732939.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;galleryItem.7f732939.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;imageTemplate.7d19873e.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;imageTemplate.7d19873e.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;quickReplies.83202aa6.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;quickReplies.83202aa6.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;quickResponse.1a1a382b.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;quickResponse.1a1a382b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;start.545f26f9.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;start.545f26f9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;startCard.ada425ff.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;startCard.ada425ff.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;textTemplate.41bf3c78.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;textTemplate.41bf3c78.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.botlers.io&#x2F;window&#x2F;js&#x2F;videoTemplate.b60ffecc.js" target="_blank" class="external" rel="noreferrer noopener">widget.botlers.io&#x2F;window&#x2F;js&#x2F;videoTemplate.b60ffecc.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -142,16 +260,22 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://interjet.com" target="_blank" class="external">interjet.com</a>
+            <a href="http://futura.com.mx" target="_blank" class="external">futura.com.mx</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.interjet.com" target="_blank" class="external">www.interjet.com</a>
+            <a href="http://ipagos.chihuahua.gob.mx" target="_blank" class="external">ipagos.chihuahua.gob.mx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://viaje.etn.com.mx" target="_blank" class="external">viaje.etn.com.mx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.montepiedad.com.mx" target="_blank" class="external">www.montepiedad.com.mx</a>
         </li>
     </ul>
 </div>
 
-            <footer class='flex items-center justify-between flex-wrap p-5 bg-gray-300'>
-                DuckDuckGo
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
             </footer>
         </div>
     </body>

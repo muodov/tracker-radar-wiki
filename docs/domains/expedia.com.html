@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "expedia.com",
-        history: [{"date":"2020.02","prevalence":0.000231,"sites":10,"fingerprinting":0,"cookies":0.000162},{"date":"2020.03","prevalence":0.000183,"sites":9,"fingerprinting":0,"cookies":0.000102},{"date":"2020.04","prevalence":0.0000642,"sites":3,"fingerprinting":0,"cookies":0.0000428},{"date":"2020.05","prevalence":0.0000856,"sites":6,"fingerprinting":0,"cookies":0.000057},{"date":"2020.06","prevalence":0.000192,"sites":14,"fingerprinting":0,"cookies":0.000164},{"date":"2020.07","prevalence":0.000166,"sites":12,"fingerprinting":0,"cookies":0.000166},{"date":"2020.08","prevalence":0.000221,"sites":30,"fingerprinting":0,"cookies":0.000154},{"date":"2020.09","prevalence":0.000129,"sites":17,"fingerprinting":0,"cookies":0.000114},{"date":"2020.10","prevalence":0.000129,"sites":17,"fingerprinting":0,"cookies":0.000129},{"date":"2020.11","prevalence":0.0000911,"sites":12,"fingerprinting":0,"cookies":0.000076},{"date":"2020.12","prevalence":0.000129,"sites":17,"fingerprinting":0,"cookies":0.000114},{"date":"2021.01","prevalence":0.0000611,"sites":8,"fingerprinting":0,"cookies":0.0000611},{"date":"2021.02","prevalence":0.000167,"sites":24,"fingerprinting":0,"cookies":0.0000972},{"date":"2021.03","prevalence":0.00016,"sites":23,"fingerprinting":0,"cookies":0.0000971},{"date":"2021.04","prevalence":0.0000762,"sites":11,"fingerprinting":0,"cookies":0.0000277},{"date":"2021.05","prevalence":0.0000413,"sites":6,"fingerprinting":1,"cookies":0.0000413},{"date":"2021.06","prevalence":0.0000411,"sites":6,"fingerprinting":1,"cookies":0.0000274},{"date":"2021.07","prevalence":0.0000416,"sites":6,"fingerprinting":1,"cookies":0.0000416},{"date":"2021.08","prevalence":0.0000417,"sites":6,"fingerprinting":1,"cookies":0.0000417},{"date":"2021.09","prevalence":0.000104,"sites":15,"fingerprinting":1,"cookies":0.000104},{"date":"2021.10","prevalence":0.0000967,"sites":14,"fingerprinting":1,"cookies":0.0000967},{"date":"2021.11","prevalence":0.000104,"sites":15,"fingerprinting":1,"cookies":0.000104},{"date":"2021.12","prevalence":0.000104,"sites":15,"fingerprinting":1,"cookies":0.000104},{"date":"2022.01","prevalence":0.000118,"sites":17,"fingerprinting":1,"cookies":0.000118},{"date":"2022.02","prevalence":0.000116,"sites":17,"fingerprinting":0,"cookies":0.000109},{"date":"2022.03","prevalence":0.000123,"sites":18,"fingerprinting":0,"cookies":0.000123},{"date":"2022.04","prevalence":0.000163,"sites":24,"fingerprinting":0,"cookies":0.000163},{"date":"2022.05","prevalence":0.000177,"sites":26,"fingerprinting":0,"cookies":0.000177},{"date":"2022.06","prevalence":0.000142,"sites":21,"fingerprinting":0,"cookies":0.000142},{"date":"2022.07","prevalence":0.000258,"sites":38,"fingerprinting":0,"cookies":0.000251},{"date":"2022.08","prevalence":0.000258,"sites":38,"fingerprinting":0,"cookies":0.000251},{"date":"muodov/aug-2022","prevalence":0.000237,"sites":35,"fingerprinting":0,"cookies":0.000237}]
+        history: [{"date":"main","prevalence":0.000122,"sites":18,"fingerprinting":0,"cookies":0.000115},{"date":"selenium-crux","prevalence":0.000177,"sites":13,"fingerprinting":2,"cookies":0.000177}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;2949<small>/27751</small>
+                    <strong>Rank:</strong> &#35;3456<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.02&#37; (35 sites)
+                    <strong>Prevalence:</strong> 0.02&#37; (13 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.02&#37;
@@ -90,11 +90,13 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Document</span>,
+                    <span>Image</span>,
                     <span>XHR</span>,
-                    <span>Other</span>,
                     <span>Fetch</span>,
+                    <span>Other</span>,
+                    <span>Script</span>,
                     <span>Preflight</span>,
+                    <span>Document</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/expedia.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
@@ -102,6 +104,9 @@
                     <span>www</span>, 
                     <span>oms</span>, 
                     <span>collector.prod</span>, 
+                    <span>vacadapter.vap</span>, 
+                    <span>vac.vap</span>, 
+                    <span>vap</span>, 
                     <span>capig</span>, 
                 </li>
             </ul>
@@ -121,43 +126,108 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.product</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://www.expedia.com&#x2F;go&#x2F;hotel&#x2F;search&#x2F;Destination" target="_blank" class="external" rel="noreferrer noopener">www.expedia.com&#x2F;go&#x2F;hotel&#x2F;search&#x2F;Destination</a> (seen on 12 websites)</p>
+            <p><a href="http://www.expedia.com&#x2F;trvl-px&#x2F;v2&#x2F;get" target="_blank" class="external" rel="noreferrer noopener">www.expedia.com&#x2F;trvl-px&#x2F;v2&#x2F;get</a> (seen on 11 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://oms.expedia.com&#x2F;id" target="_blank" class="external" rel="noreferrer noopener">oms.expedia.com&#x2F;id</a> (seen on 9 websites)</p>
+            <p><a href="http://oms.expedia.com&#x2F;id" target="_blank" class="external" rel="noreferrer noopener">oms.expedia.com&#x2F;id</a> (seen on 10 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.expedia.com&#x2F;trvl-px&#x2F;v2&#x2F;get" target="_blank" class="external" rel="noreferrer noopener">www.expedia.com&#x2F;trvl-px&#x2F;v2&#x2F;get</a> (seen on 8 websites)</p>
+            <p><a href="http://collector.prod.expedia.com&#x2F;omgpixel.json" target="_blank" class="external" rel="noreferrer noopener">collector.prod.expedia.com&#x2F;omgpixel.json</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.expedia.com&#x2F;trvl-px&#x2F;v2&#x2F;pix" target="_blank" class="external" rel="noreferrer noopener">www.expedia.com&#x2F;trvl-px&#x2F;v2&#x2F;pix</a> (seen on 8 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.expedia.com&#x2F;trvl-px&#x2F;v2&#x2F;get" target="_blank" class="external" rel="noreferrer noopener">www.expedia.com&#x2F;trvl-px&#x2F;v2&#x2F;get</a> (seen on 3 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://www.expedia.com&#x2F;trvl-px&#x2F;v2&#x2F;pix" target="_blank" class="external" rel="noreferrer noopener">www.expedia.com&#x2F;trvl-px&#x2F;v2&#x2F;pix</a> (seen on 3 websites)</p>
+            <p><a href="http://collector.prod.expedia.com&#x2F;omgpixel.json" target="_blank" class="external" rel="noreferrer noopener">collector.prod.expedia.com&#x2F;omgpixel.json</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://capig.expedia.com&#x2F;events" target="_blank" class="external" rel="noreferrer noopener">capig.expedia.com&#x2F;events</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://collector.prod.expedia.com&#x2F;omgpixel.json" target="_blank" class="external" rel="noreferrer noopener">collector.prod.expedia.com&#x2F;omgpixel.json</a> (seen on 2 websites)</p>
+            <p><a href="http://www.expedia.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.expedia.com&#x2F;</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://collector.prod.expedia.com&#x2F;omgpixel.json" target="_blank" class="external" rel="noreferrer noopener">collector.prod.expedia.com&#x2F;omgpixel.json</a> (seen on 2 websites)</p>
+            <p><a href="http://vacadapter.vap.expedia.com&#x2F;current&#x2F;vacClientAdapter.js" target="_blank" class="external" rel="noreferrer noopener">vacadapter.vap.expedia.com&#x2F;current&#x2F;vacClientAdapter.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.expedia.com&#x2F;marketing&#x2F;widgets&#x2F;searchform&#x2F;widget" target="_blank" class="external" rel="noreferrer noopener">www.expedia.com&#x2F;marketing&#x2F;widgets&#x2F;searchform&#x2F;widget</a> (seen on 2 websites)</p>
+            <p><a href="http://vac.vap.expedia.com&#x2F;2.11.0&#x2F;vacLogger.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;2.11.0&#x2F;vacLogger.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.expedia.com&#x2F;go&#x2F;hotel&#x2F;launch" target="_blank" class="external" rel="noreferrer noopener">www.expedia.com&#x2F;go&#x2F;hotel&#x2F;launch</a> (seen on 2 websites)</p>
+            <p><a href="http://vap.expedia.com&#x2F;vacservice&#x2F;public&#x2F;partners&#x2F;expedia&#x2F;virtualagentcontrols&#x2F;default_vac&#x2F;getScript" target="_blank" class="external" rel="noreferrer noopener">vap.expedia.com&#x2F;vacservice&#x2F;public&#x2F;partners&#x2F;expedia&#x2F;virtualagentcontrols&#x2F;default_vac&#x2F;getScript</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;virtualAgentControl.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;virtualAgentControl.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vap.expedia.com&#x2F;vaclog&#x2F;log" target="_blank" class="external" rel="noreferrer noopener">vap.expedia.com&#x2F;vaclog&#x2F;log</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vap.expedia.com&#x2F;vaclog&#x2F;log" target="_blank" class="external" rel="noreferrer noopener">vap.expedia.com&#x2F;vaclog&#x2F;log</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;index.html" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;index.html</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;0.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;0.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;1.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;1.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;2.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;2.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;6.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;6.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;5.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;5.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;7.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;7.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;100.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;100.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;119.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;119.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;99.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;99.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;vac-chat.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;vac-chat.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;109.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;109.chunk.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://vac.vap.expedia.com&#x2F;3.30.0&#x2F;120.chunk.js" target="_blank" class="external" rel="noreferrer noopener">vac.vap.expedia.com&#x2F;3.30.0&#x2F;120.chunk.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -167,61 +237,37 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://365atlantatraveler.com" target="_blank" class="external">365atlantatraveler.com</a>
+            <a href="http://bokehlink.com" target="_blank" class="external">bokehlink.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://aviewfrommyseat.co.uk" target="_blank" class="external">aviewfrommyseat.co.uk</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://europebookings.com" target="_blank" class="external">europebookings.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://lakelubbers.com" target="_blank" class="external">lakelubbers.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://rove.me" target="_blank" class="external">rove.me</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.danceus.org" target="_blank" class="external">www.danceus.org</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.everfest.com" target="_blank" class="external">www.everfest.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.festivalsunited.com" target="_blank" class="external">www.festivalsunited.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.inyourpocket.com" target="_blank" class="external">www.inyourpocket.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.runguides.com" target="_blank" class="external">www.runguides.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.runnersworld.de" target="_blank" class="external">www.runnersworld.de</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.worldtravelguide.net" target="_blank" class="external">www.worldtravelguide.net</a>
+            <a href="http://xbokeh.com" target="_blank" class="external">xbokeh.com</a>
         </li>
         <li class='truncate'>
             <a href="http://hotels.com" target="_blank" class="external">hotels.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://au.hotels.com" target="_blank" class="external">au.hotels.com</a>
+            <a href="http://jp.hotels.com" target="_blank" class="external">jp.hotels.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://ca.hotels.com" target="_blank" class="external">ca.hotels.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://de.hotels.com" target="_blank" class="external">de.hotels.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://fr.hotels.com" target="_blank" class="external">fr.hotels.com</a>
+            <a href="http://kr.hotels.com" target="_blank" class="external">kr.hotels.com</a>
         </li>
         <li class='truncate'>
             <a href="http://uk.hotels.com" target="_blank" class="external">uk.hotels.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.carrentals.com" target="_blank" class="external">www.carrentals.com</a>
+            <a href="http://www.expedia.co.th" target="_blank" class="external">www.expedia.co.th</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.expedia.co.jp" target="_blank" class="external">www.expedia.co.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.expedia.mx" target="_blank" class="external">www.expedia.mx</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hoteles.com" target="_blank" class="external">www.hoteles.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hoteis.com" target="_blank" class="external">www.hoteis.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.hotels.com" target="_blank" class="external">www.hotels.com</a>
@@ -230,16 +276,13 @@
             <a href="http://www.hotwire.com" target="_blank" class="external">www.hotwire.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://visitseattle.org" target="_blank" class="external">visitseattle.org</a>
+            <a href="http://expedia.co.th" target="_blank" class="external">expedia.co.th</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.visitcaymanislands.com" target="_blank" class="external">www.visitcaymanislands.com</a>
+            <a href="http://expedia.co.jp" target="_blank" class="external">expedia.co.jp</a>
         </li>
         <li class='truncate'>
-            <a href="http://honeymoonalways.com" target="_blank" class="external">honeymoonalways.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.honeymoonalways.com" target="_blank" class="external">www.honeymoonalways.com</a>
+            <a href="http://hoteles.com" target="_blank" class="external">hoteles.com</a>
         </li>
     </ul>
 </div>

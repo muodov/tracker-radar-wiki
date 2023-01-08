@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - kertn.net</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "kertn.net",
+        history: [{"date":"selenium-crux","prevalence":0.000191,"sites":14,"fingerprinting":2,"cookies":0.000191}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/kertn.net.ico' width="32" height="32" class='inline-block' /> kertn.net</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;3309<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.02&#37; (14 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.02&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Image</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Font</span>,
+                    <span>Fetch</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/kertn.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>cdn-plat</span>, 
+                    <span>cdn-sp</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;icons&#x2F;idq_big.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;icons&#x2F;idq_big.png</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;fonts&#x2F;sport-icons&#x2F;sporticons.css" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;fonts&#x2F;sport-icons&#x2F;sporticons.css</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;fonts&#x2F;sport-icons&#x2F;sportsIcons.woff2" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;fonts&#x2F;sport-icons&#x2F;sportsIcons.woff2</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;top-matches.min.css" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;top-matches.min.css</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;top-matches.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;top-matches.min.js</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;187.min.css" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;187.min.css</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;187.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;187.min.js</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;188.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;188.min.js</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;1.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;1.min.js</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;185.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;185.min.js</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;assets&#x2F;img&#x2F;8757f36b35a20c07b708bb1af7938906.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;assets&#x2F;img&#x2F;8757f36b35a20c07b708bb1af7938906.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;assets&#x2F;img&#x2F;a48a2b4588634129a88b0b807674f4ed.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;assets&#x2F;img&#x2F;a48a2b4588634129a88b0b807674f4ed.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;164.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;164.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;166.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;166.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;270.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;270.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;2045.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;2045.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;242.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;242.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;475.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;475.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;270.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;270.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;2045.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;2045.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;164.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;164.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;242.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;242.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;166.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;166.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;475.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;475.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;271.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;271.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;282.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;282.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;271.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;271.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;282.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;282.png</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;flags&#x2F;mob_flags.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;flags&#x2F;mob_flags.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;&#x2F;Img&#x2F;new.svg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;&#x2F;Img&#x2F;new.svg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;171.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;171.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;2142.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;2142.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;673.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;673.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;246.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;246.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;278.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;278.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;281.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;281.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;469.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;469.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;244.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;244.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;171.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;171.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;281.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;281.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;673.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;673.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;469.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;469.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;278.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;278.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;246.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;246.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;244.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;244.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;195.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;195.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;222.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;222.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;217.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;217.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;132.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;132.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;675.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;675.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;695.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;695.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;1128.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;1128.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;272.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;272.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;213.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;213.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;209.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;209.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;463.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;463.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;239.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;239.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;607.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;607.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;241.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;241.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;237.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;237.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;813.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;813.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;461.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;461.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;229.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;229.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;532.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;532.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;527.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;527.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;269.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;269.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;1126.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;1126.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;249.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;249.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;263.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;263.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;196.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;196.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;201.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;201.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;163.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;163.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;167.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;167.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;495.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;495.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;268.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;268.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;222.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;222.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;461.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;461.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;213.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;213.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;532.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;532.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;217.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;217.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;209.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;209.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;675.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;675.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;195.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;195.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;249.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;249.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;272.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;272.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;1126.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;1126.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;132.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;132.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;263.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;263.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;268.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;268.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;237.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;237.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;695.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;695.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;239.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;239.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;463.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;463.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;269.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;269.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;527.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;527.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;201.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;201.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;196.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;196.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;607.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;607.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;167.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;167.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;241.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;241.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;813.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;813.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;229.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;229.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;163.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;163.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;1128.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;1128.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;495.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;495.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;204.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;204.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;207.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;207.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;204.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;204.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;207.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;207.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_1&#x2F;main-dec.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_1&#x2F;main-dec.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_1&#x2F;footer-dec.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_1&#x2F;footer-dec.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;284.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;284.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;280.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;280.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;284.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;284.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;280.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;280.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;icons&#x2F;idq_small.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;icons&#x2F;idq_small.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;wild.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;wild.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;bomb.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;bomb.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;gold.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;gold.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;lion.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;lion.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;hilo.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;hilo.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;rocketon.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;rocketon.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;angry.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;angry.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;aztecsun.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;banners&#x2F;fa&#x2F;aztecsun.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;download_footer.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;download_footer.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;telegram_ico.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;telegram_ico.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;takbet-banners&#x2F;NP-Jackpot&#x2F;NP-web.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;takbet-banners&#x2F;NP-Jackpot&#x2F;NP-web.jpg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;takbet-banners&#x2F;NP-20M-poker&#x2F;web-NP.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;takbet-banners&#x2F;NP-20M-poker&#x2F;web-NP.jpg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;takbet-banners&#x2F;NP-Festival&#x2F;Web%20New%20Size.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;takbet-banners&#x2F;NP-Festival&#x2F;Web%20New%20Size.jpg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;takbet-banners&#x2F;NP-USD&#x2F;NP-web---.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;takbet-banners&#x2F;NP-USD&#x2F;NP-web---.jpg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;socials_footer.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;socials_footer.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;logoSm.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;logoSm.png</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;jackpot.min.css" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;jackpot.min.css</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;jackpot.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;jackpot.min.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;149.min.css" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;149.min.css</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;149.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;149.min.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;custom-skinning-4.min.css" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;custom-skinning-4.min.css</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;custom-skinning-4.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;custom-skinning-4.min.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;064ab3bb8662e1c39a56.svg" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;064ab3bb8662e1c39a56.svg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;f7946221bb2f5034f0b8.svg" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;f7946221bb2f5034f0b8.svg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;ff045b0c056caefdf13d.svg" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;ff045b0c056caefdf13d.svg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;2fc1843e4143aa23593c.svg" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;2fc1843e4143aa23593c.svg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;c19a2232aac827ab6353.svg" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;c19a2232aac827ab6353.svg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;876b6161e83eff36e51b.svg" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;876b6161e83eff36e51b.svg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;c5a629ec17f5937eeb21.svg" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;c5a629ec17f5937eeb21.svg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;fbf49f0de46ce7a5619a.svg" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;jackpot&#x2F;1.7.30&#x2F;fbf49f0de46ce7a5619a.svg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;takbet-banners&#x2F;NP-100-live&#x2F;Np-web---%20(1).jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1027&#x2F;takbet-banners&#x2F;NP-100-live&#x2F;Np-web---%20(1).jpg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_3&#x2F;main-dec.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_3&#x2F;main-dec.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_3&#x2F;featured-dec_1.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_3&#x2F;featured-dec_1.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_3&#x2F;featured-dec_2.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_3&#x2F;featured-dec_2.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_3&#x2F;footer-dec.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;themes&#x2F;2023&#x2F;type_3&#x2F;footer-dec.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;508.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;508.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;508.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;508.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;cash-bonanza.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;cash-bonanza.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;orbsofatlantis.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;orbsofatlantis.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;jungle-olympics.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;jungle-olympics.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;wolfgold.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;wolfgold.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;kenoexpress.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;kenoexpress.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;livehome.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;livehome.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;rocketon.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;rocketon.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;skillgames.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;banners&#x2F;fa&#x2F;skillgames.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;telegram_ico.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;telegram_ico.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;design-banners&#x2F;USD&#x2F;usd--winter%20(2).jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;design-banners&#x2F;USD&#x2F;usd--winter%20(2).jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;design-banners&#x2F;20M-poker&#x2F;web-02.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;design-banners&#x2F;20M-poker&#x2F;web-02.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;design-banners&#x2F;winter-festival&#x2F;1.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;design-banners&#x2F;winter-festival&#x2F;1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;design-banners&#x2F;Football%2008&#x2F;bf.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;design-banners&#x2F;Football%2008&#x2F;bf.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%201%20copy.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%201%20copy.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%201.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%201.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%202.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%202.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%203.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%203.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%204.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%204.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%205.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%205.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%206.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%206.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%207.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%207.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%201%20copy%202.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;top%20casino&#x2F;artboard%201%20copy%202.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;logo.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;logo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;socials_footer.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;socials_footer.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;custom-skinning-6.min.css" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;custom-skinning-6.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;custom-skinning-6.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;custom-skinning-6.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;design-banners&#x2F;100-casino&#x2F;web.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1028&#x2F;design-banners&#x2F;100-casino&#x2F;web.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;assets&#x2F;img&#x2F;f975b93f7e3779e854f905d0980b5cc7.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;top-matches&#x2F;3.0.10&#x2F;assets&#x2F;img&#x2F;f975b93f7e3779e854f905d0980b5cc7.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;162.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;162.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;172.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;172.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;2591.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;2591.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;175.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;175.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;682.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;682.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;455.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;455.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;689.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;689.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;245.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;245.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;234.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;234.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;601.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;601.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;162.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;162.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;172.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;172.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;175.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;175.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;682.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;682.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;455.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;455.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;689.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;689.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;245.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;245.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;234.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;234.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;601.png" target="_blank" class="external" rel="noreferrer noopener">cdn-sp.kertn.net&#x2F;assets&#x2F;team-logos&#x2F;601.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Rocketon.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Rocketon.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Hilo.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Hilo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Poker.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Poker.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Plinko.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Plinko.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Penalty.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Penalty.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Live.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Live.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Casino_Live.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Casino_Live.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Casino.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;banners&#x2F;Casino.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;telegram.gif" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;telegram.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;winter-festival&#x2F;manotobetALL.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;winter-festival&#x2F;manotobetALL.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;100%20Casino&#x2F;template.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;100%20Casino&#x2F;template.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;5%20Darsad&#x2F;Manotobet-Web.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;5%20Darsad&#x2F;Manotobet-Web.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;top-all-big-banner&#x2F;USDT.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;top-all-big-banner&#x2F;USDT.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;p2p-small&#x2F;Manotobet-P2P-web-2.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;p2p-small&#x2F;Manotobet-P2P-web-2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;logo.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;logo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;socials_footer.png" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;socials_footer.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;1B&#x2F;Manoto-Poker-tournament-7-web.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn-plat.kertn.net&#x2F;plat&#x2F;prd&#x2F;Img&#x2F;partners&#x2F;1047&#x2F;design-banners&#x2F;1B&#x2F;Manoto-Poker-tournament-7-web.jpg</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://1000bet.in" target="_blank" class="external">1000bet.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://betfa.com" target="_blank" class="external">betfa.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bwhbsjcbsjb.com" target="_blank" class="external">bwhbsjcbsjb.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://irbet365.com" target="_blank" class="external">irbet365.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pishbini.com" target="_blank" class="external">pishbini.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://takbet.com" target="_blank" class="external">takbet.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ttf7625rru.com" target="_blank" class="external">ttf7625rru.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ttfbnnv898.com" target="_blank" class="external">ttfbnnv898.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ttfw5r3r3o.com" target="_blank" class="external">ttfw5r3r3o.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://betboom.ru" target="_blank" class="external">betboom.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://manotobet.com" target="_blank" class="external">manotobet.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mmnnk90x.com" target="_blank" class="external">mmnnk90x.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pars90.com" target="_blank" class="external">pars90.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://w90btbt.com" target="_blank" class="external">w90btbt.com</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

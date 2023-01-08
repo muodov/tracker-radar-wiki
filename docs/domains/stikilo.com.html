@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "stikilo.com",
-        history: [{"date":"2020.02","prevalence":0.0000462,"sites":2,"fingerprinting":1,"cookies":0.0000462},{"date":"2020.03","prevalence":0.000061,"sites":3,"fingerprinting":1,"cookies":0.000061},{"date":"2020.04","prevalence":0.000061,"sites":3,"fingerprinting":1,"cookies":0.000061},{"date":"2020.05","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.06","prevalence":0.0000274,"sites":2,"fingerprinting":1,"cookies":0.0000274},{"date":"2020.07","prevalence":0.0000416,"sites":3,"fingerprinting":1,"cookies":0.0000416},{"date":"2020.08","prevalence":0.0000294,"sites":4,"fingerprinting":1,"cookies":0.0000294},{"date":"2020.09","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.10","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.01","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.02","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.03","prevalence":0.0000277,"sites":4,"fingerprinting":1,"cookies":0.0000139},{"date":"2021.04","prevalence":0.0000139,"sites":2,"fingerprinting":1,"cookies":0.0000139},{"date":"2021.05","prevalence":0.0000207,"sites":3,"fingerprinting":1,"cookies":0.0000138},{"date":"2021.06","prevalence":0.0000206,"sites":3,"fingerprinting":1,"cookies":0.0000206},{"date":"2021.07","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.08","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2021.09","prevalence":0.0000207,"sites":3,"fingerprinting":1,"cookies":0.0000207},{"date":"2021.10","prevalence":0.0000276,"sites":4,"fingerprinting":1,"cookies":0.0000276},{"date":"2021.11","prevalence":0.0000276,"sites":4,"fingerprinting":1,"cookies":0.0000276},{"date":"2021.12","prevalence":0.0000207,"sites":3,"fingerprinting":1,"cookies":0.0000207},{"date":"2022.01","prevalence":0.0000277,"sites":4,"fingerprinting":1,"cookies":0.0000277},{"date":"2022.02","prevalence":0.0000272,"sites":4,"fingerprinting":1,"cookies":0.0000204},{"date":"2022.03","prevalence":0.000041,"sites":6,"fingerprinting":1,"cookies":0.0000341},{"date":"2022.04","prevalence":0.0000272,"sites":4,"fingerprinting":2,"cookies":0.0000272},{"date":"2022.05","prevalence":0.0000273,"sites":4,"fingerprinting":2,"cookies":0.0000273},{"date":"2022.06","prevalence":0.0000407,"sites":6,"fingerprinting":2,"cookies":0.0000271},{"date":"2022.07","prevalence":0.0000339,"sites":5,"fingerprinting":2,"cookies":0.0000136},{"date":"2022.08","prevalence":0.0000339,"sites":5,"fingerprinting":2,"cookies":0.0000136},{"date":"muodov/aug-2022","prevalence":0.0000203,"sites":3,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000407,"sites":6,"fingerprinting":2,"cookies":0.0000271},{"date":"selenium-crux","prevalence":0.000231,"sites":17,"fingerprinting":3,"cookies":0.000177}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;14983<small>/27751</small>
+                    <strong>Rank:</strong> &#35;2906<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
+                    <strong>Prevalence:</strong> 0.02&#37; (17 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.02&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -113,13 +113,35 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.outerHeight</li>
+        <li class='truncate'>window.outerWidth</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://stikilo.com&#x2F;start" target="_blank" class="external" rel="noreferrer noopener">stikilo.com&#x2F;start</a> (seen on 3 websites)</p>
+            <p><a href="http://stikilo.com&#x2F;start" target="_blank" class="external" rel="noreferrer noopener">stikilo.com&#x2F;start</a> (seen on 17 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://stikilo.com&#x2F;analytics" target="_blank" class="external" rel="noreferrer noopener">stikilo.com&#x2F;analytics</a> (seen on 13 websites)</p>
         </li>
     </ul>
 </div>
@@ -129,13 +151,55 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://movavi.com" target="_blank" class="external">movavi.com</a>
+            <a href="http://cozyhome.ru" target="_blank" class="external">cozyhome.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://evropharm.ru" target="_blank" class="external">evropharm.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://galamart.ru" target="_blank" class="external">galamart.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://goldapple.ru" target="_blank" class="external">goldapple.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://lgcity.ru" target="_blank" class="external">lgcity.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mi-shop.com" target="_blank" class="external">mi-shop.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://msk.tele2.ru" target="_blank" class="external">msk.tele2.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://shopandshow.ru" target="_blank" class="external">shopandshow.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tvoe.ru" target="_blank" class="external">tvoe.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.garshinka.ru" target="_blank" class="external">www.garshinka.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.leomax.ru" target="_blank" class="external">www.leomax.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mirkrestikom.ru" target="_blank" class="external">www.mirkrestikom.ru</a>
         </li>
         <li class='truncate'>
             <a href="http://www.movavi.com" target="_blank" class="external">www.movavi.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.nguyenkim.com" target="_blank" class="external">www.nguyenkim.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.shoppinglive.ru" target="_blank" class="external">www.shoppinglive.ru</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.svyaznoy.ru" target="_blank" class="external">www.svyaznoy.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://zenden.ru" target="_blank" class="external">zenden.ru</a>
         </li>
     </ul>
 </div>

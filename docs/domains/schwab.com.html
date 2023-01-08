@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "schwab.com",
-        history: [{"date":"2021.01","prevalence":0.0000153,"sites":2,"fingerprinting":0,"cookies":0.0000153},{"date":"2021.02","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0.0000139},{"date":"2021.03","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0.0000139},{"date":"2021.04","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0.0000139},{"date":"2021.05","prevalence":0.0000138,"sites":2,"fingerprinting":0,"cookies":0.0000138},{"date":"2021.06","prevalence":0.0000137,"sites":2,"fingerprinting":0,"cookies":0.0000137},{"date":"2021.07","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0.0000139},{"date":"2021.08","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0.0000139},{"date":"2021.09","prevalence":0.0000138,"sites":2,"fingerprinting":0,"cookies":0.0000138},{"date":"2021.10","prevalence":0.0000207,"sites":3,"fingerprinting":0,"cookies":0.0000138},{"date":"2021.11","prevalence":0.0000207,"sites":3,"fingerprinting":0,"cookies":0.0000138},{"date":"2021.12","prevalence":0.0000138,"sites":2,"fingerprinting":0,"cookies":0.0000138},{"date":"2022.01","prevalence":0.0000138,"sites":2,"fingerprinting":0,"cookies":0.0000138},{"date":"2022.02","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.03","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.05","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.06","prevalence":0.000109,"sites":16,"fingerprinting":1,"cookies":0.000109},{"date":"2022.07","prevalence":0.0000271,"sites":4,"fingerprinting":1,"cookies":0.0000271},{"date":"2022.08","prevalence":0.0000271,"sites":4,"fingerprinting":1,"cookies":0.0000271},{"date":"muodov/aug-2022","prevalence":0.000129,"sites":19,"fingerprinting":1,"cookies":0.000122}]
+        history: [{"date":"main","prevalence":0.0000407,"sites":6,"fingerprinting":1,"cookies":0.0000407},{"date":"selenium-crux","prevalence":0.0000544,"sites":4,"fingerprinting":3,"cookies":0.0000544}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;4490<small>/27751</small>
+                    <strong>Rank:</strong> &#35;7928<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (19 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (4 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.01&#37;
@@ -91,15 +91,16 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Image</span>,
-                    <span>Script</span>,
                     <span>XHR</span>,
+                    <span>Media</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/schwab.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>count</span>, 
-                    <span>www</span>, 
-                    <span>smetric</span>, 
+                    <span>advisorservices</span>, 
+                    <span>sws-gateway</span>, 
+                    <span>content</span>, 
                 </li>
             </ul>
         </div>
@@ -128,9 +129,48 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>WebGLRenderingContext.prototype.getSupportedExtensions</li>
+        <li class='truncate'>DeviceMotionEvent.prototype.acceleration</li>
+        <li class='truncate'>DeviceMotionEvent.prototype.rotationRate</li>
+        <li class='truncate'>DeviceOrientationEvent.prototype.beta</li>
+        <li class='truncate'>Navigator.prototype.productSub</li>
+        <li class='truncate'>DeviceOrientationEvent.prototype.gamma</li>
+        <li class='truncate'>DeviceOrientationEvent.prototype.alpha</li>
+        <li class='truncate'>DeviceMotionEvent.prototype.accelerationIncludingGravity</li>
+        <li class='truncate'>Navigator.prototype.webkitTemporaryStorage</li>
+        <li class='truncate'>Navigator.prototype.deviceMemory</li>
+        <li class='truncate'>Navigator.prototype.mediaDevices</li>
+        <li class='truncate'>window.outerWidth</li>
+        <li class='truncate'>Navigator.prototype.hardwareConcurrency</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>Navigator.prototype.storage</li>
+        <li class='truncate'>Screen.prototype.pixelDepth</li>
+        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>Navigator.prototype.permissions</li>
+        <li class='truncate'>Navigator.prototype.webdriver</li>
+        <li class='truncate'>Navigator.prototype.onLine</li>
+        <li class='truncate'>Navigator.prototype.product</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getExtension</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getParameter</li>
+        <li class='truncate'>Performance.prototype.memory</li>
         <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Navigator.prototype.doNotTrack</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Navigator.prototype.connection</li>
+        <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>Navigator.prototype.javaEnabled</li>
+        <li class='truncate'>speechSynthesis.__proto__.getVoices</li>
+        <li class='truncate'>window.sessionStorage</li>
         <li class='truncate'>window.localStorage</li>
-        <li class='truncate'>Document.cookie setter</li>
         <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
@@ -141,16 +181,22 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://count.schwab.com&#x2F;1&#x2F;d&#x2F;c.gif" target="_blank" class="external" rel="noreferrer noopener">count.schwab.com&#x2F;1&#x2F;d&#x2F;c.gif</a> (seen on 14 websites)</p>
+            <p><a href="http://count.schwab.com&#x2F;1&#x2F;d&#x2F;c.gif" target="_blank" class="external" rel="noreferrer noopener">count.schwab.com&#x2F;1&#x2F;d&#x2F;c.gif</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://count.schwab.com&#x2F;b&#x2F;a.gif" target="_blank" class="external" rel="noreferrer noopener">count.schwab.com&#x2F;b&#x2F;a.gif</a> (seen on 12 websites)</p>
+            <p><a href="http://count.schwab.com&#x2F;b&#x2F;a.gif" target="_blank" class="external" rel="noreferrer noopener">count.schwab.com&#x2F;b&#x2F;a.gif</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://www.schwab.com&#x2F;optimizelyjs&#x2F;optiprospect.js" target="_blank" class="external" rel="noreferrer noopener">www.schwab.com&#x2F;optimizelyjs&#x2F;optiprospect.js</a> (seen on 2 websites)</p>
+            <p><a href="http://advisorservices.schwab.com&#x2F;api&#x2F;getlocation" target="_blank" class="external" rel="noreferrer noopener">advisorservices.schwab.com&#x2F;api&#x2F;getlocation</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://smetric.schwab.com&#x2F;id" target="_blank" class="external" rel="noreferrer noopener">smetric.schwab.com&#x2F;id</a> (seen on 2 websites)</p>
+            <p><a href="http://sws-gateway.schwab.com&#x2F;QlXWH&#x2F;BHL&#x2F;l3SN&#x2F;yoB3nj&#x2F;gW&#x2F;b3D9bSrJEt&#x2F;BUYyEwh-WAY&#x2F;HA&#x2F;gmSWxlRwg" target="_blank" class="external" rel="noreferrer noopener">sws-gateway.schwab.com&#x2F;QlXWH&#x2F;BHL&#x2F;l3SN&#x2F;yoB3nj&#x2F;gW&#x2F;b3D9bSrJEt&#x2F;BUYyEwh-WAY&#x2F;HA&#x2F;gmSWxlRwg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://advisorservices.schwab.com&#x2F;s4VJuQ&#x2F;H5yBr&#x2F;NC6Xc&#x2F;xM6r&#x2F;uSazmkDpaf&#x2F;cUpOBTN0TwM&#x2F;RzlA&#x2F;ci8HPWs" target="_blank" class="external" rel="noreferrer noopener">advisorservices.schwab.com&#x2F;s4VJuQ&#x2F;H5yBr&#x2F;NC6Xc&#x2F;xM6r&#x2F;uSazmkDpaf&#x2F;cUpOBTN0TwM&#x2F;RzlA&#x2F;ci8HPWs</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.schwab.com&#x2F;media&#x2F;video&#x2F;SWB_IMPACT_2017_RIA_3-Things_Tim_Oden&#x2F;SWB_IMPACT_2017_RIA_3-Things_Tim_Oden.mp4" target="_blank" class="external" rel="noreferrer noopener">content.schwab.com&#x2F;media&#x2F;video&#x2F;SWB_IMPACT_2017_RIA_3-Things_Tim_Oden&#x2F;SWB_IMPACT_2017_RIA_3-Things_Tim_Oden.mp4</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -160,52 +206,22 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://marketwatch.com" target="_blank" class="external">marketwatch.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://bigcharts.marketwatch.com" target="_blank" class="external">bigcharts.marketwatch.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://futures.tradingcharts.com" target="_blank" class="external">futures.tradingcharts.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://markets.businessinsider.com" target="_blank" class="external">markets.businessinsider.com</a>
+            <a href="http://usnews.com" target="_blank" class="external">usnews.com</a>
         </li>
         <li class='truncate'>
             <a href="http://money.usnews.com" target="_blank" class="external">money.usnews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://swgoh.gg" target="_blank" class="external">swgoh.gg</a>
+            <a href="http://money.cnn.com" target="_blank" class="external">money.cnn.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://thriftytraveler.com" target="_blank" class="external">thriftytraveler.com</a>
+            <a href="http://www.businessinsider.com" target="_blank" class="external">www.businessinsider.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.albertleatribune.com" target="_blank" class="external">www.albertleatribune.com</a>
+            <a href="http://schwabinstitutional.com" target="_blank" class="external">schwabinstitutional.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.inc.com" target="_blank" class="external">www.inc.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.insidermonkey.com" target="_blank" class="external">www.insidermonkey.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.macrotrends.net" target="_blank" class="external">www.macrotrends.net</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.marketwatch.com" target="_blank" class="external">www.marketwatch.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.realclearmarkets.com" target="_blank" class="external">www.realclearmarkets.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.silverdoctors.com" target="_blank" class="external">www.silverdoctors.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://schwabassetmanagement.com" target="_blank" class="external">schwabassetmanagement.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.schwabassetmanagement.com" target="_blank" class="external">www.schwabassetmanagement.com</a>
+            <a href="http://si2.schwabinstitutional.com" target="_blank" class="external">si2.schwabinstitutional.com</a>
         </li>
     </ul>
 </div>

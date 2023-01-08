@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - wawacity.bond</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "wawacity.bond",
+        history: [{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":3,"cookies":0.0000272}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/wawacity.bond.ico' width="32" height="32" class='inline-block' /> wawacity.bond</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;13685<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                    <span>Ping</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/wawacity.bond.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>www</span>, 
+                    <span>stats</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.outerHeight</li>
+        <li class='truncate'>window.outerWidth</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>NavigatorUAData.prototype.brands</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>NavigatorUAData.prototype.platform</li>
+        <li class='truncate'>Navigator.prototype.mimeTypes</li>
+        <li class='truncate'>window.matchMedia(&quot;prefers-color-scheme&quot;)</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.javaEnabled</li>
+        <li class='truncate'>window.name</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>NavigatorUAData.prototype.getHighEntropyValues</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;css&#x2F;main.css" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;css&#x2F;main.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;css&#x2F;toastr.min.css" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;css&#x2F;toastr.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;css&#x2F;sceditor-themes&#x2F;default.min.css" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;css&#x2F;sceditor-themes&#x2F;default.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;toastr.min.js" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;toastr.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;jquery.sceditor.bbcode.min.js" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;jquery.sceditor.bbcode.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;sceditor_fr.js" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;sceditor_fr.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;cookie.js" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;cookie.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;js.cookie.js" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;js.cookie.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;main.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;main2.js" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;main2.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;images&#x2F;new_icon.gif" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;images&#x2F;new_icon.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;56b7231a257f9847cabc25f1e9c9a08c.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;56b7231a257f9847cabc25f1e9c9a08c.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;bedd4d4255e3aeb17937395222fbda87.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;bedd4d4255e3aeb17937395222fbda87.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;eeb574e61e592b22e84b12c814c9b432.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;eeb574e61e592b22e84b12c814c9b432.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;938526d35632897b4d559c7c3e3664dd.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;938526d35632897b4d559c7c3e3664dd.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;34f52705e5c00b7623d223bbaafecb21.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;34f52705e5c00b7623d223bbaafecb21.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;709d1fe3263a8b9612248294009f8e50.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;709d1fe3263a8b9612248294009f8e50.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;8e1b1043afc099423820362e63524d17.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;8e1b1043afc099423820362e63524d17.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;7006b311f2618ffbac4228644f12a98e.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;7006b311f2618ffbac4228644f12a98e.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;7536ae90744ac3190d556271522f833f.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;7536ae90744ac3190d556271522f833f.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;dfc169695519e81a315683d92d7106cd.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;dfc169695519e81a315683d92d7106cd.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;165a83b8fae0e0602415170cdabbafe2.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;165a83b8fae0e0602415170cdabbafe2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;f6734c3424b17d7b8efac5d7949bd768.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;f6734c3424b17d7b8efac5d7949bd768.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;cee2817a2dc1a3fd28a4a0b9a1f0f5b8.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;cee2817a2dc1a3fd28a4a0b9a1f0f5b8.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;95d490df607173b1fa00fe6bc81693d7.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;95d490df607173b1fa00fe6bc81693d7.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;95b44130bd882388e69ca0c7149e7a96.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;95b44130bd882388e69ca0c7149e7a96.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;25c1ed409b907f91e64bb8c682042f52.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;25c1ed409b907f91e64bb8c682042f52.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;e30ce141f87e2786b1568342b4e46b41.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;e30ce141f87e2786b1568342b4e46b41.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;878c27c195c5bcddc655e3241df3b32f.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;878c27c195c5bcddc655e3241df3b32f.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;beb277568a177df471cb200c5ac21f5d.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;beb277568a177df471cb200c5ac21f5d.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;c18515e77d793410dffffe57b6f6b44a.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;c18515e77d793410dffffe57b6f6b44a.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;57d5f6f30c91f15fea4c4ea1eb641267.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;57d5f6f30c91f15fea4c4ea1eb641267.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;487fadcebce38c141b173e87658e9321.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;487fadcebce38c141b173e87658e9321.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;c125c35b0fe06085fec49ef6d6bc0be6.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;c125c35b0fe06085fec49ef6d6bc0be6.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;09b33606311947087ce8aa6cbe3f94fa.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;09b33606311947087ce8aa6cbe3f94fa.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;6d71707122b8ca3915f972cd29b425f3.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;6d71707122b8ca3915f972cd29b425f3.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;b0741fc6d0687a3afe8b15a76a2f480b.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;b0741fc6d0687a3afe8b15a76a2f480b.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;26b1f47dc53f502381b18014d3f2b266.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;26b1f47dc53f502381b18014d3f2b266.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;7167f128fe11c3088dee3eb61ee2eb63.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;7167f128fe11c3088dee3eb61ee2eb63.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;19ee2038c8eab68df070408fc283f370.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;19ee2038c8eab68df070408fc283f370.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;series&#x2F;4811ddfdd6658842aafbe940faff71ae.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;series&#x2F;4811ddfdd6658842aafbe940faff71ae.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;7f8da857e343c22cb5ddd57a878090ba.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;7f8da857e343c22cb5ddd57a878090ba.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;15e27bbe89fafe857267ddf1a18adbf3.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;15e27bbe89fafe857267ddf1a18adbf3.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;4c96dfdb33260e06ae3ad7776eaa4daf.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;4c96dfdb33260e06ae3ad7776eaa4daf.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;323a2f438deff9ac083a3cd0b1c2abde.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;323a2f438deff9ac083a3cd0b1c2abde.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;93eefa8ab9c34a2b3076b4601f18b8c9.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;93eefa8ab9c34a2b3076b4601f18b8c9.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;704d995443a5baac6cb7d4eb6962f71b.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;jeux&#x2F;704d995443a5baac6cb7d4eb6962f71b.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;249b38167ae24e69f97be7113b755962.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;249b38167ae24e69f97be7113b755962.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;e29422ed6f8973897dc1d02a05ab2fc4.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;e29422ed6f8973897dc1d02a05ab2fc4.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;abe361474cdd55353545216b6ba37df2.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;abe361474cdd55353545216b6ba37df2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;de00e39d7babcb1b92226efbdfd0994c.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;de00e39d7babcb1b92226efbdfd0994c.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;1d57468bad163a35caf779a5c7c393d5.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;1d57468bad163a35caf779a5c7c393d5.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;e29f68b17cbc29be026c1da40f1bdc3c.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;musiques&#x2F;e29f68b17cbc29be026c1da40f1bdc3c.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;89afd46cabc9d9d723c6dedbb8b93ec4.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;89afd46cabc9d9d723c6dedbb8b93ec4.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;8d6ca2e464398822ad4171d09d8c0515.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;8d6ca2e464398822ad4171d09d8c0515.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;f64fdf5e6afefd05b6dd7de899af5327.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;f64fdf5e6afefd05b6dd7de899af5327.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;6698553bd257333a8348db295258996b.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;6698553bd257333a8348db295258996b.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;9eca50341397e4c6b171638489e5ade4.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;9eca50341397e4c6b171638489e5ade4.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;958c636f6630d6b0c478c3865bca2a17.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;ebooks&#x2F;958c636f6630d6b0c478c3865bca2a17.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;1c3aac2c808bc0880c0af95565690a94.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;1c3aac2c808bc0880c0af95565690a94.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;d2dbd946d0310bb6d3f22abd79b38bd6.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;d2dbd946d0310bb6d3f22abd79b38bd6.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;0198531da4aa7b1f9cd9f8791665c97e.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;0198531da4aa7b1f9cd9f8791665c97e.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;468631bdf60036c582fa1e589dbb55e0.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;468631bdf60036c582fa1e589dbb55e0.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;f4430c6110722fe465b7d256e65660da.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;f4430c6110722fe465b7d256e65660da.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;8d7e041aa6afae802f19c0933cf79954.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mangas&#x2F;8d7e041aa6afae802f19c0933cf79954.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;02de317cb86ceec7cd7e2ecaa362bf44.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;02de317cb86ceec7cd7e2ecaa362bf44.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;4d687a81d2c9defa7361ef19f7c0f613.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;4d687a81d2c9defa7361ef19f7c0f613.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;e598c6fb6e1ec41cfafa044a3821cf0f.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;e598c6fb6e1ec41cfafa044a3821cf0f.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;9568b0ffdf1a0c99900a10f2c2e68774.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;9568b0ffdf1a0c99900a10f2c2e68774.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;5c34434e64df134a1441cd0613b55424.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;5c34434e64df134a1441cd0613b55424.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;4742f73fa53e30e739033ec1cdb96931.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;logiciels&#x2F;4742f73fa53e30e739033ec1cdb96931.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;cfa0b36132f2a64aa0e6882e715ab4ab.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;cfa0b36132f2a64aa0e6882e715ab4ab.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;27d1d9552018969015d98c25bd40a057.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;27d1d9552018969015d98c25bd40a057.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;a7034b6135cef0441af575ce637b2718.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;a7034b6135cef0441af575ce637b2718.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;7ccde83d84f6fa1cdfb66095766846e4.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;7ccde83d84f6fa1cdfb66095766846e4.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;5e584a8e63426e2ebfa50d772dc4cc6e.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;5e584a8e63426e2ebfa50d772dc4cc6e.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;a21aa3d5f04700b7d232427cc7d9b8ba.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;mobiles&#x2F;a21aa3d5f04700b7d232427cc7d9b8ba.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;dcb916e0b3d1a2a20c5bb240271d0bf9.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;dcb916e0b3d1a2a20c5bb240271d0bf9.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;198cdbc312e916210ce4fa2db63d6314.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;198cdbc312e916210ce4fa2db63d6314.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;ee46365c9c8d717e916b43604b6f339f.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;ee46365c9c8d717e916b43604b6f339f.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;57c346e6a838a79b333b59fe7e3417d1.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;57c346e6a838a79b333b59fe7e3417d1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;2f6c803e070727c2ffc8869242626366.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;2f6c803e070727c2ffc8869242626366.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;052ac3c8aa6ede3fbf6b8ab5d1776079.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;autres-videos&#x2F;052ac3c8aa6ede3fbf6b8ab5d1776079.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;cd396f44b078ec2541524d9f61df8f69.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;cd396f44b078ec2541524d9f61df8f69.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;cb2f0b3f28125dc3075c3b773f9b2000.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;cb2f0b3f28125dc3075c3b773f9b2000.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;5fe5828e431e9e55372897906f632b1a.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;5fe5828e431e9e55372897906f632b1a.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;ca66745979d74649ea7658ad72df55ad.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;ca66745979d74649ea7658ad72df55ad.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;b101dc52089becafe5293e8e7ea46e89.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;b101dc52089becafe5293e8e7ea46e89.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;eef29600e2a78c70bbe69a33a977fb8e.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;divers&#x2F;eef29600e2a78c70bbe69a33a977fb8e.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;ce826aff2e12a28831d34d2ca64ac9d9.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;ce826aff2e12a28831d34d2ca64ac9d9.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;7c8a10dbc344fa10f04ab6e58e530690.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;7c8a10dbc344fa10f04ab6e58e530690.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;5081432b16d20f7b11e9b0f6ec3b95fd.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;5081432b16d20f7b11e9b0f6ec3b95fd.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;3ebf2361c573fa16650c56fd9d6126ad.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;3ebf2361c573fa16650c56fd9d6126ad.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;ad1fbde4ca2903bbc531a9199dc154cf.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;ad1fbde4ca2903bbc531a9199dc154cf.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;img&#x2F;films&#x2F;6fe4075aaf7215a3839a871d20146846.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;img&#x2F;films&#x2F;6fe4075aaf7215a3839a871d20146846.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;bootstrap.js" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;bootstrap.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;js&#x2F;main.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;images&#x2F;header.jpg" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;images&#x2F;header.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;images&#x2F;bond_noel.png" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;images&#x2F;bond_noel.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.wawacity.bond&#x2F;assets&#x2F;fonts&#x2F;fontawesome-webfont862f.woff" target="_blank" class="external" rel="noreferrer noopener">www.wawacity.bond&#x2F;assets&#x2F;fonts&#x2F;fontawesome-webfont862f.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://stats.wawacity.bond&#x2F;bpsma.js" target="_blank" class="external" rel="noreferrer noopener">stats.wawacity.bond&#x2F;bpsma.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://stats.wawacity.bond&#x2F;bpsmaphp" target="_blank" class="external" rel="noreferrer noopener">stats.wawacity.bond&#x2F;bpsmaphp</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://wawacity.cam" target="_blank" class="external">wawacity.cam</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wawacity.moe" target="_blank" class="external">www.wawacity.moe</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "mitid.dk",
-        history: [{"date":"2022.02","prevalence":0.0000204,"sites":3,"fingerprinting":1,"cookies":0.0000204},{"date":"jd/march-update","prevalence":0.0000205,"sites":3,"fingerprinting":1,"cookies":0.0000205}]
+        history: [{"date":"main","prevalence":0.0000136,"sites":2,"fingerprinting":0,"cookies":0.0000136},{"date":"selenium-crux","prevalence":0.0000408,"sites":3,"fingerprinting":2,"cookies":0.0000408}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;13624<small>/25630</small>
+                    <strong>Rank:</strong> &#35;9274<small>/16361</small>
                 </li>
                 <li class='py-1'>
                     <strong>Prevalence:</strong> 0.00&#37; (3 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -91,11 +91,16 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/mitid.dk.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>nemlog-in</span>, 
+                    <span>www</span>, 
                 </li>
             </ul>
         </div>
@@ -124,7 +129,13 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
 
@@ -133,7 +144,58 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://nemlog-in.mitid.dk&#x2F;login.aspx&#x2F;noeglekort" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;login.aspx&#x2F;noeglekort</a> (seen on 2 websites)</p>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;idp&#x2F;saml&#x2F;3.0&#x2F;" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;idp&#x2F;saml&#x2F;3.0&#x2F;</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;login.aspx&#x2F;mitid" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;login.aspx&#x2F;mitid</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;resources&#x2F;css&#x2F;login.css" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;resources&#x2F;css&#x2F;login.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;resources&#x2F;css&#x2F;tooltip.css" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;resources&#x2F;css&#x2F;tooltip.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;Scripts&#x2F;jquery-3.5.1.slim.min.js" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;Scripts&#x2F;jquery-3.5.1.slim.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;Scripts&#x2F;jquery.cookie.js" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;Scripts&#x2F;jquery.cookie.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;Scripts&#x2F;common.js" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;Scripts&#x2F;common.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;Scripts&#x2F;tooltip.js" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;Scripts&#x2F;tooltip.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;WebResource.axd" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;WebResource.axd</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;resources&#x2F;images&#x2F;menu.png" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;resources&#x2F;images&#x2F;menu.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;resources&#x2F;images&#x2F;nemlogin.png" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;resources&#x2F;images&#x2F;nemlogin.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;Scripts&#x2F;Collapse.js" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;Scripts&#x2F;Collapse.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;resources&#x2F;js&#x2F;adrum.js" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;resources&#x2F;js&#x2F;adrum.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;resources&#x2F;fonts&#x2F;IBMPlexSans&#x2F;IBMPlexSans-Bold.woff" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;resources&#x2F;fonts&#x2F;IBMPlexSans&#x2F;IBMPlexSans-Bold.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;resources&#x2F;fonts&#x2F;IBMPlexSans&#x2F;IBMPlexSans-Medium.woff" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;resources&#x2F;fonts&#x2F;IBMPlexSans&#x2F;IBMPlexSans-Medium.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;resources&#x2F;fonts&#x2F;IBMPlexSans&#x2F;IBMPlexSans-Regular.woff" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;resources&#x2F;fonts&#x2F;IBMPlexSans&#x2F;IBMPlexSans-Regular.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://nemlog-in.mitid.dk&#x2F;resources&#x2F;fonts&#x2F;materialdesignicons-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">nemlog-in.mitid.dk&#x2F;resources&#x2F;fonts&#x2F;materialdesignicons-webfont.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.mitid.dk&#x2F;mitid-core-client-backend&#x2F;v1&#x2F;bootstrapper.a29ccd9579584e71dfba.js" target="_blank" class="external" rel="noreferrer noopener">www.mitid.dk&#x2F;mitid-core-client-backend&#x2F;v1&#x2F;bootstrapper.a29ccd9579584e71dfba.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -143,10 +205,13 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://jobnet.dk" target="_blank" class="external">jobnet.dk</a>
+            <a href="http://e-boks.dk" target="_blank" class="external">e-boks.dk</a>
         </li>
         <li class='truncate'>
-            <a href="http://virk.dk" target="_blank" class="external">virk.dk</a>
+            <a href="http://post.borger.dk" target="_blank" class="external">post.borger.dk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.borger.dk" target="_blank" class="external">www.borger.dk</a>
         </li>
     </ul>
 </div>

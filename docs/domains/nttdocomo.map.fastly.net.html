@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - nttdocomo.map.fastly.net</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "nttdocomo.map.fastly.net",
+        history: [{"date":"main","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0},{"date":"selenium-crux","prevalence":0.0000136,"sites":1,"fingerprinting":0,"cookies":0}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/nttdocomo.map.fastly.net.ico' width="32" height="32" class='inline-block' /> nttdocomo.map.fastly.net</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <a href="../entities/Fastly, Inc..html">Fastly, Inc.</a>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;www.fastly.com&#x2F;privacy" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;www.fastly.com&#x2F;privacy</a>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;15557<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (1 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> <a href="../categories/Ad Motivated Tracking.html">Ad Motivated Tracking</a>, <a href="../categories/Advertising.html">Advertising</a>, <a href="../categories/Analytics.html">Analytics</a>, <a href="../categories/Third-Party Analytics Marketing.html">Third-Party Analytics Marketing</a>, <a href="../categories/Action Pixels.html">Action Pixels</a>, <a href="../categories/CDN.html">CDN</a>, <a href="../categories/Embedded Content.html">Embedded Content</a>, <a href="../categories/Session Replay.html">Session Replay</a>, 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Image</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/nttdocomo.map.fastly.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>video-dmkt-sp</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>CNAMEs</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://image.video.dmkt-sp.jp" target="_blank" class="external">image.video.dmkt-sp.jp</a> &#x2192; <a href="http://video-dmkt-sp.nttdocomo.map.fastly.net" target="_blank" class="external">video-dmkt-sp.nttdocomo.map.fastly.net</a>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;jasrac.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;jasrac.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;nextone.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;nextone.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;lmark.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;lmark.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_market.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_market.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_shopping.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_shopping.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_game.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_game.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_book.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_book.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_fashion.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_fashion.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_music.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_music.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_job.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_job.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_carshare.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_carshare.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_mealkit.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_mealkit.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_app.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_app.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_magazine.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_magazine.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_hits.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_hits.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_photo.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_photo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_anime.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_anime.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_healthcare.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_healthcare.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_kids.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_kids.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_sports_kuji.png" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;pc&#x2F;assets&#x2F;img&#x2F;d_sports_kuji.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10181558_bnr.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10181558_bnr.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185326_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185326_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185327_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185327_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185328_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185328_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185329_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185329_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185330_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185330_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185331_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185331_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185332_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185332_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185333_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185333_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185334_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185334_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185335_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185335_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185336_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185336_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185337_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10185337_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183609_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183609_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10187098_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10187098_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183610_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183610_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183611_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183611_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183612_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183612_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183613_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183613_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183614_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183614_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183615_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183615_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183616_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183616_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183617_t1.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;block_detail&#x2F;10183617_t1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10058883_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10058883_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10003010_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10003010_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10067668_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10067668_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10077033_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10077033_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10070402_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10070402_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10025884_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10025884_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081917_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081917_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10015142_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10015142_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10082650_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10082650_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10080864_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10080864_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;202301_t-league&#x2F;20230108_B_J.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;202301_t-league&#x2F;20230108_B_J.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;20221216_sophia&#x2F;SOPHIA.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;20221216_sophia&#x2F;SOPHIA.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;202301_t-league&#x2F;20230109_D.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;202301_t-league&#x2F;20230109_D.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;20221223_EL&#x2F;0113_EL.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;20221223_EL&#x2F;0113_EL.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;20221217_inaba20230202&#x2F;20230202_inaba_ti.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;20221217_inaba20230202&#x2F;20230202_inaba_ti.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;20221219_NEM&#x2F;1229_NEM.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;20221219_NEM&#x2F;1229_NEM.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;202301_t-league&#x2F;20230107_J.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;custom&#x2F;img&#x2F;live&#x2F;202301_t-league&#x2F;20230107_J.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10076440_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10076440_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081489_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081489_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081686_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081686_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081828_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081828_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081985_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081985_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10044369_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10044369_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10077759_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10077759_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081129_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081129_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10080631_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10080631_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10022076_v_tb.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10022076_v_tb.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10062483_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10062483_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10083142_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10083142_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10057293_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10057293_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10057294_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10057294_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10080998_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10080998_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081001_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081001_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081000_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081000_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10031990_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10031990_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081918_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081918_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10070402_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10070402_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10070403_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10070403_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10077891_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10077891_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10082544_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10082544_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10071951_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10071951_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081950_h_zap.jpg" target="_blank" class="external" rel="noreferrer noopener">video-dmkt-sp.nttdocomo.map.fastly.net&#x2F;basic&#x2F;img&#x2F;title&#x2F;10081950_h_zap.jpg</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://dmkt-sp.jp" target="_blank" class="external">dmkt-sp.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://video.dmkt-sp.jp" target="_blank" class="external">video.dmkt-sp.jp</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

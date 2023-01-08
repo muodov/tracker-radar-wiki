@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - cafefcdn.com</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "cafefcdn.com",
+        history: [{"date":"selenium-crux","prevalence":0.0000544,"sites":4,"fingerprinting":1,"cookies":0.0000272}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/cafefcdn.com.ico' width="32" height="32" class='inline-block' /> cafefcdn.com</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;7168<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.01&#37; (4 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/cafefcdn.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_css&#x2F;cafef.home.05082022v1.min.css" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_css&#x2F;cafef.home.05082022v1.min.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;frontend&#x2F;scripts&#x2F;kby_v1.js" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;frontend&#x2F;scripts&#x2F;kby_v1.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;370_230&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673057141310-1673057141405990825309.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;370_230&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673057141310-1673057141405990825309.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;230_143&#x2F;2023&#x2F;bank-1673061002826.jpeg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;230_143&#x2F;2023&#x2F;bank-1673061002826.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;230_143&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673062561266-16730625613841157829534.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;230_143&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673062561266-16730625613841157829534.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;230_143&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;6&#x2F;photo1673011102568-1673011102853208685445.jpeg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;230_143&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;6&#x2F;photo1673011102568-1673011102853208685445.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;330_205&#x2F;203337114487263232&#x2F;2022&#x2F;12&#x2F;28&#x2F;photo1672215224599-16722152247001334885785.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;330_205&#x2F;203337114487263232&#x2F;2022&#x2F;12&#x2F;28&#x2F;photo1672215224599-16722152247001334885785.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;330_205&#x2F;203337114487263232&#x2F;2022&#x2F;12&#x2F;30&#x2F;photo1672392598241-16723925983601185105610.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;330_205&#x2F;203337114487263232&#x2F;2022&#x2F;12&#x2F;30&#x2F;photo1672392598241-16723925983601185105610.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;6&#x2F;photo1673020067000-16730200671021557301867.jpeg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;6&#x2F;photo1673020067000-16730200671021557301867.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673064746480-16730647466001311456174.jpeg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673064746480-16730647466001311456174.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673057811455-16730578115311717460845.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673057811455-16730578115311717460845.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;194_121&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;3&#x2F;photo1672719852403-1672719852533349402266.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;194_121&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;3&#x2F;photo1672719852403-1672719852533349402266.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;194_121&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;2&#x2F;photo1672641533471-1672641533687933807350.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;194_121&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;2&#x2F;photo1672641533471-1672641533687933807350.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;194_121&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;1&#x2F;photo1672575395158-16725753952871590876390.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;194_121&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;1&#x2F;photo1672575395158-16725753952871590876390.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;194_121&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;2&#x2F;photo1672648917029-16726489173092077587821.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;194_121&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;2&#x2F;photo1672648917029-16726489173092077587821.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;70_70&#x2F;2019&#x2F;3&#x2F;22&#x2F;photo-2-15532155020162117278634.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;70_70&#x2F;2019&#x2F;3&#x2F;22&#x2F;photo-2-15532155020162117278634.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;70_70&#x2F;2019&#x2F;11&#x2F;1&#x2F;viendaotaovanghiencuu-15725773272811912266550.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;70_70&#x2F;2019&#x2F;11&#x2F;1&#x2F;viendaotaovanghiencuu-15725773272811912266550.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673058046832-16730580470221026319888.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673058046832-16730580470221026319888.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673077302861-16730773030341038003094.jpeg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673077302861-16730773030341038003094.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;6&#x2F;photo1672969636822-1672969636989197357302.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;6&#x2F;photo1672969636822-1672969636989197357302.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;230_144&#x2F;203337114487263232&#x2F;2022&#x2F;12&#x2F;30&#x2F;photo1672392598241-16723925983601185105610.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;230_144&#x2F;203337114487263232&#x2F;2022&#x2F;12&#x2F;30&#x2F;photo1672392598241-16723925983601185105610.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;230_144&#x2F;203337114487263232&#x2F;2022&#x2F;12&#x2F;30&#x2F;photo1672413152758-1672413152888930856119.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;230_144&#x2F;203337114487263232&#x2F;2022&#x2F;12&#x2F;30&#x2F;photo1672413152758-1672413152888930856119.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;230_144&#x2F;203337114487263232&#x2F;2022&#x2F;12&#x2F;30&#x2F;photo1672390915312-1672390915640339123386.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;230_144&#x2F;203337114487263232&#x2F;2022&#x2F;12&#x2F;30&#x2F;photo1672390915312-1672390915640339123386.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673083179014-1673083179174850120528.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673083179014-1673083179174850120528.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_images&#x2F;loading.gif" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_images&#x2F;loading.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673057141310-1673057141405990825309.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673057141310-1673057141405990825309.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;2023&#x2F;sacombank20230106093428-1673056841835.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;2023&#x2F;sacombank20230106093428-1673056841835.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673054903644-1673054903808164324021.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673054903644-1673054903808164324021.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673058046832-16730580470221026319888.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673058046832-16730580470221026319888.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673061831150-1673061831233356449092.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673061831150-1673061831233356449092.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673060021257-16730600214272092962506.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673060021257-16730600214272092962506.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673057013221-16730570133101594127953.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673057013221-16730570133101594127953.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673077302861-16730773030341038003094.jpeg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673077302861-16730773030341038003094.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;5&#x2F;photo1672923040896-1672923041126218688037.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;5&#x2F;photo1672923040896-1672923041126218688037.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673051976254-1673051976341862153756.jpeg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673051976254-1673051976341862153756.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_js&#x2F;cafef.home.10062022v3.min.js" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_js&#x2F;cafef.home.10062022v3.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_images&#x2F;cafef_logo2022.svg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_images&#x2F;cafef_logo2022.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_images&#x2F;sprite_cafef_v18.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_images&#x2F;sprite_cafef_v18.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_font&#x2F;cn-Roboto-Regular.woff2" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_font&#x2F;cn-Roboto-Regular.woff2</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_font&#x2F;cn-Roboto-Medium.woff2" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_font&#x2F;cn-Roboto-Medium.woff2</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_font&#x2F;cn-Roboto-Bold.woff2" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_font&#x2F;cn-Roboto-Bold.woff2</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_images&#x2F;sprite_adm.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_images&#x2F;sprite_adm.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_images&#x2F;border_list_news_v2.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_images&#x2F;border_list_news_v2.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673077127858-1673077127955770914465.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673077127858-1673077127955770914465.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673081929747-16730819303641399804511.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673081929747-16730819303641399804511.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673074951956-167307495204288935952.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673074951956-167307495204288935952.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673079521966-1673079522169729193746.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;260_162&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673079521966-1673079522169729193746.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673056058704-16730560587841420494002.png" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;zoom&#x2F;340_210&#x2F;203337114487263232&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo1673056058704-16730560587841420494002.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_js&#x2F;common.min.20200901v1.js" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_js&#x2F;common.min.20200901v1.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cafefcdn.com&#x2F;web_images&#x2F;bg_chuyengia.jpg" target="_blank" class="external" rel="noreferrer noopener">cafefcdn.com&#x2F;web_images&#x2F;bg_chuyengia.jpg</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://cafef.vn" target="_blank" class="external">cafef.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.cafef.vn" target="_blank" class="external">m.cafef.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://s.cafef.vn" target="_blank" class="external">s.cafef.vn</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

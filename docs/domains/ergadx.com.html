@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "ergadx.com",
-        history: [{"date":"2021.03","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0.0000139},{"date":"2021.04","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.05","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.06","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.07","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.08","prevalence":0.0000208,"sites":3,"fingerprinting":0,"cookies":0},{"date":"2021.09","prevalence":0.0000414,"sites":6,"fingerprinting":1,"cookies":0.0000069},{"date":"2021.10","prevalence":0.0000345,"sites":5,"fingerprinting":1,"cookies":0.0000069},{"date":"2021.11","prevalence":0.0000345,"sites":5,"fingerprinting":1,"cookies":0.0000069},{"date":"2021.12","prevalence":0.0000484,"sites":7,"fingerprinting":1,"cookies":0.00000691},{"date":"2022.01","prevalence":0.0000554,"sites":8,"fingerprinting":1,"cookies":0.00000692},{"date":"2022.02","prevalence":0.000102,"sites":15,"fingerprinting":2,"cookies":0.0000272},{"date":"2022.03","prevalence":0.000116,"sites":17,"fingerprinting":2,"cookies":0.0000478},{"date":"2022.04","prevalence":0.000102,"sites":15,"fingerprinting":2,"cookies":0.0000204},{"date":"2022.05","prevalence":0.000123,"sites":18,"fingerprinting":2,"cookies":0.0000205},{"date":"2022.06","prevalence":0.0000949,"sites":14,"fingerprinting":1,"cookies":0.0000136},{"date":"2022.07","prevalence":0.0000543,"sites":8,"fingerprinting":1,"cookies":0.00000679},{"date":"2022.08","prevalence":0.0000543,"sites":8,"fingerprinting":1,"cookies":0.00000679},{"date":"muodov/aug-2022","prevalence":0.0000407,"sites":6,"fingerprinting":1,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000203,"sites":3,"fingerprinting":1,"cookies":0.00000678},{"date":"selenium-crux","prevalence":0.000381,"sites":28,"fingerprinting":1,"cookies":0.0000408}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;8999<small>/27751</small>
+                    <strong>Rank:</strong> &#35;2032<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (6 sites)
+                    <strong>Prevalence:</strong> 0.04&#37; (28 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
@@ -91,11 +91,18 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
+                    <span>XHR</span>,
+                    <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/ergadx.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>cdn</span>, 
+                    <span>cpm</span>, 
+                    <span>tg1</span>, 
+                    <span>servt</span>, 
+                    <span>serv</span>, 
+                    <span>streamroll</span>, 
                 </li>
             </ul>
         </div>
@@ -125,6 +132,11 @@
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
         <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
 </div>
 
@@ -133,10 +145,25 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://cdn.ergadx.com&#x2F;js&#x2F;821&#x2F;ads.js" target="_blank" class="external" rel="noreferrer noopener">cdn.ergadx.com&#x2F;js&#x2F;821&#x2F;ads.js</a> (seen on 2 websites)</p>
+            <p><a href="http://servt.ergadx.com&#x2F;track" target="_blank" class="external" rel="noreferrer noopener">servt.ergadx.com&#x2F;track</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.ergadx.com&#x2F;js&#x2F;1508&#x2F;ads.js" target="_blank" class="external" rel="noreferrer noopener">cdn.ergadx.com&#x2F;js&#x2F;1508&#x2F;ads.js</a> (seen on 2 websites)</p>
+            <p><a href="http://tg1.ergadx.com&#x2F;api&#x2F;adserver&#x2F;spt" target="_blank" class="external" rel="noreferrer noopener">tg1.ergadx.com&#x2F;api&#x2F;adserver&#x2F;spt</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cpm.ergadx.com&#x2F;hb" target="_blank" class="external" rel="noreferrer noopener">cpm.ergadx.com&#x2F;hb</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://serv.ergadx.com&#x2F;api&#x2F;adserver&#x2F;tag&#x2F;" target="_blank" class="external" rel="noreferrer noopener">serv.ergadx.com&#x2F;api&#x2F;adserver&#x2F;tag&#x2F;</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.ergadx.com&#x2F;js&#x2F;36&#x2F;ads.js" target="_blank" class="external" rel="noreferrer noopener">cdn.ergadx.com&#x2F;js&#x2F;36&#x2F;ads.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.ergadx.com&#x2F;js&#x2F;727&#x2F;ads.js" target="_blank" class="external" rel="noreferrer noopener">cdn.ergadx.com&#x2F;js&#x2F;727&#x2F;ads.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://streamroll.ergadx.com&#x2F;script&#x2F;6.1&#x2F;player.js" target="_blank" class="external" rel="noreferrer noopener">streamroll.ergadx.com&#x2F;script&#x2F;6.1&#x2F;player.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -146,16 +173,52 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://hancinema.net" target="_blank" class="external">hancinema.net</a>
+            <a href="http://heraldgoa.in" target="_blank" class="external">heraldgoa.in</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.hancinema.net" target="_blank" class="external">www.hancinema.net</a>
+            <a href="http://epaper.heraldgoa.in" target="_blank" class="external">epaper.heraldgoa.in</a>
         </li>
         <li class='truncate'>
-            <a href="http://newdelhiairport.in" target="_blank" class="external">newdelhiairport.in</a>
+            <a href="http://enavabharat.com" target="_blank" class="external">enavabharat.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.newdelhiairport.in" target="_blank" class="external">www.newdelhiairport.in</a>
+            <a href="http://epaper.lokmat.com" target="_blank" class="external">epaper.lokmat.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://newspaper.pudhari.co.in" target="_blank" class="external">newspaper.pudhari.co.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://saamana.com" target="_blank" class="external">saamana.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://epapervijayavani.in" target="_blank" class="external">epapervijayavani.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sambad.in" target="_blank" class="external">sambad.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.agniban.com" target="_blank" class="external">www.agniban.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ittefaq.com.bd" target="_blank" class="external">www.ittefaq.com.bd</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mediaoneonline.com" target="_blank" class="external">www.mediaoneonline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sportstiger.com" target="_blank" class="external">www.sportstiger.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://epaper.saamana.com" target="_blank" class="external">epaper.saamana.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sambadepaper.com" target="_blank" class="external">sambadepaper.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.sambadepaper.com" target="_blank" class="external">m.sambadepaper.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ittefaq.com.bd" target="_blank" class="external">ittefaq.com.bd</a>
         </li>
     </ul>
 </div>

@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "razorpay.com",
-        history: [{"date":"2020.02","prevalence":0.0000462,"sites":2,"fingerprinting":3,"cookies":0},{"date":"2020.03","prevalence":0.0000462,"sites":2,"fingerprinting":3,"cookies":0},{"date":"2020.04","prevalence":0.0000428,"sites":2,"fingerprinting":3,"cookies":0},{"date":"2020.05","prevalence":0.0000428,"sites":3,"fingerprinting":3,"cookies":0},{"date":"2020.06","prevalence":0.0000958,"sites":7,"fingerprinting":3,"cookies":0},{"date":"2020.07","prevalence":0.000097,"sites":7,"fingerprinting":3,"cookies":0},{"date":"2020.08","prevalence":0.00011,"sites":15,"fingerprinting":3,"cookies":0.0000147},{"date":"2020.09","prevalence":0.000106,"sites":14,"fingerprinting":3,"cookies":0},{"date":"2020.10","prevalence":0.0000987,"sites":13,"fingerprinting":3,"cookies":0},{"date":"2020.11","prevalence":0.000076,"sites":10,"fingerprinting":3,"cookies":0},{"date":"2020.12","prevalence":0.000106,"sites":14,"fingerprinting":3,"cookies":0},{"date":"2021.01","prevalence":0.0000764,"sites":10,"fingerprinting":3,"cookies":0},{"date":"2021.02","prevalence":0.0000695,"sites":10,"fingerprinting":3,"cookies":0.00000695},{"date":"2021.03","prevalence":0.0000693,"sites":10,"fingerprinting":3,"cookies":0.00000693},{"date":"2021.04","prevalence":0.000097,"sites":14,"fingerprinting":3,"cookies":0.00000693},{"date":"2021.05","prevalence":0.0000758,"sites":11,"fingerprinting":3,"cookies":0},{"date":"2021.06","prevalence":0.0000822,"sites":12,"fingerprinting":3,"cookies":0},{"date":"2021.07","prevalence":0.0000902,"sites":13,"fingerprinting":3,"cookies":0.00000694},{"date":"2021.08","prevalence":0.0000694,"sites":10,"fingerprinting":3,"cookies":0},{"date":"2021.09","prevalence":0.0000621,"sites":9,"fingerprinting":3,"cookies":0},{"date":"2021.10","prevalence":0.0000898,"sites":13,"fingerprinting":3,"cookies":0.0000069},{"date":"2021.11","prevalence":0.0000828,"sites":12,"fingerprinting":3,"cookies":0.0000138},{"date":"2021.12","prevalence":0.000076,"sites":11,"fingerprinting":3,"cookies":0},{"date":"2022.01","prevalence":0.0000623,"sites":9,"fingerprinting":3,"cookies":0},{"date":"2022.02","prevalence":0.000136,"sites":20,"fingerprinting":3,"cookies":0.00000681},{"date":"2022.03","prevalence":0.000171,"sites":25,"fingerprinting":3,"cookies":0.00000683},{"date":"2022.04","prevalence":0.000157,"sites":23,"fingerprinting":3,"cookies":0.0000204},{"date":"2022.05","prevalence":0.00017,"sites":25,"fingerprinting":3,"cookies":0.00000682},{"date":"2022.06","prevalence":0.000061,"sites":9,"fingerprinting":3,"cookies":0.00000678},{"date":"2022.07","prevalence":0.0000543,"sites":8,"fingerprinting":3,"cookies":0},{"date":"2022.08","prevalence":0.0000543,"sites":8,"fingerprinting":3,"cookies":0},{"date":"muodov/aug-2022","prevalence":0.0000678,"sites":10,"fingerprinting":3,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000745,"sites":11,"fingerprinting":3,"cookies":0},{"date":"selenium-crux","prevalence":0.000694,"sites":51,"fingerprinting":3,"cookies":0.000109}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;6706<small>/27751</small>
+                    <strong>Rank:</strong> &#35;1367<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (10 sites)
+                    <strong>Prevalence:</strong> 0.07&#37; (51 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.01&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -93,14 +93,17 @@
                     <span>Script</span>,
                     <span>Document</span>,
                     <span>Stylesheet</span>,
+                    <span>XHR</span>,
+                    <span>Ping</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/razorpay.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>checkout</span>, 
                     <span>api</span>, 
-                    <span>checkout-static</span>, 
+                    <span>checkout-static-next</span>, 
                     <span>cdn</span>, 
+                    <span>lumberjack</span>, 
                 </li>
             </ul>
         </div>
@@ -129,20 +132,31 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
-        <li class='truncate'>Navigator.prototype.hardwareConcurrency</li>
+        <li class='truncate'>Navigator.prototype.webkitTemporaryStorage</li>
         <li class='truncate'>Navigator.prototype.deviceMemory</li>
+        <li class='truncate'>Navigator.prototype.hardwareConcurrency</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>CanvasRenderingContext2D.prototype.getImageData</li>
+        <li class='truncate'>Screen.prototype.pixelDepth</li>
+        <li class='truncate'>Navigator.prototype.product</li>
         <li class='truncate'>window.devicePixelRatio</li>
-        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Performance.prototype.memory</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
         <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
         <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Navigator.prototype.connection</li>
         <li class='truncate'>Navigator.prototype.cookieEnabled</li>
-        <li class='truncate'>Navigator.prototype.vendor</li>
         <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Navigator.prototype.vendor</li>
         <li class='truncate'>Screen.prototype.height</li>
         <li class='truncate'>Screen.prototype.width</li>
         <li class='truncate'>Navigator.prototype.language</li>
         <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
@@ -153,22 +167,79 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://checkout.razorpay.com&#x2F;v1&#x2F;checkout.js" target="_blank" class="external" rel="noreferrer noopener">checkout.razorpay.com&#x2F;v1&#x2F;checkout.js</a> (seen on 6 websites)</p>
+            <p><a href="http://api.razorpay.com&#x2F;v1&#x2F;checkout&#x2F;public" target="_blank" class="external" rel="noreferrer noopener">api.razorpay.com&#x2F;v1&#x2F;checkout&#x2F;public</a> (seen on 37 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://api.razorpay.com&#x2F;v1&#x2F;checkout&#x2F;public" target="_blank" class="external" rel="noreferrer noopener">api.razorpay.com&#x2F;v1&#x2F;checkout&#x2F;public</a> (seen on 6 websites)</p>
+            <p><a href="http://checkout.razorpay.com&#x2F;v1&#x2F;checkout.js" target="_blank" class="external" rel="noreferrer noopener">checkout.razorpay.com&#x2F;v1&#x2F;checkout.js</a> (seen on 29 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://checkout-static.razorpay.com&#x2F;build&#x2F;5fdbe9da2c21904544319fb37cc96bb8e99e5f8f&#x2F;css&#x2F;checkout.css" target="_blank" class="external" rel="noreferrer noopener">checkout-static.razorpay.com&#x2F;build&#x2F;5fdbe9da2c21904544319fb37cc96bb8e99e5f8f&#x2F;css&#x2F;checkout.css</a> (seen on 5 websites)</p>
+            <p><a href="http://checkout-static-next.razorpay.com&#x2F;build&#x2F;09bc8ab370be6bb0edafd9a2a7cbf1fa08aa382c&#x2F;css&#x2F;checkout.css" target="_blank" class="external" rel="noreferrer noopener">checkout-static-next.razorpay.com&#x2F;build&#x2F;09bc8ab370be6bb0edafd9a2a7cbf1fa08aa382c&#x2F;css&#x2F;checkout.css</a> (seen on 28 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://checkout-static.razorpay.com&#x2F;build&#x2F;5fdbe9da2c21904544319fb37cc96bb8e99e5f8f&#x2F;checkout-frame.js" target="_blank" class="external" rel="noreferrer noopener">checkout-static.razorpay.com&#x2F;build&#x2F;5fdbe9da2c21904544319fb37cc96bb8e99e5f8f&#x2F;checkout-frame.js</a> (seen on 5 websites)</p>
+            <p><a href="http://checkout-static-next.razorpay.com&#x2F;build&#x2F;09bc8ab370be6bb0edafd9a2a7cbf1fa08aa382c&#x2F;checkout-frame.js" target="_blank" class="external" rel="noreferrer noopener">checkout-static-next.razorpay.com&#x2F;build&#x2F;09bc8ab370be6bb0edafd9a2a7cbf1fa08aa382c&#x2F;checkout-frame.js</a> (seen on 28 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.razorpay.com&#x2F;static&#x2F;shopify&#x2F;modal.js" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;static&#x2F;shopify&#x2F;modal.js</a> (seen on 2 websites)</p>
+            <p><a href="http://cdn.razorpay.com&#x2F;static&#x2F;shopify&#x2F;analytics.js" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;static&#x2F;shopify&#x2F;analytics.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.razorpay.com&#x2F;static&#x2F;shopify&#x2F;analytics.js" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;static&#x2F;shopify&#x2F;analytics.js</a> (seen on 2 websites)</p>
+            <p><a href="http://checkout.razorpay.com&#x2F;v1&#x2F;checkout-1cc.js" target="_blank" class="external" rel="noreferrer noopener">checkout.razorpay.com&#x2F;v1&#x2F;checkout-1cc.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.razorpay.com&#x2F;static&#x2F;shopify&#x2F;magic-rzp.js" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;static&#x2F;shopify&#x2F;magic-rzp.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://checkout-static-next.razorpay.com&#x2F;build&#x2F;a95175d7748d84dd8a00df2ec7e5f91e5337db3d&#x2F;checkout-frame-lite.js" target="_blank" class="external" rel="noreferrer noopener">checkout-static-next.razorpay.com&#x2F;build&#x2F;a95175d7748d84dd8a00df2ec7e5f91e5337db3d&#x2F;checkout-frame-lite.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://checkout-static-next.razorpay.com&#x2F;build&#x2F;a95175d7748d84dd8a00df2ec7e5f91e5337db3d&#x2F;checkout-frame-lite-138.js" target="_blank" class="external" rel="noreferrer noopener">checkout-static-next.razorpay.com&#x2F;build&#x2F;a95175d7748d84dd8a00df2ec7e5f91e5337db3d&#x2F;checkout-frame-lite-138.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://checkout-static-next.razorpay.com&#x2F;build&#x2F;a95175d7748d84dd8a00df2ec7e5f91e5337db3d&#x2F;css&#x2F;321.checkout.css" target="_blank" class="external" rel="noreferrer noopener">checkout-static-next.razorpay.com&#x2F;build&#x2F;a95175d7748d84dd8a00df2ec7e5f91e5337db3d&#x2F;css&#x2F;321.checkout.css</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://checkout-static-next.razorpay.com&#x2F;build&#x2F;a95175d7748d84dd8a00df2ec7e5f91e5337db3d&#x2F;checkout-frame-lite-core-321.js" target="_blank" class="external" rel="noreferrer noopener">checkout-static-next.razorpay.com&#x2F;build&#x2F;a95175d7748d84dd8a00df2ec7e5f91e5337db3d&#x2F;checkout-frame-lite-core-321.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.razorpay.com&#x2F;v1&#x2F;standard_checkout&#x2F;preferences" target="_blank" class="external" rel="noreferrer noopener">api.razorpay.com&#x2F;v1&#x2F;standard_checkout&#x2F;preferences</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://checkout.razorpay.com&#x2F;v1&#x2F;razorpay.js" target="_blank" class="external" rel="noreferrer noopener">checkout.razorpay.com&#x2F;v1&#x2F;razorpay.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.razorpay.com&#x2F;widgets&#x2F;affordability&#x2F;affordability.js" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;widgets&#x2F;affordability&#x2F;affordability.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.razorpay.com&#x2F;widgets&#x2F;affordability&#x2F;detailFrame.html" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;widgets&#x2F;affordability&#x2F;detailFrame.html</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.razorpay.com&#x2F;widgets&#x2F;affordability&#x2F;detailFrame.css" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;widgets&#x2F;affordability&#x2F;detailFrame.css</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.razorpay.com&#x2F;widgets&#x2F;affordability&#x2F;detailFrame.js" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;widgets&#x2F;affordability&#x2F;detailFrame.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lumberjack.razorpay.com&#x2F;v1&#x2F;track" target="_blank" class="external" rel="noreferrer noopener">lumberjack.razorpay.com&#x2F;v1&#x2F;track</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.razorpay.com&#x2F;static&#x2F;assets&#x2F;color.js" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;static&#x2F;assets&#x2F;color.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lumberjack.razorpay.com&#x2F;v1&#x2F;track" target="_blank" class="external" rel="noreferrer noopener">lumberjack.razorpay.com&#x2F;v1&#x2F;track</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://checkout.razorpay.com&#x2F;v1&#x2F;sdk-loader.js" target="_blank" class="external" rel="noreferrer noopener">checkout.razorpay.com&#x2F;v1&#x2F;sdk-loader.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://checkout.razorpay.com&#x2F;v1&#x2F;payment-button.js" target="_blank" class="external" rel="noreferrer noopener">checkout.razorpay.com&#x2F;v1&#x2F;payment-button.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.razorpay.com&#x2F;static&#x2F;analytics&#x2F;bundle.js" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;static&#x2F;analytics&#x2F;bundle.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.razorpay.com&#x2F;static&#x2F;widget&#x2F;payment-form.css" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;static&#x2F;widget&#x2F;payment-form.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.razorpay.com&#x2F;static&#x2F;widget&#x2F;payment-form.js" target="_blank" class="external" rel="noreferrer noopener">cdn.razorpay.com&#x2F;static&#x2F;widget&#x2F;payment-form.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -178,25 +249,160 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://gomechanic.in" target="_blank" class="external">gomechanic.in</a>
-        </li>
-        <li class='truncate'>
             <a href="http://swarajyamag.com" target="_blank" class="external">swarajyamag.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.boat-lifestyle.com" target="_blank" class="external">www.boat-lifestyle.com</a>
+            <a href="http://web.sensibull.com" target="_blank" class="external">web.sensibull.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.thenewsminute.com" target="_blank" class="external">www.thenewsminute.com</a>
+            <a href="http://goldenpi.com" target="_blank" class="external">goldenpi.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://online.qspiders.com" target="_blank" class="external">online.qspiders.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://app.zestmoney.in" target="_blank" class="external">app.zestmoney.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://detec.in" target="_blank" class="external">detec.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.scaler.com" target="_blank" class="external">www.scaler.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bathandbodyworks.in" target="_blank" class="external">www.bathandbodyworks.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://foscos.fssai.gov.in" target="_blank" class="external">foscos.fssai.gov.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://guidely.in" target="_blank" class="external">guidely.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://rojgarwithankit.appx.co.in" target="_blank" class="external">rojgarwithankit.appx.co.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.grihshobha.in" target="_blank" class="external">www.grihshobha.in</a>
         </li>
         <li class='truncate'>
             <a href="http://www.thequint.com" target="_blank" class="external">www.thequint.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.urbancompany.com" target="_blank" class="external">www.urbancompany.com</a>
+            <a href="http://iwbms.mahabocw.in" target="_blank" class="external">iwbms.mahabocw.in</a>
         </li>
         <li class='truncate'>
-            <a href="http://boat-lifestyle.com" target="_blank" class="external">boat-lifestyle.com</a>
+            <a href="http://portal.dmifinance.in" target="_blank" class="external">portal.dmifinance.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ieltsidpindia.com" target="_blank" class="external">www.ieltsidpindia.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://track.shadowfax.in" target="_blank" class="external">track.shadowfax.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.yourquote.in" target="_blank" class="external">www.yourquote.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.victoriassecretbeauty.in" target="_blank" class="external">www.victoriassecretbeauty.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uppankh.in" target="_blank" class="external">uppankh.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dreamzhub.in" target="_blank" class="external">dreamzhub.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.aldoshoes.in" target="_blank" class="external">www.aldoshoes.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.rasoishop.com" target="_blank" class="external">www.rasoishop.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://app1.leegality.com" target="_blank" class="external">app1.leegality.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tracker.shadowfax.in" target="_blank" class="external">tracker.shadowfax.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://leegality.com" target="_blank" class="external">leegality.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fireboltt.com" target="_blank" class="external">www.fireboltt.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://eauto.co.in" target="_blank" class="external">eauto.co.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.medibuddy.in" target="_blank" class="external">www.medibuddy.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.jrbtripura.com" target="_blank" class="external">www.jrbtripura.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.barbequenation.com" target="_blank" class="external">www.barbequenation.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gomechanic.in" target="_blank" class="external">gomechanic.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://employer.apna.co" target="_blank" class="external">employer.apna.co</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://rigipay.com" target="_blank" class="external">rigipay.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.libas.in" target="_blank" class="external">www.libas.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pricesofindia.com" target="_blank" class="external">pricesofindia.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://online.2iim.com" target="_blank" class="external">online.2iim.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://compare.pricesofindia.com" target="_blank" class="external">compare.pricesofindia.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ministryofnuts.in" target="_blank" class="external">ministryofnuts.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gonoise.com" target="_blank" class="external">www.gonoise.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.justherbs.in" target="_blank" class="external">www.justherbs.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mamaearth.in" target="_blank" class="external">mamaearth.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thedermaco.com" target="_blank" class="external">thedermaco.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tradetron.tech" target="_blank" class="external">tradetron.tech</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wildcraft.com" target="_blank" class="external">wildcraft.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.codingninjas.com" target="_blank" class="external">www.codingninjas.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.shemaroome.com" target="_blank" class="external">www.shemaroome.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://myborosil.com" target="_blank" class="external">myborosil.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thesleepcompany.in" target="_blank" class="external">thesleepcompany.in</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.boultaudio.com" target="_blank" class="external">www.boultaudio.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nilkamalfurniture.com" target="_blank" class="external">www.nilkamalfurniture.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sahivalue.com" target="_blank" class="external">www.sahivalue.com</a>
         </li>
     </ul>
 </div>

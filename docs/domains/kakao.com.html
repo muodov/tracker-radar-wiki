@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "kakao.com",
-        history: [{"date":"2020.02","prevalence":0.0000925,"sites":4,"fingerprinting":1,"cookies":0},{"date":"2020.03","prevalence":0.000122,"sites":6,"fingerprinting":1,"cookies":0},{"date":"2020.04","prevalence":0.0000857,"sites":4,"fingerprinting":1,"cookies":0},{"date":"2020.05","prevalence":0.000114,"sites":8,"fingerprinting":1,"cookies":0},{"date":"2020.06","prevalence":0.0000684,"sites":5,"fingerprinting":1,"cookies":0},{"date":"2020.07","prevalence":0.0000416,"sites":3,"fingerprinting":1,"cookies":0},{"date":"2020.08","prevalence":0.0000882,"sites":12,"fingerprinting":1,"cookies":0},{"date":"2020.09","prevalence":0.0000456,"sites":6,"fingerprinting":1,"cookies":0},{"date":"2020.10","prevalence":0.0000683,"sites":9,"fingerprinting":1,"cookies":0},{"date":"2020.11","prevalence":0.000076,"sites":10,"fingerprinting":1,"cookies":0},{"date":"2020.12","prevalence":0.0000456,"sites":6,"fingerprinting":2,"cookies":0},{"date":"2021.01","prevalence":0.000084,"sites":11,"fingerprinting":1,"cookies":0},{"date":"2021.02","prevalence":0.000257,"sites":37,"fingerprinting":1,"cookies":0},{"date":"2021.03","prevalence":0.000264,"sites":38,"fingerprinting":1,"cookies":0},{"date":"2021.04","prevalence":0.000548,"sites":79,"fingerprinting":1,"cookies":0.000409},{"date":"2021.05","prevalence":0.000503,"sites":73,"fingerprinting":1,"cookies":0.000372},{"date":"2021.06","prevalence":0.000521,"sites":76,"fingerprinting":1,"cookies":0.000397},{"date":"2021.07","prevalence":0.000701,"sites":101,"fingerprinting":1,"cookies":0.000534},{"date":"2021.08","prevalence":0.000729,"sites":105,"fingerprinting":1,"cookies":0.000569},{"date":"2021.09","prevalence":0.000538,"sites":78,"fingerprinting":1,"cookies":0.000435},{"date":"2021.10","prevalence":0.000532,"sites":77,"fingerprinting":1,"cookies":0.000421},{"date":"2021.11","prevalence":0.000538,"sites":78,"fingerprinting":1,"cookies":0.000414},{"date":"2021.12","prevalence":0.00056,"sites":81,"fingerprinting":1,"cookies":0.000436},{"date":"2022.01","prevalence":0.000568,"sites":82,"fingerprinting":1,"cookies":0.000443},{"date":"2022.02","prevalence":0.00537,"sites":789,"fingerprinting":1,"cookies":0.00497},{"date":"2022.03","prevalence":0.000444,"sites":65,"fingerprinting":2,"cookies":0.000232},{"date":"2022.04","prevalence":0.000476,"sites":70,"fingerprinting":2,"cookies":0.000211},{"date":"2022.05","prevalence":0.000934,"sites":137,"fingerprinting":1,"cookies":0.000559},{"date":"2022.06","prevalence":0.000685,"sites":101,"fingerprinting":1,"cookies":0.000529},{"date":"2022.07","prevalence":0.00379,"sites":559,"fingerprinting":2,"cookies":0.00175},{"date":"2022.08","prevalence":0.00379,"sites":559,"fingerprinting":2,"cookies":0.00175},{"date":"muodov/aug-2022","prevalence":0.00367,"sites":541,"fingerprinting":2,"cookies":0.000596}]
+        history: [{"date":"main","prevalence":0.000874,"sites":129,"fingerprinting":1,"cookies":0.000413},{"date":"selenium-crux","prevalence":0.00291,"sites":214,"fingerprinting":1,"cookies":0.00197}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;534<small>/27751</small>
+                    <strong>Rank:</strong> &#35;541<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.37&#37; (541 sites)
+                    <strong>Prevalence:</strong> 0.29&#37; (214 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.06&#37;
+                    <strong>Cookies:</strong> 0.20&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -90,15 +90,16 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Script</span>,
                     <span>Image</span>,
+                    <span>Script</span>,
                     <span>Document</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/kakao.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>developers</span>, 
                     <span>act.ds</span>, 
+                    <span>developers</span>, 
+                    <span>serv.ds</span>, 
                     <span>dapi</span>, 
                 </li>
             </ul>
@@ -141,13 +142,19 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://developers.kakao.com&#x2F;sdk&#x2F;js&#x2F;kakao.min.js" target="_blank" class="external" rel="noreferrer noopener">developers.kakao.com&#x2F;sdk&#x2F;js&#x2F;kakao.min.js</a> (seen on 236 websites)</p>
+            <p><a href="http://act.ds.kakao.com&#x2F;match2" target="_blank" class="external" rel="noreferrer noopener">act.ds.kakao.com&#x2F;match2</a> (seen on 133 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://act.ds.kakao.com&#x2F;match2" target="_blank" class="external" rel="noreferrer noopener">act.ds.kakao.com&#x2F;match2</a> (seen on 62 websites)</p>
+            <p><a href="http://developers.kakao.com&#x2F;sdk&#x2F;js&#x2F;kakao.min.js" target="_blank" class="external" rel="noreferrer noopener">developers.kakao.com&#x2F;sdk&#x2F;js&#x2F;kakao.min.js</a> (seen on 48 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://act.ds.kakao.com&#x2F;match2" target="_blank" class="external" rel="noreferrer noopener">act.ds.kakao.com&#x2F;match2</a> (seen on 3 websites)</p>
+            <p><a href="http://act.ds.kakao.com&#x2F;match2" target="_blank" class="external" rel="noreferrer noopener">act.ds.kakao.com&#x2F;match2</a> (seen on 32 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://developers.kakao.com&#x2F;sdk&#x2F;js&#x2F;kakao.js" target="_blank" class="external" rel="noreferrer noopener">developers.kakao.com&#x2F;sdk&#x2F;js&#x2F;kakao.js</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://serv.ds.kakao.com&#x2F;dspr&#x2F;sync" target="_blank" class="external" rel="noreferrer noopener">serv.ds.kakao.com&#x2F;dspr&#x2F;sync</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://dapi.kakao.com&#x2F;v2&#x2F;maps&#x2F;sdk.js" target="_blank" class="external" rel="noreferrer noopener">dapi.kakao.com&#x2F;v2&#x2F;maps&#x2F;sdk.js</a> (seen on 2 websites)</p>
@@ -160,139 +167,217 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://databasedick.tistory.com" target="_blank" class="external">databasedick.tistory.com</a>
+            <a href="http://portalkudus.pikiran-rakyat.com" target="_blank" class="external">portalkudus.pikiran-rakyat.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://teen18ar5.tistory.com" target="_blank" class="external">teen18ar5.tistory.com</a>
+            <a href="http://beritadiy.pikiran-rakyat.com" target="_blank" class="external">beritadiy.pikiran-rakyat.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://pico18teen.tistory.com" target="_blank" class="external">pico18teen.tistory.com</a>
+            <a href="http://www.kosmo.com.my" target="_blank" class="external">www.kosmo.com.my</a>
         </li>
         <li class='truncate'>
-            <a href="http://shanghaidick.tistory.com" target="_blank" class="external">shanghaidick.tistory.com</a>
+            <a href="http://www.salgoonews.com" target="_blank" class="external">www.salgoonews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://bigtitseroti.tistory.com" target="_blank" class="external">bigtitseroti.tistory.com</a>
+            <a href="http://pikiran-rakyat.com" target="_blank" class="external">pikiran-rakyat.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://wifiteens.tistory.com" target="_blank" class="external">wifiteens.tistory.com</a>
+            <a href="http://star.ettoday.net" target="_blank" class="external">star.ettoday.net</a>
         </li>
         <li class='truncate'>
-            <a href="http://cine18teen73.tistory.com" target="_blank" class="external">cine18teen73.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://eveteenage.tistory.com" target="_blank" class="external">eveteenage.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://news.kbs.co.kr" target="_blank" class="external">news.kbs.co.kr</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://teenagepsych.tistory.com" target="_blank" class="external">teenagepsych.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://bigtitsrules.tistory.com" target="_blank" class="external">bigtitsrules.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://dickoklahoma81.tistory.com" target="_blank" class="external">dickoklahoma81.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://meonol.tistory.com" target="_blank" class="external">meonol.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://sweet18teen.tistory.com" target="_blank" class="external">sweet18teen.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://bigtitssit80.tistory.com" target="_blank" class="external">bigtitssit80.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://covedick.tistory.com" target="_blank" class="external">covedick.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://gulfteens19.tistory.com" target="_blank" class="external">gulfteens19.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://teenstodays.tistory.com" target="_blank" class="external">teenstodays.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://peoplebigtit.tistory.com" target="_blank" class="external">peoplebigtit.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://dickrace.tistory.com" target="_blank" class="external">dickrace.tistory.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://m.ruliweb.com" target="_blank" class="external">m.ruliweb.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://medan.tribunnews.com" target="_blank" class="external">medan.tribunnews.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.suara.com" target="_blank" class="external">www.suara.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://mlbpark.donga.com" target="_blank" class="external">mlbpark.donga.com</a>
+            <a href="http://www.orientaldaily.com.my" target="_blank" class="external">www.orientaldaily.com.my</a>
         </li>
         <li class='truncate'>
             <a href="http://www.nownews.com" target="_blank" class="external">www.nownews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://sea.mashable.com" target="_blank" class="external">sea.mashable.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://lovegreen.net" target="_blank" class="external">lovegreen.net</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://video.tribunnews.com" target="_blank" class="external">video.tribunnews.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.thesundaily.my" target="_blank" class="external">www.thesundaily.my</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://manado.tribunnews.com" target="_blank" class="external">manado.tribunnews.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://tribunnews.com" target="_blank" class="external">tribunnews.com</a>
-        </li>
-        <li class='truncate'>
             <a href="http://www.jprime.jp" target="_blank" class="external">www.jprime.jp</a>
         </li>
         <li class='truncate'>
-            <a href="http://sultra.tribunnews.com" target="_blank" class="external">sultra.tribunnews.com</a>
+            <a href="http://malangterkini.pikiran-rakyat.com" target="_blank" class="external">malangterkini.pikiran-rakyat.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://prsoloraya.pikiran-rakyat.com" target="_blank" class="external">prsoloraya.pikiran-rakyat.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://imnews.imbc.com" target="_blank" class="external">imnews.imbc.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.sportsseoul.com" target="_blank" class="external">m.sportsseoul.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://portalkotamobagu.pikiran-rakyat.com" target="_blank" class="external">portalkotamobagu.pikiran-rakyat.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.airasia.co.in" target="_blank" class="external">www.airasia.co.in</a>
         </li>
         <li class='truncate'>
             <a href="http://uranaitv.jp" target="_blank" class="external">uranaitv.jp</a>
         </li>
         <li class='truncate'>
-            <a href="http://cocoloni.jp" target="_blank" class="external">cocoloni.jp</a>
+            <a href="http://www.bizhows.com" target="_blank" class="external">www.bizhows.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://says.com" target="_blank" class="external">says.com</a>
+            <a href="http://pojoksatu.id" target="_blank" class="external">pojoksatu.id</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.indosport.com" target="_blank" class="external">www.indosport.com</a>
+            <a href="http://www.bomtoon.com" target="_blank" class="external">www.bomtoon.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.popmama.com" target="_blank" class="external">www.popmama.com</a>
+            <a href="http://www.businesstoday.com.tw" target="_blank" class="external">www.businesstoday.com.tw</a>
         </li>
         <li class='truncate'>
-            <a href="http://pekanbaru.tribunnews.com" target="_blank" class="external">pekanbaru.tribunnews.com</a>
+            <a href="http://m.mksports.co.kr" target="_blank" class="external">m.mksports.co.kr</a>
         </li>
         <li class='truncate'>
-            <a href="http://nekochan.jp" target="_blank" class="external">nekochan.jp</a>
+            <a href="http://g-disk.co.kr" target="_blank" class="external">g-disk.co.kr</a>
         </li>
         <li class='truncate'>
-            <a href="http://novelpia.com" target="_blank" class="external">novelpia.com</a>
+            <a href="http://www.onestopsamsungpop.co.kr" target="_blank" class="external">www.onestopsamsungpop.co.kr</a>
         </li>
         <li class='truncate'>
-            <a href="http://prod.danawa.com" target="_blank" class="external">prod.danawa.com</a>
+            <a href="http://spc.tmon.co.kr" target="_blank" class="external">spc.tmon.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.nurscape.net" target="_blank" class="external">m.nurscape.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.genie.co.kr" target="_blank" class="external">www.genie.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://11st.co.kr" target="_blank" class="external">11st.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.filesun.com" target="_blank" class="external">www.filesun.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://koreadaily.com" target="_blank" class="external">koreadaily.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://kr.shindanmaker.com" target="_blank" class="external">kr.shindanmaker.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wavve.com" target="_blank" class="external">www.wavve.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://news.koreadaily.com" target="_blank" class="external">news.koreadaily.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.g-disk.co.kr" target="_blank" class="external">m.g-disk.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mrecruit.nurscape.net" target="_blank" class="external">mrecruit.nurscape.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dabangapp.com" target="_blank" class="external">www.dabangapp.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.hub.zum.com" target="_blank" class="external">m.hub.zum.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.todisk.com" target="_blank" class="external">www.todisk.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nzkoreapost.com" target="_blank" class="external">www.nzkoreapost.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gersang.co.kr" target="_blank" class="external">www.gersang.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://news.oasisfeed.com" target="_blank" class="external">news.oasisfeed.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://domeggook.com" target="_blank" class="external">domeggook.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mmyg.gmarket.co.kr" target="_blank" class="external">mmyg.gmarket.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://myetl.snu.ac.kr" target="_blank" class="external">myetl.snu.ac.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://myg.gmarket.co.kr" target="_blank" class="external">myg.gmarket.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://product.kyobobook.co.kr" target="_blank" class="external">product.kyobobook.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://signinssl.gmarket.co.kr" target="_blank" class="external">signinssl.gmarket.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.flextv.co.kr" target="_blank" class="external">www.flextv.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.spotvnow.co.kr" target="_blank" class="external">www.spotvnow.co.kr</a>
         </li>
         <li class='truncate'>
             <a href="http://toptoon.com" target="_blank" class="external">toptoon.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://cushmanwakefield.com" target="_blank" class="external">cushmanwakefield.com</a>
+            <a href="http://www.fila.co.kr" target="_blank" class="external">www.fila.co.kr</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.cushmanwakefield.com" target="_blank" class="external">www.cushmanwakefield.com</a>
+            <a href="http://www.ssg.com" target="_blank" class="external">www.ssg.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.ssg.com" target="_blank" class="external">m.ssg.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ebsi.co.kr" target="_blank" class="external">www.ebsi.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mrblue.com" target="_blank" class="external">www.mrblue.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://order.kyobobook.co.kr" target="_blank" class="external">order.kyobobook.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.applefile.com" target="_blank" class="external">www.applefile.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.compuzone.co.kr" target="_blank" class="external">www.compuzone.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.kimyoung.co.kr" target="_blank" class="external">www.kimyoung.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.mootoon.co.kr" target="_blank" class="external">m.mootoon.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.learnus.org" target="_blank" class="external">www.learnus.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.danawa.com" target="_blank" class="external">www.danawa.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.gsshop.com" target="_blank" class="external">www.gsshop.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://kmong.com" target="_blank" class="external">kmong.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://novelpia.com" target="_blank" class="external">novelpia.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m-emart.ssg.com" target="_blank" class="external">m-emart.ssg.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.10x10.co.kr" target="_blank" class="external">www.10x10.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.bnkrmall.co.kr" target="_blank" class="external">www.bnkrmall.co.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fomos.kr" target="_blank" class="external">fomos.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sports.donga.com" target="_blank" class="external">sports.donga.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://work.go.kr" target="_blank" class="external">work.go.kr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.kidkids.net" target="_blank" class="external">www.kidkids.net</a>
         </li>
     </ul>
 </div>

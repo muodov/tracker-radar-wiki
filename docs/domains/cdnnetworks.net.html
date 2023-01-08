@@ -29,6 +29,9 @@
                     <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
                         Top 100
                     </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
                 </div>
             </div>
             <div class='relative'>
@@ -41,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "cdnnetworks.net",
-        history: [{"date":"2020.11","prevalence":0.0000152,"sites":2,"fingerprinting":0,"cookies":0.0000152},{"date":"2020.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.01","prevalence":0.0000153,"sites":2,"fingerprinting":0,"cookies":0.0000153},{"date":"2021.02","prevalence":0.0000139,"sites":2,"fingerprinting":3,"cookies":0.0000139},{"date":"2021.03","prevalence":0.0000139,"sites":2,"fingerprinting":3,"cookies":0.0000139},{"date":"jd/april-update","prevalence":0.0000139,"sites":2,"fingerprinting":3,"cookies":0.0000139}]
+        history: [{"date":"main","prevalence":0.0000136,"sites":2,"fingerprinting":3,"cookies":0.0000136},{"date":"selenium-crux","prevalence":0.0000408,"sites":3,"fingerprinting":2,"cookies":0.0000408}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -62,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;14447<small>/22826</small>
+                    <strong>Rank:</strong> &#35;8532<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -89,14 +92,19 @@
                     <strong>Resource Types:</strong> 
                     <span>Stylesheet</span>,
                     <span>Script</span>,
-                    <span>Image</span>,
+                    <span>Other</span>,
+                    <span>WebSocket</span>,
+                    <span>Preflight</span>,
+                    <span>Fetch</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/cdnnetworks.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>img-1-5</span>, 
-                    <span>txt-1-5</span>, 
-                    <span>img-1-30</span>, 
+                    <span>txt-1-43</span>, 
+                    <span>txt-1-44</span>, 
+                    <span>price-ws-g01</span>, 
+                    <span>price-bsi-g01</span>, 
+                    <span>txt-1-72</span>, 
                 </li>
             </ul>
         </div>
@@ -125,32 +133,18 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
-        <li class='truncate'>Navigator.prototype.productSub</li>
-        <li class='truncate'>WebGLRenderingContext.prototype.getContextAttributes</li>
-        <li class='truncate'>WebGLRenderingContext.prototype.getSupportedExtensions</li>
-        <li class='truncate'>WebGLRenderingContext.prototype.getShaderPrecisionFormat</li>
-        <li class='truncate'>CanvasRenderingContext2D.prototype.isPointInPath</li>
-        <li class='truncate'>Screen.prototype.availWidth</li>
-        <li class='truncate'>Screen.prototype.availHeight</li>
-        <li class='truncate'>Navigator.prototype.languages</li>
-        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
-        <li class='truncate'>Navigator.prototype.platform</li>
-        <li class='truncate'>window.indexedDB</li>
-        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
-        <li class='truncate'>WebGLRenderingContext.prototype.getParameter</li>
-        <li class='truncate'>WebGLRenderingContext.prototype.getExtension</li>
-        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
-        <li class='truncate'>Screen.prototype.colorDepth</li>
-        <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>Navigator.prototype.product</li>
         <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>Screen.prototype.height</li>
         <li class='truncate'>Screen.prototype.width</li>
-        <li class='truncate'>Navigator.prototype.language</li>
-        <li class='truncate'>window.openDatabase</li>
         <li class='truncate'>window.localStorage</li>
-        <li class='truncate'>window.name</li>
-        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
 
@@ -159,85 +153,178 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;css&#x2F;normalize.css" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;css&#x2F;normalize.css</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;css&#x2F;chunk-common.c5f7a044.css" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;css&#x2F;chunk-common.c5f7a044.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;css&#x2F;main_virtualsports.css" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;css&#x2F;main_virtualsports.css</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;css&#x2F;sports.17cd5c60.css" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;css&#x2F;sports.17cd5c60.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;css&#x2F;patternLock&#x2F;patternlock.min.css" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;css&#x2F;patternLock&#x2F;patternlock.min.css</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]CashOut.e7cbc4d9.css" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]CashOut.e7cbc4d9.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;css&#x2F;patternLock&#x2F;patternlock-overrided.css" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;css&#x2F;patternLock&#x2F;patternlock-overrided.css</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]CashOut~[DI]MatchDetailView~[DI]MyBets.e84824dc.css" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]CashOut~[DI]MatchDetailView~[DI]MyBets.e84824dc.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;css&#x2F;leeds.css" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;css&#x2F;leeds.css</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]MatchDetailView.310cdbbe.css" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]MatchDetailView.310cdbbe.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://txt-1-5.cdnnetworks.net&#x2F;js&#x2F;tutorial&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-5.cdnnetworks.net&#x2F;js&#x2F;tutorial&#x2F;jquery.min.js</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]MtLiveStream.1f12e6d5.css" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]MtLiveStream.1f12e6d5.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;css&#x2F;newIcon.css" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;css&#x2F;newIcon.css</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]MyBets.18859356.css" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]MyBets.18859356.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;join-now.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;join-now.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]MyMatches.95d3190c.css" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]MyMatches.95d3190c.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;pm.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;pm.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]Results.dbe63320.css" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;css&#x2F;[DI]Results.dbe63320.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;phone_icon.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;phone_icon.png</a> (seen on 2 websites)</p>
+            <p><a href="http://price-ws-g01.cdnnetworks.net&#x2F;ws" target="_blank" class="external" rel="noreferrer noopener">price-ws-g01.cdnnetworks.net&#x2F;ws</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://txt-1-5.cdnnetworks.net&#x2F;js&#x2F;login&#x2F;tag.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-5.cdnnetworks.net&#x2F;js&#x2F;login&#x2F;tag.js</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;chunk-common.2a909afb.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;chunk-common.2a909afb.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://txt-1-5.cdnnetworks.net&#x2F;js&#x2F;login&#x2F;ua-parser.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-5.cdnnetworks.net&#x2F;js&#x2F;login&#x2F;ua-parser.js</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;chunk-vendors.5a70f83e.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;chunk-vendors.5a70f83e.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://txt-1-5.cdnnetworks.net&#x2F;js&#x2F;login&#x2F;fingerprint2.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-5.cdnnetworks.net&#x2F;js&#x2F;login&#x2F;fingerprint2.js</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;sports.929fa21b.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;sports.929fa21b.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://txt-1-5.cdnnetworks.net&#x2F;js&#x2F;log-in" target="_blank" class="external" rel="noreferrer noopener">txt-1-5.cdnnetworks.net&#x2F;js&#x2F;log-in</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]CashOut.951d2d43.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]CashOut.951d2d43.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;bg_parlayarea.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;bg_parlayarea.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]CashOut~[DI]MatchDetailView~[DI]MyBets.50239fee.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]CashOut~[DI]MatchDetailView~[DI]MyBets.50239fee.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;logo2020&#x2F;logo.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;logo2020&#x2F;logo.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]MatchDetailView.40e75a23.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]MatchDetailView.40e75a23.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;bg_indexhr.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;bg_indexhr.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]MtLiveStream.3782498a.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]MtLiveStream.3782498a.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;select_icon_lang.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;select_icon_lang.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]MyBets.1da6a71a.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]MyBets.1da6a71a.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;Sports_Default.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;Sports_Default.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]MyMatches.61e71bdf.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]MyMatches.61e71bdf.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;VirtualSports_Default.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;VirtualSports_Default.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]Results.5cf65da2.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]Results.5cf65da2.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;LiveCasino_Default.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;LiveCasino_Default.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]SportIcons.4d118955.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]SportIcons.4d118955.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;Games_Default.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;Games_Default.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]SystemIcons.a18c5ed8.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;[DI]SystemIcons.a18c5ed8.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;Racing_Default.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;Racing_Default.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;hi-in-ts.3b09b3fd.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;hi-in-ts.3b09b3fd.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;imgAll.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;imgAll.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;id-id-ts.fd8d4340.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;id-id-ts.fd8d4340.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-30.cdnnetworks.net&#x2F;Content&#x2F;images&#x2F;BsiMobile&#x2F;NewCAS&#x2F;newCasino2-en.jpg" target="_blank" class="external" rel="noreferrer noopener">img-1-30.cdnnetworks.net&#x2F;Content&#x2F;images&#x2F;BsiMobile&#x2F;NewCAS&#x2F;newCasino2-en.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ja-jp-ts.56bbe979.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ja-jp-ts.56bbe979.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;Above18.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;Above18.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ko-kr-ts.a0a7c084.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ko-kr-ts.a0a7c084.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;Sports_Selected.png" target="_blank" class="external" rel="noreferrer noopener">img-1-5.cdnnetworks.net&#x2F;images&#x2F;newIcons&#x2F;Sports_Selected.png</a> (seen on 2 websites)</p>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;my-mm-ts.0a233539.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;my-mm-ts.0a233539.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ta-in-ts.18a40ba1.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ta-in-ts.18a40ba1.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;th-th-ts.6431d66e.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;th-th-ts.6431d66e.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;vi-vn-ts.60e7a0a5.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;vi-vn-ts.60e7a0a5.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;zh-cn-ts.65d4e177.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-43.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;zh-cn-ts.65d4e177.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;chunk-common.4e96a930.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;chunk-common.4e96a930.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;chunk-vendors.9bf20510.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;chunk-vendors.9bf20510.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;sports.93a0acf3.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;sports.93a0acf3.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]CashOut.fdb4f027.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]CashOut.fdb4f027.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]CashOut~[DI]MatchDetailView~[DI]MyBets.567c3893.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]CashOut~[DI]MatchDetailView~[DI]MyBets.567c3893.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]MatchDetailView.efd26e3c.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]MatchDetailView.efd26e3c.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]MtLiveStream.85b02d58.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]MtLiveStream.85b02d58.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]MyBets.ee4c06b0.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]MyBets.ee4c06b0.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]MyMatches.0d4f9e66.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]MyMatches.0d4f9e66.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]Results.28146253.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]Results.28146253.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]SportIcons.620cbf54.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]SportIcons.620cbf54.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]SystemIcons.8da9dcf3.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]SystemIcons.8da9dcf3.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;hi-in-ts.71f853fe.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;hi-in-ts.71f853fe.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;id-id-ts.37d1fa82.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;id-id-ts.37d1fa82.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ja-jp-ts.775ff37a.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ja-jp-ts.775ff37a.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ko-kr-ts.d6dff617.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ko-kr-ts.d6dff617.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;my-mm-ts.f68faef8.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;my-mm-ts.f68faef8.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ta-in-ts.ff5eec4d.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;ta-in-ts.ff5eec4d.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;th-th-ts.f930a4cd.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;th-th-ts.f930a4cd.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;vi-vn-ts.0ff4844a.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;vi-vn-ts.0ff4844a.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;zh-cn-ts.894a7fcd.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;i18n&#x2F;zh-cn-ts.894a7fcd.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://price-bsi-g01.cdnnetworks.net&#x2F;api" target="_blank" class="external" rel="noreferrer noopener">price-bsi-g01.cdnnetworks.net&#x2F;api</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]SystemIcons.8da9dcf3.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]SystemIcons.8da9dcf3.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]SportIcons.620cbf54.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-44.cdnnetworks.net&#x2F;js&#x2F;[DI]SportIcons.620cbf54.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://price-bsi-g01.cdnnetworks.net&#x2F;api" target="_blank" class="external" rel="noreferrer noopener">price-bsi-g01.cdnnetworks.net&#x2F;api</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://txt-1-72.cdnnetworks.net&#x2F;oauth&#x2F;oauth.js" target="_blank" class="external" rel="noreferrer noopener">txt-1-72.cdnnetworks.net&#x2F;oauth&#x2F;oauth.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://price-bsi-g01.cdnnetworks.net&#x2F;api" target="_blank" class="external" rel="noreferrer noopener">price-bsi-g01.cdnnetworks.net&#x2F;api</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -247,10 +334,22 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://sbowin.com" target="_blank" class="external">sbowin.com</a>
+            <a href="http://beer777.com" target="_blank" class="external">beer777.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://m.sbowin.com" target="_blank" class="external">m.sbowin.com</a>
+            <a href="http://playsports.beer777.com" target="_blank" class="external">playsports.beer777.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://playsports.cutmr.com" target="_blank" class="external">playsports.cutmr.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://playsports.pic5678.com" target="_blank" class="external">playsports.pic5678.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cutmr.com" target="_blank" class="external">cutmr.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pic5678.com" target="_blank" class="external">pic5678.com</a>
         </li>
     </ul>
 </div>

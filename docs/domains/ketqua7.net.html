@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - ketqua7.net</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "ketqua7.net",
+        history: [{"date":"selenium-crux","prevalence":0.0000544,"sites":4,"fingerprinting":1,"cookies":0.0000408}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/ketqua7.net.ico' width="32" height="32" class='inline-block' /> ketqua7.net</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;7611<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.01&#37; (4 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                    <span>Media</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/ketqua7.net.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>static</span>, 
+                    <span>img</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://ketqua7.net&#x2F;" target="_blank" class="external" rel="noreferrer noopener">ketqua7.net&#x2F;</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;main_bootstrap&#x2F;css&#x2F;bootstrap.min.css" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;main_bootstrap&#x2F;css&#x2F;bootstrap.min.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;css&#x2F;font-awesome.min.css" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;css&#x2F;font-awesome.min.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;metis&#x2F;metisMenu.css" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;metis&#x2F;metisMenu.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;css&#x2F;bootstrap-datepicker3.min.css" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;css&#x2F;bootstrap-datepicker3.min.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;main_css&#x2F;global_v0.0.9.css" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;main_css&#x2F;global_v0.0.9.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;js&#x2F;jquery-2.1.3.min.js" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;js&#x2F;jquery-2.1.3.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;js&#x2F;jquery.printElement.min.js" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;js&#x2F;jquery.printElement.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;js&#x2F;bootstrap-datepicker.min.js" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;js&#x2F;bootstrap-datepicker.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;custom_js&#x2F;kq_v0.0.10c.js" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;custom_js&#x2F;kq_v0.0.10c.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;custom_js&#x2F;kqv1.1edf48d1d4a1147da411.min.js" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;custom_js&#x2F;kqv1.1edf48d1d4a1147da411.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;img&#x2F;f70479d0a3661070a329f9bb861e66a5.gif" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;img&#x2F;f70479d0a3661070a329f9bb861e66a5.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;img&#x2F;20160220172641-4a1ca3a3.png" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;img&#x2F;20160220172641-4a1ca3a3.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;06&#x2F;07&#x2F;c154dd184835d9326b4f1948749c86cc.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;06&#x2F;07&#x2F;c154dd184835d9326b4f1948749c86cc.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;bnews&#x2F;BreakingNews.css" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;bnews&#x2F;BreakingNews.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;bnews&#x2F;BreakingNews.js" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;bnews&#x2F;BreakingNews.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;10&#x2F;19&#x2F;7001c7b70671b371a867e8671937f943.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;10&#x2F;19&#x2F;7001c7b70671b371a867e8671937f943.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2021&#x2F;11&#x2F;18&#x2F;229e1fa1232e4e2043ee362a6ed1d973.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2021&#x2F;11&#x2F;18&#x2F;229e1fa1232e4e2043ee362a6ed1d973.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;20&#x2F;7d2738525082b815a7455159e9214839.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;20&#x2F;7d2738525082b815a7455159e9214839.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;06&#x2F;10&#x2F;b2042a5d62660f14a679ab138b5f2817.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;06&#x2F;10&#x2F;b2042a5d62660f14a679ab138b5f2817.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2023&#x2F;01&#x2F;04&#x2F;4954ea3a472172a1dd75b02dbd31b8db.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2023&#x2F;01&#x2F;04&#x2F;4954ea3a472172a1dd75b02dbd31b8db.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2021&#x2F;09&#x2F;21&#x2F;cf136fb9fe385ac9996e7d4a4b0e4d79.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2021&#x2F;09&#x2F;21&#x2F;cf136fb9fe385ac9996e7d4a4b0e4d79.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2021&#x2F;11&#x2F;18&#x2F;8757b8ad7036648476896c3ec60b12e6.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2021&#x2F;11&#x2F;18&#x2F;8757b8ad7036648476896c3ec60b12e6.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2021&#x2F;10&#x2F;22&#x2F;0aa6cedb16429fe7871a771394775a1e.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2021&#x2F;10&#x2F;22&#x2F;0aa6cedb16429fe7871a771394775a1e.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;22&#x2F;5991c5be5f1583f7bb183bba9e4ea9d1.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;22&#x2F;5991c5be5f1583f7bb183bba9e4ea9d1.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;js&#x2F;bootstrap-datepicker.vi.min.js" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;js&#x2F;bootstrap-datepicker.vi.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;06&#x2F;29&#x2F;8808d2ab1419e68ffd27e224074b243a.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;06&#x2F;29&#x2F;8808d2ab1419e68ffd27e224074b243a.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;metis&#x2F;metisMenu.js" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;metis&#x2F;metisMenu.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;09&#x2F;193401042261ef1b8b9511294bbfbd5f.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;09&#x2F;193401042261ef1b8b9511294bbfbd5f.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;10&#x2F;bb7cd44057ad9184fb2f7a1f412f27bd.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;10&#x2F;bb7cd44057ad9184fb2f7a1f412f27bd.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;12&#x2F;dc44c07c7e24df3804518ed464179dd1.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;12&#x2F;dc44c07c7e24df3804518ed464179dd1.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;06&#x2F;08&#x2F;eb39101d8fe9d13d0d471055a7c49647.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;06&#x2F;08&#x2F;eb39101d8fe9d13d0d471055a7c49647.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;10&#x2F;c09de7b627a7e4060e3f5b80d78ec0a7.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;10&#x2F;c09de7b627a7e4060e3f5b80d78ec0a7.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;08&#x2F;26&#x2F;19304ea99e7f6d826bbd70e768478b7e.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;08&#x2F;26&#x2F;19304ea99e7f6d826bbd70e768478b7e.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;06&#x2F;10&#x2F;56799fef707353f7d16d7e1bbc24c079.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;06&#x2F;10&#x2F;56799fef707353f7d16d7e1bbc24c079.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;26&#x2F;babcac5ad4bfb0a803509d665ec17644.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;26&#x2F;babcac5ad4bfb0a803509d665ec17644.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2023&#x2F;01&#x2F;05&#x2F;38a308562aba0244f887310761977272.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2023&#x2F;01&#x2F;05&#x2F;38a308562aba0244f887310761977272.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;10&#x2F;09f481472735727036b6c47b61a91b8a.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;10&#x2F;09f481472735727036b6c47b61a91b8a.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;22&#x2F;b4d9c7fc41fe11d6407ae8885437976e.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;22&#x2F;b4d9c7fc41fe11d6407ae8885437976e.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;10&#x2F;beb734ffd409a17998134516703b2202.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;10&#x2F;beb734ffd409a17998134516703b2202.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2020&#x2F;03&#x2F;05&#x2F;f5b3a441dc177d241faec5cfea16977b.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2020&#x2F;03&#x2F;05&#x2F;f5b3a441dc177d241faec5cfea16977b.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;09&#x2F;28&#x2F;cc1bc873890e52bd74dd9955f04c3c88.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;09&#x2F;28&#x2F;cc1bc873890e52bd74dd9955f04c3c88.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;08&#x2F;06&#x2F;dd97d3cdc7aa306329f34a6d29bfcee9.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;08&#x2F;06&#x2F;dd97d3cdc7aa306329f34a6d29bfcee9.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;20&#x2F;5648d779e776f982c4298d470df815eb.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;20&#x2F;5648d779e776f982c4298d470df815eb.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;10&#x2F;02&#x2F;fbe4d8ade685efd32216bcdce6222bca.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;10&#x2F;02&#x2F;fbe4d8ade685efd32216bcdce6222bca.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;16&#x2F;1fc03e652a4aa3c4d1299b0dbe90ea2d.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;16&#x2F;1fc03e652a4aa3c4d1299b0dbe90ea2d.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;21&#x2F;2a8232b8c429080d1aaae1224a25fd51.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;21&#x2F;2a8232b8c429080d1aaae1224a25fd51.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;10&#x2F;31&#x2F;266880f479e40033706f0385e15fe6f6.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;10&#x2F;31&#x2F;266880f479e40033706f0385e15fe6f6.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;08&#x2F;26&#x2F;79eff6bc3417dc7eabf82909ff7d2583.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;08&#x2F;26&#x2F;79eff6bc3417dc7eabf82909ff7d2583.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;04&#x2F;3a85e3f40f457978b427aa14713b28d2.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;04&#x2F;3a85e3f40f457978b427aa14713b28d2.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;28&#x2F;5076471ee39a706cb79bff677bf9a814.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;28&#x2F;5076471ee39a706cb79bff677bf9a814.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;16&#x2F;90e89b49fd1e6869b591bda8f2de5a43.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;16&#x2F;90e89b49fd1e6869b591bda8f2de5a43.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;01&#x2F;c4af9f376502db60000a139f6c07e489.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;01&#x2F;c4af9f376502db60000a139f6c07e489.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;20&#x2F;981994ff0edb08e915dff90bfe3612f1.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;20&#x2F;981994ff0edb08e915dff90bfe3612f1.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;24&#x2F;ed63ea558dc3b287c38ef7dbd80198a7.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;24&#x2F;ed63ea558dc3b287c38ef7dbd80198a7.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;01&#x2F;052efa7e0c413f3b5a5cb478ebbba573.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;01&#x2F;052efa7e0c413f3b5a5cb478ebbba573.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;10&#x2F;9a923a07392802c221e9f1a94bf12181.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;10&#x2F;9a923a07392802c221e9f1a94bf12181.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;12&#x2F;44d9872ed9492f33c8c2ef4dbb0c3570.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;12&#x2F;44d9872ed9492f33c8c2ef4dbb0c3570.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;12&#x2F;d6b5f7bb2713945e3533f801daf39a82.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;12&#x2F;d6b5f7bb2713945e3533f801daf39a82.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;10&#x2F;64447e4cb0dd63bbb9844ceddd4cf520.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;10&#x2F;64447e4cb0dd63bbb9844ceddd4cf520.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;26&#x2F;68c6214ded241ef61867c3b38eddcbac.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;12&#x2F;26&#x2F;68c6214ded241ef61867c3b38eddcbac.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2023&#x2F;01&#x2F;05&#x2F;b285c54c84af26a18ca3e3b2ba25d354.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2023&#x2F;01&#x2F;05&#x2F;b285c54c84af26a18ca3e3b2ba25d354.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ketqua7.net&#x2F;cdn-cgi&#x2F;scripts&#x2F;5c5dd728&#x2F;cloudflare-static&#x2F;email-decode.min.js" target="_blank" class="external" rel="noreferrer noopener">ketqua7.net&#x2F;cdn-cgi&#x2F;scripts&#x2F;5c5dd728&#x2F;cloudflare-static&#x2F;email-decode.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;custom_js&#x2F;reload_function_v2.6.5f.js" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;custom_js&#x2F;reload_function_v2.6.5f.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;main_bootstrap&#x2F;js&#x2F;bootstrap.min.js" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;main_bootstrap&#x2F;js&#x2F;bootstrap.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;16&#x2F;d7307f9a11a9c5820c6c1af0bb21a404.gif" target="_blank" class="external" rel="noreferrer noopener">img.ketqua7.net&#x2F;images&#x2F;2022&#x2F;11&#x2F;16&#x2F;d7307f9a11a9c5820c6c1af0bb21a404.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;img&#x2F;bn-arrows.png" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;img&#x2F;bn-arrows.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;main_bootstrap&#x2F;fonts&#x2F;glyphicons-halflings-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;main_bootstrap&#x2F;fonts&#x2F;glyphicons-halflings-regular.woff2</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;fonts&#x2F;fontawesome-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;fonts&#x2F;fontawesome-webfont.woff2</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;noti_sounds&#x2F;Twindle.mp3" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;noti_sounds&#x2F;Twindle.mp3</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.ketqua7.net&#x2F;noti_sounds&#x2F;Carme.mp3" target="_blank" class="external" rel="noreferrer noopener">static.ketqua7.net&#x2F;noti_sounds&#x2F;Carme.mp3</a> (seen on 3 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://ketqua2.net" target="_blank" class="external">ketqua2.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ketqua5.net" target="_blank" class="external">ketqua5.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ketqua6.net" target="_blank" class="external">ketqua6.net</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

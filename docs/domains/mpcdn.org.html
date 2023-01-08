@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - mpcdn.org</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "mpcdn.org",
+        history: [{"date":"selenium-crux","prevalence":0.0000544,"sites":4,"fingerprinting":1,"cookies":0.0000408}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/mpcdn.org.ico' width="32" height="32" class='inline-block' /> mpcdn.org</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;7728<small>/16361</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.01&#37; (4 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/mpcdn.org.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                    <span>njs</span>, 
+                    <span>xfs-216</span>, 
+                    <span>xfs-222</span>, 
+                    <span>xfs-220</span>, 
+                    <span>xfs-228</span>, 
+                    <span>xfs-213</span>, 
+                    <span>xfs-229</span>, 
+                    <span>xfs-221</span>, 
+                    <span>xfs-215</span>, 
+                    <span>xfs-205</span>, 
+                    <span>xfs-202</span>, 
+                    <span>xfs-204</span>, 
+                    <span>xfs-226</span>, 
+                    <span>xfs-218</span>, 
+                    <span>xfs-206</span>, 
+                    <span>xfs-214</span>, 
+                    <span>xfs-227</span>, 
+                    <span>xfs-208</span>, 
+                    <span>xfs-210</span>, 
+                    <span>xfs-224</span>, 
+                    <span>xfs-211</span>, 
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.matchMedia(&quot;prefers-color-scheme&quot;)</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;css&#x2F;74420b7f5b2cdd3f.css" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;css&#x2F;74420b7f5b2cdd3f.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-3443c0bbd302b4d8.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;webpack-3443c0bbd302b4d8.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;framework-e4fe6a4fc9298e74.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;framework-e4fe6a4fc9298e74.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;main-b9eec0cceb4f84c5.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;main-b9eec0cceb4f84c5.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;_app-7b268bc63f639888.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;_app-7b268bc63f639888.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3944-4010845a3af52fd7.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;3944-4010845a3af52fd7.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;694-18b5e0288d2b3b09.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;694-18b5e0288d2b3b09.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2068-f8d67008a8ae3f57.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2068-f8d67008a8ae3f57.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;6792-6b0e3171242bb447.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;6792-6b0e3171242bb447.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;index-c1cda2fd058e4327.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;pages&#x2F;index-c1cda2fd058e4327.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;5YRed9XGLYZ6Imby5rC_k&#x2F;_buildManifest.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;5YRed9XGLYZ6Imby5rC_k&#x2F;_buildManifest.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;5YRed9XGLYZ6Imby5rC_k&#x2F;_ssgManifest.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;5YRed9XGLYZ6Imby5rC_k&#x2F;_ssgManifest.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;5YRed9XGLYZ6Imby5rC_k&#x2F;_middlewareManifest.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;5YRed9XGLYZ6Imby5rC_k&#x2F;_middlewareManifest.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-216.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;ea9&#x2F;60457761c9d6ca27790079ae_200_266_34335.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-216.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;ea9&#x2F;60457761c9d6ca27790079ae_200_266_34335.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-222.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;589&#x2F;6044ca8237731265c9410985_223_350_52632.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-222.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;589&#x2F;6044ca8237731265c9410985_223_350_52632.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-220.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;334&#x2F;6045800cc9d6ca277900d433_765_1236_867959.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-220.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;334&#x2F;6045800cc9d6ca277900d433_765_1236_867959.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-228.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;71f&#x2F;6044e482ccbbd94750969f17_225_320_51502.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-228.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;71f&#x2F;6044e482ccbbd94750969f17_225_320_51502.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-213.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;221&#x2F;60458168c9d6ca277900e122_2480_3508_1376980.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-213.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;221&#x2F;60458168c9d6ca277900e122_2480_3508_1376980.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-229.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;ac3&#x2F;6044ed9453105c2e1e5c03ca_225_164_43340.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-229.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;ac3&#x2F;6044ed9453105c2e1e5c03ca_225_164_43340.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-221.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;e8d&#x2F;e8d90063413fdbef20fd46e6b61cd6343e840194_200_266_21392.jpeg" target="_blank" class="external" rel="noreferrer noopener">xfs-221.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;e8d&#x2F;e8d90063413fdbef20fd46e6b61cd6343e840194_200_266_21392.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-228.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;ampi&#x2F;bd4&#x2F;bd487d3c945a3817a6ef647c36e1c60aff9eab63_225_337_107157.jpeg" target="_blank" class="external" rel="noreferrer noopener">xfs-228.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;ampi&#x2F;bd4&#x2F;bd487d3c945a3817a6ef647c36e1c60aff9eab63_225_337_107157.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-215.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;972&#x2F;9722de48710112b41aeedfee2aef23b9d8d049f1_300_520_30966.jpeg" target="_blank" class="external" rel="noreferrer noopener">xfs-215.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;972&#x2F;9722de48710112b41aeedfee2aef23b9d8d049f1_300_520_30966.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-205.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;706&#x2F;706e086743d5fd1f2d9bf92df664e071e8190160_300_300_139499.png" target="_blank" class="external" rel="noreferrer noopener">xfs-205.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;706&#x2F;706e086743d5fd1f2d9bf92df664e071e8190160_300_300_139499.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2094.627fcc57caa0ab17.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2094.627fcc57caa0ab17.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;151-ef44abccd0b4815a.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;151-ef44abccd0b4815a.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;164.46721ab412a14290.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;164.46721ab412a14290.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;5847.e2d2dbe568b98d27.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;5847.e2d2dbe568b98d27.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;9935-cba3a61f4b9774ff.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;9935-cba3a61f4b9774ff.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;49.dc63adcffa6caf35.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;49.dc63adcffa6caf35.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;8210.d204c9904f2a5d6c.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;8210.d204c9904f2a5d6c.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;6747.bda334bba6ce5fe9.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;6747.bda334bba6ce5fe9.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2574.81c6bc4920996ce1.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;2574.81c6bc4920996ce1.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-204.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;d95&#x2F;d9535c89b67edd79b0146d5361dc408a47c9a242_207_207_20130.jpeg" target="_blank" class="external" rel="noreferrer noopener">xfs-204.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;d95&#x2F;d9535c89b67edd79b0146d5361dc408a47c9a242_207_207_20130.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-202.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;c22&#x2F;c22cd11b4c424b0e3884c9f42f972ec82364f4d2_300_300_168515.png" target="_blank" class="external" rel="noreferrer noopener">xfs-202.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;c22&#x2F;c22cd11b4c424b0e3884c9f42f972ec82364f4d2_300_300_168515.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-222.mpcdn.org&#x2F;image&#x2F;amav&#x2F;961&#x2F;603ea1311c656efb78c1f169.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-222.mpcdn.org&#x2F;image&#x2F;amav&#x2F;961&#x2F;603ea1311c656efb78c1f169.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-204.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;a3a&#x2F;a3a68622e2cee44f8124c64ee4cccf48e406be8f_135_135_961.jpeg" target="_blank" class="external" rel="noreferrer noopener">xfs-204.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;a3a&#x2F;a3a68622e2cee44f8124c64ee4cccf48e406be8f_135_135_961.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-226.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;950&#x2F;950bd7a8b78a2c39c55284f7a61dfc3722574789_300_300_167814.png" target="_blank" class="external" rel="noreferrer noopener">xfs-226.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;950&#x2F;950bd7a8b78a2c39c55284f7a61dfc3722574789_300_300_167814.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-218.mpcdn.org&#x2F;image&#x2F;amav&#x2F;fd7&#x2F;fd71eb778762598c89d835a35e484a29fc3b8828.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-218.mpcdn.org&#x2F;image&#x2F;amav&#x2F;fd7&#x2F;fd71eb778762598c89d835a35e484a29fc3b8828.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;674.521fd1b73250f78f.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;674.521fd1b73250f78f.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;660.0cc15e1c1321d071.js" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;_next&#x2F;static&#x2F;chunks&#x2F;660.0cc15e1c1321d071.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-206.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;348&#x2F;3486ddcfc6d47b334f4d37d6f6ff773480087735_798_1200_391774.jpeg" target="_blank" class="external" rel="noreferrer noopener">xfs-206.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;348&#x2F;3486ddcfc6d47b334f4d37d6f6ff773480087735_798_1200_391774.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-214.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;823&#x2F;823f19c3bfaf0b1bc2cdd70dc236e55b7938700d_300_300_42771.png" target="_blank" class="external" rel="noreferrer noopener">xfs-214.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;823&#x2F;823f19c3bfaf0b1bc2cdd70dc236e55b7938700d_300_300_42771.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-227.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;ampi&#x2F;3a3&#x2F;3a38bb4c4e8f9b283d201af118bab6a7a7368838_480_690_50539.jpeg" target="_blank" class="external" rel="noreferrer noopener">xfs-227.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;ampi&#x2F;3a3&#x2F;3a38bb4c4e8f9b283d201af118bab6a7a7368838_480_690_50539.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-228.mpcdn.org&#x2F;image&#x2F;amav&#x2F;b4e&#x2F;60349ee81c656efb78c19e4b.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-228.mpcdn.org&#x2F;image&#x2F;amav&#x2F;b4e&#x2F;60349ee81c656efb78c19e4b.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-220.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;ampi&#x2F;009&#x2F;009f46642cd17148d26e6b2ab7f371135fe5a738_600_899_83291.jpeg" target="_blank" class="external" rel="noreferrer noopener">xfs-220.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;ampi&#x2F;009&#x2F;009f46642cd17148d26e6b2ab7f371135fe5a738_600_899_83291.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-208.mpcdn.org&#x2F;image&#x2F;amav&#x2F;7d6&#x2F;62e91e17288954f57df596d7.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-208.mpcdn.org&#x2F;image&#x2F;amav&#x2F;7d6&#x2F;62e91e17288954f57df596d7.jpg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-221.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;d1e&#x2F;60457c41c9d6ca277900ae1d_350_525_41792.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-221.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;d1e&#x2F;60457c41c9d6ca277900ae1d_350_525_41792.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-202.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;103&#x2F;10355661e0532e4b9fb6defa8ab7a78ee182dc78_268_268_39049.jpeg" target="_blank" class="external" rel="noreferrer noopener">xfs-202.mpcdn.org&#x2F;image&#x2F;mpav&#x2F;103&#x2F;10355661e0532e4b9fb6defa8ab7a78ee182dc78_268_268_39049.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;css&#x2F;fonts-00-all.css" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;css&#x2F;fonts-00-all.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;excalibur.woff2" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;excalibur.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;FontAwesome.ttf" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;FontAwesome.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;FontAwesome5_Solid.ttf" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;FontAwesome5_Solid.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;NotoColorEmoji.woff2" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;NotoColorEmoji.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;Fontisto.ttf" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;Fontisto.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;AntDesign.ttf" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;AntDesign.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;Entypo.ttf" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;Entypo.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;MaterialIcons.ttf" target="_blank" class="external" rel="noreferrer noopener">njs.mpcdn.org&#x2F;mpv5x&#x2F;client-script&#x2F;fonts&#x2F;icons&#x2F;MaterialIcons.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-229.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;a6b&#x2F;6044ead374dd9d5393efbb6a_225_320_40306.jpg" target="_blank" class="external" rel="noreferrer noopener">xfs-229.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;amim&#x2F;a6b&#x2F;6044ead374dd9d5393efbb6a_225_320_40306.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-214.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;949&#x2F;949e661e4d0a8cd5a57aa999c4e6b79e1c683834_720_960_60438.webp" target="_blank" class="external" rel="noreferrer noopener">xfs-214.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;949&#x2F;949e661e4d0a8cd5a57aa999c4e6b79e1c683834_720_960_60438.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-210.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;37c&#x2F;37c538454a5ac4c11a8b04a0bb89a959fbfcfe12_720_960_75342.webp" target="_blank" class="external" rel="noreferrer noopener">xfs-210.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;37c&#x2F;37c538454a5ac4c11a8b04a0bb89a959fbfcfe12_720_960_75342.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-220.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;00a&#x2F;00aa38d4ca62641485bcfe24b939d4084d381abd_720_960_67620.webp" target="_blank" class="external" rel="noreferrer noopener">xfs-220.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;00a&#x2F;00aa38d4ca62641485bcfe24b939d4084d381abd_720_960_67620.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-216.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;f30&#x2F;f30f948ecbf4ee14a289a7a9ceeea05122ba14a9_720_960_65720.webp" target="_blank" class="external" rel="noreferrer noopener">xfs-216.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;f30&#x2F;f30f948ecbf4ee14a289a7a9ceeea05122ba14a9_720_960_65720.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-224.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;55b&#x2F;55b6a66967aa3bb778c21d1448aaf69d57c5ed19_720_960_71328.webp" target="_blank" class="external" rel="noreferrer noopener">xfs-224.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;mpim&#x2F;55b&#x2F;55b6a66967aa3bb778c21d1448aaf69d57c5ed19_720_960_71328.webp</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://xfs-211.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;ampi&#x2F;48f&#x2F;48f8fa5c2f3f73c9c97d19acd77151f2800a2c45_847_1200_290698.jpeg" target="_blank" class="external" rel="noreferrer noopener">xfs-211.mpcdn.org&#x2F;thumb&#x2F;W600&#x2F;ampi&#x2F;48f&#x2F;48f8fa5c2f3f73c9c97d19acd77151f2800a2c45_847_1200_290698.jpeg</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://mangapark.net" target="_blank" class="external">mangapark.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mangapark.io" target="_blank" class="external">mangapark.io</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mangapark.org" target="_blank" class="external">mangapark.org</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

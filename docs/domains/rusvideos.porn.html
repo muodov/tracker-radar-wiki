@@ -29,6 +29,9 @@
                     <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
                         Top 100
                     </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
                 </div>
             </div>
             <div class='relative'>
@@ -41,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "rusvideos.porn",
-        history: [{"date":"2020.10","prevalence":0.0000152,"sites":2,"fingerprinting":1,"cookies":0.0000152}]
+        history: [{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":2,"cookies":0.0000136}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -62,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;9094<small>/12080</small>
+                    <strong>Rank:</strong> &#35;12968<small>/16361</small>
                 </li>
                 <li class='py-1'>
                     <strong>Prevalence:</strong> 0.00&#37; (2 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -87,11 +90,11 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Font</span>,
                     <span>Image</span>,
                     <span>Script</span>,
-                    <span>Font</span>,
                 </li>
-                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/rusvideos.porn.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/rusvideos.porn.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>st</span>, 
@@ -122,10 +125,17 @@
         </h3> 
     </div>    
 
-    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-4 md:grid-cols-2'>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
         <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
         <li class='truncate'>Screen.prototype.height</li>
         <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>Navigator.prototype.javaEnabled</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
 </div>
@@ -133,19 +143,154 @@
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
-    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-4 md:grid-cols-2'>
-        <li class='truncate'><a href="http://rusvideos.porn&#x2F;rusvideos-site&#x2F;images&#x2F;footer-logo.png" target="_blank" class="external" rel="noreferrer noopener">rusvideos.porn&#x2F;rusvideos-site&#x2F;images&#x2F;footer-logo.png</a></li>
-        <li class='truncate'><a href="http://rusvideos.porn&#x2F;rusvideos-site&#x2F;js&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">rusvideos.porn&#x2F;rusvideos-site&#x2F;js&#x2F;main.js</a></li>
-        <li class='truncate'><a href="http://rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;PTS55F__.woff" target="_blank" class="external" rel="noreferrer noopener">rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;PTS55F__.woff</a></li>
-        <li class='truncate'><a href="http://rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;PTS75F_.woff" target="_blank" class="external" rel="noreferrer noopener">rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;PTS75F_.woff</a></li>
-        <li class='truncate'><a href="http://rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;regular&#x2F;fa-regular-400.woff2" target="_blank" class="external" rel="noreferrer noopener">rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;regular&#x2F;fa-regular-400.woff2</a></li>
-        <li class='truncate'><a href="http://rusvideos.porn&#x2F;rusvideos-site&#x2F;analytics.js" target="_blank" class="external" rel="noreferrer noopener">rusvideos.porn&#x2F;rusvideos-site&#x2F;analytics.js</a></li>
-        <li class='truncate'><a href="http://rusvideos.porn&#x2F;rusvideos-site&#x2F;images&#x2F;shadow.png" target="_blank" class="external" rel="noreferrer noopener">rusvideos.porn&#x2F;rusvideos-site&#x2F;images&#x2F;shadow.png</a></li>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;PTS55F__.woff" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;PTS55F__.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;PTS75F_.woff" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;PTS75F_.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;icomoon3&#x2F;icomoon.ttf" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;rusvideos-site&#x2F;fonts&#x2F;icomoon3&#x2F;icomoon.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;rusvideos-site&#x2F;images&#x2F;shadow.png" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;rusvideos-site&#x2F;images&#x2F;shadow.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;rusvideos-site&#x2F;images&#x2F;footer-logo.png" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;rusvideos-site&#x2F;images&#x2F;footer-logo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;rusvideos-site&#x2F;js&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;rusvideos-site&#x2F;js&#x2F;main.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;rusvideos-site&#x2F;analytics.js" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;rusvideos-site&#x2F;analytics.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;zrelye-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;zrelye-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;molodye-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;molodye-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;babuli-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;babuli-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;zrelye-s-molodymi-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;zrelye-s-molodymi-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;incest-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;incest-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;mama-i-syn-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;mama-i-syn-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;anal-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;anal-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;minet-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;minet-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;kunilingus-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;kunilingus-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;dvoynoe-proniknovenie-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;dvoynoe-proniknovenie-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;tolstye-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;tolstye-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;xudenkie-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;xudenkie-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;krupnym-planom-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;krupnym-planom-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;lesbian-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;lesbian-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;masturbaciya-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;masturbaciya-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;seks-igrushki-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;seks-igrushki-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;solo-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;solo-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;v-hd-720-mini.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;razdely&#x2F;v-hd-720-mini.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-tumanovaalina.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-tumanovaalina.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-luxurygirl.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-luxurygirl.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-alina-rai.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-alina-rai.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-eva-elfie.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-eva-elfie.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-lolly-lips.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-lolly-lips.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-2-gina-gerson.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-2-gina-gerson.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-kisankanna.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-kisankanna.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-luxurymur.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-luxurymur.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-5-sasha-rose.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-5-sasha-rose.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-sweetie-fox.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-sweetie-fox.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-94-nancy-a.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-94-nancy-a.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-1-krystal-boyd.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-1-krystal-boyd.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-165-kayla-green.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-165-kayla-green.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-mihanika69.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-mihanika69.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-175-sybil-a.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-175-sybil-a.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-396-katty-west.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-396-katty-west.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-belleniko.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-belleniko.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-siasiberia.jpg" target="_blank" class="external" rel="noreferrer noopener">st.rusvideos.porn&#x2F;porno-kartinki&#x2F;modeli&#x2F;srednee-foto-siasiberia.jpg</a> (seen on 2 websites)</p>
+        </li>
     </ul>
 </div>
 
-            <footer class='flex items-center justify-between flex-wrap p-5 bg-gray-300'>
-                DuckDuckGo
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://rusvideos.mobi" target="_blank" class="external">rusvideos.mobi</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://rusvideos.org" target="_blank" class="external">rusvideos.org</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
             </footer>
         </div>
     </body>

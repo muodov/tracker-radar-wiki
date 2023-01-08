@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "mediacdn.vn",
-        history: [{"date":"2020.02","prevalence":0.0000925,"sites":4,"fingerprinting":1,"cookies":0.0000462},{"date":"2020.03","prevalence":0.000061,"sites":3,"fingerprinting":1,"cookies":0.0000203},{"date":"2020.04","prevalence":0.0000642,"sites":3,"fingerprinting":1,"cookies":0.0000214},{"date":"2020.05","prevalence":0.0000713,"sites":5,"fingerprinting":1,"cookies":0},{"date":"2020.06","prevalence":0.0000547,"sites":4,"fingerprinting":1,"cookies":0.0000137},{"date":"2020.07","prevalence":0.0000554,"sites":4,"fingerprinting":1,"cookies":0.0000139},{"date":"2020.08","prevalence":0.00011,"sites":15,"fingerprinting":1,"cookies":0.0000147},{"date":"2020.09","prevalence":0.0000837,"sites":11,"fingerprinting":1,"cookies":0.0000152},{"date":"2020.10","prevalence":0.0000835,"sites":11,"fingerprinting":1,"cookies":0.0000304},{"date":"2020.11","prevalence":0.0000835,"sites":11,"fingerprinting":1,"cookies":0.0000152},{"date":"2020.12","prevalence":0.0000837,"sites":11,"fingerprinting":1,"cookies":0.0000152},{"date":"2021.01","prevalence":0.000084,"sites":11,"fingerprinting":1,"cookies":0.0000153},{"date":"2021.02","prevalence":0.0000764,"sites":11,"fingerprinting":1,"cookies":0.0000139},{"date":"2021.03","prevalence":0.0000763,"sites":11,"fingerprinting":1,"cookies":0.0000139},{"date":"2021.04","prevalence":0.0000762,"sites":11,"fingerprinting":2,"cookies":0.00000693},{"date":"2021.05","prevalence":0.0000758,"sites":11,"fingerprinting":2,"cookies":0.0000138},{"date":"2021.06","prevalence":0.000103,"sites":15,"fingerprinting":2,"cookies":0.0000137},{"date":"2021.07","prevalence":0.0000902,"sites":13,"fingerprinting":2,"cookies":0.00000694},{"date":"2021.08","prevalence":0.0000903,"sites":13,"fingerprinting":1,"cookies":0.0000139},{"date":"2021.09","prevalence":0.0000621,"sites":9,"fingerprinting":1,"cookies":0.0000069},{"date":"2021.10","prevalence":0.0000759,"sites":11,"fingerprinting":1,"cookies":0.0000069},{"date":"2021.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.12","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.01","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.02","prevalence":0.0000749,"sites":11,"fingerprinting":2,"cookies":0.00000681},{"date":"jd/march-update","prevalence":0.0000749,"sites":11,"fingerprinting":2,"cookies":0.00000681}]
+        history: [{"date":"selenium-crux","prevalence":0.000422,"sites":31,"fingerprinting":2,"cookies":0.0000953}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;5848<small>/26240</small>
+                    <strong>Rank:</strong> &#35;1900<small>/16361</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (11 sites)
+                    <strong>Prevalence:</strong> 0.04&#37; (31 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.01&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -93,20 +93,26 @@
                     <span>Image</span>,
                     <span>Script</span>,
                     <span>Stylesheet</span>,
+                    <span>Font</span>,
                     <span>XHR</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/mediacdn.vn.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>static</span>, 
                     <span>vccorp</span>, 
+                    <span>toquoc</span>, 
+                    <span>solieu3</span>, 
+                    <span>statictuoitre</span>, 
+                    <span>gamek</span>, 
+                    <span>genk</span>, 
+                    <span>ims</span>, 
+                    <span>vtv1</span>, 
                     <span>mingid</span>, 
                     <span>event</span>, 
-                    <span>static</span>, 
-                    <span>ims</span>, 
-                    <span>videothumbs</span>, 
                     <span>sentry</span>, 
-                    <span>sohanews</span>, 
                     <span>solieu5</span>, 
+                    <span>datasport</span>, 
                 </li>
             </ul>
         </div>
@@ -135,11 +141,18 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
-        <li class='truncate'>Navigator.prototype.platform</li>
         <li class='truncate'>console.memory</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
         <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
         <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
 
@@ -148,91 +161,466 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://mingid.mediacdn.vn&#x2F;js&#x2F;mingid_core.js" target="_blank" class="external" rel="noreferrer noopener">mingid.mediacdn.vn&#x2F;js&#x2F;mingid_core.js</a> (seen on 4 websites)</p>
+            <p><a href="http://vccorp.mediacdn.vn&#x2F;vccorp-s.png" target="_blank" class="external" rel="noreferrer noopener">vccorp.mediacdn.vn&#x2F;vccorp-s.png</a> (seen on 9 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://mingid.mediacdn.vn&#x2F;taskbar&#x2F;css&#x2F;taskbar_core.css" target="_blank" class="external" rel="noreferrer noopener">mingid.mediacdn.vn&#x2F;taskbar&#x2F;css&#x2F;taskbar_core.css</a> (seen on 4 websites)</p>
+            <p><a href="http://static.mediacdn.vn&#x2F;web_font&#x2F;SFD-Bold.woff2" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;web_font&#x2F;SFD-Bold.woff2</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://mingid.mediacdn.vn&#x2F;taskbar&#x2F;js&#x2F;vid_taskbar_core.js" target="_blank" class="external" rel="noreferrer noopener">mingid.mediacdn.vn&#x2F;taskbar&#x2F;js&#x2F;vid_taskbar_core.js</a> (seen on 4 websites)</p>
+            <p><a href="http://mingid.mediacdn.vn&#x2F;js&#x2F;mingid_core.js" target="_blank" class="external" rel="noreferrer noopener">mingid.mediacdn.vn&#x2F;js&#x2F;mingid_core.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://mingid.mediacdn.vn&#x2F;taskbar&#x2F;js&#x2F;util.js" target="_blank" class="external" rel="noreferrer noopener">mingid.mediacdn.vn&#x2F;taskbar&#x2F;js&#x2F;util.js</a> (seen on 4 websites)</p>
+            <p><a href="http://mingid.mediacdn.vn&#x2F;taskbar&#x2F;css&#x2F;taskbar_core.css" target="_blank" class="external" rel="noreferrer noopener">mingid.mediacdn.vn&#x2F;taskbar&#x2F;css&#x2F;taskbar_core.css</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://vccorp.mediacdn.vn&#x2F;vccorp-s.png" target="_blank" class="external" rel="noreferrer noopener">vccorp.mediacdn.vn&#x2F;vccorp-s.png</a> (seen on 2 websites)</p>
+            <p><a href="http://mingid.mediacdn.vn&#x2F;taskbar&#x2F;js&#x2F;vid_taskbar_core.js" target="_blank" class="external" rel="noreferrer noopener">mingid.mediacdn.vn&#x2F;taskbar&#x2F;js&#x2F;vid_taskbar_core.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://event.mediacdn.vn&#x2F;257766952064241664&#x2F;2022&#x2F;1&#x2F;14&#x2F;koc-home-config-164215694946362046797.js" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;257766952064241664&#x2F;2022&#x2F;1&#x2F;14&#x2F;koc-home-config-164215694946362046797.js</a> (seen on 2 websites)</p>
+            <p><a href="http://mingid.mediacdn.vn&#x2F;taskbar&#x2F;js&#x2F;util.js" target="_blank" class="external" rel="noreferrer noopener">mingid.mediacdn.vn&#x2F;taskbar&#x2F;js&#x2F;util.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.mediacdn.vn&#x2F;podcastskenh14&#x2F;web_css&#x2F;podcast.home.v02122021.css" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;podcastskenh14&#x2F;web_css&#x2F;podcast.home.v02122021.css</a> (seen on 2 websites)</p>
+            <p><a href="http://vccorp.mediacdn.vn&#x2F;vccorp-m.png" target="_blank" class="external" rel="noreferrer noopener">vccorp.mediacdn.vn&#x2F;vccorp-m.png</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ims.mediacdn.vn&#x2F;micro&#x2F;quiz&#x2F;sdk&#x2F;dist&#x2F;play.js" target="_blank" class="external" rel="noreferrer noopener">ims.mediacdn.vn&#x2F;micro&#x2F;quiz&#x2F;sdk&#x2F;dist&#x2F;play.js</a> (seen on 2 websites)</p>
+            <p><a href="http://static.mediacdn.vn&#x2F;web_font&#x2F;Roboto-Medium.woff2" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;web_font&#x2F;Roboto-Medium.woff2</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.mediacdn.vn&#x2F;podcastskenh14&#x2F;web_js&#x2F;timeline.js" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;podcastskenh14&#x2F;web_js&#x2F;timeline.js</a> (seen on 2 websites)</p>
+            <p><a href="http://ims.mediacdn.vn&#x2F;micro&#x2F;quiz&#x2F;sdk&#x2F;dist&#x2F;play.js" target="_blank" class="external" rel="noreferrer noopener">ims.mediacdn.vn&#x2F;micro&#x2F;quiz&#x2F;sdk&#x2F;dist&#x2F;play.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.mediacdn.vn&#x2F;podcastskenh14&#x2F;img&#x2F;bg-before.png" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;podcastskenh14&#x2F;img&#x2F;bg-before.png</a> (seen on 2 websites)</p>
+            <p><a href="http://static.mediacdn.vn&#x2F;web_font&#x2F;SFD-Medium.woff2" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;web_font&#x2F;SFD-Medium.woff2</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://event.mediacdn.vn&#x2F;257766952064241664&#x2F;2022&#x2F;1&#x2F;14&#x2F;main-16421324487711063986093.css" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;257766952064241664&#x2F;2022&#x2F;1&#x2F;14&#x2F;main-16421324487711063986093.css</a> (seen on 2 websites)</p>
+            <p><a href="http://sentry.mediacdn.vn&#x2F;raven.min.js" target="_blank" class="external" rel="noreferrer noopener">sentry.mediacdn.vn&#x2F;raven.min.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://event.mediacdn.vn&#x2F;257766952064241664&#x2F;2022&#x2F;1&#x2F;18&#x2F;koc-home-164249524769743804822.js" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;257766952064241664&#x2F;2022&#x2F;1&#x2F;18&#x2F;koc-home-164249524769743804822.js</a> (seen on 2 websites)</p>
+            <p><a href="http://static.mediacdn.vn&#x2F;images&#x2F;icon_weather&#x2F;nhieu-may.png" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;images&#x2F;icon_weather&#x2F;nhieu-may.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://event.mediacdn.vn&#x2F;thumb_w&#x2F;400&#x2F;257767050295742464&#x2F;image&#x2F;hot14&#x2F;2021&#x2F;12&#x2F;1&#x2F;thumb-doc-131911-16376041552481856988798-16383287210121569287510.png" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;thumb_w&#x2F;400&#x2F;257767050295742464&#x2F;image&#x2F;hot14&#x2F;2021&#x2F;12&#x2F;1&#x2F;thumb-doc-131911-16376041552481856988798-16383287210121569287510.png</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;5&#x2F;173583af7d5b35e1aad8570cb35c4d678e3626-1638533326182566354833-1638534084977-1638534085190215148979-1638691402209525843986-146-0-1396-2000-crop-16386914284241341541819.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;5&#x2F;173583af7d5b35e1aad8570cb35c4d678e3626-1638533326182566354833-1638534084977-1638534085190215148979-1638691402209525843986-146-0-1396-2000-crop-16386914284241341541819.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://event.mediacdn.vn&#x2F;thumb_w&#x2F;400&#x2F;257767050295742464&#x2F;image&#x2F;hot14&#x2F;2021&#x2F;11&#x2F;23&#x2F;thumb-doc-131911-16376041552481856988798.jpg" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;thumb_w&#x2F;400&#x2F;257767050295742464&#x2F;image&#x2F;hot14&#x2F;2021&#x2F;11&#x2F;23&#x2F;thumb-doc-131911-16376041552481856988798.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;6&#x2F;img1292-16387803725732124974762-0-0-602-963-crop-16387805523201305975739.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;6&#x2F;img1292-16387803725732124974762-0-0-602-963-crop-16387805523201305975739.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://event.mediacdn.vn&#x2F;thumb_w&#x2F;400&#x2F;257767050295742464&#x2F;image&#x2F;hot14&#x2F;2021&#x2F;11&#x2F;14&#x2F;thumb-website-hot14-recap-0612-1636907684082904831537.jpg" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;thumb_w&#x2F;400&#x2F;257767050295742464&#x2F;image&#x2F;hot14&#x2F;2021&#x2F;11&#x2F;14&#x2F;thumb-website-hot14-recap-0612-1636907684082904831537.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;6&#x2F;nu-sinh-1638779826446260801774-0-0-584-934-crop-16387798310901101592476.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;6&#x2F;nu-sinh-1638779826446260801774-0-0-584-934-crop-16387798310901101592476.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://event.mediacdn.vn&#x2F;web_images&#x2F;hot14&#x2F;pauseBtn.png" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;web_images&#x2F;hot14&#x2F;pauseBtn.png</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;1&#x2F;ha-noi-tiem-vaccine-covid-19-cho-hoc-sinh-tu-12-den-15-tuoi10-1637986433536702450754-1638353339926995916070-81-0-1331-2000-crop-1638353344557872800744.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;1&#x2F;ha-noi-tiem-vaccine-covid-19-cho-hoc-sinh-tu-12-den-15-tuoi10-1637986433536702450754-1638353339926995916070-81-0-1331-2000-crop-1638353344557872800744.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://event.mediacdn.vn&#x2F;web_images&#x2F;hot14&#x2F;playBtn.png" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;web_images&#x2F;hot14&#x2F;playBtn.png</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;1&#x2F;can-canh-chiec-xe-buyt-dien-dau-tien-tai-ha-noi-sap-di-vao-hoat-dong-1-1638349839775200234699-0-183-1125-1983-crop-16383503795211207609253.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;1&#x2F;can-canh-chiec-xe-buyt-dien-dau-tien-tai-ha-noi-sap-di-vao-hoat-dong-1-1638349839775200234699-0-183-1125-1983-crop-16383503795211207609253.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://event.mediacdn.vn&#x2F;257767050295742464&#x2F;image&#x2F;hot14&#x2F;2022&#x2F;1&#x2F;14&#x2F;koc-logo-16421546110601328648530.png" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;257767050295742464&#x2F;image&#x2F;hot14&#x2F;2022&#x2F;1&#x2F;14&#x2F;koc-logo-16421546110601328648530.png</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;1&#x2F;le-hung-son-co-to-211112pnyl-1-4638-6186-1638355700-1375-16383617932561059671248-0-0-497-796-crop-16383617971691275742064.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;12&#x2F;1&#x2F;le-hung-son-co-to-211112pnyl-1-4638-6186-1638355700-1375-16383617932561059671248-0-0-497-796-crop-16383617971691275742064.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://event.mediacdn.vn&#x2F;257767050295742464&#x2F;video&#x2F;hot14&#x2F;2021&#x2F;12&#x2F;1&#x2F;bxh-11-16383283473951394379036.mp4.json" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;257767050295742464&#x2F;video&#x2F;hot14&#x2F;2021&#x2F;12&#x2F;1&#x2F;bxh-11-16383283473951394379036.mp4.json</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;23&#x2F;img3921-16376707938842032967032-84-39-1310-2000-crop-1637671397481820309932.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;23&#x2F;img3921-16376707938842032967032-84-39-1310-2000-crop-1637671397481820309932.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://videothumbs.mediacdn.vn&#x2F;event&#x2F;257767050295742464&#x2F;video&#x2F;hot14&#x2F;2021&#x2F;12&#x2F;1&#x2F;bxh-11-16383283473951394379036.jpg" target="_blank" class="external" rel="noreferrer noopener">videothumbs.mediacdn.vn&#x2F;event&#x2F;257767050295742464&#x2F;video&#x2F;hot14&#x2F;2021&#x2F;12&#x2F;1&#x2F;bxh-11-16383283473951394379036.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;24&#x2F;hoi-nghi-16377564132831355307914-83-0-1333-2000-crop-16377567375031559183361.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;24&#x2F;hoi-nghi-16377564132831355307914-83-0-1333-2000-crop-16377567375031559183361.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sentry.mediacdn.vn&#x2F;raven.min.js" target="_blank" class="external" rel="noreferrer noopener">sentry.mediacdn.vn&#x2F;raven.min.js</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;24&#x2F;ptt-16377564133161481129754-70-0-1320-2000-crop-16377636030131435149057.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;24&#x2F;ptt-16377564133161481129754-70-0-1320-2000-crop-16377636030131435149057.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sohanews.mediacdn.vn&#x2F;web_images&#x2F;Hieu-xe-trong-phut-mot-icon.png" target="_blank" class="external" rel="noreferrer noopener">sohanews.mediacdn.vn&#x2F;web_images&#x2F;Hieu-xe-trong-phut-mot-icon.png</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;24&#x2F;bo-truong-1637756413248216728905-83-0-1333-2000-crop-1637767089724102508914.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;24&#x2F;bo-truong-1637756413248216728905-83-0-1333-2000-crop-1637767089724102508914.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sohanews.mediacdn.vn&#x2F;web_images&#x2F;Bi-Mat-Nganh-Xe-icon.png" target="_blank" class="external" rel="noreferrer noopener">sohanews.mediacdn.vn&#x2F;web_images&#x2F;Bi-Mat-Nganh-Xe-icon.png</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;17&#x2F;cover-1637162282639820612611-0-0-1250-2000-crop-16371637545432060097210.png" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;17&#x2F;cover-1637162282639820612611-0-0-1250-2000-crop-16371637545432060097210.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sohanews.mediacdn.vn&#x2F;web_images&#x2F;logo-vothuat-home.svg" target="_blank" class="external" rel="noreferrer noopener">sohanews.mediacdn.vn&#x2F;web_images&#x2F;logo-vothuat-home.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;14&#x2F;con-nguoi1-1636897739458456392530-27-0-427-640-crop-163689776472088963586.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;14&#x2F;con-nguoi1-1636897739458456392530-27-0-427-640-crop-163689776472088963586.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://sohanews.mediacdn.vn&#x2F;web_images&#x2F;logo_hanhtrinhtraitim.png" target="_blank" class="external" rel="noreferrer noopener">sohanews.mediacdn.vn&#x2F;web_images&#x2F;logo_hanhtrinhtraitim.png</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;15&#x2F;b95af3d55a24927acb35-163697489413285293183-73-0-1155-1731-crop-1636974943537416025360.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;15&#x2F;b95af3d55a24927acb35-163697489413285293183-73-0-1155-1731-crop-1636974943537416025360.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://vccorp.mediacdn.vn&#x2F;vccorp-m.png" target="_blank" class="external" rel="noreferrer noopener">vccorp.mediacdn.vn&#x2F;vccorp-m.png</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;16&#x2F;am-ngay-thanh-lap-mat-tran-dan-toc-thong-nhat-viet-nam-ngay-truyen-thong-mat-tran-to-quoc-viet-nam1-1605678261649856688163-0-168-1145-2000-crop-1637049191544604847240.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;16&#x2F;am-ngay-thanh-lap-mat-tran-dan-toc-thong-nhat-viet-nam-ngay-truyen-thong-mat-tran-to-quoc-viet-nam1-1605678261649856688163-0-168-1145-2000-crop-1637049191544604847240.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://mingid.mediacdn.vn&#x2F;taskbar&#x2F;images&#x2F;toTop.png" target="_blank" class="external" rel="noreferrer noopener">mingid.mediacdn.vn&#x2F;taskbar&#x2F;images&#x2F;toTop.png</a> (seen on 2 websites)</p>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;16&#x2F;khah2869-16370683001291188508074-83-0-1333-2000-crop-16370683072431124928543.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;16&#x2F;khah2869-16370683001291188508074-83-0-1333-2000-crop-16370683072431124928543.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;7&#x2F;nguoi-dan-ha-noi-xep-hang-dai-cho-trai-nghiem-tau-cat-linh-ha-dong-14-1636262089349836703223-83-0-1333-2000-crop-1636263479831739015221.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;7&#x2F;nguoi-dan-ha-noi-xep-hang-dai-cho-trai-nghiem-tau-cat-linh-ha-dong-14-1636262089349836703223-83-0-1333-2000-crop-1636263479831739015221.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;7&#x2F;qh-09384391-1636267708646810530695-0-0-412-660-crop-16362677971781781112136.png" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;7&#x2F;qh-09384391-1636267708646810530695-0-0-412-660-crop-16362677971781781112136.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;3&#x2F;unnamed-2-16359184420881431033111-0-0-1250-2000-crop-1635918546326132479154.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;3&#x2F;unnamed-2-16359184420881431033111-0-0-1250-2000-crop-1635918546326132479154.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;3&#x2F;rac-thai-un-u-tren-nhieu-tuyen-pho-ha-noi-21-1635923130650974687241-226-0-1476-2000-crop-16359238667772088753971.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;11&#x2F;3&#x2F;rac-thai-un-u-tren-nhieu-tuyen-pho-ha-noi-21-1635923130650974687241-226-0-1476-2000-crop-16359238667772088753971.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;10&#x2F;28&#x2F;2462730521392096384030507077471115758449746n-16354282322371168679829-0-0-1250-2000-crop-16354283081831323074490.jpg" target="_blank" class="external" rel="noreferrer noopener">toquoc.mediacdn.vn&#x2F;zoom&#x2F;64_42&#x2F;280518851207290880&#x2F;2021&#x2F;10&#x2F;28&#x2F;2462730521392096384030507077471115758449746n-16354282322371168679829-0-0-1250-2000-crop-16354283081831323074490.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://solieu3.mediacdn.vn&#x2F;ProxyHandler.ashx" target="_blank" class="external" rel="noreferrer noopener">solieu3.mediacdn.vn&#x2F;ProxyHandler.ashx</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;web_css&#x2F;font.2017.11.28.1.min.css" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;web_css&#x2F;font.2017.11.28.1.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;web_font&#x2F;Roboto-Bold.woff2" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;web_font&#x2F;Roboto-Bold.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;web_font&#x2F;Roboto-Regular.woff2" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;web_font&#x2F;Roboto-Regular.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;web_css&#x2F;main-09092022v1.min.css" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;web_css&#x2F;main-09092022v1.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;web_images&#x2F;home2424.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;web_images&#x2F;home2424.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;web_images&#x2F;magazine-cover-1470901702968.jpg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;web_images&#x2F;magazine-cover-1470901702968.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;web_js&#x2F;gamek-09092022v1.min.js" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;web_js&#x2F;gamek-09092022v1.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;web_images&#x2F;sprite20150608.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;web_images&#x2F;sprite20150608.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;web_images&#x2F;gamek_logo_30052022.svg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;web_images&#x2F;gamek_logo_30052022.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;web_font&#x2F;UTM_Bebas.woff2" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;web_font&#x2F;UTM_Bebas.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;399_262&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673088394599-16730883949931343645769.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;399_262&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673088394599-16730883949931343645769.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;399_163&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673078630066-1673078630315152191689.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;399_163&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673078630066-1673078630315152191689.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673086393981-16730863944242067396507.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673086393981-16730863944242067396507.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673069533230-16730695337961643832297.jpg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673069533230-16730695337961643832297.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;6&#x2F;1-16729131402081944111235-1672983571796-16729835719881638209724-1673003513952-16730035140131462251695-0-24-371-618-crop-16730035515311781822472.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;6&#x2F;1-16729131402081944111235-1672983571796-16729835719881638209724-1673003513952-16730035140131462251695-0-24-371-618-crop-16730035515311781822472.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673066505853-16730665064121126969173.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673066505853-16730665064121126969173.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1673014344345-1673014344576625334763.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1673014344345-1673014344576625334763.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1672990124773-16729901251332042202925.jpg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;192_129&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1672990124773-16729901251332042202925.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;278_262&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673073155089-16730731553981943015048.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;278_262&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673073155089-16730731553981943015048.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;278_163&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673066143767-167306614435061721682.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;278_163&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673066143767-167306614435061721682.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673088394599-16730883949931343645769.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673088394599-16730883949931343645769.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673073155089-16730731553981943015048.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673073155089-16730731553981943015048.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;110_80&#x2F;133514250583805952&#x2F;2022&#x2F;12&#x2F;24&#x2F;photo1671849987862-167184998792877765162-1671859042388444303621.jpg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;110_80&#x2F;133514250583805952&#x2F;2022&#x2F;12&#x2F;24&#x2F;photo1671849987862-167184998792877765162-1671859042388444303621.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;110_80&#x2F;133514250583805952&#x2F;2022&#x2F;10&#x2F;28&#x2F;photo1666864601951-16668646020201083801590-16668933204191935687159.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;110_80&#x2F;133514250583805952&#x2F;2022&#x2F;10&#x2F;28&#x2F;photo1666864601951-16668646020201083801590-16668933204191935687159.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;110_80&#x2F;133514250583805952&#x2F;2022&#x2F;9&#x2F;29&#x2F;avatar1664423718090-16644237186281644225632.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;110_80&#x2F;133514250583805952&#x2F;2022&#x2F;9&#x2F;29&#x2F;avatar1664423718090-16644237186281644225632.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;110_80&#x2F;pr&#x2F;2022&#x2F;photo1655975061652-16559750617571474131322-63791612745428.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;110_80&#x2F;pr&#x2F;2022&#x2F;photo1655975061652-16559750617571474131322-63791612745428.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;110_80&#x2F;133514250583805952&#x2F;2021&#x2F;5&#x2F;6&#x2F;ktngangd4d446bb-b714-4684-8966-8369649ed1ec-16202743555711697255717.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;110_80&#x2F;133514250583805952&#x2F;2021&#x2F;5&#x2F;6&#x2F;ktngangd4d446bb-b714-4684-8966-8369649ed1ec-16202743555711697255717.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;9&#x2F;19&#x2F;icon-app-16635821015511285062699.jpg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;9&#x2F;19&#x2F;icon-app-16635821015511285062699.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;3&#x2F;7&#x2F;avt-1646626644061464287872.jpg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;3&#x2F;7&#x2F;avt-1646626644061464287872.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;6&#x2F;23&#x2F;icon-app-1655973616303644139349.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;6&#x2F;23&#x2F;icon-app-1655973616303644139349.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;6&#x2F;23&#x2F;icon-app-16559738786641751407370.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;6&#x2F;23&#x2F;icon-app-16559738786641751407370.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;6&#x2F;14&#x2F;iconapp-16551766997751955128334.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;6&#x2F;14&#x2F;iconapp-16551766997751955128334.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;4&#x2F;8&#x2F;photo2022-04-0813-36-16-1649403520257976311331.jpg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;4&#x2F;8&#x2F;photo2022-04-0813-36-16-1649403520257976311331.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;5&#x2F;4&#x2F;icon-2-1651652198650969435592.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;90_90&#x2F;133514250583805952&#x2F;2022&#x2F;5&#x2F;4&#x2F;icon-2-1651652198650969435592.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673097908134-16730979085261058390596.jpg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673097908134-16730979085261058390596.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673092577389-16730925779761189914456.jpg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673092577389-16730925779761189914456.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673084534114-16730845346081509916294.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673084534114-16730845346081509916294.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673069627457-16730696284821214107924.jpeg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673069627457-16730696284821214107924.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673064997945-1673064998522251130769.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673064997945-1673064998522251130769.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673067429843-16730674300671627825736.jpg" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673067429843-16730674300671627825736.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;jarvan-dtcl-4-16730385958871349928693-36-0-599-900-crop-1673064941389285877757.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;jarvan-dtcl-4-16730385958871349928693-36-0-599-900-crop-1673064941389285877757.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673066663789-16730666639931917189375.png" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;zoom&#x2F;310_200&#x2F;133514250583805952&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673066663789-16730666639931917189375.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gamek.mediacdn.vn&#x2F;web_js&#x2F;home-09092022v1.min.js" target="_blank" class="external" rel="noreferrer noopener">gamek.mediacdn.vn&#x2F;web_js&#x2F;home-09092022v1.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;genk&#x2F;web_css&#x2F;genk.home.v13092022.min.css" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;genk&#x2F;web_css&#x2F;genk.home.v13092022.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;genk&#x2F;web_images&#x2F;logogenk.svg" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;genk&#x2F;web_images&#x2F;logogenk.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673100563750-16731005644891751405073.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673100563750-16731005644891751405073.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673083559504-1673083559978209726073.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673083559504-1673083559978209726073.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;5&#x2F;brand-content-ngang-16728908347381330185075.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;5&#x2F;brand-content-ngang-16728908347381330185075.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673083558625-16730835593101018868501.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673083558625-16730835593101018868501.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673076879746-16730768802251358308287.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673076879746-16730768802251358308287.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673083163949-16730831647511541807392.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673083163949-16730831647511541807392.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673076886167-16730768867241329965347.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673076886167-16730768867241329965347.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673076867110-16730768676661826308935.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673076867110-16730768676661826308935.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;29&#x2F;brand-content-1672285939096811455697.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;29&#x2F;brand-content-1672285939096811455697.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo-2-16730722729271431036945-1673076863738-1673076864111624851818-0-0-1128-1805-crop-1673076919818403626519.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;photo-2-16730722729271431036945-1673076863738-1673076864111624851818-0-0-1128-1805-crop-1673076919818403626519.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673076873551-16730768740861564073405.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673076873551-16730768740861564073405.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673072297045-1673072298494713495853.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673072297045-1673072298494713495853.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673065055042-16730650554951992421303.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673065055042-16730650554951992421303.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673062749425-16730627497261005824381.jpeg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673062749425-16730627497261005824381.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673062156371-1673062157130710788467.jpeg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673062156371-1673062157130710788467.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673061819775-16730618202872141628468.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673061819775-16730618202872141628468.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673061675688-1673061677049687037207.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673061675688-1673061677049687037207.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1673013916442-16730139171361278741453.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1673013916442-16730139171361278741453.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673053450045-16730534505441183026612.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673053450045-16730534505441183026612.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673052321320-16730523218411874937684.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673052321320-16730523218411874937684.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;235_143&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;1&#x2F;ngang-16725412971411431345722.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;235_143&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;1&#x2F;ngang-16725412971411431345722.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;24&#x2F;ava-ngang-16654798410971212178678-0-0-501-801-crop-166548097987322862603-16718657967791793709380.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;24&#x2F;ava-ngang-16654798410971212178678-0-0-501-801-crop-166548097987322862603-16718657967791793709380.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;22&#x2F;avatar1671683093061-16716830940541332414273.png" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;22&#x2F;avatar1671683093061-16716830940541332414273.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;13&#x2F;ngang-1670966161861256870972.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;13&#x2F;ngang-1670966161861256870972.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;genk&#x2F;web_js&#x2F;genk.home.v28092022v1.min.js" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;genk&#x2F;web_js&#x2F;genk.home.v28092022v1.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;genk&#x2F;web_font&#x2F;SFD-Medium.ttf" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;genk&#x2F;web_font&#x2F;SFD-Medium.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;genk&#x2F;web_images&#x2F;sprite-genk_v11.png" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;genk&#x2F;web_images&#x2F;sprite-genk_v11.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1673018354983-1673018355419305062350.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1673018354983-1673018355419305062350.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673097588170-16730975895281484257924.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673097588170-16730975895281484257924.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673065641145-16730656414621980437113.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673065641145-16730656414621980437113.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1672995863131-1672995865169573980912.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1672995863131-1672995865169573980912.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1673004108576-167300410984276899548.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1673004108576-167300410984276899548.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;0-1672989843739808974120-0-37-281-487-crop-16729899458481680824550.gif" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;80_50&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;0-1672989843739808974120-0-37-281-487-crop-16729899458481680824550.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;27&#x2F;avatar1672143346205-16721433467961194033353-0-82-674-1160-crop-1672143383358444415284.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;27&#x2F;avatar1672143346205-16721433467961194033353-0-82-674-1160-crop-1672143383358444415284.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;27&#x2F;srg-nsetb-16721417911161265696418-0-71-528-916-crop-1672141798887379807463.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;27&#x2F;srg-nsetb-16721417911161265696418-0-71-528-916-crop-1672141798887379807463.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;25&#x2F;avatar1671958564267-1671958565335832683000.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;25&#x2F;avatar1671958564267-1671958565335832683000.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;29&#x2F;avatar1672325218954-1672325219937245518154.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;260_162&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;29&#x2F;avatar1672325218954-1672325219937245518154.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;270_164&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1672998069074-1672998070269995147352.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;270_164&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1672998069074-1672998070269995147352.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;270_164&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673061819775-16730618202872141628468.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;270_164&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673061819775-16730618202872141628468.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;270_164&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1672999938897-16729999397191736477804.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;270_164&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;6&#x2F;avatar1672999938897-16729999397191736477804.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;235_143&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;1&#x2F;ezgifcom-gif-maker-16725682253631961780708-1672568596309-16725685964571968358675-0-16-337-555-crop-16725686919861662206955.gif" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;235_143&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;1&#x2F;ezgifcom-gif-maker-16725682253631961780708-1672568596309-16725685964571968358675-0-16-337-555-crop-16725686919861662206955.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;235_143&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673052321320-16730523218411874937684.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;235_143&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673052321320-16730523218411874937684.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;235_143&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;10&#x2F;avatar1670643592840-16706435931911057553130.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;235_143&#x2F;139269124445442048&#x2F;2022&#x2F;12&#x2F;10&#x2F;avatar1670643592840-16706435931911057553130.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;235_143&#x2F;139269124445442048&#x2F;2021&#x2F;2&#x2F;28&#x2F;photo1614484590811-16144845914871800663516.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;235_143&#x2F;139269124445442048&#x2F;2021&#x2F;2&#x2F;28&#x2F;photo1614484590811-16144845914871800663516.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://genk.mediacdn.vn&#x2F;zoom&#x2F;223_140&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673076879746-16730768802251358308287.jpg" target="_blank" class="external" rel="noreferrer noopener">genk.mediacdn.vn&#x2F;zoom&#x2F;223_140&#x2F;139269124445442048&#x2F;2023&#x2F;1&#x2F;7&#x2F;avatar1673076879746-16730768802251358308287.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://event.mediacdn.vn&#x2F;257767050295742464&#x2F;2022&#x2F;12&#x2F;29&#x2F;best-of-2022-config-16723086064331651184152.js" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;257767050295742464&#x2F;2022&#x2F;12&#x2F;29&#x2F;best-of-2022-config-16723086064331651184152.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://event.mediacdn.vn&#x2F;257767050295742464&#x2F;2022&#x2F;12&#x2F;29&#x2F;main-1672307293683864423616.css" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;257767050295742464&#x2F;2022&#x2F;12&#x2F;29&#x2F;main-1672307293683864423616.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://event.mediacdn.vn&#x2F;257767050295742464&#x2F;2022&#x2F;12&#x2F;30&#x2F;best-of-2022-1672372180878856111738.js" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;257767050295742464&#x2F;2022&#x2F;12&#x2F;30&#x2F;best-of-2022-1672372180878856111738.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://event.mediacdn.vn&#x2F;257767050295742464&#x2F;image&#x2F;cca&#x2F;2022&#x2F;12&#x2F;29&#x2F;embed-cover-16723066556121941582179.png" target="_blank" class="external" rel="noreferrer noopener">event.mediacdn.vn&#x2F;257767050295742464&#x2F;image&#x2F;cca&#x2F;2022&#x2F;12&#x2F;29&#x2F;embed-cover-16723066556121941582179.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://solieu5.mediacdn.vn&#x2F;Ajax&#x2F;exchange.ashx" target="_blank" class="external" rel="noreferrer noopener">solieu5.mediacdn.vn&#x2F;Ajax&#x2F;exchange.ashx</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://solieu5.mediacdn.vn&#x2F;Ajax&#x2F;indexes.ashx" target="_blank" class="external" rel="noreferrer noopener">solieu5.mediacdn.vn&#x2F;Ajax&#x2F;indexes.ashx</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;fonts&#x2F;Merriweather-Bold.woff2" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;fonts&#x2F;Merriweather-Bold.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://datasport.mediacdn.vn&#x2F;season2018_logo&#x2F;logo_premier_league_fulham.jpg" target="_blank" class="external" rel="noreferrer noopener">datasport.mediacdn.vn&#x2F;season2018_logo&#x2F;logo_premier_league_fulham.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://datasport.mediacdn.vn&#x2F;season2018_logo&#x2F;logo_premier_league_chelsea_fc.jpg" target="_blank" class="external" rel="noreferrer noopener">datasport.mediacdn.vn&#x2F;season2018_logo&#x2F;logo_premier_league_chelsea_fc.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://datasport.mediacdn.vn&#x2F;season2018_logo&#x2F;logo_championship_aston_villa.jpg" target="_blank" class="external" rel="noreferrer noopener">datasport.mediacdn.vn&#x2F;season2018_logo&#x2F;logo_championship_aston_villa.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://datasport.mediacdn.vn&#x2F;season2018_logo&#x2F;logo_championship_leeds_united.jpg" target="_blank" class="external" rel="noreferrer noopener">datasport.mediacdn.vn&#x2F;season2018_logo&#x2F;logo_championship_leeds_united.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;fonts&#x2F;Roboto-Medium.woff2" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;fonts&#x2F;Roboto-Medium.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;fonts&#x2F;Roboto-Bold.woff2" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;fonts&#x2F;Roboto-Bold.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;tuoitre&#x2F;web_images&#x2F;userdeffault.jpg" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;tuoitre&#x2F;web_images&#x2F;userdeffault.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;web_css&#x2F;tvo.home.28052020.min.css" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;web_css&#x2F;tvo.home.28052020.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;tuoitre&#x2F;web_js&#x2F;tvo.31122022v1.min.js" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;tuoitre&#x2F;web_js&#x2F;tvo.31122022v1.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;tuoitre&#x2F;web_css&#x2F;tvo.ssologinbase.2.min.css" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;tuoitre&#x2F;web_css&#x2F;tvo.ssologinbase.2.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;tuoitre&#x2F;web_js&#x2F;adscore.1.min.js" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;tuoitre&#x2F;web_js&#x2F;adscore.1.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_LogoTTO.png" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_LogoTTO.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_LogoTTCT.png" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_LogoTTCT.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_LogoTTNews.png" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_LogoTTNews.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;thumb_w&#x2F;150&#x2F;tuoitre&#x2F;web_images&#x2F;logo_tuoitrecuoi-01.png" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;thumb_w&#x2F;150&#x2F;tuoitre&#x2F;web_images&#x2F;logo_tuoitrecuoi-01.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_sprite-tvo-v4.png" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_sprite-tvo-v4.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_16.png" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_16.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_16@2x.png" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;tvo_16@2x.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;buttonplay.png" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;web_images&#x2F;buttonplay.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;web_font&#x2F;Montserrat-Medium.woff2" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;web_font&#x2F;Montserrat-Medium.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statictuoitre.mediacdn.vn&#x2F;mob_images&#x2F;sprite_icon16v14.png" target="_blank" class="external" rel="noreferrer noopener">statictuoitre.mediacdn.vn&#x2F;mob_images&#x2F;sprite_icon16v14.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;tuoitre&#x2F;web_js&#x2F;tvo.ssologinbase.3.min.js" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;tuoitre&#x2F;web_js&#x2F;tvo.ssologinbase.3.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.mediacdn.vn&#x2F;tuoitre&#x2F;web_js&#x2F;corecommentv2.plugin.27122022v1.min.js" target="_blank" class="external" rel="noreferrer noopener">static.mediacdn.vn&#x2F;tuoitre&#x2F;web_js&#x2F;corecommentv2.plugin.27122022v1.min.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -242,19 +630,70 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
+            <a href="http://baochinhphu.vn" target="_blank" class="external">baochinhphu.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tuoitre.vn" target="_blank" class="external">tuoitre.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cafef.vn" target="_blank" class="external">cafef.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gamek.vn" target="_blank" class="external">gamek.vn</a>
+        </li>
+        <li class='truncate'>
             <a href="http://kenh14.vn" target="_blank" class="external">kenh14.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.afamily.vn" target="_blank" class="external">m.afamily.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.cafebiz.vn" target="_blank" class="external">m.cafebiz.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.cafef.vn" target="_blank" class="external">m.cafef.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.gamek.vn" target="_blank" class="external">m.gamek.vn</a>
         </li>
         <li class='truncate'>
             <a href="http://m.kenh14.vn" target="_blank" class="external">m.kenh14.vn</a>
         </li>
         <li class='truncate'>
+            <a href="http://s.cafef.vn" target="_blank" class="external">s.cafef.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tv.tuoitre.vn" target="_blank" class="external">tv.tuoitre.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thethaovanhoa.vn" target="_blank" class="external">thethaovanhoa.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://genk.vn" target="_blank" class="external">genk.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.genk.vn" target="_blank" class="external">m.genk.vn</a>
+        </li>
+        <li class='truncate'>
             <a href="http://m.soha.vn" target="_blank" class="external">m.soha.vn</a>
         </li>
         <li class='truncate'>
-            <a href="http://nld.com.vn" target="_blank" class="external">nld.com.vn</a>
+            <a href="http://soha.vn" target="_blank" class="external">soha.vn</a>
         </li>
         <li class='truncate'>
-            <a href="http://soha.vn" target="_blank" class="external">soha.vn</a>
+            <a href="http://vtv.vn" target="_blank" class="external">vtv.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://autopro.com.vn" target="_blank" class="external">autopro.com.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://thanhnien.vn" target="_blank" class="external">thanhnien.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://m.thanhnien.vn" target="_blank" class="external">m.thanhnien.vn</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nld.com.vn" target="_blank" class="external">nld.com.vn</a>
         </li>
     </ul>
 </div>
