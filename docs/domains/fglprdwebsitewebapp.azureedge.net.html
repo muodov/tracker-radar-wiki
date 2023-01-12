@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "fglprdwebsitewebapp.azureedge.net",
-        history: [{"date":"2022.06","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0},{"date":"2022.07","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0},{"date":"2022.08","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0},{"date":"2022.09","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2022.10","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0.00000679},{"date":"2022.11","prevalence":0.0000136,"sites":2,"fingerprinting":2,"cookies":0},{"date":"2022-12-new","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0.0000136}]
+        history: [{"date":"main","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0.0000136},{"date":"selenium-us-crawl","prevalence":0.0000136,"sites":2,"fingerprinting":1,"cookies":0.0000136}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -126,13 +126,13 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>console.memory</li>
         <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.innerHeight</li>
-        <li class='truncate'>console.memory</li>
         <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Document.cookie getter</li>
-        <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
