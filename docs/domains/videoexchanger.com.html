@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "videoexchanger.com",
-        history: [{"date":"main","prevalence":0.0000203,"sites":3,"fingerprinting":2,"cookies":0},{"date":"selenium-crux","prevalence":0.0000136,"sites":1,"fingerprinting":2,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000203,"sites":3,"fingerprinting":2,"cookies":0},{"date":"selenium-results","prevalence":0.0000135,"sites":2,"fingerprinting":2,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;16212<small>/16361</small>
+                    <strong>Rank:</strong> &#35;23933<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (1 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
@@ -91,13 +91,17 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
+                    <span>XHR</span>,
+                    <span>Stylesheet</span>,
                     <span>Media</span>,
+                    <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/videoexchanger.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>player</span>, 
                     <span>storage</span>, 
+                    <span>hit</span>, 
                 </li>
             </ul>
         </div>
@@ -116,16 +120,61 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
+        <li class='truncate'>URL.createObjectURL</li>
+        <li class='truncate'>HTMLMediaElement.prototype.canPlayType</li>
+        <li class='truncate'>MediaSource.isTypeSupported</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://player.videoexchanger.com&#x2F;config&#x2F;9dbf2a98-618b-4f24-9fc2-085701f2894d_conf.js" target="_blank" class="external" rel="noreferrer noopener">player.videoexchanger.com&#x2F;config&#x2F;9dbf2a98-618b-4f24-9fc2-085701f2894d_conf.js</a> (seen on 2 websites)</p>
+            <p><a href="http://player.videoexchanger.com&#x2F;scripts&#x2F;mads&#x2F;latest.js" target="_blank" class="external" rel="noreferrer noopener">player.videoexchanger.com&#x2F;scripts&#x2F;mads&#x2F;latest.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://storage.videoexchanger.com&#x2F;216e4a75-1c48-494d-a5f9-fb7ae820962f&#x2F;g&#x2F;m&#x2F;g&#x2F;o&#x2F;gmgoeapffw_360p.mp4" target="_blank" class="external" rel="noreferrer noopener">storage.videoexchanger.com&#x2F;216e4a75-1c48-494d-a5f9-fb7ae820962f&#x2F;g&#x2F;m&#x2F;g&#x2F;o&#x2F;gmgoeapffw_360p.mp4</a> (seen on 2 websites)</p>
+            <p><a href="http://player.videoexchanger.com&#x2F;config&#x2F;7dbe967f-4761-4adc-a245-9b0478fc9d31_conf.js" target="_blank" class="external" rel="noreferrer noopener">player.videoexchanger.com&#x2F;config&#x2F;7dbe967f-4761-4adc-a245-9b0478fc9d31_conf.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://storage.videoexchanger.com&#x2F;playlists&#x2F;216e4a75-1c48-494d-a5f9-fb7ae820962f&#x2F;simple_c4ad5d75-9e84-4b53-9bdd-1af510dc1f1d.json" target="_blank" class="external" rel="noreferrer noopener">storage.videoexchanger.com&#x2F;playlists&#x2F;216e4a75-1c48-494d-a5f9-fb7ae820962f&#x2F;simple_c4ad5d75-9e84-4b53-9bdd-1af510dc1f1d.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://storage.videoexchanger.com&#x2F;playerConf&#x2F;216e4a75-1c48-494d-a5f9-fb7ae820962f&#x2F;tem4_81732268-a784-4b51-ba0f-193097183839.json" target="_blank" class="external" rel="noreferrer noopener">storage.videoexchanger.com&#x2F;playerConf&#x2F;216e4a75-1c48-494d-a5f9-fb7ae820962f&#x2F;tem4_81732268-a784-4b51-ba0f-193097183839.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://player.videoexchanger.com&#x2F;scripts&#x2F;mads&#x2F;latest&#x2F;videojs-mads.css" target="_blank" class="external" rel="noreferrer noopener">player.videoexchanger.com&#x2F;scripts&#x2F;mads&#x2F;latest&#x2F;videojs-mads.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://player.videoexchanger.com&#x2F;scripts&#x2F;mads&#x2F;latest&#x2F;mads.min.js" target="_blank" class="external" rel="noreferrer noopener">player.videoexchanger.com&#x2F;scripts&#x2F;mads&#x2F;latest&#x2F;mads.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://storage.videoexchanger.com&#x2F;216e4a75-1c48-494d-a5f9-fb7ae820962f&#x2F;g&#x2F;l&#x2F;a&#x2F;u&#x2F;glau6knie1_360p.mp4" target="_blank" class="external" rel="noreferrer noopener">storage.videoexchanger.com&#x2F;216e4a75-1c48-494d-a5f9-fb7ae820962f&#x2F;g&#x2F;l&#x2F;a&#x2F;u&#x2F;glau6knie1_360p.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://player.videoexchanger.com&#x2F;img&#x2F;logoMoviads.png" target="_blank" class="external" rel="noreferrer noopener">player.videoexchanger.com&#x2F;img&#x2F;logoMoviads.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://hit.videoexchanger.com&#x2F;video" target="_blank" class="external" rel="noreferrer noopener">hit.videoexchanger.com&#x2F;video</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://storage.videoexchanger.com&#x2F;216e4a75-1c48-494d-a5f9-fb7ae820962f&#x2F;g&#x2F;m&#x2F;g&#x2F;n&#x2F;gmgnnmupc0_360p.mp4" target="_blank" class="external" rel="noreferrer noopener">storage.videoexchanger.com&#x2F;216e4a75-1c48-494d-a5f9-fb7ae820962f&#x2F;g&#x2F;m&#x2F;g&#x2F;n&#x2F;gmgnnmupc0_360p.mp4</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -135,10 +184,10 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://ortograf.pl" target="_blank" class="external">ortograf.pl</a>
+            <a href="http://msze.info" target="_blank" class="external">msze.info</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.ortograf.pl" target="_blank" class="external">www.ortograf.pl</a>
+            <a href="http://www.msze.info" target="_blank" class="external">www.msze.info</a>
         </li>
     </ul>
 </div>

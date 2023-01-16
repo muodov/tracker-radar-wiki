@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "medium.com",
-        history: [{"date":"main","prevalence":0.000346,"sites":51,"fingerprinting":2,"cookies":0.000298},{"date":"selenium-crux","prevalence":0.0000544,"sites":4,"fingerprinting":2,"cookies":0.0000408}]
+        history: [{"date":"main","prevalence":0.000346,"sites":51,"fingerprinting":2,"cookies":0.000298},{"date":"selenium-results","prevalence":0.000345,"sites":51,"fingerprinting":3,"cookies":0.000318}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;7692<small>/16361</small>
+                    <strong>Rank:</strong> &#35;2021<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (4 sites)
+                    <strong>Prevalence:</strong> 0.03&#37; (51 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.03&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -91,12 +91,21 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Font</span>,
                     <span>Other</span>,
+                    <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/medium.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>glyph</span>, 
+                    <span>cdn-static-1</span>, 
                     <span>csp</span>, 
+                    <span>cdn-client</span>, 
+                    <span>miro</span>, 
+                    <span>cdn-images-1</span>, 
                 </li>
             </ul>
         </div>
@@ -115,16 +124,404 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.webkitTemporaryStorage</li>
+        <li class='truncate'>Navigator.prototype.product</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Performance.prototype.memory</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Navigator.prototype.vendor</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://medium.com&#x2F;m&#x2F;global-identity-2" target="_blank" class="external" rel="noreferrer noopener">medium.com&#x2F;m&#x2F;global-identity-2</a> (seen on 2 websites)</p>
+            <p><a href="http://medium.com&#x2F;m&#x2F;global-identity-2" target="_blank" class="external" rel="noreferrer noopener">medium.com&#x2F;m&#x2F;global-identity-2</a> (seen on 21 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://csp.medium.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">csp.medium.com&#x2F;</a> (seen on 2 websites)</p>
+            <p><a href="http://glyph.medium.com&#x2F;css&#x2F;unbound.css" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;css&#x2F;unbound.css</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;7505.62df2c9c.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;7505.62df2c9c.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;instrumentation.c71f0248.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;instrumentation.c71f0248.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;reporting.bbdcaa9d.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;reporting.bbdcaa9d.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;9658.17030d28.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;9658.17030d28.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;1752.a348f767.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;1752.a348f767.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;1961.72b183c8.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;1961.72b183c8.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;5472.a7dd22a2.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;5472.a7dd22a2.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4330.e8b3e1bc.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4330.e8b3e1bc.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3630.e2766e8e.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3630.e2766e8e.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6507.da0f4b48.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6507.da0f4b48.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;5387.73c85d3d.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;5387.73c85d3d.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3115.88119551.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3115.88119551.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4129.104dffef.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4129.104dffef.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;5530.eaf3eeb1.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;5530.eaf3eeb1.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6336.6353f868.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6336.6353f868.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;2964.231aba87.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;2964.231aba87.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6495.754e829f.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6495.754e829f.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3496.b8391e06.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3496.b8391e06.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;1517.1a0b58b0.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;1517.1a0b58b0.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6804.553d465d.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6804.553d465d.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;864.6cdea30d.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;864.6cdea30d.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3033.5bda2ae8.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3033.5bda2ae8.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6239.14a67971.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6239.14a67971.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;8824.8f3446a2.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;8824.8f3446a2.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;8051.81cb8134.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;8051.81cb8134.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4959.960b40cb.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4959.960b40cb.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4904.3b0f58c4.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4904.3b0f58c4.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;7129.bfaa754e.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;7129.bfaa754e.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PostPage.MainContent.ec0e1744.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PostPage.MainContent.ec0e1744.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;2818.7521ce49.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;2818.7521ce49.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;8261.f323419d.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;8261.f323419d.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;5180.8d4bb5c6.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;5180.8d4bb5c6.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;1465.7e55e225.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;1465.7e55e225.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;773.250a1354.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;773.250a1354.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6969.7c9cd061.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;6969.7c9cd061.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PostPage.RightColumnContent.8aacfdf4.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PostPage.RightColumnContent.8aacfdf4.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;b492c44&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;sohne-400-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;b492c44&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;sohne-400-normal.woff</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;cf896f3&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;sohne-700-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;cf896f3&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;sohne-700-normal.woff</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;64&#x2F;64&#x2F;1*dmbNkD5D-u45r44go_cf0g.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;64&#x2F;64&#x2F;1*dmbNkD5D-u45r44go_cf0g.png</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;df9ba7f&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;sohne-500-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;df9ba7f&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;sohne-500-normal.woff</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;2230.571ed6c4.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;2230.571ed6c4.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PostGiveTipOnExternalPlatform.8554d87e.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PostGiveTipOnExternalPlatform.8554d87e.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;2416.6fb222c0.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;2416.6fb222c0.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PostNextFiveStories.b0774fa5.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PostNextFiveStories.b0774fa5.chunk.js</a> (seen on 21 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;8e059b2&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;source-serif-pro-400-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;8e059b2&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;source-serif-pro-400-normal.woff</a> (seen on 19 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;manifest.d3371f87.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;manifest.d3371f87.js</a> (seen on 15 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;main.a2892b35.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;main.a2892b35.js</a> (seen on 15 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;b492c44&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;sohne-400-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;b492c44&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;sohne-400-normal.woff</a> (seen on 13 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;css&#x2F;e&#x2F;sr&#x2F;latin&#x2F;e&#x2F;ssr&#x2F;latin&#x2F;e&#x2F;ssb&#x2F;latin&#x2F;m2-unbound-source-serif-pro.css" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;css&#x2F;e&#x2F;sr&#x2F;latin&#x2F;e&#x2F;ssr&#x2F;latin&#x2F;e&#x2F;ssb&#x2F;latin&#x2F;m2-unbound-source-serif-pro.css</a> (seen on 12 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;css&#x2F;main-branding-base.tYgUPOPw7MGBp8T9C8o3PQ.12.css" target="_blank" class="external" rel="noreferrer noopener">cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;css&#x2F;main-branding-base.tYgUPOPw7MGBp8T9C8o3PQ.12.css</a> (seen on 12 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://csp.medium.com&#x2F;" target="_blank" class="external" rel="noreferrer noopener">csp.medium.com&#x2F;</a> (seen on 12 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;gen-js&#x2F;main-home-screens.bundle.ltOvpfdj5RWthNT9D_gbKA.12.js" target="_blank" class="external" rel="noreferrer noopener">cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;gen-js&#x2F;main-home-screens.bundle.ltOvpfdj5RWthNT9D_gbKA.12.js</a> (seen on 12 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;76c214a&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;source-serif-pro-400-italic.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;76c214a&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;source-serif-pro-400-italic.woff</a> (seen on 11 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;8e059b2&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;source-serif-pro-400-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;8e059b2&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;source-serif-pro-400-normal.woff</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*XL5QclUh4RwVmsq8szytzg.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*XL5QclUh4RwVmsq8szytzg.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*IPZF1hcDWwpPqOz2vL7NxQ.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*IPZF1hcDWwpPqOz2vL7NxQ.png</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;gen-js&#x2F;main-base.bundle.JGuVyff2zh2mYyGGSD9Vrg.12.js" target="_blank" class="external" rel="noreferrer noopener">cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;gen-js&#x2F;main-base.bundle.JGuVyff2zh2mYyGGSD9Vrg.12.js</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;gen-js&#x2F;main-common-async.bundle.fsxb1RU2hnIWyC_xNHWs6Q.12.js" target="_blank" class="external" rel="noreferrer noopener">cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;gen-js&#x2F;main-common-async.bundle.fsxb1RU2hnIWyC_xNHWs6Q.12.js</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4792.2b9957a0.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4792.2b9957a0.chunk.js</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4249.58a0e500.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4249.58a0e500.chunk.js</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3490.48d0675b.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3490.48d0675b.chunk.js</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3829.978b8b2d.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;3829.978b8b2d.chunk.js</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;7621.54497d1d.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;7621.54497d1d.chunk.js</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PublicationProfilePage.MainContent.5edd5ced.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PublicationProfilePage.MainContent.5edd5ced.chunk.js</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4566.caaff827.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;4566.caaff827.chunk.js</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PublicationProfilePage.RightColumnContent.3104ab09.chunk.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;PublicationProfilePage.RightColumnContent.3104ab09.chunk.js</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;b156742&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;source-serif-pro-700-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;b156742&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;source-serif-pro-700-normal.woff</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;d8659c9&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;marat-sans-400-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;d8659c9&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;marat-sans-400-normal.woff</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;3bd49b7&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;source-code-pro-400-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;3bd49b7&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;source-code-pro-400-normal.woff</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;manifest.70149584.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;manifest.70149584.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;main.b1c81f47.js" target="_blank" class="external" rel="noreferrer noopener">cdn-client.medium.com&#x2F;lite&#x2F;static&#x2F;js&#x2F;main.b1c81f47.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;cf896f3&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;sohne-700-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;cf896f3&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;sohne-700-normal.woff</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;7f2eb60&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;source-serif-pro-700-italic.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;7f2eb60&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;source-serif-pro-700-italic.woff</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*zNk5M_WbKYNFC3WEI6iBkQ.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*zNk5M_WbKYNFC3WEI6iBkQ.jpeg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*96MzKQL83NwVHuAvfLzXGA.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*96MzKQL83NwVHuAvfLzXGA.jpeg</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*dVn6WZnzrNvA-b3VovmHsw.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*dVn6WZnzrNvA-b3VovmHsw.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;0*V3XDwTwCJyUZQ2rS" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;0*V3XDwTwCJyUZQ2rS</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*L3EseGfcfGdmiwe56qrmgg.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*L3EseGfcfGdmiwe56qrmgg.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*9bmud39VZM1c7UqiTs_rIA.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*9bmud39VZM1c7UqiTs_rIA.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;1*m-R_BkNf1Qjr1YbyOIJY2w.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;1*m-R_BkNf1Qjr1YbyOIJY2w.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;3bd49b7&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;source-code-pro-400-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;3bd49b7&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;source-code-pro-400-normal.woff</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;2*LGEGZoQWcwrCYPOxGsacCg.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;2*LGEGZoQWcwrCYPOxGsacCg.jpeg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*bZ4i6eR3k4ihY2joP4nvEg.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*bZ4i6eR3k4ihY2joP4nvEg.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;gen-js&#x2F;main-base.bundle.oec7NwrRAyjAd4xNC61tGw.12.js" target="_blank" class="external" rel="noreferrer noopener">cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;gen-js&#x2F;main-base.bundle.oec7NwrRAyjAd4xNC61tGw.12.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;gen-js&#x2F;main-common-async.bundle.Jo1dL7ZszewlyJ6Cam8mBA.12.js" target="_blank" class="external" rel="noreferrer noopener">cdn-static-1.medium.com&#x2F;_&#x2F;fp&#x2F;gen-js&#x2F;main-common-async.bundle.Jo1dL7ZszewlyJ6Cam8mBA.12.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;76c214a&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;source-serif-pro-400-italic.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;76c214a&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;source-serif-pro-400-italic.woff</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;64&#x2F;64&#x2F;1*i1WWOMu_4fGxDkzGtgJn2A@2x.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;64&#x2F;64&#x2F;1*i1WWOMu_4fGxDkzGtgJn2A@2x.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;b156742&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;source-serif-pro-700-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;b156742&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;source-serif-pro-700-normal.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*3SnjX10GOMz5v6E9cXuZ5Q@2x.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*3SnjX10GOMz5v6E9cXuZ5Q@2x.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;0*Nz897vaKH2yJhSQJ" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;0*Nz897vaKH2yJhSQJ</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;256&#x2F;256&#x2F;1*ds6iXWSFwycgEjbhZiCB4A.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;256&#x2F;256&#x2F;1*ds6iXWSFwycgEjbhZiCB4A.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*ds6iXWSFwycgEjbhZiCB4A.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*ds6iXWSFwycgEjbhZiCB4A.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*CvejhRq3NYsivxILYXEdfA.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*CvejhRq3NYsivxILYXEdfA.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*XutiHXIrmXbyn2h1ss34TA.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*XutiHXIrmXbyn2h1ss34TA.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*4J7oPbs6jxwfbg--a5G_CA.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*4J7oPbs6jxwfbg--a5G_CA.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;6f4b679&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;marat-sans-600-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;6f4b679&#x2F;3k-4f_4h-52_54-6bt_6bv-6c3_6c5-6c7_6ca-6cb_6ce-6ch_6cj-6cl_6cn-nvnj&#x2F;marat-sans-600-normal.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*HjhORkARM-qdgHyyHuT58w.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*HjhORkARM-qdgHyyHuT58w.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;256&#x2F;256&#x2F;1*HjhORkARM-qdgHyyHuT58w.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;256&#x2F;256&#x2F;1*HjhORkARM-qdgHyyHuT58w.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;0*uLL_n9bNqcoNR2iL.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;0*uLL_n9bNqcoNR2iL.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*KnBO21wg0Oe6jVwKs7aTaw.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*KnBO21wg0Oe6jVwKs7aTaw.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*veEX4-CiLz5jqUjwWfQo_Q.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*veEX4-CiLz5jqUjwWfQo_Q.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*iS1UwYrqJUAkVtLVR_mZXQ.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*iS1UwYrqJUAkVtLVR_mZXQ.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;0*4kFESa4sxdAuJAlN" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;0*4kFESa4sxdAuJAlN</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*i6Nx0h7eAaN5TqlSt4OX_w.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*i6Nx0h7eAaN5TqlSt4OX_w.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://glyph.medium.com&#x2F;font&#x2F;6fd11d6&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;sohne-300-normal.woff" target="_blank" class="external" rel="noreferrer noopener">glyph.medium.com&#x2F;font&#x2F;6fd11d6&#x2F;0-3j_4g_53_6bu_6c4_6c8_6c9_6cc_6cd_6ci_6cm&#x2F;sohne-300-normal.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;224&#x2F;224&#x2F;1*RATDd81MgA4ShdfzHMvUBw.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;224&#x2F;224&#x2F;1*RATDd81MgA4ShdfzHMvUBw.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;64&#x2F;64&#x2F;1*RQ41l6IEqFW55cqE3XSdIw@2x.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;64&#x2F;64&#x2F;1*RQ41l6IEqFW55cqE3XSdIw@2x.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;64&#x2F;64&#x2F;1*G3Y2USEJ0WZ-77UOeWGe0A.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;64&#x2F;64&#x2F;1*G3Y2USEJ0WZ-77UOeWGe0A.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;64&#x2F;64&#x2F;1*EFwUv5E3EDDA7PPJCXV91g@2x.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;64&#x2F;64&#x2F;1*EFwUv5E3EDDA7PPJCXV91g@2x.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*APjYv_YDdw1J7WCT4uKh9Q.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*APjYv_YDdw1J7WCT4uKh9Q.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn-images-1.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*3ylecYoJgnKPFUZxKauU9g.png" target="_blank" class="external" rel="noreferrer noopener">cdn-images-1.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*3ylecYoJgnKPFUZxKauU9g.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*D3hZzYqqsM6-wef-5zzDIA.png" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;128&#x2F;128&#x2F;1*D3hZzYqqsM6-wef-5zzDIA.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*qAiJOnPDlGIOQOSHj0J53Q.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*qAiJOnPDlGIOQOSHj0J53Q.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*SwZo5Oxk7KOAMx02bNzAow.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;1*SwZo5Oxk7KOAMx02bNzAow.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*3ke50mn93msKlBWFCufnDQ.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*3ke50mn93msKlBWFCufnDQ.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*_DB89NU_5vYkb3HhJTDVYw.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*_DB89NU_5vYkb3HhJTDVYw.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;0*gzj7DA3M0Ij1qLDu" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;0*gzj7DA3M0Ij1qLDu</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*RHhq3pIoCERqgp8SLfiS-w.jpeg" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;fit&#x2F;c&#x2F;20&#x2F;20&#x2F;1*RHhq3pIoCERqgp8SLfiS-w.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;0*TAWChoVoZ6eEBGEq" target="_blank" class="external" rel="noreferrer noopener">miro.medium.com&#x2F;focal&#x2F;56&#x2F;56&#x2F;50&#x2F;50&#x2F;0*TAWChoVoZ6eEBGEq</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -134,13 +531,79 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://gitconnected.com" target="_blank" class="external">gitconnected.com</a>
+            <a href="http://writingcooperative.com" target="_blank" class="external">writingcooperative.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://aninjusticemag.com" target="_blank" class="external">aninjusticemag.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://betterprogramming.pub" target="_blank" class="external">betterprogramming.pub</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://blog.bitsrc.io" target="_blank" class="external">blog.bitsrc.io</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://psiloveyou.xyz" target="_blank" class="external">psiloveyou.xyz</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uxplanet.org" target="_blank" class="external">uxplanet.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://uxdesign.cc" target="_blank" class="external">uxdesign.cc</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://towardsdev.com" target="_blank" class="external">towardsdev.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://blog.devgenius.io" target="_blank" class="external">blog.devgenius.io</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://betterhumans.pub" target="_blank" class="external">betterhumans.pub</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://sexography.net" target="_blank" class="external">sexography.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://codeburst.io" target="_blank" class="external">codeburst.io</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://faun.pub" target="_blank" class="external">faun.pub</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://python.plainenglish.io" target="_blank" class="external">python.plainenglish.io</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://medium.datadriveninvestor.com" target="_blank" class="external">medium.datadriveninvestor.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://itnext.io" target="_blank" class="external">itnext.io</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://timeline.com" target="_blank" class="external">timeline.com</a>
         </li>
         <li class='truncate'>
             <a href="http://towardsdatascience.com" target="_blank" class="external">towardsdatascience.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://levelup.gitconnected.com" target="_blank" class="external">levelup.gitconnected.com</a>
+            <a href="http://javascript.plainenglish.io" target="_blank" class="external">javascript.plainenglish.io</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://infosecwriteups.com" target="_blank" class="external">infosecwriteups.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bootcamp.uxdesign.cc" target="_blank" class="external">bootcamp.uxdesign.cc</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bitsrc.io" target="_blank" class="external">bitsrc.io</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://devgenius.io" target="_blank" class="external">devgenius.io</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://plainenglish.io" target="_blank" class="external">plainenglish.io</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://datadriveninvestor.com" target="_blank" class="external">datadriveninvestor.com</a>
         </li>
     </ul>
 </div>

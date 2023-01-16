@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "impresa.pt",
-        history: [{"date":"main","prevalence":0.0000339,"sites":5,"fingerprinting":2,"cookies":0.0000203},{"date":"selenium-crux","prevalence":0.0000408,"sites":3,"fingerprinting":3,"cookies":0.0000272}]
+        history: [{"date":"main","prevalence":0.0000339,"sites":5,"fingerprinting":2,"cookies":0.0000203},{"date":"selenium-results","prevalence":0.0000405,"sites":6,"fingerprinting":2,"cookies":0.000027}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;9078<small>/16361</small>
+                    <strong>Rank:</strong> &#35;8303<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (6 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -90,13 +90,16 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>XHR</span>,
-                    <span>Preflight</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Stylesheet</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/impresa.pt.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>api</span>, 
+                    <span>statics</span>, 
+                    <span>sdistribution</span>, 
+                    <span>images</span>, 
                 </li>
             </ul>
         </div>
@@ -115,16 +118,59 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://api.impresa.pt&#x2F;track&#x2F;pageview" target="_blank" class="external" rel="noreferrer noopener">api.impresa.pt&#x2F;track&#x2F;pageview</a> (seen on 2 websites)</p>
+            <p><a href="http://statics.impresa.pt&#x2F;js&#x2F;react-impresa-footer&#x2F;active&#x2F;react-impresa-footer.bundle.js" target="_blank" class="external" rel="noreferrer noopener">statics.impresa.pt&#x2F;js&#x2F;react-impresa-footer&#x2F;active&#x2F;react-impresa-footer.bundle.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://api.impresa.pt&#x2F;track&#x2F;pageview" target="_blank" class="external" rel="noreferrer noopener">api.impresa.pt&#x2F;track&#x2F;pageview</a> (seen on 2 websites)</p>
+            <p><a href="http://statics.impresa.pt&#x2F;js&#x2F;impresa-bars&#x2F;active&#x2F;impresa-bars.min.js" target="_blank" class="external" rel="noreferrer noopener">statics.impresa.pt&#x2F;js&#x2F;impresa-bars&#x2F;active&#x2F;impresa-bars.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdistribution.impresa.pt&#x2F;data&#x2F;content&#x2F;binaries&#x2F;3e3&#x2F;61e&#x2F;07b046d6-f9ae-4ffd-8d2f-8d3b66d56575&#x2F;logo_impresa.png" target="_blank" class="external" rel="noreferrer noopener">sdistribution.impresa.pt&#x2F;data&#x2F;content&#x2F;binaries&#x2F;3e3&#x2F;61e&#x2F;07b046d6-f9ae-4ffd-8d2f-8d3b66d56575&#x2F;logo_impresa.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdistribution.impresa.pt&#x2F;data&#x2F;content&#x2F;binaries&#x2F;3ec&#x2F;65f&#x2F;19de8032-4769-417a-9e27-65e4a395d4b2&#x2F;Facebook.svg" target="_blank" class="external" rel="noreferrer noopener">sdistribution.impresa.pt&#x2F;data&#x2F;content&#x2F;binaries&#x2F;3ec&#x2F;65f&#x2F;19de8032-4769-417a-9e27-65e4a395d4b2&#x2F;Facebook.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdistribution.impresa.pt&#x2F;data&#x2F;content&#x2F;binaries&#x2F;c2b&#x2F;72d&#x2F;dcc8e08c-e2d5-44a7-a291-26bbbb8a3b61&#x2F;Twitter.svg" target="_blank" class="external" rel="noreferrer noopener">sdistribution.impresa.pt&#x2F;data&#x2F;content&#x2F;binaries&#x2F;c2b&#x2F;72d&#x2F;dcc8e08c-e2d5-44a7-a291-26bbbb8a3b61&#x2F;Twitter.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statics.impresa.pt&#x2F;js&#x2F;impresa-bars&#x2F;active&#x2F;main.min.css" target="_blank" class="external" rel="noreferrer noopener">statics.impresa.pt&#x2F;js&#x2F;impresa-bars&#x2F;active&#x2F;main.min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statics.impresa.pt&#x2F;js&#x2F;outdated-browser-disclaimer&#x2F;active&#x2F;outdated-browser-disclaimer.js" target="_blank" class="external" rel="noreferrer noopener">statics.impresa.pt&#x2F;js&#x2F;outdated-browser-disclaimer&#x2F;active&#x2F;outdated-browser-disclaimer.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://statics.impresa.pt&#x2F;js&#x2F;analytics&#x2F;active&#x2F;analytics-bundle.min.js" target="_blank" class="external" rel="noreferrer noopener">statics.impresa.pt&#x2F;js&#x2F;analytics&#x2F;active&#x2F;analytics-bundle.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.impresa.pt&#x2F;sicnot&#x2F;2022-10-05-benfica-estadio-luz.jpg-a0ecdc2c-1&#x2F;1.91x1&#x2F;mw-1200" target="_blank" class="external" rel="noreferrer noopener">images.impresa.pt&#x2F;sicnot&#x2F;2022-10-05-benfica-estadio-luz.jpg-a0ecdc2c-1&#x2F;1.91x1&#x2F;mw-1200</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.impresa.pt&#x2F;sicnot&#x2F;2022-09-20-Rafa-Silva--2-.jpg-6a68632b&#x2F;1.91x1&#x2F;mw-1200" target="_blank" class="external" rel="noreferrer noopener">images.impresa.pt&#x2F;sicnot&#x2F;2022-09-20-Rafa-Silva--2-.jpg-6a68632b&#x2F;1.91x1&#x2F;mw-1200</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -138,6 +184,12 @@
         </li>
         <li class='truncate'>
             <a href="http://sicnoticias.pt" target="_blank" class="external">sicnoticias.pt</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://zerozero.pt" target="_blank" class="external">zerozero.pt</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.zerozero.pt" target="_blank" class="external">www.zerozero.pt</a>
         </li>
     </ul>
 </div>

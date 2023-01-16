@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "klarna.com",
-        history: [{"date":"main","prevalence":0.000332,"sites":49,"fingerprinting":1,"cookies":0.0000136},{"date":"selenium-crux","prevalence":0.000313,"sites":23,"fingerprinting":1,"cookies":0.0000136}]
+        history: [{"date":"main","prevalence":0.000332,"sites":49,"fingerprinting":1,"cookies":0.0000136},{"date":"selenium-results","prevalence":0.000209,"sites":31,"fingerprinting":1,"cookies":0.0000135}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;2330<small>/16361</small>
+                    <strong>Rank:</strong> &#35;2799<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.03&#37; (23 sites)
+                    <strong>Prevalence:</strong> 0.02&#37; (31 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
@@ -92,12 +92,16 @@
                     <strong>Resource Types:</strong> 
                     <span>Fetch</span>,
                     <span>Image</span>,
+                    <span>Script</span>,
+                    <span>XHR</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/klarna.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>skosm</span>, 
                     <span>cdn</span>, 
+                    <span>cdn.cs</span>, 
+                    <span>paywith</span>, 
                 </li>
             </ul>
         </div>
@@ -116,16 +120,56 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Date.prototype.getTime</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://skosm.klarna.com&#x2F;geolocation&#x2F;v1" target="_blank" class="external" rel="noreferrer noopener">skosm.klarna.com&#x2F;geolocation&#x2F;v1</a> (seen on 9 websites)</p>
+            <p><a href="http://skosm.klarna.com&#x2F;geolocation&#x2F;v1" target="_blank" class="external" rel="noreferrer noopener">skosm.klarna.com&#x2F;geolocation&#x2F;v1</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;logo&#x2F;de_de&#x2F;basic&#x2F;logo_black.png" target="_blank" class="external" rel="noreferrer noopener">cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;logo&#x2F;de_de&#x2F;basic&#x2F;logo_black.png</a> (seen on 5 websites)</p>
+            <p><a href="http://cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;sv_se&#x2F;checkout&#x2F;short-white.png" target="_blank" class="external" rel="noreferrer noopener">cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;sv_se&#x2F;checkout&#x2F;short-white.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://skosm.klarna.com&#x2F;app-blocks&#x2F;v1&#x2F;store" target="_blank" class="external" rel="noreferrer noopener">skosm.klarna.com&#x2F;app-blocks&#x2F;v1&#x2F;store</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;logo&#x2F;en_us&#x2F;basic&#x2F;logo_black.png" target="_blank" class="external" rel="noreferrer noopener">cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;logo&#x2F;en_us&#x2F;basic&#x2F;logo_black.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;fi_fi&#x2F;checkout&#x2F;short-white.png" target="_blank" class="external" rel="noreferrer noopener">cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;fi_fi&#x2F;checkout&#x2F;short-white.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;sv_se&#x2F;checkout&#x2F;long-blue.png" target="_blank" class="external" rel="noreferrer noopener">cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;sv_se&#x2F;checkout&#x2F;long-blue.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.cs.klarna.com&#x2F;lia&#x2F;lite&#x2F;lia-lite.js" target="_blank" class="external" rel="noreferrer noopener">cdn.cs.klarna.com&#x2F;lia&#x2F;lite&#x2F;lia-lite.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://paywith.klarna.com&#x2F;lite&#x2F;config" target="_blank" class="external" rel="noreferrer noopener">paywith.klarna.com&#x2F;lite&#x2F;config</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;en_gb&#x2F;checkout&#x2F;long-white.png" target="_blank" class="external" rel="noreferrer noopener">cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;en_gb&#x2F;checkout&#x2F;long-white.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;en_gb&#x2F;checkout&#x2F;short-white.png" target="_blank" class="external" rel="noreferrer noopener">cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;en_gb&#x2F;checkout&#x2F;short-white.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;sv_se&#x2F;checkout&#x2F;long-white.png" target="_blank" class="external" rel="noreferrer noopener">cdn.klarna.com&#x2F;1.0&#x2F;shared&#x2F;image&#x2F;generic&#x2F;badge&#x2F;sv_se&#x2F;checkout&#x2F;long-white.png</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -135,46 +179,67 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://bloomchic.com" target="_blank" class="external">bloomchic.com</a>
+            <a href="http://hoover.com" target="_blank" class="external">hoover.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://castore.com" target="_blank" class="external">castore.com</a>
+            <a href="http://www.thejournalshop.com" target="_blank" class="external">www.thejournalshop.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://eng.polene-paris.com" target="_blank" class="external">eng.polene-paris.com</a>
+            <a href="http://onewheel.com" target="_blank" class="external">onewheel.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.bluebananabrand.com" target="_blank" class="external">www.bluebananabrand.com</a>
+            <a href="http://www.siliconwives.com" target="_blank" class="external">www.siliconwives.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://scandinavianoutdoor.fi" target="_blank" class="external">scandinavianoutdoor.fi</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tokmanni.fi" target="_blank" class="external">www.tokmanni.fi</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://akademibokhandeln.se" target="_blank" class="external">akademibokhandeln.se</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.akademibokhandeln.se" target="_blank" class="external">www.akademibokhandeln.se</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.outnorth.se" target="_blank" class="external">www.outnorth.se</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fleshlight.com" target="_blank" class="external">fleshlight.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.fleshlight.com" target="_blank" class="external">www.fleshlight.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.lights4fun.co.uk" target="_blank" class="external">www.lights4fun.co.uk</a>
+            <a href="http://www.motherhood.com" target="_blank" class="external">www.motherhood.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.lisolastore.it" target="_blank" class="external">www.lisolastore.it</a>
+            <a href="http://www.snowpeak.com" target="_blank" class="external">www.snowpeak.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.uhs-hardware.com" target="_blank" class="external">www.uhs-hardware.com</a>
+            <a href="http://www.turtlebeach.com" target="_blank" class="external">www.turtlebeach.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.zuiki.it" target="_blank" class="external">www.zuiki.it</a>
+            <a href="http://granngarden.se" target="_blank" class="external">granngarden.se</a>
         </li>
         <li class='truncate'>
-            <a href="http://notino.de" target="_blank" class="external">notino.de</a>
+            <a href="http://www.granngarden.se" target="_blank" class="external">www.granngarden.se</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.notino.fi" target="_blank" class="external">www.notino.fi</a>
+            <a href="http://loccitane.com" target="_blank" class="external">loccitane.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.notino.nl" target="_blank" class="external">www.notino.nl</a>
+            <a href="http://www.loccitane.com" target="_blank" class="external">www.loccitane.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.notino.at" target="_blank" class="external">www.notino.at</a>
+            <a href="http://outnorth.com" target="_blank" class="external">outnorth.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.notino.se" target="_blank" class="external">www.notino.se</a>
+            <a href="http://www.outnorth.com" target="_blank" class="external">www.outnorth.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://outnorth.se" target="_blank" class="external">outnorth.se</a>
         </li>
     </ul>
 </div>

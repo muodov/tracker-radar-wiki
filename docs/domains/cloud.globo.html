@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "cloud.globo",
-        history: [{"date":"main","prevalence":0.000203,"sites":30,"fingerprinting":2,"cookies":0.000183},{"date":"selenium-crux","prevalence":0.000504,"sites":37,"fingerprinting":2,"cookies":0.000408}]
+        history: [{"date":"main","prevalence":0.000203,"sites":30,"fingerprinting":2,"cookies":0.000183},{"date":"selenium-results","prevalence":0.000203,"sites":30,"fingerprinting":2,"cookies":0.000189}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;1679<small>/16361</small>
+                    <strong>Rank:</strong> &#35;2845<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.05&#37; (37 sites)
+                    <strong>Prevalence:</strong> 0.02&#37; (30 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.04&#37;
+                    <strong>Cookies:</strong> 0.02&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -93,12 +93,11 @@
                     <span>Stylesheet</span>,
                     <span>Script</span>,
                     <span>Font</span>,
-                    <span>XHR</span>,
                     <span>Image</span>,
+                    <span>XHR</span>,
                     <span>Fetch</span>,
-                    <span>Preflight</span>,
-                    <span>Media</span>,
-                    <span>TextTrack</span>,
+                    <span>EventSource</span>,
+                    <span>Other</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/cloud.globo.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
@@ -107,9 +106,10 @@
                     <span>s.cache.aws</span>, 
                     <span>horizon-schemas.cache.aws</span>, 
                     <span>tealium.cache.aws</span>, 
-                    <span>s2.cache.aws</span>, 
-                    <span>falkor-cda.cache.aws</span>, 
                     <span>sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp</span>, 
+                    <span>s2.cache.aws</span>, 
+                    <span>pushstream.bs-push-hdg-prd.gcp</span>, 
+                    <span>s-video.cache.aws</span>, 
                 </li>
             </ul>
         </div>
@@ -133,9 +133,6 @@
     <h3 class='section-header'>CNAMEs</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://falkor-cda.bastian.globo.com" target="_blank" class="external">falkor-cda.bastian.globo.com</a> &#x2192; <a href="http://falkor-cda.cache.aws.cloud.globo" target="_blank" class="external">falkor-cda.cache.aws.cloud.globo</a>
-        </li>
-        <li class='truncate'>
             <a href="http://horizon-schemas.globo.com" target="_blank" class="external">horizon-schemas.globo.com</a> &#x2192; <a href="http://horizon-schemas.cache.aws.cloud.globo" target="_blank" class="external">horizon-schemas.cache.aws.cloud.globo</a>
         </li>
         <li class='truncate'>
@@ -148,10 +145,16 @@
             <a href="http://s.sde.globo.com" target="_blank" class="external">s.sde.globo.com</a> &#x2192; <a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo" target="_blank" class="external">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo</a>
         </li>
         <li class='truncate'>
+            <a href="http://s01.video.glbimg.com" target="_blank" class="external">s01.video.glbimg.com</a> &#x2192; <a href="http://s-video.cache.aws.cloud.globo" target="_blank" class="external">s-video.cache.aws.cloud.globo</a>
+        </li>
+        <li class='truncate'>
             <a href="http://s2.glbimg.com" target="_blank" class="external">s2.glbimg.com</a> &#x2192; <a href="http://s2.cache.aws.cloud.globo" target="_blank" class="external">s2.cache.aws.cloud.globo</a>
         </li>
         <li class='truncate'>
             <a href="http://s3.glbimg.com" target="_blank" class="external">s3.glbimg.com</a> &#x2192; <a href="http://s3.aws.cloud.globo" target="_blank" class="external">s3.aws.cloud.globo</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://stream.push.globo.com" target="_blank" class="external">stream.push.globo.com</a> &#x2192; <a href="http://pushstream.bs-push-hdg-prd.gcp.cloud.globo" target="_blank" class="external">pushstream.bs-push-hdg-prd.gcp.cloud.globo</a>
         </li>
         <li class='truncate'>
             <a href="http://tags.globo.com" target="_blank" class="external">tags.globo.com</a> &#x2192; <a href="http://tealium.cache.aws.cloud.globo" target="_blank" class="external">tealium.cache.aws.cloud.globo</a>
@@ -163,253 +166,250 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;bu&#x2F;rt&#x2F;js&#x2F;glb-pv-min.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;bu&#x2F;rt&#x2F;js&#x2F;glb-pv-min.js</a> (seen on 33 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;horizon-client&#x2F;horizon-common-hit.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;horizon-client&#x2F;horizon-common-hit.js</a> (seen on 17 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;horizon-client&#x2F;horizon-client-js.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;horizon-client&#x2F;horizon-client-js.min.js</a> (seen on 33 websites)</p>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;bu&#x2F;rt&#x2F;js&#x2F;glb-pv-min.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;bu&#x2F;rt&#x2F;js&#x2F;glb-pv-min.js</a> (seen on 17 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;tv4&#x2F;1.3.0&#x2F;tv4.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;tv4&#x2F;1.3.0&#x2F;tv4.min.js</a> (seen on 32 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;horizon-client&#x2F;horizon-client-js.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;horizon-client&#x2F;horizon-client-js.min.js</a> (seen on 17 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://horizon-schemas.cache.aws.cloud.globo&#x2F;schemas" target="_blank" class="external" rel="noreferrer noopener">horizon-schemas.cache.aws.cloud.globo&#x2F;schemas</a> (seen on 32 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;tv4&#x2F;1.3.0&#x2F;tv4.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;tv4&#x2F;1.3.0&#x2F;tv4.min.js</a> (seen on 17 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;horizon-client&#x2F;horizon-common-hit.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;horizon-client&#x2F;horizon-common-hit.js</a> (seen on 31 websites)</p>
+            <p><a href="http://horizon-schemas.cache.aws.cloud.globo&#x2F;schemas" target="_blank" class="external" rel="noreferrer noopener">horizon-schemas.cache.aws.cloud.globo&#x2F;schemas</a> (seen on 17 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;pc&#x2F;ca&#x2F;cadun.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;pc&#x2F;ca&#x2F;cadun.js</a> (seen on 29 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_89c6d9f49eec4e768bc6ccddcb31a34b&#x2F;lgpd-lib&#x2F;lgpd-lib.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_89c6d9f49eec4e768bc6ccddcb31a34b&#x2F;lgpd-lib&#x2F;lgpd-lib.min.css</a> (seen on 16 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;pc&#x2F;ca&#x2F;login.css" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;pc&#x2F;ca&#x2F;login.css</a> (seen on 29 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;dmp&#x2F;dmp.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;dmp&#x2F;dmp.min.js</a> (seen on 16 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_89c6d9f49eec4e768bc6ccddcb31a34b&#x2F;lgpd-lib&#x2F;lgpd-lib.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_89c6d9f49eec4e768bc6ccddcb31a34b&#x2F;lgpd-lib&#x2F;lgpd-lib.min.css</a> (seen on 28 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_89c6d9f49eec4e768bc6ccddcb31a34b&#x2F;lgpd-lib&#x2F;lgpd-lib.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_89c6d9f49eec4e768bc6ccddcb31a34b&#x2F;lgpd-lib&#x2F;lgpd-lib.min.js</a> (seen on 16 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;profiling&#x2F;profiling.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;profiling&#x2F;profiling.min.js</a> (seen on 28 websites)</p>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;pc&#x2F;ca&#x2F;cadun.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;pc&#x2F;ca&#x2F;cadun.js</a> (seen on 16 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_89c6d9f49eec4e768bc6ccddcb31a34b&#x2F;lgpd-lib&#x2F;lgpd-lib.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_89c6d9f49eec4e768bc6ccddcb31a34b&#x2F;lgpd-lib&#x2F;lgpd-lib.min.js</a> (seen on 28 websites)</p>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;pc&#x2F;ca&#x2F;login.css" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;pc&#x2F;ca&#x2F;login.css</a> (seen on 16 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;regular.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;regular.woff2</a> (seen on 26 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;profiling&#x2F;profiling.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;profiling&#x2F;profiling.min.js</a> (seen on 15 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;bold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;bold.woff2</a> (seen on 24 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;web&#x2F;settings&#x2F;stable&#x2F;settings.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;web&#x2F;settings&#x2F;stable&#x2F;settings.min.js</a> (seen on 15 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;web&#x2F;settings&#x2F;stable&#x2F;settings.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;web&#x2F;settings&#x2F;stable&#x2F;settings.min.js</a> (seen on 24 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;web&#x2F;player&#x2F;stable&#x2F;player.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;web&#x2F;player&#x2F;stable&#x2F;player.min.js</a> (seen on 15 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;web&#x2F;player&#x2F;stable&#x2F;player.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;web&#x2F;player&#x2F;stable&#x2F;player.min.js</a> (seen on 24 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;regular.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;regular.woff2</a> (seen on 14 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_ba8e460c944543468c3c80cb9675751f&#x2F;logos&#x2F;globoplay&#x2F;logo_globoplay.svg" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_ba8e460c944543468c3c80cb9675751f&#x2F;logos&#x2F;globoplay&#x2F;logo_globoplay.svg</a> (seen on 24 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;bold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;bold.woff2</a> (seen on 14 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;element-tracker&#x2F;1.2.1&#x2F;element-tracker.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;element-tracker&#x2F;1.2.1&#x2F;element-tracker.min.js</a> (seen on 22 websites)</p>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;api&#x2F;stable&#x2F;api.min.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;api&#x2F;stable&#x2F;api.min.js</a> (seen on 14 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;semibold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;semibold.woff2</a> (seen on 22 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_ba8e460c944543468c3c80cb9675751f&#x2F;logos&#x2F;globoplay&#x2F;logo_globoplay.svg" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_ba8e460c944543468c3c80cb9675751f&#x2F;logos&#x2F;globoplay&#x2F;logo_globoplay.svg</a> (seen on 14 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;light.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;light.woff2</a> (seen on 22 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;jquery&#x2F;1.8.3&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;jquery&#x2F;1.8.3&#x2F;jquery.min.js</a> (seen on 13 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;api&#x2F;stable&#x2F;api.min.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;api&#x2F;stable&#x2F;api.min.js</a> (seen on 22 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;semibold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;semibold.woff2</a> (seen on 13 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;jquery&#x2F;1.8.3&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;jquery&#x2F;1.8.3&#x2F;jquery.min.js</a> (seen on 21 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;light.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;light.woff2</a> (seen on 13 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;regular.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;regular.woff2</a> (seen on 21 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;3.4.0&#x2F;globo-ab.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;3.4.0&#x2F;globo-ab.min.js</a> (seen on 13 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b3eff1d540ba48dd8558daf4d094c778&#x2F;assets&#x2F;publicidade.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b3eff1d540ba48dd8558daf4d094c778&#x2F;assets&#x2F;publicidade.css</a> (seen on 17 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;globo-ab-v2.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;globo-ab-v2.min.js</a> (seen on 13 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;js&#x2F;barra-globocom.min.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;js&#x2F;barra-globocom.min.js</a> (seen on 17 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;3.0&#x2F;globo-ab.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;3.0&#x2F;globo-ab.min.js</a> (seen on 13 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;jquery&#x2F;3.3.1&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;jquery&#x2F;3.3.1&#x2F;jquery.min.js</a> (seen on 16 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;element-tracker&#x2F;1.2.1&#x2F;element-tracker.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;element-tracker&#x2F;1.2.1&#x2F;element-tracker.min.js</a> (seen on 12 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;fonts&#x2F;opensans-light-webfont.woff" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;fonts&#x2F;opensans-light-webfont.woff</a> (seen on 16 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;api&#x2F;stable&#x2F;web&#x2F;api.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;api&#x2F;stable&#x2F;web&#x2F;api.min.js</a> (seen on 12 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.5.7&#x2F;js&#x2F;gui.lightbox.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.5.7&#x2F;js&#x2F;gui.lightbox.min.js</a> (seen on 16 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;regular.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;regular.woff2</a> (seen on 11 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.5.7&#x2F;css&#x2F;gui.lightbox.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.5.7&#x2F;css&#x2F;gui.lightbox.min.css</a> (seen on 16 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;publicidade&#x2F;1.2.2&#x2F;publicidade.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;publicidade&#x2F;1.2.2&#x2F;publicidade.css</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_7b0a6df49895459fbafe49a96fcb5bbf&#x2F;tiny&#x2F;DetectAdblock&#x2F;adex.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_7b0a6df49895459fbafe49a96fcb5bbf&#x2F;tiny&#x2F;DetectAdblock&#x2F;adex.js</a> (seen on 15 websites)</p>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;fonts&#x2F;opensans-light-webfont.woff" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;fonts&#x2F;opensans-light-webfont.woff</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_05f06ca986b54d6e9c5df94927ccf7fc&#x2F;libs&#x2F;globoid-js&#x2F;prod&#x2F;callback.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_05f06ca986b54d6e9c5df94927ccf7fc&#x2F;libs&#x2F;globoid-js&#x2F;prod&#x2F;callback.min.js</a> (seen on 15 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b3eff1d540ba48dd8558daf4d094c778&#x2F;assets&#x2F;publicidade.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b3eff1d540ba48dd8558daf4d094c778&#x2F;assets&#x2F;publicidade.css</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;bold-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;bold-webfont.woff2</a> (seen on 10 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_05f06ca986b54d6e9c5df94927ccf7fc&#x2F;libs&#x2F;globoid-js&#x2F;prod&#x2F;callback.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_05f06ca986b54d6e9c5df94927ccf7fc&#x2F;libs&#x2F;globoid-js&#x2F;prod&#x2F;callback.min.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;bold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;bold.woff2</a> (seen on 9 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-regular-normal.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-regular-normal.woff2</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;dmp&#x2F;dmp.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;dmp&#x2F;dmp.min.js</a> (seen on 9 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-semibold-normal.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-semibold-normal.woff2</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;3.4.0&#x2F;globo-ab.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;3.4.0&#x2F;globo-ab.min.js</a> (seen on 9 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-bold-normal.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-bold-normal.woff2</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;globo-ab-v2.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;globo-ab-v2.min.js</a> (seen on 9 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;dsframework&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-20221261da70c21e683ec31a6d18006793f3df.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;dsframework&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-20221261da70c21e683ec31a6d18006793f3df.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;3.0&#x2F;globo-ab.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_da787d4f4e8d46e3ad76d5fa568fe786&#x2F;globo-ab&#x2F;3.0&#x2F;globo-ab.min.js</a> (seen on 9 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;clappr-plugins&#x2F;login-screen&#x2F;1.2.1-lightbox&#x2F;player-plugin-login-screen.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;clappr-plugins&#x2F;login-screen&#x2F;1.2.1-lightbox&#x2F;player-plugin-login-screen.min.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;api&#x2F;stable&#x2F;web&#x2F;api.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;api&#x2F;stable&#x2F;web&#x2F;api.min.js</a> (seen on 8 websites)</p>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;bu&#x2F;rt&#x2F;js&#x2F;glb-rt.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;bu&#x2F;rt&#x2F;js&#x2F;glb-rt.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;publicidade&#x2F;1.2.2&#x2F;publicidade.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;publicidade&#x2F;1.2.2&#x2F;publicidade.css</a> (seen on 7 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.7.3&#x2F;js&#x2F;gui.lightbox.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.7.3&#x2F;js&#x2F;gui.lightbox.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;dsframework&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-20221240613c351c4c1dfc377a6eeac2c102c8.rest.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;dsframework&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-20221240613c351c4c1dfc377a6eeac2c102c8.rest.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.7.3&#x2F;css&#x2F;gui.lightbox.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.7.3&#x2F;css&#x2F;gui.lightbox.min.css</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;client&#x2F;1.1.1&#x2F;fn-cdn-client.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;client&#x2F;1.1.1&#x2F;fn-cdn-client.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_ba8e460c944543468c3c80cb9675751f&#x2F;libs&#x2F;horizon&#x2F;1.10.0&#x2F;globocom-horizon.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_ba8e460c944543468c3c80cb9675751f&#x2F;libs&#x2F;horizon&#x2F;1.10.0&#x2F;globocom-horizon.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;globoid-js&#x2F;1.4.5&#x2F;globoid-js.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;globoid-js&#x2F;1.4.5&#x2F;globoid-js.min.js</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;config&#x2F;1.1.1&#x2F;fn-config.min.json" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;config&#x2F;1.1.1&#x2F;fn-config.min.json</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;liveramp&#x2F;ats&#x2F;prod&#x2F;lib-liveramp-ats-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;liveramp&#x2F;ats&#x2F;prod&#x2F;lib-liveramp-ats-latest.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-regular-normal.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-regular-normal.woff2</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;common&#x2F;1.1.0&#x2F;fn-common.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;common&#x2F;1.1.0&#x2F;fn-common.min.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-semibold-normal.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-semibold-normal.woff2</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;common&#x2F;1.1.0&#x2F;fn-common-spritesheet-icons.min.svg" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;common&#x2F;1.1.0&#x2F;fn-common-spritesheet-icons.min.svg</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-bold-normal.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-bold-normal.woff2</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;search&#x2F;1.0.1&#x2F;fn-search-desktop.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;search&#x2F;1.0.1&#x2F;fn-search-desktop.min.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;dsframework&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-20221261da70c21e683ec31a6d18006793f3df.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;dsframework&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-20221261da70c21e683ec31a6d18006793f3df.js</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;search&#x2F;1.0.1&#x2F;fn-search-desktop.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;search&#x2F;1.0.1&#x2F;fn-search-desktop.min.css</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;clappr-plugins&#x2F;login-screen&#x2F;1.2.1-lightbox&#x2F;player-plugin-login-screen.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;clappr-plugins&#x2F;login-screen&#x2F;1.2.1-lightbox&#x2F;player-plugin-login-screen.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;menu&#x2F;1.0.0&#x2F;fn-menu.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;menu&#x2F;1.0.0&#x2F;fn-menu.min.css</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;bu&#x2F;rt&#x2F;js&#x2F;glb-rt.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;bu&#x2F;rt&#x2F;js&#x2F;glb-rt.js</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;menu&#x2F;1.0.0&#x2F;fn-menu.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;menu&#x2F;1.0.0&#x2F;fn-menu.min.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.7.3&#x2F;js&#x2F;gui.lightbox.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.7.3&#x2F;js&#x2F;gui.lightbox.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;header&#x2F;1.0.1&#x2F;fn-header-desktop.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;header&#x2F;1.0.1&#x2F;fn-header-desktop.min.js</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;dsframework&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-20221240613c351c4c1dfc377a6eeac2c102c8.rest.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;dsframework&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-20221240613c351c4c1dfc377a6eeac2c102c8.rest.css</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;header&#x2F;1.0.1&#x2F;fn-header-desktop.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;header&#x2F;1.0.1&#x2F;fn-header-desktop.min.css</a> (seen on 7 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.7.3&#x2F;css&#x2F;gui.lightbox.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.7.3&#x2F;css&#x2F;gui.lightbox.min.css</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;jquery&#x2F;3.3.1&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;jquery&#x2F;3.3.1&#x2F;jquery.min.js</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;client&#x2F;1.1.1&#x2F;fn-cdn-client.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;client&#x2F;1.1.1&#x2F;fn-cdn-client.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_7b0a6df49895459fbafe49a96fcb5bbf&#x2F;tiny&#x2F;DetectAdblock&#x2F;adex.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_7b0a6df49895459fbafe49a96fcb5bbf&#x2F;tiny&#x2F;DetectAdblock&#x2F;adex.js</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_ba8e460c944543468c3c80cb9675751f&#x2F;libs&#x2F;horizon&#x2F;1.10.0&#x2F;globocom-horizon.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_ba8e460c944543468c3c80cb9675751f&#x2F;libs&#x2F;horizon&#x2F;1.10.0&#x2F;globocom-horizon.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;js&#x2F;barra-globocom.min.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;js&#x2F;barra-globocom.min.js</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;globoid-js&#x2F;1.4.5&#x2F;globoid-js.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;globoid-js&#x2F;1.4.5&#x2F;globoid-js.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.5.7&#x2F;js&#x2F;gui.lightbox.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.5.7&#x2F;js&#x2F;gui.lightbox.min.js</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;config&#x2F;1.1.1&#x2F;fn-config.min.json" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;config&#x2F;1.1.1&#x2F;fn-config.min.json</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.5.7&#x2F;css&#x2F;gui.lightbox.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;gui-lightbox&#x2F;1.5.7&#x2F;css&#x2F;gui.lightbox.min.css</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;common&#x2F;1.1.0&#x2F;fn-common.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;common&#x2F;1.1.0&#x2F;fn-common.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;bold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;bold.woff2</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;common&#x2F;1.1.0&#x2F;fn-common-spritesheet-icons.min.svg" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;common&#x2F;1.1.0&#x2F;fn-common-spritesheet-icons.min.svg</a> (seen on 6 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;backstage&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-202212114d16b522babc44d29559e45c67bc7a.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;backstage&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-202212114d16b522babc44d29559e45c67bc7a.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;search&#x2F;1.0.1&#x2F;fn-search-desktop.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;search&#x2F;1.0.1&#x2F;fn-search-desktop.min.js</a> (seen on 6 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;search&#x2F;1.0.1&#x2F;fn-search-desktop.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;search&#x2F;1.0.1&#x2F;fn-search-desktop.min.css</a> (seen on 6 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;menu&#x2F;1.0.0&#x2F;fn-menu.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;menu&#x2F;1.0.0&#x2F;fn-menu.min.css</a> (seen on 6 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;menu&#x2F;1.0.0&#x2F;fn-menu.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;menu&#x2F;1.0.0&#x2F;fn-menu.min.js</a> (seen on 6 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;header&#x2F;1.0.1&#x2F;fn-header-desktop.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;header&#x2F;1.0.1&#x2F;fn-header-desktop.min.js</a> (seen on 6 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;header&#x2F;1.0.1&#x2F;fn-header-desktop.min.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7d75b8ab8c8447292333ff06480419a&#x2F;nav-cdn&#x2F;header&#x2F;1.0.1&#x2F;fn-header-desktop.min.css</a> (seen on 6 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;bold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;bold.woff2</a> (seen on 5 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;semibold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;semibold.woff2</a> (seen on 5 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;regular.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;regular.woff2</a> (seen on 5 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;light.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;opensans&#x2F;light.woff2</a> (seen on 5 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;regular.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;regular.woff2</a> (seen on 5 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;bold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;bold.woff2</a> (seen on 5 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;light.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;light.woff2</a> (seen on 5 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;fonts&#x2F;proximanova-semibold-limited-webfont.woff" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;fonts&#x2F;proximanova-semibold-limited-webfont.woff</a> (seen on 5 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;backstage&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-20221253106938e97a07e2056f5ffed36520e9.rest.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7&#x2F;backstage&#x2F;build&#x2F;latest&#x2F;client&#x2F;bastian-20221253106938e97a07e2056f5ffed36520e9.rest.css</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;clappr-plugins&#x2F;video-recommendation&#x2F;v1.7.10&#x2F;video-recommendation-plugin.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;clappr-plugins&#x2F;video-recommendation&#x2F;v1.7.10&#x2F;video-recommendation-plugin.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;css&#x2F;barra-globocom.min.css" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;css&#x2F;barra-globocom.min.css</a> (seen on 4 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;clappr-plugins&#x2F;video-recommendation&#x2F;v2.2.0&#x2F;video-recommendation-plugin.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;clappr-plugins&#x2F;video-recommendation&#x2F;v2.2.0&#x2F;video-recommendation-plugin.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;5808c1c4f2ed9c57211e7e1c9ee9a293.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;5808c1c4f2ed9c57211e7e1c9ee9a293.js</a> (seen on 3 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_05f06ca986b54d6e9c5df94927ccf7fc&#x2F;libs&#x2F;globoid-js&#x2F;1.4.1&#x2F;globoid-js.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_05f06ca986b54d6e9c5df94927ccf7fc&#x2F;libs&#x2F;globoid-js&#x2F;1.4.1&#x2F;globoid-js.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;ge&#x2F;prod&#x2F;utag.js" target="_blank" class="external" rel="noreferrer noopener">tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;ge&#x2F;prod&#x2F;utag.js</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;bold-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;proximanova&#x2F;bold-webfont.woff2</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;es&#x2F;sde&#x2F;f&#x2F;organizacoes&#x2F;escudo_default_65x65.png" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;es&#x2F;sde&#x2F;f&#x2F;organizacoes&#x2F;escudo_default_65x65.png</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-light-normal.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b922f1376f6c452e9bb337cc7d996a6e&#x2F;codex&#x2F;foundation&#x2F;typefaces&#x2F;opensans-light-normal.woff2</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;ge&#x2F;3f583b9b-2cb2-4455-bfca-21aed5ec5e8d&#x2F;c26c3f84-b976-4699-9272-bb0b3ea02877.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;ge&#x2F;3f583b9b-2cb2-4455-bfca-21aed5ec5e8d&#x2F;c26c3f84-b976-4699-9272-bb0b3ea02877.js</a> (seen on 2 websites)</p>
+            <p><a href="http://tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;ge&#x2F;prod&#x2F;utag.js" target="_blank" class="external" rel="noreferrer noopener">tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;ge&#x2F;prod&#x2F;utag.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;ge&#x2F;3f583b9b-2cb2-4455-bfca-21aed5ec5e8d&#x2F;c26c3f84-b976-4699-9272-bb0b3ea02877.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;ge&#x2F;3f583b9b-2cb2-4455-bfca-21aed5ec5e8d&#x2F;c26c3f84-b976-4699-9272-bb0b3ea02877.css</a> (seen on 2 websites)</p>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;es&#x2F;sde&#x2F;f&#x2F;organizacoes&#x2F;escudo_default_65x65.png" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;es&#x2F;sde&#x2F;f&#x2F;organizacoes&#x2F;escudo_default_65x65.png</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;clappr-plugins&#x2F;video-recommendation&#x2F;v2.2.0&#x2F;video-recommendation-plugin.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;clappr-plugins&#x2F;video-recommendation&#x2F;v2.2.0&#x2F;video-recommendation-plugin.js</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;ge&#x2F;3f583b9b-2cb2-4455-bfca-21aed5ec5e8d&#x2F;c26c3f84-b976-4699-9272-bb0b3ea02877.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;ge&#x2F;3f583b9b-2cb2-4455-bfca-21aed5ec5e8d&#x2F;c26c3f84-b976-4699-9272-bb0b3ea02877.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_0941ae8e3ba749dabc67f311ab4545a5&#x2F;cdn&#x2F;growthjs&#x2F;0.12.0&#x2F;growth.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_0941ae8e3ba749dabc67f311ab4545a5&#x2F;cdn&#x2F;growthjs&#x2F;0.12.0&#x2F;growth.min.js</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;ge&#x2F;3f583b9b-2cb2-4455-bfca-21aed5ec5e8d&#x2F;c26c3f84-b976-4699-9272-bb0b3ea02877.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;ge&#x2F;3f583b9b-2cb2-4455-bfca-21aed5ec5e8d&#x2F;c26c3f84-b976-4699-9272-bb0b3ea02877.css</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;ge&#x2F;prod&#x2F;lib-pub-core-ge-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;ge&#x2F;prod&#x2F;lib-pub-core-ge-latest.js</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_0941ae8e3ba749dabc67f311ab4545a5&#x2F;cdn&#x2F;growthjs&#x2F;0.12.0&#x2F;growth.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_0941ae8e3ba749dabc67f311ab4545a5&#x2F;cdn&#x2F;growthjs&#x2F;0.12.0&#x2F;growth.min.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;ge&#x2F;prod&#x2F;lib-pub-ext-tags-ge-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;ge&#x2F;prod&#x2F;lib-pub-ext-tags-ge-latest.js</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;0e39c0fc0b7b0cf94b781332c8c37287.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;0e39c0fc0b7b0cf94b781332c8c37287.css</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_378ee63fe83141e69caddd838034e850&#x2F;static&#x2F;components&#x2F;escudo-header.png" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_378ee63fe83141e69caddd838034e850&#x2F;static&#x2F;components&#x2F;escudo-header.png</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;ge&#x2F;prod&#x2F;lib-pub-core-ge-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;ge&#x2F;prod&#x2F;lib-pub-core-ge-latest.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;globosat&#x2F;prod&#x2F;utag.js" target="_blank" class="external" rel="noreferrer noopener">tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;globosat&#x2F;prod&#x2F;utag.js</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;ge&#x2F;prod&#x2F;lib-pub-ext-tags-ge-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;ge&#x2F;prod&#x2F;lib-pub-ext-tags-ge-latest.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;publicidade&#x2F;1.1.0&#x2F;publicidade.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;publicidade&#x2F;1.1.0&#x2F;publicidade.css</a> (seen on 2 websites)</p>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;sao-paulo.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;sao-paulo.svg</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;gl&#x2F;cd&#x2F;libs&#x2F;publicidade&#x2F;0.1.1&#x2F;publicidade.css" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;gl&#x2F;cd&#x2F;libs&#x2F;publicidade&#x2F;0.1.1&#x2F;publicidade.css</a> (seen on 2 websites)</p>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;01&#x2F;08&#x2F;Ituano_Futebol_Clube.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;01&#x2F;08&#x2F;Ituano_Futebol_Clube.svg</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_05f06ca986b54d6e9c5df94927ccf7fc&#x2F;libs&#x2F;globoid-js&#x2F;1.4.1&#x2F;globoid-js.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_05f06ca986b54d6e9c5df94927ccf7fc&#x2F;libs&#x2F;globoid-js&#x2F;1.4.1&#x2F;globoid-js.min.js</a> (seen on 2 websites)</p>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;07&#x2F;06&#x2F;Palmeiras.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;07&#x2F;06&#x2F;Palmeiras.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_378ee63fe83141e69caddd838034e850&#x2F;static&#x2F;logos&#x2F;premiere_green.svg" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_378ee63fe83141e69caddd838034e850&#x2F;static&#x2F;logos&#x2F;premiere_green.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_378ee63fe83141e69caddd838034e850&#x2F;static&#x2F;components&#x2F;escudo-header.png" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_378ee63fe83141e69caddd838034e850&#x2F;static&#x2F;components&#x2F;escudo-header.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;plugins&#x2F;pausead&#x2F;prod&#x2F;pause-ads-plugin-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;plugins&#x2F;pausead&#x2F;prod&#x2F;pause-ads-plugin-latest.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;css&#x2F;barra-globocom.min.css" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;gl&#x2F;ba&#x2F;css&#x2F;barra-globocom.min.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;mobiliario_revistas&#x2F;botao-at_89x40_br-e-preto.png" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;mobiliario_revistas&#x2F;botao-at_89x40_br-e-preto.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;mobiliario_revistas&#x2F;00_atual&#x2F;Teste_A-B&#x2F;ae-footer-desk.gif" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;mobiliario_revistas&#x2F;00_atual&#x2F;Teste_A-B&#x2F;ae-footer-desk.gif</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_0ae9f161c1ff459593599b7ffa1a1292&#x2F;images&#x2F;escenic&#x2F;2020&#x2F;10&#x2F;1&#x2F;10&#x2F;1601559926114.png" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_0ae9f161c1ff459593599b7ffa1a1292&#x2F;images&#x2F;escenic&#x2F;2020&#x2F;10&#x2F;1&#x2F;10&#x2F;1601559926114.png</a> (seen on 2 websites)</p>
@@ -424,37 +424,10 @@
             <p><a href="http://tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;g1&#x2F;prod&#x2F;utag.js" target="_blank" class="external" rel="noreferrer noopener">tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;g1&#x2F;prod&#x2F;utag.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;s93-05OTuU-fHSncMvI4It0PPcw&#x3D;&#x2F;0x434:4954x3221&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;A&#x2F;A&#x2F;pB6AzrT5CkGsSqpYnBBQ&#x2F;2023-01-06t145354z-1447985122-rc21ly9ptpr6-rtrmadp-3-brazil-politics.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;s93-05OTuU-fHSncMvI4It0PPcw&#x3D;&#x2F;0x434:4954x3221&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;A&#x2F;A&#x2F;pB6AzrT5CkGsSqpYnBBQ&#x2F;2023-01-06t145354z-1447985122-rc21ly9ptpr6-rtrmadp-3-brazil-politics.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;arH-I9VBxu9_7CvSlW491ROL0kY&#x3D;&#x2F;337x45:944x387&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;http:&#x2F;&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;03&#x2F;04&#x2F;11260403" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;arH-I9VBxu9_7CvSlW491ROL0kY&#x3D;&#x2F;337x45:944x387&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;http:&#x2F;&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;03&#x2F;04&#x2F;11260403</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;ZFtd4cdBHFAse4dLcbISJLP1Lns&#x3D;&#x2F;0x0:562x316&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;B&#x2F;r&#x2F;9AVihESqWQJD2W3qXNSQ&#x2F;antes-depois-palacio.gif" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;ZFtd4cdBHFAse4dLcbISJLP1Lns&#x3D;&#x2F;0x0:562x316&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;B&#x2F;r&#x2F;9AVihESqWQJD2W3qXNSQ&#x2F;antes-depois-palacio.gif</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;i5l4NyplX87BpPRpBu9IlCoMsJk&#x3D;&#x2F;0x188:3000x1876&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;W&#x2F;9&#x2F;IFhHTTQxGq0PSjamkkuA&#x2F;posse-lula-dsc01372-fabio-tito.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;i5l4NyplX87BpPRpBu9IlCoMsJk&#x3D;&#x2F;0x188:3000x1876&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;W&#x2F;9&#x2F;IFhHTTQxGq0PSjamkkuA&#x2F;posse-lula-dsc01372-fabio-tito.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;4ncyahumERMA6SixpSYscESzmzg&#x3D;&#x2F;0x0:760x428&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;M&#x2F;p&#x2F;oYIakSTRSMiM40LIQzNQ&#x2F;paozinho-lula.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;4ncyahumERMA6SixpSYscESzmzg&#x3D;&#x2F;0x0:760x428&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;M&#x2F;p&#x2F;oYIakSTRSMiM40LIQzNQ&#x2F;paozinho-lula.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;CRtEhyXVHjY2f5x0Blkqq4Aabgo&#x3D;&#x2F;0x0:800x450&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;x&#x2F;L&#x2F;akQuDtRAmf1ux4J5EvNg&#x2F;foto-do-abre-china-e-brasil.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;CRtEhyXVHjY2f5x0Blkqq4Aabgo&#x3D;&#x2F;0x0:800x450&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;x&#x2F;L&#x2F;akQuDtRAmf1ux4J5EvNg&#x2F;foto-do-abre-china-e-brasil.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;oGJ5nw-JD0V4RxmBeBC5n1PSiHo&#x3D;&#x2F;0x321:5500x3415&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;H&#x2F;a&#x2F;gUNE2WSYOH7QWITymWHQ&#x2F;2022-12-13t043746z-1430461373-rc2o4y9w6va8-rtrmadp-3-brazil-politics-bolsonaro.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;oGJ5nw-JD0V4RxmBeBC5n1PSiHo&#x3D;&#x2F;0x321:5500x3415&#x2F;810x456&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;H&#x2F;a&#x2F;gUNE2WSYOH7QWITymWHQ&#x2F;2022-12-13t043746z-1430461373-rc2o4y9w6va8-rtrmadp-3-brazil-politics-bolsonaro.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
             <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;g1&#x2F;f9ae38ca-0d24-44f2-8a47-af3cdc70397f&#x2F;e67613bd-b114-4e6f-a0ab-a5c7878ac16c.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;g1&#x2F;f9ae38ca-0d24-44f2-8a47-af3cdc70397f&#x2F;e67613bd-b114-4e6f-a0ab-a5c7878ac16c.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;g1&#x2F;f9ae38ca-0d24-44f2-8a47-af3cdc70397f&#x2F;e67613bd-b114-4e6f-a0ab-a5c7878ac16c.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;g1&#x2F;f9ae38ca-0d24-44f2-8a47-af3cdc70397f&#x2F;e67613bd-b114-4e6f-a0ab-a5c7878ac16c.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;3319ee7869f385a64f66ed1e785d39df.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;3319ee7869f385a64f66ed1e785d39df.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;4c25bb19fca6cc4ce122872325570c10.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;4c25bb19fca6cc4ce122872325570c10.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;g1&#x2F;prod&#x2F;lib-pub-core-g1-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;g1&#x2F;prod&#x2F;lib-pub-core-g1-latest.js</a> (seen on 2 websites)</p>
@@ -463,106 +436,262 @@
             <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;g1&#x2F;prod&#x2F;lib-pub-ext-tags-g1-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;g1&#x2F;prod&#x2F;lib-pub-ext-tags-g1-latest.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://falkor-cda.cache.aws.cloud.globo&#x2F;tenants&#x2F;g1&#x2F;instances&#x2F;4af56893-1f9a-4504-9531-74458e481f91&#x2F;posts&#x2F;page&#x2F;4" target="_blank" class="external" rel="noreferrer noopener">falkor-cda.cache.aws.cloud.globo&#x2F;tenants&#x2F;g1&#x2F;instances&#x2F;4af56893-1f9a-4504-9531-74458e481f91&#x2F;posts&#x2F;page&#x2F;4</a> (seen on 2 websites)</p>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2014&#x2F;04&#x2F;14&#x2F;sao_paulo_30x30.png" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2014&#x2F;04&#x2F;14&#x2F;sao_paulo_30x30.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://falkor-cda.cache.aws.cloud.globo&#x2F;tenants&#x2F;g1&#x2F;instances&#x2F;4af56893-1f9a-4504-9531-74458e481f91&#x2F;posts&#x2F;page&#x2F;4" target="_blank" class="external" rel="noreferrer noopener">falkor-cda.cache.aws.cloud.globo&#x2F;tenants&#x2F;g1&#x2F;instances&#x2F;4af56893-1f9a-4504-9531-74458e481f91&#x2F;posts&#x2F;page&#x2F;4</a> (seen on 2 websites)</p>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;02&#x2F;28&#x2F;escudo30.png" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;02&#x2F;28&#x2F;escudo30.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;p9QLnwjWh_gbj-s-6o_0_bVYx74&#x3D;&#x2F;337x45:944x387&#x2F;540x304&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;http:&#x2F;&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;03&#x2F;04&#x2F;11260403" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;p9QLnwjWh_gbj-s-6o_0_bVYx74&#x3D;&#x2F;337x45:944x387&#x2F;540x304&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;http:&#x2F;&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;03&#x2F;04&#x2F;11260403</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;bfc08e6ad47b5ef762db2f69611cfb8d.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;bfc08e6ad47b5ef762db2f69611cfb8d.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_180b9dd048d9434295d27c4b6dadc248&#x2F;media_kit&#x2F;program&#x2F;trademark&#x2F;7b9f&#x2F;7b9f1630b40b315d.svg" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_180b9dd048d9434295d27c4b6dadc248&#x2F;media_kit&#x2F;program&#x2F;trademark&#x2F;7b9f&#x2F;7b9f1630b40b315d.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;enMen9AZu6htEWxnpiUbvFNbzCI&#x3D;&#x2F;94x94&#x2F;top&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;02&#x2F;99&#x2F;11259902" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;enMen9AZu6htEWxnpiUbvFNbzCI&#x3D;&#x2F;94x94&#x2F;top&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;02&#x2F;99&#x2F;11259902</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;glb-local&#x2F;stable&#x2F;glb.local.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;glb-local&#x2F;stable&#x2F;glb.local.min.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;D7-0UWNjDQ1oCfDfNZP4NERgC4U&#x3D;&#x2F;711x67:1057x413&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;d&#x2F;G&#x2F;i58be8RvCFvbBByTApmg&#x2F;1673006654286845.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;D7-0UWNjDQ1oCfDfNZP4NERgC4U&#x3D;&#x2F;711x67:1057x413&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;d&#x2F;G&#x2F;i58be8RvCFvbBByTApmg&#x2F;1673006654286845.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;AKKlkWVmukv95_-EKhKpeFJeYnU&#x3D;&#x2F;89x41:294x246&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;m&#x2F;I&#x2F;qBM2BKTNa8HUAlmBV3dA&#x2F;surfista.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;AKKlkWVmukv95_-EKhKpeFJeYnU&#x3D;&#x2F;89x41:294x246&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;m&#x2F;I&#x2F;qBM2BKTNa8HUAlmBV3dA&#x2F;surfista.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;R4lWpp7pcwvQecaCF74h8Bs8RCo&#x3D;&#x2F;474x0:1554x1080&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;w&#x2F;g&#x2F;G6QlmyRku0bQYEDsJ8eg&#x2F;aline-faixa.jpeg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;R4lWpp7pcwvQecaCF74h8Bs8RCo&#x3D;&#x2F;474x0:1554x1080&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;w&#x2F;g&#x2F;G6QlmyRku0bQYEDsJ8eg&#x2F;aline-faixa.jpeg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;highcharts&#x2F;4.2.7&#x2F;highcharts.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;libs&#x2F;highcharts&#x2F;4.2.7&#x2F;highcharts.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;eGX6rLHgh5LEeD11WW76cSQkjjM&#x3D;&#x2F;0x3:226x229&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;l&#x2F;P&#x2F;mJLQzQSuOv0mlKwpD3ZQ&#x2F;mauro.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;eGX6rLHgh5LEeD11WW76cSQkjjM&#x3D;&#x2F;0x3:226x229&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;l&#x2F;P&#x2F;mJLQzQSuOv0mlKwpD3ZQ&#x2F;mauro.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;wkoXJtl2dSgPF2ZYXywAU79cDCM&#x3D;&#x2F;241x0:849x608&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;b&#x2F;w&#x2F;CcKXnLTYyeWYATP139og&#x2F;natuza-blog-2.png" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;wkoXJtl2dSgPF2ZYXywAU79cDCM&#x3D;&#x2F;241x0:849x608&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;b&#x2F;w&#x2F;CcKXnLTYyeWYATP139og&#x2F;natuza-blog-2.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;LxHsr4b_BlS00zvs-01_Z2TEYyI&#x3D;&#x2F;132x0:498x366&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2019&#x2F;J&#x2F;r&#x2F;6kt9cIRYABaOY7mrT1fQ&#x2F;valdocruz-home.png" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;LxHsr4b_BlS00zvs-01_Z2TEYyI&#x3D;&#x2F;132x0:498x366&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2019&#x2F;J&#x2F;r&#x2F;6kt9cIRYABaOY7mrT1fQ&#x2F;valdocruz-home.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;9IuwS52A6UKEUfSSTulIAXE1tbU&#x3D;&#x2F;135x0:771x636&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;h&#x2F;V&#x2F;NfIrR4QoSmt1lEdMobAA&#x2F;microsoftteams-image-15-.png" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;9IuwS52A6UKEUfSSTulIAXE1tbU&#x3D;&#x2F;135x0:771x636&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;h&#x2F;V&#x2F;NfIrR4QoSmt1lEdMobAA&#x2F;microsoftteams-image-15-.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;QdYz9ijIFq3MeXjmVhkeG20Am0U&#x3D;&#x2F;660x0:2349x1689&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2019&#x2F;R&#x2F;J&#x2F;MuJip4RGuCfxAVFV3yag&#x2F;podcasts-3000x1688-sem-logo-15.png" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;QdYz9ijIFq3MeXjmVhkeG20Am0U&#x3D;&#x2F;660x0:2349x1689&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2019&#x2F;R&#x2F;J&#x2F;MuJip4RGuCfxAVFV3yag&#x2F;podcasts-3000x1688-sem-logo-15.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;Oo46iHEB3wX8Emn0fA6MvceK9Hc&#x3D;&#x2F;620x0:1700x1080&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;G&#x2F;8&#x2F;VC1l0XRJKhZKfJ2LlFkQ&#x2F;milho-verde-foto-miguel-folco-g1.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;Oo46iHEB3wX8Emn0fA6MvceK9Hc&#x3D;&#x2F;620x0:1700x1080&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;G&#x2F;8&#x2F;VC1l0XRJKhZKfJ2LlFkQ&#x2F;milho-verde-foto-miguel-folco-g1.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;2TapUIehEzi-nkty9CDuAUROGLE&#x3D;&#x2F;664x0:1364x700&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;5&#x2F;X&#x2F;R6eEXeTASND0QxeFmMXg&#x2F;62966406-1006.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;2TapUIehEzi-nkty9CDuAUROGLE&#x3D;&#x2F;664x0:1364x700&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;5&#x2F;X&#x2F;R6eEXeTASND0QxeFmMXg&#x2F;62966406-1006.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;230S15gLBiWnfcGH2QO17u0y980&#x3D;&#x2F;419x0:1119x700&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;e&#x2F;h&#x2F;bPdncBTtCKMKZPOPGNFg&#x2F;pix-0411202555.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;230S15gLBiWnfcGH2QO17u0y980&#x3D;&#x2F;419x0:1119x700&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;e&#x2F;h&#x2F;bPdncBTtCKMKZPOPGNFg&#x2F;pix-0411202555.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;eKBWyz8j_Fz1kc_dhHFPHBlBTJw&#x3D;&#x2F;258x0:940x682&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;s&#x2F;q&#x2F;OBcH5ETkmoJ7Q2AlxyWg&#x2F;ezgif.com-gif-maker-20-.gif" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;eKBWyz8j_Fz1kc_dhHFPHBlBTJw&#x3D;&#x2F;258x0:940x682&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;s&#x2F;q&#x2F;OBcH5ETkmoJ7Q2AlxyWg&#x2F;ezgif.com-gif-maker-20-.gif</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;kJr7Tc78cvkd2NcD1U2RYTWWFzc&#x3D;&#x2F;883x0:4326x3443&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;p&#x2F;C&#x2F;hwH8W8RKABRfPJfqIm6g&#x2F;age20230101184.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;kJr7Tc78cvkd2NcD1U2RYTWWFzc&#x3D;&#x2F;883x0:4326x3443&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;p&#x2F;C&#x2F;hwH8W8RKABRfPJfqIm6g&#x2F;age20230101184.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;sP5svCRyt19XpwP-U-x90g7NHXE&#x3D;&#x2F;279x0:961x682&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;L&#x2F;g&#x2F;gATI7vRtiSeMRJVLq9Aw&#x2F;000-336d68e.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;sP5svCRyt19XpwP-U-x90g7NHXE&#x3D;&#x2F;279x0:961x682&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;L&#x2F;g&#x2F;gATI7vRtiSeMRJVLq9Aw&#x2F;000-336d68e.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;K4ZNvPqdAJeKuCmGjoCClniXNnc&#x3D;&#x2F;399x0:1479x1080&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;z&#x2F;t&#x2F;C8EsgRSjGnftztUElQAQ&#x2F;2022-black-fridayselo-home-1-.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;K4ZNvPqdAJeKuCmGjoCClniXNnc&#x3D;&#x2F;399x0:1479x1080&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;z&#x2F;t&#x2F;C8EsgRSjGnftztUElQAQ&#x2F;2022-black-fridayselo-home-1-.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;OfKmFNroTsdx1sbiCjFD2aCWixw&#x3D;&#x2F;366x0:1446x1080&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;E&#x2F;B&#x2F;JrtxnZRyOVbX2QIYxaPg&#x2F;img-materia-1-.png" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;OfKmFNroTsdx1sbiCjFD2aCWixw&#x3D;&#x2F;366x0:1446x1080&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;E&#x2F;B&#x2F;JrtxnZRyOVbX2QIYxaPg&#x2F;img-materia-1-.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;zIy_Mh0SJ7OpH-Enojlgt4WAlbU&#x3D;&#x2F;0x0:1080x1080&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;p&#x2F;I&#x2F;3uCGfFTh6xBRsFZ7106Q&#x2F;img-materiacds.png" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;zIy_Mh0SJ7OpH-Enojlgt4WAlbU&#x3D;&#x2F;0x0:1080x1080&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;p&#x2F;I&#x2F;3uCGfFTh6xBRsFZ7106Q&#x2F;img-materiacds.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;028vjQqGAqphhQJmt9mSkYGyT_g&#x3D;&#x2F;350x0:637x287&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;b&#x2F;R&#x2F;BA2mR9SAqwQ4jO2q7ZHw&#x2F;mortes2023.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;028vjQqGAqphhQJmt9mSkYGyT_g&#x3D;&#x2F;350x0:637x287&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;b&#x2F;R&#x2F;BA2mR9SAqwQ4jO2q7ZHw&#x2F;mortes2023.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;6je8e4YPJsqN6bEqnv8fSaiLTWM&#x3D;&#x2F;117x0:435x318&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;6&#x2F;I&#x2F;Ed9uTtSpKh3l0ROAbEjA&#x2F;3112-selo-frases-do-ano.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;6je8e4YPJsqN6bEqnv8fSaiLTWM&#x3D;&#x2F;117x0:435x318&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;6&#x2F;I&#x2F;Ed9uTtSpKh3l0ROAbEjA&#x2F;3112-selo-frases-do-ano.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;H1bRpq8U9yjhFmhSeFqepMSTF0I&#x3D;&#x2F;767x0:3323x2556&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;D&#x2F;y&#x2F;PhyyZVSx6TKW8ERDPAbg&#x2F;000-32rq3zn.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;H1bRpq8U9yjhFmhSeFqepMSTF0I&#x3D;&#x2F;767x0:3323x2556&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;D&#x2F;y&#x2F;PhyyZVSx6TKW8ERDPAbg&#x2F;000-32rq3zn.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;g1&#x2F;f9ae38ca-0d24-44f2-8a47-af3cdc70397f&#x2F;img&#x2F;post-economia&#x2F;valor.svg" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;g1&#x2F;f9ae38ca-0d24-44f2-8a47-af3cdc70397f&#x2F;img&#x2F;post-economia&#x2F;valor.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;o4euhPhewqulHBImdrNgKrTq_Qg&#x3D;&#x2F;94x94&#x2F;top&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;86&#x2F;64&#x2F;11256486" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;o4euhPhewqulHBImdrNgKrTq_Qg&#x3D;&#x2F;94x94&#x2F;top&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;86&#x2F;64&#x2F;11256486</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;eZyyuyNwQ8YnL71xsftTMepl6mk&#x3D;&#x2F;94x94&#x2F;top&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;48&#x2F;88&#x2F;11258848" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;eZyyuyNwQ8YnL71xsftTMepl6mk&#x3D;&#x2F;94x94&#x2F;top&#x2F;smart&#x2F;filters:max_age(3600)&#x2F;https:&#x2F;&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;48&#x2F;88&#x2F;11258848</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;fluminense.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;fluminense.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;07&#x2F;06&#x2F;Palmeiras.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;07&#x2F;06&#x2F;Palmeiras.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;04&#x2F;10&#x2F;Flamengo-2018.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;04&#x2F;10&#x2F;Flamengo-2018.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;09&#x2F;30&#x2F;Corinthians.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;09&#x2F;30&#x2F;Corinthians.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;09&#x2F;04&#x2F;avai-futebol-clube.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;09&#x2F;04&#x2F;avai-futebol-clube.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;03&#x2F;01&#x2F;GOIAS-2021.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;03&#x2F;01&#x2F;GOIAS-2021.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;chelsea.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;chelsea.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;12&#x2F;sampaio-correa.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;12&#x2F;sampaio-correa.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;OX_zPloPunaVP6-dx7YJRx1NX74&#x3D;&#x2F;175x0:609x435&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_bc8228b6673f488aa253bbcb03c80ec5&#x2F;internal_photos&#x2F;bs&#x2F;2020&#x2F;v&#x2F;R&#x2F;HqA1DvQBCWm1rS7D541g&#x2F;pvc.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;OX_zPloPunaVP6-dx7YJRx1NX74&#x3D;&#x2F;175x0:609x435&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_bc8228b6673f488aa253bbcb03c80ec5&#x2F;internal_photos&#x2F;bs&#x2F;2020&#x2F;v&#x2F;R&#x2F;HqA1DvQBCWm1rS7D541g&#x2F;pvc.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;_na7EfqUaD3BD0rr7tKFcrJyAVY&#x3D;&#x2F;379x0:1179x800&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_bc8228b6673f488aa253bbcb03c80ec5&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;Y&#x2F;V&#x2F;DhGzefTOAwnF5IC518DA&#x2F;mansur.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;_na7EfqUaD3BD0rr7tKFcrJyAVY&#x3D;&#x2F;379x0:1179x800&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_bc8228b6673f488aa253bbcb03c80ec5&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;Y&#x2F;V&#x2F;DhGzefTOAwnF5IC518DA&#x2F;mansur.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;Zz8h0Fe8xNW0C3ZU2glfoAs7htY&#x3D;&#x2F;0x0:1200x1200&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_bc8228b6673f488aa253bbcb03c80ec5&#x2F;internal_photos&#x2F;bs&#x2F;2020&#x2F;d&#x2F;N&#x2F;yA1ByIRL2rjOhz2e3aSg&#x2F;card-a-mesa.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;Zz8h0Fe8xNW0C3ZU2glfoAs7htY&#x3D;&#x2F;0x0:1200x1200&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_bc8228b6673f488aa253bbcb03c80ec5&#x2F;internal_photos&#x2F;bs&#x2F;2020&#x2F;d&#x2F;N&#x2F;yA1ByIRL2rjOhz2e3aSg&#x2F;card-a-mesa.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;H_IvBlDC9nk_weaZnMZtd55kTS8&#x3D;&#x2F;0x0:1200x1200&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_bc8228b6673f488aa253bbcb03c80ec5&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;8&#x2F;U&#x2F;mnpclORTmVY5kyjBKN2A&#x2F;gringolandia.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;H_IvBlDC9nk_weaZnMZtd55kTS8&#x3D;&#x2F;0x0:1200x1200&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_bc8228b6673f488aa253bbcb03c80ec5&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;8&#x2F;U&#x2F;mnpclORTmVY5kyjBKN2A&#x2F;gringolandia.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;GjW7NaBtclHYXSooiiG0mlu4y04&#x3D;&#x2F;82x11:663x590&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_bc8228b6673f488aa253bbcb03c80ec5&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;D&#x2F;t&#x2F;bNHVu3QMyhZFLe5Dg9MA&#x2F;sportv-logo-0-1536x1536.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;GjW7NaBtclHYXSooiiG0mlu4y04&#x3D;&#x2F;82x11:663x590&#x2F;94x94&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_bc8228b6673f488aa253bbcb03c80ec5&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;D&#x2F;t&#x2F;bNHVu3QMyhZFLe5Dg9MA&#x2F;sportv-logo-0-1536x1536.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;02&#x2F;28&#x2F;America-MG-VERDE-fev2019-01.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;02&#x2F;28&#x2F;America-MG-VERDE-fev2019-01.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;09&#x2F;09&#x2F;Athletico-PR.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;09&#x2F;09&#x2F;Athletico-PR.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;10&#x2F;atletico-mg.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;10&#x2F;atletico-mg.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;bahia.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;bahia.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;02&#x2F;04&#x2F;botafogo-svg.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;02&#x2F;04&#x2F;botafogo-svg.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;06&#x2F;28&#x2F;bragantino.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;06&#x2F;28&#x2F;bragantino.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;coritiba.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;coritiba.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;02&#x2F;13&#x2F;cruzeiro_2021.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;02&#x2F;13&#x2F;cruzeiro_2021.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;12&#x2F;26&#x2F;Cuiaba_EC.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;12&#x2F;26&#x2F;Cuiaba_EC.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;fluminense.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;fluminense.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;09&#x2F;19&#x2F;Fortaleza_2021_1.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;09&#x2F;19&#x2F;Fortaleza_2021_1.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;12&#x2F;gremio.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;12&#x2F;gremio.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;internacional.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;internacional.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;12&#x2F;santos.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;12&#x2F;santos.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;09&#x2F;04&#x2F;vasco_SVG.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;09&#x2F;04&#x2F;vasco_SVG.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2022&#x2F;11&#x2F;14&#x2F;ABC-RN.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2022&#x2F;11&#x2F;14&#x2F;ABC-RN.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2020&#x2F;07&#x2F;02&#x2F;atletico-go-2020.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2020&#x2F;07&#x2F;02&#x2F;atletico-go-2020.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;12&#x2F;25&#x2F;Botafogo-SP-RiberaoPreto.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;12&#x2F;25&#x2F;Botafogo-SP-RiberaoPreto.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;10&#x2F;10&#x2F;ceara.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;10&#x2F;10&#x2F;ceara.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;06&#x2F;21&#x2F;CHAPECOENSE-2018.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;06&#x2F;21&#x2F;CHAPECOENSE-2018.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;crb.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;crb.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;criciuma.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;criciuma.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;guarani.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;guarani.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;04&#x2F;29&#x2F;Juventude-2021-01.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;04&#x2F;29&#x2F;Juventude-2021-01.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;londrina.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;londrina.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2022&#x2F;11&#x2F;15&#x2F;Escudo_Mirassol_s_estrela.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2022&#x2F;11&#x2F;15&#x2F;Escudo_Mirassol_s_estrela.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;01&#x2F;08&#x2F;Novohorizontino.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;01&#x2F;08&#x2F;Novohorizontino.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;03&#x2F;17&#x2F;ponte-preta.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;03&#x2F;17&#x2F;ponte-preta.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;sport.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;sport.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;01&#x2F;21&#x2F;Tombense.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;01&#x2F;21&#x2F;Tombense.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;04&#x2F;07&#x2F;vilanova.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;04&#x2F;07&#x2F;vilanova.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;vitoria.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;vitoria.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;arsenal.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;arsenal.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;12&#x2F;18&#x2F;atletico-madrid-new.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;12&#x2F;18&#x2F;atletico-madrid-new.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;barcelona.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;barcelona.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;bayern-de-munique.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;bayern-de-munique.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;benfica.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;benfica.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;borussia-dortmund.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;borussia-dortmund.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;03&#x2F;31&#x2F;Inter_de_Mil%C3%A3o_2021.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2021&#x2F;03&#x2F;31&#x2F;Inter_de_Mil%C3%A3o_2021.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2020&#x2F;12&#x2F;21&#x2F;juventus-italia-svg.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2020&#x2F;12&#x2F;21&#x2F;juventus-italia-svg.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;12&#x2F;liverpool.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;12&#x2F;liverpool.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;03&#x2F;10&#x2F;Olympique_Lyonnais-01.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2019&#x2F;03&#x2F;10&#x2F;Olympique_Lyonnais-01.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;manchester-city.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;manchester-city.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;manchester-united.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;manchester-united.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;milan.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;11&#x2F;milan.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;07&#x2F;30&#x2F;NAPOLI_SVG.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;07&#x2F;30&#x2F;NAPOLI_SVG.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;12&#x2F;paris-saint-germain.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;12&#x2F;paris-saint-germain.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;12&#x2F;porto.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;12&#x2F;porto.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;12&#x2F;real-madrid.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;12&#x2F;real-madrid.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;12&#x2F;roma.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;teams&#x2F;2018&#x2F;03&#x2F;12&#x2F;roma.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;tottenham.svg" target="_blank" class="external" rel="noreferrer noopener">sdeadmin-prod-gcs.rpaasv2-fe.tsuru.gcp.cloud.globo&#x2F;media&#x2F;organizations&#x2F;2018&#x2F;03&#x2F;11&#x2F;tottenham.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;mobiliario_revistas&#x2F;00_atual&#x2F;glamour&#x2F;gl_footer_desk.gif" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;mobiliario_revistas&#x2F;00_atual&#x2F;glamour&#x2F;gl_footer_desk.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;mobiliario_revistas&#x2F;00_atual&#x2F;glamour&#x2F;gl-botao-desk.png" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;mobiliario_revistas&#x2F;00_atual&#x2F;glamour&#x2F;gl-botao-desk.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;ca848608f7dfe913e47b9baa7a8c165e.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;ca848608f7dfe913e47b9baa7a8c165e.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;app-vendor-bundle-dc6d548.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;app-vendor-bundle-dc6d548.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;app-client-bundle-313a5fd.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;app-client-bundle-313a5fd.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;fonts&#x2F;opensans-regular&#x2F;opensans-regular.woff" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;fonts&#x2F;opensans-regular&#x2F;opensans-regular.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;fonts&#x2F;opensans-light&#x2F;opensans-light.woff" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;fonts&#x2F;opensans-light&#x2F;opensans-light.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;fonts&#x2F;opensans-semibold&#x2F;opensans-semibold.woff" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;fonts&#x2F;opensans-semibold&#x2F;opensans-semibold.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;fonts&#x2F;opensans-bold&#x2F;opensans-bold.woff" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;fonts&#x2F;opensans-bold&#x2F;opensans-bold.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;fonts&#x2F;opensans-condensed-bold&#x2F;opensans-condensed-bold.woff" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;fonts&#x2F;opensans-condensed-bold&#x2F;opensans-condensed-bold.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;app-chunk-manifest-bundle-7af2342.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;app-chunk-manifest-bundle-7af2342.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;app-vendor-bundle-e76dd93.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;app-vendor-bundle-e76dd93.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;app-client-bundle-2363226.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;app-client-bundle-2363226.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;globoplay&#x2F;prod&#x2F;utag.js" target="_blank" class="external" rel="noreferrer noopener">tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;globoplay&#x2F;prod&#x2F;utag.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://pushstream.bs-push-hdg-prd.gcp.cloud.globo&#x2F;ev&#x2F;p.globo-play-us-notifications" target="_blank" class="external" rel="noreferrer noopener">pushstream.bs-push-hdg-prd.gcp.cloud.globo&#x2F;ev&#x2F;p.globo-play-us-notifications</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;favicon-9805031.ico" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c7def7ff66fe4b13beac0810ffbf780f&#x2F;secure&#x2F;favicon-9805031.ico</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;secure&#x2F;icon-logo-192x192.png" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_2caf29d99e86401197555831070efae8&#x2F;secure&#x2F;icon-logo-192x192.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;gshow&#x2F;prod&#x2F;utag.js" target="_blank" class="external" rel="noreferrer noopener">tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;gshow&#x2F;prod&#x2F;utag.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;gshow&#x2F;13827976-5def-4e1a-9bbb-ca8726d97cdf&#x2F;8d01db4a-d8d6-4165-b229-843873666b81.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;gshow&#x2F;13827976-5def-4e1a-9bbb-ca8726d97cdf&#x2F;8d01db4a-d8d6-4165-b229-843873666b81.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;gshow&#x2F;13827976-5def-4e1a-9bbb-ca8726d97cdf&#x2F;8d01db4a-d8d6-4165-b229-843873666b81.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;gshow&#x2F;13827976-5def-4e1a-9bbb-ca8726d97cdf&#x2F;8d01db4a-d8d6-4165-b229-843873666b81.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_05f06ca986b54d6e9c5df94927ccf7fc&#x2F;libs&#x2F;clappr-plugins&#x2F;viewport-play&#x2F;v1.1.2&#x2F;viewport-play-plugin.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_05f06ca986b54d6e9c5df94927ccf7fc&#x2F;libs&#x2F;clappr-plugins&#x2F;viewport-play&#x2F;v1.1.2&#x2F;viewport-play-plugin.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;gshow&#x2F;prod&#x2F;lib-pub-core-gshow-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;gshow&#x2F;prod&#x2F;lib-pub-core-gshow-latest.js</a> (seen on 2 websites)</p>
@@ -571,61 +700,151 @@
             <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;gshow&#x2F;prod&#x2F;lib-pub-ext-tags-gshow-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;gshow&#x2F;prod&#x2F;lib-pub-ext-tags-gshow-latest.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;er&#x2F;c&#x2F;glb-reset.css" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;er&#x2F;c&#x2F;glb-reset.css</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_47600d3497184478b773a886f1305b22&#x2F;libs&#x2F;preact.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_47600d3497184478b773a886f1305b22&#x2F;libs&#x2F;preact.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;er&#x2F;c&#x2F;glb-grid.css" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;er&#x2F;c&#x2F;glb-grid.css</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_47600d3497184478b773a886f1305b22&#x2F;libs&#x2F;entretenimento-ui.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_47600d3497184478b773a886f1305b22&#x2F;libs&#x2F;entretenimento-ui.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;er&#x2F;c&#x2F;paginas-erros.css" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;er&#x2F;c&#x2F;paginas-erros.css</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_1c3ee56c57864e2b9a34135c5ee67caf&#x2F;gshow&#x2F;emojis&#x2F;emoji-novelas.png" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_1c3ee56c57864e2b9a34135c5ee67caf&#x2F;gshow&#x2F;emojis&#x2F;emoji-novelas.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;er&#x2F;j&#x2F;jquery-1.3.2.min.js" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;er&#x2F;j&#x2F;jquery-1.3.2.min.js</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_1c3ee56c57864e2b9a34135c5ee67caf&#x2F;gshow&#x2F;emojis&#x2F;emoji-realities.png" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_1c3ee56c57864e2b9a34135c5ee67caf&#x2F;gshow&#x2F;emojis&#x2F;emoji-realities.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;er&#x2F;i&#x2F;bg-404.gif" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;er&#x2F;i&#x2F;bg-404.gif</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_1c3ee56c57864e2b9a34135c5ee67caf&#x2F;gshow&#x2F;emojis&#x2F;emoji-tudomais.png" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_1c3ee56c57864e2b9a34135c5ee67caf&#x2F;gshow&#x2F;emojis&#x2F;emoji-tudomais.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;er&#x2F;i&#x2F;titulo_404.gif" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;er&#x2F;i&#x2F;titulo_404.gif</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;static&#x2F;vendor&#x2F;libs&#x2F;comScore-JS-6.3.1.181004.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;static&#x2F;vendor&#x2F;libs&#x2F;comScore-JS-6.3.1.181004.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;er&#x2F;i&#x2F;bg-input-busca-404.gif" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;er&#x2F;i&#x2F;bg-input-busca-404.gif</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;static&#x2F;vendor&#x2F;libs&#x2F;youboralib-v5.5.4.min.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_e1b09a2d222b4900a437a46914be81e5&#x2F;static&#x2F;vendor&#x2F;libs&#x2F;youboralib-v5.5.4.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s.cache.aws.cloud.globo&#x2F;er&#x2F;i&#x2F;botao-busca-404.gif" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;er&#x2F;i&#x2F;botao-busca-404.gif</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_63fc83ece6e4451e89f8750cafb76fa2&#x2F;fonts&#x2F;WhitmanDisplay-Bold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_63fc83ece6e4451e89f8750cafb76fa2&#x2F;fonts&#x2F;WhitmanDisplay-Bold.woff2</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_63fc83ece6e4451e89f8750cafb76fa2&#x2F;fonts&#x2F;WhitmanDisplay-Semibold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_63fc83ece6e4451e89f8750cafb76fa2&#x2F;fonts&#x2F;WhitmanDisplay-Semibold.woff2</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_63fc83ece6e4451e89f8750cafb76fa2&#x2F;fonts&#x2F;WhitmanDisplay-ExtraBold.woff2" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_63fc83ece6e4451e89f8750cafb76fa2&#x2F;fonts&#x2F;WhitmanDisplay-ExtraBold.woff2</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;4281bb00b708db2dc8fabdb5c0ff3493.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;4281bb00b708db2dc8fabdb5c0ff3493.css</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;OGlobo&#x2F;VENDAS&#x2F;GABIGOL&#x2F;botao-desk.png" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;OGlobo&#x2F;VENDAS&#x2F;GABIGOL&#x2F;botao-desk.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;f7c2271fe3ecaca5cee9bfdf2947f263.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_b002e0039b9f46a5a4a94ff667d31e2d&#x2F;assets&#x2F;dist&#x2F;f7c2271fe3ecaca5cee9bfdf2947f263.css</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;OGlobo&#x2F;VENDAS&#x2F;GABIGOL&#x2F;footer-desk.gif" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_65d1930a0bda476ba8d3c25c5371ec3f&#x2F;piano&#x2F;OGlobo&#x2F;VENDAS&#x2F;GABIGOL&#x2F;footer-desk.gif</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_8b507d480c314f97a3b4b28346d025f5&#x2F;valor-fonts&#x2F;coranto-bold.otf" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_8b507d480c314f97a3b4b28346d025f5&#x2F;valor-fonts&#x2F;coranto-bold.otf</a> (seen on 2 websites)</p>
+            <p><a href="http://tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;receitas&#x2F;prod&#x2F;utag.js" target="_blank" class="external" rel="noreferrer noopener">tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;receitas&#x2F;prod&#x2F;utag.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_a468dd4e265e4c40b714860137150800&#x2F;sales-vitrine-web&#x2F;sales-vitrine-web&#x2F;assets&#x2F;videos&#x2F;default&#x2F;disney_001.mp4" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_a468dd4e265e4c40b714860137150800&#x2F;sales-vitrine-web&#x2F;sales-vitrine-web&#x2F;assets&#x2F;videos&#x2F;default&#x2F;disney_001.mp4</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;receitas&#x2F;963bfcb5-25cb-420c-8895-d6058e7883f7&#x2F;191ec9d9-edb4-4327-b0e9-422197996dd6.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;receitas&#x2F;963bfcb5-25cb-420c-8895-d6058e7883f7&#x2F;191ec9d9-edb4-4327-b0e9-422197996dd6.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_a468dd4e265e4c40b714860137150800&#x2F;sales-vitrine-web&#x2F;sales-vitrine-web&#x2F;assets&#x2F;videos&#x2F;mobile&#x2F;gigaglob.mp4" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_a468dd4e265e4c40b714860137150800&#x2F;sales-vitrine-web&#x2F;sales-vitrine-web&#x2F;assets&#x2F;videos&#x2F;mobile&#x2F;gigaglob.mp4</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;receitas&#x2F;963bfcb5-25cb-420c-8895-d6058e7883f7&#x2F;191ec9d9-edb4-4327-b0e9-422197996dd6.css" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_c631e406debd4c4fac98a09d48dc17d1&#x2F;bastian-post&#x2F;prod&#x2F;receitas&#x2F;963bfcb5-25cb-420c-8895-d6058e7883f7&#x2F;191ec9d9-edb4-4327-b0e9-422197996dd6.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_a468dd4e265e4c40b714860137150800&#x2F;sales-vitrine-web&#x2F;sales-vitrine-web&#x2F;assets&#x2F;resources&#x2F;base-video.vtt" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_a468dd4e265e4c40b714860137150800&#x2F;sales-vitrine-web&#x2F;sales-vitrine-web&#x2F;assets&#x2F;resources&#x2F;base-video.vtt</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;receitas&#x2F;prod&#x2F;lib-pub-core-receitas-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;receitas&#x2F;prod&#x2F;lib-pub-core-receitas-latest.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;X8ahQHa9dpCotMtXRRIcDoXMc3I&#x3D;&#x2F;103x53:383x210&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_9de6fd454d9849c8bee5b63069fbb074&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;g&#x2F;R&#x2F;rPs2CNSDyHbYLbuxJGhQ&#x2F;captura-de-tela-2023-01-07-as-07.25.03.png" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;X8ahQHa9dpCotMtXRRIcDoXMc3I&#x3D;&#x2F;103x53:383x210&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_9de6fd454d9849c8bee5b63069fbb074&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;g&#x2F;R&#x2F;rPs2CNSDyHbYLbuxJGhQ&#x2F;captura-de-tela-2023-01-07-as-07.25.03.png</a> (seen on 2 websites)</p>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;receitas&#x2F;prod&#x2F;lib-pub-ext-tags-receitas-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;receitas&#x2F;prod&#x2F;lib-pub-ext-tags-receitas-latest.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;1ik6rejnPWs7LP8yzaAsI8l-Dl8&#x3D;&#x2F;126x54:695x374&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_9de6fd454d9849c8bee5b63069fbb074&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;J&#x2F;o&#x2F;iQDoHqTBqCWvAAKZZ9hg&#x2F;captura-de-tela-2023-01-07-as-07.26.56.png" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;1ik6rejnPWs7LP8yzaAsI8l-Dl8&#x3D;&#x2F;126x54:695x374&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_9de6fd454d9849c8bee5b63069fbb074&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;J&#x2F;o&#x2F;iQDoHqTBqCWvAAKZZ9hg&#x2F;captura-de-tela-2023-01-07-as-07.26.56.png</a> (seen on 2 websites)</p>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;0OPQasQKwrTCJQVoKPiIptqnHFI&#x3D;&#x2F;424x0:874x800&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;I&#x2F;h&#x2F;DVCmqiRXSrDhCA2AMBUA&#x2F;panqueca-como-fazer.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;0OPQasQKwrTCJQVoKPiIptqnHFI&#x3D;&#x2F;424x0:874x800&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;I&#x2F;h&#x2F;DVCmqiRXSrDhCA2AMBUA&#x2F;panqueca-como-fazer.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;i24O2WX0x9_PvzbLCqXIViNXOMo&#x3D;&#x2F;49x0:1164x627&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_e84042ef78cb4708aeebdf1c68c6cbd6&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;Z&#x2F;M&#x2F;fABM1FT12dOOlW1XPt9Q&#x2F;fotografo-de-lula.png" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;i24O2WX0x9_PvzbLCqXIViNXOMo&#x3D;&#x2F;49x0:1164x627&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_e84042ef78cb4708aeebdf1c68c6cbd6&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;Z&#x2F;M&#x2F;fABM1FT12dOOlW1XPt9Q&#x2F;fotografo-de-lula.png</a> (seen on 2 websites)</p>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;D4PdDsTQ1rbfjKE_MxHL4UZIx6U&#x3D;&#x2F;322x0:691x656&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;B&#x2F;w&#x2F;2TNnvhQ1A8tYIzi4bBLQ&#x2F;bolo-de-reis-e-de-casa.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;D4PdDsTQ1rbfjKE_MxHL4UZIx6U&#x3D;&#x2F;322x0:691x656&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;B&#x2F;w&#x2F;2TNnvhQ1A8tYIzi4bBLQ&#x2F;bolo-de-reis-e-de-casa.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;S7Cfn6zH5LUneLXW77PXaoEj4n0&#x3D;&#x2F;151x18:1822x959&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;14&#x2F;98&#x2F;11259814" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;S7Cfn6zH5LUneLXW77PXaoEj4n0&#x3D;&#x2F;151x18:1822x959&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;s01.video.glbimg.com&#x2F;deo&#x2F;vi&#x2F;14&#x2F;98&#x2F;11259814</a> (seen on 2 websites)</p>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;fuGgV9i3YjwqJAj7UafnqNnZ3zw&#x3D;&#x2F;915x0:1523x1080&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;O&#x2F;o&#x2F;EksjTtQ7CqkbWGMoOJhg&#x2F;muffins-com-gotas-de-chocolate.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;fuGgV9i3YjwqJAj7UafnqNnZ3zw&#x3D;&#x2F;915x0:1523x1080&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;O&#x2F;o&#x2F;EksjTtQ7CqkbWGMoOJhg&#x2F;muffins-com-gotas-de-chocolate.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;dXcPxW_JwFNi2RMSvS7K90xxTaI&#x3D;&#x2F;417x0:867x800&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;N&#x2F;q&#x2F;mW7w0wSz6ZW7HyMUaPkQ&#x2F;salada-de-frutas-receita.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;dXcPxW_JwFNi2RMSvS7K90xxTaI&#x3D;&#x2F;417x0:867x800&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;N&#x2F;q&#x2F;mW7w0wSz6ZW7HyMUaPkQ&#x2F;salada-de-frutas-receita.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;B9f4dlrcs6IIcMgenqgqrTE129A&#x3D;&#x2F;582x0:1190x1080&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;g&#x2F;4&#x2F;A1PdOwSjCzdCJFyb8AXA&#x2F;shot-matinal-como-fazer.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;B9f4dlrcs6IIcMgenqgqrTE129A&#x3D;&#x2F;582x0:1190x1080&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;g&#x2F;4&#x2F;A1PdOwSjCzdCJFyb8AXA&#x2F;shot-matinal-como-fazer.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;UahrZbe5EcY0cZI3Tvhms9aE-Yg&#x3D;&#x2F;501x0:1221x1280&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;c&#x2F;F&#x2F;nA1dQuTLAaaSeARpq5JQ&#x2F;frutas-do-verao.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;UahrZbe5EcY0cZI3Tvhms9aE-Yg&#x3D;&#x2F;501x0:1221x1280&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;c&#x2F;F&#x2F;nA1dQuTLAaaSeARpq5JQ&#x2F;frutas-do-verao.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;uaY1a-bReXrlW1xVYDLWxUHpY6U&#x3D;&#x2F;258x0:633x666&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;Z&#x2F;G&#x2F;aWAJ4WRICJkMWYaEO27g&#x2F;quiche-de-salame.jpeg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;uaY1a-bReXrlW1xVYDLWxUHpY6U&#x3D;&#x2F;258x0:633x666&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;Z&#x2F;G&#x2F;aWAJ4WRICJkMWYaEO27g&#x2F;quiche-de-salame.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;ZqvyHKxyYJfsI4-sce_5ughSVAo&#x3D;&#x2F;0x0:3375x6000&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;v&#x2F;A&#x2F;chbU2LSd2tf7ULtlzMbw&#x2F;diliara-garifullina-uxnsb5ntzds-unsplash.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;ZqvyHKxyYJfsI4-sce_5ughSVAo&#x3D;&#x2F;0x0:3375x6000&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;v&#x2F;A&#x2F;chbU2LSd2tf7ULtlzMbw&#x2F;diliara-garifullina-uxnsb5ntzds-unsplash.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;RLGlKnt9tt625G9_XuYN0vc-7TE&#x3D;&#x2F;235x0:651x740&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2020&#x2F;Y&#x2F;J&#x2F;iv8rIFSuKAtipPN6sAgA&#x2F;pudim-de-panetone.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;RLGlKnt9tt625G9_XuYN0vc-7TE&#x3D;&#x2F;235x0:651x740&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2020&#x2F;Y&#x2F;J&#x2F;iv8rIFSuKAtipPN6sAgA&#x2F;pudim-de-panetone.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;MfKCtnqswh_yYUfRtoJlVninor4&#x3D;&#x2F;328x0:697x656&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2020&#x2F;C&#x2F;3&#x2F;tQvMQMTTa30ajno3DP9w&#x2F;feijoada-vegetariana-4.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;MfKCtnqswh_yYUfRtoJlVninor4&#x3D;&#x2F;328x0:697x656&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2020&#x2F;C&#x2F;3&#x2F;tQvMQMTTa30ajno3DP9w&#x2F;feijoada-vegetariana-4.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;043RU8fEysSE2oRuTBRRBJ3b_U4&#x3D;&#x2F;271x0:653x679&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;W&#x2F;R&#x2F;iwXiQuTviAu50WqyzFqA&#x2F;pao-frances-caseiro-como-fazer-em-casa-receita.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;043RU8fEysSE2oRuTBRRBJ3b_U4&#x3D;&#x2F;271x0:653x679&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;W&#x2F;R&#x2F;iwXiQuTviAu50WqyzFqA&#x2F;pao-frances-caseiro-como-fazer-em-casa-receita.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;jai3_nVBu5HubMTSROTtGS_2qkE&#x3D;&#x2F;538x0:970x768&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;i&#x2F;H&#x2F;0Sjt0hSMCOu0pAcIAB1Q&#x2F;gelatina-colorida-receita-como-fazer.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;jai3_nVBu5HubMTSROTtGS_2qkE&#x3D;&#x2F;538x0:970x768&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;i&#x2F;H&#x2F;0Sjt0hSMCOu0pAcIAB1Q&#x2F;gelatina-colorida-receita-como-fazer.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;TrrdycA3pId4rDe7IoHKEmKNUTY&#x3D;&#x2F;341x0:791x800&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;Y&#x2F;u&#x2F;ygxFb2QwCDpIGaUnKQjg&#x2F;geleia-de-pimenta-como-fazer-1-.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;TrrdycA3pId4rDe7IoHKEmKNUTY&#x3D;&#x2F;341x0:791x800&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;Y&#x2F;u&#x2F;ygxFb2QwCDpIGaUnKQjg&#x2F;geleia-de-pimenta-como-fazer-1-.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;jZh5MYz7y0HB1RZh-hwqMeGbigA&#x3D;&#x2F;403x0:853x800&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;9&#x2F;Z&#x2F;gh0wHHQ7iE4SeEPcATQA&#x2F;bolo-de-chocolate-fofinho-receita-2.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;jZh5MYz7y0HB1RZh-hwqMeGbigA&#x3D;&#x2F;403x0:853x800&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2022&#x2F;9&#x2F;Z&#x2F;gh0wHHQ7iE4SeEPcATQA&#x2F;bolo-de-chocolate-fofinho-receita-2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;Cp1sRaNpKDHcXtiwz_vmW_yFEcs&#x3D;&#x2F;432x0:882x800&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;m&#x2F;e&#x2F;vRcQB5QSyWsFDkmsVzXg&#x2F;pudim-de-leite.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;Cp1sRaNpKDHcXtiwz_vmW_yFEcs&#x3D;&#x2F;432x0:882x800&#x2F;216x384&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;m&#x2F;e&#x2F;vRcQB5QSyWsFDkmsVzXg&#x2F;pudim-de-leite.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;cMGHFBjsfQcr5v_nQhhSeQW1gU4&#x3D;&#x2F;371x30:741x691&#x2F;smart&#x2F;filters:strip_icc()&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;I&#x2F;h&#x2F;DVCmqiRXSrDhCA2AMBUA&#x2F;panqueca-como-fazer.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;cMGHFBjsfQcr5v_nQhhSeQW1gU4&#x3D;&#x2F;371x30:741x691&#x2F;smart&#x2F;filters:strip_icc()&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;I&#x2F;h&#x2F;DVCmqiRXSrDhCA2AMBUA&#x2F;panqueca-como-fazer.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;M5Z69tsfj0DsOZKdyuAsiYn3cpE&#x3D;&#x2F;433x11:778x628&#x2F;smart&#x2F;filters:strip_icc()&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;B&#x2F;w&#x2F;2TNnvhQ1A8tYIzi4bBLQ&#x2F;bolo-de-reis-e-de-casa.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;M5Z69tsfj0DsOZKdyuAsiYn3cpE&#x3D;&#x2F;433x11:778x628&#x2F;smart&#x2F;filters:strip_icc()&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_1f540e0b94d8437dbbc39d567a1dee68&#x2F;internal_photos&#x2F;bs&#x2F;2021&#x2F;B&#x2F;w&#x2F;2TNnvhQ1A8tYIzi4bBLQ&#x2F;bolo-de-reis-e-de-casa.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;redeglobo&#x2F;prod&#x2F;utag.js" target="_blank" class="external" rel="noreferrer noopener">tealium.cache.aws.cloud.globo&#x2F;utag&#x2F;globo&#x2F;redeglobo&#x2F;prod&#x2F;utag.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;libby&#x2F;header_produtos&#x2F;img&#x2F;bg_header.png" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;libby&#x2F;header_produtos&#x2F;img&#x2F;bg_header.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;common&#x2F;img&#x2F;ico-materia-imprimir.png" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;common&#x2F;img&#x2F;ico-materia-imprimir.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;common&#x2F;img&#x2F;estrutura&#x2F;borderbottom.gif" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;common&#x2F;img&#x2F;estrutura&#x2F;borderbottom.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;common&#x2F;img&#x2F;estrutura&#x2F;border_vertical.gif" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;common&#x2F;img&#x2F;estrutura&#x2F;border_vertical.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;common&#x2F;fonts&#x2F;VolkswagenSerial-Light.woff" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;common&#x2F;fonts&#x2F;VolkswagenSerial-Light.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;common&#x2F;img&#x2F;forms.png" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;common&#x2F;img&#x2F;forms.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;bu&#x2F;i&#x2F;sprite_suggest.png" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;bu&#x2F;i&#x2F;sprite_suggest.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;redeglobo&#x2F;prod&#x2F;lib-pub-core-redeglobo-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-core&#x2F;redeglobo&#x2F;prod&#x2F;lib-pub-core-redeglobo-latest.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;redeglobo&#x2F;prod&#x2F;lib-pub-ext-tags-redeglobo-latest.js" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;v1&#x2F;AUTH_acd8438fd650434baa93efc372c066a1&#x2F;libs&#x2F;lib-pub-external-tags&#x2F;redeglobo&#x2F;prod&#x2F;lib-pub-ext-tags-redeglobo-latest.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;portal&#x2F;img&#x2F;logos&#x2F;favicon.gif" target="_blank" class="external" rel="noreferrer noopener">s.cache.aws.cloud.globo&#x2F;og&#x2F;rg&#x2F;static&#x2F;portal&#x2F;img&#x2F;logos&#x2F;favicon.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s-video.cache.aws.cloud.globo&#x2F;x720&#x2F;10629980.jpg" target="_blank" class="external" rel="noreferrer noopener">s-video.cache.aws.cloud.globo&#x2F;x720&#x2F;10629980.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;coranto&#x2F;bold.woff" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;coranto&#x2F;bold.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;coranto&#x2F;bold.ttf" target="_blank" class="external" rel="noreferrer noopener">s3.aws.cloud.globo&#x2F;cdn&#x2F;fonts&#x2F;coranto&#x2F;bold.ttf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;r1aj8IGPC85BU8rhmhlvVy9IBiI&#x3D;&#x2F;0x0:2477x2793&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;V&#x2F;q&#x2F;lxccBHRqe4tkJPNp4hFA&#x2F;lisamariepresley.jpg" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;r1aj8IGPC85BU8rhmhlvVy9IBiI&#x3D;&#x2F;0x0:2477x2793&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_59edd422c0c84a879bd37670ae4f538a&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;V&#x2F;q&#x2F;lxccBHRqe4tkJPNp4hFA&#x2F;lisamariepresley.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2.cache.aws.cloud.globo&#x2F;MEuevVfxOQDis4rcKLhS6ZUL7U0&#x3D;&#x2F;0x0:640x326&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_9de6fd454d9849c8bee5b63069fbb074&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;m&#x2F;7&#x2F;icGycES9avrM8Sq5bsqw&#x2F;captura-de-tela-2023-01-12-as-23.35.37.png" target="_blank" class="external" rel="noreferrer noopener">s2.cache.aws.cloud.globo&#x2F;MEuevVfxOQDis4rcKLhS6ZUL7U0&#x3D;&#x2F;0x0:640x326&#x2F;fit-in&#x2F;515x290&#x2F;middle&#x2F;smart&#x2F;filters:strip_icc():strip_exif():format(webp)&#x2F;i.s3.glbimg.com&#x2F;v1&#x2F;AUTH_9de6fd454d9849c8bee5b63069fbb074&#x2F;internal_photos&#x2F;bs&#x2F;2023&#x2F;m&#x2F;7&#x2F;icGycES9avrM8Sq5bsqw&#x2F;captura-de-tela-2023-01-12-as-23.35.37.png</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -635,10 +854,16 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://epocanegocios.globo.com" target="_blank" class="external">epocanegocios.globo.com</a>
+            <a href="http://globo.com" target="_blank" class="external">globo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://receitas.globo.com" target="_blank" class="external">receitas.globo.com</a>
+            <a href="http://autoesporte.globo.com" target="_blank" class="external">autoesporte.globo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://extra.globo.com" target="_blank" class="external">extra.globo.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://g1.globo.com" target="_blank" class="external">g1.globo.com</a>
         </li>
         <li class='truncate'>
             <a href="http://ge.globo.com" target="_blank" class="external">ge.globo.com</a>
@@ -647,97 +872,37 @@
             <a href="http://glamour.globo.com" target="_blank" class="external">glamour.globo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://valor.globo.com" target="_blank" class="external">valor.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://revistagalileu.globo.com" target="_blank" class="external">revistagalileu.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://redeglobo.globo.com" target="_blank" class="external">redeglobo.globo.com</a>
+            <a href="http://globoesporte.globo.com" target="_blank" class="external">globoesporte.globo.com</a>
         </li>
         <li class='truncate'>
             <a href="http://gshow.globo.com" target="_blank" class="external">gshow.globo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.globo.com" target="_blank" class="external">www.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://revistacrescer.globo.com" target="_blank" class="external">revistacrescer.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://cartola.globo.com" target="_blank" class="external">cartola.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://valorinveste.globo.com" target="_blank" class="external">valorinveste.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://gq.globo.com" target="_blank" class="external">gq.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://g1.globo.com" target="_blank" class="external">g1.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://extra.globo.com" target="_blank" class="external">extra.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://revistamonet.globo.com" target="_blank" class="external">revistamonet.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://vogue.globo.com" target="_blank" class="external">vogue.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://vitrine.globo.com" target="_blank" class="external">vitrine.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://revistapegn.globo.com" target="_blank" class="external">revistapegn.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://revistaquem.globo.com" target="_blank" class="external">revistaquem.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://revistamarieclaire.globo.com" target="_blank" class="external">revistamarieclaire.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://globo.com" target="_blank" class="external">globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://forum.techtudo.globo.com" target="_blank" class="external">forum.techtudo.globo.com</a>
-        </li>
-        <li class='truncate'>
             <a href="http://m.extra.globo.com" target="_blank" class="external">m.extra.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://canaisglobo.globo.com" target="_blank" class="external">canaisglobo.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://casavogue.globo.com" target="_blank" class="external">casavogue.globo.com</a>
         </li>
         <li class='truncate'>
             <a href="http://oglobo.globo.com" target="_blank" class="external">oglobo.globo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://horoscopo.gshow.globo.com" target="_blank" class="external">horoscopo.gshow.globo.com</a>
+            <a href="http://receitas.globo.com" target="_blank" class="external">receitas.globo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://cartolaexpress.globo.com" target="_blank" class="external">cartolaexpress.globo.com</a>
+            <a href="http://redeglobo.globo.com" target="_blank" class="external">redeglobo.globo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://login.globo.com" target="_blank" class="external">login.globo.com</a>
+            <a href="http://revistaquem.globo.com" target="_blank" class="external">revistaquem.globo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://interativos.ge.globo.com" target="_blank" class="external">interativos.ge.globo.com</a>
+            <a href="http://valor.globo.com" target="_blank" class="external">valor.globo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://revistacasaejardim.globo.com" target="_blank" class="external">revistacasaejardim.globo.com</a>
+            <a href="http://valorinveste.globo.com" target="_blank" class="external">valorinveste.globo.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://jogue.cartolaexpress.globo.com" target="_blank" class="external">jogue.cartolaexpress.globo.com</a>
+            <a href="http://www.globo.com" target="_blank" class="external">www.globo.com</a>
         </li>
         <li class='truncate'>
             <a href="http://globoplay.globo.com" target="_blank" class="external">globoplay.globo.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://autoesporte.globo.com" target="_blank" class="external">autoesporte.globo.com</a>
         </li>
     </ul>
 </div>

@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "flowplayer.com",
-        history: [{"date":"main","prevalence":0.000183,"sites":27,"fingerprinting":1,"cookies":0},{"date":"selenium-crux","prevalence":0.000163,"sites":12,"fingerprinting":2,"cookies":0}]
+        history: [{"date":"main","prevalence":0.000183,"sites":27,"fingerprinting":1,"cookies":0},{"date":"selenium-results","prevalence":0.000142,"sites":21,"fingerprinting":2,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;3648<small>/16361</small>
+                    <strong>Rank:</strong> &#35;3656<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.02&#37; (12 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (21 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
@@ -90,9 +90,10 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Script</span>,
                     <span>Stylesheet</span>,
+                    <span>Script</span>,
                     <span>Ping</span>,
+                    <span>Media</span>,
                     <span>XHR</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/flowplayer.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
@@ -101,6 +102,7 @@
                     <span>cdn</span>, 
                     <span>ihi</span>, 
                     <span>health</span>, 
+                    <span>releases</span>, 
                     <span>ptm</span>, 
                 </li>
             </ul>
@@ -131,11 +133,13 @@
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
         <li class='truncate'>Navigator.prototype.languages</li>
-        <li class='truncate'>MediaSource.isTypeSupported</li>
+        <li class='truncate'>Navigator.prototype.connection</li>
         <li class='truncate'>URL.createObjectURL</li>
+        <li class='truncate'>HTMLMediaElement.prototype.canPlayType</li>
+        <li class='truncate'>MediaSource.isTypeSupported</li>
+        <li class='truncate'>window.innerHeight</li>
         <li class='truncate'>Navigator.prototype.vendor</li>
         <li class='truncate'>Navigator.prototype.language</li>
-        <li class='truncate'>HTMLMediaElement.prototype.canPlayType</li>
         <li class='truncate'>window.sessionStorage</li>
         <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
@@ -147,52 +151,97 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://ihi.flowplayer.com&#x2F;v1&#x2F;health&#x2F;events" target="_blank" class="external" rel="noreferrer noopener">ihi.flowplayer.com&#x2F;v1&#x2F;health&#x2F;events</a> (seen on 7 websites)</p>
+            <p><a href="http://ihi.flowplayer.com&#x2F;v1&#x2F;health&#x2F;events" target="_blank" class="external" rel="noreferrer noopener">ihi.flowplayer.com&#x2F;v1&#x2F;health&#x2F;events</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;flowplayer.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;flowplayer.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;style&#x2F;flowplayer.css" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;style&#x2F;flowplayer.css</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;style&#x2F;flowplayer.css" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;style&#x2F;flowplayer.css</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;flowplayer.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;flowplayer.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;ads.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;ads.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;ads.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;ads.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;cuepoints.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;cuepoints.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;cuepoints.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;cuepoints.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;google-analytics.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;google-analytics.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;google-analytics.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;google-analytics.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;keyboard.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;keyboard.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;keyboard.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;keyboard.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;share.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;share.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;share.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;share.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;qsel.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;qsel.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;qsel.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;qsel.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;asel.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;asel.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;asel.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;asel.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;hls.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;hls.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;hls.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;hls.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;float-on-scroll.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;float-on-scroll.min.js</a> (seen on 6 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;float-on-scroll.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;stable&#x2F;plugins&#x2F;float-on-scroll.min.js</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;translations&#x2F;flowplayer.lang.he.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;translations&#x2F;flowplayer.lang.he.js</a> (seen on 5 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;style&#x2F;flowplayer.css" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;style&#x2F;flowplayer.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.flowplayer.com&#x2F;players&#x2F;43fdc72d-afd8-4d33-a2b9-da76a2a924e6&#x2F;native&#x2F;flowplayer.async.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;players&#x2F;43fdc72d-afd8-4d33-a2b9-da76a2a924e6&#x2F;native&#x2F;flowplayer.async.js</a> (seen on 2 websites)</p>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;translations&#x2F;flowplayer.lang.he.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;translations&#x2F;flowplayer.lang.he.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;keyboard.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;keyboard.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;v3.4.1&#x2F;flowplayer.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;3&#x2F;v3.4.1&#x2F;flowplayer.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;flowplayer.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;flowplayer.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;hls.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;hls.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;message.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;message.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;embed.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;embed.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;iframe.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;iframe.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;subtitles.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;subtitles.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;playlist.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;playlist.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;chromecast.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;chromecast.min.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;airplay.min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;stable&#x2F;plugins&#x2F;airplay.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;translations&#x2F;flowplayer.lang.en.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;releases&#x2F;native&#x2F;translations&#x2F;flowplayer.lang.en.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;token:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxMjE2ZWI3Mi1lNTJlLTRjNGMtOTlmOS04MDcyNzNkMjViYzgiLCJuYmYiOjE2NzMyNjIzMzcsImlzcyI6Imh0dHBzOi8vd3d3LmZsb3dwbGF5ZXIuY29tIiwiZXhwIjoxNjczMzQ4NzM3LCJpYXQiOjE2NzMyNjIzMzd9.VW0Gffnn_W3k2zenu8WI0Z9QaCAaSDB4EVKvRWuBq5o-tePQUr9_j5jDUnGbR8erm1Wx1b17jNUfb5-x24uWoKiENpkJ_E37AaSHkRYKnQlaTl_G8IHoOUxYfiqsV5kHMl8k4snUnBbloLMFHtx5THVvSeQZL3F4zl1LNml14epOytbCMUEoXFEVHUnJXNPuebZrjZJin30ScP7UEKJzVaLuLnuFEF_HWKCWGd6PJrDZ_UlF0BUBebz7IY_zGR69Y8jPy37xtQ4NutAnmee52KWaazXe329qydTEB1Uxa94Lh8zcW9p2KEmd4UmKkTT9J4JlGJIhDML7lWxZ-UX8fvqe0l0pKLqbWcR0zx6XLgyMON-Us1cr_O89K3l_g7LUDGU7BmDCNi3FcWoKFx5pV7xZOxj4ibqZN16TgoOSuyzyAsux4u4PB7Yu4YHpkoIsSiG_Oid9t495CXdGBpvGVE1cMJXT33UX_L60VO3XLdut5-SH3s-yMPuEZ47khPrvSkOcoqsNkr7_OXMKOmVvXc1MCVp9F3Sye96QGzqvDVIz3vOP4yJ3WdtAqSXR6Mm2P9o-KS3c5PYdZf9naJe4kkyrsdFZOIIzdqj_MduF8z59zSvxazTBjM6msga4sGt4svcKzHOD8eK3Mr7x9AWDxQmaO-848MRNABQ475Er7GU&#x2F;187d3787-e32b-47b7-bf79-799ce0358df7&#x2F;v-1216eb72-e52e-4c4c-99f9-807273d25bc8_original.mp4" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;token:eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiIxMjE2ZWI3Mi1lNTJlLTRjNGMtOTlmOS04MDcyNzNkMjViYzgiLCJuYmYiOjE2NzMyNjIzMzcsImlzcyI6Imh0dHBzOi8vd3d3LmZsb3dwbGF5ZXIuY29tIiwiZXhwIjoxNjczMzQ4NzM3LCJpYXQiOjE2NzMyNjIzMzd9.VW0Gffnn_W3k2zenu8WI0Z9QaCAaSDB4EVKvRWuBq5o-tePQUr9_j5jDUnGbR8erm1Wx1b17jNUfb5-x24uWoKiENpkJ_E37AaSHkRYKnQlaTl_G8IHoOUxYfiqsV5kHMl8k4snUnBbloLMFHtx5THVvSeQZL3F4zl1LNml14epOytbCMUEoXFEVHUnJXNPuebZrjZJin30ScP7UEKJzVaLuLnuFEF_HWKCWGd6PJrDZ_UlF0BUBebz7IY_zGR69Y8jPy37xtQ4NutAnmee52KWaazXe329qydTEB1Uxa94Lh8zcW9p2KEmd4UmKkTT9J4JlGJIhDML7lWxZ-UX8fvqe0l0pKLqbWcR0zx6XLgyMON-Us1cr_O89K3l_g7LUDGU7BmDCNi3FcWoKFx5pV7xZOxj4ibqZN16TgoOSuyzyAsux4u4PB7Yu4YHpkoIsSiG_Oid9t495CXdGBpvGVE1cMJXT33UX_L60VO3XLdut5-SH3s-yMPuEZ47khPrvSkOcoqsNkr7_OXMKOmVvXc1MCVp9F3Sye96QGzqvDVIz3vOP4yJ3WdtAqSXR6Mm2P9o-KS3c5PYdZf9naJe4kkyrsdFZOIIzdqj_MduF8z59zSvxazTBjM6msga4sGt4svcKzHOD8eK3Mr7x9AWDxQmaO-848MRNABQ475Er7GU&#x2F;187d3787-e32b-47b7-bf79-799ce0358df7&#x2F;v-1216eb72-e52e-4c4c-99f9-807273d25bc8_original.mp4</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://releases.flowplayer.com&#x2F;hlsjs&#x2F;flowplayer.hlsjs.min.js" target="_blank" class="external" rel="noreferrer noopener">releases.flowplayer.com&#x2F;hlsjs&#x2F;flowplayer.hlsjs.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://releases.flowplayer.com&#x2F;audio&#x2F;flowplayer.audio.min.js" target="_blank" class="external" rel="noreferrer noopener">releases.flowplayer.com&#x2F;audio&#x2F;flowplayer.audio.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://releases.flowplayer.com&#x2F;vast&#x2F;srugim.co.il&#x2F;vast.min.js" target="_blank" class="external" rel="noreferrer noopener">releases.flowplayer.com&#x2F;vast&#x2F;srugim.co.il&#x2F;vast.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.flowplayer.com&#x2F;players&#x2F;43fdc72d-afd8-4d33-a2b9-da76a2a924e6&#x2F;native&#x2F;flowplayer.async.js" target="_blank" class="external" rel="noreferrer noopener">cdn.flowplayer.com&#x2F;players&#x2F;43fdc72d-afd8-4d33-a2b9-da76a2a924e6&#x2F;native&#x2F;flowplayer.async.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://ptm.flowplayer.com&#x2F;vod&#x2F;e889175f-8e9b-4c0d-b7b0-b6d77d3c8c12&#x2F;display" target="_blank" class="external" rel="noreferrer noopener">ptm.flowplayer.com&#x2F;vod&#x2F;e889175f-8e9b-4c0d-b7b0-b6d77d3c8c12&#x2F;display</a> (seen on 2 websites)</p>
@@ -205,34 +254,61 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://calcalist.co.il" target="_blank" class="external">calcalist.co.il</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://m.ynet.co.il" target="_blank" class="external">m.ynet.co.il</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://pplus.ynet.co.il" target="_blank" class="external">pplus.ynet.co.il</a>
+            <a href="http://blackenterprise.com" target="_blank" class="external">blackenterprise.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.calcalist.co.il" target="_blank" class="external">www.calcalist.co.il</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.ynet.co.il" target="_blank" class="external">www.ynet.co.il</a>
+            <a href="http://www.macrotrends.net" target="_blank" class="external">www.macrotrends.net</a>
         </li>
         <li class='truncate'>
             <a href="http://www.ynetnews.com" target="_blank" class="external">www.ynetnews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://m.calcalist.co.il" target="_blank" class="external">m.calcalist.co.il</a>
+            <a href="http://www.ynet.co.il" target="_blank" class="external">www.ynet.co.il</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://calcalist.co.il" target="_blank" class="external">calcalist.co.il</a>
         </li>
         <li class='truncate'>
             <a href="http://www.guerlain.com" target="_blank" class="external">www.guerlain.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://ts.fi" target="_blank" class="external">ts.fi</a>
+            <a href="http://www.rtvs.sk" target="_blank" class="external">www.rtvs.sk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sony.nl" target="_blank" class="external">www.sony.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://columbiagasohio.com" target="_blank" class="external">columbiagasohio.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.deeranddeerhunting.com" target="_blank" class="external">www.deeranddeerhunting.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nipsco.com" target="_blank" class="external">www.nipsco.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.ts.fi" target="_blank" class="external">www.ts.fi</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.loreal.com" target="_blank" class="external">www.loreal.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://deeranddeerhunting.com" target="_blank" class="external">deeranddeerhunting.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://loreal.com" target="_blank" class="external">loreal.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://srugim.co.il" target="_blank" class="external">srugim.co.il</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.srugim.co.il" target="_blank" class="external">www.srugim.co.il</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ts.fi" target="_blank" class="external">ts.fi</a>
         </li>
     </ul>
 </div>

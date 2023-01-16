@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "stylitics.com",
-        history: [{"date":"main","prevalence":0.000149,"sites":22,"fingerprinting":1,"cookies":0.00000678},{"date":"selenium-crux","prevalence":0.000163,"sites":12,"fingerprinting":1,"cookies":0}]
+        history: [{"date":"main","prevalence":0.000149,"sites":22,"fingerprinting":1,"cookies":0.00000678},{"date":"selenium-results","prevalence":0.000142,"sites":21,"fingerprinting":1,"cookies":0.00000676}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;3727<small>/16361</small>
+                    <strong>Rank:</strong> &#35;3701<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.02&#37; (12 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (21 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
@@ -91,10 +91,11 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
-                    <span>Stylesheet</span>,
-                    <span>Fetch</span>,
+                    <span>XHR</span>,
                     <span>Image</span>,
+                    <span>Fetch</span>,
                     <span>Preflight</span>,
+                    <span>Stylesheet</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/stylitics.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
@@ -132,12 +133,17 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.platform</li>
         <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
         <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
         <li class='truncate'>window.localStorage</li>
-        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
     </ul>
 </div>
 
@@ -146,31 +152,88 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://web-assets.stylitics.com&#x2F;v3-classic&#x2F;latest&#x2F;classic.release.js" target="_blank" class="external" rel="noreferrer noopener">web-assets.stylitics.com&#x2F;v3-classic&#x2F;latest&#x2F;classic.release.js</a> (seen on 7 websites)</p>
+            <p><a href="http://web-assets.stylitics.com&#x2F;v3-classic&#x2F;latest&#x2F;classic.release.js" target="_blank" class="external" rel="noreferrer noopener">web-assets.stylitics.com&#x2F;v3-classic&#x2F;latest&#x2F;classic.release.js</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://web-assets.stylitics.com&#x2F;v3-classic&#x2F;4310264948&#x2F;classic.css" target="_blank" class="external" rel="noreferrer noopener">web-assets.stylitics.com&#x2F;v3-classic&#x2F;4310264948&#x2F;classic.css</a> (seen on 4 websites)</p>
+            <p><a href="http://datastream.stylitics.com&#x2F;api&#x2F;engagements" target="_blank" class="external" rel="noreferrer noopener">datastream.stylitics.com&#x2F;api&#x2F;engagements</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://widget-api.stylitics.com&#x2F;api&#x2F;outfits" target="_blank" class="external" rel="noreferrer noopener">widget-api.stylitics.com&#x2F;api&#x2F;outfits</a> (seen on 4 websites)</p>
+            <p><a href="http://widget-api.stylitics.com&#x2F;api&#x2F;outfits" target="_blank" class="external" rel="noreferrer noopener">widget-api.stylitics.com&#x2F;api&#x2F;outfits</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content.stylitics.com&#x2F;assets&#x2F;widgets&#x2F;ui&#x2F;icons&#x2F;Loading.svg" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;assets&#x2F;widgets&#x2F;ui&#x2F;icons&#x2F;Loading.svg</a> (seen on 4 websites)</p>
+            <p><a href="http://datastream.stylitics.com&#x2F;api&#x2F;engagements" target="_blank" class="external" rel="noreferrer noopener">datastream.stylitics.com&#x2F;api&#x2F;engagements</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://datastream.stylitics.com&#x2F;api&#x2F;engagements" target="_blank" class="external" rel="noreferrer noopener">datastream.stylitics.com&#x2F;api&#x2F;engagements</a> (seen on 4 websites)</p>
+            <p><a href="http://widget.stylitics.com&#x2F;v2&#x2F;widget.js" target="_blank" class="external" rel="noreferrer noopener">widget.stylitics.com&#x2F;v2&#x2F;widget.js</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://datastream.stylitics.com&#x2F;api&#x2F;engagements" target="_blank" class="external" rel="noreferrer noopener">datastream.stylitics.com&#x2F;api&#x2F;engagements</a> (seen on 4 websites)</p>
+            <p><a href="http://web-assets.stylitics.com&#x2F;v3-classic&#x2F;4bf1fb3f64&#x2F;classic.css" target="_blank" class="external" rel="noreferrer noopener">web-assets.stylitics.com&#x2F;v3-classic&#x2F;4bf1fb3f64&#x2F;classic.css</a> (seen on 4 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://widget-api.stylitics.com&#x2F;api&#x2F;items&#x2F;replacements" target="_blank" class="external" rel="noreferrer noopener">widget-api.stylitics.com&#x2F;api&#x2F;items&#x2F;replacements</a> (seen on 2 websites)</p>
+            <p><a href="http://widget-api.stylitics.com&#x2F;api&#x2F;outfits" target="_blank" class="external" rel="noreferrer noopener">widget-api.stylitics.com&#x2F;api&#x2F;outfits</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;assets&#x2F;widgets&#x2F;ui&#x2F;icons&#x2F;Loading.svg" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;assets&#x2F;widgets&#x2F;ui&#x2F;icons&#x2F;Loading.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;10789908" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;10789908</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://web-assets.stylitics.com&#x2F;v3-moodboard&#x2F;latest&#x2F;moodboard.release.js" target="_blank" class="external" rel="noreferrer noopener">web-assets.stylitics.com&#x2F;v3-moodboard&#x2F;latest&#x2F;moodboard.release.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget.stylitics.com&#x2F;featured-shops&#x2F;v1&#x2F;css&#x2F;styles.css" target="_blank" class="external" rel="noreferrer noopener">widget.stylitics.com&#x2F;featured-shops&#x2F;v1&#x2F;css&#x2F;styles.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://web-assets.stylitics.com&#x2F;featured-shops&#x2F;latest&#x2F;js&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">web-assets.stylitics.com&#x2F;featured-shops&#x2F;latest&#x2F;js&#x2F;main.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://widget.stylitics.com&#x2F;v2&#x2F;widget.js" target="_blank" class="external" rel="noreferrer noopener">widget.stylitics.com&#x2F;v2&#x2F;widget.js</a> (seen on 2 websites)</p>
+            <p><a href="http://widget.stylitics.com&#x2F;cn&#x2F;js&#x2F;main.js" target="_blank" class="external" rel="noreferrer noopener">widget.stylitics.com&#x2F;cn&#x2F;js&#x2F;main.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://widget-api.stylitics.com&#x2F;api&#x2F;stories&#x2F;v1&#x2F;live-slugs" target="_blank" class="external" rel="noreferrer noopener">widget-api.stylitics.com&#x2F;api&#x2F;stories&#x2F;v1&#x2F;live-slugs</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;collage&#x2F;782d81cdae3238ad0a0c3b212f63c487418187ae1ca9fd" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;collage&#x2F;782d81cdae3238ad0a0c3b212f63c487418187ae1ca9fd</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;collage&#x2F;782c8ec8a13d3127d037577ada923669f70489670d4c91" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;collage&#x2F;782c8ec8a13d3127d037577ada923669f70489670d4c91</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;1401767" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;1401767</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;2011769" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;2011769</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;2380817" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;2380817</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;8057531" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;8057531</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;8515688" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;8515688</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;9115179" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;9115179</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;collage&#x2F;7e2e81caa6333977cbda797aedb261de69ab160b241812" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;collage&#x2F;7e2e81caa6333977cbda797aedb261de69ab160b241812</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;11069895" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;11069895</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;10749087" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;10749087</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;10805660" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;10805660</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;collage&#x2F;7f2b85cba33f3f28fca6e4ce0c20fa4a3673df20dfd68e" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;collage&#x2F;7f2b85cba33f3f28fca6e4ce0c20fa4a3673df20dfd68e</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://content.stylitics.com&#x2F;images&#x2F;items&#x2F;7889072" target="_blank" class="external" rel="noreferrer noopener">content.stylitics.com&#x2F;images&#x2F;items&#x2F;7889072</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -180,34 +243,61 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://finishline.com" target="_blank" class="external">finishline.com</a>
+            <a href="http://lordandtaylor.com" target="_blank" class="external">lordandtaylor.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.bostonproper.com" target="_blank" class="external">www.bostonproper.com</a>
+            <a href="http://www.eddiebaueroutlet.com" target="_blank" class="external">www.eddiebaueroutlet.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.eddiebauer.ca" target="_blank" class="external">www.eddiebauer.ca</a>
+            <a href="http://www.finishline.com" target="_blank" class="external">www.finishline.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.jdsports.com" target="_blank" class="external">www.jdsports.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.laura.ca" target="_blank" class="external">www.laura.ca</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.rue21.com" target="_blank" class="external">www.rue21.com</a>
+            <a href="http://www.nautica.com" target="_blank" class="external">www.nautica.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.untuckit.com" target="_blank" class="external">www.untuckit.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://bcbg.com" target="_blank" class="external">bcbg.com</a>
+            <a href="http://menswearhouse.com" target="_blank" class="external">menswearhouse.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lanebryant.com" target="_blank" class="external">www.lanebryant.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.menswearhouse.com" target="_blank" class="external">www.menswearhouse.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://williams-sonoma.com" target="_blank" class="external">williams-sonoma.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.crateandbarrel.com" target="_blank" class="external">www.crateandbarrel.com</a>
         </li>
         <li class='truncate'>
             <a href="http://anntaylor.com" target="_blank" class="external">anntaylor.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.anntaylor.com" target="_blank" class="external">www.anntaylor.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.christopherandbanks.com" target="_blank" class="external">www.christopherandbanks.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.loft.com" target="_blank" class="external">www.loft.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://eddiebaueroutlet.com" target="_blank" class="external">eddiebaueroutlet.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://finishline.com" target="_blank" class="external">finishline.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://glamour.com" target="_blank" class="external">glamour.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.glamour.com" target="_blank" class="external">www.glamour.com</a>
         </li>
     </ul>
 </div>

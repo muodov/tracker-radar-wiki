@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "gscdn.nl",
-        history: [{"date":"2020.08","prevalence":0.0000147,"sites":2,"fingerprinting":0,"cookies":0.0000147},{"date":"2020.09","prevalence":0.0000152,"sites":2,"fingerprinting":0,"cookies":0.0000152},{"date":"2020.10","prevalence":0.0000152,"sites":2,"fingerprinting":0,"cookies":0.0000152},{"date":"2020.11","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2020.12","prevalence":0.0000152,"sites":2,"fingerprinting":0,"cookies":0.0000152},{"date":"2021.01","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.02","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0.0000139},{"date":"2021.03","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0.0000139},{"date":"2021.04","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0.0000139},{"date":"2021.05","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.06","prevalence":0,"sites":0,"fingerprinting":0,"cookies":0},{"date":"2021.07","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2021.08","prevalence":0.0000139,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2021.09","prevalence":0.0000138,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2021.10","prevalence":0.0000138,"sites":2,"fingerprinting":0,"cookies":0},{"date":"2021.11","prevalence":0.0000207,"sites":3,"fingerprinting":0,"cookies":0},{"date":"2021.12","prevalence":0.0000207,"sites":3,"fingerprinting":0,"cookies":0},{"date":"2022.01","prevalence":0.0000208,"sites":3,"fingerprinting":0,"cookies":0},{"date":"2022.02","prevalence":0.0000409,"sites":6,"fingerprinting":0,"cookies":0},{"date":"2022.03","prevalence":0.000041,"sites":6,"fingerprinting":0,"cookies":0},{"date":"2022.04","prevalence":0.0000408,"sites":6,"fingerprinting":1,"cookies":0},{"date":"2022.05","prevalence":0.0000273,"sites":4,"fingerprinting":0,"cookies":0},{"date":"2022.06","prevalence":0.0000271,"sites":4,"fingerprinting":0,"cookies":0},{"date":"2022.07","prevalence":0.0000271,"sites":4,"fingerprinting":0,"cookies":0},{"date":"2022.08","prevalence":0.0000271,"sites":4,"fingerprinting":0,"cookies":0},{"date":"muodov/aug-2022","prevalence":0.0000271,"sites":4,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000271,"sites":4,"fingerprinting":0,"cookies":0},{"date":"selenium-results","prevalence":0.000027,"sites":4,"fingerprinting":1,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;12009<small>/27751</small>
+                    <strong>Rank:</strong> &#35;11038<small>/25507</small>
                 </li>
                 <li class='py-1'>
                     <strong>Prevalence:</strong> 0.00&#37; (4 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -92,11 +92,15 @@
                     <strong>Resource Types:</strong> 
                     <span>Stylesheet</span>,
                     <span>Image</span>,
+                    <span>Script</span>,
+                    <span>Font</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/gscdn.nl.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>lucyassets</span>, 
+                    <span>upload</span>, 
+                    <span>imgproxy</span>, 
                 </li>
             </ul>
         </div>
@@ -115,16 +119,89 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;cookiewall-551c2505.css" target="_blank" class="external" rel="noreferrer noopener">lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;cookiewall-551c2505.css</a> (seen on 2 websites)</p>
+            <p><a href="http://lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;style-fdf3d899.css" target="_blank" class="external" rel="noreferrer noopener">lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;style-fdf3d899.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;images&#x2F;cookiewall-large.jpg" target="_blank" class="external" rel="noreferrer noopener">lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;images&#x2F;cookiewall-large.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.gscdn.nl&#x2F;uploads&#x2F;016e99f130_Game_of_Gladiators_-_New_Customers_1080x1080_1.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.gscdn.nl&#x2F;uploads&#x2F;016e99f130_Game_of_Gladiators_-_New_Customers_1080x1080_1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;js&#x2F;geenstijl-15a36891.js" target="_blank" class="external" rel="noreferrer noopener">lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;js&#x2F;geenstijl-15a36891.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;fonts&#x2F;ClanOT-Ultra&#x2F;ClanOT-Ultra.otf" target="_blank" class="external" rel="noreferrer noopener">lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;fonts&#x2F;ClanOT-Ultra&#x2F;ClanOT-Ultra.otf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;fonts&#x2F;ClanOT-News&#x2F;ClanOT-News.otf" target="_blank" class="external" rel="noreferrer noopener">lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;fonts&#x2F;ClanOT-News&#x2F;ClanOT-News.otf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;fonts&#x2F;ClanOT-Black&#x2F;ClanOT-Black.otf" target="_blank" class="external" rel="noreferrer noopener">lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;fonts&#x2F;ClanOT-Black&#x2F;ClanOT-Black.otf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;fonts&#x2F;ClanOT-Bold&#x2F;ClanOT-Bold.otf" target="_blank" class="external" rel="noreferrer noopener">lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;fonts&#x2F;ClanOT-Bold&#x2F;ClanOT-Bold.otf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;fonts&#x2F;ClanOT-NewsItalic&#x2F;ClanOT-NewsItalic.otf" target="_blank" class="external" rel="noreferrer noopener">lucyassets.gscdn.nl&#x2F;skins&#x2F;geenstijl&#x2F;desktop&#x2F;css&#x2F;fonts&#x2F;ClanOT-NewsItalic&#x2F;ClanOT-NewsItalic.otf</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F59e8ba86ac_52574d762d_ANP-450470778.jpg%3Frect%3D283%252C0%252C689%252C689%26txt%3D%25C2%25A9ANP%26txtalign%3Dbottom%252Cright%26txtclr%3D%2523FFFFFF%26txtshad%3D10%26w%3D200%26s%3D32eaa8a766b7792d562146b0489012c7" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F59e8ba86ac_52574d762d_ANP-450470778.jpg%3Frect%3D283%252C0%252C689%252C689%26txt%3D%25C2%25A9ANP%26txtalign%3Dbottom%252Cright%26txtclr%3D%2523FFFFFF%26txtshad%3D10%26w%3D200%26s%3D32eaa8a766b7792d562146b0489012c7</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F3e8c4abae0_ANP-460708716.jpg%3Frect%3D273%252C0%252C751%252C751%26txt%3D%25C2%25A9ANP%26txtalign%3Dbottom%252Cright%26txtclr%3D%2523FFFFFF%26txtshad%3D10%26w%3D200%26s%3Dd3e979dd23bfbe55e1f5276072610b7e" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F3e8c4abae0_ANP-460708716.jpg%3Frect%3D273%252C0%252C751%252C751%26txt%3D%25C2%25A9ANP%26txtalign%3Dbottom%252Cright%26txtclr%3D%2523FFFFFF%26txtshad%3D10%26w%3D200%26s%3Dd3e979dd23bfbe55e1f5276072610b7e</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2Fba997ee98a_Schermafbeelding_2023-01-12_om_19.38.24.png%3Frect%3D261%252C0%252C667%252C667%26w%3D200%26s%3Dde9faadfa7b55cb74b441558cee84960" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2Fba997ee98a_Schermafbeelding_2023-01-12_om_19.38.24.png%3Frect%3D261%252C0%252C667%252C667%26w%3D200%26s%3Dde9faadfa7b55cb74b441558cee84960</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F8b5b12f0e8_ANP-457164851.jpg%3Frect%3D133%252C0%252C778%252C778%26txt%3D%25C2%25A9ANP%26txtalign%3Dbottom%252Cright%26txtclr%3D%2523FFFFFF%26txtshad%3D10%26w%3D200%26s%3Decd73e902bd885719c00380d2105d62e" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F8b5b12f0e8_ANP-457164851.jpg%3Frect%3D133%252C0%252C778%252C778%26txt%3D%25C2%25A9ANP%26txtalign%3Dbottom%252Cright%26txtclr%3D%2523FFFFFF%26txtshad%3D10%26w%3D200%26s%3Decd73e902bd885719c00380d2105d62e</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F15808f6d67_ANP-431131264.jpg%3Frect%3D237%252C0%252C679%252C679%26txt%3D%25C2%25A9ANP%26txtalign%3Dbottom%252Cright%26txtclr%3D%2523FFFFFF%26txtshad%3D10%26w%3D200%26s%3D9ba8bf423a7243524bed88992d439fed" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F15808f6d67_ANP-431131264.jpg%3Frect%3D237%252C0%252C679%252C679%26txt%3D%25C2%25A9ANP%26txtalign%3Dbottom%252Cright%26txtclr%3D%2523FFFFFF%26txtshad%3D10%26w%3D200%26s%3D9ba8bf423a7243524bed88992d439fed</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2Fe06001f52c_touch-g3c2f677b0_1920.jpg%3Frect%3D589%252C0%252C1045%252C1045%26w%3D200%26s%3D8bdfead27b550a45543536837413e108" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2Fe06001f52c_touch-g3c2f677b0_1920.jpg%3Frect%3D589%252C0%252C1045%252C1045%26w%3D200%26s%3D8bdfead27b550a45543536837413e108</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F8f91de4139_Screenshot_2023-01-12_13.29.02.png%3Frect%3D208%252C189%252C732%252C732%26w%3D200%26s%3D2fc2729d154c86a6de5c0b125dfbb7c9" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F8f91de4139_Screenshot_2023-01-12_13.29.02.png%3Frect%3D208%252C189%252C732%252C732%26w%3D200%26s%3D2fc2729d154c86a6de5c0b125dfbb7c9</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F5424123c9a_Screenshot_2023-01-12_13.24.36.png%3Frect%3D545%252C190%252C538%252C538%26w%3D200%26s%3D10d33b5ac3c69aae299237d622993192" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Fimage.nncdn.nl%2Fimage%2F5424123c9a_Screenshot_2023-01-12_13.24.36.png%3Frect%3D545%252C190%252C538%252C538%26w%3D200%26s%3D10d33b5ac3c69aae299237d622993192</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Ftpo.nl%2Fwp-content%2Fuploads%2F2023%2F01%2Fpaul-cliteur.jpg" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Ftpo.nl%2Fwp-content%2Fuploads%2F2023%2F01%2Fpaul-cliteur.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Ftpo.nl%2Fwp-content%2Fuploads%2F2023%2F01%2Fambulcance.jpg" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Ftpo.nl%2Fwp-content%2Fuploads%2F2023%2F01%2Fambulcance.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Ftpo.nl%2Fwp-content%2Fuploads%2F2023%2F01%2Ferdogan-stockholm.jpg" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Ftpo.nl%2Fwp-content%2Fuploads%2F2023%2F01%2Ferdogan-stockholm.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Ftpo.nl%2Fwp-content%2Fuploads%2F2023%2F01%2FIzium-1.jpg" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Ftpo.nl%2Fwp-content%2Fuploads%2F2023%2F01%2FIzium-1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://imgproxy.gscdn.nl&#x2F;https%3A%2F%2Ftpo.nl%2Fwp-content%2Fuploads%2F2022%2F06%2Fstroom-elektriciteit-donker-stoppen-aardlek-power.jpg" target="_blank" class="external" rel="noreferrer noopener">imgproxy.gscdn.nl&#x2F;https%3A%2F%2Ftpo.nl%2Fwp-content%2Fuploads%2F2022%2F06%2Fstroom-elektriciteit-donker-stoppen-aardlek-power.jpg</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>

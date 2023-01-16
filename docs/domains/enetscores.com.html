@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "enetscores.com",
-        history: [{"date":"main","prevalence":0.0000542,"sites":8,"fingerprinting":1,"cookies":0.00000678},{"date":"selenium-crux","prevalence":0.0000817,"sites":6,"fingerprinting":2,"cookies":0.0000272}]
+        history: [{"date":"main","prevalence":0.0000542,"sites":8,"fingerprinting":1,"cookies":0.00000678},{"date":"selenium-results","prevalence":0.000027,"sites":4,"fingerprinting":2,"cookies":0.0000135}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;5705<small>/16361</small>
+                    <strong>Rank:</strong> &#35;10791<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (6 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (4 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
@@ -90,16 +90,25 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Script</span>,
                     <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>XHR</span>,
+                    <span>Font</span>,
+                    <span>Image</span>,
+                    <span>Preflight</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/enetscores.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>es-js</span>, 
                     <span>css</span>, 
+                    <span>widget</span>, 
                     <span>es-djs</span>, 
                     <span>es-ccss</span>, 
+                    <span>es-cfg</span>, 
+                    <span>es-js</span>, 
+                    <span>es-lbl</span>, 
+                    <span>es-ds</span>, 
+                    <span>es-img</span>, 
                 </li>
             </ul>
         </div>
@@ -128,8 +137,14 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
 
@@ -137,9 +152,6 @@
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
-        <li class='break-all'>
-            <p><a href="http://es-js.enetscores.com&#x2F;js&#x2F;migratorydata&#x2F;v1&#x2F;lib&#x2F;migratorydata-client.js" target="_blank" class="external" rel="noreferrer noopener">es-js.enetscores.com&#x2F;js&#x2F;migratorydata&#x2F;v1&#x2F;lib&#x2F;migratorydata-client.js</a> (seen on 2 websites)</p>
-        </li>
         <li class='break-all'>
             <p><a href="http://css.enetscores.com&#x2F;hour&#x2F;gz&#x2F;css&#x2F;mx&#x2F;555.css" target="_blank" class="external" rel="noreferrer noopener">css.enetscores.com&#x2F;hour&#x2F;gz&#x2F;css&#x2F;mx&#x2F;555.css</a> (seen on 2 websites)</p>
         </li>
@@ -150,10 +162,52 @@
             <p><a href="http://css.enetscores.com&#x2F;hour&#x2F;gz&#x2F;css&#x2F;mx_style2&#x2F;555.css" target="_blank" class="external" rel="noreferrer noopener">css.enetscores.com&#x2F;hour&#x2F;gz&#x2F;css&#x2F;mx_style2&#x2F;555.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://es-djs.enetscores.com&#x2F;css&#x2F;css&#x2F;national_player_incidents&#x2F;soccer&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">es-djs.enetscores.com&#x2F;css&#x2F;css&#x2F;national_player_incidents&#x2F;soccer&#x2F;style.css</a> (seen on 2 websites)</p>
+            <p><a href="http://widget.enetscores.com&#x2F;FWBE3369CA65ED1938" target="_blank" class="external" rel="noreferrer noopener">widget.enetscores.com&#x2F;FWBE3369CA65ED1938</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://es-ccss.enetscores.com&#x2F;wsc&#x2F;6.587&#x2F;FW1EA1A04539E4B272" target="_blank" class="external" rel="noreferrer noopener">es-ccss.enetscores.com&#x2F;wsc&#x2F;6.587&#x2F;FW1EA1A04539E4B272</a> (seen on 2 websites)</p>
+            <p><a href="http://es-djs.enetscores.com&#x2F;css&#x2F;css&#x2F;livescore_generic&#x2F;generic&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">es-djs.enetscores.com&#x2F;css&#x2F;css&#x2F;livescore_generic&#x2F;generic&#x2F;style.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-ccss.enetscores.com&#x2F;wsc&#x2F;6.627&#x2F;FWBE3369CA65ED1938" target="_blank" class="external" rel="noreferrer noopener">es-ccss.enetscores.com&#x2F;wsc&#x2F;6.627&#x2F;FWBE3369CA65ED1938</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-cfg.enetscores.com&#x2F;ws&#x2F;6.627&#x2F;FWBE3369CA65ED1938" target="_blank" class="external" rel="noreferrer noopener">es-cfg.enetscores.com&#x2F;ws&#x2F;6.627&#x2F;FWBE3369CA65ED1938</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-js.enetscores.com&#x2F;js&#x2F;migratorydata&#x2F;v1&#x2F;lib&#x2F;migratorydata-client.js" target="_blank" class="external" rel="noreferrer noopener">es-js.enetscores.com&#x2F;js&#x2F;migratorydata&#x2F;v1&#x2F;lib&#x2F;migratorydata-client.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-djs.enetscores.com&#x2F;js&#x2F;widget&#x2F;livescore_generic&#x2F;generic&#x2F;v2.0.1&#x2F;default&#x2F;livescore.min.js" target="_blank" class="external" rel="noreferrer noopener">es-djs.enetscores.com&#x2F;js&#x2F;widget&#x2F;livescore_generic&#x2F;generic&#x2F;v2.0.1&#x2F;default&#x2F;livescore.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-lbl.enetscores.com&#x2F;wlt&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;en&#x2F;24" target="_blank" class="external" rel="noreferrer noopener">es-lbl.enetscores.com&#x2F;wlt&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;en&#x2F;24</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-ds.enetscores.com&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;live-en-livescore-daily-24-20230114-p0000-cid_0-t_g" target="_blank" class="external" rel="noreferrer noopener">es-ds.enetscores.com&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;live-en-livescore-daily-24-20230114-p0000-cid_0-t_g</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-djs.enetscores.com&#x2F;icons&#x2F;fonts&#x2F;wff-icon.woff" target="_blank" class="external" rel="noreferrer noopener">es-djs.enetscores.com&#x2F;icons&#x2F;fonts&#x2F;wff-icon.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-img.enetscores.com&#x2F;flags&#x2F;4_3&#x2F;16.svg" target="_blank" class="external" rel="noreferrer noopener">es-img.enetscores.com&#x2F;flags&#x2F;4_3&#x2F;16.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-img.enetscores.com&#x2F;logos&#x2F;59612m" target="_blank" class="external" rel="noreferrer noopener">es-img.enetscores.com&#x2F;logos&#x2F;59612m</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-img.enetscores.com&#x2F;logos&#x2F;59603m" target="_blank" class="external" rel="noreferrer noopener">es-img.enetscores.com&#x2F;logos&#x2F;59603m</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-ds.enetscores.com&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;live-en-liveodds-best-24-20230114-cbf29ce484222325-p0000" target="_blank" class="external" rel="noreferrer noopener">es-ds.enetscores.com&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;live-en-liveodds-best-24-20230114-cbf29ce484222325-p0000</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-ds.enetscores.com&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;live-en-liveodds-best-24-20230114-cbf29ce484222325-p0000" target="_blank" class="external" rel="noreferrer noopener">es-ds.enetscores.com&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;live-en-liveodds-best-24-20230114-cbf29ce484222325-p0000</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-ds.enetscores.com&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;live-en-odds-best-24-20230114-cbf29ce484222325-p0000" target="_blank" class="external" rel="noreferrer noopener">es-ds.enetscores.com&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;live-en-odds-best-24-20230114-cbf29ce484222325-p0000</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://es-ds.enetscores.com&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;live-en-odds-best-24-20230114-cbf29ce484222325-p0000" target="_blank" class="external" rel="noreferrer noopener">es-ds.enetscores.com&#x2F;6.627&#x2F;FWBE3369CA65ED1938&#x2F;live-en-odds-best-24-20230114-cbf29ce484222325-p0000</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -163,16 +217,16 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://onet.pl" target="_blank" class="external">onet.pl</a>
+            <a href="http://delo.si" target="_blank" class="external">delo.si</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.prosport.ro" target="_blank" class="external">www.prosport.ro</a>
+            <a href="http://www.topky.sk" target="_blank" class="external">www.topky.sk</a>
         </li>
         <li class='truncate'>
-            <a href="http://prosport.ro" target="_blank" class="external">prosport.ro</a>
+            <a href="http://footballgamestoday.com" target="_blank" class="external">footballgamestoday.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.supertennis.tv" target="_blank" class="external">www.supertennis.tv</a>
+            <a href="http://www.footballgamestoday.com" target="_blank" class="external">www.footballgamestoday.com</a>
         </li>
     </ul>
 </div>

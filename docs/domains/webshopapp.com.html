@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "webshopapp.com",
-        history: [{"date":"main","prevalence":0.0000542,"sites":8,"fingerprinting":1,"cookies":0},{"date":"selenium-crux","prevalence":0.0000681,"sites":5,"fingerprinting":1,"cookies":0.0000272}]
+        history: [{"date":"main","prevalence":0.0000542,"sites":8,"fingerprinting":1,"cookies":0},{"date":"selenium-results","prevalence":0.0000405,"sites":6,"fingerprinting":1,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;6939<small>/16361</small>
+                    <strong>Rank:</strong> &#35;8849<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (5 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (6 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
@@ -90,13 +90,16 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Stylesheet</span>,
                     <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                    <span>Other</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/webshopapp.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>dekbed-discounter</span>, 
-                    <span>koopjedeal-86234</span>, 
+                    <span>cdn</span>, 
                 </li>
             </ul>
         </div>
@@ -115,13 +118,313 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://dekbed-discounter.webshopapp.com&#x2F;services&#x2F;stats&#x2F;pageview.js" target="_blank" class="external" rel="noreferrer noopener">dekbed-discounter.webshopapp.com&#x2F;services&#x2F;stats&#x2F;pageview.js</a> (seen on 2 websites)</p>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;gui-2-0.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;gui-2-0.css</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;gui.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;gui.js</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;gui-responsive-2-0.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;gui-responsive-2-0.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;gui-responsive-2-0.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;gui-responsive-2-0.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;jquery-1-9-1.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;jquery-1-9-1.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;jquery-ui-1-10-1.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;jquery-ui-1-10-1.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;cookielaw.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;cookielaw.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;owl-carousel-min.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;owl-carousel-min.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;fancybox.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;fancybox.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;style.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;style-settings.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;style-settings.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;custom.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;custom.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;jquery-ui-min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;jquery-ui-min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;owl-carousel-min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;owl-carousel-min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;343608&#x2F;files&#x2F;414445351&#x2F;dartshopper-logo.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;343608&#x2F;files&#x2F;414445351&#x2F;dartshopper-logo.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;249910&#x2F;files&#x2F;420435883&#x2F;dartshopper-mobile.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;249910&#x2F;files&#x2F;420435883&#x2F;dartshopper-mobile.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;308051&#x2F;files&#x2F;419323539&#x2F;mail.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;308051&#x2F;files&#x2F;419323539&#x2F;mail.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;308051&#x2F;files&#x2F;419323538&#x2F;phone.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;308051&#x2F;files&#x2F;419323538&#x2F;phone.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;308051&#x2F;files&#x2F;419323537&#x2F;faq.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;308051&#x2F;files&#x2F;419323537&#x2F;faq.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;paypal.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;paypal.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;visa.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;visa.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;mastercard.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;mastercard.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;giropay.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;giropay.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;klarna.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;klarna.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;sofort.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;sofort.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;banktransfer.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;banktransfer.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;maestro.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;maestro.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;eps.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;eps.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;applepay.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;applepay.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;googlepay.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;googlepay.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;americanexpress.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;americanexpress.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;dpd.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;dpd.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;dhl.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;dhl.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;hermes.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;hermes.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;lazyload-min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;lazyload-min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;cookie-js.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;cookie-js.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;fancybox-umd.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;fancybox-umd.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;scripts.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;scripts.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;background-logo.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;background-logo.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;background-logo-grey.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;background-logo-grey.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600321&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600321&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;343608&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;background-logo.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;343608&#x2F;themes&#x2F;180530&#x2F;assets&#x2F;background-logo.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600330&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600330&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600343&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600343&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600369&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600369&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600398&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600398&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600424&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600424&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600431&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600431&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600441&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600441&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600460&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600460&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600480&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600480&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600542&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600542&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600508&#x2F;48x48x2&#x2F;image.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;420600508&#x2F;48x48x2&#x2F;image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;343608&#x2F;files&#x2F;415070546&#x2F;arrow-left.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;343608&#x2F;files&#x2F;415070546&#x2F;arrow-left.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;343608&#x2F;files&#x2F;415070547&#x2F;arrow-right.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;343608&#x2F;files&#x2F;415070547&#x2F;arrow-right.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;308051&#x2F;files&#x2F;419245377&#x2F;sale.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;308051&#x2F;files&#x2F;419245377&#x2F;sale.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;388318947&#x2F;200x200x2&#x2F;file.jpg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;250275&#x2F;files&#x2F;388318947&#x2F;200x200x2&#x2F;file.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;bootstrap.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;bootstrap.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;responsive.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;responsive.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;style.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;settings.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;settings.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;custom.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;custom.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;jquery-migrate-1-1-1.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;jquery-migrate-1-1-1.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;global.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;global.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;uspticker.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;uspticker.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;share42.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;share42.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;logo.png" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;logo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-cash.png" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-cash.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-ideal.png" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-ideal.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-mastercard.png" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-mastercard.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-visa.png" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-visa.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-mistercash.png" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-mistercash.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-giropay.png" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;assets&#x2F;icon-payment-giropay.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;background.png" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;background.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;glyphicons-halflings-regular.woff" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;glyphicons-halflings-regular.woff</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;favicon.ico" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;285428&#x2F;themes&#x2F;170723&#x2F;assets&#x2F;favicon.ico</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;style.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;style.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;custom.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;custom.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;settings.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;settings.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;new.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;new.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;wsa-css.css" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;wsa-css.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;bootstrap.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;bootstrap.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;transition.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;transition.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;dropdown.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;dropdown.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;checkbox.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;checkbox.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;owl-carousel.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;owl-carousel.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;jquery-fancybox.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;jquery-fancybox.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;jquery-custom-scrollbar.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;jquery-custom-scrollbar.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;jquery-countdown-min.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;jquery-countdown-min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;lazyload.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;lazyload.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;global.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;global.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;jcarousel.js" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;jcarousel.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;intoled-logo-rgb-no-payoff.svg" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;intoled-logo-rgb-no-payoff.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;blank.gif" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;blank.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;fontawesome-webfont.woff" target="_blank" class="external" rel="noreferrer noopener">cdn.webshopapp.com&#x2F;shops&#x2F;189995&#x2F;themes&#x2F;108713&#x2F;assets&#x2F;fontawesome-webfont.woff</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -131,10 +434,22 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://dekbed-discounter.nl" target="_blank" class="external">dekbed-discounter.nl</a>
+            <a href="http://dartshopper.de" target="_blank" class="external">dartshopper.de</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.koopjedeal.nl" target="_blank" class="external">www.koopjedeal.nl</a>
+            <a href="http://www.dartshopper.de" target="_blank" class="external">www.dartshopper.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.edelstenenenmineralen.nl" target="_blank" class="external">www.edelstenenenmineralen.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.into-led.com" target="_blank" class="external">www.into-led.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://edelstenenenmineralen.nl" target="_blank" class="external">edelstenenenmineralen.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://into-led.com" target="_blank" class="external">into-led.com</a>
         </li>
     </ul>
 </div>

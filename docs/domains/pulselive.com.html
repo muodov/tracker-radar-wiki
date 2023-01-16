@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "pulselive.com",
-        history: [{"date":"main","prevalence":0.000115,"sites":17,"fingerprinting":3,"cookies":0.0000271},{"date":"selenium-crux","prevalence":0.000123,"sites":9,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"main","prevalence":0.000115,"sites":17,"fingerprinting":3,"cookies":0.0000271},{"date":"selenium-results","prevalence":0.000155,"sites":23,"fingerprinting":3,"cookies":0.000027}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;4516<small>/16361</small>
+                    <strong>Rank:</strong> &#35;3482<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (9 sites)
+                    <strong>Prevalence:</strong> 0.02&#37; (23 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -90,20 +90,32 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Fetch</span>,
-                    <span>XHR</span>,
-                    <span>Preflight</span>,
                     <span>Script</span>,
+                    <span>Fetch</span>,
+                    <span>Document</span>,
+                    <span>Preflight</span>,
+                    <span>XHR</span>,
                     <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/pulselive.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>translations.platform</span>, 
+                    <span>sdk.fdp.evertonfc</span>, 
+                    <span>sdk.fdp.formula-e</span>, 
+                    <span>fdp.evertonfc</span>, 
+                    <span>fdp.formula-e</span>, 
+                    <span>sso.evertonfc</span>, 
+                    <span>events.fdp.evertonfc</span>, 
+                    <span>events.fdp.formula-e</span>, 
+                    <span>resources.fcbarcelona</span>, 
+                    <span>resources.formula-e</span>, 
+                    <span>static-files.formula-e</span>, 
+                    <span>api.formula-e</span>, 
+                    <span>footballapi-lcfc</span>, 
                     <span>footballapi</span>, 
-                    <span>cricketapi-icc</span>, 
                     <span>translations.wr</span>, 
                     <span>cmsapi</span>, 
-                    <span>resources.prod.atpmedia</span>, 
                 </li>
             </ul>
         </div>
@@ -122,31 +134,371 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
 
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>CanvasRenderingContext2D.prototype.isPointInPath</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getContextAttributes</li>
+        <li class='truncate'>OfflineAudioContext.prototype.constructor</li>
+        <li class='truncate'>AudioBuffer.prototype.getChannelData</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getSupportedExtensions</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getShaderPrecisionFormat</li>
+        <li class='truncate'>Navigator.prototype.productSub</li>
+        <li class='truncate'>Navigator.prototype.deviceMemory</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getParameter</li>
+        <li class='truncate'>Navigator.prototype.hardwareConcurrency</li>
+        <li class='truncate'>WebGLRenderingContext.prototype.getExtension</li>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>Screen.prototype.availWidth</li>
+        <li class='truncate'>HTMLCanvasElement.prototype.toDataURL</li>
+        <li class='truncate'>Navigator.prototype.webdriver</li>
+        <li class='truncate'>window.indexedDB</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>Intl.DateTimeFormat.prototype.resolvedOptions</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
+        <li class='truncate'>Screen.prototype.colorDepth</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>Navigator.prototype.language</li>
+        <li class='truncate'>Navigator.prototype.plugins</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>CNAMEs</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://sso.evertonfc.com" target="_blank" class="external">sso.evertonfc.com</a> &#x2192; <a href="http://sso.evertonfc.pulselive.com" target="_blank" class="external">sso.evertonfc.pulselive.com</a>
+        </li>
+    </ul>
+</div>
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
+            <p><a href="http://sdk.fdp.evertonfc.pulselive.com&#x2F;sdk-client-web&#x2F;latest&#x2F;client.min.js" target="_blank" class="external" rel="noreferrer noopener">sdk.fdp.evertonfc.pulselive.com&#x2F;sdk-client-web&#x2F;latest&#x2F;client.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://fdp.evertonfc.pulselive.com&#x2F;widget-resources&#x2F;import-map.json" target="_blank" class="external" rel="noreferrer noopener">fdp.evertonfc.pulselive.com&#x2F;widget-resources&#x2F;import-map.json</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://events.fdp.evertonfc.pulselive.com&#x2F;consents" target="_blank" class="external" rel="noreferrer noopener">events.fdp.evertonfc.pulselive.com&#x2F;consents</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://events.fdp.evertonfc.pulselive.com&#x2F;consents" target="_blank" class="external" rel="noreferrer noopener">events.fdp.evertonfc.pulselive.com&#x2F;consents</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://cmsapi.pulselive.com&#x2F;content&#x2F;worldrugby&#x2F;PHOTO&#x2F;en" target="_blank" class="external" rel="noreferrer noopener">cmsapi.pulselive.com&#x2F;content&#x2F;worldrugby&#x2F;PHOTO&#x2F;en</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://footballapi.pulselive.com&#x2F;football&#x2F;broadcasting-schedule&#x2F;fixtures" target="_blank" class="external" rel="noreferrer noopener">footballapi.pulselive.com&#x2F;football&#x2F;broadcasting-schedule&#x2F;fixtures</a> (seen on 2 websites)</p>
+            <p><a href="http://translations.platform.pulselive.com&#x2F;bhafc&#x2F;en.js" target="_blank" class="external" rel="noreferrer noopener">translations.platform.pulselive.com&#x2F;bhafc&#x2F;en.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cricketapi-icc.pulselive.com&#x2F;fixtures" target="_blank" class="external" rel="noreferrer noopener">cricketapi-icc.pulselive.com&#x2F;fixtures</a> (seen on 2 websites)</p>
+            <p><a href="http://sso.evertonfc.pulselive.com&#x2F;auth&#x2F;realms&#x2F;Everton&#x2F;protocol&#x2F;openid-connect&#x2F;3p-cookies&#x2F;step1.html" target="_blank" class="external" rel="noreferrer noopener">sso.evertonfc.pulselive.com&#x2F;auth&#x2F;realms&#x2F;Everton&#x2F;protocol&#x2F;openid-connect&#x2F;3p-cookies&#x2F;step1.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cricketapi-icc.pulselive.com&#x2F;fixtures" target="_blank" class="external" rel="noreferrer noopener">cricketapi-icc.pulselive.com&#x2F;fixtures</a> (seen on 2 websites)</p>
+            <p><a href="http://sso.evertonfc.pulselive.com&#x2F;auth&#x2F;realms&#x2F;Everton&#x2F;protocol&#x2F;openid-connect&#x2F;3p-cookies&#x2F;step2.html" target="_blank" class="external" rel="noreferrer noopener">sso.evertonfc.pulselive.com&#x2F;auth&#x2F;realms&#x2F;Everton&#x2F;protocol&#x2F;openid-connect&#x2F;3p-cookies&#x2F;step2.html</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cricketapi-icc.pulselive.com&#x2F;fixtures&#x2F;100699&#x2F;scoring" target="_blank" class="external" rel="noreferrer noopener">cricketapi-icc.pulselive.com&#x2F;fixtures&#x2F;100699&#x2F;scoring</a> (seen on 2 websites)</p>
+            <p><a href="http://sso.evertonfc.pulselive.com&#x2F;auth&#x2F;realms&#x2F;Everton&#x2F;protocol&#x2F;openid-connect&#x2F;auth" target="_blank" class="external" rel="noreferrer noopener">sso.evertonfc.pulselive.com&#x2F;auth&#x2F;realms&#x2F;Everton&#x2F;protocol&#x2F;openid-connect&#x2F;auth</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://footballapi.pulselive.com&#x2F;football&#x2F;competitions" target="_blank" class="external" rel="noreferrer noopener">footballapi.pulselive.com&#x2F;football&#x2F;competitions</a> (seen on 2 websites)</p>
+            <p><a href="http://translations.platform.pulselive.com&#x2F;fcbarcelona&#x2F;en.js" target="_blank" class="external" rel="noreferrer noopener">translations.platform.pulselive.com&#x2F;fcbarcelona&#x2F;en.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://footballapi.pulselive.com&#x2F;football&#x2F;fixtures" target="_blank" class="external" rel="noreferrer noopener">footballapi.pulselive.com&#x2F;football&#x2F;fixtures</a> (seen on 2 websites)</p>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;ATM.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;ATM.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;ATM.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;ATM.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;BCN.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;BCN.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;BCN.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;BCN.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;BET.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;BET.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;BET.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;BET.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;88&#x2F;RMD.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;88&#x2F;RMD.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;RMD.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;RMD.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;88&#x2F;BCN.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;88&#x2F;BCN.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;ADC.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;ADC.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;ADC.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;ADC.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;GET.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;GET.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;GET.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;GET.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;default@x2.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;50&#x2F;default@x2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;default@x2.png" target="_blank" class="external" rel="noreferrer noopener">resources.fcbarcelona.pulselive.com&#x2F;badges&#x2F;club&#x2F;40&#x2F;default@x2.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://translations.platform.pulselive.com&#x2F;fcbarcelona&#x2F;es.js" target="_blank" class="external" rel="noreferrer noopener">translations.platform.pulselive.com&#x2F;fcbarcelona&#x2F;es.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;11&#x2F;23&#x2F;22384234-f924-4607-bb79-67be3484e35d&#x2F;FIA-Emblem-Lockup.png" target="_blank" class="external" rel="noreferrer noopener">resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;11&#x2F;23&#x2F;22384234-f924-4607-bb79-67be3484e35d&#x2F;FIA-Emblem-Lockup.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.formula-e.pulselive.com&#x2F;photo-resources&#x2F;2023&#x2F;01&#x2F;14&#x2F;5adbc51c-9c8f-45bd-bd0e-19adb7cf626c&#x2F;Di-Grassi-pole-Mexico-City.jpg" target="_blank" class="external" rel="noreferrer noopener">resources.formula-e.pulselive.com&#x2F;photo-resources&#x2F;2023&#x2F;01&#x2F;14&#x2F;5adbc51c-9c8f-45bd-bd0e-19adb7cf626c&#x2F;Di-Grassi-pole-Mexico-City.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.formula-e.pulselive.com&#x2F;photo-resources&#x2F;2023&#x2F;01&#x2F;14&#x2F;0812a1eb-81d0-45c7-8d99-505d85c763b6&#x2F;Pascal-Wehrlein-Mexico-City.jpg" target="_blank" class="external" rel="noreferrer noopener">resources.formula-e.pulselive.com&#x2F;photo-resources&#x2F;2023&#x2F;01&#x2F;14&#x2F;0812a1eb-81d0-45c7-8d99-505d85c763b6&#x2F;Pascal-Wehrlein-Mexico-City.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;fcc99980-3e5d-4a96-856a-8773641ceebe.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;fcc99980-3e5d-4a96-856a-8773641ceebe.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;98935f8b-1c15-4ede-af6c-d5ea47eb95b0.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;98935f8b-1c15-4ede-af6c-d5ea47eb95b0.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;05dab754-2899-411b-9c4e-72311a36cc9c.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;05dab754-2899-411b-9c4e-72311a36cc9c.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;pt-br.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;pt-br.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;fr.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;fr.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;dbd8e835-4091-4449-a94d-9dd5e064ac79.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;dbd8e835-4091-4449-a94d-9dd5e064ac79.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;ef604bcc-19fe-4463-9667-97933cbf0065.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;ef604bcc-19fe-4463-9667-97933cbf0065.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;2174278b-4213-4688-9f72-8e982bc87e8e.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;2174278b-4213-4688-9f72-8e982bc87e8e.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;4b62fd44-831d-4b01-9f11-2aaf2c47075c.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;4b62fd44-831d-4b01-9f11-2aaf2c47075c.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;4a390151-89af-4931-9907-bcbaabb5a152.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;4a390151-89af-4931-9907-bcbaabb5a152.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;es-mx.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;es-mx.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;728b2253-b9d4-47dd-9051-e970bff2a62f.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;728b2253-b9d4-47dd-9051-e970bff2a62f.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;47579af2-ce5a-4ba9-800b-b6821ca934e3.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;47579af2-ce5a-4ba9-800b-b6821ca934e3.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;c57e46c4-8163-44f6-9c0d-b74579d51000.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;c57e46c4-8163-44f6-9c0d-b74579d51000.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;feb6762c-ae66-4c8e-a892-f958d6f7e774.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;feb6762c-ae66-4c8e-a892-f958d6f7e774.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;e763f675-afc7-403a-89bf-d903e8ee7c6c.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;e763f675-afc7-403a-89bf-d903e8ee7c6c.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;7be26d55-b77f-437a-a2ab-cf9f7e31e227.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;7be26d55-b77f-437a-a2ab-cf9f7e31e227.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;d8e6e6f6-4bce-4848-860b-8d88383983d1.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;d8e6e6f6-4bce-4848-860b-8d88383983d1.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;en.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;en.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;2543b91c-2543-4835-b9fc-17b5fbc79cb1.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;2543b91c-2543-4835-b9fc-17b5fbc79cb1.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;6c04a435-8357-42f6-8360-5305d00050ee.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;6c04a435-8357-42f6-8360-5305d00050ee.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;it.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;it.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;a4aa14e5-3812-425a-a4b6-310b4ad7023c.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;a4aa14e5-3812-425a-a4b6-310b4ad7023c.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;0bdc60a2-9884-45b3-848d-3ffecf12fd59.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;0bdc60a2-9884-45b3-848d-3ffecf12fd59.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;3d5b4033-31b9-442b-a0b5-183d51ebde5e.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;3d5b4033-31b9-442b-a0b5-183d51ebde5e.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;ba3d3d66-41de-4b1e-bfd6-7f318b2ec2af.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;ba3d3d66-41de-4b1e-bfd6-7f318b2ec2af.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;3f4d9ccc-0453-410c-8542-225bd2ebf280.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;3f4d9ccc-0453-410c-8542-225bd2ebf280.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;00098f8a-69be-4f84-a7ac-baedcc5f9e9c.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;00098f8a-69be-4f84-a7ac-baedcc5f9e9c.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;d001837f-806a-4ccf-adac-3f5dccee21ed.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;d001837f-806a-4ccf-adac-3f5dccee21ed.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;95ef8ea2-df90-4606-8e94-43492359f61c.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;95ef8ea2-df90-4606-8e94-43492359f61c.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;de.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;flags&#x2F;languages&#x2F;de.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;e05ede6d-d065-497b-a298-85afeeeb2ab1.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;e05ede6d-d065-497b-a298-85afeeeb2ab1.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;6c47b61a-5bb4-4ae4-9e0a-63a411de0782.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;6c47b61a-5bb4-4ae4-9e0a-63a411de0782.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;f0ce18fa-8d5c-4deb-a436-11ab783d541d.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;f0ce18fa-8d5c-4deb-a436-11ab783d541d.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;b768b851-5611-40be-8687-a0974e3d2754.png" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;drivers&#x2F;bc4a0209-f233-46c8-afce-842d1c48358f&#x2F;right&#x2F;small&#x2F;b768b851-5611-40be-8687-a0974e3d2754.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;19821c93-f115-41fb-af4f-80831a91afef.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;19821c93-f115-41fb-af4f-80831a91afef.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;0176f3e2-1247-494d-9a8d-b0950437ee8f.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;0176f3e2-1247-494d-9a8d-b0950437ee8f.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;c63aedad-a141-4ebc-9794-41a37909ef0c.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;c63aedad-a141-4ebc-9794-41a37909ef0c.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;badges&#x2F;fa97d2e7-02ca-4983-a930-4fdaa245a852.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;badges&#x2F;fa97d2e7-02ca-4983-a930-4fdaa245a852.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;content&#x2F;formula-e&#x2F;undefined&#x2F;EN&amp;detail&#x3D;DETAILED" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;content&#x2F;formula-e&#x2F;undefined&#x2F;EN&amp;detail&#x3D;DETAILED</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;broadcasting&#x2F;regions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;broadcasting&#x2F;regions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;5321dd9b-3cf3-456f-b69b-bdeb247a2397&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;5321dd9b-3cf3-456f-b69b-bdeb247a2397&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;3dcb3700-e579-4a6e-bfcc-488a7a7fd708&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;3dcb3700-e579-4a6e-bfcc-488a7a7fd708&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;25a5c66c-e00c-43b2-9556-feaa63f6c41f&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;25a5c66c-e00c-43b2-9556-feaa63f6c41f&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;dc074794-b3e8-4d59-916d-d0c71af825db&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;dc074794-b3e8-4d59-916d-d0c71af825db&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;d34e60d0-a14d-4574-8eea-db0b7097a758&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;d34e60d0-a14d-4574-8eea-db0b7097a758&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;32ff87c7-3f8f-41e1-843e-8d8dbe1e29c3&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;32ff87c7-3f8f-41e1-843e-8d8dbe1e29c3&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;5c6596bb-64ab-455f-91e2-25caff979fb8&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;5c6596bb-64ab-455f-91e2-25caff979fb8&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;5f23d174-3b8a-447a-b051-4f1ae7f9dbe7&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;5f23d174-3b8a-447a-b051-4f1ae7f9dbe7&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;afcf075b-f138-40a3-8894-56d4d2e130f1&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;afcf075b-f138-40a3-8894-56d4d2e130f1&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;e04a16a4-2e75-4b78-afcd-47ab36c3704e&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;e04a16a4-2e75-4b78-afcd-47ab36c3704e&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;8281ba49-dd68-4c4f-9ac9-3c7d347bd1ce&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;8281ba49-dd68-4c4f-9ac9-3c7d347bd1ce&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;eb18e302-54a1-4a7d-bb49-e04511b3db17&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;eb18e302-54a1-4a7d-bb49-e04511b3db17&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;25fb1c7c-fa00-4c34-8001-52a58077da33&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;25fb1c7c-fa00-4c34-8001-52a58077da33&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;b7c316f8-29a5-4a77-866a-872681a39660&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;b7c316f8-29a5-4a77-866a-872681a39660&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;5a78a42f-1207-4fd9-be3e-29be016fdd4f&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;5a78a42f-1207-4fd9-be3e-29be016fdd4f&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;27ce0601-182e-493c-8832-c73300c94ce3&#x2F;sessions" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;formula-e&#x2F;v1&#x2F;races&#x2F;27ce0601-182e-493c-8832-c73300c94ce3&#x2F;sessions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;flags&#x2F;mx.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;flags&#x2F;mx.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-files.formula-e.pulselive.com&#x2F;flags&#x2F;gb.svg" target="_blank" class="external" rel="noreferrer noopener">static-files.formula-e.pulselive.com&#x2F;flags&#x2F;gb.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.formula-e.pulselive.com&#x2F;photo-resources&#x2F;2023&#x2F;01&#x2F;14&#x2F;9474e6b9-b6b6-49a8-b58d-b798c86a129d&#x2F;zTLbtPX9.jpg" target="_blank" class="external" rel="noreferrer noopener">resources.formula-e.pulselive.com&#x2F;photo-resources&#x2F;2023&#x2F;01&#x2F;14&#x2F;9474e6b9-b6b6-49a8-b58d-b798c86a129d&#x2F;zTLbtPX9.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;content&#x2F;formula-e&#x2F;video&#x2F;EN" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;content&#x2F;formula-e&#x2F;video&#x2F;EN</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;content&#x2F;formula-e&#x2F;PHOTO&#x2F;EN" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;content&#x2F;formula-e&#x2F;PHOTO&#x2F;EN</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;broadcasting&#x2F;events" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;broadcasting&#x2F;events</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://api.formula-e.pulselive.com&#x2F;content&#x2F;formula-e&#x2F;EN" target="_blank" class="external" rel="noreferrer noopener">api.formula-e.pulselive.com&#x2F;content&#x2F;formula-e&#x2F;EN</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;12&#x2F;27&#x2F;fbb0689a-3484-4498-876d-2f72155fbab3&#x2F;Channel_4.png" target="_blank" class="external" rel="noreferrer noopener">resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;12&#x2F;27&#x2F;fbb0689a-3484-4498-876d-2f72155fbab3&#x2F;Channel_4.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;12&#x2F;22&#x2F;31bab67d-5680-4e22-8b42-ea78e6dc9351&#x2F;Eurosport-Player-logo.png" target="_blank" class="external" rel="noreferrer noopener">resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;12&#x2F;22&#x2F;31bab67d-5680-4e22-8b42-ea78e6dc9351&#x2F;Eurosport-Player-logo.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;12&#x2F;27&#x2F;78ca26b3-2b0a-476b-81d1-ef3c09cddcbe&#x2F;Formula-E-Wordmark-logo-full-colour.png" target="_blank" class="external" rel="noreferrer noopener">resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;12&#x2F;27&#x2F;78ca26b3-2b0a-476b-81d1-ef3c09cddcbe&#x2F;Formula-E-Wordmark-logo-full-colour.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;12&#x2F;22&#x2F;a01312fe-85ca-4945-8f3e-54abada5d8c4&#x2F;yt_logo_rgb_light.png" target="_blank" class="external" rel="noreferrer noopener">resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;12&#x2F;22&#x2F;a01312fe-85ca-4945-8f3e-54abada5d8c4&#x2F;yt_logo_rgb_light.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;12&#x2F;22&#x2F;a0040fb2-96d7-4378-91c2-7193f29c83ff&#x2F;Eurosport_1_Logo_2015.svg.png" target="_blank" class="external" rel="noreferrer noopener">resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;photo&#x2F;2022&#x2F;12&#x2F;22&#x2F;a0040fb2-96d7-4378-91c2-7193f29c83ff&#x2F;Eurosport_1_Logo_2015.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;document&#x2F;2022&#x2F;12&#x2F;14&#x2F;c0c3cf93-cdf0-422e-af1d-e0c73f3e0c86&#x2F;hankook-logo-white.png" target="_blank" class="external" rel="noreferrer noopener">resources.formula-e.pulselive.com&#x2F;formula-e&#x2F;document&#x2F;2022&#x2F;12&#x2F;14&#x2F;c0c3cf93-cdf0-422e-af1d-e0c73f3e0c86&#x2F;hankook-logo-white.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://footballapi-lcfc.pulselive.com&#x2F;football&#x2F;fixtures" target="_blank" class="external" rel="noreferrer noopener">footballapi-lcfc.pulselive.com&#x2F;football&#x2F;fixtures</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://footballapi-lcfc.pulselive.com&#x2F;football&#x2F;competitions" target="_blank" class="external" rel="noreferrer noopener">footballapi-lcfc.pulselive.com&#x2F;football&#x2F;competitions</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://translations.platform.pulselive.com&#x2F;premierleague&#x2F;en.js" target="_blank" class="external" rel="noreferrer noopener">translations.platform.pulselive.com&#x2F;premierleague&#x2F;en.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://footballapi.pulselive.com&#x2F;football&#x2F;broadcasting-schedule&#x2F;fixtures" target="_blank" class="external" rel="noreferrer noopener">footballapi.pulselive.com&#x2F;football&#x2F;broadcasting-schedule&#x2F;fixtures</a> (seen on 2 websites)</p>
@@ -161,10 +513,13 @@
             <p><a href="http://cmsapi.pulselive.com&#x2F;rugby&#x2F;rankings&#x2F;mru" target="_blank" class="external" rel="noreferrer noopener">cmsapi.pulselive.com&#x2F;rugby&#x2F;rankings&#x2F;mru</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://resources.prod.atpmedia.pulselive.com&#x2F;photo-resources&#x2F;2022&#x2F;12&#x2F;16&#x2F;0235ca84-1205-41bc-8a58-be9731f3fff7&#x2F;GettyImages-599382106.jpg" target="_blank" class="external" rel="noreferrer noopener">resources.prod.atpmedia.pulselive.com&#x2F;photo-resources&#x2F;2022&#x2F;12&#x2F;16&#x2F;0235ca84-1205-41bc-8a58-be9731f3fff7&#x2F;GettyImages-599382106.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://translations.platform.pulselive.com&#x2F;atpmedia&#x2F;en.js" target="_blank" class="external" rel="noreferrer noopener">translations.platform.pulselive.com&#x2F;atpmedia&#x2F;en.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://cmsapi.pulselive.com&#x2F;content&#x2F;worldrugby&#x2F;promo&#x2F;en" target="_blank" class="external" rel="noreferrer noopener">cmsapi.pulselive.com&#x2F;content&#x2F;worldrugby&#x2F;promo&#x2F;en</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://translations.platform.pulselive.com&#x2F;wta&#x2F;en.js" target="_blank" class="external" rel="noreferrer noopener">translations.platform.pulselive.com&#x2F;wta&#x2F;en.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -174,19 +529,43 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://premierleague.com" target="_blank" class="external">premierleague.com</a>
+            <a href="http://brightonandhovealbion.com" target="_blank" class="external">brightonandhovealbion.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://draft.premierleague.com" target="_blank" class="external">draft.premierleague.com</a>
+            <a href="http://www.brightonandhovealbion.com" target="_blank" class="external">www.brightonandhovealbion.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://icc-cricket.com" target="_blank" class="external">icc-cricket.com</a>
+            <a href="http://evertonfc.com" target="_blank" class="external">evertonfc.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.icc-cricket.com" target="_blank" class="external">www.icc-cricket.com</a>
+            <a href="http://www.evertonfc.com" target="_blank" class="external">www.evertonfc.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fiaformulae.com" target="_blank" class="external">www.fiaformulae.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fcbarcelona.com" target="_blank" class="external">fcbarcelona.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fcbarcelona.com" target="_blank" class="external">www.fcbarcelona.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fcbarcelona.es" target="_blank" class="external">www.fcbarcelona.es</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fcbarcelona.es" target="_blank" class="external">fcbarcelona.es</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fiaformulae.com" target="_blank" class="external">fiaformulae.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://lcfc.com" target="_blank" class="external">lcfc.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.premierleague.com" target="_blank" class="external">www.premierleague.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://premierleague.com" target="_blank" class="external">premierleague.com</a>
         </li>
         <li class='truncate'>
             <a href="http://rugbyworldcup.com" target="_blank" class="external">rugbyworldcup.com</a>
@@ -205,6 +584,12 @@
         </li>
         <li class='truncate'>
             <a href="http://world.rugby" target="_blank" class="external">world.rugby</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wtatennis.com" target="_blank" class="external">wtatennis.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wtatennis.com" target="_blank" class="external">www.wtatennis.com</a>
         </li>
     </ul>
 </div>

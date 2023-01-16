@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "imhd.io",
-        history: [{"date":"main","prevalence":0.0000678,"sites":10,"fingerprinting":1,"cookies":0.0000271},{"date":"selenium-crux","prevalence":0.0000681,"sites":5,"fingerprinting":1,"cookies":0.0000272}]
+        history: [{"date":"main","prevalence":0.0000678,"sites":10,"fingerprinting":1,"cookies":0.0000271},{"date":"selenium-results","prevalence":0.0000676,"sites":10,"fingerprinting":1,"cookies":0.000027}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;6489<small>/16361</small>
+                    <strong>Rank:</strong> &#35;5844<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (5 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (10 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
@@ -90,12 +90,14 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Script</span>,
                     <span>Image</span>,
                     <span>Fetch</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/imhd.io.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>cdn</span>, 
                     <span>fulcrum-antenna</span>, 
                 </li>
             </ul>
@@ -115,19 +117,43 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://fulcrum-antenna.imhd.io&#x2F;getuid&#x2F;imhd&#x2F;throttle" target="_blank" class="external" rel="noreferrer noopener">fulcrum-antenna.imhd.io&#x2F;getuid&#x2F;imhd&#x2F;throttle</a> (seen on 2 websites)</p>
+            <p><a href="http://fulcrum-antenna.imhd.io&#x2F;getuid&#x2F;imhd&#x2F;throttle" target="_blank" class="external" rel="noreferrer noopener">fulcrum-antenna.imhd.io&#x2F;getuid&#x2F;imhd&#x2F;throttle</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://fulcrum-antenna.imhd.io&#x2F;collect&#x2F;pageview&#x2F;297c2761-8f57-4e48-9846-c406b915ce0b&#x2F;imhd" target="_blank" class="external" rel="noreferrer noopener">fulcrum-antenna.imhd.io&#x2F;collect&#x2F;pageview&#x2F;297c2761-8f57-4e48-9846-c406b915ce0b&#x2F;imhd</a> (seen on 2 websites)</p>
+            <p><a href="http://fulcrum-antenna.imhd.io&#x2F;collect&#x2F;pageview&#x2F;297c2761-8f57-4e48-9846-c406b915ce0b&#x2F;imhd" target="_blank" class="external" rel="noreferrer noopener">fulcrum-antenna.imhd.io&#x2F;collect&#x2F;pageview&#x2F;297c2761-8f57-4e48-9846-c406b915ce0b&#x2F;imhd</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://fulcrum-antenna.imhd.io&#x2F;collect&#x2F;consent&#x2F;c2661ce9-a421-465e-8b08-4c3e223b8ce3&#x2F;imhd" target="_blank" class="external" rel="noreferrer noopener">fulcrum-antenna.imhd.io&#x2F;collect&#x2F;consent&#x2F;c2661ce9-a421-465e-8b08-4c3e223b8ce3&#x2F;imhd</a> (seen on 2 websites)</p>
+            <p><a href="http://cdn.imhd.io&#x2F;quarterdeck&#x2F;8416018b-1fcb-4c56-a99d-e18e13e35753&#x2F;habu.js" target="_blank" class="external" rel="noreferrer noopener">cdn.imhd.io&#x2F;quarterdeck&#x2F;8416018b-1fcb-4c56-a99d-e18e13e35753&#x2F;habu.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.imhd.io&#x2F;quarterdeck&#x2F;caf8d2df-f489-4848-b216-049832c86668&#x2F;habu.js" target="_blank" class="external" rel="noreferrer noopener">cdn.imhd.io&#x2F;quarterdeck&#x2F;caf8d2df-f489-4848-b216-049832c86668&#x2F;habu.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.imhd.io&#x2F;quarterdeck&#x2F;1cfc3016-07a6-4c46-9267-2cdb2f6c1f3c&#x2F;habu.js" target="_blank" class="external" rel="noreferrer noopener">cdn.imhd.io&#x2F;quarterdeck&#x2F;1cfc3016-07a6-4c46-9267-2cdb2f6c1f3c&#x2F;habu.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -140,7 +166,19 @@
             <a href="http://businessinsider.com" target="_blank" class="external">businessinsider.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.businessinsider.com" target="_blank" class="external">www.businessinsider.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.insider.com" target="_blank" class="external">www.insider.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://insider.com" target="_blank" class="external">insider.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://rollingstone.com" target="_blank" class="external">rollingstone.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.rollingstone.com" target="_blank" class="external">www.rollingstone.com</a>
         </li>
     </ul>
 </div>

@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "content-cms.com",
-        history: [{"date":"main","prevalence":0.0000339,"sites":5,"fingerprinting":2,"cookies":0},{"date":"selenium-crux","prevalence":0.0000408,"sites":3,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000339,"sites":5,"fingerprinting":2,"cookies":0},{"date":"selenium-results","prevalence":0.0000338,"sites":5,"fingerprinting":2,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;8580<small>/16361</small>
+                    <strong>Rank:</strong> &#35;9072<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (5 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -90,12 +90,14 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Image</span>,
+                    <span>XHR</span>,
+                    <span>Script</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/content-cms.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>content-us-7</span>, 
+                    <span>content-us-5</span>, 
+                    <span>content-eu-1</span>, 
                 </li>
             </ul>
         </div>
@@ -114,37 +116,48 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Screen.prototype.availHeight</li>
+        <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.name</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Navigator.prototype.vendor</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;fa67&#x2F;fa672097-04f3-4205-87c6-e65119091bf3.jpg" target="_blank" class="external" rel="noreferrer noopener">content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;fa67&#x2F;fa672097-04f3-4205-87c6-e65119091bf3.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://content-us-5.content-cms.com&#x2F;api&#x2F;af9094ac-4ec2-4ea9-8480-e7ef2c8369de&#x2F;delivery&#x2F;v1&#x2F;rendering&#x2F;search" target="_blank" class="external" rel="noreferrer noopener">content-us-5.content-cms.com&#x2F;api&#x2F;af9094ac-4ec2-4ea9-8480-e7ef2c8369de&#x2F;delivery&#x2F;v1&#x2F;rendering&#x2F;search</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;ddec&#x2F;ddecff1a-f799-4bf8-9cde-7fd74a48efae.png" target="_blank" class="external" rel="noreferrer noopener">content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;ddec&#x2F;ddecff1a-f799-4bf8-9cde-7fd74a48efae.png</a> (seen on 2 websites)</p>
+            <p><a href="http://content-eu-1.content-cms.com&#x2F;f43b0181-6ee9-4539-b3e9-f7f37a95f962&#x2F;dxdam&#x2F;c7&#x2F;c7b66542-f2ee-4316-9917-fd89499dd851&#x2F;dapzn.js" target="_blank" class="external" rel="noreferrer noopener">content-eu-1.content-cms.com&#x2F;f43b0181-6ee9-4539-b3e9-f7f37a95f962&#x2F;dxdam&#x2F;c7&#x2F;c7b66542-f2ee-4316-9917-fd89499dd851&#x2F;dapzn.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;5ff9&#x2F;5ff972d2-f5cc-4247-82c2-48319facf41e.png" target="_blank" class="external" rel="noreferrer noopener">content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;5ff9&#x2F;5ff972d2-f5cc-4247-82c2-48319facf41e.png</a> (seen on 2 websites)</p>
+            <p><a href="http://content-eu-1.content-cms.com&#x2F;f43b0181-6ee9-4539-b3e9-f7f37a95f962&#x2F;dxdam&#x2F;16&#x2F;16707640-765f-44bc-bf2d-21522a860a23&#x2F;tealeaf_reece_v1.1.js" target="_blank" class="external" rel="noreferrer noopener">content-eu-1.content-cms.com&#x2F;f43b0181-6ee9-4539-b3e9-f7f37a95f962&#x2F;dxdam&#x2F;16&#x2F;16707640-765f-44bc-bf2d-21522a860a23&#x2F;tealeaf_reece_v1.1.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;67c2&#x2F;67c2681f-73d8-47e9-8b9a-3c908b4d20b4.jpg" target="_blank" class="external" rel="noreferrer noopener">content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;67c2&#x2F;67c2681f-73d8-47e9-8b9a-3c908b4d20b4.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;4d7a&#x2F;4d7a57c4-ac85-4c0e-930b-b8b394b80709.jpg" target="_blank" class="external" rel="noreferrer noopener">content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;4d7a&#x2F;4d7a57c4-ac85-4c0e-930b-b8b394b80709.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;1a19&#x2F;1a198b57-3e52-4684-85b5-2becdca51de9.png" target="_blank" class="external" rel="noreferrer noopener">content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;1a19&#x2F;1a198b57-3e52-4684-85b5-2becdca51de9.png</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;42ac&#x2F;42ac9862-35c2-4591-9239-0c0309a1585d.jpg" target="_blank" class="external" rel="noreferrer noopener">content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;42ac&#x2F;42ac9862-35c2-4591-9239-0c0309a1585d.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;508d&#x2F;508d7705-2eb5-4d98-9dbd-2ed41595b8ec.jpg" target="_blank" class="external" rel="noreferrer noopener">content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;508d&#x2F;508d7705-2eb5-4d98-9dbd-2ed41595b8ec.jpg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;8e3a&#x2F;8e3a4f37-e330-4ec2-aed4-b9329d3a109a.jpg" target="_blank" class="external" rel="noreferrer noopener">content-us-7.content-cms.com&#x2F;8ba19f21-9a97-4525-8886-f54d823a5cea&#x2F;dxresources&#x2F;8e3a&#x2F;8e3a4f37-e330-4ec2-aed4-b9329d3a109a.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://content-eu-1.content-cms.com&#x2F;api&#x2F;f43b0181-6ee9-4539-b3e9-f7f37a95f962&#x2F;delivery&#x2F;v1&#x2F;search" target="_blank" class="external" rel="noreferrer noopener">content-eu-1.content-cms.com&#x2F;api&#x2F;f43b0181-6ee9-4539-b3e9-f7f37a95f962&#x2F;delivery&#x2F;v1&#x2F;search</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -154,10 +167,16 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://supervielle.com.ar" target="_blank" class="external">supervielle.com.ar</a>
+            <a href="http://myer.com.au" target="_blank" class="external">myer.com.au</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.supervielle.com.ar" target="_blank" class="external">www.supervielle.com.ar</a>
+            <a href="http://www.myer.com.au" target="_blank" class="external">www.myer.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://reece.com.au" target="_blank" class="external">reece.com.au</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.reece.com.au" target="_blank" class="external">www.reece.com.au</a>
         </li>
     </ul>
 </div>

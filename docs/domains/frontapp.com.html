@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "frontapp.com",
-        history: [{"date":"main","prevalence":0.000108,"sites":16,"fingerprinting":2,"cookies":0.000108},{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":1,"cookies":0.0000272}]
+        history: [{"date":"main","prevalence":0.000108,"sites":16,"fingerprinting":2,"cookies":0.000108},{"date":"selenium-results","prevalence":0.000108,"sites":16,"fingerprinting":2,"cookies":0.000108}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;11598<small>/16361</small>
+                    <strong>Rank:</strong> &#35;4360<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (16 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.01&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -98,8 +98,10 @@
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>chat-assets</span>, 
-                    <span>eu-west-1-chat-server</span>, 
+                    <span>chat</span>, 
                     <span>us-west-1-chat-server</span>, 
+                    <span>eu-west-1-chat-server</span>, 
+                    <span>us-west-2-chat-server</span>, 
                 </li>
             </ul>
         </div>
@@ -129,9 +131,15 @@
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
         <li class='truncate'>Navigator.prototype.product</li>
+        <li class='truncate'>Navigator.prototype.mimeTypes</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
+        <li class='truncate'>URL.createObjectURL</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Document.cookie setter</li>
         <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
 </div>
 
@@ -140,22 +148,97 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://chat-assets.frontapp.com&#x2F;v1&#x2F;chat.bundle.js" target="_blank" class="external" rel="noreferrer noopener">chat-assets.frontapp.com&#x2F;v1&#x2F;chat.bundle.js</a> (seen on 2 websites)</p>
+            <p><a href="http://chat-assets.frontapp.com&#x2F;v1&#x2F;chat.bundle.js" target="_blank" class="external" rel="noreferrer noopener">chat-assets.frontapp.com&#x2F;v1&#x2F;chat.bundle.js</a> (seen on 9 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://chat-assets.frontapp.com&#x2F;v1&#x2F;app.bundle.js" target="_blank" class="external" rel="noreferrer noopener">chat-assets.frontapp.com&#x2F;v1&#x2F;app.bundle.js</a> (seen on 2 websites)</p>
+            <p><a href="http://chat-assets.frontapp.com&#x2F;v1&#x2F;app.bundle.js" target="_blank" class="external" rel="noreferrer noopener">chat-assets.frontapp.com&#x2F;v1&#x2F;app.bundle.js</a> (seen on 9 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://eu-west-1-chat-server.frontapp.com&#x2F;initialize" target="_blank" class="external" rel="noreferrer noopener">eu-west-1-chat-server.frontapp.com&#x2F;initialize</a> (seen on 2 websites)</p>
+            <p><a href="http://us-west-1-chat-server.frontapp.com&#x2F;initialize" target="_blank" class="external" rel="noreferrer noopener">us-west-1-chat-server.frontapp.com&#x2F;initialize</a> (seen on 9 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://eu-west-1-chat-server.frontapp.com&#x2F;initialize" target="_blank" class="external" rel="noreferrer noopener">eu-west-1-chat-server.frontapp.com&#x2F;initialize</a> (seen on 2 websites)</p>
+            <p><a href="http://us-west-1-chat-server.frontapp.com&#x2F;initialize" target="_blank" class="external" rel="noreferrer noopener">us-west-1-chat-server.frontapp.com&#x2F;initialize</a> (seen on 9 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://eu-west-1-chat-server.frontapp.com&#x2F;flags" target="_blank" class="external" rel="noreferrer noopener">eu-west-1-chat-server.frontapp.com&#x2F;flags</a> (seen on 2 websites)</p>
+            <p><a href="http://us-west-1-chat-server.frontapp.com&#x2F;flags" target="_blank" class="external" rel="noreferrer noopener">us-west-1-chat-server.frontapp.com&#x2F;flags</a> (seen on 9 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://eu-west-1-chat-server.frontapp.com&#x2F;flags" target="_blank" class="external" rel="noreferrer noopener">eu-west-1-chat-server.frontapp.com&#x2F;flags</a> (seen on 2 websites)</p>
+            <p><a href="http://us-west-1-chat-server.frontapp.com&#x2F;flags" target="_blank" class="external" rel="noreferrer noopener">us-west-1-chat-server.frontapp.com&#x2F;flags</a> (seen on 9 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;c1fc7460d7f01506a47b9fb6fd14cf79&#x2F;settings" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;c1fc7460d7f01506a47b9fb6fd14cf79&#x2F;settings</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;dedd3c84c09daac5f9479a5a361b0d4ea43a157b5dce8e19293c72614eb04bb5" target="_blank" class="external" rel="noreferrer noopener">us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;dedd3c84c09daac5f9479a5a361b0d4ea43a157b5dce8e19293c72614eb04bb5</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;dedd3c84c09daac5f9479a5a361b0d4ea43a157b5dce8e19293c72614eb04bb5" target="_blank" class="external" rel="noreferrer noopener">us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;dedd3c84c09daac5f9479a5a361b0d4ea43a157b5dce8e19293c72614eb04bb5</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;c1fc7460d7f01506a47b9fb6fd14cf79&#x2F;logo" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;c1fc7460d7f01506a47b9fb6fd14cf79&#x2F;logo</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;fabbe0a3763c25cdfff5731440af8944&#x2F;settings" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;fabbe0a3763c25cdfff5731440af8944&#x2F;settings</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;f2cd82c6c5f687bf22a2573e8da8ba36871404e6a0d23041c61e408f488c43f3" target="_blank" class="external" rel="noreferrer noopener">eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;f2cd82c6c5f687bf22a2573e8da8ba36871404e6a0d23041c61e408f488c43f3</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;f2cd82c6c5f687bf22a2573e8da8ba36871404e6a0d23041c61e408f488c43f3" target="_blank" class="external" rel="noreferrer noopener">eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;f2cd82c6c5f687bf22a2573e8da8ba36871404e6a0d23041c61e408f488c43f3</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;d72039f05a06a3ab8112d8c7147dcbd0&#x2F;settings" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;d72039f05a06a3ab8112d8c7147dcbd0&#x2F;settings</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;67fb76f011a3bd8ef10acdf859db6816260b9bdc2e0d268729f0cc71ac1302b8" target="_blank" class="external" rel="noreferrer noopener">us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;67fb76f011a3bd8ef10acdf859db6816260b9bdc2e0d268729f0cc71ac1302b8</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;67fb76f011a3bd8ef10acdf859db6816260b9bdc2e0d268729f0cc71ac1302b8" target="_blank" class="external" rel="noreferrer noopener">us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;67fb76f011a3bd8ef10acdf859db6816260b9bdc2e0d268729f0cc71ac1302b8</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;d72039f05a06a3ab8112d8c7147dcbd0&#x2F;logo" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;d72039f05a06a3ab8112d8c7147dcbd0&#x2F;logo</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;9b2abe6213a3d4b09c2741acf65e8df0&#x2F;settings" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;9b2abe6213a3d4b09c2741acf65e8df0&#x2F;settings</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://us-west-2-chat-server.frontapp.com&#x2F;billing_settings&#x2F;ee4656f67a927baf7019e23dec2b7d8a2302da278cbdcba828b6ac9f0d7a6eb8" target="_blank" class="external" rel="noreferrer noopener">us-west-2-chat-server.frontapp.com&#x2F;billing_settings&#x2F;ee4656f67a927baf7019e23dec2b7d8a2302da278cbdcba828b6ac9f0d7a6eb8</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://us-west-2-chat-server.frontapp.com&#x2F;billing_settings&#x2F;ee4656f67a927baf7019e23dec2b7d8a2302da278cbdcba828b6ac9f0d7a6eb8" target="_blank" class="external" rel="noreferrer noopener">us-west-2-chat-server.frontapp.com&#x2F;billing_settings&#x2F;ee4656f67a927baf7019e23dec2b7d8a2302da278cbdcba828b6ac9f0d7a6eb8</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;14fbcecabc2acde2924800f5f93e905e&#x2F;settings" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;14fbcecabc2acde2924800f5f93e905e&#x2F;settings</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;147400ce12009ae575e745cc91dc40f4436338cd73eb60769cd4b5d80a075718" target="_blank" class="external" rel="noreferrer noopener">eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;147400ce12009ae575e745cc91dc40f4436338cd73eb60769cd4b5d80a075718</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;147400ce12009ae575e745cc91dc40f4436338cd73eb60769cd4b5d80a075718" target="_blank" class="external" rel="noreferrer noopener">eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;147400ce12009ae575e745cc91dc40f4436338cd73eb60769cd4b5d80a075718</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;14fbcecabc2acde2924800f5f93e905e&#x2F;logo" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;14fbcecabc2acde2924800f5f93e905e&#x2F;logo</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;9a81961e9c39ea0c8670a416c57c91c5&#x2F;settings" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;9a81961e9c39ea0c8670a416c57c91c5&#x2F;settings</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;dc007145048256d64ba684f51ce4d62b7c943f23cf08d6aa96e1402c392c479a" target="_blank" class="external" rel="noreferrer noopener">eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;dc007145048256d64ba684f51ce4d62b7c943f23cf08d6aa96e1402c392c479a</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;dc007145048256d64ba684f51ce4d62b7c943f23cf08d6aa96e1402c392c479a" target="_blank" class="external" rel="noreferrer noopener">eu-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;dc007145048256d64ba684f51ce4d62b7c943f23cf08d6aa96e1402c392c479a</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;33f079fe0303ee7095606f75a09cd428&#x2F;settings" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;33f079fe0303ee7095606f75a09cd428&#x2F;settings</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;e1e42bc8ad73444edde795f52775ff7fa9935d4340927ba7a50ec3b9df75278d" target="_blank" class="external" rel="noreferrer noopener">us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;e1e42bc8ad73444edde795f52775ff7fa9935d4340927ba7a50ec3b9df75278d</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;e1e42bc8ad73444edde795f52775ff7fa9935d4340927ba7a50ec3b9df75278d" target="_blank" class="external" rel="noreferrer noopener">us-west-1-chat-server.frontapp.com&#x2F;billing_settings&#x2F;e1e42bc8ad73444edde795f52775ff7fa9935d4340927ba7a50ec3b9df75278d</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://chat.frontapp.com&#x2F;33f079fe0303ee7095606f75a09cd428&#x2F;logo" target="_blank" class="external" rel="noreferrer noopener">chat.frontapp.com&#x2F;33f079fe0303ee7095606f75a09cd428&#x2F;logo</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -165,10 +248,49 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://maxgaming.se" target="_blank" class="external">maxgaming.se</a>
+            <a href="http://championpowerequipment.com" target="_blank" class="external">championpowerequipment.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.championpowerequipment.com" target="_blank" class="external">www.championpowerequipment.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.easyswitch.nl" target="_blank" class="external">www.easyswitch.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.life.church" target="_blank" class="external">www.life.church</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.mac.bid" target="_blank" class="external">www.mac.bid</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nudiejeans.com" target="_blank" class="external">www.nudiejeans.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.overstappen.nl" target="_blank" class="external">www.overstappen.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.usplastic.com" target="_blank" class="external">www.usplastic.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.wanikani.com" target="_blank" class="external">www.wanikani.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://easyswitch.nl" target="_blank" class="external">easyswitch.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://life.church" target="_blank" class="external">life.church</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://mac.bid" target="_blank" class="external">mac.bid</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://nudiejeans.com" target="_blank" class="external">nudiejeans.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://overstappen.nl" target="_blank" class="external">overstappen.nl</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://usplastic.com" target="_blank" class="external">usplastic.com</a>
         </li>
     </ul>
 </div>

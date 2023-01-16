@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "infocreate.co.jp",
-        history: [{"date":"main","prevalence":0.0000881,"sites":13,"fingerprinting":1,"cookies":0},{"date":"selenium-crux","prevalence":0.0000953,"sites":7,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000881,"sites":13,"fingerprinting":1,"cookies":0},{"date":"selenium-results","prevalence":0.0000879,"sites":13,"fingerprinting":1,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;5241<small>/16361</small>
+                    <strong>Rank:</strong> &#35;4974<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (7 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (13 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -114,13 +114,29 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.vendor</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://ewb-c.infocreate.co.jp&#x2F;ewbc&#x2F;ptspk_loader.js" target="_blank" class="external" rel="noreferrer noopener">ewb-c.infocreate.co.jp&#x2F;ewbc&#x2F;ptspk_loader.js</a> (seen on 7 websites)</p>
+            <p><a href="http://ewb-c.infocreate.co.jp&#x2F;ewbc&#x2F;ptspk_loader.js" target="_blank" class="external" rel="noreferrer noopener">ewb-c.infocreate.co.jp&#x2F;ewbc&#x2F;ptspk_loader.js</a> (seen on 8 websites)</p>
         </li>
     </ul>
 </div>
@@ -130,13 +146,19 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://mhlw.go.jp" target="_blank" class="external">mhlw.go.jp</a>
+            <a href="http://moj.go.jp" target="_blank" class="external">moj.go.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://houmukyoku.moj.go.jp" target="_blank" class="external">houmukyoku.moj.go.jp</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.hellowork.mhlw.go.jp" target="_blank" class="external">www.hellowork.mhlw.go.jp</a>
         </li>
         <li class='truncate'>
             <a href="http://www.jrhokkaido.co.jp" target="_blank" class="external">www.jrhokkaido.co.jp</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.koto-lib.tokyo.jp" target="_blank" class="external">www.koto-lib.tokyo.jp</a>
+            <a href="http://www.meti.go.jp" target="_blank" class="external">www.meti.go.jp</a>
         </li>
         <li class='truncate'>
             <a href="http://www.moj.go.jp" target="_blank" class="external">www.moj.go.jp</a>
@@ -146,9 +168,6 @@
         </li>
         <li class='truncate'>
             <a href="http://www.pref.osaka.lg.jp" target="_blank" class="external">www.pref.osaka.lg.jp</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.pref.shiga.lg.jp" target="_blank" class="external">www.pref.shiga.lg.jp</a>
         </li>
     </ul>
 </div>

@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "cargurus.com",
-        history: [{"date":"main","prevalence":0.0000271,"sites":4,"fingerprinting":2,"cookies":0.0000271},{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":2,"cookies":0.0000272}]
+        history: [{"date":"main","prevalence":0.0000271,"sites":4,"fingerprinting":2,"cookies":0.0000271},{"date":"selenium-results","prevalence":0.000027,"sites":4,"fingerprinting":2,"cookies":0.000027}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,10 +65,10 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;10658<small>/16361</small>
+                    <strong>Rank:</strong> &#35;10141<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (4 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
@@ -94,6 +94,8 @@
                     <span>Script</span>,
                     <span>Image</span>,
                     <span>Font</span>,
+                    <span>Other</span>,
+                    <span>XHR</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/cargurus.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
@@ -102,6 +104,7 @@
                     <span>static</span>, 
                     <span>static1</span>, 
                     <span>static-assets</span>, 
+                    <span>gtm</span>, 
                 </li>
             </ul>
         </div>
@@ -130,18 +133,20 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
-        <li class='truncate'>Intl.DateTimeFormat.prototype.resolvedOptions</li>
+        <li class='truncate'>Navigator.prototype.product</li>
         <li class='truncate'>window.devicePixelRatio</li>
+        <li class='truncate'>Navigator.prototype.platform</li>
         <li class='truncate'>Date.prototype.getTimezoneOffset</li>
         <li class='truncate'>Navigator.prototype.doNotTrack</li>
+        <li class='truncate'>Intl.DateTimeFormat.prototype.resolvedOptions</li>
         <li class='truncate'>Screen.prototype.colorDepth</li>
         <li class='truncate'>Element.prototype.getClientRects</li>
         <li class='truncate'>Navigator.prototype.cookieEnabled</li>
         <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
         <li class='truncate'>Screen.prototype.height</li>
         <li class='truncate'>Screen.prototype.width</li>
-        <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
         <li class='truncate'>Navigator.prototype.language</li>
         <li class='truncate'>window.sessionStorage</li>
         <li class='truncate'>window.localStorage</li>
@@ -158,49 +163,61 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;breadcrumbs.entry.e7bf8c8c39e07f621fa721d1bf8cb013.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;breadcrumbs.entry.e7bf8c8c39e07f621fa721d1bf8cb013.css</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;app_shell.entry.e2734ac06cba2f18905fdaf0b131f377.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;app_shell.entry.e2734ac06cba2f18905fdaf0b131f377.css</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;app_shell.entry.0b9d582e66e63c637d1c3a9269329829.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;app_shell.entry.0b9d582e66e63c637d1c3a9269329829.css</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;ravenDLL.entry.3b4477420065307145dc.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;ravenDLL.entry.3b4477420065307145dc.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;reactDLL.entry.5d7afeeaf36c7cc133e0.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;reactDLL.entry.5d7afeeaf36c7cc133e0.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;snowplowInit.entry_d497f883d4d212cd2a78d5fec05eca28.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;snowplowInit.entry_d497f883d4d212cd2a78d5fec05eca28.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;app_shell.entry_e2734ac06cba2f18905fdaf0b131f377.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;app_shell.entry_e2734ac06cba2f18905fdaf0b131f377.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;css&#x2F;external&#x2F;googlefonts&#x2F;lato&#x2F;v14&#x2F;lato-v14-latin-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;css&#x2F;external&#x2F;googlefonts&#x2F;lato&#x2F;v14&#x2F;lato-v14-latin-regular.woff2</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;css&#x2F;external&#x2F;googlefonts&#x2F;lato&#x2F;v14&#x2F;lato-v14-latin-700.woff2" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;css&#x2F;external&#x2F;googlefonts&#x2F;lato&#x2F;v14&#x2F;lato-v14-latin-700.woff2</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-assets.cargurus.com&#x2F;hosted-libraries&#x2F;t3.js" target="_blank" class="external" rel="noreferrer noopener">static-assets.cargurus.com&#x2F;hosted-libraries&#x2F;t3.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;breadcrumbs.entry.e7bf8c8c39e07f621fa721d1bf8cb013.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;breadcrumbs.entry.e7bf8c8c39e07f621fa721d1bf8cb013.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_ext_nojqui_global.entry.f77191fb4532bcc1266a38f7b7fb6cb4.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_ext_nojqui_global.entry.f77191fb4532bcc1266a38f7b7fb6cb4.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_site_globalV2.entry.03b7c2680c3c9aa318854a5addf5cdec.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_site_globalV2.entry.03b7c2680c3c9aa318854a5addf5cdec.css</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_site_globalV2.entry.3b082b8525e2679a84ef4ccfaca71312.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_site_globalV2.entry.3b082b8525e2679a84ef4ccfaca71312.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_site_new_home_corp.entry.a5bc1dde0f1c049ea08fc203ec7d8afc.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_site_new_home_corp.entry.a5bc1dde0f1c049ea08fc203ec7d8afc.css</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_site_new_home_corp.entry.1f0b3aca99c21bed36d9c0bc7cde16d5.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_site_new_home_corp.entry.1f0b3aca99c21bed36d9c0bc7cde16d5.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;homepagePackage.entry.4029a4aa213cc07b1003a51515773e45.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;homepagePackage.entry.4029a4aa213cc07b1003a51515773e45.css</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;homepagePackage.entry.b0e2c7b76bba8a9e24629d5e9f9ec510.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;homepagePackage.entry.b0e2c7b76bba8a9e24629d5e9f9ec510.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;vendorReduced.entry.b72e78c11f7c0b4584c7.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;vendorReduced.entry.b72e78c11f7c0b4584c7.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;ravenDLL.entry.3b4477420065307145dc.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;ravenDLL.entry.3b4477420065307145dc.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;reactDLL.entry.5d7afeeaf36c7cc133e0.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;reactDLL.entry.5d7afeeaf36c7cc133e0.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
             <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;external_lib.entry_162e536c966c9620cdaeeee760470724.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;external_lib.entry_162e536c966c9620cdaeeee760470724.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cg_main.entry_8e24ccd5387d93166f1fafeeec9cfd2d.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cg_main.entry_8e24ccd5387d93166f1fafeeec9cfd2d.js</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cg_main.entry_fc305621cc3db954772521e83598a77d.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cg_main.entry_fc305621cc3db954772521e83598a77d.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;homepage.entry_50e502fe00aa1134f54f104623020544.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;homepage.entry_50e502fe00aa1134f54f104623020544.js</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;homepage.entry_ad594932b5a8eb68cd857dcbb95418e4.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;homepage.entry_ad594932b5a8eb68cd857dcbb95418e4.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;googleOneTap.entry_e63a642a2d1c2c78d2a889910e83f909.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;googleOneTap.entry_e63a642a2d1c2c78d2a889910e83f909.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;homepagePackage.entry_4029a4aa213cc07b1003a51515773e45.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;homepagePackage.entry_4029a4aa213cc07b1003a51515773e45.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;snowplowInit.entry_d497f883d4d212cd2a78d5fec05eca28.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;snowplowInit.entry_d497f883d4d212cd2a78d5fec05eca28.js</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;homepagePackage.entry_b0e2c7b76bba8a9e24629d5e9f9ec510.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;homepagePackage.entry_b0e2c7b76bba8a9e24629d5e9f9ec510.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_theme_base_lite.entry.b179eeedd0c99b7d1d6318698b851875.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_theme_base_lite.entry.b179eeedd0c99b7d1d6318698b851875.css</a> (seen on 2 websites)</p>
@@ -209,37 +226,127 @@
             <p><a href="http://static-eu.cargurus.com&#x2F;gfx&#x2F;reskin&#x2F;no-image-available.jpg" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;gfx&#x2F;reskin&#x2F;no-image-available.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cg_home_returning_user_carousels.entry_3769888ea88694a16428736febbd9d09.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cg_home_returning_user_carousels.entry_3769888ea88694a16428736febbd9d09.js</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cg_home_returning_user_carousels.entry_04ff915ffbcf4c7ba83b32f130846844.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cg_home_returning_user_carousels.entry_04ff915ffbcf4c7ba83b32f130846844.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;subscribeBlade.entry_0d8f9cb098e95f2f551d0fcafeeefc2f.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;subscribeBlade.entry_0d8f9cb098e95f2f551d0fcafeeefc2f.js</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;subscribeBlade.entry_18564ee6aea8411264bd66eb5f0cbcaf.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;subscribeBlade.entry_18564ee6aea8411264bd66eb5f0cbcaf.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;app_shell.entry_0b9d582e66e63c637d1c3a9269329829.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;app_shell.entry_0b9d582e66e63c637d1c3a9269329829.js</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;app_shell.entry.en_GB.3a0684fd.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;app_shell.entry.en_GB.3a0684fd.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;ads.entry_3f9d1fd28fc1384512bd14a3423bdfbc.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;ads.entry_3f9d1fd28fc1384512bd14a3423bdfbc.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;subscribeBlade.entry.0d8f9cb098e95f2f551d0fcafeeefc2f.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;subscribeBlade.entry.0d8f9cb098e95f2f551d0fcafeeefc2f.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;css&#x2F;external&#x2F;googlefonts&#x2F;lato&#x2F;v14&#x2F;lato-v14-latin-regular.woff2" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;css&#x2F;external&#x2F;googlefonts&#x2F;lato&#x2F;v14&#x2F;lato-v14-latin-regular.woff2</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;css&#x2F;external&#x2F;googlefonts&#x2F;lato&#x2F;v14&#x2F;lato-v14-latin-700.woff2" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;css&#x2F;external&#x2F;googlefonts&#x2F;lato&#x2F;v14&#x2F;lato-v14-latin-700.woff2</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://static-assets.cargurus.com&#x2F;hosted-libraries&#x2F;t3.js" target="_blank" class="external" rel="noreferrer noopener">static-assets.cargurus.com&#x2F;hosted-libraries&#x2F;t3.js</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;subscribeBlade.entry.18564ee6aea8411264bd66eb5f0cbcaf.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;subscribeBlade.entry.18564ee6aea8411264bd66eb5f0cbcaf.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_icons.entry.44d533d6d848532d4b19545a5f2941a2.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_icons.entry.44d533d6d848532d4b19545a5f2941a2.css</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;gfx&#x2F;reskin&#x2F;marketing&#x2F;valuable-insights-EU-EN.jpg" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;gfx&#x2F;reskin&#x2F;marketing&#x2F;valuable-insights-EU-EN.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://static-eu.cargurus.com&#x2F;css&#x2F;external&#x2F;fontawesome&#x2F;fontawesome-pro&#x2F;webfonts&#x2F;fa-regular-400.woff2" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;css&#x2F;external&#x2F;fontawesome&#x2F;fontawesome-pro&#x2F;webfonts&#x2F;fa-regular-400.woff2</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static-eu.cargurus.com&#x2F;gfx&#x2F;reskin&#x2F;marketing&#x2F;valuable-insights-EU-EN.jpg" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;gfx&#x2F;reskin&#x2F;marketing&#x2F;valuable-insights-EU-EN.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_spa_desktop.entry.213b0e89dbea22a467ab303ef5442ffa.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_spa_desktop.entry.213b0e89dbea22a467ab303ef5442ffa.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;listing_search_desktop.entry.d77626f613871386378e00bb34afeaa7.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;listing_search_desktop.entry.d77626f613871386378e00bb34afeaa7.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_theme_base.entry.16ee71a4b4a023f7c806d80ffb87890f.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_theme_base.entry.16ee71a4b4a023f7c806d80ffb87890f.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_theme_consumer_listings_desktop.entry.72ca0fae2f280c41e29de78769b28d34.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cg_theme_consumer_listings_desktop.entry.72ca0fae2f280c41e29de78769b28d34.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;listing_search_desktop.entry_d77626f613871386378e00bb34afeaa7.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;listing_search_desktop.entry_d77626f613871386378e00bb34afeaa7.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-assets.cargurus.com&#x2F;images&#x2F;site-cars&#x2F;gfx&#x2F;listings&#x2F;no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg" target="_blank" class="external" rel="noreferrer noopener">static-assets.cargurus.com&#x2F;images&#x2F;site-cars&#x2F;gfx&#x2F;listings&#x2F;no-image-placeholder_c80f77463a1c0559e4735b57ed1d96ec8ff77ec6bce5b247bb733c96e18316b7.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_SrpContactFormModal_092757977e486c1bcd1ee9d1ff6f4681.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_SrpContactFormModal_092757977e486c1bcd1ee9d1ff6f4681.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_ListingNavigation_01a9d4c674e7922f4b8dfa1a67365326.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_ListingNavigation_01a9d4c674e7922f4b8dfa1a67365326.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_SellerContacted_52725bd998e611cfb57303b4cb52ddd4.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_SellerContacted_52725bd998e611cfb57303b4cb52ddd4.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_1010_d5d2347d2b3580eaae5ba4d81754c8ca.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_1010_d5d2347d2b3580eaae5ba4d81754c8ca.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_5824_d29713066bf75aff9704e0e946f430d8.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_5824_d29713066bf75aff9704e0e946f430d8.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_3171_e3eb620b0582e3fdcdb137903ff800cf.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_3171_e3eb620b0582e3fdcdb137903ff800cf.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_1842_2b52f805d2f37b1db1b94032ed656c12.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_1842_2b52f805d2f37b1db1b94032ed656c12.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_3423_0792fe25301b646785f4fc1891bfdeff.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_3423_0792fe25301b646785f4fc1891bfdeff.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_5334_d2c155d7e7156a2e277bab3b124972cc.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_5334_d2c155d7e7156a2e277bab3b124972cc.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_178_31fc46715bd57bd888ad8d85ceb57fc0.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_178_31fc46715bd57bd888ad8d85ceb57fc0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_9627_09b7e2838160c6c8f600165aaebcd7b1.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_9627_09b7e2838160c6c8f600165aaebcd7b1.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_6353_eae5a15cee9c2a413c0c8e4e238cea77.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_6353_eae5a15cee9c2a413c0c8e4e238cea77.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_8397_e8ff11c7e6694cdecfe3410c19d84e42.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_8397_e8ff11c7e6694cdecfe3410c19d84e42.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_7164_cb0508c38dd1ef7dd4ad07503a5c4a3f.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_7164_cb0508c38dd1ef7dd4ad07503a5c4a3f.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_4736_0d0aaaeb21ccacb1e73ac35d99d3398b.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_4736_0d0aaaeb21ccacb1e73ac35d99d3398b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_1876_7624ca9bfc59939291766b6ac9b57b12.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_1876_7624ca9bfc59939291766b6ac9b57b12.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_2166_381bdb3b3c7a2539773ce638657c219d.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_2166_381bdb3b3c7a2539773ce638657c219d.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_ListingsVDPDesktop_d85eed96edb0b86e27ac032c61363e79.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_ListingsVDPDesktop_d85eed96edb0b86e27ac032c61363e79.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;login.entry.f586cffe0935e78b503f3180f99c5e61.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;login.entry.f586cffe0935e78b503f3180f99c5e61.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_1010_d5d2347d2b3580eaae5ba4d81754c8ca.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_1010_d5d2347d2b3580eaae5ba4d81754c8ca.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_3171_e3eb620b0582e3fdcdb137903ff800cf.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_3171_e3eb620b0582e3fdcdb137903ff800cf.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_3243_abcb6faa74c8a7b42ebfc12502cc410c.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_3243_abcb6faa74c8a7b42ebfc12502cc410c.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_6760_e187539a750206274c355bf174dcb346.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_6760_e187539a750206274c355bf174dcb346.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cargurus_listing_search_AutoShow.e4315ccf2637cd61f65699309be4b1d0.css" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;css&#x2F;cargurus_listing_search_AutoShow.e4315ccf2637cd61f65699309be4b1d0.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_AutoShow_e4315ccf2637cd61f65699309be4b1d0.js" target="_blank" class="external" rel="noreferrer noopener">static-eu.cargurus.com&#x2F;bundles&#x2F;js&#x2F;cargurus_listing_search_AutoShow_e4315ccf2637cd61f65699309be4b1d0.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.cargurus.com&#x2F;bundles&#x2F;js&#x2F;app_shell.entry.en_CA.66e6895f.js" target="_blank" class="external" rel="noreferrer noopener">static.cargurus.com&#x2F;bundles&#x2F;js&#x2F;app_shell.entry.en_CA.66e6895f.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gtm.cargurus.com&#x2F;tagging&#x2F;g&#x2F;collect" target="_blank" class="external" rel="noreferrer noopener">gtm.cargurus.com&#x2F;tagging&#x2F;g&#x2F;collect</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -253,6 +360,12 @@
         </li>
         <li class='truncate'>
             <a href="http://www.cargurus.ca" target="_blank" class="external">www.cargurus.ca</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cargurus.co.uk" target="_blank" class="external">www.cargurus.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cargurus.ca" target="_blank" class="external">cargurus.ca</a>
         </li>
     </ul>
 </div>

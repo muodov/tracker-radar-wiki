@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "afp.ai",
-        history: [{"date":"main","prevalence":0.000339,"sites":50,"fingerprinting":2,"cookies":0.000203},{"date":"selenium-crux","prevalence":0.000803,"sites":59,"fingerprinting":1,"cookies":0.000408}]
+        history: [{"date":"main","prevalence":0.000339,"sites":50,"fingerprinting":2,"cookies":0.000203},{"date":"selenium-results","prevalence":0.000304,"sites":45,"fingerprinting":2,"cookies":0.000216}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;1202<small>/16361</small>
+                    <strong>Rank:</strong> &#35;2181<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.08&#37; (59 sites)
+                    <strong>Prevalence:</strong> 0.03&#37; (45 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.04&#37;
+                    <strong>Cookies:</strong> 0.02&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -92,12 +92,16 @@
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
                     <span>XHR</span>,
+                    <span>Fetch</span>,
+                    <span>Preflight</span>,
+                    <span>Image</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/afp.ai.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>cdn</span>, 
                     <span>ssp</span>, 
+                    <span>creatives</span>, 
                 </li>
             </ul>
         </div>
@@ -126,8 +130,14 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.outerHeight</li>
+        <li class='truncate'>window.outerWidth</li>
+        <li class='truncate'>Screen.prototype.pixelDepth</li>
         <li class='truncate'>Navigator.prototype.product</li>
         <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Screen.prototype.height</li>
+        <li class='truncate'>Screen.prototype.width</li>
+        <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Document.cookie getter</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
@@ -138,16 +148,70 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;sdk.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;sdk.js</a> (seen on 28 websites)</p>
+            <p><a href="http://ssp.afp.ai&#x2F;api&#x2F;adfox&#x2F;bids" target="_blank" class="external" rel="noreferrer noopener">ssp.afp.ai&#x2F;api&#x2F;adfox&#x2F;bids</a> (seen on 19 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ssp.afp.ai&#x2F;api&#x2F;settings" target="_blank" class="external" rel="noreferrer noopener">ssp.afp.ai&#x2F;api&#x2F;settings</a> (seen on 28 websites)</p>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;sdk.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;sdk.js</a> (seen on 15 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://ssp.afp.ai&#x2F;api&#x2F;adfox&#x2F;bids" target="_blank" class="external" rel="noreferrer noopener">ssp.afp.ai&#x2F;api&#x2F;adfox&#x2F;bids</a> (seen on 27 websites)</p>
+            <p><a href="http://ssp.afp.ai&#x2F;api&#x2F;settings" target="_blank" class="external" rel="noreferrer noopener">ssp.afp.ai&#x2F;api&#x2F;settings</a> (seen on 15 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;sdk_review.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;sdk_review.js</a> (seen on 12 websites)</p>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;sdk_review.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;sdk_review.js</a> (seen on 11 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;2111.c5bfcc2c46e4ca90d28b.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;2111.c5bfcc2c46e4ca90d28b.js</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;BasePlace.fb77472e544af1ebdfba.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;BasePlace.fb77472e544af1ebdfba.js</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;Place-styles-inline-scss.aa04dd552342d87bfc95.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;Place-styles-inline-scss.aa04dd552342d87bfc95.js</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;Place.ed89b04f7b92022ae344.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;Place.ed89b04f7b92022ae344.js</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ssp.afp.ai&#x2F;api&#x2F;sdk_statistic&#x2F;event_sdk_load" target="_blank" class="external" rel="noreferrer noopener">ssp.afp.ai&#x2F;api&#x2F;sdk_statistic&#x2F;event_sdk_load</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ssp.afp.ai&#x2F;api&#x2F;gam&#x2F;ad" target="_blank" class="external" rel="noreferrer noopener">ssp.afp.ai&#x2F;api&#x2F;gam&#x2F;ad</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;1804.04f322d75997aa605b8a.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;1804.04f322d75997aa605b8a.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;banners-InImage.6e98a228b5ce0a4491c6.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;banners-InImage.6e98a228b5ce0a4491c6.js</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;1804.61629e00eddff6ce546b.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;1804.61629e00eddff6ce546b.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;banners-InImage.8afde11409a156b3d1fc.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;banners-InImage.8afde11409a156b3d1fc.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;8548.cfe88a9459918ab224d9.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;8548.cfe88a9459918ab224d9.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;9701.4ad4f703162cdd75e1ab.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;9701.4ad4f703162cdd75e1ab.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;videos-PlaceWithFlyRollMechanics.b3cc11a90e3ded597667.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;videos-PlaceWithFlyRollMechanics.b3cc11a90e3ded597667.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;videos-InContent-Max.3b5f91a7786e3f79163a.js" target="_blank" class="external" rel="noreferrer noopener">cdn.afp.ai&#x2F;ssp&#x2F;js&#x2F;videos-InContent-Max.3b5f91a7786e3f79163a.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ssp.afp.ai&#x2F;api&#x2F;statistic&#x2F;client_side_base_request" target="_blank" class="external" rel="noreferrer noopener">ssp.afp.ai&#x2F;api&#x2F;statistic&#x2F;client_side_base_request</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ssp.afp.ai&#x2F;api&#x2F;statistic&#x2F;client_side_base_request" target="_blank" class="external" rel="noreferrer noopener">ssp.afp.ai&#x2F;api&#x2F;statistic&#x2F;client_side_base_request</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://creatives.afp.ai&#x2F;detmir&#x2F;dec22&#x2F;detmir.ru.js" target="_blank" class="external" rel="noreferrer noopener">creatives.afp.ai&#x2F;detmir&#x2F;dec22&#x2F;detmir.ru.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://ssp.afp.ai&#x2F;api&#x2F;smart_pixel&#x2F;6173685081" target="_blank" class="external" rel="noreferrer noopener">ssp.afp.ai&#x2F;api&#x2F;smart_pixel&#x2F;6173685081</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -157,142 +221,100 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://popcake.tv" target="_blank" class="external">popcake.tv</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.malayalamnewsdaily.com" target="_blank" class="external">www.malayalamnewsdaily.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.glavbukh.ru" target="_blank" class="external">www.glavbukh.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.avtovzglyad.ru" target="_blank" class="external">www.avtovzglyad.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.zarplata-online.ru" target="_blank" class="external">www.zarplata-online.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://ajel.sa" target="_blank" class="external">ajel.sa</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.f1news.ru" target="_blank" class="external">www.f1news.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.26-2.ru" target="_blank" class="external">www.26-2.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.urdunews.com" target="_blank" class="external">www.urdunews.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.sayidaty.net" target="_blank" class="external">www.sayidaty.net</a>
-        </li>
-        <li class='truncate'>
             <a href="http://avtika.ru" target="_blank" class="external">avtika.ru</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.novochag.ru" target="_blank" class="external">www.novochag.ru</a>
+            <a href="http://fb.ru" target="_blank" class="external">fb.ru</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.gazeta-unp.ru" target="_blank" class="external">www.gazeta-unp.ru</a>
+            <a href="http://gotovim-doma.ru" target="_blank" class="external">gotovim-doma.ru</a>
         </li>
         <li class='truncate'>
-            <a href="http://prufy.ru" target="_blank" class="external">prufy.ru</a>
+            <a href="http://ichip.ru" target="_blank" class="external">ichip.ru</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.arabnews.com" target="_blank" class="external">www.arabnews.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://sport24.ru" target="_blank" class="external">sport24.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.kdelo.ru" target="_blank" class="external">www.kdelo.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.independentarabia.com" target="_blank" class="external">www.independentarabia.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.asharqbusiness.com" target="_blank" class="external">www.asharqbusiness.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://graziamagazine.ru" target="_blank" class="external">graziamagazine.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.aljamila.com" target="_blank" class="external">www.aljamila.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.indyturk.com" target="_blank" class="external">www.indyturk.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://akhbaar24.argaam.com" target="_blank" class="external">akhbaar24.argaam.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://aawsat.com" target="_blank" class="external">aawsat.com</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.nn.ru" target="_blank" class="external">www.nn.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.euro-football.ru" target="_blank" class="external">www.euro-football.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://72.ru" target="_blank" class="external">72.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://spletnik.ru" target="_blank" class="external">spletnik.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.chita.ru" target="_blank" class="external">www.chita.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.popcornnews.ru" target="_blank" class="external">www.popcornnews.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://76.ru" target="_blank" class="external">76.ru</a>
+            <a href="http://kanobu.ru" target="_blank" class="external">kanobu.ru</a>
         </li>
         <li class='truncate'>
             <a href="http://lifehacker.ru" target="_blank" class="external">lifehacker.ru</a>
         </li>
         <li class='truncate'>
-            <a href="http://ufa1.ru" target="_blank" class="external">ufa1.ru</a>
+            <a href="http://mozaiyka.ru" target="_blank" class="external">mozaiyka.ru</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.starhit.ru" target="_blank" class="external">www.starhit.ru</a>
+            <a href="http://needlewoman.ru" target="_blank" class="external">needlewoman.ru</a>
         </li>
         <li class='truncate'>
-            <a href="http://m.love.ngs.ru" target="_blank" class="external">m.love.ngs.ru</a>
+            <a href="http://www.arabnews.com" target="_blank" class="external">www.arabnews.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://59.ru" target="_blank" class="external">59.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://ngs.ru" target="_blank" class="external">ngs.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.sport-express.ru" target="_blank" class="external">www.sport-express.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.maximonline.ru" target="_blank" class="external">www.maximonline.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.vokrugsveta.ru" target="_blank" class="external">www.vokrugsveta.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.fontanka.ru" target="_blank" class="external">www.fontanka.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://m.nn.ru" target="_blank" class="external">m.nn.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.e1.ru" target="_blank" class="external">www.e1.ru</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://74.ru" target="_blank" class="external">74.ru</a>
+            <a href="http://www.film.ru" target="_blank" class="external">www.film.ru</a>
         </li>
         <li class='truncate'>
             <a href="http://www.igromania.ru" target="_blank" class="external">www.igromania.ru</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.koolinar.ru" target="_blank" class="external">www.koolinar.ru</a>
+            <a href="http://www.stranamam.ru" target="_blank" class="external">www.stranamam.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.syl.ru" target="_blank" class="external">www.syl.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://znachenie.mozaiyka.ru" target="_blank" class="external">znachenie.mozaiyka.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://znachit.needlewoman.ru" target="_blank" class="external">znachit.needlewoman.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://du-lya.ru" target="_blank" class="external">du-lya.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://shop-modern.ru" target="_blank" class="external">shop-modern.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tass.ru" target="_blank" class="external">tass.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://union-z.ru" target="_blank" class="external">union-z.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.e1.ru" target="_blank" class="external">www.e1.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fontanka.ru" target="_blank" class="external">www.fontanka.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.kino-teatr.ru" target="_blank" class="external">www.kino-teatr.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.maximonline.ru" target="_blank" class="external">www.maximonline.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.nn.ru" target="_blank" class="external">www.nn.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.psychologies.ru" target="_blank" class="external">www.psychologies.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sport-express.ru" target="_blank" class="external">www.sport-express.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.starhit.ru" target="_blank" class="external">www.starhit.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.vesti.ru" target="_blank" class="external">www.vesti.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.wday.ru" target="_blank" class="external">www.wday.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://arabnews.com" target="_blank" class="external">arabnews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://detmir.ru" target="_blank" class="external">detmir.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.detmir.ru" target="_blank" class="external">www.detmir.ru</a>
         </li>
     </ul>
 </div>

@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "woopic.com",
-        history: [{"date":"main","prevalence":0.0000474,"sites":7,"fingerprinting":2,"cookies":0},{"date":"selenium-crux","prevalence":0.0000408,"sites":3,"fingerprinting":3,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000474,"sites":7,"fingerprinting":2,"cookies":0},{"date":"selenium-results","prevalence":0.0000473,"sites":7,"fingerprinting":2,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;10021<small>/16361</small>
+                    <strong>Rank:</strong> &#35;7676<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (3 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (7 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 3<small>/3</small> - <span class="fp-3">Excessive use of browser API&#39;s, almost certainly for tracking purposes</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -90,19 +90,20 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
-                    <span>Stylesheet</span>,
                     <span>Script</span>,
+                    <span>Stylesheet</span>,
+                    <span>XHR</span>,
                     <span>Image</span>,
                     <span>Font</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/woopic.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
-                    <span>img.ke</span>, 
-                    <span>cdn</span>, 
                     <span>c</span>, 
+                    <span>tools.cdn</span>, 
                     <span>gp.cdn</span>, 
                     <span>sosh.cdn</span>, 
+                    <span>cdn</span>, 
                 </li>
             </ul>
         </div>
@@ -131,21 +132,18 @@
     </div>    
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
-        <li class='truncate'>window.outerHeight</li>
-        <li class='truncate'>window.outerWidth</li>
         <li class='truncate'>Navigator.prototype.platform</li>
         <li class='truncate'>Navigator.prototype.appName</li>
         <li class='truncate'>Navigator.prototype.maxTouchPoints</li>
+        <li class='truncate'>Navigator.prototype.cookieEnabled</li>
         <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.innerHeight</li>
-        <li class='truncate'>Screen.prototype.height</li>
         <li class='truncate'>PerformanceTiming.prototype.navigationStart</li>
+        <li class='truncate'>Screen.prototype.height</li>
         <li class='truncate'>Screen.prototype.width</li>
         <li class='truncate'>window.sessionStorage</li>
         <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Document.cookie getter</li>
-        <li class='truncate'>Navigator.prototype.appVersion</li>
-        <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
     </ul>
 </div>
@@ -155,16 +153,61 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://img.ke.woopic.com&#x2F;resources&#x2F;external&#x2F;emea&#x2F;completion&#x2F;v4-0&#x2F;sources&#x2F;css&#x2F;completion.min.css" target="_blank" class="external" rel="noreferrer noopener">img.ke.woopic.com&#x2F;resources&#x2F;external&#x2F;emea&#x2F;completion&#x2F;v4-0&#x2F;sources&#x2F;css&#x2F;completion.min.css</a> (seen on 2 websites)</p>
+            <p><a href="http://c.woopic.com&#x2F;libs&#x2F;common&#x2F;o_load_responsive.js" target="_blank" class="external" rel="noreferrer noopener">c.woopic.com&#x2F;libs&#x2F;common&#x2F;o_load_responsive.js</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://img.ke.woopic.com&#x2F;resources&#x2F;external&#x2F;emea&#x2F;completion&#x2F;v4-0&#x2F;sources&#x2F;js&#x2F;completion.min.js" target="_blank" class="external" rel="noreferrer noopener">img.ke.woopic.com&#x2F;resources&#x2F;external&#x2F;emea&#x2F;completion&#x2F;v4-0&#x2F;sources&#x2F;js&#x2F;completion.min.js</a> (seen on 2 websites)</p>
+            <p><a href="http://gp.cdn.woopic.com&#x2F;libs&#x2F;6qOCaUvx&#x2F;common&#x2F;js&#x2F;common.10zc8QErQ.js" target="_blank" class="external" rel="noreferrer noopener">gp.cdn.woopic.com&#x2F;libs&#x2F;6qOCaUvx&#x2F;common&#x2F;js&#x2F;common.10zc8QErQ.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gp.cdn.woopic.com&#x2F;libs&#x2F;6qOCaUvx&#x2F;common&#x2F;css&#x2F;common.7ocuusG2.css" target="_blank" class="external" rel="noreferrer noopener">gp.cdn.woopic.com&#x2F;libs&#x2F;6qOCaUvx&#x2F;common&#x2F;css&#x2F;common.7ocuusG2.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gp.cdn.woopic.com&#x2F;magic&#x2F;configuration.tgif.json" target="_blank" class="external" rel="noreferrer noopener">gp.cdn.woopic.com&#x2F;magic&#x2F;configuration.tgif.json</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://gp.cdn.woopic.com&#x2F;magic&#x2F;o_tealium.js" target="_blank" class="external" rel="noreferrer noopener">gp.cdn.woopic.com&#x2F;magic&#x2F;o_tealium.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;modules&#x2F;sosh&#x2F;o_load_sosh_responsive.js" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;modules&#x2F;sosh&#x2F;o_load_sosh_responsive.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;js&#x2F;sosh2_core.js" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;js&#x2F;sosh2_core.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;css&#x2F;sosh2_core.css" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;css&#x2F;sosh2_core.css</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;magic&#x2F;SoshV3.3.res.desktop.json" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;magic&#x2F;SoshV3.3.res.desktop.json</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;icons&#x2F;elcos&#x2F;logo.ad3f09d018b0d7b92d405c0e181834f3.svg" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;icons&#x2F;elcos&#x2F;logo.ad3f09d018b0d7b92d405c0e181834f3.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;icons&#x2F;elcos&#x2F;accueil.6f4565431f1f275fe115a0a371385c6b.svg" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;icons&#x2F;elcos&#x2F;accueil.6f4565431f1f275fe115a0a371385c6b.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;icons&#x2F;elcos&#x2F;camion.7973a84518f4d52c9d1b215994ba9c88.svg" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;icons&#x2F;elcos&#x2F;camion.7973a84518f4d52c9d1b215994ba9c88.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;icons&#x2F;elcos&#x2F;aide.2144ce6f6f11950e52229bcfbf03d2cc.svg" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;icons&#x2F;elcos&#x2F;aide.2144ce6f6f11950e52229bcfbf03d2cc.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;icons&#x2F;elcos&#x2F;identification.7bcd9f60503b3a93e6371a028e667caf.svg" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;icons&#x2F;elcos&#x2F;identification.7bcd9f60503b3a93e6371a028e667caf.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;fonts&#x2F;elcos&#x2F;Sosh-Medium.0dc3b4d93cb76fdb04507708a531dd63.woff2" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;fonts&#x2F;elcos&#x2F;Sosh-Medium.0dc3b4d93cb76fdb04507708a531dd63.woff2</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;fonts&#x2F;elcos&#x2F;Sosh-Bold.16d21e3e3c73184a827298824452cf8d.woff2" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;fonts&#x2F;elcos&#x2F;Sosh-Bold.16d21e3e3c73184a827298824452cf8d.woff2</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://c.woopic.com&#x2F;oshare&#x2F;js&#x2F;share.min.js" target="_blank" class="external" rel="noreferrer noopener">c.woopic.com&#x2F;oshare&#x2F;js&#x2F;share.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://c.woopic.com&#x2F;logo-orange.png" target="_blank" class="external" rel="noreferrer noopener">c.woopic.com&#x2F;logo-orange.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://cdn.woopic.com&#x2F;v1&#x2F;AUTH_554b37b875ca4080b294e446ada55787&#x2F;hpsosh&#x2F;assets&#x2F;css&#x2F;hptu.17cf218b93e44f010b44.css" target="_blank" class="external" rel="noreferrer noopener">cdn.woopic.com&#x2F;v1&#x2F;AUTH_554b37b875ca4080b294e446ada55787&#x2F;hpsosh&#x2F;assets&#x2F;css&#x2F;hptu.17cf218b93e44f010b44.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://c.woopic.com&#x2F;libs&#x2F;common&#x2F;o_load_responsive.js" target="_blank" class="external" rel="noreferrer noopener">c.woopic.com&#x2F;libs&#x2F;common&#x2F;o_load_responsive.js</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://cdn.woopic.com&#x2F;v1&#x2F;AUTH_554b37b875ca4080b294e446ada55787&#x2F;hpsosh&#x2F;assets&#x2F;js&#x2F;modern&#x2F;head_common.de9946444bfdf61adcb3.js" target="_blank" class="external" rel="noreferrer noopener">cdn.woopic.com&#x2F;v1&#x2F;AUTH_554b37b875ca4080b294e446ada55787&#x2F;hpsosh&#x2F;assets&#x2F;js&#x2F;modern&#x2F;head_common.de9946444bfdf61adcb3.js</a> (seen on 2 websites)</p>
@@ -179,31 +222,7 @@
             <p><a href="http://cdn.woopic.com&#x2F;840aa06aeef64c848738c7997ff75b62&#x2F;portal-hpsosh&#x2F;v4&#x2F;icons&#x2F;hptu&#x2F;e2e3e830e2a44e511b9bb55194f04583.png" target="_blank" class="external" rel="noreferrer noopener">cdn.woopic.com&#x2F;840aa06aeef64c848738c7997ff75b62&#x2F;portal-hpsosh&#x2F;v4&#x2F;icons&#x2F;hptu&#x2F;e2e3e830e2a44e511b9bb55194f04583.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://cdn.woopic.com&#x2F;v1&#x2F;AUTH_554b37b875ca4080b294e446ada55787&#x2F;hpsosh&#x2F;assets&#x2F;js&#x2F;modern&#x2F;hptu.f9752bdfd993af3225e6.js" target="_blank" class="external" rel="noreferrer noopener">cdn.woopic.com&#x2F;v1&#x2F;AUTH_554b37b875ca4080b294e446ada55787&#x2F;hpsosh&#x2F;assets&#x2F;js&#x2F;modern&#x2F;hptu.f9752bdfd993af3225e6.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://gp.cdn.woopic.com&#x2F;libs&#x2F;6qOCaUvx&#x2F;common&#x2F;js&#x2F;common.10zc8QErQ.js" target="_blank" class="external" rel="noreferrer noopener">gp.cdn.woopic.com&#x2F;libs&#x2F;6qOCaUvx&#x2F;common&#x2F;js&#x2F;common.10zc8QErQ.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://gp.cdn.woopic.com&#x2F;libs&#x2F;6qOCaUvx&#x2F;common&#x2F;css&#x2F;common.7ocuusG2.css" target="_blank" class="external" rel="noreferrer noopener">gp.cdn.woopic.com&#x2F;libs&#x2F;6qOCaUvx&#x2F;common&#x2F;css&#x2F;common.7ocuusG2.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://gp.cdn.woopic.com&#x2F;magic&#x2F;configuration.tgif.json" target="_blank" class="external" rel="noreferrer noopener">gp.cdn.woopic.com&#x2F;magic&#x2F;configuration.tgif.json</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://gp.cdn.woopic.com&#x2F;magic&#x2F;o_tealium.js" target="_blank" class="external" rel="noreferrer noopener">gp.cdn.woopic.com&#x2F;magic&#x2F;o_tealium.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;modules&#x2F;sosh&#x2F;o_load_sosh_responsive.js" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;modules&#x2F;sosh&#x2F;o_load_sosh_responsive.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;js&#x2F;sosh2_core.js" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;js&#x2F;sosh2_core.js</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;css&#x2F;sosh2_core.css" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;css&#x2F;sosh2_core.css</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;fonts&#x2F;elcos&#x2F;Sosh-Bold.16d21e3e3c73184a827298824452cf8d.woff2" target="_blank" class="external" rel="noreferrer noopener">sosh.cdn.woopic.com&#x2F;elcossosh&#x2F;libs&#x2F;1668440790522611601&#x2F;modules&#x2F;sosh&#x2F;dist&#x2F;fonts&#x2F;elcos&#x2F;Sosh-Bold.16d21e3e3c73184a827298824452cf8d.woff2</a> (seen on 2 websites)</p>
+            <p><a href="http://cdn.woopic.com&#x2F;v1&#x2F;AUTH_554b37b875ca4080b294e446ada55787&#x2F;hpsosh&#x2F;assets&#x2F;js&#x2F;modern&#x2F;hptu.03c315affdccc07f4479.js" target="_blank" class="external" rel="noreferrer noopener">cdn.woopic.com&#x2F;v1&#x2F;AUTH_554b37b875ca4080b294e446ada55787&#x2F;hpsosh&#x2F;assets&#x2F;js&#x2F;modern&#x2F;hptu.03c315affdccc07f4479.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -213,16 +232,19 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://orange.eg" target="_blank" class="external">orange.eg</a>
-        </li>
-        <li class='truncate'>
-            <a href="http://www.orange.eg" target="_blank" class="external">www.orange.eg</a>
-        </li>
-        <li class='truncate'>
             <a href="http://sosh.fr" target="_blank" class="external">sosh.fr</a>
         </li>
         <li class='truncate'>
-            <a href="http://shop.sosh.fr" target="_blank" class="external">shop.sosh.fr</a>
+            <a href="http://communaute.sosh.fr" target="_blank" class="external">communaute.sosh.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sosh.fr" target="_blank" class="external">www.sosh.fr</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://lecteurs.com" target="_blank" class="external">lecteurs.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lecteurs.com" target="_blank" class="external">www.lecteurs.com</a>
         </li>
     </ul>
 </div>

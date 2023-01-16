@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "magnifi.com",
-        history: [{"date":"main","prevalence":0.0000813,"sites":12,"fingerprinting":2,"cookies":0.0000542},{"date":"selenium-crux","prevalence":0.0000272,"sites":2,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"main","prevalence":0.0000813,"sites":12,"fingerprinting":2,"cookies":0.0000542},{"date":"selenium-results","prevalence":0.0000338,"sites":5,"fingerprinting":2,"cookies":0.0000338}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;12255<small>/16361</small>
+                    <strong>Rank:</strong> &#35;9381<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (2 sites)
+                    <strong>Prevalence:</strong> 0.00&#37; (5 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -92,12 +92,22 @@
                     <strong>Resource Types:</strong> 
                     <span>Stylesheet</span>,
                     <span>Script</span>,
+                    <span>Preflight</span>,
+                    <span>Fetch</span>,
+                    <span>Image</span>,
+                    <span>Font</span>,
+                    <span>XHR</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/magnifi.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>discover</span>, 
+                    <span>prodnew</span>, 
+                    <span>static</span>, 
+                    <span>campaign</span>, 
+                    <span>analytics</span>, 
                     <span>static-widget</span>, 
+                    <span>www</span>, 
                 </li>
             </ul>
         </div>
@@ -116,6 +126,31 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.onLine</li>
+        <li class='truncate'>Intl.DateTimeFormat.prototype.resolvedOptions</li>
+        <li class='truncate'>Navigator.prototype.languages</li>
+        <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>window.name</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie setter</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
@@ -127,6 +162,108 @@
         <li class='break-all'>
             <p><a href="http://discover.magnifi.com&#x2F;widget&#x2F;ossf-widget-v2.0.js" target="_blank" class="external" rel="noreferrer noopener">discover.magnifi.com&#x2F;widget&#x2F;ossf-widget-v2.0.js</a> (seen on 3 websites)</p>
         </li>
+        <li class='break-all'>
+            <p><a href="http://prodnew.magnifi.com&#x2F;api&#x2F;widget&#x2F;init" target="_blank" class="external" rel="noreferrer noopener">prodnew.magnifi.com&#x2F;api&#x2F;widget&#x2F;init</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://prodnew.magnifi.com&#x2F;api&#x2F;widget2.0&#x2F;initialize" target="_blank" class="external" rel="noreferrer noopener">prodnew.magnifi.com&#x2F;api&#x2F;widget2.0&#x2F;initialize</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://prodnew.magnifi.com&#x2F;api&#x2F;widget&#x2F;init" target="_blank" class="external" rel="noreferrer noopener">prodnew.magnifi.com&#x2F;api&#x2F;widget&#x2F;init</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;cnbcLogo.png" target="_blank" class="external" rel="noreferrer noopener">static.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;cnbcLogo.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;Magnifi_byTIFIN-darkgrey.svg" target="_blank" class="external" rel="noreferrer noopener">campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;Magnifi_byTIFIN-darkgrey.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://analytics.magnifi.com&#x2F;analytics.js&#x2F;v1&#x2F;lQTqSMBuc2wi5pIq2maxpM0TRC0msVvu&#x2F;analytics.min.js" target="_blank" class="external" rel="noreferrer noopener">analytics.magnifi.com&#x2F;analytics.js&#x2F;v1&#x2F;lQTqSMBuc2wi5pIq2maxpM0TRC0msVvu&#x2F;analytics.min.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-widget.magnifi.com&#x2F;static&#x2F;media&#x2F;slick.woff" target="_blank" class="external" rel="noreferrer noopener">static-widget.magnifi.com&#x2F;static&#x2F;media&#x2F;slick.woff</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://prodnew.magnifi.com&#x2F;api&#x2F;computed-search" target="_blank" class="external" rel="noreferrer noopener">prodnew.magnifi.com&#x2F;api&#x2F;computed-search</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://prodnew.magnifi.com&#x2F;api&#x2F;computed-search" target="_blank" class="external" rel="noreferrer noopener">prodnew.magnifi.com&#x2F;api&#x2F;computed-search</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://discover.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;relatedSearch&#x2F;Payments.png" target="_blank" class="external" rel="noreferrer noopener">discover.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;relatedSearch&#x2F;Payments.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://discover.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;relatedSearch&#x2F;Logistics.png" target="_blank" class="external" rel="noreferrer noopener">discover.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;relatedSearch&#x2F;Logistics.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://discover.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;relatedSearch&#x2F;Wind%20Energy.png" target="_blank" class="external" rel="noreferrer noopener">discover.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;relatedSearch&#x2F;Wind%20Energy.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://discover.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;relatedSearch&#x2F;Cybersecurity.png" target="_blank" class="external" rel="noreferrer noopener">discover.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;relatedSearch&#x2F;Cybersecurity.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://analytics.magnifi.com&#x2F;v1&#x2F;projects&#x2F;lQTqSMBuc2wi5pIq2maxpM0TRC0msVvu&#x2F;settings" target="_blank" class="external" rel="noreferrer noopener">analytics.magnifi.com&#x2F;v1&#x2F;projects&#x2F;lQTqSMBuc2wi5pIq2maxpM0TRC0msVvu&#x2F;settings</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://analytics.magnifi.com&#x2F;analytics-next&#x2F;bundles&#x2F;ajs-destination.bundle.1466bb14223e695495e6.js" target="_blank" class="external" rel="noreferrer noopener">analytics.magnifi.com&#x2F;analytics-next&#x2F;bundles&#x2F;ajs-destination.bundle.1466bb14223e695495e6.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://analytics.magnifi.com&#x2F;analytics-next&#x2F;bundles&#x2F;schemaFilter.bundle.debb169c1abb431faaa6.js" target="_blank" class="external" rel="noreferrer noopener">analytics.magnifi.com&#x2F;analytics-next&#x2F;bundles&#x2F;schemaFilter.bundle.debb169c1abb431faaa6.js</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static-widget.magnifi.com&#x2F;static&#x2F;media&#x2F;slick.ttf" target="_blank" class="external" rel="noreferrer noopener">static-widget.magnifi.com&#x2F;static&#x2F;media&#x2F;slick.ttf</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;fonts&#x2F;fa.woff" target="_blank" class="external" rel="noreferrer noopener">static.magnifi.com&#x2F;widget&#x2F;siw-assets&#x2F;fonts&#x2F;fa.woff</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.magnifi.com&#x2F;sponsors&#x2F;ARK%20ETF%20Trust.png" target="_blank" class="external" rel="noreferrer noopener">static.magnifi.com&#x2F;sponsors&#x2F;ARK%20ETF%20Trust.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://discover.magnifi.com&#x2F;widget&#x2F;ossf-widget-v2.1.css" target="_blank" class="external" rel="noreferrer noopener">discover.magnifi.com&#x2F;widget&#x2F;ossf-widget-v2.1.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://discover.magnifi.com&#x2F;widget&#x2F;ossf-widget-v2.1.js" target="_blank" class="external" rel="noreferrer noopener">discover.magnifi.com&#x2F;widget&#x2F;ossf-widget-v2.1.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;search.svg" target="_blank" class="external" rel="noreferrer noopener">campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;search.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;chevron_left.svg" target="_blank" class="external" rel="noreferrer noopener">campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;chevron_left.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;chevron_right.svg" target="_blank" class="external" rel="noreferrer noopener">campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;chevron_right.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;poweredByMagnify.svg" target="_blank" class="external" rel="noreferrer noopener">campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;poweredByMagnify.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;simpleLoaderGIF.gif" target="_blank" class="external" rel="noreferrer noopener">campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;simpleLoaderGIF.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;x.svg" target="_blank" class="external" rel="noreferrer noopener">campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;x.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://discover.magnifi.com&#x2F;api&#x2F;user&#x2F;widget-event-tracking" target="_blank" class="external" rel="noreferrer noopener">discover.magnifi.com&#x2F;api&#x2F;user&#x2F;widget-event-tracking</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://discover.magnifi.com&#x2F;api&#x2F;user&#x2F;widget-event-tracking" target="_blank" class="external" rel="noreferrer noopener">discover.magnifi.com&#x2F;api&#x2F;user&#x2F;widget-event-tracking</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;learnMore_Icon.png" target="_blank" class="external" rel="noreferrer noopener">campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;learnMore_Icon.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;back.svg" target="_blank" class="external" rel="noreferrer noopener">campaign.magnifi.com&#x2F;hubfs&#x2F;Magnifi%20Email%20Signature&#x2F;widget-assets&#x2F;back.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.magnifi.com&#x2F;assets&#x2F;images&#x2F;sponsors&#x2F;ClearShares.png" target="_blank" class="external" rel="noreferrer noopener">www.magnifi.com&#x2F;assets&#x2F;images&#x2F;sponsors&#x2F;ClearShares.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.magnifi.com&#x2F;assets&#x2F;images&#x2F;sponsors&#x2F;Archer.png" target="_blank" class="external" rel="noreferrer noopener">www.magnifi.com&#x2F;assets&#x2F;images&#x2F;sponsors&#x2F;Archer.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://www.magnifi.com&#x2F;assets&#x2F;images&#x2F;sponsors&#x2F;SPDR%20State%20Street%20Global%20Advisors.png" target="_blank" class="external" rel="noreferrer noopener">www.magnifi.com&#x2F;assets&#x2F;images&#x2F;sponsors&#x2F;SPDR%20State%20Street%20Global%20Advisors.png</a> (seen on 2 websites)</p>
+        </li>
     </ul>
 </div>
 
@@ -135,13 +272,16 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://advfn.com" target="_blank" class="external">advfn.com</a>
+            <a href="http://stocksregister.com" target="_blank" class="external">stocksregister.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://investorshub.advfn.com" target="_blank" class="external">investorshub.advfn.com</a>
+            <a href="http://wolfstreet.com" target="_blank" class="external">wolfstreet.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://uk.advfn.com" target="_blank" class="external">uk.advfn.com</a>
+            <a href="http://www.stocksplithistory.com" target="_blank" class="external">www.stocksplithistory.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://stocksplithistory.com" target="_blank" class="external">stocksplithistory.com</a>
         </li>
     </ul>
 </div>

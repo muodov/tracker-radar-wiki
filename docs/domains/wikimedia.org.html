@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "wikimedia.org",
-        history: [{"date":"main","prevalence":0.00147,"sites":217,"fingerprinting":1,"cookies":0.000142},{"date":"selenium-crux","prevalence":0.000803,"sites":59,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"main","prevalence":0.00147,"sites":217,"fingerprinting":1,"cookies":0.000142},{"date":"selenium-results","prevalence":0.00155,"sites":230,"fingerprinting":1,"cookies":0.000162}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;1223<small>/16361</small>
+                    <strong>Rank:</strong> &#35;695<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.08&#37; (59 sites)
+                    <strong>Prevalence:</strong> 0.15&#37; (230 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.00&#37;
+                    <strong>Cookies:</strong> 0.02&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -91,11 +91,14 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Image</span>,
+                    <span>Script</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/wikimedia.org.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>upload</span>, 
+                    <span>meta</span>, 
+                    <span>commons</span>, 
                 </li>
             </ul>
         </div>
@@ -114,181 +117,207 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Date.prototype.getTime</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;8&#x2F;82&#x2F;Telegram_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;8&#x2F;82&#x2F;Telegram_logo.svg</a> (seen on 3 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;e&#x2F;e1&#x2F;Google_Chrome_icon_%28February_2022%29.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;e&#x2F;e1&#x2F;Google_Chrome_icon_%28February_2022%29.svg</a> (seen on 10 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;ca&#x2F;1x1.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;ca&#x2F;1x1.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;a&#x2F;a0&#x2F;Firefox_logo%2C_2019.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;a&#x2F;a0&#x2F;Firefox_logo%2C_2019.svg</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;9&#x2F;98&#x2F;Microsoft_Edge_logo_%282019%29.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;9&#x2F;98&#x2F;Microsoft_Edge_logo_%282019%29.svg</a> (seen on 10 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;b&#x2F;b6&#x2F;Ambox_padlock_gray.svg&#x2F;20px-Ambox_padlock_gray.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;b&#x2F;b6&#x2F;Ambox_padlock_gray.svg&#x2F;20px-Ambox_padlock_gray.svg.png</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;4&#x2F;4a&#x2F;Commons-logo.svg&#x2F;30px-Commons-logo.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;4&#x2F;4a&#x2F;Commons-logo.svg&#x2F;30px-Commons-logo.svg.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;8&#x2F;8a&#x2F;OOjs_UI_icon_edit-ltr-progressive.svg&#x2F;10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;8&#x2F;8a&#x2F;OOjs_UI_icon_edit-ltr-progressive.svg&#x2F;10px-OOjs_UI_icon_edit-ltr-progressive.svg.png</a> (seen on 5 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://meta.wikimedia.org&#x2F;w&#x2F;index.php" target="_blank" class="external" rel="noreferrer noopener">meta.wikimedia.org&#x2F;w&#x2F;index.php</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;2&#x2F;23&#x2F;Icons-mini-file_acrobat.gif" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;2&#x2F;23&#x2F;Icons-mini-file_acrobat.gif</a> (seen on 4 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;ca&#x2F;1x1.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;ca&#x2F;1x1.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;b&#x2F;b7&#x2F;Miraheze-Logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;b&#x2F;b7&#x2F;Miraheze-Logo.svg</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;4a&#x2F;Commons-logo.svg&#x2F;12px-Commons-logo.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;4a&#x2F;Commons-logo.svg&#x2F;12px-Commons-logo.svg.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;7&#x2F;73&#x2F;Blue_pencil.svg&#x2F;10px-Blue_pencil.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;7&#x2F;73&#x2F;Blue_pencil.svg&#x2F;10px-Blue_pencil.svg.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://commons.wikimedia.org&#x2F;w&#x2F;index.php" target="_blank" class="external" rel="noreferrer noopener">commons.wikimedia.org&#x2F;w&#x2F;index.php</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;9&#x2F;96&#x2F;Symbol_category_class.svg&#x2F;16px-Symbol_category_class.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;9&#x2F;96&#x2F;Symbol_category_class.svg&#x2F;16px-Symbol_category_class.svg.png</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;3&#x2F;35&#x2F;Information_icon.svg&#x2F;langde-30px-Information_icon.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;3&#x2F;35&#x2F;Information_icon.svg&#x2F;langde-30px-Information_icon.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;4&#x2F;4a&#x2F;Commons-logo.svg&#x2F;12px-Commons-logo.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;4&#x2F;4a&#x2F;Commons-logo.svg&#x2F;12px-Commons-logo.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;4b&#x2F;Books-aj.svg_aj_ashton_01.svg&#x2F;23px-Books-aj.svg_aj_ashton_01.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;4b&#x2F;Books-aj.svg_aj_ashton_01.svg&#x2F;23px-Books-aj.svg_aj_ashton_01.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;5&#x2F;5f&#x2F;Disambig_gray.svg&#x2F;30px-Disambig_gray.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;5&#x2F;5f&#x2F;Disambig_gray.svg&#x2F;30px-Disambig_gray.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;c&#x2F;cd&#x2F;Circle-icons-calendar.svg&#x2F;30px-Circle-icons-calendar.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;c&#x2F;cd&#x2F;Circle-icons-calendar.svg&#x2F;30px-Circle-icons-calendar.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;e&#x2F;ec&#x2F;Madame_du_Barry_par_%C3%89lisabeth_Vig%C3%A9e_Le_Brun.JPG&#x2F;220px-Madame_du_Barry_par_%C3%89lisabeth_Vig%C3%A9e_Le_Brun.JPG" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;e&#x2F;ec&#x2F;Madame_du_Barry_par_%C3%89lisabeth_Vig%C3%A9e_Le_Brun.JPG&#x2F;220px-Madame_du_Barry_par_%C3%89lisabeth_Vig%C3%A9e_Le_Brun.JPG</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;1&#x2F;11&#x2F;Blue_question_mark_icon.svg&#x2F;30px-Blue_question_mark_icon.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;1&#x2F;11&#x2F;Blue_question_mark_icon.svg&#x2F;30px-Blue_question_mark_icon.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;3&#x2F;3d&#x2F;Blue_pen_icon_%28top_right%29.svg&#x2F;30px-Blue_pen_icon_%28top_right%29.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;3&#x2F;3d&#x2F;Blue_pen_icon_%28top_right%29.svg&#x2F;30px-Blue_pen_icon_%28top_right%29.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;1&#x2F;1f&#x2F;SMirC-thumbsup.svg&#x2F;30px-SMirC-thumbsup.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;1&#x2F;1f&#x2F;SMirC-thumbsup.svg&#x2F;30px-SMirC-thumbsup.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;2&#x2F;2b&#x2F;Circle-icons-compose.svg&#x2F;30px-Circle-icons-compose.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;2&#x2F;2b&#x2F;Circle-icons-compose.svg&#x2F;30px-Circle-icons-compose.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;4f&#x2F;Library.svg&#x2F;30px-Library.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;4f&#x2F;Library.svg&#x2F;30px-Library.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;c&#x2F;c3&#x2F;Circle-icons-camera.svg&#x2F;30px-Circle-icons-camera.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;c&#x2F;c3&#x2F;Circle-icons-camera.svg&#x2F;30px-Circle-icons-camera.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;3&#x2F;34&#x2F;George_V_and_Nicholas_II_in_Berlin%2C_1913.jpg&#x2F;250px-George_V_and_Nicholas_II_in_Berlin%2C_1913.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;3&#x2F;34&#x2F;George_V_and_Nicholas_II_in_Berlin%2C_1913.jpg&#x2F;250px-George_V_and_Nicholas_II_in_Berlin%2C_1913.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;f&#x2F;f2&#x2F;News_1.svg&#x2F;30px-News_1.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;f&#x2F;f2&#x2F;News_1.svg&#x2F;30px-News_1.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;44&#x2F;Vikidia_V_vectorised.svg&#x2F;16px-Vikidia_V_vectorised.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;44&#x2F;Vikidia_V_vectorised.svg&#x2F;16px-Vikidia_V_vectorised.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;44&#x2F;Vikidia_V_vectorised.svg&#x2F;75px-Vikidia_V_vectorised.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;44&#x2F;Vikidia_V_vectorised.svg&#x2F;75px-Vikidia_V_vectorised.svg.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;a&#x2F;af&#x2F;The_Gateway_Pundit_logo.svg&#x2F;1200px-The_Gateway_Pundit_logo.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;a&#x2F;af&#x2F;The_Gateway_Pundit_logo.svg&#x2F;1200px-The_Gateway_Pundit_logo.svg.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;3&#x2F;3e&#x2F;Disambig_colour.svg&#x2F;20px-Disambig_colour.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;3&#x2F;3e&#x2F;Disambig_colour.svg&#x2F;20px-Disambig_colour.svg.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;6&#x2F;6f&#x2F;Confusion_colour.svg&#x2F;20px-Confusion_colour.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;6&#x2F;6f&#x2F;Confusion_colour.svg&#x2F;20px-Confusion_colour.svg.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;45&#x2F;Nancy_Huston.jpg&#x2F;220px-Nancy_Huston.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;45&#x2F;Nancy_Huston.jpg&#x2F;220px-Nancy_Huston.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;0&#x2F;01&#x2F;Asterix.jpg&#x2F;280px-Asterix.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;0&#x2F;01&#x2F;Asterix.jpg&#x2F;280px-Asterix.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;2&#x2F;23&#x2F;Alquds_University_Logo_2.png&#x2F;250px-Alquds_University_Logo_2.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;2&#x2F;23&#x2F;Alquds_University_Logo_2.png&#x2F;250px-Alquds_University_Logo_2.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;8&#x2F;82&#x2F;Asterix_Baracaldo_cropped.jpg&#x2F;220px-Asterix_Baracaldo_cropped.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;8&#x2F;82&#x2F;Asterix_Baracaldo_cropped.jpg&#x2F;220px-Asterix_Baracaldo_cropped.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;d&#x2F;de&#x2F;Faculty_of_Science_%26_Technology.jpg&#x2F;220px-Faculty_of_Science_%26_Technology.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;d&#x2F;de&#x2F;Faculty_of_Science_%26_Technology.jpg&#x2F;220px-Faculty_of_Science_%26_Technology.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;e&#x2F;e8&#x2F;AsterixUderzo1971.jpg&#x2F;220px-AsterixUderzo1971.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;e&#x2F;e8&#x2F;AsterixUderzo1971.jpg&#x2F;220px-AsterixUderzo1971.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;8&#x2F;88&#x2F;AQU_from_the_east_2014.jpg&#x2F;220px-AQU_from_the_east_2014.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;8&#x2F;88&#x2F;AQU_from_the_east_2014.jpg&#x2F;220px-AQU_from_the_east_2014.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;b&#x2F;bc&#x2F;Ast%C3%A9rix_%26_Ob%C3%A9lix_Coruna.jpg&#x2F;240px-Ast%C3%A9rix_%26_Ob%C3%A9lix_Coruna.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;b&#x2F;bc&#x2F;Ast%C3%A9rix_%26_Ob%C3%A9lix_Coruna.jpg&#x2F;240px-Ast%C3%A9rix_%26_Ob%C3%A9lix_Coruna.jpg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;44&#x2F;AQU_and_the_wall_of_occupation.jpg&#x2F;220px-AQU_and_the_wall_of_occupation.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;4&#x2F;44&#x2F;AQU_and_the_wall_of_occupation.jpg&#x2F;220px-AQU_and_the_wall_of_occupation.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;7&#x2F;73&#x2F;Blue_pencil.svg&#x2F;10px-Blue_pencil.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;7&#x2F;73&#x2F;Blue_pencil.svg&#x2F;10px-Blue_pencil.svg.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;1&#x2F;1f&#x2F;ITand_s.jpg&#x2F;220px-ITand_s.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;1&#x2F;1f&#x2F;ITand_s.jpg&#x2F;220px-ITand_s.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;3&#x2F;37&#x2F;Picto_infobox_masks.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;3&#x2F;37&#x2F;Picto_infobox_masks.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;f&#x2F;fe&#x2F;Al_Quds_University_2018_41.jpg&#x2F;220px-Al_Quds_University_2018_41.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;f&#x2F;fe&#x2F;Al_Quds_University_2018_41.jpg&#x2F;220px-Al_Quds_University_2018_41.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;4&#x2F;49&#x2F;Flag_of_Ukraine.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;4&#x2F;49&#x2F;Flag_of_Ukraine.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;0&#x2F;00&#x2F;Flag_of_Palestine.svg&#x2F;32px-Flag_of_Palestine.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;0&#x2F;00&#x2F;Flag_of_Palestine.svg&#x2F;32px-Flag_of_Palestine.svg.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;8f&#x2F;Boston_Celtics.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;8f&#x2F;Boston_Celtics.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;f&#x2F;fb&#x2F;Leonardo_da_Vinci.jpeg&#x2F;260px-Leonardo_da_Vinci.jpeg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;f&#x2F;fb&#x2F;Leonardo_da_Vinci.jpeg&#x2F;260px-Leonardo_da_Vinci.jpeg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;a&#x2F;a2&#x2F;San_Antonio_Spurs.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;a&#x2F;a2&#x2F;San_Antonio_Spurs.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;2&#x2F;25&#x2F;Collar.agr.jpg&#x2F;260px-Collar.agr.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;2&#x2F;25&#x2F;Collar.agr.jpg&#x2F;260px-Collar.agr.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;id&#x2F;thumb&#x2F;2&#x2F;2a&#x2F;Brentford_FC_crest.svg&#x2F;85px-Brentford_FC_crest.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;id&#x2F;thumb&#x2F;2&#x2F;2a&#x2F;Brentford_FC_crest.svg&#x2F;85px-Brentford_FC_crest.svg.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;5&#x2F;5b&#x2F;Society.svg&#x2F;260px-Society.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;5&#x2F;5b&#x2F;Society.svg&#x2F;260px-Society.svg.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;0&#x2F;05&#x2F;Facebook_Logo_%282019%29.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;0&#x2F;05&#x2F;Facebook_Logo_%282019%29.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;fr&#x2F;thumb&#x2F;f&#x2F;f8&#x2F;Path%C3%A9_Logo.svg&#x2F;langfr-560px-Path%C3%A9_Logo.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;fr&#x2F;thumb&#x2F;f&#x2F;f8&#x2F;Path%C3%A9_Logo.svg&#x2F;langfr-560px-Path%C3%A9_Logo.svg.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;f&#x2F;f2&#x2F;2022_ACF_Fiorentina_logo.svg&#x2F;1200px-2022_ACF_Fiorentina_logo.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;f&#x2F;f2&#x2F;2022_ACF_Fiorentina_logo.svg&#x2F;1200px-2022_ACF_Fiorentina_logo.svg.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;e&#x2F;e0&#x2F;Accessories-text-editor.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;e&#x2F;e0&#x2F;Accessories-text-editor.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;1&#x2F;1c&#x2F;US_Sassuolo_Calcio_logo.svg&#x2F;1200px-US_Sassuolo_Calcio_logo.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;1&#x2F;1c&#x2F;US_Sassuolo_Calcio_logo.svg&#x2F;1200px-US_Sassuolo_Calcio_logo.svg.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;5&#x2F;55&#x2F;Icon_Education.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;5&#x2F;55&#x2F;Icon_Education.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;b&#x2F;b9&#x2F;Villarreal_CF_logo-en.svg&#x2F;1200px-Villarreal_CF_logo-en.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;b&#x2F;b9&#x2F;Villarreal_CF_logo-en.svg&#x2F;1200px-Villarreal_CF_logo-en.svg.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;f&#x2F;fa&#x2F;Crystal_Project_Agt_announcements.png&#x2F;40px-Crystal_Project_Agt_announcements.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;f&#x2F;fa&#x2F;Crystal_Project_Agt_announcements.png&#x2F;40px-Crystal_Project_Agt_announcements.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;c&#x2F;ce&#x2F;Udinese_Calcio_logo.svg&#x2F;1200px-Udinese_Calcio_logo.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;c&#x2F;ce&#x2F;Udinese_Calcio_logo.svg&#x2F;1200px-Udinese_Calcio_logo.svg.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;3&#x2F;3f&#x2F;House_icon.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;3&#x2F;3f&#x2F;House_icon.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;e&#x2F;e0&#x2F;Rcd_mallorca.svg&#x2F;1200px-Rcd_mallorca.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;e&#x2F;e0&#x2F;Rcd_mallorca.svg&#x2F;1200px-Rcd_mallorca.svg.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;5&#x2F;5b&#x2F;New_silk.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;5&#x2F;5b&#x2F;New_silk.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;c&#x2F;c5&#x2F;Shield_of_Real_Valladolid.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;c&#x2F;c5&#x2F;Shield_of_Real_Valladolid.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;d&#x2F;de&#x2F;Group.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;d&#x2F;de&#x2F;Group.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;2&#x2F;2a&#x2F;Brentford_FC_crest.svg&#x2F;1200px-Brentford_FC_crest.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;2&#x2F;2a&#x2F;Brentford_FC_crest.svg&#x2F;1200px-Brentford_FC_crest.svg.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;d&#x2F;dd&#x2F;Farm-Fresh_clock_edit.png&#x2F;16px-Farm-Fresh_clock_edit.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;d&#x2F;dd&#x2F;Farm-Fresh_clock_edit.png&#x2F;16px-Farm-Fresh_clock_edit.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;c&#x2F;c2&#x2F;West_Ham_United_FC_logo.svg&#x2F;1200px-West_Ham_United_FC_logo.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;thumb&#x2F;c&#x2F;c2&#x2F;West_Ham_United_FC_logo.svg&#x2F;1200px-West_Ham_United_FC_logo.svg.png</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;b&#x2F;b3&#x2F;Silk_arrow_switch.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;b&#x2F;b3&#x2F;Silk_arrow_switch.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;a&#x2F;a2&#x2F;Tampa_Bay_Buccaneers_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;a&#x2F;a2&#x2F;Tampa_Bay_Buccaneers_logo.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;c0&#x2F;Images.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;c0&#x2F;Images.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;c&#x2F;c5&#x2F;Atlanta_Falcons_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;c&#x2F;c5&#x2F;Atlanta_Falcons_logo.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;3&#x2F;36&#x2F;Chart_organisation.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;3&#x2F;36&#x2F;Chart_organisation.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;b&#x2F;b9&#x2F;New_England_Patriots_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;b&#x2F;b9&#x2F;New_England_Patriots_logo.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;4&#x2F;44&#x2F;Feed.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;4&#x2F;44&#x2F;Feed.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;7&#x2F;77&#x2F;Buffalo_Bills_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;7&#x2F;77&#x2F;Buffalo_Bills_logo.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;a&#x2F;aa&#x2F;Help.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;a&#x2F;aa&#x2F;Help.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;4&#x2F;48&#x2F;Minnesota_Vikings_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;4&#x2F;48&#x2F;Minnesota_Vikings_logo.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;5&#x2F;53&#x2F;Google_%22G%22_Logo.svg&#x2F;50px-Google_%22G%22_Logo.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;5&#x2F;53&#x2F;Google_%22G%22_Logo.svg&#x2F;50px-Google_%22G%22_Logo.svg.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;5&#x2F;5c&#x2F;Chicago_Bears_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;5&#x2F;5c&#x2F;Chicago_Bears_logo.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;6f&#x2F;Breastfeeding-icon-med.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;6f&#x2F;Breastfeeding-icon-med.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;1&#x2F;16&#x2F;Baltimore_Ravens_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;1&#x2F;16&#x2F;Baltimore_Ravens_logo.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;d&#x2F;d2&#x2F;History.svg&#x2F;30px-History.svg.png" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;d&#x2F;d2&#x2F;History.svg&#x2F;30px-History.svg.png</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;8&#x2F;81&#x2F;Cincinnati_Bengals_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;8&#x2F;81&#x2F;Cincinnati_Bengals_logo.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;3&#x2F;3b&#x2F;Rabbit_in_montana.jpg&#x2F;250px-Rabbit_in_montana.jpg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;thumb&#x2F;3&#x2F;3b&#x2F;Rabbit_in_montana.jpg&#x2F;250px-Rabbit_in_montana.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;a&#x2F;a6&#x2F;Los_Angeles_Chargers_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;a&#x2F;a6&#x2F;Los_Angeles_Chargers_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;4&#x2F;44&#x2F;Denver_Broncos_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;4&#x2F;44&#x2F;Denver_Broncos_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;7&#x2F;71&#x2F;Detroit_Lions_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;7&#x2F;71&#x2F;Detroit_Lions_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;5&#x2F;50&#x2F;Green_Bay_Packers_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;5&#x2F;50&#x2F;Green_Bay_Packers_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;2&#x2F;28&#x2F;Houston_Texans_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;2&#x2F;28&#x2F;Houston_Texans_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;0&#x2F;00&#x2F;Indianapolis_Colts_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;0&#x2F;00&#x2F;Indianapolis_Colts_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;e&#x2F;e1&#x2F;Kansas_City_Chiefs_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;e&#x2F;e1&#x2F;Kansas_City_Chiefs_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;4&#x2F;48&#x2F;Las_Vegas_Raiders_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;4&#x2F;48&#x2F;Las_Vegas_Raiders_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;6&#x2F;6b&#x2F;New_York_Jets_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;6&#x2F;6b&#x2F;New_York_Jets_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;3&#x2F;37&#x2F;Miami_Dolphins_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;3&#x2F;37&#x2F;Miami_Dolphins_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;1&#x2F;1c&#x2F;Carolina_Panthers_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;1&#x2F;1c&#x2F;Carolina_Panthers_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;5&#x2F;50&#x2F;New_Orleans_Saints_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;5&#x2F;50&#x2F;New_Orleans_Saints_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;60&#x2F;New_York_Giants_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;6&#x2F;60&#x2F;New_York_Giants_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;8e&#x2F;Philadelphia_Eagles_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;8e&#x2F;Philadelphia_Eagles_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;d&#x2F;d9&#x2F;Cleveland_Browns_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;d&#x2F;d9&#x2F;Cleveland_Browns_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;d&#x2F;de&#x2F;Pittsburgh_Steelers_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;d&#x2F;de&#x2F;Pittsburgh_Steelers_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;7&#x2F;72&#x2F;Arizona_Cardinals_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;7&#x2F;72&#x2F;Arizona_Cardinals_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;3&#x2F;3a&#x2F;San_Francisco_49ers_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;3&#x2F;3a&#x2F;San_Francisco_49ers_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;8a&#x2F;Los_Angeles_Rams_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;8a&#x2F;Los_Angeles_Rams_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;8e&#x2F;Seattle_Seahawks_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;8&#x2F;8e&#x2F;Seattle_Seahawks_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;1&#x2F;15&#x2F;Dallas_Cowboys.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;1&#x2F;15&#x2F;Dallas_Cowboys.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;0&#x2F;0c&#x2F;Washington_Commanders_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;0&#x2F;0c&#x2F;Washington_Commanders_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;c&#x2F;c1&#x2F;Tennessee_Titans_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;c&#x2F;c1&#x2F;Tennessee_Titans_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;7&#x2F;74&#x2F;Jacksonville_Jaguars_logo.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;en&#x2F;7&#x2F;74&#x2F;Jacksonville_Jaguars_logo.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;cb&#x2F;Flag_of_the_United_Arab_Emirates.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;c&#x2F;cb&#x2F;Flag_of_the_United_Arab_Emirates.svg</a> (seen on 2 websites)</p>
-        </li>
-        <li class='break-all'>
-            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;d&#x2F;dd&#x2F;Flag_of_Oman.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;d&#x2F;dd&#x2F;Flag_of_Oman.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;e&#x2F;e7&#x2F;Instagram_logo_2016.svg" target="_blank" class="external" rel="noreferrer noopener">upload.wikimedia.org&#x2F;wikipedia&#x2F;commons&#x2F;e&#x2F;e7&#x2F;Instagram_logo_2016.svg</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -304,58 +333,235 @@
             <a href="http://www.marinetraffic.com" target="_blank" class="external">www.marinetraffic.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.scu.edu" target="_blank" class="external">www.scu.edu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wikimannia.org" target="_blank" class="external">wikimannia.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://at.wikimannia.org" target="_blank" class="external">at.wikimannia.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fandom.com" target="_blank" class="external">fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://blasphemous.fandom.com" target="_blank" class="external">blasphemous.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://creepypastafiles.fandom.com" target="_blank" class="external">creepypastafiles.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://jojo.fandom.com" target="_blank" class="external">jojo.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://theloudhouse.fandom.com" target="_blank" class="external">theloudhouse.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://undertale-au.fandom.com" target="_blank" class="external">undertale-au.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wingsoffire.fandom.com" target="_blank" class="external">wingsoffire.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://bluearchive.wiki" target="_blank" class="external">bluearchive.wiki</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://electowiki.org" target="_blank" class="external">electowiki.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://trollpasta.com" target="_blank" class="external">trollpasta.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://abcdef.wiki" target="_blank" class="external">abcdef.wiki</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wiki5.ru" target="_blank" class="external">wiki5.ru</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://everybodywiki.com" target="_blank" class="external">everybodywiki.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://de.everybodywiki.com" target="_blank" class="external">de.everybodywiki.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://marjorie-wiki.de" target="_blank" class="external">marjorie-wiki.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wikizilla.org" target="_blank" class="external">wikizilla.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wikibrief.org" target="_blank" class="external">wikibrief.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://es.abcdef.wiki" target="_blank" class="external">es.abcdef.wiki</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://pl.abcdef.wiki" target="_blank" class="external">pl.abcdef.wiki</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ru.abcdef.wiki" target="_blank" class="external">ru.abcdef.wiki</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://wiki.alquds.edu" target="_blank" class="external">wiki.alquds.edu</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dewiki.de" target="_blank" class="external">dewiki.de</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://second.wiki" target="_blank" class="external">second.wiki</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dwarffortresswiki.org" target="_blank" class="external">dwarffortresswiki.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.dwarffortresswiki.org" target="_blank" class="external">www.dwarffortresswiki.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fr.abcdef.wiki" target="_blank" class="external">fr.abcdef.wiki</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vikidia.org" target="_blank" class="external">vikidia.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fr.vikidia.org" target="_blank" class="external">fr.vikidia.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://gatewaypundit.blogspot.com" target="_blank" class="external">gatewaypundit.blogspot.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.thegatewaypundit.com" target="_blank" class="external">www.thegatewaypundit.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://handwiki.org" target="_blank" class="external">handwiki.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://infogalactic.com" target="_blank" class="external">infogalactic.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://military-history.fandom.com" target="_blank" class="external">military-history.fandom.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://psychonautwiki.org" target="_blank" class="external">psychonautwiki.org</a>
+        </li>
+        <li class='truncate'>
             <a href="http://frwiki.wiki" target="_blank" class="external">frwiki.wiki</a>
         </li>
         <li class='truncate'>
-            <a href="http://ru.frwiki.wiki" target="_blank" class="external">ru.frwiki.wiki</a>
+            <a href="http://nl.frwiki.wiki" target="_blank" class="external">nl.frwiki.wiki</a>
         </li>
         <li class='truncate'>
-            <a href="http://fightnews.info" target="_blank" class="external">fightnews.info</a>
+            <a href="http://it.frwiki.wiki" target="_blank" class="external">it.frwiki.wiki</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.lalena.ro" target="_blank" class="external">www.lalena.ro</a>
+            <a href="http://wiki2.org" target="_blank" class="external">wiki2.org</a>
         </li>
         <li class='truncate'>
-            <a href="http://irishsportsdaily.com" target="_blank" class="external">irishsportsdaily.com</a>
+            <a href="http://wikimili.com" target="_blank" class="external">wikimili.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.outkick.com" target="_blank" class="external">www.outkick.com</a>
+            <a href="http://playback.fm" target="_blank" class="external">playback.fm</a>
         </li>
         <li class='truncate'>
-            <a href="http://juaratv.xyz" target="_blank" class="external">juaratv.xyz</a>
+            <a href="http://scihi.org" target="_blank" class="external">scihi.org</a>
         </li>
         <li class='truncate'>
-            <a href="http://tvdewa.fun" target="_blank" class="external">tvdewa.fun</a>
+            <a href="http://snaccooperative.org" target="_blank" class="external">snaccooperative.org</a>
         </li>
         <li class='truncate'>
-            <a href="http://moviesflixer.monster" target="_blank" class="external">moviesflixer.monster</a>
+            <a href="http://alquds.edu" target="_blank" class="external">alquds.edu</a>
         </li>
         <li class='truncate'>
-            <a href="http://moviesflixer.skin" target="_blank" class="external">moviesflixer.skin</a>
+            <a href="http://wikizero.com" target="_blank" class="external">wikizero.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.sarkariyojnaa.com" target="_blank" class="external">www.sarkariyojnaa.com</a>
+            <a href="http://aircompressorsdirect.com" target="_blank" class="external">aircompressorsdirect.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://ovpzone.com" target="_blank" class="external">ovpzone.com</a>
+            <a href="http://www.aircompressorsdirect.com" target="_blank" class="external">www.aircompressorsdirect.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://rbxzone.net" target="_blank" class="external">rbxzone.net</a>
+            <a href="http://www.chainsawsdirect.com" target="_blank" class="external">www.chainsawsdirect.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://f8bet0.com" target="_blank" class="external">f8bet0.com</a>
+            <a href="http://www.ecomfort.com" target="_blank" class="external">www.ecomfort.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.shbet0.com" target="_blank" class="external">www.shbet0.com</a>
+            <a href="http://www.electricgeneratorsdirect.com" target="_blank" class="external">www.electricgeneratorsdirect.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://fantasysp.com" target="_blank" class="external">fantasysp.com</a>
+            <a href="http://www.powerequipmentdirect.com" target="_blank" class="external">www.powerequipmentdirect.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://kavak.com" target="_blank" class="external">kavak.com</a>
+            <a href="http://www.pressurewashersdirect.com" target="_blank" class="external">www.pressurewashersdirect.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.teachoo.com" target="_blank" class="external">www.teachoo.com</a>
+            <a href="http://www.snowblowersdirect.com" target="_blank" class="external">www.snowblowersdirect.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sumppumpsdirect.com" target="_blank" class="external">www.sumppumpsdirect.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.waterpumpsdirect.com" target="_blank" class="external">www.waterpumpsdirect.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://askdifference.com" target="_blank" class="external">askdifference.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.askdifference.com" target="_blank" class="external">www.askdifference.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://cinemaspathegaumont.com" target="_blank" class="external">cinemaspathegaumont.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.cinemaspathegaumont.com" target="_blank" class="external">www.cinemaspathegaumont.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://enkiverywell.com" target="_blank" class="external">enkiverywell.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.enkiverywell.com" target="_blank" class="external">www.enkiverywell.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://enkirelations.com" target="_blank" class="external">enkirelations.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.enkirelations.com" target="_blank" class="external">www.enkirelations.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://explainxkcd.com" target="_blank" class="external">explainxkcd.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.explainxkcd.com" target="_blank" class="external">www.explainxkcd.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://myperfectcolor.com" target="_blank" class="external">myperfectcolor.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.myperfectcolor.com" target="_blank" class="external">www.myperfectcolor.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://newkidscenter.org" target="_blank" class="external">newkidscenter.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.newkidscenter.org" target="_blank" class="external">www.newkidscenter.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://poewiki.net" target="_blank" class="external">poewiki.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.poewiki.net" target="_blank" class="external">www.poewiki.net</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://superbestaudiofriends.org" target="_blank" class="external">superbestaudiofriends.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.superbestaudiofriends.org" target="_blank" class="external">www.superbestaudiofriends.org</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://tonepublications.com" target="_blank" class="external">tonepublications.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.tonepublications.com" target="_blank" class="external">www.tonepublications.com</a>
         </li>
     </ul>
 </div>

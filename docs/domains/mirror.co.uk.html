@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "mirror.co.uk",
-        history: [{"date":"main","prevalence":0.000237,"sites":35,"fingerprinting":1,"cookies":0.000176},{"date":"selenium-crux","prevalence":0.000163,"sites":12,"fingerprinting":1,"cookies":0.00015}]
+        history: [{"date":"main","prevalence":0.000237,"sites":35,"fingerprinting":1,"cookies":0.000176},{"date":"selenium-results","prevalence":0.000277,"sites":41,"fingerprinting":1,"cookies":0.00023}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;3681<small>/16361</small>
+                    <strong>Rank:</strong> &#35;2336<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.02&#37; (12 sites)
+                    <strong>Prevalence:</strong> 0.03&#37; (41 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.01&#37;
+                    <strong>Cookies:</strong> 0.02&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -90,6 +90,7 @@
                 </li>
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
+                    <span>Font</span>,
                     <span>XHR</span>,
                     <span>Script</span>,
                     <span>Stylesheet</span>,
@@ -98,8 +99,10 @@
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/mirror.co.uk.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
+                    <span>s2-prod</span>, 
                     <span>stmg-prod</span>, 
                     <span>s3</span>, 
+                    <span>i2-prod</span>, 
                 </li>
             </ul>
         </div>
@@ -118,25 +121,69 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>Navigator.prototype.cookieEnabled</li>
+        <li class='truncate'>window.sessionStorage</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://stmg-prod.mirror.co.uk&#x2F;analytics.config.json" target="_blank" class="external" rel="noreferrer noopener">stmg-prod.mirror.co.uk&#x2F;analytics.config.json</a> (seen on 11 websites)</p>
+            <p><a href="http://stmg-prod.mirror.co.uk&#x2F;analytics.config.json" target="_blank" class="external" rel="noreferrer noopener">stmg-prod.mirror.co.uk&#x2F;analytics.config.json</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;js&#x2F;widgetHomepage.js" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;js&#x2F;widgetHomepage.js</a> (seen on 5 websites)</p>
+            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;js&#x2F;widgetHomepage.js" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;js&#x2F;widgetHomepage.js</a> (seen on 10 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;iya.css" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;iya.css</a> (seen on 5 websites)</p>
+            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;iya.css" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;iya.css</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;iya-test-bkg.jpg" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;iya-test-bkg.jpg</a> (seen on 5 websites)</p>
+            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;iya-test-bkg.jpg" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;iya-test-bkg.jpg</a> (seen on 8 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;logo-InYourArea.svg" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;logo-InYourArea.svg</a> (seen on 5 websites)</p>
+            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;logo-InYourArea.svg" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;logo-InYourArea.svg</a> (seen on 8 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;logo-InYourArea-dark.svg" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;logo-InYourArea-dark.svg</a> (seen on 7 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;js&#x2F;articleWidgetProd.js" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;js&#x2F;articleWidgetProd.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;js&#x2F;articleWidgetProd.css" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;js&#x2F;articleWidgetProd.css</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://i2-prod.mirror.co.uk&#x2F;article28768639.ece&#x2F;ALTERNATES&#x2F;s615&#x2F;1_GettyImages-1175090579.jpg" target="_blank" class="external" rel="noreferrer noopener">i2-prod.mirror.co.uk&#x2F;article28768639.ece&#x2F;ALTERNATES&#x2F;s615&#x2F;1_GettyImages-1175090579.jpg</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2-prod.mirror.co.uk&#x2F;build&#x2F;skins&#x2F;shared&#x2F;css&#x2F;images&#x2F;loader-ondark-40.gif" target="_blank" class="external" rel="noreferrer noopener">s2-prod.mirror.co.uk&#x2F;build&#x2F;skins&#x2F;shared&#x2F;css&#x2F;images&#x2F;loader-ondark-40.gif</a> (seen on 3 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2-prod.mirror.co.uk&#x2F;@trinitymirrordigital&#x2F;dragonfly&#x2F;d783eb660d3cd7be2430d9edd5bdea4f8482f94b&#x2F;webfonts&#x2F;opensans-bold-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">s2-prod.mirror.co.uk&#x2F;@trinitymirrordigital&#x2F;dragonfly&#x2F;d783eb660d3cd7be2430d9edd5bdea4f8482f94b&#x2F;webfonts&#x2F;opensans-bold-webfont.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2-prod.mirror.co.uk&#x2F;@trinitymirrordigital&#x2F;dragonfly&#x2F;d783eb660d3cd7be2430d9edd5bdea4f8482f94b&#x2F;webfonts&#x2F;opensans-regular-webfont.woff2" target="_blank" class="external" rel="noreferrer noopener">s2-prod.mirror.co.uk&#x2F;@trinitymirrordigital&#x2F;dragonfly&#x2F;d783eb660d3cd7be2430d9edd5bdea4f8482f94b&#x2F;webfonts&#x2F;opensans-regular-webfont.woff2</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s2-prod.mirror.co.uk&#x2F;@trinitymirrordigital&#x2F;withnail&#x2F;lib&#x2F;prebid&#x2F;prebid.js" target="_blank" class="external" rel="noreferrer noopener">s2-prod.mirror.co.uk&#x2F;@trinitymirrordigital&#x2F;withnail&#x2F;lib&#x2F;prebid&#x2F;prebid.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;news-themes&#x2F;ipso.svg" target="_blank" class="external" rel="noreferrer noopener">s3.mirror.co.uk&#x2F;emerging-products&#x2F;in-your-area&#x2F;news-themes&#x2F;ipso.svg</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -146,7 +193,19 @@
     <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='truncate'>
-            <a href="http://corkbeo.ie" target="_blank" class="external">corkbeo.ie</a>
+            <a href="http://chicagotribune.com" target="_blank" class="external">chicagotribune.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fun.chicagotribune.com" target="_blank" class="external">fun.chicagotribune.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://business-live.co.uk" target="_blank" class="external">business-live.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.business-live.co.uk" target="_blank" class="external">www.business-live.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.corkbeo.ie" target="_blank" class="external">www.corkbeo.ie</a>
         </li>
         <li class='truncate'>
             <a href="http://www.dailystar.co.uk" target="_blank" class="external">www.dailystar.co.uk</a>
@@ -161,10 +220,16 @@
             <a href="http://www.galwaybeo.ie" target="_blank" class="external">www.galwaybeo.ie</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.hertfordshiremercury.co.uk" target="_blank" class="external">www.hertfordshiremercury.co.uk</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.lancs.live" target="_blank" class="external">www.lancs.live</a>
         </li>
         <li class='truncate'>
             <a href="http://www.leeds-live.co.uk" target="_blank" class="external">www.leeds-live.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.lincolnshirelive.co.uk" target="_blank" class="external">www.lincolnshirelive.co.uk</a>
         </li>
         <li class='truncate'>
             <a href="http://www.liverpool.com" target="_blank" class="external">www.liverpool.com</a>
@@ -176,10 +241,31 @@
             <a href="http://www.ok.co.uk" target="_blank" class="external">www.ok.co.uk</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.oxfordshirelive.co.uk" target="_blank" class="external">www.oxfordshirelive.co.uk</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.rsvplive.ie" target="_blank" class="external">www.rsvplive.ie</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.scottishdailyexpress.co.uk" target="_blank" class="external">www.scottishdailyexpress.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.sussexlive.co.uk" target="_blank" class="external">www.sussexlive.co.uk</a>
+        </li>
+        <li class='truncate'>
             <a href="http://edinburghlive.co.uk" target="_blank" class="external">edinburghlive.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://football.london" target="_blank" class="external">football.london</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://inyourarea.co.uk" target="_blank" class="external">inyourarea.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.inyourarea.co.uk" target="_blank" class="external">www.inyourarea.co.uk</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://liverpool.com" target="_blank" class="external">liverpool.com</a>
         </li>
     </ul>
 </div>

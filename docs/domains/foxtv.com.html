@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "foxtv.com",
-        history: [{"date":"main","prevalence":0.000237,"sites":35,"fingerprinting":2,"cookies":0.00019},{"date":"selenium-crux","prevalence":0.0000681,"sites":5,"fingerprinting":2,"cookies":0.0000681}]
+        history: [{"date":"main","prevalence":0.000237,"sites":35,"fingerprinting":2,"cookies":0.00019},{"date":"selenium-results","prevalence":0.000237,"sites":35,"fingerprinting":2,"cookies":0.000223}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,16 +65,16 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;6415<small>/16361</small>
+                    <strong>Rank:</strong> &#35;2604<small>/25507</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.01&#37; (5 sites)
+                    <strong>Prevalence:</strong> 0.02&#37; (35 sites)
                 </li>
                 <li class='py-1'>
                     <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
                 </li>
                 <li class='py-1'>
-                    <strong>Cookies:</strong> 0.01&#37;
+                    <strong>Cookies:</strong> 0.02&#37;
                 </li>
                 <li class='py-1'>
                     <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
@@ -94,13 +94,16 @@
                     <span>Script</span>,
                     <span>Image</span>,
                     <span>Document</span>,
+                    <span>Fetch</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/foxtv.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>static</span>, 
-                    <span>my</span>, 
                     <span>images</span>, 
+                    <span>my</span>, 
+                    <span>api.nova</span>, 
+                    <span>media</span>, 
                 </li>
             </ul>
         </div>
@@ -130,10 +133,10 @@
 
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
         <li class='truncate'>window.devicePixelRatio</li>
-        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
         <li class='truncate'>Navigator.prototype.platform</li>
-        <li class='truncate'>Element.prototype.getClientRects</li>
+        <li class='truncate'>Date.prototype.getTimezoneOffset</li>
         <li class='truncate'>Navigator.prototype.appName</li>
+        <li class='truncate'>Element.prototype.getClientRects</li>
         <li class='truncate'>Navigator.prototype.cookieEnabled</li>
         <li class='truncate'>window.innerWidth</li>
         <li class='truncate'>window.innerHeight</li>
@@ -144,9 +147,9 @@
         <li class='truncate'>window.localStorage</li>
         <li class='truncate'>Document.cookie setter</li>
         <li class='truncate'>Document.cookie getter</li>
-        <li class='truncate'>Navigator.prototype.appVersion</li>
         <li class='truncate'>Date.prototype.getTime</li>
         <li class='truncate'>Navigator.prototype.userAgent</li>
+        <li class='truncate'>Navigator.prototype.appVersion</li>
         <li class='truncate'>Event.prototype.timeStamp</li>
     </ul>
 </div>
@@ -156,148 +159,733 @@
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;comscore&#x2F;CustomComscorePlugin.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;comscore&#x2F;CustomComscorePlugin.js</a> (seen on 6 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;ag.core.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;ag.core.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;CustomSegmentPlugin.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;CustomSegmentPlugin.js</a> (seen on 6 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;isa&#x2F;core.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;isa&#x2F;core.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;comscore&#x2F;comscore.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;comscore&#x2F;comscore.js</a> (seen on 6 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;default&#x2F;loader.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;default&#x2F;loader.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;css&#x2F;default&#x2F;home.rs.css" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;css&#x2F;default&#x2F;home.rs.css</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;leap&#x2F;loader.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;leap&#x2F;loader.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;ag.core.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;ag.core.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;geo.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;geo.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;isa&#x2F;core.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;isa&#x2F;core.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;isa&#x2F;core-app.fts.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;isa&#x2F;core-app.fts.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;default&#x2F;loader.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;default&#x2F;loader.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;leap&#x2F;core.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;leap&#x2F;core.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;leap&#x2F;loader.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;leap&#x2F;loader.js</a> (seen on 5 websites)</p>
+            <p><a href="http://my.foxtv.com&#x2F;xd-channel.html" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;xd-channel.html</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;geo.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;geo.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;ads.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;ads.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;isa&#x2F;core-app.fts.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;isa&#x2F;core-app.fts.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;overlays&#x2F;video.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;overlays&#x2F;video.svg</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;leap&#x2F;core.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;leap&#x2F;core.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;facebook.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;facebook.svg</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;xd-channel.html" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;xd-channel.html</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;twitter.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;twitter.svg</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;overlays&#x2F;video.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;overlays&#x2F;video.svg</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;email.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;email.svg</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;ads.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;ads.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;modulr&#x2F;master.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;modulr&#x2F;master.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;facebook.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;facebook.svg</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;cache.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;cache.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;instagram.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;instagram.svg</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;uuidv4.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;uuidv4.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;twitter.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;twitter.svg</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;default&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;default&#x2F;ag.app.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;email.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;email.svg</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;base&#x2F;app&#x2F;utils&#x2F;meta.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;base&#x2F;app&#x2F;utils&#x2F;meta.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;modulr&#x2F;master.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;modulr&#x2F;master.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;base&#x2F;app&#x2F;utils&#x2F;log.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;base&#x2F;app&#x2F;utils&#x2F;log.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;cache.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;cache.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;leap&#x2F;ext&#x2F;shims&#x2F;ld.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;leap&#x2F;ext&#x2F;shims&#x2F;ld.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;uuidv4.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;uuidv4.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;leap&#x2F;ext&#x2F;shims&#x2F;jq.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;leap&#x2F;ext&#x2F;shims&#x2F;jq.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;modulr.min.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;modulr.min.js</a> (seen on 5 websites)</p>
+            <p><a href="http://api.nova.foxtv.com&#x2F;v1&#x2F;p" target="_blank" class="external" rel="noreferrer noopener">api.nova.foxtv.com&#x2F;v1&#x2F;p</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;bootstrap.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;bootstrap.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;comscore&#x2F;CustomComscorePlugin.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;comscore&#x2F;CustomComscorePlugin.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;default&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;default&#x2F;ag.app.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;CustomSegmentPlugin.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;CustomSegmentPlugin.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;app.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;app.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;comscore&#x2F;comscore.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;utils&#x2F;comscore&#x2F;comscore.js</a> (seen on 18 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;helper.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;helper.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;instagram.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;instagram.svg</a> (seen on 17 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;base&#x2F;app&#x2F;utils&#x2F;meta.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;base&#x2F;app&#x2F;utils&#x2F;meta.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;css&#x2F;default&#x2F;home.rs.css" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;css&#x2F;default&#x2F;home.rs.css</a> (seen on 17 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;config.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;config.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;logo.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;logo.svg</a> (seen on 16 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;base&#x2F;app&#x2F;utils&#x2F;log.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;base&#x2F;app&#x2F;utils&#x2F;log.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;css&#x2F;default&#x2F;article.rs.css" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;css&#x2F;default&#x2F;article.rs.css</a> (seen on 14 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;router.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;router.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;share.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;social&#x2F;share.svg</a> (seen on 14 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;leap&#x2F;ext&#x2F;shims&#x2F;ld.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;leap&#x2F;ext&#x2F;shims&#x2F;ld.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;pages&#x2F;article&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;pages&#x2F;article&#x2F;ag.app.js</a> (seen on 14 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;auth.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;auth.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;templates&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;core&#x2F;templates&#x2F;ag.app.js</a> (seen on 14 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;request.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;request.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;warning.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;warning.svg</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;leap&#x2F;ext&#x2F;shims&#x2F;jq.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;leap&#x2F;ext&#x2F;shims&#x2F;jq.js</a> (seen on 5 websites)</p>
+            <p><a href="http://api.nova.foxtv.com&#x2F;v1&#x2F;t" target="_blank" class="external" rel="noreferrer noopener">api.nova.foxtv.com&#x2F;v1&#x2F;t</a> (seen on 6 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;store.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;store.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;33.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;33.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;vendor&#x2F;jwt-decode.min.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;vendor&#x2F;jwt-decode.min.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;26.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;26.svg</a> (seen on 5 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;token.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;token.js</a> (seen on 5 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;11.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;11.svg</a> (seen on 3 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;logo.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;logo.svg</a> (seen on 4 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-phoenix-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-phoenix-a.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;anon.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;anon.js</a> (seen on 4 websites)</p>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-phoenix-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-phoenix-b.svg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;controllers&#x2F;xd-channel.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;controllers&#x2F;xd-channel.js</a> (seen on 4 websites)</p>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-470871450.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-470871450.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;segment.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;segment.js</a> (seen on 4 websites)</p>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;snapshot-2023-01-12T063336.586.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;snapshot-2023-01-12T063336.586.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;stations.js" target="_blank" class="external" rel="noreferrer noopener">my.foxtv.com&#x2F;js&#x2F;app&#x2F;components&#x2F;stations.js</a> (seen on 4 websites)</p>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;vlcsnap-2023-01-12-18h35m19s860.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;vlcsnap-2023-01-12-18h35m19s860.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;34.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;34.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;snapshot-64-copy.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;snapshot-64-copy.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;livestream&#x2F;news-thumbnail.png" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;livestream&#x2F;news-thumbnail.png</a> (seen on 2 websites)</p>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-1077386086.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-1077386086.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
-            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;warning.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;warning.svg</a> (seen on 2 websites)</p>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;snapshot-2023-01-12T060314.474.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;snapshot-2023-01-12T060314.474.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;nail-cancer-story.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;nail-cancer-story.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;06&#x2F;300&#x2F;169&#x2F;WEATHER_EXPERTS_NEWS_APP_WEB_PROMO_300X250.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;06&#x2F;300&#x2F;169&#x2F;WEATHER_EXPERTS_NEWS_APP_WEB_PROMO_300X250.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;4E5&#x2F;4D5&#x2F;32&#x2F;18&#x2F;4E54D5B87960A365BD0FA6E934FFE2C9.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;4E5&#x2F;4D5&#x2F;32&#x2F;18&#x2F;4E54D5B87960A365BD0FA6E934FFE2C9.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;973&#x2F;683&#x2F;32&#x2F;18&#x2F;973683CD1BDCF809FCB0252D79CC441F.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;973&#x2F;683&#x2F;32&#x2F;18&#x2F;973683CD1BDCF809FCB0252D79CC441F.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;FE5&#x2F;8FB&#x2F;32&#x2F;18&#x2F;FE58FB63EA5A23E780E2DF07172DB43B.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;FE5&#x2F;8FB&#x2F;32&#x2F;18&#x2F;FE58FB63EA5A23E780E2DF07172DB43B.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;2D2&#x2F;DFF&#x2F;32&#x2F;18&#x2F;2D2DFF39AA258B3768305D69888CEEE6.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;2D2&#x2F;DFF&#x2F;32&#x2F;18&#x2F;2D2DFF39AA258B3768305D69888CEEE6.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;E10&#x2F;F8D&#x2F;32&#x2F;18&#x2F;E10F8D1379B9B78B202EC29917692C17.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;E10&#x2F;F8D&#x2F;32&#x2F;18&#x2F;E10F8D1379B9B78B202EC29917692C17.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;livestream&#x2F;ksaz-thumbnail.png" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;livestream&#x2F;ksaz-thumbnail.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;vlcsnap-2023-01-12-18h35m19s860.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;vlcsnap-2023-01-12-18h35m19s860.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
             <p><a href="http://images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;06&#x2F;0&#x2F;0&#x2F;WEATHER_EXPERTS_NEWS_APP_WEB_PROMO_300X250.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox10phoenix.com&#x2F;www.fox10phoenix.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;06&#x2F;0&#x2F;0&#x2F;WEATHER_EXPERTS_NEWS_APP_WEB_PROMO_300X250.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;4E5&#x2F;4D5&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;4E54D5B87960A365BD0FA6E934FFE2C9.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;4E5&#x2F;4D5&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;4E54D5B87960A365BD0FA6E934FFE2C9.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;973&#x2F;683&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;973683CD1BDCF809FCB0252D79CC441F.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;973&#x2F;683&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;973683CD1BDCF809FCB0252D79CC441F.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;FE5&#x2F;8FB&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;FE58FB63EA5A23E780E2DF07172DB43B.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;FE5&#x2F;8FB&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;FE58FB63EA5A23E780E2DF07172DB43B.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;2D2&#x2F;DFF&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;2D2DFF39AA258B3768305D69888CEEE6.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;2D2&#x2F;DFF&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;2D2DFF39AA258B3768305D69888CEEE6.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;E10&#x2F;F8D&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;E10F8D1379B9B78B202EC29917692C17.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;E10&#x2F;F8D&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;E10F8D1379B9B78B202EC29917692C17.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;ksaz&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;ksaz&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-tampa-bay-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-tampa-bay-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-tampa-bay-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-tampa-bay-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;b1d4fa80-GettyImages-470871450.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;b1d4fa80-GettyImages-470871450.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Kaitlyn-Conchiglia-.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Kaitlyn-Conchiglia-.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;V-SEX-ED-DEBATE_WTVT16db_146.mxf_.00_00_43_00.Still001.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;V-SEX-ED-DEBATE_WTVT16db_146.mxf_.00_00_43_00.Still001.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;snapshot-38.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;snapshot-38.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;human-trafficking-main-image.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;human-trafficking-main-image.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;03&#x2F;32&#x2F;18&#x2F;paulk-drawbridge-insert.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;03&#x2F;32&#x2F;18&#x2F;paulk-drawbridge-insert.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;air-force-hunter-brown.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;air-force-hunter-brown.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Starry_Lemon_Lime_Soda.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox13news.com&#x2F;www.fox13news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Starry_Lemon_Lime_Soda.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wtvt&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wtvt&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-houston-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-houston-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-houston-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-houston-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://media.foxtv.com&#x2F;weather&#x2F;kriv&#x2F;local-close-closer-radar.gif" target="_blank" class="external" rel="noreferrer noopener">media.foxtv.com&#x2F;weather&#x2F;kriv&#x2F;local-close-closer-radar.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://media.foxtv.com&#x2F;weather&#x2F;kriv&#x2F;local-close-radar.gif" target="_blank" class="external" rel="noreferrer noopener">media.foxtv.com&#x2F;weather&#x2F;kriv&#x2F;local-close-radar.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://media.foxtv.com&#x2F;weather&#x2F;kriv&#x2F;texas-radar.gif" target="_blank" class="external" rel="noreferrer noopener">media.foxtv.com&#x2F;weather&#x2F;kriv&#x2F;texas-radar.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://media.foxtv.com&#x2F;weather&#x2F;kriv&#x2F;national-radar.gif" target="_blank" class="external" rel="noreferrer noopener">media.foxtv.com&#x2F;weather&#x2F;kriv&#x2F;national-radar.gif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;031&#x2F;BB7&#x2F;32&#x2F;18&#x2F;031BB70DB97309FC386D1430F637D04B.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;031&#x2F;BB7&#x2F;32&#x2F;18&#x2F;031BB70DB97309FC386D1430F637D04B.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox26houston.com&#x2F;www.fox26houston.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;A-1.png" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox26houston.com&#x2F;www.fox26houston.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;A-1.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox26houston.com&#x2F;www.fox26houston.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Beach.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox26houston.com&#x2F;www.fox26houston.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Beach.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox26houston.com&#x2F;www.fox26houston.com&#x2F;content&#x2F;uploads&#x2F;2019&#x2F;10&#x2F;0&#x2F;0&#x2F;houstons-morning-show-web-show-pages.png" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox26houston.com&#x2F;www.fox26houston.com&#x2F;content&#x2F;uploads&#x2F;2019&#x2F;10&#x2F;0&#x2F;0&#x2F;houstons-morning-show-web-show-pages.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;kriv&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;kriv&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;34.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;weather&#x2F;34.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;F24&#x2F;3DD&#x2F;32&#x2F;18&#x2F;F243DD3ED95393FFB88873572C5CAD87.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;F24&#x2F;3DD&#x2F;32&#x2F;18&#x2F;F243DD3ED95393FFB88873572C5CAD87.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;4ED&#x2F;B66&#x2F;32&#x2F;18&#x2F;4EDB666194CB0B9AA51857EBB1BADA79.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;4ED&#x2F;B66&#x2F;32&#x2F;18&#x2F;4EDB666194CB0B9AA51857EBB1BADA79.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;32D&#x2F;367&#x2F;32&#x2F;18&#x2F;32D367AF7E3E48036B68363AFAAB312D.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;32D&#x2F;367&#x2F;32&#x2F;18&#x2F;32D367AF7E3E48036B68363AFAAB312D.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox26houston.com&#x2F;www.fox26houston.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;12&#x2F;0&#x2F;0&#x2F;El-Tiempo-300x-176.png" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox26houston.com&#x2F;www.fox26houston.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;12&#x2F;0&#x2F;0&#x2F;El-Tiempo-300x-176.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-philadelphia-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-philadelphia-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-philadelphia-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-philadelphia-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Champions-Dr-fire-3.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Champions-Dr-fire-3.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;vlcsnap-2023-01-12-23h25m10s299.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;vlcsnap-2023-01-12-23h25m10s299.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;b6d74e63-Missing-Bird-found-1.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;b6d74e63-Missing-Bird-found-1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Mayfair-police-meeting.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Mayfair-police-meeting.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;ana-brian-walshe-2.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;ana-brian-walshe-2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;vlcsnap-2023-01-12-22h54m37s941.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;vlcsnap-2023-01-12-22h54m37s941.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;0&#x2F;0&#x2F;FOX-29-YouTube-16x9.png" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;0&#x2F;0&#x2F;FOX-29-YouTube-16x9.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;05&#x2F;0&#x2F;0&#x2F;FOX_Header_YouTube_01-Narrow.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox29.com&#x2F;www.fox29.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;05&#x2F;0&#x2F;0&#x2F;FOX_Header_YouTube_01-Narrow.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wtxf&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wtxf&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-detroit-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-detroit-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-detroit-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-detroit-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;705&#x2F;DC3&#x2F;32&#x2F;18&#x2F;705DC3E67ED67A7C4C7C4B38A8D0DCF2.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;705&#x2F;DC3&#x2F;32&#x2F;18&#x2F;705DC3E67ED67A7C4C7C4B38A8D0DCF2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;705&#x2F;DC3&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;705DC3E67ED67A7C4C7C4B38A8D0DCF2.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;705&#x2F;DC3&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;705DC3E67ED67A7C4C7C4B38A8D0DCF2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wjbk&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wjbk&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;617&#x2F;2AD&#x2F;32&#x2F;18&#x2F;6172ADAC27DF119519FDA8791F333E8A.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;617&#x2F;2AD&#x2F;32&#x2F;18&#x2F;6172ADAC27DF119519FDA8791F333E8A.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-chicago-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-chicago-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-chicago-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-chicago-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;usps-2.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;usps-2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-470871450.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-470871450.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;vehicle.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;vehicle.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;01&#x2F;300&#x2F;169&#x2F;instapoll-button-1.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;01&#x2F;300&#x2F;169&#x2F;instapoll-button-1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;e483fc92-snapshot-4.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;e483fc92-snapshot-4.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;12&#x2F;32&#x2F;18&#x2F;GettyImages-1311901568.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;12&#x2F;32&#x2F;18&#x2F;GettyImages-1311901568.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;01&#x2F;0&#x2F;0&#x2F;instapoll-button-1.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox32chicago.com&#x2F;www.fox32chicago.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;01&#x2F;0&#x2F;0&#x2F;instapoll-button-1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wfld&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wfld&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-orlando-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-orlando-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-orlando-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-orlando-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;322393634_1171502936770907_2277571052729031832_n.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;322393634_1171502936770907_2277571052729031832_n.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;image-9.png" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;image-9.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;40628434483_99925d9e1f_c.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;40628434483_99925d9e1f_c.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;SC.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;SC.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;threats-7.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;threats-7.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;F9FDC0B181658C1F6E346D12AF5C4895-e1673552655908.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;F9FDC0B181658C1F6E346D12AF5C4895-e1673552655908.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;threats-7.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;threats-7.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-872665452.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox35orlando.com&#x2F;www.fox35orlando.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-872665452.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wofl&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wofl&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-dallas-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-dallas-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-dallas-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-dallas-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;V_MCKINNEY-ANSON-CT-9YO-BOY-MURDERED-9P_00.00.00.26.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;V_MCKINNEY-ANSON-CT-9YO-BOY-MURDERED-9P_00.00.00.26.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;325374189_528951902536097_1207849574889393100_n.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;325374189_528951902536097_1207849574889393100_n.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;011123-jg-trackdown-plano-road-surveillance-video-_00.00.11.58.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;011123-jg-trackdown-plano-road-surveillance-video-_00.00.11.58.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;V_ROCKWALL_HEATH-HS-FOOTBALL-COACH-ON-LEAVE-9P_00.00.01.32.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;V_ROCKWALL_HEATH-HS-FOOTBALL-COACH-ON-LEAVE-9P_00.00.01.32.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2019&#x2F;08&#x2F;32&#x2F;18&#x2F;1b6971ad-megamillions_1456348604411_891063_ver1.0.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2019&#x2F;08&#x2F;32&#x2F;18&#x2F;1b6971ad-megamillions_1456348604411_891063_ver1.0.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-470871450.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-470871450.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Tyler-Payne-NEW-Collin-Co-Mug.jpeg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Tyler-Payne-NEW-Collin-Co-Mug.jpeg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;DALLAS-DECEMBER-TRASH-BACKLOG-530-pkg-brown-pf_KDF_00.01.00.04.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;DALLAS-DECEMBER-TRASH-BACKLOG-530-pkg-brown-pf_KDF_00.01.00.04.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Justin-Roiland.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Justin-Roiland.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;N_FWPD-WEDGWORTH-RD-OIS-BODYCAM-6P_00.00.09.02.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;N_FWPD-WEDGWORTH-RD-OIS-BODYCAM-6P_00.00.09.02.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-470871450.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-470871450.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;V_MCKINNEY-ANSON-CT-9YO-BOY-MURDERED-9P_00.00.00.26.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;V_MCKINNEY-ANSON-CT-9YO-BOY-MURDERED-9P_00.00.00.26.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;325374189_528951902536097_1207849574889393100_n.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;325374189_528951902536097_1207849574889393100_n.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;011123-jg-trackdown-plano-road-surveillance-video-_00.00.11.58.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;011123-jg-trackdown-plano-road-surveillance-video-_00.00.11.58.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;V_ROCKWALL_HEATH-HS-FOOTBALL-COACH-ON-LEAVE-9P_00.00.01.32.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;V_ROCKWALL_HEATH-HS-FOOTBALL-COACH-ON-LEAVE-9P_00.00.01.32.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2019&#x2F;08&#x2F;100&#x2F;56&#x2F;1b6971ad-megamillions_1456348604411_891063_ver1.0.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2019&#x2F;08&#x2F;100&#x2F;56&#x2F;1b6971ad-megamillions_1456348604411_891063_ver1.0.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;kdfw&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;kdfw&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;04&#x2F;0&#x2F;0&#x2F;newsletter-copy.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox4news.com&#x2F;www.fox4news.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;04&#x2F;0&#x2F;0&#x2F;newsletter-copy.jpg</a> (seen on 2 websites)</p>
         </li>
         <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-atlanta-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-atlanta-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-atlanta-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-atlanta-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5atlanta.com&#x2F;www.fox5atlanta.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;cover.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5atlanta.com&#x2F;www.fox5atlanta.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;cover.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5atlanta.com&#x2F;www.fox5atlanta.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-470871450.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5atlanta.com&#x2F;www.fox5atlanta.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-470871450.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5atlanta.com&#x2F;www.fox5atlanta.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;e83d9d9d-thumbnail_695252605-1.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5atlanta.com&#x2F;www.fox5atlanta.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;e83d9d9d-thumbnail_695252605-1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5atlanta.com&#x2F;www.fox5atlanta.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;bryan-kohberger-courthouse.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5atlanta.com&#x2F;www.fox5atlanta.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;bryan-kohberger-courthouse.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5atlanta.com&#x2F;www.fox5atlanta.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;689e2892-kohberger-second-hearing-2.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5atlanta.com&#x2F;www.fox5atlanta.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;689e2892-kohberger-second-hearing-2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;waga&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;waga&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-washington-dc-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-washington-dc-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-washington-dc-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-washington-dc-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Brightwood.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Brightwood.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Beltsville-Car-Break-Ins-3.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Beltsville-Car-Break-Ins-3.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;ana-brian-walshe-2.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;ana-brian-walshe-2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;SCapStHomicide-4.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;SCapStHomicide-4.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wttg&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wttg&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;10&#x2F;0&#x2F;0&#x2F;Fox5YouTube_SubscribeToday_BNF_Blue.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;10&#x2F;0&#x2F;0&#x2F;Fox5YouTube_SubscribeToday_BNF_Blue.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;10&#x2F;0&#x2F;0&#x2F;193242-FOX5_InstaPoll_Social-Web-300X250.png" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5dc.com&#x2F;www.fox5dc.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;10&#x2F;0&#x2F;0&#x2F;193242-FOX5_InstaPoll_Social-Web-300X250.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-new-york-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-new-york-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-new-york-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-new-york-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5ny.com&#x2F;www.fox5ny.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;athena.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5ny.com&#x2F;www.fox5ny.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;athena.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5ny.com&#x2F;www.fox5ny.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-1383939743.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5ny.com&#x2F;www.fox5ny.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-1383939743.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5ny.com&#x2F;www.fox5ny.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Untitled-1-4.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5ny.com&#x2F;www.fox5ny.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Untitled-1-4.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wnyw&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;wnyw&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5ny.com&#x2F;www.fox5ny.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;08&#x2F;0&#x2F;0&#x2F;FOX5NY-YOUTUBE-16X9.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5ny.com&#x2F;www.fox5ny.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;08&#x2F;0&#x2F;0&#x2F;FOX5NY-YOUTUBE-16X9.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox5ny.com&#x2F;www.fox5ny.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;08&#x2F;0&#x2F;0&#x2F;Insta-poll-_00599.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox5ny.com&#x2F;www.fox5ny.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;08&#x2F;0&#x2F;0&#x2F;Insta-poll-_00599.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-milwaukee-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-milwaukee-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-milwaukee-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-milwaukee-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;as3-3.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;as3-3.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;09&#x2F;32&#x2F;18&#x2F;dw2.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;09&#x2F;32&#x2F;18&#x2F;dw2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;11&#x2F;300&#x2F;169&#x2F;FOX6-Youtube_1280x720-1.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;11&#x2F;300&#x2F;169&#x2F;FOX6-Youtube_1280x720-1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;06&#x2F;300&#x2F;169&#x2F;Contact-6_300x150.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;06&#x2F;300&#x2F;169&#x2F;Contact-6_300x150.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
             <p><a href="http://images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;11&#x2F;0&#x2F;0&#x2F;FOX6-Youtube_1280x720-1.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;11&#x2F;0&#x2F;0&#x2F;FOX6-Youtube_1280x720-1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;06&#x2F;0&#x2F;0&#x2F;Contact-6_300x150.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox6now.com&#x2F;www.fox6now.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;06&#x2F;0&#x2F;0&#x2F;Contact-6_300x150.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;witi&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;witi&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-austin-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-austin-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-austin-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-austin-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox7austin.com&#x2F;www.fox7austin.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;322393634_1171502936770907_2277571052729031832_n.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox7austin.com&#x2F;www.fox7austin.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;322393634_1171502936770907_2277571052729031832_n.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox7austin.com&#x2F;www.fox7austin.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-1077386086.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox7austin.com&#x2F;www.fox7austin.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-1077386086.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox7austin.com&#x2F;www.fox7austin.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-1383939743.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox7austin.com&#x2F;www.fox7austin.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-1383939743.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox7austin.com&#x2F;www.fox7austin.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;Jared-James-Dicus-Mugshot.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox7austin.com&#x2F;www.fox7austin.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;Jared-James-Dicus-Mugshot.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;ktbc&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;ktbc&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox7austin.com&#x2F;www.fox7austin.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;07&#x2F;0&#x2F;0&#x2F;FOX7MorningBrief-Email.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox7austin.com&#x2F;www.fox7austin.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;07&#x2F;0&#x2F;0&#x2F;FOX7MorningBrief-Email.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-minneapolis-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-minneapolis-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-minneapolis-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-minneapolis-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;michael-klinger.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;michael-klinger.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;south-st-paul-homicide-conver.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;south-st-paul-homicide-conver.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;art-shanty.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;art-shanty.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;05&#x2F;32&#x2F;18&#x2F;police4.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;05&#x2F;32&#x2F;18&#x2F;police4.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-464153476.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-464153476.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;1_9_23-Blume-set-Up-VO-DSO-Lying-attorney_00.00.05.44.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;1_9_23-Blume-set-Up-VO-DSO-Lying-attorney_00.00.05.44.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-1455075509.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;GettyImages-1455075509.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;indoor-skatepark-uptown.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;indoor-skatepark-uptown.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;V-LAKEVILLE-HOMICIDE_00.00.03.56.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;V-LAKEVILLE-HOMICIDE_00.00.03.56.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;10&#x2F;32&#x2F;18&#x2F;sheriff-dave-hutchinson.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2021&#x2F;10&#x2F;32&#x2F;18&#x2F;sheriff-dave-hutchinson.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;minneapolis-animal-shelter.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;minneapolis-animal-shelter.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;trucking-school-death.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;trucking-school-death.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-1455075509.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-1455075509.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;9AC38551-002E-4EF8-89DD-5CD5DC8C75C5.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;9AC38551-002E-4EF8-89DD-5CD5DC8C75C5.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;GettyImages-464153476.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;GettyImages-464153476.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;1_9_23-Blume-set-Up-VO-DSO-Lying-attorney_00.00.05.44.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;1_9_23-Blume-set-Up-VO-DSO-Lying-attorney_00.00.05.44.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;GettyImages-1455075509.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;GettyImages-1455075509.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;indoor-skatepark-uptown.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;indoor-skatepark-uptown.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;V-LAKEVILLE-HOMICIDE_00.00.03.56.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;100&#x2F;56&#x2F;V-LAKEVILLE-HOMICIDE_00.00.03.56.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;0&#x2F;0&#x2F;fox-9-store-items.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;0&#x2F;0&#x2F;fox-9-store-items.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;art-shanty.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;images.foxtv.com&#x2F;static.fox9.com&#x2F;www.fox9.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;art-shanty.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;kmsp&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;kmsp&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-los-angeles-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-los-angeles-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-los-angeles-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-los-angeles-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Keenan-Anderson-body-cam-footage.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Keenan-Anderson-body-cam-footage.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;5D0&#x2F;2DB&#x2F;32&#x2F;18&#x2F;5D02DBBB4FD16EC567A5C25F395D53FB.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;5D0&#x2F;2DB&#x2F;32&#x2F;18&#x2F;5D02DBBB4FD16EC567A5C25F395D53FB.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;EFE&#x2F;683&#x2F;32&#x2F;18&#x2F;EFE683ADB72A3790BE0CE0C0260E35EF.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;EFE&#x2F;683&#x2F;32&#x2F;18&#x2F;EFE683ADB72A3790BE0CE0C0260E35EF.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Keenan-Anderson.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;Keenan-Anderson.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;e45e2800-Ontario-Chicken-Farm.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;32&#x2F;18&#x2F;e45e2800-Ontario-Chicken-Farm.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;32&#x2F;18&#x2F;Rainbow.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;32&#x2F;18&#x2F;Rainbow.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-470871450.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-470871450.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;nail-cancer-story.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;nail-cancer-story.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;Keenan-Anderson-body-cam-footage.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;Keenan-Anderson-body-cam-footage.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-1320566078.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.foxla.com&#x2F;www.foxla.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-1320566078.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;5D0&#x2F;2DB&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;5D02DBBB4FD16EC567A5C25F395D53FB.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;5D0&#x2F;2DB&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;5D02DBBB4FD16EC567A5C25F395D53FB.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;EFE&#x2F;683&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;EFE683ADB72A3790BE0CE0C0260E35EF.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;EFE&#x2F;683&#x2F;32&#x2F;18&#x2F;592&#x2F;333&#x2F;EFE683ADB72A3790BE0CE0C0260E35EF.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;kttv&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;kttv&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;650&#x2F;1DC&#x2F;32&#x2F;18&#x2F;6501DCCF7B59E41016F44BB43E7698B1.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;650&#x2F;1DC&#x2F;32&#x2F;18&#x2F;6501DCCF7B59E41016F44BB43E7698B1.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-san-francisco-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-san-francisco-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-san-francisco-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-san-francisco-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.ktvu.com&#x2F;www.ktvu.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-1455357960.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.ktvu.com&#x2F;www.ktvu.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;GettyImages-1455357960.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.ktvu.com&#x2F;www.ktvu.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;kyle-doan-go-fund-me.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.ktvu.com&#x2F;www.ktvu.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;kyle-doan-go-fund-me.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.ktvu.com&#x2F;www.ktvu.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;STRINGER-MONTEREY-COUNTY-FLOODING-01.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.ktvu.com&#x2F;www.ktvu.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;STRINGER-MONTEREY-COUNTY-FLOODING-01.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;ktvu&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;ktvu&#x2F;ag.app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;526&#x2F;5E2&#x2F;32&#x2F;18&#x2F;5265E269EB1AFD6B5F3B8F4C06B4E3C7.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;m107833-mcdn.mp.lura.live&#x2F;iupl&#x2F;526&#x2F;5E2&#x2F;32&#x2F;18&#x2F;5265E269EB1AFD6B5F3B8F4C06B4E3C7.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.ktvu.com&#x2F;www.ktvu.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;12&#x2F;0&#x2F;0&#x2F;Good-News-FS.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.ktvu.com&#x2F;www.ktvu.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;12&#x2F;0&#x2F;0&#x2F;Good-News-FS.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-seattle-a.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-seattle-a.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-seattle-b.svg" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;img&#x2F;core&#x2F;s&#x2F;logos&#x2F;fts-seattle-b.svg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.q13fox.com&#x2F;www.q13fox.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;BNF-2020-coast.png" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.q13fox.com&#x2F;www.q13fox.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;149&#x2F;84&#x2F;BNF-2020-coast.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.q13fox.com&#x2F;www.q13fox.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;0&#x2F;0&#x2F;S13L-WEB-FB-Cover-820x360_Weekdays-1.png" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.q13fox.com&#x2F;www.q13fox.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;0&#x2F;0&#x2F;S13L-WEB-FB-Cover-820x360_Weekdays-1.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.q13fox.com&#x2F;www.q13fox.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;0&#x2F;0&#x2F;e105fa73-Links-you-saw-on-Studio-13-Live.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.q13fox.com&#x2F;www.q13fox.com&#x2F;content&#x2F;uploads&#x2F;2023&#x2F;01&#x2F;0&#x2F;0&#x2F;e105fa73-Links-you-saw-on-Studio-13-Live.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://images.foxtv.com&#x2F;static.q13fox.com&#x2F;www.q13fox.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;0&#x2F;0&#x2F;182c1ff1-Good-Day-Seattle-300x250.jpg" target="_blank" class="external" rel="noreferrer noopener">images.foxtv.com&#x2F;static.q13fox.com&#x2F;www.q13fox.com&#x2F;content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;0&#x2F;0&#x2F;182c1ff1-Good-Day-Seattle-300x250.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;kcpq&#x2F;ag.app.js" target="_blank" class="external" rel="noreferrer noopener">static.foxtv.com&#x2F;static&#x2F;orion&#x2F;scripts&#x2F;station&#x2F;kcpq&#x2F;ag.app.js</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -310,25 +898,103 @@
             <a href="http://fox10phoenix.com" target="_blank" class="external">fox10phoenix.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.fox13news.com" target="_blank" class="external">www.fox13news.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fox29.com" target="_blank" class="external">www.fox29.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fox2detroit.com" target="_blank" class="external">www.fox2detroit.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fox35orlando.com" target="_blank" class="external">www.fox35orlando.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fox32chicago.com" target="_blank" class="external">www.fox32chicago.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.fox4news.com" target="_blank" class="external">www.fox4news.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.fox5atlanta.com" target="_blank" class="external">www.fox5atlanta.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.fox35orlando.com" target="_blank" class="external">www.fox35orlando.com</a>
+            <a href="http://www.fox5dc.com" target="_blank" class="external">www.fox5dc.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fox5ny.com" target="_blank" class="external">www.fox5ny.com</a>
         </li>
         <li class='truncate'>
             <a href="http://www.fox6now.com" target="_blank" class="external">www.fox6now.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.fox9.com" target="_blank" class="external">www.fox9.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.foxla.com" target="_blank" class="external">www.foxla.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.ktvu.com" target="_blank" class="external">www.ktvu.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.fox10phoenix.com" target="_blank" class="external">www.fox10phoenix.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fox26houston.com" target="_blank" class="external">www.fox26houston.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.fox7austin.com" target="_blank" class="external">www.fox7austin.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.q13fox.com" target="_blank" class="external">www.q13fox.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fox13news.com" target="_blank" class="external">fox13news.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fox26houston.com" target="_blank" class="external">fox26houston.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fox29.com" target="_blank" class="external">fox29.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fox2detroit.com" target="_blank" class="external">fox2detroit.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fox32chicago.com" target="_blank" class="external">fox32chicago.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fox35orlando.com" target="_blank" class="external">fox35orlando.com</a>
         </li>
         <li class='truncate'>
             <a href="http://fox4news.com" target="_blank" class="external">fox4news.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://fox5atlanta.com" target="_blank" class="external">fox5atlanta.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fox5dc.com" target="_blank" class="external">fox5dc.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fox5ny.com" target="_blank" class="external">fox5ny.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://fox6now.com" target="_blank" class="external">fox6now.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fox7austin.com" target="_blank" class="external">fox7austin.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://fox9.com" target="_blank" class="external">fox9.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://foxla.com" target="_blank" class="external">foxla.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://ktvu.com" target="_blank" class="external">ktvu.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://q13fox.com" target="_blank" class="external">q13fox.com</a>
         </li>
     </ul>
 </div>
