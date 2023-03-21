@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    
+    <title>Tracker Radar Wiki - heovl.tv</title>
+    <link rel="stylesheet" href="../assets/css/style.min.css">
+
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+    <script src='../assets/js/vendor/lunr.js' defer></script>
+    <script src='../assets/js/search.js' defer></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <nav class="flex items-center justify-between flex-wrap p-5 bg-gray-300">
+            <div class="flex items-center flex-shrink-0 mr-5">
+                <a href="/tracker-radar-wiki" class="font-semibold text-xl">Tracker Radar Wiki</a>
+            </div>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-sm lg:flex-grow">
+                    <a href="/tracker-radar-wiki" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Home
+                    </a>
+                    <a href="/tracker-radar-wiki/top100.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        Top 100
+                    </a>
+                    <a href="/tracker-radar-wiki/apiHistory.html" class="block mt-4 lg:inline-block lg:mt-0 mr-4">
+                        API abuse score history
+                    </a>
+                </div>
+            </div>
+            <div class='relative'>
+                <input type='search' disabled="disabled" placeholder="Loading…" class='search-box__input px-2' />
+                <ul class='search-box__results absolute top-100 w-full bg-gray-100'></ul>
+            </div>
+        </nav>
+
+<script>
+    window.wikiData = {
+        type: "domain",
+        domain: "heovl.tv",
+        history: [{"date":"max/libcheck-big","prevalence":0.0000271,"sites":4,"fingerprinting":2,"cookies":0.00000677}]
+    };
+</script>
+<script src="../assets/js/vendor/Chart.min.js" defer></script>
+<script src='../assets/js/graph.js' defer></script>
+
+<div class='p-5 border-b'>
+    <h1 class='text-2xl mb-5'><img src='https://external-content.duckduckgo.com/ip3/heovl.tv.ico' width="32" height="32" class='inline-block' /> heovl.tv</h1>
+    <div class='grid grid-cols-1 col-gap-5 row-gap-5 md:grid-cols-2 md:row-gap-10'>
+        <div class="domain-stats">
+            <h3 class="section-header">Domain Stats</h3>
+            <ul>
+                <h3 class='section-header'></h3>
+            
+                <li class='py-1'>
+                    <strong>Owner:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Privacy Policy:</strong> <i>Unknown</i>
+                </li>
+                <li class='py-1'>
+                    <strong>Rank:</strong> &#35;11994<small>/27622</small>
+                </li>
+                <li class='py-1'>
+                    <strong>Prevalence:</strong> 0.00&#37; (4 sites)
+                </li>
+                <li class='py-1'>
+                    <strong>Fingerprinting:</strong> 2<small>/3</small> - <span class="fp-2">Use of many browser API&#39;s, possibly for tracking purposes</span>
+                </li>
+                <li class='py-1'>
+                    <strong>Cookies:</strong> 0.00&#37;
+                </li>
+                <li class='py-1'>
+                    <strong>Performance:</strong> <small><a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/DATA_MODEL.md#performance" target="_blank">?</a></small>
+                    <ul>
+                        <li>time: <small>/3</small></li>
+                        <li>size: <small>/3</small></li>
+                        <li>CPU: <small>/3</small></li>
+                        <li>cache: <small>/3</small></li>
+                    </ul>
+                </li>
+                <li class='py-1'>
+                    <strong>Categories:</strong> 
+                </li>
+                <li class='py-1'>
+                    <strong>Resource Types:</strong> 
+                    <span>Document</span>,
+                    <span>Stylesheet</span>,
+                    <span>Script</span>,
+                    <span>Image</span>,
+                    <span>Other</span>,
+                    <span>Fetch</span>,
+                </li>
+                <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/heovl.tv.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
+                <li class='py-1'>
+                    <strong>Subdomains:</strong>
+                </li>
+            </ul>
+        </div>
+        <div class='graph-container graph-container--right'>
+            <div class='flex'>
+                <h3 class="section-header flex-grow">Historic Data</h3>
+                <select class='graph-container__controller p-2 text-sm self-start py-1'>
+                    <option selected value='prevalence'>prevalence</option>
+                    <option value='sites'># of sites</option>
+                    <option value='fingerprinting'>fingerprinting score</option>
+                    <option value='cookies'>cookies</option>
+                </select>
+            </div>
+            <canvas class='graph-container__graph w-full mt-5'></canvas>
+        </div>
+    </div>
+</div>
+
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Navigator.prototype.product</li>
+        <li class='truncate'>window.innerWidth</li>
+        <li class='truncate'>window.innerHeight</li>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Document.cookie getter</li>
+        <li class='truncate'>Navigator.prototype.userAgent</li>
+    </ul>
+</div>
+
+
+<div class='p-5'>
+    <h3 class='section-header'>Resources Found</h3>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;css&#x2F;app.css" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;css&#x2F;app.css</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;js&#x2F;jquery.min.js" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;js&#x2F;jquery.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;js&#x2F;lazyload.js" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;js&#x2F;lazyload.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;js&#x2F;vue.min.js" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;js&#x2F;vue.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;img&#x2F;background&#x2F;docs@30.beeb08605f12f699c5abc3814763b65e.avif" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;img&#x2F;background&#x2F;docs@30.beeb08605f12f699c5abc3814763b65e.avif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;img&#x2F;background&#x2F;docs-dark@30.77f062b5fd90f0d2cd4752cd9a8649c8.avif" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;img&#x2F;background&#x2F;docs-dark@30.77f062b5fd90f0d2cd4752cd9a8649c8.avif</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;cdn-cgi&#x2F;scripts&#x2F;5c5dd728&#x2F;cloudflare-static&#x2F;email-decode.min.js" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;cdn-cgi&#x2F;scripts&#x2F;5c5dd728&#x2F;cloudflare-static&#x2F;email-decode.min.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;js&#x2F;app.js" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;js&#x2F;app.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;sw-KP82DCYG.js" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;sw-KP82DCYG.js</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;offline-KP82DCYG.html" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;offline-KP82DCYG.html</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;52b1f2d2d880abe7a1c2b50bdc8f08917b55c360.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;52b1f2d2d880abe7a1c2b50bdc8f08917b55c360.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;876534144ca4e0a1913f8cdf22df488ed36fa5a2.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;876534144ca4e0a1913f8cdf22df488ed36fa5a2.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;Lyla1n1tkr6BTk4TwFHQ9CehrFvnkzdoOOLlCPPO.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;Lyla1n1tkr6BTk4TwFHQ9CehrFvnkzdoOOLlCPPO.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;DaElRSGaMqx1udj4tQNVpnDMtIwd2N8kMfC6XPxT.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;DaElRSGaMqx1udj4tQNVpnDMtIwd2N8kMfC6XPxT.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;FUOTqOpSI5RzDiYya7vmWaardxz0AFyqejAIg49c.png" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;FUOTqOpSI5RzDiYya7vmWaardxz0AFyqejAIg49c.png</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;f3faba8ad853da01c7c6bd0994ce4472f9c8fcca.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;f3faba8ad853da01c7c6bd0994ce4472f9c8fcca.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;cdb10d3f125b3f4ce4e4f2004afc6ffd55410c7e.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;cdb10d3f125b3f4ce4e4f2004afc6ffd55410c7e.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;VLUnIOeER3yCLkazn4OnVS3UyOxlpQhRhM5rCa4D.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;VLUnIOeER3yCLkazn4OnVS3UyOxlpQhRhM5rCa4D.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;bff8daed89616061c333b32cd7a0a032abf1b5f8.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;bff8daed89616061c333b32cd7a0a032abf1b5f8.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2022&#x2F;08&#x2F;803c07df6cfa40ade7ec51193b5be87f08bf2620.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2022&#x2F;08&#x2F;803c07df6cfa40ade7ec51193b5be87f08bf2620.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;c8980efd0168dce9486c954691c1ad7b8b7bc014.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;c8980efd0168dce9486c954691c1ad7b8b7bc014.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2022&#x2F;08&#x2F;73a232ac1f0f510aff8b741ec389030d22913d01.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2022&#x2F;08&#x2F;73a232ac1f0f510aff8b741ec389030d22913d01.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;57ed64b3d2fe85b418d25ad0ee06da4280a158c0.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;57ed64b3d2fe85b418d25ad0ee06da4280a158c0.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;6a0a99e79514ba42967c2a6b5d9eefc15e4b4b26.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;6a0a99e79514ba42967c2a6b5d9eefc15e4b4b26.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;628ff32ba8976fbff6fd99e69036d77d3019ff25.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;628ff32ba8976fbff6fd99e69036d77d3019ff25.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;a847643d714ae4cc1192a5e908e662b7afe8fa18.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;a847643d714ae4cc1192a5e908e662b7afe8fa18.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2022&#x2F;05&#x2F;9cfffc7daedbdd2a4d941d2ebc75ba2ed493b2f0.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2022&#x2F;05&#x2F;9cfffc7daedbdd2a4d941d2ebc75ba2ed493b2f0.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;665319506a0277fa4b30cbd68f32c24c8a9bc655.jpg" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;resize&#x2F;500&#x2F;2023&#x2F;03&#x2F;665319506a0277fa4b30cbd68f32c24c8a9bc655.jpg</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://heovl.tv&#x2F;img&#x2F;default-avatar.png" target="_blank" class="external" rel="noreferrer noopener">heovl.tv&#x2F;img&#x2F;default-avatar.png</a> (seen on 2 websites)</p>
+        </li>
+    </ul>
+</div>
+
+<div class='p-5 border-b'>
+    <h3 class='section-header'>Sites</h3>
+    <h4 class='section-note'>Sample of sites where this domain was encountered as a third party.</h4>
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
+        <li class='truncate'>
+            <a href="http://heovl.fun" target="_blank" class="external">heovl.fun</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://vlxxx.shop" target="_blank" class="external">vlxxx.shop</a>
+        </li>
+    </ul>
+</div>
+
+            <footer class='p-5 bg-gray-300'>
+                DuckDuckGo, <a href="https://github.com/SlayterDev/tracker-radar-wiki">wiki repo</a>, <a href="https://github.com/duckduckgo/tracker-radar">tracker radar repo</a>
+            </footer>
+        </div>
+    </body>
+</html>

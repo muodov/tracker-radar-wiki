@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "hsadspixel.net",
-        history: [{"date":"2020.02","prevalence":0.00351,"sites":152,"fingerprinting":0,"cookies":0.00344},{"date":"2020.03","prevalence":0.0037,"sites":182,"fingerprinting":0,"cookies":0.00368},{"date":"2020.04","prevalence":0.00435,"sites":203,"fingerprinting":0,"cookies":0.00428},{"date":"2020.05","prevalence":0.00459,"sites":322,"fingerprinting":0,"cookies":0.00454},{"date":"2020.06","prevalence":0.00464,"sites":339,"fingerprinting":0,"cookies":0.00457},{"date":"2020.07","prevalence":0.00472,"sites":341,"fingerprinting":0,"cookies":0.0047},{"date":"2020.08","prevalence":0.0046,"sites":625,"fingerprinting":0,"cookies":0.00458},{"date":"2020.09","prevalence":0.00462,"sites":608,"fingerprinting":0,"cookies":0.00461},{"date":"2020.10","prevalence":0.00462,"sites":608,"fingerprinting":0,"cookies":0.0046},{"date":"2020.11","prevalence":0.00456,"sites":600,"fingerprinting":0,"cookies":0.00453},{"date":"2020.12","prevalence":0.00462,"sites":608,"fingerprinting":0,"cookies":0.00461},{"date":"2021.01","prevalence":0.00501,"sites":656,"fingerprinting":0,"cookies":0.00497},{"date":"2021.02","prevalence":0.00494,"sites":711,"fingerprinting":0,"cookies":0.00491},{"date":"2021.03","prevalence":0.00494,"sites":712,"fingerprinting":0,"cookies":0.00492},{"date":"2021.04","prevalence":0.00552,"sites":797,"fingerprinting":0,"cookies":0.0055},{"date":"2021.05","prevalence":0.0054,"sites":784,"fingerprinting":0,"cookies":0},{"date":"2021.06","prevalence":0.00554,"sites":808,"fingerprinting":0,"cookies":0},{"date":"2021.07","prevalence":0.00593,"sites":854,"fingerprinting":0,"cookies":0},{"date":"2021.08","prevalence":0.00575,"sites":828,"fingerprinting":0,"cookies":0},{"date":"2021.09","prevalence":0.00625,"sites":905,"fingerprinting":0,"cookies":0},{"date":"2021.10","prevalence":0.00657,"sites":951,"fingerprinting":0,"cookies":0},{"date":"2021.11","prevalence":0.00643,"sites":931,"fingerprinting":0,"cookies":0},{"date":"2021.12","prevalence":0.00634,"sites":917,"fingerprinting":0,"cookies":0},{"date":"2022.01","prevalence":0.00646,"sites":933,"fingerprinting":0,"cookies":0},{"date":"2022.02","prevalence":0.00646,"sites":949,"fingerprinting":0,"cookies":0},{"date":"2022.03","prevalence":0.00676,"sites":990,"fingerprinting":0,"cookies":0},{"date":"2022.04","prevalence":0.00662,"sites":972,"fingerprinting":0,"cookies":0},{"date":"2022.05","prevalence":0.0059,"sites":865,"fingerprinting":0,"cookies":0},{"date":"2022.06","prevalence":0.00738,"sites":1089,"fingerprinting":0,"cookies":0},{"date":"2022.07","prevalence":0.00744,"sites":1096,"fingerprinting":0,"cookies":0},{"date":"2022.08","prevalence":0.00744,"sites":1096,"fingerprinting":0,"cookies":0},{"date":"2022.09","prevalence":0.0115,"sites":1680,"fingerprinting":1,"cookies":0},{"date":"2022.10","prevalence":0.00763,"sites":1125,"fingerprinting":0,"cookies":0},{"date":"2022.11","prevalence":0.00848,"sites":1250,"fingerprinting":0,"cookies":0},{"date":"2022.12","prevalence":0.00763,"sites":1126,"fingerprinting":0,"cookies":0},{"date":"2023.01","prevalence":0.00842,"sites":1166,"fingerprinting":0,"cookies":0},{"date":"2023.02","prevalence":0.00843,"sites":1245,"fingerprinting":0,"cookies":0},{"date":"2023.03","prevalence":0.00861,"sites":1271,"fingerprinting":0,"cookies":0},{"date":"max/attribution-03-23","prevalence":0.00858,"sites":1266,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"2023.03","prevalence":0.00861,"sites":1271,"fingerprinting":0,"cookies":0},{"date":"max/attribution-03-23","prevalence":0.00858,"sites":1266,"fingerprinting":0,"cookies":0},{"date":"max/libcheck-big","prevalence":0.00855,"sites":1263,"fingerprinting":1,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <a href="https:&#x2F;&#x2F;legal.hubspot.com&#x2F;privacy-policy" target="_blank" class="external" rel="noreferrer noopener">https:&#x2F;&#x2F;legal.hubspot.com&#x2F;privacy-policy</a>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;311<small>/27673</small>
+                    <strong>Rank:</strong> &#35;312<small>/27622</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.86&#37; (1266 sites)
+                    <strong>Prevalence:</strong> 0.85&#37; (1263 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -115,13 +115,27 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>Event.prototype.timeStamp</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://js.hsadspixel.net&#x2F;fb.js" target="_blank" class="external" rel="noreferrer noopener">js.hsadspixel.net&#x2F;fb.js</a> (seen on 679 websites)</p>
+            <p><a href="http://js.hsadspixel.net&#x2F;fb.js" target="_blank" class="external" rel="noreferrer noopener">js.hsadspixel.net&#x2F;fb.js</a> (seen on 676 websites)</p>
         </li>
     </ul>
 </div>
@@ -134,61 +148,61 @@
             <a href="http://flightaware.com" target="_blank" class="external">flightaware.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.headspace.com" target="_blank" class="external">www.headspace.com</a>
+            <a href="http://online.hbs.edu" target="_blank" class="external">online.hbs.edu</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.oerparts.com" target="_blank" class="external">www.oerparts.com</a>
+            <a href="http://www.d-id.com" target="_blank" class="external">www.d-id.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.wagnermeters.com" target="_blank" class="external">www.wagnermeters.com</a>
+            <a href="http://www.lapoflove.com" target="_blank" class="external">www.lapoflove.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.gazette-news.co.uk" target="_blank" class="external">www.gazette-news.co.uk</a>
+            <a href="http://gvwire.com" target="_blank" class="external">gvwire.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://tms.edu" target="_blank" class="external">tms.edu</a>
+            <a href="http://blog.mountainroseherbs.com" target="_blank" class="external">blog.mountainroseherbs.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.leaderlive.co.uk" target="_blank" class="external">www.leaderlive.co.uk</a>
+            <a href="http://www.shipstation.com" target="_blank" class="external">www.shipstation.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.ifm.org" target="_blank" class="external">www.ifm.org</a>
+            <a href="http://www.goodmanmfg.com" target="_blank" class="external">www.goodmanmfg.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://news.energysage.com" target="_blank" class="external">news.energysage.com</a>
+            <a href="http://www.edp24.co.uk" target="_blank" class="external">www.edp24.co.uk</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.kcrw.com" target="_blank" class="external">www.kcrw.com</a>
+            <a href="http://tools.silversneakers.com" target="_blank" class="external">tools.silversneakers.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.hl7.org" target="_blank" class="external">www.hl7.org</a>
+            <a href="http://www.rapiddirect.com" target="_blank" class="external">www.rapiddirect.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://hotcopper.com.au" target="_blank" class="external">hotcopper.com.au</a>
+            <a href="http://koinly.io" target="_blank" class="external">koinly.io</a>
         </li>
         <li class='truncate'>
-            <a href="http://travelnevada.com" target="_blank" class="external">travelnevada.com</a>
+            <a href="http://www.ipswichstar.co.uk" target="_blank" class="external">www.ipswichstar.co.uk</a>
         </li>
         <li class='truncate'>
-            <a href="http://lockedinlust.com" target="_blank" class="external">lockedinlust.com</a>
+            <a href="http://www.terracycle.com" target="_blank" class="external">www.terracycle.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://simpletire.com" target="_blank" class="external">simpletire.com</a>
+            <a href="http://proverbs31.org" target="_blank" class="external">proverbs31.org</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.liveaquaria.com" target="_blank" class="external">www.liveaquaria.com</a>
+            <a href="http://www.bridgecomsystems.com" target="_blank" class="external">www.bridgecomsystems.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.ionos.mx" target="_blank" class="external">www.ionos.mx</a>
+            <a href="http://www.voicebooking.com" target="_blank" class="external">www.voicebooking.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.kirkusreviews.com" target="_blank" class="external">www.kirkusreviews.com</a>
+            <a href="http://tym.world" target="_blank" class="external">tym.world</a>
         </li>
         <li class='truncate'>
-            <a href="http://www.doctor.com" target="_blank" class="external">www.doctor.com</a>
+            <a href="http://www.netgate.com" target="_blank" class="external">www.netgate.com</a>
         </li>
         <li class='truncate'>
-            <a href="http://insightglobal.com" target="_blank" class="external">insightglobal.com</a>
+            <a href="http://www.cookiedelivery.com" target="_blank" class="external">www.cookiedelivery.com</a>
         </li>
     </ul>
 </div>

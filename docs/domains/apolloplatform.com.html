@@ -44,7 +44,7 @@
     window.wikiData = {
         type: "domain",
         domain: "apolloplatform.com",
-        history: [{"date":"2023.03","prevalence":0.0000271,"sites":4,"fingerprinting":0,"cookies":0},{"date":"max/attribution-03-23","prevalence":0.0000271,"sites":4,"fingerprinting":0,"cookies":0}]
+        history: [{"date":"2023.03","prevalence":0.0000271,"sites":4,"fingerprinting":0,"cookies":0},{"date":"max/attribution-03-23","prevalence":0.0000271,"sites":4,"fingerprinting":0,"cookies":0},{"date":"max/libcheck-big","prevalence":0.0000677,"sites":10,"fingerprinting":1,"cookies":0}]
     };
 </script>
 <script src="../assets/js/vendor/Chart.min.js" defer></script>
@@ -65,13 +65,13 @@
                     <strong>Privacy Policy:</strong> <i>Unknown</i>
                 </li>
                 <li class='py-1'>
-                    <strong>Rank:</strong> &#35;10752<small>/27673</small>
+                    <strong>Rank:</strong> &#35;6316<small>/27622</small>
                 </li>
                 <li class='py-1'>
-                    <strong>Prevalence:</strong> 0.00&#37; (4 sites)
+                    <strong>Prevalence:</strong> 0.01&#37; (10 sites)
                 </li>
                 <li class='py-1'>
-                    <strong>Fingerprinting:</strong> 0<small>/3</small> - <span class="fp-0">No use of browser API&#39;s</span>
+                    <strong>Fingerprinting:</strong> 1<small>/3</small> - <span class="fp-1">Some use of browser API&#39;s, but not obviously for tracking purposes</span>
                 </li>
                 <li class='py-1'>
                     <strong>Cookies:</strong> 0.00&#37;
@@ -91,11 +91,13 @@
                 <li class='py-1'>
                     <strong>Resource Types:</strong> 
                     <span>Script</span>,
+                    <span>Fetch</span>,
                 </li>
                 <li class='py-1'><a href="https://github.com/duckduckgo/tracker-radar/blob/master/domains/US/apolloplatform.com.json" class="external" rel="noreferrer noopener">Raw data file</a>.</li>
                 <li class='py-1'>
                     <strong>Subdomains:</strong>
                     <span>schema</span>, 
+                    <span>cdn</span>, 
                 </li>
             </ul>
         </div>
@@ -114,13 +116,60 @@
     </div>
 </div>
 
+<div class='p-5 border-b'>
+    <div class='flex'>
+        <h3 class='section-header pr-5'>Fingerprinting APIs Used
+            <span class='text-sm'>
+                (Sorted by <a href="https://github.com/duckduckgo/tracker-radar/blob/master/docs/FAQ.md#are-you-weighting-the-use-of-various-apis-in-determining-possible-fingerprinting" target="_blank" class="external" rel="noreferrer noopener">weight</a>)
+            </span>
+        </h3> 
+    </div>    
+
+    <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-2'>
+        <li class='truncate'>window.localStorage</li>
+        <li class='truncate'>Date.prototype.getTime</li>
+    </ul>
+</div>
 
 
 <div class='p-5'>
     <h3 class='section-header'>Resources Found</h3>
     <ul class='grid grid-cols-1 row-gap-2 col-gap-5 lg:grid-cols-3 md:grid-cols-1'>
         <li class='break-all'>
-            <p><a href="http://schema.apolloplatform.com&#x2F;clientJS&#x2F;apolloDQ.js" target="_blank" class="external" rel="noreferrer noopener">schema.apolloplatform.com&#x2F;clientJS&#x2F;apolloDQ.js</a> (seen on 3 websites)</p>
+            <p><a href="http://schema.apolloplatform.com&#x2F;clientJS&#x2F;apolloDQ.js" target="_blank" class="external" rel="noreferrer noopener">schema.apolloplatform.com&#x2F;clientJS&#x2F;apolloDQ.js</a> (seen on 6 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;14850ea5-31b3-4a57-9105-cf2ae47c7a80&#x2F;d527ad6f-0d67-4490-91c4-d094769ebd09&#x2F;Page%20Load%20Started.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;14850ea5-31b3-4a57-9105-cf2ae47c7a80&#x2F;d527ad6f-0d67-4490-91c4-d094769ebd09&#x2F;Page%20Load%20Started.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;14850ea5-31b3-4a57-9105-cf2ae47c7a80&#x2F;d527ad6f-0d67-4490-91c4-d094769ebd09&#x2F;User%20Detected.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;14850ea5-31b3-4a57-9105-cf2ae47c7a80&#x2F;d527ad6f-0d67-4490-91c4-d094769ebd09&#x2F;User%20Detected.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;14850ea5-31b3-4a57-9105-cf2ae47c7a80&#x2F;d527ad6f-0d67-4490-91c4-d094769ebd09&#x2F;Page%20Load%20Completed.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;14850ea5-31b3-4a57-9105-cf2ae47c7a80&#x2F;d527ad6f-0d67-4490-91c4-d094769ebd09&#x2F;Page%20Load%20Completed.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;a1182e04-e97d-40fc-af00-85946231f867&#x2F;499fa125-ae54-4c7f-82e6-8f2f8eb5cca8&#x2F;Page%20Load%20Started.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;a1182e04-e97d-40fc-af00-85946231f867&#x2F;499fa125-ae54-4c7f-82e6-8f2f8eb5cca8&#x2F;Page%20Load%20Started.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;a1182e04-e97d-40fc-af00-85946231f867&#x2F;499fa125-ae54-4c7f-82e6-8f2f8eb5cca8&#x2F;User%20Detected.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;a1182e04-e97d-40fc-af00-85946231f867&#x2F;499fa125-ae54-4c7f-82e6-8f2f8eb5cca8&#x2F;User%20Detected.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;a1182e04-e97d-40fc-af00-85946231f867&#x2F;499fa125-ae54-4c7f-82e6-8f2f8eb5cca8&#x2F;Page%20Load%20Completed.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;a1182e04-e97d-40fc-af00-85946231f867&#x2F;499fa125-ae54-4c7f-82e6-8f2f8eb5cca8&#x2F;Page%20Load%20Completed.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;0b5518c4-1f89-4aab-9ba2-d275583d2b4a&#x2F;ca96dff3-2ab3-4d3d-ae9a-5df3468947a1&#x2F;Page%20Load%20Started.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;0b5518c4-1f89-4aab-9ba2-d275583d2b4a&#x2F;ca96dff3-2ab3-4d3d-ae9a-5df3468947a1&#x2F;Page%20Load%20Started.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;0b5518c4-1f89-4aab-9ba2-d275583d2b4a&#x2F;ca96dff3-2ab3-4d3d-ae9a-5df3468947a1&#x2F;User%20Detected.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;0b5518c4-1f89-4aab-9ba2-d275583d2b4a&#x2F;ca96dff3-2ab3-4d3d-ae9a-5df3468947a1&#x2F;User%20Detected.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;0b5518c4-1f89-4aab-9ba2-d275583d2b4a&#x2F;ca96dff3-2ab3-4d3d-ae9a-5df3468947a1&#x2F;Page%20Load%20Completed.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;0b5518c4-1f89-4aab-9ba2-d275583d2b4a&#x2F;ca96dff3-2ab3-4d3d-ae9a-5df3468947a1&#x2F;Page%20Load%20Completed.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;c92e6ef8-ced9-4968-9398-72bdcb7fa34f&#x2F;f66f3e58-0375-4afa-9497-a086174002cb&#x2F;Page%20Load%20Started.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;c92e6ef8-ced9-4968-9398-72bdcb7fa34f&#x2F;f66f3e58-0375-4afa-9497-a086174002cb&#x2F;Page%20Load%20Started.json</a> (seen on 2 websites)</p>
+        </li>
+        <li class='break-all'>
+            <p><a href="http://cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;c92e6ef8-ced9-4968-9398-72bdcb7fa34f&#x2F;f66f3e58-0375-4afa-9497-a086174002cb&#x2F;Page%20Load%20Completed.json" target="_blank" class="external" rel="noreferrer noopener">cdn.apolloplatform.com&#x2F;app&#x2F;30dbc58b-1d7e-490b-bedc-246c2735703f&#x2F;c92e6ef8-ced9-4968-9398-72bdcb7fa34f&#x2F;f66f3e58-0375-4afa-9497-a086174002cb&#x2F;Page%20Load%20Completed.json</a> (seen on 2 websites)</p>
         </li>
     </ul>
 </div>
@@ -136,7 +185,25 @@
             <a href="http://www.ajc.com" target="_blank" class="external">www.ajc.com</a>
         </li>
         <li class='truncate'>
+            <a href="http://www.dayton.com" target="_blank" class="external">www.dayton.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.daytondailynews.com" target="_blank" class="external">www.daytondailynews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://www.journal-news.com" target="_blank" class="external">www.journal-news.com</a>
+        </li>
+        <li class='truncate'>
             <a href="http://www.land.com" target="_blank" class="external">www.land.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://dayton.com" target="_blank" class="external">dayton.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://daytondailynews.com" target="_blank" class="external">daytondailynews.com</a>
+        </li>
+        <li class='truncate'>
+            <a href="http://journal-news.com" target="_blank" class="external">journal-news.com</a>
         </li>
     </ul>
 </div>
